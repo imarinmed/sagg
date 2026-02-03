@@ -1,0 +1,22 @@
+id: daywalking
+name: Daywalking
+category: biology
+
+canonical:
+  description: "Vampires in the series appear to be able to function during daylight hours without the traditional vampire weakness to sunlight."
+  traits:
+    - daylight_tolerance
+    - no_sunlight_weakness
+    - full_integration
+  weaknesses: []
+  abilities: []
+  source_episodes:
+    - s01e01
+    - s01e03
+
+adaptation_expansion:
+  dark_variant: ""
+  mechanics: ""
+  erotic_implications: ""
+  horror_elements: []
+  taboo_potential: ""

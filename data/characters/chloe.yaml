@@ -1,0 +1,39 @@
+id: chloe
+name: Chloe
+portrayed_by: Laura Maik
+
+canonical:
+  age: 16
+  species: human
+  family: null
+  traits:
+    - loyal
+    - supportive
+    - outsider_observer
+    - genuine
+  arc: ally_sidekick
+  relationships:
+    - character: kiara_natt_och_dag
+      type: best_friend
+      dynamic: accepting_protective
+    - character: elise
+      type: former_friend
+      dynamic: betrayed_by
+
+adaptation:
+  age: 17
+  traits_added: []
+  arc_dark: ""
+  taboo_elements: []
+  explicit_scenes: []
+  psychological_profile: ""
+  power_dynamics: ""
+  
+appearances:
+  - s01e01
+  - s01e02
+  - s01e03
+  - s01e04
+  - s01e05
+  - s01e06
+  - s01e07

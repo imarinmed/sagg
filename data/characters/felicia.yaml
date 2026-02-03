@@ -1,0 +1,31 @@
+id: felicia
+name: Felicia
+portrayed_by: Jolina Bergmer
+
+canonical:
+  age: 16
+  species: human
+  family: null
+  traits:
+    - follower
+    - mean_girl
+    - elise_lackey
+  arc: minor_antagonist
+  relationships:
+    - character: elise
+      type: leader
+      dynamic: follower_minion
+
+adaptation:
+  age: 16
+  traits_added: []
+  arc_dark: ""
+  taboo_elements: []
+  explicit_scenes: []
+  psychological_profile: ""
+  power_dynamics: ""
+  
+appearances:
+  - s01e01
+  - s01e02
+  - s01e04

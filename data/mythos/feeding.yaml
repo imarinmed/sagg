@@ -1,0 +1,22 @@
+id: feeding
+name: Feeding
+category: biology
+
+canonical:
+  description: "The act of consuming blood for sustenance. Vampires require blood to survive, though the exact mechanics and frequency are not detailed in the series."
+  traits:
+    - blood_consumption
+    - survival_necessity
+    - intimate_act
+  weaknesses: []
+  abilities: []
+  source_episodes:
+    - s01e03
+    - s01e06
+
+adaptation_expansion:
+  dark_variant: ""
+  mechanics: ""
+  erotic_implications: ""
+  horror_elements: []
+  taboo_potential: ""

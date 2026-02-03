@@ -1,0 +1,40 @@
+id: henry_natt_och_dag
+name: Henry Natt och Dag
+portrayed_by: Olle Sarri
+
+canonical:
+  age: 45
+  species: vampire
+  family: natt_och_dag
+  traits:
+    - strict
+    - controlling
+    - protective
+    - traditional
+    - patriarch
+  arc: authoritarian_father
+  relationships:
+    - character: kiara_natt_och_dag
+      type: daughter
+      dynamic: controlling_authoritarian
+    - character: desiree_natt_och_dag
+      type: wife
+      dynamic: distant_partnership
+    - character: jacques_natt_och_dag
+      type: brother
+      dynamic: complicated_rivalry
+
+adaptation:
+  age: 47
+  traits_added: []
+  arc_dark: ""
+  taboo_elements: []
+  explicit_scenes: []
+  psychological_profile: ""
+  power_dynamics: ""
+  
+appearances:
+  - s01e01
+  - s01e03
+  - s01e06
+  - s01e07

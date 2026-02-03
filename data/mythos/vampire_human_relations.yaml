@@ -1,0 +1,24 @@
+id: vampire_human_relations
+name: Vampire-Human Relations
+category: society
+
+canonical:
+  description: "Vampires coexist secretly with humans, attending the same schools and living in the same communities. Most humans are unaware of vampires' existence."
+  traits:
+    - secret_coexistence
+    - integration
+    - forbidden_romance_potential
+    - risk_of_exposure
+  weaknesses: []
+  abilities: []
+  source_episodes:
+    - s01e01
+    - s01e03
+    - s01e04
+
+adaptation_expansion:
+  dark_variant: ""
+  mechanics: ""
+  erotic_implications: ""
+  horror_elements: []
+  taboo_potential: ""

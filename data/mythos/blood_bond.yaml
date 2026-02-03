@@ -1,0 +1,22 @@
+id: blood_bond
+name: The Blood Bond
+category: supernatural
+
+canonical:
+  description: "A mystical connection formed through blood exchange between vampires. The exact nature is not fully explored in the series."
+  traits:
+    - blood_exchange_required
+    - mystical_connection
+    - familial_implications
+  weaknesses: []
+  abilities: []
+  source_episodes:
+    - s01e03
+    - s01e06
+
+adaptation_expansion:
+  dark_variant: ""
+  mechanics: ""
+  erotic_implications: ""
+  horror_elements: []
+  taboo_potential: ""

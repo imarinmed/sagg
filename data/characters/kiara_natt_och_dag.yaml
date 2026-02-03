@@ -1,0 +1,52 @@
+id: kiara_natt_och_dag
+name: Kiara Natt och Dag
+portrayed_by: Filippa Kavalic
+
+canonical:
+  age: 16
+  species: vampire
+  family: natt_och_dag
+  traits:
+    - rebellious
+    - curious
+    - naive
+    - wants_normal_life
+    - fish_out_of_water
+  arc: fish_out_of_water_teen
+  relationships:
+    - character: henry_natt_och_dag
+      type: father
+      dynamic: strict_authoritarian
+    - character: desiree_natt_och_dag
+      type: mother
+      dynamic: controlling_distant
+    - character: jacques_natt_och_dag
+      type: uncle
+      dynamic: mysterious_alluring
+    - character: alfred
+      type: love_interest
+      dynamic: forbidden_attraction
+    - character: elise
+      type: rival
+      dynamic: social_competition
+    - character: chloe
+      type: friend
+      dynamic: ally_confidant
+
+adaptation:
+  age: 17
+  traits_added: []
+  arc_dark: ""
+  taboo_elements: []
+  explicit_scenes: []
+  psychological_profile: ""
+  power_dynamics: ""
+  
+appearances:
+  - s01e01
+  - s01e02
+  - s01e03
+  - s01e04
+  - s01e05
+  - s01e06
+  - s01e07

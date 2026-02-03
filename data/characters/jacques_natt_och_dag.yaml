@@ -1,0 +1,40 @@
+id: jacques_natt_och_dag
+name: Jacques Natt och Dag
+portrayed_by: Åke Bremer Wold
+
+canonical:
+  age: 40
+  species: vampire
+  family: natt_och_dag
+  traits:
+    - mysterious
+    - charming
+    - rebellious
+    - alluring
+    - uncle_figure
+  arc: mysterious_uncle
+  relationships:
+    - character: kiara_natt_och_dag
+      type: niece
+      dynamic: intriguing_magnetic
+    - character: henry_natt_och_dag
+      type: brother
+      dynamic: rivalry_tension
+    - character: desiree_natt_och_dag
+      type: sister_in_law
+      dynamic: unspoken_tension
+
+adaptation:
+  age: 42
+  traits_added: []
+  arc_dark: ""
+  taboo_elements: []
+  explicit_scenes: []
+  psychological_profile: ""
+  power_dynamics: ""
+  
+appearances:
+  - s01e03
+  - s01e05
+  - s01e06
+  - s01e07

@@ -1,0 +1,38 @@
+id: desiree_natt_och_dag
+name: Desirée Natt och Dag
+portrayed_by: Katarina Macli
+
+canonical:
+  age: 43
+  species: vampire
+  family: natt_och_dag
+  traits:
+    - elegant
+    - distant
+    - image_conscious
+    - social_climber
+  arc: distant_mother
+  relationships:
+    - character: kiara_natt_och_dag
+      type: daughter
+      dynamic: disappointed_distant
+    - character: henry_natt_och_dag
+      type: husband
+      dynamic: political_marriage
+    - character: jacques_natt_och_dag
+      type: brother_in_law
+      dynamic: complicated_attraction
+
+adaptation:
+  age: 45
+  traits_added: []
+  arc_dark: ""
+  taboo_elements: []
+  explicit_scenes: []
+  psychological_profile: ""
+  power_dynamics: ""
+  
+appearances:
+  - s01e03
+  - s01e06
+  - s01e07
