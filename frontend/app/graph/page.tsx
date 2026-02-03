@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Card, Button } from "@heroui/react";
+import { Button } from "@heroui/react";
 import { RefreshCw } from "lucide-react";
 import {
   GraphVisualization,
   NodeDetailsPanel,
 } from "@/components/GraphVisualization";
+import { GlassCard, CardContent } from "@/components/GlassCard";
 import { api, type GraphNode, type GraphData } from "@/lib/api";
 
 export default function GraphPage() {
@@ -41,20 +42,21 @@ export default function GraphPage() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 animate-fade-in-up">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+          <h1 className="font-heading text-3xl text-[var(--color-text-primary)]">
             Relationship Graph
           </h1>
-          <p className="text-gray-600 dark:text-gray-400 mt-1">
+          <p className="text-[var(--color-text-secondary)] mt-1">
             Interactive visualization of characters, episodes, and mythos elements
           </p>
         </div>
         <Button
-          variant="secondary"
+          variant="ghost"
           onPress={fetchGraphData}
           isDisabled={loading}
+          className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent-primary)]"
         >
           {loading ? (
             <RefreshCw className="w-4 h-4 animate-spin" />
@@ -66,23 +68,23 @@ export default function GraphPage() {
       </div>
 
       {error && (
-        <Card variant="secondary" className="border-red-200 dark:border-red-800">
-          <Card.Content className="p-4">
-            <p className="text-red-600 dark:text-red-400">{error}</p>
-          </Card.Content>
-        </Card>
+        <GlassCard className="border-[var(--color-accent-secondary)]/30">
+          <CardContent>
+            <p className="text-[var(--color-accent-secondary)]">{error}</p>
+          </CardContent>
+        </GlassCard>
       )}
 
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Graph Visualization */}
         <div className="flex-1 min-h-[600px]">
-          <Card className="h-full">
-            <Card.Content className="p-0 h-full">
+          <GlassCard className="h-full" hover={false}>
+            <CardContent className="p-0 h-full">
               {loading ? (
                 <div className="h-[600px] flex items-center justify-center">
                   <div className="flex flex-col items-center gap-3">
-                    <RefreshCw className="w-8 h-8 animate-spin text-gray-400" />
-                    <p className="text-gray-500 dark:text-gray-400">
+                    <RefreshCw className="w-8 h-8 animate-spin text-[var(--color-text-muted)]" />
+                    <p className="text-[var(--color-text-muted)]">
                       Loading graph data...
                     </p>
                   </div>
@@ -94,8 +96,8 @@ export default function GraphPage() {
                   selectedNode={selectedNode}
                 />
               )}
-            </Card.Content>
-          </Card>
+            </CardContent>
+          </GlassCard>
         </div>
 
         {/* Details Panel */}
@@ -107,19 +109,19 @@ export default function GraphPage() {
       </div>
 
       {/* Instructions */}
-      <Card variant="transparent">
-        <Card.Content className="p-4">
-          <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">
+      <GlassCard>
+        <CardContent>
+          <h3 className="font-heading text-sm text-[var(--color-text-primary)] mb-2">
             How to use
           </h3>
-          <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+          <ul className="text-sm text-[var(--color-text-secondary)] space-y-1">
             <li>• Scroll to zoom in/out</li>
             <li>• Drag to pan the view</li>
             <li>• Click on a node to see details</li>
             <li>• Use the controls on the left to zoom</li>
           </ul>
-        </Card.Content>
-      </Card>
+        </CardContent>
+      </GlassCard>
     </div>
   );
 }

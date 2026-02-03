@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import * as d3 from "d3";
-import { Card, Button } from "@heroui/react";
+import { Button } from "@heroui/react";
 import { ZoomIn, ZoomOut, Maximize, X } from "lucide-react";
+import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
 import type { GraphNode, GraphEdge, GraphData } from "@/lib/api";
 
 interface SimulationNode extends GraphNode, d3.SimulationNodeDatum {
@@ -29,9 +30,9 @@ interface GraphVisualizationProps {
 }
 
 const NODE_COLORS = {
-  episode: "#3b82f6", // blue-500
-  character: "#8b5cf6", // violet-500
-  mythos: "#f59e0b", // amber-500
+  episode: "var(--color-accent-primary)",
+  character: "var(--color-accent-secondary)",
+  mythos: "#B76E79", // Rose gold for mythos
 };
 
 const NODE_SIZES = {
@@ -90,7 +91,7 @@ export function GraphVisualization({
       .attr("orient", "auto")
       .append("path")
       .attr("d", "M0,-5L10,0L0,5")
-      .attr("fill", "#6b7280");
+      .attr("fill", "var(--color-text-muted)");
 
     // Create links
     const link = g
@@ -100,7 +101,7 @@ export function GraphVisualization({
       .data(data.edges)
       .enter()
       .append("line")
-      .attr("stroke", "#6b7280")
+      .attr("stroke", "var(--color-text-muted)")
       .attr("stroke-width", 1.5)
       .attr("stroke-opacity", 0.6)
       .attr("marker-end", "url(#arrowhead)");
@@ -121,7 +122,7 @@ export function GraphVisualization({
       .append("circle")
       .attr("r", (d) => NODE_SIZES[d.node_type])
       .attr("fill", (d) => NODE_COLORS[d.node_type])
-      .attr("stroke", "#fff")
+      .attr("stroke", "var(--color-bg-primary)")
       .attr("stroke-width", 2)
       .attr("class", "transition-all duration-200");
 
@@ -134,8 +135,7 @@ export function GraphVisualization({
       .attr("text-anchor", "middle")
       .attr("font-size", "12px")
       .attr("font-weight", "500")
-      .attr("fill", "currentColor")
-      .attr("class", "text-gray-900 dark:text-gray-100");
+      .attr("fill", "var(--color-text-primary)");
 
     // Add click handler
     node.on("click", (event, d) => {
@@ -215,7 +215,7 @@ export function GraphVisualization({
     svg
       .selectAll(".node circle")
       .attr("stroke", (d: any) =>
-        selectedNode?.id === d.id ? "#ef4444" : "#fff"
+        selectedNode?.id === d.id ? "var(--color-accent-primary)" : "var(--color-bg-primary)"
       )
       .attr("stroke-width", (d: any) =>
         selectedNode?.id === d.id ? 4 : 2
@@ -247,40 +247,40 @@ export function GraphVisualization({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full min-h-[600px] bg-gray-50 dark:bg-gray-900 rounded-lg overflow-hidden"
+      className="relative w-full h-full min-h-[600px] bg-[var(--color-bg-secondary)] rounded-lg overflow-hidden"
     >
       {/* Controls */}
       <div className="absolute top-4 left-4 z-10 flex flex-col gap-2">
         <Button
-          variant="secondary"
+          variant="ghost"
           size="sm"
           onPress={handleZoomIn}
-          className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm"
+          className="glass text-[var(--color-text-secondary)] hover:text-[var(--color-accent-primary)]"
         >
           <ZoomIn className="w-4 h-4" />
         </Button>
         <Button
-          variant="secondary"
+          variant="ghost"
           size="sm"
           onPress={handleZoomOut}
-          className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm"
+          className="glass text-[var(--color-text-secondary)] hover:text-[var(--color-accent-primary)]"
         >
           <ZoomOut className="w-4 h-4" />
         </Button>
         <Button
-          variant="secondary"
+          variant="ghost"
           size="sm"
           onPress={handleResetZoom}
-          className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm"
+          className="glass text-[var(--color-text-secondary)] hover:text-[var(--color-accent-primary)]"
         >
           <Maximize className="w-4 h-4" />
         </Button>
       </div>
 
       {/* Legend */}
-      <Card className="absolute top-4 right-4 z-10 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
-        <Card.Content className="p-3 space-y-2">
-          <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+      <GlassCard className="absolute top-4 right-4 z-10" hover={false}>
+        <CardContent className="p-3 space-y-2">
+          <h4 className="text-sm font-heading text-[var(--color-text-primary)]">
             Legend
           </h4>
           <div className="space-y-1.5">
@@ -289,7 +289,7 @@ export function GraphVisualization({
                 className="w-3 h-3 rounded-full"
                 style={{ backgroundColor: NODE_COLORS.episode }}
               />
-              <span className="text-xs text-gray-700 dark:text-gray-300">
+              <span className="text-xs text-[var(--color-text-secondary)]">
                 Episodes
               </span>
             </div>
@@ -298,7 +298,7 @@ export function GraphVisualization({
                 className="w-3 h-3 rounded-full"
                 style={{ backgroundColor: NODE_COLORS.character }}
               />
-              <span className="text-xs text-gray-700 dark:text-gray-300">
+              <span className="text-xs text-[var(--color-text-secondary)]">
                 Characters
               </span>
             </div>
@@ -307,16 +307,16 @@ export function GraphVisualization({
                 className="w-3 h-3 rounded-full"
                 style={{ backgroundColor: NODE_COLORS.mythos }}
               />
-              <span className="text-xs text-gray-700 dark:text-gray-300">
+              <span className="text-xs text-[var(--color-text-secondary)]">
                 Mythos
               </span>
             </div>
           </div>
-        </Card.Content>
-      </Card>
+        </CardContent>
+      </GlassCard>
 
       {/* Stats */}
-      <div className="absolute bottom-4 left-4 z-10 text-xs text-gray-500 dark:text-gray-400 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-3 py-2 rounded-lg">
+      <div className="absolute bottom-4 left-4 z-10 text-xs text-[var(--color-text-muted)] glass px-3 py-2 rounded-lg">
         <div>Nodes: {data.nodes.length}</div>
         <div>Edges: {data.edges.length}</div>
       </div>
@@ -356,43 +356,48 @@ export function NodeDetailsPanel({ node, onClose }: NodeDetailsPanelProps) {
   const getNodeTypeColor = (type: string) => {
     switch (type) {
       case "episode":
-        return "bg-blue-500";
+        return "bg-[var(--color-accent-primary)]";
       case "character":
-        return "bg-violet-500";
+        return "bg-[var(--color-accent-secondary)]";
       case "mythos":
-        return "bg-amber-500";
+        return "bg-rose-400";
       default:
-        return "bg-gray-500";
+        return "bg-[var(--color-text-muted)]";
     }
   };
 
   return (
-    <Card className="w-full lg:w-80 h-fit">
-      <Card.Header className="flex items-start justify-between">
+    <GlassCard className="w-full lg:w-80 h-fit">
+      <CardHeader className="flex items-start justify-between">
         <div className="flex items-center gap-2">
           <div className={`w-3 h-3 rounded-full ${getNodeTypeColor(node.node_type)}`} />
           <div>
-            <Card.Title className="text-lg">{node.label}</Card.Title>
-            <Card.Description>{getNodeTypeLabel(node.node_type)}</Card.Description>
+            <h3 className="font-heading text-lg text-[var(--color-text-primary)]">{node.label}</h3>
+            <p className="text-sm text-[var(--color-text-muted)]">{getNodeTypeLabel(node.node_type)}</p>
           </div>
         </div>
-        <Button variant="ghost" size="sm" onPress={onClose} className="shrink-0">
+        <Button 
+          variant="ghost" 
+          size="sm" 
+          onPress={onClose} 
+          className="shrink-0 text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]"
+        >
           <X className="w-4 h-4" />
         </Button>
-      </Card.Header>
-      <Card.Content className="space-y-4">
+      </CardHeader>
+      <CardContent className="space-y-4">
         {node.metadata && Object.keys(node.metadata).length > 0 && (
           <div className="space-y-2">
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+            <h4 className="text-sm font-heading text-[var(--color-text-primary)]">
               Details
             </h4>
             <div className="space-y-1.5">
               {Object.entries(node.metadata).map(([key, value]) => (
                 <div key={key} className="flex justify-between text-sm">
-                  <span className="text-gray-500 dark:text-gray-400 capitalize">
+                  <span className="text-[var(--color-text-muted)] capitalize">
                     {key.replace(/_/g, " ")}:
                   </span>
-                  <span className="text-gray-900 dark:text-gray-100">
+                  <span className="text-[var(--color-text-secondary)]">
                     {typeof value === "object" ? JSON.stringify(value) : String(value)}
                   </span>
                 </div>
@@ -402,15 +407,15 @@ export function NodeDetailsPanel({ node, onClose }: NodeDetailsPanelProps) {
         )}
         {node.node_type === "character" && node.metadata?.role && (
           <div className="space-y-2">
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+            <h4 className="text-sm font-heading text-[var(--color-text-primary)]">
               Role
             </h4>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-[var(--color-text-secondary)]">
               {node.metadata.role}
             </p>
           </div>
         )}
-      </Card.Content>
-    </Card>
+      </CardContent>
+    </GlassCard>
   );
 }
