@@ -26,6 +26,37 @@
   --color-text-muted: #808080;
   --color-border: #2a2a2a;
   --color-border-subtle: #1f1f1f;
+  
+  --font-heading: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-body: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains), 'JetBrains Mono', 'Fira Code', monospace;
+  
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+  --text-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem);
+  --text-4xl: clamp(2.25rem, 1.75rem + 2.5vw, 3.5rem);
+  --text-5xl: clamp(3rem, 2rem + 5vw, 5rem);
+  
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+  
+  --tracking-tighter: -0.03em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+  
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
 }
 
 /* ============================================
@@ -72,10 +103,6 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.7), 0 4px 6px -2px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.15);
-  
-  /* Typography */
-  --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* ============================================
@@ -122,10 +149,6 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.7), 0 4px 6px -2px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 20px rgba(197, 160, 89, 0.12);
-  
-  /* Typography */
-  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* ============================================
@@ -172,10 +195,6 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.7), 0 2px 4px -1px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.8), 0 4px 6px -2px rgba(0, 0, 0, 0.6);
   --shadow-glow: 0 0 20px rgba(183, 110, 121, 0.15);
-  
-  /* Typography */
-  --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* ============================================
@@ -190,10 +209,23 @@ html {
 
 body {
   font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-normal);
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-tight);
+}
+
+code, pre {
+  font-family: var(--font-mono);
 }
 
 /* Utility classes for theme-aware styling */

@@ -2,6 +2,28 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Layout } from "@/components/Layout"
 import { THEME_SCRIPT } from "@/lib/theme"
+import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400', '600'],
+  variable: '--font-cormorant',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-jetbrains',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Blod, Svett, Tårar - Dark Adaptation Wiki",
@@ -14,7 +36,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning data-theme="gothic">
+    <html 
+      lang="en" 
+      suppressHydrationWarning 
+      data-theme="gothic"
+      className={`${cormorant.variable} ${inter.variable} ${jetbrains.variable}`}
+    >
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -22,7 +49,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className={`${inter.className} antialiased`}>
         <Layout>{children}</Layout>
       </body>
     </html>
