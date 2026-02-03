@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@heroui/react";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
-  { href: "/", label: "Home" },
   { href: "/episodes", label: "Episodes" },
   { href: "/characters", label: "Characters" },
   { href: "/mythos", label: "Mythos" },
@@ -14,25 +12,29 @@ const navItems = [
 
 export function Navigation() {
   return (
-    <nav className="border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+    <nav className="sticky top-0 z-50 glass-nav">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-              Blod, Svett, Tårar
-            </Link>
-          </div>
+        <div className="flex items-center justify-between h-16">
+          <Link 
+            href="/" 
+            className="font-heading text-2xl tracking-wider text-[var(--color-text-primary)] hover:text-[var(--color-accent-primary)] transition-colors"
+          >
+            Blod, Svett, Tårar
+          </Link>
           
-          <div className="flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="nav-link"
               >
                 {item.label}
               </Link>
             ))}
+          </div>
+          
+          <div className="flex items-center">
             <ThemeToggle />
           </div>
         </div>

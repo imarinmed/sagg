@@ -57,6 +57,12 @@
   --weight-normal: 400;
   --weight-medium: 500;
   --weight-semibold: 600;
+  
+  /* Glassmorphism - Base values */
+  --glass-bg: rgba(20, 20, 20, 0.7);
+  --glass-border: rgba(197, 160, 89, 0.2);
+  --glass-blur: 20px;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================
@@ -103,6 +109,10 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.7), 0 4px 6px -2px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.15);
+  
+  /* Glassmorphism - Gothic theme */
+  --glass-bg: rgba(8, 8, 8, 0.85);
+  --glass-border: rgba(212, 175, 55, 0.3);
 }
 
 /* ============================================
@@ -149,6 +159,10 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.7), 0 4px 6px -2px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 20px rgba(197, 160, 89, 0.12);
+  
+  /* Glassmorphism - Luxury theme */
+  --glass-bg: rgba(8, 8, 8, 0.8);
+  --glass-border: rgba(197, 160, 89, 0.25);
 }
 
 /* ============================================
@@ -195,6 +209,10 @@
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.7), 0 2px 4px -1px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.8), 0 4px 6px -2px rgba(0, 0, 0, 0.6);
   --shadow-glow: 0 0 20px rgba(183, 110, 121, 0.15);
+  
+  /* Glassmorphism - Nordic theme */
+  --glass-bg: rgba(15, 15, 26, 0.85);
+  --glass-border: rgba(183, 110, 121, 0.3);
 }
 
 /* ============================================
@@ -305,4 +323,36 @@ a:hover {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* ============================================
+   GLASSMORPHISM UTILITY CLASSES
+   ============================================ */
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-nav {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-accent-primary);
 }
