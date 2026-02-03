@@ -1,8 +1,9 @@
 {
-  "active_plan": "/Users/wolfy/Developer/2026.Y/bats/.sisyphus/plans/blod-dark-adaptation-kb.md",
-  "started_at": "2026-02-03T08:51:19.038Z",
+  "active_plan": "/Users/wolfy/Developer/2026.Y/bats/.sisyphus/plans/complete-wiki-features.md",
+  "started_at": "2026-02-03T10:54:38.427Z",
   "session_ids": [
     "ses_3dd5c2901ffeRRQOt7AwPdCOsf"
   ],
-  "plan_name": "blod-dark-adaptation-kb"
+  "plan_name": "complete-wiki-features",
+  "resumed_from": "blod-dark-adaptation-kb"
 }
