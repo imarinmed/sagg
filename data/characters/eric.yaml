@@ -22,13 +22,81 @@ canonical:
 
 adaptation:
   age: 17
-  traits_added: []
-  arc_dark: ""
-  taboo_elements: []
-  explicit_scenes: []
-  psychological_profile: ""
-  power_dynamics: ""
-  
+  traits_added:
+    - tech_voyeur
+    - hidden_obsession
+    - information_control
+    - secret_knowledge
+  arc_dark: "Tech-savvy observer using surveillance to satisfy obsession with Kiara and vampires"
+  taboo_elements:
+    - voyeurism
+    - surveillance
+    - privacy_violation
+  explicit_scenes:
+    - s01e04_hacking_scene
+    - s01e06_discovery
+  psychological_profile: "Eric's technical skills enable secret observation. His curiosity about Kiara becomes obsession. Knowledge is power, and he gathers information compulsively."
+  power_dynamics: "Observer who controls through information. Uses technical skills to watch from shadows. Knowledge creates sense of power over subjects."
+
+kink_profile:
+  preferences:
+    - id: voyeur
+      intensity: 5
+      notes: "Obsessive watcher, surveillance"
+    - id: information_control
+      intensity: 4
+      notes: "Knowledge as power"
+    - id: tech_fetish
+      intensity: 4
+      notes: "Aroused by surveillance tech"
+    - id: secret_knowledge
+      intensity: 5
+      notes: "Knowing what others don't"
+    - id: observation
+      intensity: 5
+      notes: "Prefers watching to participating"
+    - id: mystery_unraveling
+      intensity: 4
+      notes: "Investigation as foreplay"
+    - id: hidden_power
+      intensity: 3
+      notes: "Secret influence over situations"
+    - id: curiosity
+      intensity: 5
+      notes: "Driven to uncover secrets"
+    - id: documentation
+      intensity: 3
+      notes: "Records observations"
+    - id: analysis
+      intensity: 4
+      notes: "Studies subjects meticulously"
+  limits:
+    - id: physical_intimacy
+      intensity: 2
+      notes: "More comfortable at distance"
+    - id: confrontation
+      intensity: 1
+      notes: "Avoids direct conflict"
+    - id: exposure
+      intensity: 1
+      notes: "Fears being discovered"
+    - id: vulnerability
+      intensity: 2
+      notes: "Guards personal information"
+  evolution:
+    s01e01:
+      - id: curiosity
+        intensity: 3
+        notes: "Notices Kiara's oddities"
+    s01e04:
+      - id: voyeur
+        intensity: 4
+        notes: "Begins surveillance"
+    s01e06:
+      - id: secret_knowledge
+        intensity: 5
+        notes: "Discovers vampire truth"
+
 appearances:
   - s01e01
   - s01e02

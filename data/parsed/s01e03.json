@@ -1,0 +1,2325 @@
+{
+  "id": "s01e03",
+  "title": "Lunch hos Natt och Dag",
+  "title_en": "Lunch at Natt och Dag's",
+  "season": 1,
+  "episode_number": 3,
+  "scenes": [
+    {
+      "id": "s01e03_sc001",
+      "start_time": "00:00:12,720",
+      "end_time": "00:14:06,160",
+      "location": null,
+      "characters": [
+        "I eat them every Friday",
+        "Keep them in the bag",
+        "Mascot",
+        "Nice house",
+        "Mm",
+        "Do they",
+        "For what",
+        "Yeah",
+        "Come on now",
+        "What the hell are you wearing",
+        "How much does it cost then",
+        "Tacos",
+        "A dance circle",
+        "Then she ate Alfred for dinner",
+        "TikTok",
+        "I want to go",
+        "But is it true",
+        "Too bad for you",
+        "What a fucking wilf",
+        "What is it",
+        "Why am I here",
+        "And then party after",
+        "Why is she taking him back",
+        "Film now",
+        "Sorry",
+        "Was it hard or soft tortilla",
+        "I have to go now"
+      ],
+      "dialogue": [
+        {
+          "index": 1,
+          "start_time": "00:00:12,720",
+          "end_time": "00:00:14,880",
+          "text": "Oh, Kiara! Kiara! Kiara!",
+          "speaker": null
+        },
+        {
+          "index": 2,
+          "start_time": "00:00:15,040",
+          "end_time": "00:00:21,440",
+          "text": "Do you take the bat Kiara and love her in sickness and in health?",
+          "speaker": null
+        },
+        {
+          "index": 3,
+          "start_time": "00:00:21,600",
+          "end_time": "00:00:24,960",
+          "text": "I hereby declare you wife and pet.",
+          "speaker": null
+        },
+        {
+          "index": 4,
+          "start_time": "00:00:26,880",
+          "end_time": "00:00:28,600",
+          "text": "Kiara! Kiara!",
+          "speaker": null
+        },
+        {
+          "index": 5,
+          "start_time": "00:00:30,560",
+          "end_time": "00:00:33,480",
+          "text": "You may kiss the bat.",
+          "speaker": null
+        },
+        {
+          "index": 6,
+          "start_time": "00:00:35,600",
+          "end_time": "00:00:38,320",
+          "text": "Kiara? Kiara, is that you?",
+          "speaker": null
+        },
+        {
+          "index": 7,
+          "start_time": "00:00:40,440",
+          "end_time": "00:00:41,640",
+          "text": "No!",
+          "speaker": null
+        },
+        {
+          "index": 8,
+          "start_time": "00:00:44,240",
+          "end_time": "00:00:47,280",
+          "text": "Good morning! Looks like it was a cozy dream.",
+          "speaker": null
+        },
+        {
+          "index": 9,
+          "start_time": "00:00:47,440",
+          "end_time": "00:00:50,000",
+          "text": "Mm, super cozy.",
+          "speaker": null
+        },
+        {
+          "index": 10,
+          "start_time": "00:00:50,160",
+          "end_time": "00:00:53,480",
+          "text": "–Old man, this came for you today. –Mhm?",
+          "speaker": null
+        },
+        {
+          "index": 11,
+          "start_time": "00:00:53,640",
+          "end_time": "00:00:56,600",
+          "text": "It’s a really nice envelope.",
+          "speaker": null
+        },
+        {
+          "index": 12,
+          "start_time": "00:00:56,760",
+          "end_time": "00:00:59,760",
+          "text": "–Who do you think it’s from? –Probably Eric and them.",
+          "speaker": null
+        },
+        {
+          "index": 13,
+          "start_time": "00:00:59,920",
+          "end_time": "00:01:02,480",
+          "text": "It’s too nice to be from Eric, right?",
+          "speaker": null
+        },
+        {
+          "index": 14,
+          "start_time": "00:01:10,080",
+          "end_time": "00:01:11,920",
+          "text": "Screw the pie, Mom.",
+          "speaker": null
+        },
+        {
+          "index": 15,
+          "start_time": "00:01:14,480",
+          "end_time": "00:01:16,280",
+          "text": "B.S.T.",
+          "speaker": null
+        },
+        {
+          "index": 16,
+          "start_time": "00:01:19,480",
+          "end_time": "00:01:21,800",
+          "text": "I mean, I didn’t mean to invite myself.",
+          "speaker": null
+        },
+        {
+          "index": 17,
+          "start_time": "00:01:21,960",
+          "end_time": "00:01:24,480",
+          "text": "You mean when you called and asked to come here for lunch?",
+          "speaker": null
+        },
+        {
+          "index": 18,
+          "start_time": "00:01:24,640",
+          "end_time": "00:01:28,360",
+          "text": "Exactly. I didn’t think it would happen so fast, but of course I’m coming.",
+          "speaker": null
+        },
+        {
+          "index": 19,
+          "start_time": "00:01:28,520",
+          "end_time": "00:01:30,080",
+          "text": "You can say no if you want.",
+          "speaker": null
+        },
+        {
+          "index": 20,
+          "start_time": "00:01:30,240",
+          "end_time": "00:01:34,800",
+          "text": "We barely know each other and my family is a bit… special.",
+          "speaker": null
+        },
+        {
+          "index": 21,
+          "start_time": "00:01:34,960",
+          "end_time": "00:01:37,280",
+          "text": "Of course not. It’s so cool.",
+          "speaker": null
+        },
+        {
+          "index": 22,
+          "start_time": "00:01:37,440",
+          "end_time": "00:01:39,360",
+          "text": "I’ve never been to a vampire castle before.",
+          "speaker": null
+        },
+        {
+          "index": 23,
+          "start_time": "00:01:39,520",
+          "end_time": "00:01:44,880",
+          "text": "Okay. Welcome to Natt and Dag. Blood and honor.",
+          "speaker": null
+        },
+        {
+          "index": 24,
+          "start_time": "00:01:45,040",
+          "end_time": "00:01:46,720",
+          "text": "Yes! Yes!",
+          "speaker": null
+        },
+        {
+          "index": 25,
+          "start_time": "00:01:48,720",
+          "end_time": "00:01:52,760",
+          "text": "How nice that we get your first human friend over for dinner.",
+          "speaker": null
+        },
+        {
+          "index": 26,
+          "start_time": "00:02:02,040",
+          "end_time": "00:02:04,120",
+          "text": "Yo, Mom!",
+          "speaker": null
+        },
+        {
+          "index": 27,
+          "start_time": "00:02:04,280",
+          "end_time": "00:02:08,240",
+          "text": "–Looks good, right?",
+          "speaker": "What the hell are you wearing"
+        },
+        {
+          "index": 28,
+          "start_time": "00:02:08,400",
+          "end_time": "00:02:10,200",
+          "text": "Looks good? It was ugly even for you.",
+          "speaker": null
+        },
+        {
+          "index": 29,
+          "start_time": "00:02:10,360",
+          "end_time": "00:02:13,040",
+          "text": "Where are you going? World Championship of weird jackets or what?",
+          "speaker": null
+        },
+        {
+          "index": 30,
+          "start_time": "00:02:13,200",
+          "end_time": "00:02:16,440",
+          "text": "Yo, channel. Going to a dinner. Lunch at the Natt and Dag family.",
+          "speaker": null
+        },
+        {
+          "index": 31,
+          "start_time": "00:02:16,600",
+          "end_time": "00:02:19,960",
+          "text": "–Stop filming, Affe. –Here’s my driver who’s super pissed.",
+          "speaker": null
+        },
+        {
+          "index": 32,
+          "start_time": "00:02:20,120",
+          "end_time": "00:02:22,240",
+          "text": "But come on, I don’t get it.",
+          "speaker": null
+        },
+        {
+          "index": 33,
+          "start_time": "00:02:22,400",
+          "end_time": "00:02:25,000",
+          "text": "–You’re my driver.",
+          "speaker": "Why am I here"
+        },
+        {
+          "index": 34,
+          "start_time": "00:02:25,160",
+          "end_time": "00:02:27,720",
+          "text": "We need to roll up with some class and style.",
+          "speaker": null
+        },
+        {
+          "index": 35,
+          "start_time": "00:02:27,880",
+          "end_time": "00:02:30,640",
+          "text": "–Damn it!",
+          "speaker": "Come on now"
+        },
+        {
+          "index": 36,
+          "start_time": "00:02:33,360",
+          "end_time": "00:02:35,720",
+          "text": "You’re completely fucking unbelievable, Affe.",
+          "speaker": null
+        },
+        {
+          "index": 37,
+          "start_time": "00:02:35,880",
+          "end_time": "00:02:39,040",
+          "text": "Do I really have to come and open your damn door?",
+          "speaker": null
+        },
+        {
+          "index": 38,
+          "start_time": "00:02:39,200",
+          "end_time": "00:02:41,880",
+          "text": "–Yeah, I guess I’ll film then.",
+          "speaker": "Film now"
+        },
+        {
+          "index": 39,
+          "start_time": "00:02:42,040",
+          "end_time": "00:02:45,200",
+          "text": "Hurry up, damn it! You’re supposed to be the mascot at the match later.",
+          "speaker": null
+        },
+        {
+          "index": 40,
+          "start_time": "00:02:45,360",
+          "end_time": "00:02:47,640",
+          "text": "–Come on, it’s a match!",
+          "speaker": "Mascot"
+        },
+        {
+          "index": 41,
+          "start_time": "00:02:47,800",
+          "end_time": "00:02:50,240",
+          "text": "–What party?",
+          "speaker": "And then party after"
+        },
+        {
+          "index": 42,
+          "start_time": "00:02:50,400",
+          "end_time": "00:02:53,080",
+          "text": "The village hall party you’re supposed to come to.",
+          "speaker": null
+        },
+        {
+          "index": 43,
+          "start_time": "00:02:53,240",
+          "end_time": "00:02:56,400",
+          "text": "I probably can’t tonight, and I’m probably not invited.",
+          "speaker": null
+        },
+        {
+          "index": 44,
+          "start_time": "00:02:56,560",
+          "end_time": "00:02:58,440",
+          "text": "But come on… Elise is going.",
+          "speaker": null
+        },
+        {
+          "index": 45,
+          "start_time": "00:02:58,600",
+          "end_time": "00:03:03,240",
+          "text": "–So I’m your wingman? –No, that might be a bit much.",
+          "speaker": null
+        },
+        {
+          "index": 46,
+          "start_time": "00:03:03,400",
+          "end_time": "00:03:05,440",
+          "text": "Hurry up now. I’m not waiting more than 30 minutes.",
+          "speaker": null
+        },
+        {
+          "index": 47,
+          "start_time": "00:03:05,600",
+          "end_time": "00:03:07,600",
+          "text": "–40. –No. 35.",
+          "speaker": null
+        },
+        {
+          "index": 48,
+          "start_time": "00:03:07,760",
+          "end_time": "00:03:10,600",
+          "text": "–37.5. –Hurry the hell up!",
+          "speaker": null
+        },
+        {
+          "index": 49,
+          "start_time": "00:03:18,400",
+          "end_time": "00:03:19,560",
+          "text": "Hi.",
+          "speaker": null
+        },
+        {
+          "index": 50,
+          "start_time": "00:03:19,720",
+          "end_time": "00:03:22,400",
+          "text": "Welcome. Come in.",
+          "speaker": null
+        },
+        {
+          "index": 51,
+          "start_time": "00:03:25,280",
+          "end_time": "00:03:28,800",
+          "text": "–Thanks.",
+          "speaker": "Nice house"
+        },
+        {
+          "index": 52,
+          "start_time": "00:03:28,960",
+          "end_time": "00:03:31,200",
+          "text": "Nice… suit.",
+          "speaker": null
+        },
+        {
+          "index": 53,
+          "start_time": "00:03:36,480",
+          "end_time": "00:03:39,560",
+          "text": "And here’s my family.",
+          "speaker": null
+        },
+        {
+          "index": 54,
+          "start_time": "00:03:39,720",
+          "end_time": "00:03:42,880",
+          "text": "–Wilf?",
+          "speaker": "What a fucking wilf"
+        },
+        {
+          "index": 55,
+          "start_time": "00:03:43,040",
+          "end_time": "00:03:47,800",
+          "text": "–Nothing. Nothing.",
+          "speaker": "What is it"
+        },
+        {
+          "index": 56,
+          "start_time": "00:03:47,960",
+          "end_time": "00:03:52,200",
+          "text": "My family has lived here since 1327.",
+          "speaker": null
+        },
+        {
+          "index": 57,
+          "start_time": "00:03:53,520",
+          "end_time": "00:03:55,400",
+          "text": "And here’s my dance hall.",
+          "speaker": null
+        },
+        {
+          "index": 58,
+          "start_time": "00:03:59,920",
+          "end_time": "00:04:03,120",
+          "text": "Wow! Is that who I think it is?",
+          "speaker": null
+        },
+        {
+          "index": 59,
+          "start_time": "00:04:03,280",
+          "end_time": "00:04:06,320",
+          "text": "I don’t know who you think it is, but it’s my grandmother.",
+          "speaker": null
+        },
+        {
+          "index": 60,
+          "start_time": "00:04:06,480",
+          "end_time": "00:04:09,120",
+          "text": "Is Countess Dracula your grandmother?",
+          "speaker": null
+        },
+        {
+          "index": 61,
+          "start_time": "00:04:09,280",
+          "end_time": "00:04:13,160",
+          "text": "Yes, or she was the brains behind Count Dracula.",
+          "speaker": null
+        },
+        {
+          "index": 62,
+          "start_time": "00:04:13,320",
+          "end_time": "00:04:15,720",
+          "text": "Didn’t Dracula have, like, three brides or something?",
+          "speaker": null
+        },
+        {
+          "index": 63,
+          "start_time": "00:04:15,880",
+          "end_time": "00:04:20,000",
+          "text": "Yes. That’s why she killed him… with that.",
+          "speaker": null
+        },
+        {
+          "index": 64,
+          "start_time": "00:04:22,560",
+          "end_time": "00:04:23,680",
+          "text": "You mean that…?",
+          "speaker": null
+        },
+        {
+          "index": 65,
+          "start_time": "00:04:23,840",
+          "end_time": "00:04:28,160",
+          "text": "Yes, it’s the stake, the stake that killed Count Dracula.",
+          "speaker": null
+        },
+        {
+          "index": 66,
+          "start_time": "00:04:37,720",
+          "end_time": "00:04:42,480",
+          "text": "I’ve heard that you like tacos, Alfred.",
+          "speaker": null
+        },
+        {
+          "index": 67,
+          "start_time": "00:04:42,640",
+          "end_time": "00:04:46,120",
+          "text": "–Mm…",
+          "speaker": "I eat them every Friday"
+        },
+        {
+          "index": 68,
+          "start_time": "00:04:46,280",
+          "end_time": "00:04:48,640",
+          "text": "Interesting. Just let us know if anything’s missing.",
+          "speaker": null
+        },
+        {
+          "index": 69,
+          "start_time": "00:04:48,800",
+          "end_time": "00:04:51,400",
+          "text": "Yes, we want to show appreciation for your human culture,",
+          "speaker": null
+        },
+        {
+          "index": 70,
+          "start_time": "00:04:51,560",
+          "end_time": "00:04:55,880",
+          "text": "and serve something you like. Taccos.",
+          "speaker": null
+        },
+        {
+          "index": 71,
+          "start_time": "00:04:56,040",
+          "end_time": "00:04:58,240",
+          "text": "–Tacos.",
+          "speaker": "Tacos"
+        },
+        {
+          "index": 72,
+          "start_time": "00:04:58,400",
+          "end_time": "00:05:01,920",
+          "text": "I could have gone for banana.",
+          "speaker": null
+        },
+        {
+          "index": 73,
+          "start_time": "00:05:02,080",
+          "end_time": "00:05:04,600",
+          "text": "Enough with the banana.",
+          "speaker": null
+        },
+        {
+          "index": 74,
+          "start_time": "00:05:04,760",
+          "end_time": "00:05:08,160",
+          "text": "Yes, Alfred, you’ll take good care of our daughter, I understand.",
+          "speaker": null
+        },
+        {
+          "index": 75,
+          "start_time": "00:05:08,320",
+          "end_time": "00:05:12,200",
+          "text": "Absolutely. I show her around everywhere at school and stuff.",
+          "speaker": null
+        },
+        {
+          "index": 76,
+          "start_time": "00:05:12,360",
+          "end_time": "00:05:14,280",
+          "text": "And we’re going to a party later.",
+          "speaker": null
+        },
+        {
+          "index": 77,
+          "start_time": "00:05:17,520",
+          "end_time": "00:05:19,840",
+          "text": "Study party.",
+          "speaker": null
+        },
+        {
+          "index": 78,
+          "start_time": "00:05:20,000",
+          "end_time": "00:05:22,760",
+          "text": "Reading and studying and stuff.",
+          "speaker": null
+        },
+        {
+          "index": 79,
+          "start_time": "00:05:22,920",
+          "end_time": "00:05:27,240",
+          "text": "Kiara is so happy to have met a human friend.",
+          "speaker": null
+        },
+        {
+          "index": 80,
+          "start_time": "00:05:27,400",
+          "end_time": "00:05:34,120",
+          "text": "–And you seem so open-minded. –And fearless.",
+          "speaker": null
+        },
+        {
+          "index": 81,
+          "start_time": "00:05:38,120",
+          "end_time": "00:05:40,720",
+          "text": "Yeah, I like vampires.",
+          "speaker": null
+        },
+        {
+          "index": 82,
+          "start_time": "00:05:40,880",
+          "end_time": "00:05:42,480",
+          "text": "Sorry. Cold-bloods.",
+          "speaker": null
+        },
+        {
+          "index": 83,
+          "start_time": "00:05:42,640",
+          "end_time": "00:05:44,480",
+          "text": "It’s fine to say vampires.",
+          "speaker": null
+        },
+        {
+          "index": 84,
+          "start_time": "00:05:44,640",
+          "end_time": "00:05:48,000",
+          "text": "We’re proud to be called vampires.",
+          "speaker": null
+        },
+        {
+          "index": 85,
+          "start_time": "00:05:48,160",
+          "end_time": "00:05:51,800",
+          "text": "It’s humans who came up with that nonsense about cold-bloods.",
+          "speaker": null
+        },
+        {
+          "index": 86,
+          "start_time": "00:05:53,400",
+          "end_time": "00:05:57,920",
+          "text": "Well, here at the Natt and Dag family we usually entertain our guests.",
+          "speaker": null
+        },
+        {
+          "index": 87,
+          "start_time": "00:05:58,080",
+          "end_time": "00:06:02,760",
+          "text": "Kiara, maybe you could dance for our guest?",
+          "speaker": null
+        },
+        {
+          "index": 88,
+          "start_time": "00:06:02,920",
+          "end_time": "00:06:03,920",
+          "text": "But Mom!",
+          "speaker": null
+        },
+        {
+          "index": 89,
+          "start_time": "00:06:04,080",
+          "end_time": "00:06:06,360",
+          "text": "Do you have a favorite piece, young man?",
+          "speaker": null
+        },
+        {
+          "index": 90,
+          "start_time": "00:06:06,520",
+          "end_time": "00:06:09,640",
+          "text": "Absolutely. “Crazy Frog”.",
+          "speaker": null
+        },
+        {
+          "index": 91,
+          "start_time": "00:06:09,800",
+          "end_time": "00:06:14,120",
+          "text": "Oh, interesting choice. We should be able to arrange that.",
+          "speaker": null
+        },
+        {
+          "index": 92,
+          "start_time": "00:06:14,280",
+          "end_time": "00:06:18,200",
+          "text": "Enough with the “Crazy Frog”.",
+          "speaker": null
+        },
+        {
+          "index": 93,
+          "start_time": "00:06:46,800",
+          "end_time": "00:06:48,280",
+          "text": "Ah!",
+          "speaker": null
+        },
+        {
+          "index": 94,
+          "start_time": "00:06:53,440",
+          "end_time": "00:06:56,080",
+          "text": "That went well.",
+          "speaker": null
+        },
+        {
+          "index": 95,
+          "start_time": "00:06:57,720",
+          "end_time": "00:06:59,400",
+          "text": "Jack…",
+          "speaker": null
+        },
+        {
+          "index": 96,
+          "start_time": "00:07:06,080",
+          "end_time": "00:07:07,600",
+          "text": "Alfred, run!",
+          "speaker": null
+        },
+        {
+          "index": 97,
+          "start_time": "00:07:17,600",
+          "end_time": "00:07:23,320",
+          "text": "–Go, Eric! Drive! Go! Go! –What the hell are you doing?",
+          "speaker": null
+        },
+        {
+          "index": 98,
+          "start_time": "00:07:24,600",
+          "end_time": "00:07:25,920",
+          "text": "Drive!",
+          "speaker": null
+        },
+        {
+          "index": 99,
+          "start_time": "00:07:30,520",
+          "end_time": "00:07:32,800",
+          "text": "Batgirls is the dance school’s elite group,",
+          "speaker": null
+        },
+        {
+          "index": 100,
+          "start_time": "00:07:32,960",
+          "end_time": "00:07:35,280",
+          "text": "and this year it’s you who are the school’s pride.",
+          "speaker": null
+        },
+        {
+          "index": 101,
+          "start_time": "00:07:35,440",
+          "end_time": "00:07:37,520",
+          "text": "Super good job!",
+          "speaker": null
+        },
+        {
+          "index": 102,
+          "start_time": "00:07:41,200",
+          "end_time": "00:07:45,960",
+          "text": "These are Batgirls’ competition costumes. We wear them with pride.",
+          "speaker": null
+        },
+        {
+          "index": 103,
+          "start_time": "00:07:46,120",
+          "end_time": "00:07:49,360",
+          "text": "Not just anyone can be a Batgirl.",
+          "speaker": null
+        },
+        {
+          "index": 104,
+          "start_time": "00:07:49,520",
+          "end_time": "00:07:53,520",
+          "text": "We’ve never had a guy in Batgirls before,",
+          "speaker": null
+        },
+        {
+          "index": 105,
+          "start_time": "00:07:53,680",
+          "end_time": "00:07:55,720",
+          "text": "so we don’t have any guy clothes.",
+          "speaker": null
+        },
+        {
+          "index": 106,
+          "start_time": "00:07:55,880",
+          "end_time": "00:07:59,000",
+          "text": "–But we’ll figure it out, of course.",
+          "speaker": "Too bad for you"
+        },
+        {
+          "index": 107,
+          "start_time": "00:07:59,160",
+          "end_time": "00:08:02,800",
+          "text": "With what money then were you thinking, or?",
+          "speaker": null
+        },
+        {
+          "index": 108,
+          "start_time": "00:08:04,320",
+          "end_time": "00:08:05,520",
+          "text": "Don’t worry about it anymore.",
+          "speaker": null
+        },
+        {
+          "index": 109,
+          "start_time": "00:08:05,680",
+          "end_time": "00:08:07,920",
+          "text": "It went fine. I barely had to sew anything.",
+          "speaker": null
+        },
+        {
+          "index": 110,
+          "start_time": "00:08:08,080",
+          "end_time": "00:08:09,560",
+          "text": "Probably no one will even notice.",
+          "speaker": null
+        },
+        {
+          "index": 111,
+          "start_time": "00:08:09,720",
+          "end_time": "00:08:10,960",
+          "text": "But I’m embarrassed about my parents.",
+          "speaker": null
+        },
+        {
+          "index": 112,
+          "start_time": "00:08:11,120",
+          "end_time": "00:08:13,200",
+          "text": "No, don’t be. It was so cool.",
+          "speaker": null
+        },
+        {
+          "index": 113,
+          "start_time": "00:08:13,360",
+          "end_time": "00:08:16,200",
+          "text": "It was super embarrassing.",
+          "speaker": null
+        },
+        {
+          "index": 114,
+          "start_time": "00:08:16,360",
+          "end_time": "00:08:17,520",
+          "text": "Are you sure no one is talking about it?",
+          "speaker": null
+        },
+        {
+          "index": 115,
+          "start_time": "00:08:17,680",
+          "end_time": "00:08:20,360",
+          "text": "Yes.",
+          "speaker": null
+        },
+        {
+          "index": 116,
+          "start_time": "00:08:20,520",
+          "end_time": "00:08:22,480",
+          "text": "I told you. Vampires are deadly.",
+          "speaker": null
+        },
+        {
+          "index": 117,
+          "start_time": "00:08:22,640",
+          "end_time": "00:08:24,520",
+          "text": "You’re exaggerating. It was an accident.",
+          "speaker": null
+        },
+        {
+          "index": 118,
+          "start_time": "00:08:24,680",
+          "end_time": "00:08:26,960",
+          "text": "Are you kidding? Twice in a row!",
+          "speaker": null
+        },
+        {
+          "index": 119,
+          "start_time": "00:08:27,120",
+          "end_time": "00:08:29,400",
+          "text": "First she ate everyone at the whole dance school.",
+          "speaker": null
+        },
+        {
+          "index": 120,
+          "start_time": "00:08:29,560",
+          "end_time": "00:08:33,160",
+          "text": "–It was lunch.",
+          "speaker": "Then she ate Alfred for dinner"
+        },
+        {
+          "index": 121,
+          "start_time": "00:08:33,320",
+          "end_time": "00:08:35,600",
+          "text": "Alfred comes running completely stressed out.",
+          "speaker": null
+        },
+        {
+          "index": 122,
+          "start_time": "00:08:35,760",
+          "end_time": "00:08:37,760",
+          "text": "His whole hand was bloody.",
+          "speaker": null
+        },
+        {
+          "index": 123,
+          "start_time": "00:08:37,920",
+          "end_time": "00:08:40,560",
+          "text": "I didn’t know what to do. So I’m going to go with that too.",
+          "speaker": null
+        },
+        {
+          "index": 124,
+          "start_time": "00:08:40,720",
+          "end_time": "00:08:44,360",
+          "text": "I mean, Eric just skidded off at 120 kilometers per hour.",
+          "speaker": null
+        },
+        {
+          "index": 125,
+          "start_time": "00:08:44,520",
+          "end_time": "00:08:48,000",
+          "text": "Alfred filmed everything! Everything! And Dracula’s killer was there too.",
+          "speaker": null
+        },
+        {
+          "index": 126,
+          "start_time": "00:08:48,160",
+          "end_time": "00:08:49,280",
+          "text": "Is it on YouTube?",
+          "speaker": null
+        },
+        {
+          "index": 127,
+          "start_time": "00:08:49,440",
+          "end_time": "00:08:51,120",
+          "text": "–And Snap.",
+          "speaker": "TikTok"
+        },
+        {
+          "index": 128,
+          "start_time": "00:08:51,280",
+          "end_time": "00:08:53,600",
+          "text": "You promise it’s only Eric who knows about it.",
+          "speaker": null
+        },
+        {
+          "index": 129,
+          "start_time": "00:08:53,760",
+          "end_time": "00:08:55,520",
+          "text": "Promise.",
+          "speaker": null
+        },
+        {
+          "index": 130,
+          "start_time": "00:08:55,680",
+          "end_time": "00:08:59,040",
+          "text": "Or yeah, I might have accidentally told someone else. Just one.",
+          "speaker": null
+        },
+        {
+          "index": 131,
+          "start_time": "00:08:59,200",
+          "end_time": "00:09:01,480",
+          "text": "–Yes!",
+          "speaker": "But is it true"
+        },
+        {
+          "index": 132,
+          "start_time": "00:09:01,640",
+          "end_time": "00:09:04,800",
+          "text": "I was at lunch at the family’s, and the brother was completely crazy.",
+          "speaker": null
+        },
+        {
+          "index": 133,
+          "start_time": "00:09:04,960",
+          "end_time": "00:09:06,640",
+          "text": "What did you eat then?",
+          "speaker": null
+        },
+        {
+          "index": 134,
+          "start_time": "00:09:06,800",
+          "end_time": "00:09:07,800",
+          "text": "Tacos.",
+          "speaker": null
+        },
+        {
+          "index": 135,
+          "start_time": "00:09:07,960",
+          "end_time": "00:09:11,360",
+          "text": "–Then the butler played “Crazy Frog”. –I heard it! On a cello.",
+          "speaker": null
+        },
+        {
+          "index": 136,
+          "start_time": "00:09:11,520",
+          "end_time": "00:09:13,120",
+          "text": "It’s violin.",
+          "speaker": null
+        },
+        {
+          "index": 137,
+          "start_time": "00:09:13,960",
+          "end_time": "00:09:17,080",
+          "text": "–Didn’t you have to sew anything? –Three stitches.",
+          "speaker": null
+        },
+        {
+          "index": 138,
+          "start_time": "00:09:17,240",
+          "end_time": "00:09:20,520",
+          "text": "At least three days without anesthesia.",
+          "speaker": null
+        },
+        {
+          "index": 139,
+          "start_time": "00:09:20,680",
+          "end_time": "00:09:23,440",
+          "text": "–Soft.",
+          "speaker": "Was it hard or soft tortilla"
+        },
+        {
+          "index": 140,
+          "start_time": "00:09:23,600",
+          "end_time": "00:09:25,800",
+          "text": "This party I’m going to…",
+          "speaker": null
+        },
+        {
+          "index": 141,
+          "start_time": "00:09:25,960",
+          "end_time": "00:09:28,600",
+          "text": "–I’ve never been to a party before. –The village hall party.",
+          "speaker": null
+        },
+        {
+          "index": 142,
+          "start_time": "00:09:28,760",
+          "end_time": "00:09:31,400",
+          "text": "–Hello, there’s a party tonight. –What if she comes.",
+          "speaker": null
+        },
+        {
+          "index": 143,
+          "start_time": "00:09:31,560",
+          "end_time": "00:09:33,880",
+          "text": "–Ew! How do we get there? –I can drive.",
+          "speaker": null
+        },
+        {
+          "index": 144,
+          "start_time": "00:09:34,040",
+          "end_time": "00:09:35,480",
+          "text": "No, we’re skipping it.",
+          "speaker": null
+        },
+        {
+          "index": 145,
+          "start_time": "00:09:36,560",
+          "end_time": "00:09:38,760",
+          "text": "It’s only Eric who wants to go and hang out with Elise.",
+          "speaker": null
+        },
+        {
+          "index": 146,
+          "start_time": "00:09:38,920",
+          "end_time": "00:09:42,200",
+          "text": "–What? Why?",
+          "speaker": "I want to go"
+        },
+        {
+          "index": 147,
+          "start_time": "00:09:42,360",
+          "end_time": "00:09:44,840",
+          "text": "But maybe I’m not welcome after everything that’s happened.",
+          "speaker": null
+        },
+        {
+          "index": 148,
+          "start_time": "00:09:45,000",
+          "end_time": "00:09:47,920",
+          "text": "Sure you are. They’ve already forgotten.",
+          "speaker": null
+        },
+        {
+          "index": 149,
+          "start_time": "00:09:48,080",
+          "end_time": "00:09:51,800",
+          "text": "The bloodsucker Kiara isn’t welcome anyway.",
+          "speaker": null
+        },
+        {
+          "index": 150,
+          "start_time": "00:09:51,960",
+          "end_time": "00:09:54,880",
+          "text": "Everyone’s going. It’s going to be so fun.",
+          "speaker": null
+        },
+        {
+          "index": 151,
+          "start_time": "00:09:55,040",
+          "end_time": "00:09:57,760",
+          "text": "Yeah, but village hall parties are so lame.",
+          "speaker": null
+        },
+        {
+          "index": 152,
+          "start_time": "00:09:57,920",
+          "end_time": "00:09:59,760",
+          "text": "–Yeah, I agree.",
+          "speaker": "Yeah"
+        },
+        {
+          "index": 153,
+          "start_time": "00:09:59,920",
+          "end_time": "00:10:03,760",
+          "text": "–But we’re going, right? –Of course we are.",
+          "speaker": null
+        },
+        {
+          "index": 154,
+          "start_time": "00:10:03,920",
+          "end_time": "00:10:06,520",
+          "text": "Adam, I have bad news.",
+          "speaker": null
+        },
+        {
+          "index": 155,
+          "start_time": "00:10:06,680",
+          "end_time": "00:10:09,640",
+          "text": "You need to pay for your competition costume yourself.",
+          "speaker": null
+        },
+        {
+          "index": 156,
+          "start_time": "00:10:09,800",
+          "end_time": "00:10:12,400",
+          "text": "–It’s not that expensive.",
+          "speaker": "How much does it cost then"
+        },
+        {
+          "index": 157,
+          "start_time": "00:10:12,560",
+          "end_time": "00:10:15,840",
+          "text": "–Maybe 11,000. –Excl. VAT.",
+          "speaker": null
+        },
+        {
+          "index": 158,
+          "start_time": "00:10:16,000",
+          "end_time": "00:10:18,840",
+          "text": "–But I don’t have 11,000. –Pookie…",
+          "speaker": null
+        },
+        {
+          "index": 159,
+          "start_time": "00:10:19,000",
+          "end_time": "00:10:21,800",
+          "text": "It’s not your fault that you’re so poor.",
+          "speaker": null
+        },
+        {
+          "index": 160,
+          "start_time": "00:10:21,960",
+          "end_time": "00:10:23,840",
+          "text": "We’ll find someone else.",
+          "speaker": null
+        },
+        {
+          "index": 161,
+          "start_time": "00:10:24,000",
+          "end_time": "00:10:29,560",
+          "text": "What are you studying? I baked.",
+          "speaker": null
+        },
+        {
+          "index": 162,
+          "start_time": "00:10:29,720",
+          "end_time": "00:10:31,480",
+          "text": "Ugh! Damn, I’m driving.",
+          "speaker": null
+        },
+        {
+          "index": 163,
+          "start_time": "00:10:34,240",
+          "end_time": "00:10:36,200",
+          "text": "Damn, are you here too? Hi!",
+          "speaker": null
+        },
+        {
+          "index": 164,
+          "start_time": "00:10:36,360",
+          "end_time": "00:10:40,640",
+          "text": "–What…? Are you studying, or? –Yeah, what does it look like?",
+          "speaker": null
+        },
+        {
+          "index": 165,
+          "start_time": "00:10:40,800",
+          "end_time": "00:10:45,560",
+          "text": "Shh! We speak in small letters in this house.",
+          "speaker": null
+        },
+        {
+          "index": 166,
+          "start_time": "00:10:45,720",
+          "end_time": "00:10:49,720",
+          "text": "–Did you want something, or? –No, no.",
+          "speaker": null
+        },
+        {
+          "index": 167,
+          "start_time": "00:10:49,880",
+          "end_time": "00:10:52,040",
+          "text": "Or yeah, I have something for you.",
+          "speaker": null
+        },
+        {
+          "index": 168,
+          "start_time": "00:10:52,200",
+          "end_time": "00:10:58,080",
+          "text": "I actually baked. Lactose-free, of course. I’m sorry.",
+          "speaker": null
+        },
+        {
+          "index": 169,
+          "start_time": "00:10:58,240",
+          "end_time": "00:11:03,080",
+          "text": "Oh… Sorry, pastries, they’re not allowed in here.",
+          "speaker": null
+        },
+        {
+          "index": 170,
+          "start_time": "00:11:03,240",
+          "end_time": "00:11:04,240",
+          "text": "No.",
+          "speaker": null
+        },
+        {
+          "index": 171,
+          "start_time": "00:11:04,400",
+          "end_time": "00:11:08,160",
+          "text": "–Yeah.",
+          "speaker": "Keep them in the bag"
+        },
+        {
+          "index": 172,
+          "start_time": "00:11:08,320",
+          "end_time": "00:11:12,200",
+          "text": "–For saying we weren’t together.",
+          "speaker": "For what"
+        },
+        {
+          "index": 173,
+          "start_time": "00:11:12,360",
+          "end_time": "00:11:13,640",
+          "text": "And the other thing too, of course.",
+          "speaker": null
+        },
+        {
+          "index": 174,
+          "start_time": "00:11:13,800",
+          "end_time": "00:11:16,240",
+          "text": "–Yeah, but it’ll probably be fine.",
+          "speaker": "Sorry"
+        },
+        {
+          "index": 175,
+          "start_time": "00:11:16,400",
+          "end_time": "00:11:20,080",
+          "text": "–See you at the village hall party, right?",
+          "speaker": "I have to go now"
+        },
+        {
+          "index": 176,
+          "start_time": "00:11:20,240",
+          "end_time": "00:11:21,800",
+          "text": "It’ll be fun. –Yeah.",
+          "speaker": "Mm"
+        },
+        {
+          "index": 177,
+          "start_time": "00:11:21,960",
+          "end_time": "00:11:25,600",
+          "text": "By the way, it’s Chloe who’s lactose. I’m gluten.",
+          "speaker": null
+        },
+        {
+          "index": 178,
+          "start_time": "00:11:29,320",
+          "end_time": "00:11:31,000",
+          "text": "Damn!",
+          "speaker": null
+        },
+        {
+          "index": 179,
+          "start_time": "00:11:31,160",
+          "end_time": "00:11:34,280",
+          "text": "–That wasn’t awkward at all. –No.",
+          "speaker": null
+        },
+        {
+          "index": 180,
+          "start_time": "00:11:35,680",
+          "end_time": "00:11:38,280",
+          "text": "I want to warn you there might be a dance circle later.",
+          "speaker": null
+        },
+        {
+          "index": 181,
+          "start_time": "00:11:38,440",
+          "end_time": "00:11:43,040",
+          "text": "What’s that? –You don’t know what a dance circle is?",
+          "speaker": "A dance circle"
+        },
+        {
+          "index": 182,
+          "start_time": "00:11:43,200",
+          "end_time": "00:11:45,800",
+          "text": "Okay, it’s about there being a big circle",
+          "speaker": null
+        },
+        {
+          "index": 183,
+          "start_time": "00:11:45,960",
+          "end_time": "00:11:49,360",
+          "text": "and then people go in two by two. Do you get what I mean?",
+          "speaker": null
+        },
+        {
+          "index": 184,
+          "start_time": "00:11:49,520",
+          "end_time": "00:11:52,600",
+          "text": "I can’t take any more. You can go.",
+          "speaker": null
+        },
+        {
+          "index": 185,
+          "start_time": "00:11:52,760",
+          "end_time": "00:11:55,120",
+          "text": "But I don’t know what to wear tonight.",
+          "speaker": null
+        },
+        {
+          "index": 186,
+          "start_time": "00:11:55,280",
+          "end_time": "00:11:58,000",
+          "text": "You have to wear a dress and high heels.",
+          "speaker": null
+        },
+        {
+          "index": 187,
+          "start_time": "00:11:58,160",
+          "end_time": "00:12:02,040",
+          "text": "But I thought that… –Yup. You need rhinestones too.",
+          "speaker": "Do they"
+        },
+        {
+          "index": 188,
+          "start_time": "00:12:02,200",
+          "end_time": "00:12:06,000",
+          "text": "Or slits or whatever it’s called. Gala attire, luxury, lipstick.",
+          "speaker": null
+        },
+        {
+          "index": 189,
+          "start_time": "00:12:06,160",
+          "end_time": "00:12:08,480",
+          "text": "That’s standard at village hall parties.",
+          "speaker": null
+        },
+        {
+          "index": 190,
+          "start_time": "00:12:09,840",
+          "end_time": "00:12:11,720",
+          "text": "A-brunn!",
+          "speaker": null
+        },
+        {
+          "index": 191,
+          "start_time": "00:12:12,760",
+          "end_time": "00:12:13,760",
+          "text": "What is that?",
+          "speaker": null
+        },
+        {
+          "index": 192,
+          "start_time": "00:12:13,920",
+          "end_time": "00:12:17,320",
+          "text": "If you touch an A-brunn you get anal sex or bad luck?",
+          "speaker": null
+        },
+        {
+          "index": 193,
+          "start_time": "00:12:17,480",
+          "end_time": "00:12:19,680",
+          "text": "–It’s a bit unclear. –What?",
+          "speaker": null
+        },
+        {
+          "index": 194,
+          "start_time": "00:12:19,840",
+          "end_time": "00:12:21,760",
+          "text": "It’s kind of like God wants. Come on.",
+          "speaker": null
+        },
+        {
+          "index": 195,
+          "start_time": "00:12:29,760",
+          "end_time": "00:12:31,200",
+          "text": "I’m so nervous about the party.",
+          "speaker": null
+        },
+        {
+          "index": 196,
+          "start_time": "00:12:31,360",
+          "end_time": "00:12:33,600",
+          "text": "Good thing I have you who knows what’s up.",
+          "speaker": null
+        },
+        {
+          "index": 197,
+          "start_time": "00:12:33,760",
+          "end_time": "00:12:36,440",
+          "text": "Otherwise I would have shown up in jeans and a top.",
+          "speaker": null
+        },
+        {
+          "index": 198,
+          "start_time": "00:12:36,600",
+          "end_time": "00:12:37,760",
+          "text": "That’s what friends are for.",
+          "speaker": null
+        },
+        {
+          "index": 199,
+          "start_time": "00:12:37,920",
+          "end_time": "00:12:40,200",
+          "text": "And by the way, don’t worry about the haters.",
+          "speaker": null
+        },
+        {
+          "index": 200,
+          "start_time": "00:12:40,360",
+          "end_time": "00:12:43,680",
+          "text": "I’m trying, but sometimes I wish I wasn’t a vampire.",
+          "speaker": null
+        },
+        {
+          "index": 201,
+          "start_time": "00:12:43,840",
+          "end_time": "00:12:44,560",
+          "text": "Don’t say that!",
+          "speaker": null
+        },
+        {
+          "index": 202,
+          "start_time": "00:12:44,720",
+          "end_time": "00:12:49,120",
+          "text": "It’s so cool to be a vampire, and a little scary.",
+          "speaker": null
+        },
+        {
+          "index": 203,
+          "start_time": "00:12:50,120",
+          "end_time": "00:12:52,160",
+          "text": "See you later!",
+          "speaker": null
+        },
+        {
+          "index": 204,
+          "start_time": "00:12:59,040",
+          "end_time": "00:13:01,160",
+          "text": "Gross!",
+          "speaker": null
+        },
+        {
+          "index": 205,
+          "start_time": "00:13:23,920",
+          "end_time": "00:13:27,680",
+          "text": "So mature of Elise to forgive Eric, despite everything. So big of her.",
+          "speaker": null
+        },
+        {
+          "index": 206,
+          "start_time": "00:13:27,840",
+          "end_time": "00:13:30,200",
+          "text": "Yeah, they’re so cute together.",
+          "speaker": null
+        },
+        {
+          "index": 207,
+          "start_time": "00:13:31,680",
+          "end_time": "00:13:32,960",
+          "text": "I mean, so embarrassing.",
+          "speaker": null
+        },
+        {
+          "index": 208,
+          "start_time": "00:13:33,120",
+          "end_time": "00:13:36,880",
+          "text": "–Can’t they just give up sometime?",
+          "speaker": "Why is she taking him back"
+        },
+        {
+          "index": 209,
+          "start_time": "00:13:37,040",
+          "end_time": "00:13:40,120",
+          "text": "Can’t even look. So cringe.",
+          "speaker": null
+        },
+        {
+          "index": 210,
+          "start_time": "00:13:55,440",
+          "end_time": "00:13:57,320",
+          "text": "Come on, Affe. Pull yourself together.",
+          "speaker": null
+        },
+        {
+          "index": 211,
+          "start_time": "00:13:57,480",
+          "end_time": "00:14:01,440",
+          "text": "She might think she’s not invited because she’s a cold-blood.",
+          "speaker": null
+        },
+        {
+          "index": 212,
+          "start_time": "00:14:01,600",
+          "end_time": "00:14:03,360",
+          "text": "Yeah, you’re probably right.",
+          "speaker": null
+        },
+        {
+          "index": 213,
+          "start_time": "00:14:03,520",
+          "end_time": "00:14:06,160",
+          "text": "She doesn’t really like that much attention anyway.",
+          "speaker": null
+        }
+      ]
+    },
+    {
+      "id": "s01e03_sc002",
+      "start_time": "00:14:37,800",
+      "end_time": "00:23:13,440",
+      "location": null,
+      "characters": [
+        "You think so",
+        "Last one up is an idiot",
+        "You too",
+        "Should we leave",
+        "No",
+        "Of course everyone should get a chance",
+        "What",
+        "Sounds like you have a new friend"
+      ],
+      "dialogue": [
+        {
+          "index": 214,
+          "start_time": "00:14:37,800",
+          "end_time": "00:14:42,240",
+          "text": "–Hi, Affe. –Hi, Kiara.",
+          "speaker": null
+        },
+        {
+          "index": 215,
+          "start_time": "00:14:44,440",
+          "end_time": "00:14:46,600",
+          "text": "What do we do now?",
+          "speaker": null
+        },
+        {
+          "index": 216,
+          "start_time": "00:15:00,240",
+          "end_time": "00:15:03,720",
+          "text": "Because if you lose courage and fall to your knees",
+          "speaker": null
+        },
+        {
+          "index": 217,
+          "start_time": "00:15:03,880",
+          "end_time": "00:15:05,920",
+          "text": "you can rest here with me",
+          "speaker": null
+        },
+        {
+          "index": 218,
+          "start_time": "00:15:06,080",
+          "end_time": "00:15:07,080",
+          "text": "Look at this.",
+          "speaker": null
+        },
+        {
+          "index": 219,
+          "start_time": "00:15:07,240",
+          "end_time": "00:15:10,440",
+          "text": "Like a rock in the storm to lean on",
+          "speaker": null
+        },
+        {
+          "index": 220,
+          "start_time": "00:15:10,600",
+          "end_time": "00:15:13,600",
+          "text": "And I will never let you down",
+          "speaker": null
+        },
+        {
+          "index": 221,
+          "start_time": "00:15:13,760",
+          "end_time": "00:15:20,480",
+          "text": "I will follow you through fire and water, over land and sea",
+          "speaker": null
+        },
+        {
+          "index": 222,
+          "start_time": "00:15:20,640",
+          "end_time": "00:15:25,640",
+          "text": "I will love you until my heart stops beating",
+          "speaker": null
+        },
+        {
+          "index": 223,
+          "start_time": "00:15:25,800",
+          "end_time": "00:15:27,400",
+          "text": "And we hate AIK!",
+          "speaker": null
+        },
+        {
+          "index": 224,
+          "start_time": "00:15:27,560",
+          "end_time": "00:15:34,920",
+          "text": "From the highest mountain to the deepest valley I will go",
+          "speaker": null
+        },
+        {
+          "index": 225,
+          "start_time": "00:15:35,080",
+          "end_time": "00:15:37,440",
+          "text": "She was so hot tonight.",
+          "speaker": null
+        },
+        {
+          "index": 226,
+          "start_time": "00:15:37,600",
+          "end_time": "00:15:39,640",
+          "text": "Yeah, vampires are still pretty cool.",
+          "speaker": null
+        },
+        {
+          "index": 227,
+          "start_time": "00:15:39,800",
+          "end_time": "00:15:41,960",
+          "text": "I know. And she’s good at dancing too.",
+          "speaker": null
+        },
+        {
+          "index": 228,
+          "start_time": "00:15:42,120",
+          "end_time": "00:15:44,360",
+          "text": "Yeah, she’s better than Chloe.",
+          "speaker": null
+        },
+        {
+          "index": 229,
+          "start_time": "00:15:44,520",
+          "end_time": "00:15:48,600",
+          "text": "I think I’ve actually changed my mind. I like Kiara now.",
+          "speaker": null
+        },
+        {
+          "index": 230,
+          "start_time": "00:15:48,760",
+          "end_time": "00:15:50,680",
+          "text": "/TOILET FLUSHING/",
+          "speaker": null
+        },
+        {
+          "index": 231,
+          "start_time": "00:15:54,520",
+          "end_time": "00:15:57,080",
+          "text": "–And?",
+          "speaker": "Sounds like you have a new friend"
+        },
+        {
+          "index": 232,
+          "start_time": "00:15:57,240",
+          "end_time": "00:16:00,040",
+          "text": "Maybe she can take your spot in Batgirls.",
+          "speaker": null
+        },
+        {
+          "index": 233,
+          "start_time": "00:16:03,840",
+          "end_time": "00:16:06,720",
+          "text": "I think Chloe is changing tactics now.",
+          "speaker": null
+        },
+        {
+          "index": 234,
+          "start_time": "00:16:06,880",
+          "end_time": "00:16:13,680",
+          "text": "I will follow you through fire and water, over land and sea",
+          "speaker": null
+        },
+        {
+          "index": 235,
+          "start_time": "00:16:13,840",
+          "end_time": "00:16:19,240",
+          "text": "I will love you until my heart stops beating",
+          "speaker": null
+        },
+        {
+          "index": 236,
+          "start_time": "00:16:27,520",
+          "end_time": "00:16:31,120",
+          "text": "Through time and space Yes, all my days…",
+          "speaker": null
+        },
+        {
+          "index": 237,
+          "start_time": "00:16:31,280",
+          "end_time": "00:16:34,880",
+          "text": "So you’ve changed your mind? –No, I’ve always thought that.",
+          "speaker": "What"
+        },
+        {
+          "index": 238,
+          "start_time": "00:16:35,040",
+          "end_time": "00:16:37,640",
+          "text": "–But how do we do that then?",
+          "speaker": "Of course everyone should get a chance"
+        },
+        {
+          "index": 239,
+          "start_time": "00:16:37,800",
+          "end_time": "00:16:40,120",
+          "text": "Kiara. She’s a perfect member.",
+          "speaker": null
+        },
+        {
+          "index": 240,
+          "start_time": "00:16:40,280",
+          "end_time": "00:16:44,080",
+          "text": "She’s cool, rich, hot and diversity, like the principal wants.",
+          "speaker": null
+        },
+        {
+          "index": 241,
+          "start_time": "00:16:44,240",
+          "end_time": "00:16:47,200",
+          "text": "I really want to give her a chance.",
+          "speaker": null
+        },
+        {
+          "index": 242,
+          "start_time": "00:16:50,680",
+          "end_time": "00:16:52,760",
+          "text": "You there, bitch ass. Move!",
+          "speaker": null
+        },
+        {
+          "index": 243,
+          "start_time": "00:16:55,360",
+          "end_time": "00:16:56,360",
+          "text": "Nice dress you’ve got.",
+          "speaker": null
+        },
+        {
+          "index": 244,
+          "start_time": "00:16:56,520",
+          "end_time": "00:16:59,040",
+          "text": "I would never have been comfortable in that one.",
+          "speaker": null
+        },
+        {
+          "index": 245,
+          "start_time": "00:16:59,200",
+          "end_time": "00:17:01,920",
+          "text": "–Thanks! –I just wanted to say you’re awesome.",
+          "speaker": null
+        },
+        {
+          "index": 246,
+          "start_time": "00:17:02,080",
+          "end_time": "00:17:06,960",
+          "text": "–Yeah. I just need to keep a high level.",
+          "speaker": "You think so"
+        },
+        {
+          "index": 247,
+          "start_time": "00:17:07,120",
+          "end_time": "00:17:08,720",
+          "text": "Some people think I push a bit too hard,",
+          "speaker": null
+        },
+        {
+          "index": 248,
+          "start_time": "00:17:08,880",
+          "end_time": "00:17:12,640",
+          "text": "but it’s for Batgirls’ best. Do you want to be in?",
+          "speaker": null
+        },
+        {
+          "index": 249,
+          "start_time": "00:17:12,800",
+          "end_time": "00:17:15,680",
+          "text": "And dance? I didn’t think I passed the audition.",
+          "speaker": null
+        },
+        {
+          "index": 250,
+          "start_time": "00:17:15,840",
+          "end_time": "00:17:19,040",
+          "text": "I get to choose who I want. You can take Adam’s spot.",
+          "speaker": null
+        },
+        {
+          "index": 251,
+          "start_time": "00:17:19,200",
+          "end_time": "00:17:23,760",
+          "text": "I think it’s completely right for you. Congratulations!",
+          "speaker": null
+        },
+        {
+          "index": 252,
+          "start_time": "00:17:24,880",
+          "end_time": "00:17:27,880",
+          "text": "However, you have to dump that nerd.",
+          "speaker": null
+        },
+        {
+          "index": 253,
+          "start_time": "00:17:28,040",
+          "end_time": "00:17:30,480",
+          "text": "Who? –Come on, you get it.",
+          "speaker": "What"
+        },
+        {
+          "index": 254,
+          "start_time": "00:17:30,640",
+          "end_time": "00:17:33,760",
+          "text": "The nerd. Lame-Alfred.",
+          "speaker": null
+        },
+        {
+          "index": 255,
+          "start_time": "00:17:33,920",
+          "end_time": "00:17:37,120",
+          "text": "–Oh… Yeah. –He’s not good for our reputation.",
+          "speaker": null
+        },
+        {
+          "index": 256,
+          "start_time": "00:17:38,160",
+          "end_time": "00:17:40,320",
+          "text": "Hello, hello! Can everyone look over here for a second?",
+          "speaker": null
+        },
+        {
+          "index": 257,
+          "start_time": "00:17:40,480",
+          "end_time": "00:17:43,040",
+          "text": "So I’ve dedicated a song",
+          "speaker": null
+        },
+        {
+          "index": 258,
+          "start_time": "00:17:43,200",
+          "end_time": "00:17:47,360",
+          "text": "to a very special person here inside.",
+          "speaker": null
+        },
+        {
+          "index": 259,
+          "start_time": "00:17:48,680",
+          "end_time": "00:17:50,320",
+          "text": "Come! Let’s go.",
+          "speaker": null
+        },
+        {
+          "index": 260,
+          "start_time": "00:17:50,480",
+          "end_time": "00:17:54,520",
+          "text": "I can only say this: You know who you are.",
+          "speaker": null
+        },
+        {
+          "index": 261,
+          "start_time": "00:17:57,600",
+          "end_time": "00:17:59,720",
+          "text": "Come on!",
+          "speaker": null
+        },
+        {
+          "index": 262,
+          "start_time": "00:17:59,880",
+          "end_time": "00:18:05,200",
+          "text": "There’s a guy at this school who’s obsessed with vampires",
+          "speaker": null
+        },
+        {
+          "index": 263,
+          "start_time": "00:18:05,360",
+          "end_time": "00:18:10,320",
+          "text": "Kiara, why don’t you run away Alfred has a bowl cut",
+          "speaker": null
+        },
+        {
+          "index": 264,
+          "start_time": "00:18:10,480",
+          "end_time": "00:18:13,920",
+          "text": "Alfred is a nerd!",
+          "speaker": null
+        },
+        {
+          "index": 265,
+          "start_time": "00:18:15,880",
+          "end_time": "00:18:20,280",
+          "text": "Alfred is a nerd!",
+          "speaker": null
+        },
+        {
+          "index": 266,
+          "start_time": "00:18:20,440",
+          "end_time": "00:18:26,120",
+          "text": "N-n-n-n-n-n-nerd! N-n-n-n-n-n-nerd!",
+          "speaker": null
+        },
+        {
+          "index": 267,
+          "start_time": "00:18:26,280",
+          "end_time": "00:18:30,040",
+          "text": "Because Alfred is a nerd!",
+          "speaker": null
+        },
+        {
+          "index": 268,
+          "start_time": "00:18:32,600",
+          "end_time": "00:18:35,920",
+          "text": "–Already? I thought they were pretty good.",
+          "speaker": "Should we leave"
+        },
+        {
+          "index": 269,
+          "start_time": "00:18:36,080",
+          "end_time": "00:18:37,480",
+          "text": "Come on!",
+          "speaker": null
+        },
+        {
+          "index": 270,
+          "start_time": "00:18:37,640",
+          "end_time": "00:18:40,080",
+          "text": "For Kiara he has feelings",
+          "speaker": null
+        },
+        {
+          "index": 271,
+          "start_time": "00:18:40,240",
+          "end_time": "00:18:42,720",
+          "text": "but he always ends up in the friendzone",
+          "speaker": null
+        },
+        {
+          "index": 272,
+          "start_time": "00:18:42,880",
+          "end_time": "00:18:48,160",
+          "text": "Kiara, get pepper spray because Alfred wants to bang you",
+          "speaker": null
+        },
+        {
+          "index": 273,
+          "start_time": "00:18:48,320",
+          "end_time": "00:18:51,520",
+          "text": "Alfred is a nerd!",
+          "speaker": null
+        },
+        {
+          "index": 274,
+          "start_time": "00:18:53,320",
+          "end_time": "00:18:57,440",
+          "text": "Alfred, he’s disturbed!",
+          "speaker": null
+        },
+        {
+          "index": 275,
+          "start_time": "00:18:58,200",
+          "end_time": "00:19:03,520",
+          "text": "N-n-n-n-n-n-nerd! N-n-n-n-n-n-nerd!",
+          "speaker": null
+        },
+        {
+          "index": 276,
+          "start_time": "00:19:03,680",
+          "end_time": "00:19:08,400",
+          "text": "Because Alfred is a nerd!",
+          "speaker": null
+        },
+        {
+          "index": 277,
+          "start_time": "00:19:13,040",
+          "end_time": "00:19:15,480",
+          "text": "No, not again.",
+          "speaker": null
+        },
+        {
+          "index": 278,
+          "start_time": "00:19:17,440",
+          "end_time": "00:19:19,400",
+          "text": "/WET FART/",
+          "speaker": null
+        },
+        {
+          "index": 279,
+          "start_time": "00:19:22,760",
+          "end_time": "00:19:27,600",
+          "text": "Because Alfred is a nerd!",
+          "speaker": null
+        },
+        {
+          "index": 280,
+          "start_time": "00:19:29,440",
+          "end_time": "00:19:33,080",
+          "text": "–Want to borrow my hoodie, or? –No, it’s fine.",
+          "speaker": null
+        },
+        {
+          "index": 281,
+          "start_time": "00:19:35,440",
+          "end_time": "00:19:38,720",
+          "text": "But you can warm me up in another way.",
+          "speaker": null
+        },
+        {
+          "index": 282,
+          "start_time": "00:19:38,880",
+          "end_time": "00:19:44,760",
+          "text": "–So we’re back together! –If everything wasn’t so complicated.",
+          "speaker": null
+        },
+        {
+          "index": 283,
+          "start_time": "00:19:44,920",
+          "end_time": "00:19:48,720",
+          "text": "And if I just wasn’t so damn clumsy all the time.",
+          "speaker": null
+        },
+        {
+          "index": 284,
+          "start_time": "00:19:54,040",
+          "end_time": "00:19:56,120",
+          "text": "What are you looking at? Ignore them.",
+          "speaker": null
+        },
+        {
+          "index": 285,
+          "start_time": "00:19:56,280",
+          "end_time": "00:19:58,440",
+          "text": "I don’t want to be like that, but you should really go home now.",
+          "speaker": null
+        },
+        {
+          "index": 286,
+          "start_time": "00:19:58,600",
+          "end_time": "00:20:01,720",
+          "text": "Shouldn’t you too? My parents won’t notice anything.",
+          "speaker": null
+        },
+        {
+          "index": 287,
+          "start_time": "00:20:01,880",
+          "end_time": "00:20:04,920",
+          "text": "–It’s not them I’m thinking about. –Don’t worry about him.",
+          "speaker": null
+        },
+        {
+          "index": 288,
+          "start_time": "00:20:05,080",
+          "end_time": "00:20:07,600",
+          "text": "Don’t worry about a bloodthirsty big brother.",
+          "speaker": null
+        },
+        {
+          "index": 289,
+          "start_time": "00:20:07,760",
+          "end_time": "00:20:10,240",
+          "text": "Please Alfred, you’re my guide.",
+          "speaker": null
+        },
+        {
+          "index": 290,
+          "start_time": "00:20:13,560",
+          "end_time": "00:20:14,560",
+          "text": "Okay then.",
+          "speaker": null
+        },
+        {
+          "index": 291,
+          "start_time": "00:20:14,720",
+          "end_time": "00:20:16,480",
+          "text": "It’s open.",
+          "speaker": null
+        },
+        {
+          "index": 292,
+          "start_time": "00:20:18,640",
+          "end_time": "00:20:23,040",
+          "text": "–Eric! The gate is open! –Come on, let’s go swimming!",
+          "speaker": null
+        },
+        {
+          "index": 293,
+          "start_time": "00:20:23,200",
+          "end_time": "00:20:25,160",
+          "text": "Hi boys! Come on!",
+          "speaker": null
+        },
+        {
+          "index": 294,
+          "start_time": "00:20:30,040",
+          "end_time": "00:20:33,000",
+          "text": "Damn, how childish!",
+          "speaker": null
+        },
+        {
+          "index": 295,
+          "start_time": "00:20:59,760",
+          "end_time": "00:21:02,000",
+          "text": "Jump in then. Vampires can’t handle water?",
+          "speaker": null
+        },
+        {
+          "index": 296,
+          "start_time": "00:21:02,160",
+          "end_time": "00:21:07,120",
+          "text": "–Yeah, but I don’t want to get my hair wet. –Bath wimp!",
+          "speaker": null
+        },
+        {
+          "index": 297,
+          "start_time": "00:21:07,280",
+          "end_time": "00:21:10,960",
+          "text": "But tell me why you like vampires so much.",
+          "speaker": null
+        },
+        {
+          "index": 298,
+          "start_time": "00:21:11,120",
+          "end_time": "00:21:14,800",
+          "text": "Because they’re cool, hot, rich, fast.",
+          "speaker": null
+        },
+        {
+          "index": 299,
+          "start_time": "00:21:14,960",
+          "end_time": "00:21:16,440",
+          "text": "Thanks!",
+          "speaker": null
+        },
+        {
+          "index": 300,
+          "start_time": "00:21:25,200",
+          "end_time": "00:21:28,720",
+          "text": "–Yo! –Come on, tell me now.",
+          "speaker": null
+        },
+        {
+          "index": 301,
+          "start_time": "00:21:28,880",
+          "end_time": "00:21:31,320",
+          "text": "Stop nagging. I can’t be bothered to tell it.",
+          "speaker": null
+        },
+        {
+          "index": 302,
+          "start_time": "00:21:31,480",
+          "end_time": "00:21:33,240",
+          "text": "Tell me why vampires are so rich instead.",
+          "speaker": null
+        },
+        {
+          "index": 303,
+          "start_time": "00:21:33,400",
+          "end_time": "00:21:36,200",
+          "text": "Now we’re doing the sauna, guys.",
+          "speaker": null
+        },
+        {
+          "index": 304,
+          "start_time": "00:21:36,360",
+          "end_time": "00:21:38,840",
+          "text": "–Get up!",
+          "speaker": "Last one up is an idiot"
+        },
+        {
+          "index": 305,
+          "start_time": "00:21:39,000",
+          "end_time": "00:21:42,280",
+          "text": "–Come on, let’s go!",
+          "speaker": "No"
+        },
+        {
+          "index": 306,
+          "start_time": "00:21:46,520",
+          "end_time": "00:21:50,360",
+          "text": "–Damn, it’s so hot! –Yeah thanks, I can see that.",
+          "speaker": null
+        },
+        {
+          "index": 307,
+          "start_time": "00:21:50,520",
+          "end_time": "00:21:53,120",
+          "text": "–I can’t take any more. –Damn, you’re so red.",
+          "speaker": null
+        },
+        {
+          "index": 308,
+          "start_time": "00:21:53,280",
+          "end_time": "00:21:55,480",
+          "text": "–Not as red.",
+          "speaker": "You too"
+        },
+        {
+          "index": 309,
+          "start_time": "00:21:55,640",
+          "end_time": "00:21:57,560",
+          "text": "–Don’t rub against me! –It smells like balls in here.",
+          "speaker": null
+        },
+        {
+          "index": 310,
+          "start_time": "00:22:01,520",
+          "end_time": "00:22:04,720",
+          "text": "–But now it’s your turn to tell. –But it’s not that fun.",
+          "speaker": null
+        },
+        {
+          "index": 311,
+          "start_time": "00:22:04,880",
+          "end_time": "00:22:08,120",
+          "text": "It’s kind of a party killer actually.",
+          "speaker": null
+        },
+        {
+          "index": 312,
+          "start_time": "00:22:08,280",
+          "end_time": "00:22:12,000",
+          "text": "Okay. Something happened when I was little. An accident.",
+          "speaker": null
+        },
+        {
+          "index": 313,
+          "start_time": "00:22:12,160",
+          "end_time": "00:22:13,360",
+          "text": "Hey there.",
+          "speaker": null
+        },
+        {
+          "index": 314,
+          "start_time": "00:22:13,520",
+          "end_time": "00:22:17,000",
+          "text": "Damn, it’s so hot. I’m so fucking sweaty.",
+          "speaker": null
+        },
+        {
+          "index": 315,
+          "start_time": "00:22:26,800",
+          "end_time": "00:22:27,800",
+          "text": "Guys!",
+          "speaker": null
+        },
+        {
+          "index": 316,
+          "start_time": "00:22:27,960",
+          "end_time": "00:22:29,440",
+          "text": "Guys! Guys!",
+          "speaker": null
+        },
+        {
+          "index": 317,
+          "start_time": "00:22:32,600",
+          "end_time": "00:22:34,840",
+          "text": "Help! Help!",
+          "speaker": null
+        },
+        {
+          "index": 318,
+          "start_time": "00:22:38,480",
+          "end_time": "00:22:41,320",
+          "text": "–Help! –What are you doing?",
+          "speaker": null
+        },
+        {
+          "index": 319,
+          "start_time": "00:22:41,480",
+          "end_time": "00:22:43,360",
+          "text": "Help! Help!",
+          "speaker": null
+        },
+        {
+          "index": 320,
+          "start_time": "00:22:45,000",
+          "end_time": "00:22:46,680",
+          "text": "Eric!",
+          "speaker": null
+        },
+        {
+          "index": 321,
+          "start_time": "00:22:46,840",
+          "end_time": "00:22:49,240",
+          "text": "–Eric! Eric! –Do something!",
+          "speaker": null
+        },
+        {
+          "index": 322,
+          "start_time": "00:22:49,400",
+          "end_time": "00:22:51,760",
+          "text": "Help! Crisis-vamp!",
+          "speaker": null
+        },
+        {
+          "index": 323,
+          "start_time": "00:23:09,440",
+          "end_time": "00:23:13,440",
+          "text": "Subtitles: Iyuno for SVT",
+          "speaker": null
+        }
+      ]
+    }
+  ]
+}

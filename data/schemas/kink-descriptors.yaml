@@ -1,0 +1,1240 @@
+# Kink Descriptors Taxonomy
+# Exhaustive tagging system for dark adaptation content
+# Version: 1.0.0
+# Categories: 10 | Total Descriptors: 200+
+
+# ============================================
+# CATEGORY 1: CONSENT FRAMEWORKS (10 descriptors)
+# ============================================
+consent_frameworks:
+  - id: ssc
+    name: Safe, Sane, Consensual
+    description: Traditional framework emphasizing safety and mental capacity
+    intensity: 1
+    category: consent_frameworks
+    
+  - id: rack
+    name: Risk-Aware Consensual Kink
+    description: Acknowledges and accepts risks inherent in activities
+    intensity: 2
+    category: consent_frameworks
+    
+  - id: prick
+    name: Personal Responsibility Informed Consensual Kink
+    description: Emphasizes personal accountability for choices
+    intensity: 2
+    category: consent_frameworks
+    
+  - id: cnc
+    name: Consensual Non-Consent
+    description: Roleplay involving simulated non-consent scenarios
+    intensity: 4
+    category: consent_frameworks
+    
+  - id: tpe
+    name: Total Power Exchange
+    description: Complete surrender of autonomy to another
+    intensity: 5
+    category: consent_frameworks
+    
+  - id: blanket_consent
+    name: Blanket Consent
+    description: Pre-negotiated ongoing permission within defined limits
+    intensity: 3
+    category: consent_frameworks
+    
+  - id: enthusiastic_consent
+    name: Enthusiastic Consent
+    description: Active, eager agreement rather than passive permission
+    intensity: 1
+    category: consent_frameworks
+    
+  - id: implied_consent
+    name: Implied Consent
+    description: Consent understood through context and relationship
+    intensity: 2
+    category: consent_frameworks
+    
+  - id: ongoing_consent
+    name: Ongoing/Continuous Consent
+    description: Consent checked and reaffirmed throughout activity
+    intensity: 1
+    category: consent_frameworks
+    
+  - id: retroactive_consent
+    name: Retroactive Consent
+    description: Consent granted after the fact (narrative device)
+    intensity: 3
+    category: consent_frameworks
+
+# ============================================
+# CATEGORY 2: POWER EXCHANGE DYNAMICS (20 descriptors)
+# ============================================
+power_exchange:
+  - id: ds
+    name: Dominant/submissive (D/s)
+    description: Classic power dynamic with clear authority roles
+    intensity: 2
+    category: power_exchange
+    
+  - id: master_slave
+    name: Master/slave (M/s)
+    description: Total ownership and service dynamic
+    intensity: 4
+    category: power_exchange
+    
+  - id: caregiver_little
+    name: Caregiver/little (CG/l)
+    description: Nurturing authority with youthful submission
+    intensity: 2
+    category: power_exchange
+    
+  - id: owner_property
+    name: Owner/property
+    description: Objectification as owned possession
+    intensity: 4
+    category: power_exchange
+    
+  - id: handler_pet
+    name: Handler/pet
+    description: Animal roleplay with training and care
+    intensity: 2
+    category: power_exchange
+    
+  - id: predator_prey
+    name: Predator/prey
+    description: Hunting dynamic with pursuit and capture
+    intensity: 3
+    category: power_exchange
+    
+  - id: hunter_hunted
+    name: Hunter/hunted
+    description: Active pursuit with reversal potential
+    intensity: 3
+    category: power_exchange
+    
+  - id: captor_captive
+    name: Captor/captive
+    description: Imprisonment and Stockholm syndrome dynamics
+    intensity: 4
+    category: power_exchange
+    
+  - id: interrogator_subject
+    name: Interrogator/subject
+    description: Coercive questioning and resistance
+    intensity: 3
+    category: power_exchange
+    
+  - id: teacher_student
+    name: Teacher/student
+    description: Educational authority and learning submission
+    intensity: 2
+    category: power_exchange
+    
+  - id: employer_employee
+    name: Employer/employee
+    description: Professional hierarchy exploitation
+    intensity: 2
+    category: power_exchange
+    
+  - id: doctor_patient
+    name: Doctor/patient
+    description: Medical authority and vulnerable trust
+    intensity: 3
+    category: power_exchange
+    
+  - id: clergy_penitent
+    name: Clergy/penitent
+    description: Spiritual authority and confession
+    intensity: 3
+    category: power_exchange
+    
+  - id: royalty_subject
+    name: Royalty/subject
+    description: Feudal hierarchy and divine right
+    intensity: 3
+    category: power_exchange
+    
+  - id: patriarchal_control
+    name: Patriarchal control
+    description: Male-dominated authority structures
+    intensity: 3
+    category: power_exchange
+    
+  - id: matriarchal_control
+    name: Matriarchal control
+    description: Female-dominated authority structures
+    intensity: 3
+    category: power_exchange
+    
+  - id: age_play_authority
+    name: Age play authority
+    description: Age-based power differentials in roleplay
+    intensity: 3
+    category: power_exchange
+    
+  - id: financial_domination
+    name: Financial domination
+    description: Economic control and dependency
+    intensity: 3
+    category: power_exchange
+    
+  - id: blackmail_coercion
+    name: Blackmail/coercion
+    description: Forced compliance through leverage
+    intensity: 4
+    category: power_exchange
+    
+  - id: mind_control
+    name: Mind control
+    description: Mental domination removing agency
+    intensity: 5
+    category: power_exchange
+
+# ============================================
+# CATEGORY 3: ROLES & IDENTITIES (25 descriptors)
+# ============================================
+roles:
+  - id: dominant
+    name: Dominant
+    description: Takes control and gives direction
+    intensity: 2
+    category: roles
+    
+  - id: submissive
+    name: Submissive
+    description: Yields control and follows direction
+    intensity: 2
+    category: roles
+    
+  - id: switch
+    name: Switch
+    description: Moves between dominant and submissive roles
+    intensity: 2
+    category: roles
+    
+  - id: master
+    name: Master
+    description: Authoritative owner in M/s dynamic
+    intensity: 3
+    category: roles
+    
+  - id: mistress
+    name: Mistress
+    description: Female equivalent of Master
+    intensity: 3
+    category: roles
+    
+  - id: slave
+    name: Slave
+    description: Owned submissive in M/s dynamic
+    intensity: 4
+    category: roles
+    
+  - id: daddy
+    name: Daddy
+    description: Nurturing dominant authority figure
+    intensity: 2
+    category: roles
+    
+  - id: mommy
+    name: Mommy
+    description: Nurturing maternal dominant
+    intensity: 2
+    category: roles
+    
+  - id: little
+    name: Little
+    description: Youthful submissive persona
+    intensity: 2
+    category: roles
+    
+  - id: brat
+    name: Brat
+    description: Defiant submissive who challenges authority
+    intensity: 2
+    category: roles
+    
+  - id: tamer
+    name: Tamer
+    description: Dominant who disciplines brats
+    intensity: 2
+    category: roles
+    
+  - id: primal_hunter
+    name: Primal hunter
+    description: Animalistic pursuer in primal play
+    intensity: 3
+    category: roles
+    
+  - id: primal_prey
+    name: Primal prey
+    description: Animalistic target in primal play
+    intensity: 3
+    category: roles
+    
+  - id: pet
+    name: Pet
+    description: Owned animal persona (puppy, kitten, etc.)
+    intensity: 2
+    category: roles
+    
+  - id: handler
+    name: Handler
+    description: Owner/trainer of pet personas
+    intensity: 2
+    category: roles
+    
+  - id: owner
+    name: Owner
+    description: Possessor of property/slave
+    intensity: 4
+    category: roles
+    
+  - id: property
+    name: Property
+    description: Objectified possession
+    intensity: 4
+    category: roles
+    
+  - id: sir
+    name: Sir
+    description: Formal male dominant address
+    intensity: 2
+    category: roles
+    
+  - id: maam
+    name: Ma'am
+    description: Formal female dominant address
+    intensity: 2
+    category: roles
+    
+  - id: goddess
+    name: Goddess
+    description: Worshipped female dominant
+    intensity: 3
+    category: roles
+    
+  - id: god
+    name: God
+    description: Worshipped male dominant
+    intensity: 3
+    category: roles
+    
+  - id: sadist
+    name: Sadist
+    description: Derives pleasure from inflicting pain
+    intensity: 3
+    category: roles
+    
+  - id: masochist
+    name: Masochist
+    description: Derives pleasure from receiving pain
+    intensity: 3
+    category: roles
+    
+  - id: voyeur
+    name: Voyeur
+    description: Observes others' intimate acts
+    intensity: 2
+    category: roles
+    
+  - id: exhibitionist
+    name: Exhibitionist
+    description: Derives pleasure from being watched
+    intensity: 2
+    category: roles
+
+# ============================================
+# CATEGORY 4: PHYSICAL ACTS & PRACTICES (30 descriptors)
+# ============================================
+physical_acts:
+  # Bondage & Restraint
+  - id: bondage
+    name: Bondage
+    description: Physical restraint using ropes, cuffs, or other means
+    intensity: 2
+    category: physical_acts
+    
+  - id: shibari
+    name: Shibari/kinbaku
+    description: Japanese rope bondage as art form
+    intensity: 3
+    category: physical_acts
+    
+  - id: suspension
+    name: Suspension bondage
+    description: Hanging restrained subject in air
+    intensity: 4
+    category: physical_acts
+    
+  - id: mummification
+    name: Mummification
+    description: Complete immobilization wrapping
+    intensity: 3
+    category: physical_acts
+    
+  - id: cage_confinement
+    name: Cage confinement
+    description: Physical enclosure in cage or small space
+    intensity: 3
+    category: physical_acts
+    
+  - id: chastity
+    name: Chastity devices
+    description: Genital restriction preventing stimulation
+    intensity: 3
+    category: physical_acts
+    
+  # Impact Play
+  - id: spanking
+    name: Spanking
+    description: Hand or implement striking buttocks
+    intensity: 2
+    category: physical_acts
+    
+  - id: flogging
+    name: Flogging
+    description: Multi-tailed whip striking
+    intensity: 3
+    category: physical_acts
+    
+  - id: caning
+    name: Caning
+    description: Rigid cane striking
+    intensity: 4
+    category: physical_acts
+    
+  - id: paddling
+    name: Paddling
+    description: Flat implement striking
+    intensity: 2
+    category: physical_acts
+    
+  - id: whipping
+    name: Whipping
+    description: Single-tail whip striking
+    intensity: 4
+    category: physical_acts
+    
+  - id: cropping
+    name: Cropping
+    description: Riding crop striking
+    intensity: 3
+    category: physical_acts
+    
+  - id: slapping
+    name: Face/body slapping
+    description: Open hand striking
+    intensity: 3
+    category: physical_acts
+    
+  - id: hair_pulling
+    name: Hair pulling
+    description: Grasping and pulling hair
+    intensity: 2
+    category: physical_acts
+    
+  # Sensation Play
+  - id: wax_play
+    name: Wax play
+    description: Dripping hot wax on skin
+    intensity: 3
+    category: physical_acts
+    
+  - id: ice_play
+    name: Ice play
+    description: Cold sensation using ice
+    intensity: 2
+    category: physical_acts
+    
+  - id: knife_play
+    name: Knife play
+    description: Blade sensation without cutting
+    intensity: 4
+    category: physical_acts
+    
+  - id: needle_play
+    name: Needle play
+    description: Temporary piercing with needles
+    intensity: 5
+    category: physical_acts
+    
+  - id: fire_play
+    name: Fire play
+    description: Controlled flame sensation
+    intensity: 4
+    category: physical_acts
+    
+  - id: electrostimulation
+    name: Electrostimulation
+    description: Electrical current sensation
+    intensity: 4
+    category: physical_acts
+    
+  # Edge Play
+  - id: breath_play
+    name: Breath play/asphyxiation
+    description: Controlled oxygen restriction
+    intensity: 5
+    category: physical_acts
+    
+  - id: blood_play
+    name: Blood play
+    description: Intentional bloodletting
+    intensity: 5
+    category: physical_acts
+    
+  - id: cutting
+    name: Cutting
+    description: Intentional skin cutting
+    intensity: 5
+    category: physical_acts
+    
+  - id: branding
+    name: Branding
+    description: Permanent mark burning
+    intensity: 5
+    category: physical_acts
+    
+  - id: scarification
+    name: Scarification
+    description: Intentional scarring
+    intensity: 5
+    category: physical_acts
+    
+  # Other Physical
+  - id: figging
+    name: Figging
+    description: Ginger root insertion for burning sensation
+    intensity: 4
+    category: physical_acts
+    
+  - id: enema_play
+    name: Enema play
+    description: Forced fluid insertion
+    intensity: 4
+    category: physical_acts
+    
+  - id: watersports
+    name: Watersports
+    description: Urine play
+    intensity: 4
+    category: physical_acts
+    
+  - id: scat_play
+    name: Scat play
+    description: Feces play
+    intensity: 5
+    category: physical_acts
+    
+  - id: fisting
+    name: Fisting
+    description: Full hand insertion
+    intensity: 4
+    category: physical_acts
+
+# ============================================
+# CATEGORY 5: PSYCHOLOGICAL DYNAMICS (30 descriptors)
+# ============================================
+psychological_dynamics:
+  - id: humiliation
+    name: Humiliation
+    description: Degradation of dignity or pride
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: degradation
+    name: Degradation
+    description: Systematic lowering of status/worth
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: verbal_abuse
+    name: Verbal abuse
+    description: Harsh language and insults
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: objectification
+    name: Objectification
+    description: Treating person as object/tool
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: dollification
+    name: Dollification
+    description: Treating person as doll/mannequin
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: pet_play_mental
+    name: Pet play (mental)
+    description: Psychological reduction to animal state
+    intensity: 2
+    category: psychological_dynamics
+    
+  - id: infantilism
+    name: Infantilism
+    description: Regression to baby/child state
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: age_regression
+    name: Age regression
+    description: Mental return to younger age
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: forced_feminization
+    name: Forced feminization
+    description: Coerced feminine presentation
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: sissification
+    name: Sissification
+    description: Emasculation through feminine assignment
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: erotic_hypnosis
+    name: Erotic hypnosis
+    description: Trance induction for pleasure
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: mind_break
+    name: Mind break
+    description: Psychological destruction of resistance
+    intensity: 5
+    category: psychological_dynamics
+    
+  - id: corruption
+    name: Corruption
+    description: Moral degradation and temptation
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: conditioning
+    name: Conditioning/training
+    description: Behavioral modification through repetition
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: gaslighting
+    name: Gaslighting
+    description: Psychological manipulation doubting reality
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: Stockholm_syndrome
+    name: Stockholm syndrome
+    description: Captive developing attachment to captor
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: trauma_bonding
+    name: Trauma bonding
+    description: Attachment formed through shared trauma
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: obsession
+    name: Obsession
+    description: Fixated preoccupation with subject
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: stalking
+    name: Stalking
+    description: Persistent unwanted following/observation
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: yandere
+    name: Yandere
+    description: Violent obsessive love
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: yangire
+    name: Yangire
+    description: Violent obsession without romantic element
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: possessiveness
+    name: Possessiveness/jealousy
+    description: Controlling ownership and envy
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: abandonment_play
+    name: Abandonment play
+    description: Threat or act of desertion
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: fear_play
+    name: Fear play
+    description: Inducing terror for arousal
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: interrogation
+    name: Interrogation
+    description: Coercive questioning and resistance breaking
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: torture_psychological
+    name: Psychological torture
+    description: Mental anguish without physical harm
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: sensory_deprivation
+    name: Sensory deprivation
+    description: Removal of sensory input
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: isolation
+    name: Isolation/confinement
+    description: Solitary confinement for psychological effect
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: sleep_deprivation
+    name: Sleep deprivation
+    description: Forced wakefulness for vulnerability
+    intensity: 4
+    category: psychological_dynamics
+    
+  - id: orgasm_denial
+    name: Orgasm denial/control
+    description: Controlling sexual release
+    intensity: 3
+    category: psychological_dynamics
+    
+  - id: forced_orgasm
+    name: Forced orgasm
+    description: Compelled sexual release
+    intensity: 3
+    category: psychological_dynamics
+
+# ============================================
+# CATEGORY 6: VAMPIRE-SPECIFIC ELEMENTS (20 descriptors)
+# ============================================
+vampire_specific:
+  - id: blood_bond
+    name: Blood bond
+    description: Mystical connection through shared blood
+    intensity: 3
+    category: vampire_specific
+    
+  - id: sire_bond
+    name: Sire bond
+    description: Creator-progeny supernatural connection
+    intensity: 4
+    category: vampire_specific
+    
+  - id: blood_feeding
+    name: Blood feeding
+    description: Consumption of blood for sustenance
+    intensity: 3
+    category: vampire_specific
+    
+  - id: blood_donor
+    name: Blood donor
+    description: Willing/unwilling blood source
+    intensity: 2
+    category: vampire_specific
+    
+  - id: blood_slave
+    name: Blood slave
+    description: Dedicated blood source in bondage
+    intensity: 4
+    category: vampire_specific
+    
+  - id: glamour
+    name: Glamour
+    description: Supernatural attraction/charm
+    intensity: 2
+    category: vampire_specific
+    
+  - id: compulsion
+    name: Compulsion
+    description: Supernatural mental influence
+    intensity: 4
+    category: vampire_specific
+    
+  - id: thrall
+    name: Thrall
+    description: Human under vampire's control
+    intensity: 3
+    category: vampire_specific
+    
+  - id: ghouling
+    name: Ghouling
+    description: Partial transformation through blood
+    intensity: 3
+    category: vampire_specific
+    
+  - id: embrace
+    name: The Embrace
+    description: Transformation into vampire
+    intensity: 4
+    category: vampire_specific
+    
+  - id: diablerie
+    name: Diablerie
+    description: Consuming another vampire's soul
+    intensity: 5
+    category: vampire_specific
+    
+  - id: torpor
+    name: Torpor
+    description: Vampire hibernation state
+    intensity: 2
+    category: vampire_specific
+    
+  - id: frenzy
+    name: Frenzy
+    description: Loss of control to bloodlust
+    intensity: 4
+    category: vampire_specific
+    
+  - id: beast
+    name: The Beast
+    description: Primal vampire nature
+    intensity: 3
+    category: vampire_specific
+    
+  - id: humanity_loss
+    name: Humanity loss
+    description: Moral degradation from vampirism
+    intensity: 3
+    category: vampire_specific
+    
+  - id: clan_dynamics
+    name: Clan dynamics
+    description: Vampire lineage politics
+    intensity: 2
+    category: vampire_specific
+    
+  - id: generation_gap
+    name: Generation gap
+    description: Power based on vampire age/lineage
+    intensity: 2
+    category: vampire_specific
+    
+  - id: eternal_youth
+    name: Eternal youth/beauty
+    description: Ageless appearance fetishization
+    intensity: 2
+    category: vampire_specific
+    
+  - id: immortality_play
+    name: Immortality play
+    description: Themes of endless existence
+    intensity: 2
+    category: vampire_specific
+    
+  - id: vampire_hierarchy
+    name: Vampire hierarchy
+    description: Power structures among undead
+    intensity: 2
+    category: vampire_specific
+
+# ============================================
+# CATEGORY 7: TABOO & TRANSGRESSIVE ELEMENTS (20 descriptors)
+# ============================================
+taboo_elements:
+  - id: incest_themes
+    name: Incest themes
+    description: Familial sexual dynamics
+    intensity: 5
+    category: taboo_elements
+    
+  - id: pseudo_incest
+    name: Pseudo-incest
+    description: Step-relations or familial roleplay
+    intensity: 4
+    category: taboo_elements
+    
+  - id: age_gap
+    name: Significant age gap
+    description: Large age differential relationships
+    intensity: 3
+    category: taboo_elements
+    
+  - id: authority_abuse
+    name: Authority figure abuse
+    description: Exploitation of professional position
+    intensity: 4
+    category: taboo_elements
+    
+  - id: religious_transgression
+    name: Religious transgression
+    description: Violation of sacred vows/spaces
+    intensity: 4
+    category: taboo_elements
+    
+  - id: sacrilege
+    name: Sacrilege
+    description: Desecration of religious symbols
+    intensity: 4
+    category: taboo_elements
+    
+  - id: blasphemy
+    name: Blasphemy
+    description: Irreverence toward sacred
+    intensity: 3
+    category: taboo_elements
+    
+  - id: necrophilia_themes
+    name: Necrophilia themes
+    description: Attraction to death/undead
+    intensity: 5
+    category: taboo_elements
+    
+  - id: bestiality_themes
+    name: Bestiality themes
+    description: Animal transformation/shapeshifting play
+    intensity: 4
+    category: taboo_elements
+    
+  - id: vore
+    name: Vore
+    description: Consumption fantasy
+    intensity: 4
+    category: taboo_elements
+    
+  - id: snuff_themes
+    name: Snuff themes
+    description: Death as sexual element
+    intensity: 5
+    category: taboo_elements
+    
+  - id: rape_play
+    name: Rape play
+    description: Simulated non-consensual scenarios
+    intensity: 5
+    category: taboo_elements
+    
+  - id: kidnapping_play
+    name: Kidnapping play
+    description: Abduction scenarios
+    intensity: 4
+    category: taboo_elements
+    
+  - id: slavery_historical
+    name: Historical slavery
+    description: Antebellum or historical ownership
+    intensity: 5
+    category: taboo_elements
+    
+  - id: race_play
+    name: Race play
+    description: Racial dynamics in power exchange
+    intensity: 4
+    category: taboo_elements
+    
+  - id: Nazi_play
+    name: Nazi/prisoner play
+    description: Concentration camp scenarios
+    intensity: 5
+    category: taboo_elements
+    
+  - id: medical_experimentation
+    name: Medical experimentation
+    description: Non-consensual medical scenarios
+    intensity: 5
+    category: taboo_elements
+    
+  - id: cannibalism_themes
+    name: Cannibalism themes
+    description: Consumption of human flesh
+    intensity: 5
+    category: taboo_elements
+    
+  - id: desecration
+    name: Desecration
+    description: Violation of graves/bodies
+    intensity: 5
+    category: taboo_elements
+    
+  - id: defilement
+    name: Defilement
+    description: Corruption of innocence/purity
+    intensity: 4
+    category: taboo_elements
+
+# ============================================
+# CATEGORY 8: RELATIONSHIP STRUCTURES (15 descriptors)
+# ============================================
+relationship_structures:
+  - id: monogamy
+    name: Monogamy
+    description: Exclusive pair bonding
+    intensity: 1
+    category: relationship_structures
+    
+  - id: polyamory
+    name: Polyamory
+    description: Multiple loving relationships
+    intensity: 2
+    category: relationship_structures
+    
+  - id: open_relationship
+    name: Open relationship
+    description: Primary pair with outside encounters
+    intensity: 2
+    category: relationship_structures
+    
+  - id: swinging
+    name: Swinging
+    description: Recreational partner exchange
+    intensity: 2
+    category: relationship_structures
+    
+  - id: harem
+    name: Harem
+    description: One dominant with multiple submissives
+    intensity: 3
+    category: relationship_structures
+    
+  - id: reverse_harem
+    name: Reverse harem
+    description: One submissive with multiple dominants
+    intensity: 3
+    category: relationship_structures
+    
+  - id: leather_family
+    name: Leather family
+    description: Chosen family in leather culture
+    intensity: 2
+    category: relationship_structures
+    
+  - id: house_dynasty
+    name: House/dynasty
+    description: Organized vampire household
+    intensity: 2
+    category: relationship_structures
+    
+  - id: triad
+    name: Triad/throuple
+    description: Three-person relationship
+    intensity: 2
+    category: relationship_structures
+    
+  - id: quad
+    name: Quad
+    description: Four-person relationship
+    intensity: 2
+    category: relationship_structures
+    
+  - id: polycule
+    name: Polycule
+    description: Network of interconnected relationships
+    intensity: 2
+    category: relationship_structures
+    
+  - id: nesting_partners
+    name: Nesting partners
+    description: Primary cohabiting relationship
+    intensity: 1
+    category: relationship_structures
+    
+  - id: anchor_partners
+    name: Anchor partners
+    description: Primary emotional relationship
+    intensity: 1
+    category: relationship_structures
+    
+  - id: comet_partners
+    name: Comet partners
+    description: Occasional intense encounters
+    intensity: 2
+    category: relationship_structures
+    
+  - id: play_partners
+    name: Play partners
+    description: Scene-based without romantic element
+    intensity: 2
+    category: relationship_structures
+
+# ============================================
+# CATEGORY 9: AFTERCARE & SAFETY PROTOCOLS (10 descriptors)
+# ============================================
+aftercare_safety:
+  - id: physical_aftercare
+    name: Physical aftercare
+    description: Tending to body post-scene
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: emotional_aftercare
+    name: Emotional aftercare
+    description: Psychological support post-scene
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: safeword
+    name: Safeword system
+    description: Agreed stop signal
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: traffic_light
+    name: Traffic light system
+    description: Green/yellow/red communication
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: check_ins
+    name: Regular check-ins
+    description: Ongoing consent verification
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: negotiation
+    name: Pre-scene negotiation
+    description: Discussion of limits and desires
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: hard_limits
+    name: Hard limits
+    description: Absolute boundaries
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: soft_limits
+    name: Soft limits
+    description: Boundaries that may shift
+    intensity: 1
+    category: aftercare_safety
+    
+  - id: sub_drop
+    name: Sub drop
+    description: Post-scene emotional crash
+    intensity: 2
+    category: aftercare_safety
+    
+  - id: dom_drop
+    name: Dom drop
+    description: Dominant's post-scene emotional crash
+    intensity: 2
+    category: aftercare_safety
+
+# ============================================
+# CATEGORY 10: CONTENT WARNINGS (15 descriptors)
+# ============================================
+content_warnings:
+  - id: explicit_sexual_content
+    name: Explicit sexual content
+    description: Graphic sexual acts depicted
+    intensity: 4
+    category: content_warnings
+    
+  - id: graphic_violence
+    name: Graphic violence
+    description: Detailed physical harm
+    intensity: 4
+    category: content_warnings
+    
+  - id: sexual_violence
+    name: Sexual violence
+    description: Non-consensual sexual acts
+    intensity: 5
+    category: content_warnings
+    
+  - id: domestic_violence
+    name: Domestic violence
+    description: Intimate partner abuse
+    intensity: 4
+    category: content_warnings
+    
+  - id: child_abuse
+    name: Child abuse
+    description: Harm to minors
+    intensity: 5
+    category: content_warnings
+    
+  - id: self_harm
+    name: Self-harm
+    description: Intentional self-injury
+    intensity: 4
+    category: content_warnings
+    
+  - id: suicide
+    name: Suicide
+    description: Self-inflicted death
+    intensity: 5
+    category: content_warnings
+    
+  - id: substance_abuse
+    name: Substance abuse
+    description: Drug/alcohol misuse
+    intensity: 3
+    category: content_warnings
+    
+  - id: eating_disorders
+    name: Eating disorders
+    description: Disordered eating behaviors
+    intensity: 3
+    category: content_warnings
+    
+  - id: mental_health_issues
+    name: Mental health issues
+    description: Psychological conditions
+    intensity: 2
+    category: content_warnings
+    
+  - id: body_horror
+    name: Body horror
+    description: Disturbing bodily transformation
+    intensity: 4
+    category: content_warnings
+    
+  - id: animal_harm
+    name: Animal harm
+    description: Violence against animals
+    intensity: 4
+    category: content_warnings
+    
+  - id: homophobia
+    name: Homophobia
+    description: Anti-LGBTQ+ content
+    intensity: 3
+    category: content_warnings
+    
+  - id: transphobia
+    name: Transphobia
+    description: Anti-transgender content
+    intensity: 3
+    category: content_warnings
+    
+  - id: racism
+    name: Racism
+    description: Racial discrimination
+    intensity: 4
+    category: content_warnings
+
+# ============================================
+# METADATA
+# ============================================
+metadata:
+  version: "1.0.0"
+  total_descriptors: 215
+  categories: 10
+  last_updated: "2026-02-03"
+  intensity_scale:
+    1: "Subtextual - Implied, metaphorical, or background element"
+    2: "Suggestive - Clear hints without explicit depiction"
+    3: "Implied - Strong suggestion, reader inference required"
+    4: "Explicit - Direct depiction, clearly stated"
+    5: "Transgressive - Extreme, boundary-pushing, potentially shocking"

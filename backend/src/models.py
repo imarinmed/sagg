@@ -1,6 +1,46 @@
-from pydantic import BaseModel
-from typing import Optional, List
+from pydantic import BaseModel, Field
+from typing import Optional, List, Dict
 from datetime import datetime
+
+
+class KinkDescriptor(BaseModel):
+    descriptor: str
+    intensity: int = Field(ge=1, le=5)
+    context: Optional[str] = None
+
+
+class KinkLimit(BaseModel):
+    descriptor: str
+    type: str
+    note: Optional[str] = None
+
+
+class PreferredDynamic(BaseModel):
+    type: str
+    role: str
+    intensity: int = Field(ge=1, le=5)
+
+
+class EpisodeEvolution(BaseModel):
+    episode_id: str
+    descriptors: Dict[str, int] = {}
+
+
+class KinkProfile(BaseModel):
+    preferences: List[KinkDescriptor] = []
+    limits: List[KinkLimit] = []
+    evolution: List[EpisodeEvolution] = []
+    preferred_dynamics: List[PreferredDynamic] = []
+    consent_frameworks: List[str] = []
+
+
+class SceneTags(BaseModel):
+    content_warnings: List[str] = []
+    descriptors: List[KinkDescriptor] = []
+    consent_framework: Optional[str] = None
+    power_dynamic: Optional[Dict[str, str]] = None
+    intensity_rating: int = Field(ge=1, le=5, default=1)
+    narrative_purpose: Optional[str] = None
 
 
 class Episode(BaseModel):
@@ -20,6 +60,7 @@ class Scene(BaseModel):
     title: str
     description: Optional[str] = None
     characters: List[str]
+    tags: Optional[SceneTags] = None
 
 
 class Character(BaseModel):
@@ -31,6 +72,7 @@ class Character(BaseModel):
     adaptation_notes: Optional[str] = None
     canonical_traits: Optional[List[str]] = None
     adaptation_traits: Optional[List[str]] = None
+    kink_profile: Optional[KinkProfile] = None
 
 
 class Relationship(BaseModel):
@@ -53,7 +95,7 @@ class MythosElement(BaseModel):
 class GraphNode(BaseModel):
     id: str
     label: str
-    node_type: str  # "character", "episode", "mythos"
+    node_type: str
     metadata: Optional[dict] = None
 
 

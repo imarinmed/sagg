@@ -18,13 +18,58 @@ canonical:
 
 adaptation:
   age: 16
-  traits_added: []
-  arc_dark: ""
-  taboo_elements: []
+  traits_added:
+    - follower_submissive
+    - mean_girl_enforcer
+    - seeks_approval
+  arc_dark: "Elise's loyal enforcer finding identity through submission to alpha"
+  taboo_elements:
+    - group_dynamics
+    - submission_to_peer
   explicit_scenes: []
-  psychological_profile: ""
-  power_dynamics: ""
-  
+  psychological_profile: "Felicia defines herself through service to Elise. Her meanness is learned behavior to maintain position. Deeply submissive personality seeking dominant figure."
+  power_dynamics: "Submissive follower who enforces dominant's will. Finds security in hierarchy. Mean as defense mechanism."
+
+kink_profile:
+  preferences:
+    - id: submissive
+      intensity: 4
+      notes: "Natural follower"
+    - id: group_submission
+      intensity: 4
+      notes: "Part of mean girl pack"
+    - id: approval_seeking
+      intensity: 5
+      notes: "Needs validation from alpha"
+    - id: hierarchy
+      intensity: 4
+      notes: "Comfortable in pecking order"
+    - id: enforcer
+      intensity: 3
+      notes: "Carries out dominant's wishes"
+    - id: loyalty
+      intensity: 4
+      notes: "Devoted to Elise"
+  limits:
+    - id: independence
+      intensity: 1
+      notes: "Lost without leader"
+    - id: leadership
+      intensity: 1
+      notes: "Uncomfortable deciding"
+    - id: isolation
+      intensity: 1
+      notes: "Fears being alone"
+  evolution:
+    s01e01:
+      - id: group_submission
+        intensity: 4
+        notes: "Established as follower"
+    s01e04:
+      - id: enforcer
+        intensity: 4
+        notes: "Helps attack Kiara"
+
 appearances:
   - s01e01
   - s01e02

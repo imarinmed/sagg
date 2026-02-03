@@ -18,13 +18,52 @@ canonical:
 
 adaptation:
   age: 16
-  traits_added: []
-  arc_dark: ""
-  taboo_elements: []
+  traits_added:
+    - jock_brute
+    - physical_intimidation
+    - simple_desires
+  arc_dark: "Physical enforcer using strength to dominate"
+  taboo_elements:
+    - physical_intimidation
+    - harassment
   explicit_scenes: []
-  psychological_profile: ""
-  power_dynamics: ""
-  
+  psychological_profile: "Didde operates through physical presence and intimidation. Simple desires for status and acceptance. Uses body as tool of dominance."
+  power_dynamics: "Physical dominant who uses size and strength. Follows stronger personalities. Limited to physical intimidation."
+
+kink_profile:
+  preferences:
+    - id: physical_dominance
+      intensity: 4
+      notes: "Uses strength to control"
+    - id: intimidation
+      intensity: 4
+      notes: "Threatens physically"
+    - id: group_enforcer
+      intensity: 3
+      notes: "Muscle for mean girls"
+    - id: simple_pleasures
+      intensity: 3
+      notes: "Basic desires, no complexity"
+  limits:
+    - id: intelligence
+      intensity: 1
+      notes: "Not strategic thinker"
+    - id: subtlety
+      intensity: 1
+      notes: "Direct and obvious"
+    - id: emotional_depth
+      intensity: 1
+      notes: "Shallow emotional range"
+  evolution:
+    s01e01:
+      - id: physical_dominance
+        intensity: 3
+        notes: "Established as jock"
+    s01e04:
+      - id: intimidation
+        intensity: 4
+        notes: "Threatens Kiara"
+
 appearances:
   - s01e01
   - s01e04

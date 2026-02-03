@@ -25,13 +25,98 @@ canonical:
 
 adaptation:
   age: 17
-  traits_added: []
-  arc_dark: ""
-  taboo_elements: []
-  explicit_scenes: []
-  psychological_profile: ""
-  power_dynamics: ""
-  
+  traits_added:
+    - sexually_aggressive
+    - alpha_female
+    - revenge_obsessed
+    - power_hungry
+  arc_dark: "Queen bee turned vengeful seductress using sexuality as weapon against rival"
+  taboo_elements:
+    - manipulation
+    - sexual_aggression
+    - revenge_sex
+  explicit_scenes:
+    - s01e02_seduction_attempt
+    - s01e04_revenge_plot
+    - s01e06_public_humiliation
+  psychological_profile: "Elise's identity is built on social dominance. When Kiara threatens her position, she weaponizes sexuality to reclaim power. Her manipulation is calculated and ruthless."
+  power_dynamics: "Dominant alpha female who uses seduction and social pressure to control. Becomes more desperate and dangerous when challenged."
+
+kink_profile:
+  preferences:
+    - id: dominant
+      intensity: 4
+      notes: "Natural queen bee, controls through status"
+    - id: manipulation
+      intensity: 5
+      notes: "Expert at social and sexual manipulation"
+    - id: revenge
+      intensity: 5
+      notes: "Sexuality as weapon against rivals"
+    - id: alpha_female
+      intensity: 5
+      notes: "Maintains top position at all costs"
+    - id: public_humiliation
+      intensity: 4
+      notes: "Enjoys destroying others socially"
+    - id: seduction
+      intensity: 4
+      notes: "Uses attraction to control men"
+    - id: jealousy
+      intensity: 5
+      notes: "Intense envy drives actions"
+    - id: possessiveness
+      intensity: 4
+      notes: "Claims Alfred as territory"
+    - id: social_domination
+      intensity: 5
+      notes: "Rules through social hierarchy"
+    - id: mind_games
+      intensity: 4
+      notes: "Psychological warfare expert"
+  limits:
+    - id: submission
+      intensity: 1
+      notes: "Refuses to yield control"
+    - id: vulnerability
+      intensity: 1
+      notes: "Never shows weakness"
+    - id: genuine_intimacy
+      intensity: 2
+      notes: "Uses sex, doesn't connect"
+    - id: rejection
+      intensity: 1
+      notes: "Cannot handle being denied"
+  evolution:
+    s01e01:
+      - id: dominant
+        intensity: 5
+        notes: "Established queen bee"
+    s01e02:
+      - id: jealousy
+        intensity: 4
+        notes: "Notices Alfred's interest in Kiara"
+    s01e03:
+      - id: manipulation
+        intensity: 5
+        notes: "Plots against Kiara"
+    s01e04:
+      - id: revenge
+        intensity: 5
+        notes: "Escalates campaign against Kiara"
+    s01e05:
+      - id: public_humiliation
+        intensity: 5
+        notes: "Attempts social destruction"
+    s01e06:
+      - id: desperation
+        intensity: 4
+        notes: "Becomes more dangerous"
+    s01e07:
+      - id: defeat
+        intensity: 3
+        notes: "Loses to Kiara"
+
 appearances:
   - s01e01
   - s01e02

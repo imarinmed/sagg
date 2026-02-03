@@ -1,0 +1,1966 @@
+{
+  "id": "s01e04",
+  "title": "En oväntad fest",
+  "title_en": "An Unexpected Party",
+  "season": 1,
+  "episode_number": 4,
+  "scenes": [
+    {
+      "id": "s01e04_sc001",
+      "start_time": "00:00:09,240",
+      "end_time": "00:01:30,640",
+      "location": null,
+      "characters": [],
+      "dialogue": [
+        {
+          "index": 1,
+          "start_time": "00:00:09,240",
+          "end_time": "00:00:13,400",
+          "text": "–Guys! –Help! Help!",
+          "speaker": null
+        },
+        {
+          "index": 2,
+          "start_time": "00:00:14,920",
+          "end_time": "00:00:16,720",
+          "text": "Help!",
+          "speaker": null
+        },
+        {
+          "index": 3,
+          "start_time": "00:00:16,880",
+          "end_time": "00:00:19,960",
+          "text": "–Eric! Eric! –What are you doing?",
+          "speaker": null
+        },
+        {
+          "index": 4,
+          "start_time": "00:00:24,200",
+          "end_time": "00:00:27,360",
+          "text": "Help! Crisis-vamp!",
+          "speaker": null
+        },
+        {
+          "index": 5,
+          "start_time": "00:00:32,320",
+          "end_time": "00:00:35,000",
+          "text": "Vamp! Vamp! Vamp!",
+          "speaker": null
+        },
+        {
+          "index": 6,
+          "start_time": "00:00:38,920",
+          "end_time": "00:00:43,320",
+          "text": "What happened? Did she get triggered?",
+          "speaker": null
+        },
+        {
+          "index": 7,
+          "start_time": "00:00:45,320",
+          "end_time": "00:00:48,240",
+          "text": "It’s okay. Don’t worry.",
+          "speaker": null
+        },
+        {
+          "index": 8,
+          "start_time": "00:00:48,400",
+          "end_time": "00:00:50,440",
+          "text": "I actually thought it was pretty cool.",
+          "speaker": null
+        },
+        {
+          "index": 9,
+          "start_time": "00:00:50,600",
+          "end_time": "00:00:54,040",
+          "text": "–Too bad I didn’t get it on video. –Thanks.",
+          "speaker": null
+        },
+        {
+          "index": 10,
+          "start_time": "00:00:56,880",
+          "end_time": "00:00:58,360",
+          "text": "What is it?",
+          "speaker": null
+        },
+        {
+          "index": 11,
+          "start_time": "00:00:58,520",
+          "end_time": "00:01:02,240",
+          "text": "I’m just scared that I won’t be allowed to dance anymore.",
+          "speaker": null
+        },
+        {
+          "index": 12,
+          "start_time": "00:01:02,400",
+          "end_time": "00:01:04,840",
+          "text": "Forget about dancing. You can hang with us instead.",
+          "speaker": null
+        },
+        {
+          "index": 13,
+          "start_time": "00:01:07,720",
+          "end_time": "00:01:09,320",
+          "text": "Blood and honor.",
+          "speaker": null
+        },
+        {
+          "index": 14,
+          "start_time": "00:01:17,600",
+          "end_time": "00:01:22,280",
+          "text": "Cause we are young, wild, we are free",
+          "speaker": null
+        },
+        {
+          "index": 15,
+          "start_time": "00:01:22,440",
+          "end_time": "00:01:24,000",
+          "text": "BST!",
+          "speaker": null
+        },
+        {
+          "index": 16,
+          "start_time": "00:01:24,160",
+          "end_time": "00:01:28,280",
+          "text": "It's just the way that it's supposed to be",
+          "speaker": null
+        },
+        {
+          "index": 17,
+          "start_time": "00:01:28,440",
+          "end_time": "00:01:30,640",
+          "text": "BST!",
+          "speaker": null
+        }
+      ]
+    },
+    {
+      "id": "s01e04_sc002",
+      "start_time": "00:02:31,200",
+      "end_time": "00:18:53,040",
+      "location": null,
+      "characters": [
+        "Did he get triggered",
+        "What do you think",
+        "What are you doing",
+        "Why your brother is so fucking creepy",
+        "Kiara",
+        "Here",
+        "What the fuck",
+        "You scared me",
+        "Okay",
+        "You think we take cards or what",
+        "Hello",
+        "There has to be an ulterior motive",
+        "Give me the card",
+        "You swear",
+        "Vamp for example",
+        "Is it good",
+        "To tell something personal",
+        "What the hell are you doing",
+        "Wait for me",
+        "Just say how you feel",
+        "Who the hell tricked her into that",
+        "Stop staring at me like that",
+        "Kiara was so hot",
+        "But something happened too",
+        "What",
+        "Which one of you two is Didde",
+        "When am I getting my card back",
+        "What do you mean here",
+        "No one has done it since",
+        "I just woke up",
+        "Absolutely not",
+        "He never replies anyway",
+        "Correct",
+        "That was so cute what you wrote earlier",
+        "How do we get that then",
+        "Crazy that Kiara is having a party"
+      ],
+      "dialogue": [
+        {
+          "index": 18,
+          "start_time": "00:02:31,200",
+          "end_time": "00:02:37,560",
+          "text": "You’re far from home now. You’re lost.",
+          "speaker": null
+        },
+        {
+          "index": 19,
+          "start_time": "00:02:40,040",
+          "end_time": "00:02:43,760",
+          "text": "No, I’m not. But maybe you are.",
+          "speaker": null
+        },
+        {
+          "index": 20,
+          "start_time": "00:02:48,800",
+          "end_time": "00:02:50,520",
+          "text": "Why couldn’t we take the car?",
+          "speaker": null
+        },
+        {
+          "index": 21,
+          "start_time": "00:02:50,680",
+          "end_time": "00:02:55,440",
+          "text": "I didn’t know it was this far. Calm down. Here they come.",
+          "speaker": null
+        },
+        {
+          "index": 22,
+          "start_time": "00:02:57,840",
+          "end_time": "00:03:00,640",
+          "text": "–Seriously! –But don’t say anything stupid now.",
+          "speaker": null
+        },
+        {
+          "index": 23,
+          "start_time": "00:03:10,440",
+          "end_time": "00:03:14,440",
+          "text": "–That’s me.",
+          "speaker": "Which one of you two is Didde"
+        },
+        {
+          "index": 24,
+          "start_time": "00:03:14,600",
+          "end_time": "00:03:16,120",
+          "text": "Do you guys have any money then?",
+          "speaker": null
+        },
+        {
+          "index": 25,
+          "start_time": "00:03:17,600",
+          "end_time": "00:03:20,720",
+          "text": "–My card? Why should we take mine?",
+          "speaker": "Give me the card"
+        },
+        {
+          "index": 26,
+          "start_time": "00:03:20,880",
+          "end_time": "00:03:24,120",
+          "text": "Give me the card! Give it here!",
+          "speaker": null
+        },
+        {
+          "index": 27,
+          "start_time": "00:03:24,280",
+          "end_time": "00:03:25,720",
+          "text": "Here.",
+          "speaker": null
+        },
+        {
+          "index": 28,
+          "start_time": "00:03:26,720",
+          "end_time": "00:03:31,960",
+          "text": "–No… Or I don’t know…",
+          "speaker": "You think we take cards or what"
+        },
+        {
+          "index": 29,
+          "start_time": "00:03:33,520",
+          "end_time": "00:03:35,880",
+          "text": "Of course we fucking take cards.",
+          "speaker": null
+        },
+        {
+          "index": 30,
+          "start_time": "00:03:39,520",
+          "end_time": "00:03:42,680",
+          "text": "–Yeah, what’s your PIN? –3162.",
+          "speaker": null
+        },
+        {
+          "index": 31,
+          "start_time": "00:03:42,840",
+          "end_time": "00:03:45,040",
+          "text": "Sweet. You’ll get it back tomorrow.",
+          "speaker": null
+        },
+        {
+          "index": 32,
+          "start_time": "00:03:45,200",
+          "end_time": "00:03:47,160",
+          "text": "How the hell do you know my PIN?",
+          "speaker": null
+        },
+        {
+          "index": 33,
+          "start_time": "00:03:47,320",
+          "end_time": "00:03:49,840",
+          "text": "I’ve seen you type it in once.",
+          "speaker": null
+        },
+        {
+          "index": 34,
+          "start_time": "00:03:50,000",
+          "end_time": "00:03:52,120",
+          "text": "We’re friends. Don’t you trust me?",
+          "speaker": null
+        },
+        {
+          "index": 35,
+          "start_time": "00:03:52,280",
+          "end_time": "00:03:54,680",
+          "text": "But I don’t know yours.",
+          "speaker": null
+        },
+        {
+          "index": 36,
+          "start_time": "00:03:59,120",
+          "end_time": "00:04:03,200",
+          "text": "–Tomorrow. He said so.",
+          "speaker": "When am I getting my card back"
+        },
+        {
+          "index": 37,
+          "start_time": "00:04:12,360",
+          "end_time": "00:04:15,160",
+          "text": "How are we supposed to get this home, were you thinking?",
+          "speaker": null
+        },
+        {
+          "index": 38,
+          "start_time": "00:04:23,960",
+          "end_time": "00:04:27,920",
+          "text": "Have you ever thought about how fast I solve problems?",
+          "speaker": null
+        },
+        {
+          "index": 39,
+          "start_time": "00:04:28,080",
+          "end_time": "00:04:32,440",
+          "text": "You’re fucking king, Didde! You’re fucking king, you know that?",
+          "speaker": null
+        },
+        {
+          "index": 40,
+          "start_time": "00:04:38,600",
+          "end_time": "00:04:40,840",
+          "text": "–I scared you?!",
+          "speaker": "You scared me"
+        },
+        {
+          "index": 41,
+          "start_time": "00:04:41,000",
+          "end_time": "00:04:42,000",
+          "text": "How did you get in?",
+          "speaker": null
+        },
+        {
+          "index": 42,
+          "start_time": "00:04:42,160",
+          "end_time": "00:04:45,520",
+          "text": "What do you think? Through the door. The butler let me in.",
+          "speaker": null
+        },
+        {
+          "index": 43,
+          "start_time": "00:04:45,680",
+          "end_time": "00:04:48,920",
+          "text": "What’s everyone going to say? –About what?",
+          "speaker": "What do you think"
+        },
+        {
+          "index": 44,
+          "start_time": "00:04:49,080",
+          "end_time": "00:04:52,160",
+          "text": "I lost control and almost killed everyone yesterday.",
+          "speaker": null
+        },
+        {
+          "index": 45,
+          "start_time": "00:04:52,320",
+          "end_time": "00:04:55,520",
+          "text": "Yeah, that’s true. They’re probably talking a lot of shit.",
+          "speaker": null
+        },
+        {
+          "index": 46,
+          "start_time": "00:04:55,680",
+          "end_time": "00:04:58,840",
+          "text": "Oh, what have I done? I’m never going to be allowed to be in again.",
+          "speaker": null
+        },
+        {
+          "index": 47,
+          "start_time": "00:04:59,000",
+          "end_time": "00:05:01,600",
+          "text": "They’ll soon have something new to talk about.",
+          "speaker": null
+        },
+        {
+          "index": 48,
+          "start_time": "00:05:01,760",
+          "end_time": "00:05:05,080",
+          "text": "But maybe you should consider doing something to improve your reputation.",
+          "speaker": null
+        },
+        {
+          "index": 49,
+          "start_time": "00:05:06,280",
+          "end_time": "00:05:09,800",
+          "text": "I know! I can have a party. Then maybe I’ll become more popular.",
+          "speaker": null
+        },
+        {
+          "index": 50,
+          "start_time": "00:05:09,960",
+          "end_time": "00:05:11,680",
+          "text": "Party? You? Here?",
+          "speaker": null
+        },
+        {
+          "index": 51,
+          "start_time": "00:05:11,840",
+          "end_time": "00:05:17,800",
+          "text": "–No, that’s not going to end well. –You might be right.",
+          "speaker": null
+        },
+        {
+          "index": 52,
+          "start_time": "00:05:19,640",
+          "end_time": "00:05:22,640",
+          "text": "–I’m calling Elise.",
+          "speaker": "What are you doing"
+        },
+        {
+          "index": 53,
+          "start_time": "00:05:22,800",
+          "end_time": "00:05:26,760",
+          "text": "I’m a woman who is a vampire. Red heart.",
+          "speaker": null
+        },
+        {
+          "index": 54,
+          "start_time": "00:05:27,920",
+          "end_time": "00:05:29,360",
+          "text": "Hello?",
+          "speaker": null
+        },
+        {
+          "index": 55,
+          "start_time": "00:05:29,520",
+          "end_time": "00:05:30,720",
+          "text": "–Hi! –What are you doing?",
+          "speaker": null
+        },
+        {
+          "index": 56,
+          "start_time": "00:05:30,880",
+          "end_time": "00:05:35,000",
+          "text": "–Oh. But how are you?",
+          "speaker": "I just woke up"
+        },
+        {
+          "index": 57,
+          "start_time": "00:05:35,160",
+          "end_time": "00:05:39,440",
+          "text": "Yeah, I’m okay I guess. A bit tired and stuff. And I’m dying of shame about yesterday.",
+          "speaker": null
+        },
+        {
+          "index": 58,
+          "start_time": "00:05:39,600",
+          "end_time": "00:05:42,280",
+          "text": "But why? It wasn’t your fault.",
+          "speaker": null
+        },
+        {
+          "index": 59,
+          "start_time": "00:05:42,440",
+          "end_time": "00:05:44,000",
+          "text": "I thought everyone hated me.",
+          "speaker": null
+        },
+        {
+          "index": 60,
+          "start_time": "00:05:44,160",
+          "end_time": "00:05:47,480",
+          "text": "No, the sauna thing was clumsy. We should have thought of that.",
+          "speaker": null
+        },
+        {
+          "index": 61,
+          "start_time": "00:05:47,640",
+          "end_time": "00:05:50,440",
+          "text": "But are you okay then?",
+          "speaker": null
+        },
+        {
+          "index": 62,
+          "start_time": "00:05:51,600",
+          "end_time": "00:05:54,600",
+          "text": "–Yeah. Yeah, I’m okay.",
+          "speaker": "Hello"
+        },
+        {
+          "index": 63,
+          "start_time": "00:05:54,760",
+          "end_time": "00:05:58,200",
+          "text": "How are you then? I saw what happened between you and Eric.",
+          "speaker": null
+        },
+        {
+          "index": 64,
+          "start_time": "00:05:58,360",
+          "end_time": "00:06:01,560",
+          "text": "You saw? –Yeah. I saw you got sad.",
+          "speaker": "What"
+        },
+        {
+          "index": 65,
+          "start_time": "00:06:01,720",
+          "end_time": "00:06:03,720",
+          "text": "He left right when you were going to kiss.",
+          "speaker": null
+        },
+        {
+          "index": 66,
+          "start_time": "00:06:03,880",
+          "end_time": "00:06:07,680",
+          "text": "Yeah, I actually don’t know what I’m doing wrong anymore.",
+          "speaker": null
+        },
+        {
+          "index": 67,
+          "start_time": "00:06:07,840",
+          "end_time": "00:06:10,680",
+          "text": "I think I know. I can help you if you want.",
+          "speaker": null
+        },
+        {
+          "index": 68,
+          "start_time": "00:06:10,840",
+          "end_time": "00:06:13,560",
+          "text": "Okay. But can’t you come here then?",
+          "speaker": null
+        },
+        {
+          "index": 69,
+          "start_time": "00:06:13,720",
+          "end_time": "00:06:17,320",
+          "text": "–I promised Dad I’d change the timing belt. –Yeah, I’m coming.",
+          "speaker": null
+        },
+        {
+          "index": 70,
+          "start_time": "00:06:17,480",
+          "end_time": "00:06:19,680",
+          "text": "Okay, see you then. Bye.",
+          "speaker": null
+        },
+        {
+          "index": 71,
+          "start_time": "00:06:19,840",
+          "end_time": "00:06:22,360",
+          "text": "–I’m going to Elise. –I’m coming with you.",
+          "speaker": null
+        },
+        {
+          "index": 72,
+          "start_time": "00:06:22,520",
+          "end_time": "00:06:24,640",
+          "text": "–No, you’re not. –No.",
+          "speaker": null
+        },
+        {
+          "index": 73,
+          "start_time": "00:06:33,560",
+          "end_time": "00:06:38,720",
+          "text": "–Yeah, like, how much do you think that cost?",
+          "speaker": "Kiara was so hot"
+        },
+        {
+          "index": 74,
+          "start_time": "00:06:38,880",
+          "end_time": "00:06:42,000",
+          "text": "Did you see Kiara this weekend? What an ass!",
+          "speaker": null
+        },
+        {
+          "index": 75,
+          "start_time": "00:06:42,160",
+          "end_time": "00:06:43,320",
+          "text": "What lights, man.",
+          "speaker": null
+        },
+        {
+          "index": 76,
+          "start_time": "00:06:43,480",
+          "end_time": "00:06:46,080",
+          "text": "I didn’t know you could convert a car like that into an EPA.",
+          "speaker": null
+        },
+        {
+          "index": 77,
+          "start_time": "00:06:46,240",
+          "end_time": "00:06:49,680",
+          "text": "How did that happen? Kiara suddenly became super popular.",
+          "speaker": null
+        },
+        {
+          "index": 78,
+          "start_time": "00:06:49,840",
+          "end_time": "00:06:52,400",
+          "text": "Yeah, and now Alfred is popular too.",
+          "speaker": null
+        },
+        {
+          "index": 79,
+          "start_time": "00:06:52,560",
+          "end_time": "00:06:54,640",
+          "text": "Is Kiara allowed in Batgirls now?",
+          "speaker": null
+        },
+        {
+          "index": 80,
+          "start_time": "00:06:54,800",
+          "end_time": "00:06:57,880",
+          "text": "It’s not just because Chloe thinks Kiara is sassy now.",
+          "speaker": null
+        },
+        {
+          "index": 81,
+          "start_time": "00:06:58,040",
+          "end_time": "00:07:01,240",
+          "text": "–Yeah, for sure.",
+          "speaker": "There has to be an ulterior motive"
+        },
+        {
+          "index": 82,
+          "start_time": "00:07:01,400",
+          "end_time": "00:07:03,920",
+          "text": "Of course the whole school is talking shit about you now.",
+          "speaker": null
+        },
+        {
+          "index": 83,
+          "start_time": "00:07:04,080",
+          "end_time": "00:07:07,920",
+          "text": "You got triggered and you almost killed Alfred.",
+          "speaker": null
+        },
+        {
+          "index": 84,
+          "start_time": "00:07:08,080",
+          "end_time": "00:07:12,920",
+          "text": "–Yeah, but Elise said… –Don’t worry. I’ll help you.",
+          "speaker": null
+        },
+        {
+          "index": 85,
+          "start_time": "00:07:13,080",
+          "end_time": "00:07:14,680",
+          "text": "Okay…",
+          "speaker": null
+        },
+        {
+          "index": 86,
+          "start_time": "00:07:14,840",
+          "end_time": "00:07:19,240",
+          "text": "I know one thing you can do to get into Batgirls.",
+          "speaker": null
+        },
+        {
+          "index": 87,
+          "start_time": "00:07:19,400",
+          "end_time": "00:07:21,040",
+          "text": "What? Tell me!",
+          "speaker": null
+        },
+        {
+          "index": 88,
+          "start_time": "00:07:21,200",
+          "end_time": "00:07:24,600",
+          "text": "No, I don’t know if I want to put this on you.",
+          "speaker": null
+        },
+        {
+          "index": 89,
+          "start_time": "00:07:24,760",
+          "end_time": "00:07:27,040",
+          "text": "Come on, just say it.",
+          "speaker": null
+        },
+        {
+          "index": 90,
+          "start_time": "00:07:27,200",
+          "end_time": "00:07:30,000",
+          "text": "I understand if you don’t want to, but if I were you",
+          "speaker": null
+        },
+        {
+          "index": 91,
+          "start_time": "00:07:30,160",
+          "end_time": "00:07:32,240",
+          "text": "I would have a party.",
+          "speaker": null
+        },
+        {
+          "index": 92,
+          "start_time": "00:07:32,400",
+          "end_time": "00:07:36,840",
+          "text": "Or why? –Then everyone will like you again.",
+          "speaker": "Okay"
+        },
+        {
+          "index": 93,
+          "start_time": "00:07:37,000",
+          "end_time": "00:07:41,680",
+          "text": "But you shouldn’t do anything just to become popular.",
+          "speaker": null
+        },
+        {
+          "index": 94,
+          "start_time": "00:07:41,840",
+          "end_time": "00:07:43,560",
+          "text": "There! Yes! Exactly like that!",
+          "speaker": null
+        },
+        {
+          "index": 95,
+          "start_time": "00:07:43,720",
+          "end_time": "00:07:47,080",
+          "text": "You’re so fucking good. Oh my god!",
+          "speaker": null
+        },
+        {
+          "index": 96,
+          "start_time": "00:07:47,240",
+          "end_time": "00:07:52,400",
+          "text": "Miss the training! –It was worth it. Smile.",
+          "speaker": "What the fuck"
+        },
+        {
+          "index": 97,
+          "start_time": "00:07:53,640",
+          "end_time": "00:07:56,280",
+          "text": "–Smart, right?",
+          "speaker": "What the hell are you doing"
+        },
+        {
+          "index": 98,
+          "start_time": "00:07:56,440",
+          "end_time": "00:07:58,880",
+          "text": "You can take pictures without them spreading online.",
+          "speaker": null
+        },
+        {
+          "index": 99,
+          "start_time": "00:07:59,040",
+          "end_time": "00:08:03,400",
+          "text": "Yeah, that’s smart. What the hell is this then?",
+          "speaker": null
+        },
+        {
+          "index": 100,
+          "start_time": "00:08:06,640",
+          "end_time": "00:08:08,440",
+          "text": "It’s laughing gas.",
+          "speaker": null
+        },
+        {
+          "index": 101,
+          "start_time": "00:08:11,840",
+          "end_time": "00:08:14,160",
+          "text": "–What the fuck, that’s coconut! –So what?",
+          "speaker": null
+        },
+        {
+          "index": 102,
+          "start_time": "00:08:14,320",
+          "end_time": "00:08:18,600",
+          "text": "–I’m allergic to nuts. –But coconut isn’t a nut, Kevin.",
+          "speaker": null
+        },
+        {
+          "index": 103,
+          "start_time": "00:08:18,760",
+          "end_time": "00:08:21,520",
+          "text": "But it is! Coconut nut.",
+          "speaker": null
+        },
+        {
+          "index": 104,
+          "start_time": "00:08:21,680",
+          "end_time": "00:08:26,000",
+          "text": "You’re such a fucking party pooper. There’s no real coconut in it.",
+          "speaker": null
+        },
+        {
+          "index": 105,
+          "start_time": "00:08:26,160",
+          "end_time": "00:08:28,840",
+          "text": "It’s additives that make it taste like coconut.",
+          "speaker": null
+        },
+        {
+          "index": 106,
+          "start_time": "00:08:29,000",
+          "end_time": "00:08:31,240",
+          "text": "–Hey guys! –Yo.",
+          "speaker": null
+        },
+        {
+          "index": 107,
+          "start_time": "00:08:31,400",
+          "end_time": "00:08:34,520",
+          "text": "You bought laughing gas? Are you three years old or what?",
+          "speaker": null
+        },
+        {
+          "index": 108,
+          "start_time": "00:08:34,680",
+          "end_time": "00:08:37,160",
+          "text": "–There’s way better stuff.",
+          "speaker": "What"
+        },
+        {
+          "index": 109,
+          "start_time": "00:08:37,320",
+          "end_time": "00:08:40,080",
+          "text": "–Oh.",
+          "speaker": "Vamp for example"
+        },
+        {
+          "index": 110,
+          "start_time": "00:08:40,240",
+          "end_time": "00:08:44,280",
+          "text": "–Come to the party and you’ll see.",
+          "speaker": "How do we get that then"
+        },
+        {
+          "index": 111,
+          "start_time": "00:08:45,320",
+          "end_time": "00:08:49,480",
+          "text": "There’s no coconut in it, right? Or…? Coconut…",
+          "speaker": null
+        },
+        {
+          "index": 112,
+          "start_time": "00:08:51,480",
+          "end_time": "00:08:55,840",
+          "text": "Radio: Oh yes, today’s hits are presented by the Blood System.",
+          "speaker": null
+        },
+        {
+          "index": 113,
+          "start_time": "00:08:57,160",
+          "end_time": "00:09:04,040",
+          "text": "...because Alfred has a bowl cut! Alfred is a nerd",
+          "speaker": null
+        },
+        {
+          "index": 114,
+          "start_time": "00:09:04,200",
+          "end_time": "00:09:06,760",
+          "text": "It’s an iconic dance move. Scorpion to bridge.",
+          "speaker": null
+        },
+        {
+          "index": 115,
+          "start_time": "00:09:06,920",
+          "end_time": "00:09:09,600",
+          "text": "–She’s wearing heels too. –That was her signature move.",
+          "speaker": null
+        },
+        {
+          "index": 116,
+          "start_time": "00:09:09,760",
+          "end_time": "00:09:13,200",
+          "text": "–Are you kidding? No one?",
+          "speaker": "No one has done it since"
+        },
+        {
+          "index": 117,
+          "start_time": "00:09:13,360",
+          "end_time": "00:09:17,200",
+          "text": "Rumor has it she was a vampire and the founder of Batgirls.",
+          "speaker": null
+        },
+        {
+          "index": 118,
+          "start_time": "00:09:17,360",
+          "end_time": "00:09:19,840",
+          "text": "Okay, but if I know the choreography,",
+          "speaker": null
+        },
+        {
+          "index": 119,
+          "start_time": "00:09:20,000",
+          "end_time": "00:09:21,720",
+          "text": "is it guaranteed that I’ll be in the final show then?",
+          "speaker": null
+        },
+        {
+          "index": 120,
+          "start_time": "00:09:21,880",
+          "end_time": "00:09:23,920",
+          "text": "I think so. But if you ask Chloe",
+          "speaker": null
+        },
+        {
+          "index": 121,
+          "start_time": "00:09:24,080",
+          "end_time": "00:09:27,040",
+          "text": "she only cares about looking hot and being popular.",
+          "speaker": null
+        },
+        {
+          "index": 122,
+          "start_time": "00:09:27,200",
+          "end_time": "00:09:29,440",
+          "text": "But aren’t you the one who decides who gets to be in?",
+          "speaker": null
+        },
+        {
+          "index": 123,
+          "start_time": "00:09:29,600",
+          "end_time": "00:09:32,640",
+          "text": "Well… We decide together.",
+          "speaker": null
+        },
+        {
+          "index": 124,
+          "start_time": "00:09:32,800",
+          "end_time": "00:09:38,360",
+          "text": "I try to be fair, but Chloe is a bit more… you know.",
+          "speaker": null
+        },
+        {
+          "index": 125,
+          "start_time": "00:09:38,520",
+          "end_time": "00:09:42,480",
+          "text": "If you just do what Chloe says, you’ll definitely get to be in.",
+          "speaker": null
+        },
+        {
+          "index": 126,
+          "start_time": "00:09:42,640",
+          "end_time": "00:09:45,600",
+          "text": "Okay, but let’s run the choreography again.",
+          "speaker": null
+        },
+        {
+          "index": 127,
+          "start_time": "00:09:50,480",
+          "end_time": "00:09:53,760",
+          "text": "Okay, but help me now. What should I reply to Eric?",
+          "speaker": null
+        },
+        {
+          "index": 128,
+          "start_time": "00:09:53,920",
+          "end_time": "00:09:57,000",
+          "text": "–I can’t do that.",
+          "speaker": "Just say how you feel"
+        },
+        {
+          "index": 129,
+          "start_time": "00:09:57,160",
+          "end_time": "00:10:00,280",
+          "text": "–You’re so unclear.",
+          "speaker": "He never replies anyway"
+        },
+        {
+          "index": 130,
+          "start_time": "00:10:00,440",
+          "end_time": "00:10:02,160",
+          "text": "He doesn’t get it.",
+          "speaker": null
+        },
+        {
+          "index": 131,
+          "start_time": "00:10:07,080",
+          "end_time": "00:10:09,800",
+          "text": "Affe, I think Elise is mad again.",
+          "speaker": null
+        },
+        {
+          "index": 132,
+          "start_time": "00:10:11,520",
+          "end_time": "00:10:13,520",
+          "text": "Hello!",
+          "speaker": null
+        },
+        {
+          "index": 133,
+          "start_time": "00:10:15,480",
+          "end_time": "00:10:19,280",
+          "text": "–Right in the middle of a match! –Jump in. I need help.",
+          "speaker": null
+        },
+        {
+          "index": 134,
+          "start_time": "00:10:21,120",
+          "end_time": "00:10:24,160",
+          "text": "Help me. I don’t know what to reply.",
+          "speaker": null
+        },
+        {
+          "index": 135,
+          "start_time": "00:10:24,320",
+          "end_time": "00:10:27,040",
+          "text": "What should I say? How many girls have I had?",
+          "speaker": null
+        },
+        {
+          "index": 136,
+          "start_time": "00:10:27,200",
+          "end_time": "00:10:30,360",
+          "text": "You’ve been texting Anna Book’s daughter. You always have something to say.",
+          "speaker": null
+        },
+        {
+          "index": 137,
+          "start_time": "00:10:30,520",
+          "end_time": "00:10:32,320",
+          "text": "Elise is impossible to understand.",
+          "speaker": null
+        },
+        {
+          "index": 138,
+          "start_time": "00:10:32,480",
+          "end_time": "00:10:34,280",
+          "text": "It feels like I’ve done something again.",
+          "speaker": null
+        },
+        {
+          "index": 139,
+          "start_time": "00:10:34,440",
+          "end_time": "00:10:35,640",
+          "text": "Please help me.",
+          "speaker": null
+        },
+        {
+          "index": 140,
+          "start_time": "00:10:35,800",
+          "end_time": "00:10:38,360",
+          "text": "I go from being your best friend, to the nerd you hang out with",
+          "speaker": null
+        },
+        {
+          "index": 141,
+          "start_time": "00:10:38,520",
+          "end_time": "00:10:40,360",
+          "text": "to being some fucking relationship coach.",
+          "speaker": null
+        },
+        {
+          "index": 142,
+          "start_time": "00:10:40,520",
+          "end_time": "00:10:44,440",
+          "text": "Yeah, exactly like that. Help me!",
+          "speaker": null
+        },
+        {
+          "index": 143,
+          "start_time": "00:10:44,600",
+          "end_time": "00:10:48,160",
+          "text": "Shit! It’s enough that I touch the phone and she’s already going.",
+          "speaker": null
+        },
+        {
+          "index": 144,
+          "start_time": "00:10:48,320",
+          "end_time": "00:10:50,640",
+          "text": "“I want to be with you.”",
+          "speaker": null
+        },
+        {
+          "index": 145,
+          "start_time": "00:10:50,800",
+          "end_time": "00:10:53,640",
+          "text": "Now I sent it. He’s not going to reply anyway.",
+          "speaker": null
+        },
+        {
+          "index": 146,
+          "start_time": "00:10:55,040",
+          "end_time": "00:10:57,760",
+          "text": "Completely insane! It’s the first time Elise has written something I actually understand.",
+          "speaker": null
+        },
+        {
+          "index": 147,
+          "start_time": "00:10:57,920",
+          "end_time": "00:11:00,360",
+          "text": "–I don’t need to reply to that. –No.",
+          "speaker": null
+        },
+        {
+          "index": 148,
+          "start_time": "00:11:00,520",
+          "end_time": "00:11:03,040",
+          "text": "Sometimes women want men who take charge.",
+          "speaker": null
+        },
+        {
+          "index": 149,
+          "start_time": "00:11:03,200",
+          "end_time": "00:11:05,880",
+          "text": "Watch and learn.",
+          "speaker": null
+        },
+        {
+          "index": 150,
+          "start_time": "00:11:13,760",
+          "end_time": "00:11:15,680",
+          "text": "What the hell do we do now?",
+          "speaker": null
+        },
+        {
+          "index": 151,
+          "start_time": "00:11:22,920",
+          "end_time": "00:11:25,920",
+          "text": "Zoom in! Zoom in!",
+          "speaker": null
+        },
+        {
+          "index": 152,
+          "start_time": "00:11:30,960",
+          "end_time": "00:11:34,880",
+          "text": "–What the hell… –Calm down Eric, I’ve got this.",
+          "speaker": null
+        },
+        {
+          "index": 153,
+          "start_time": "00:11:36,080",
+          "end_time": "00:11:40,920",
+          "text": "–She’s writing again. –“What are you wearing?”",
+          "speaker": null
+        },
+        {
+          "index": 154,
+          "start_time": "00:11:43,080",
+          "end_time": "00:11:46,680",
+          "text": "No. No, Alfred. –Yes.",
+          "speaker": "What"
+        },
+        {
+          "index": 155,
+          "start_time": "00:11:46,840",
+          "end_time": "00:11:49,520",
+          "text": "–Cowboy hat now.",
+          "speaker": "Absolutely not"
+        },
+        {
+          "index": 156,
+          "start_time": "00:12:06,400",
+          "end_time": "00:12:09,760",
+          "text": "Watch and learn.",
+          "speaker": null
+        },
+        {
+          "index": 157,
+          "start_time": "00:12:09,920",
+          "end_time": "00:12:13,560",
+          "text": "“Continuing at Kiara’s party.” What happens?",
+          "speaker": null
+        },
+        {
+          "index": 158,
+          "start_time": "00:12:13,720",
+          "end_time": "00:12:15,640",
+          "text": "If nothing else happens I’m thinking of playing now.",
+          "speaker": null
+        },
+        {
+          "index": 159,
+          "start_time": "00:12:15,800",
+          "end_time": "00:12:19,000",
+          "text": "–Super crazy.",
+          "speaker": "Crazy that Kiara is having a party"
+        },
+        {
+          "index": 160,
+          "start_time": "00:12:19,160",
+          "end_time": "00:12:21,360",
+          "text": "Yeah, it’s crazy.",
+          "speaker": null
+        },
+        {
+          "index": 161,
+          "start_time": "00:12:21,520",
+          "end_time": "00:12:25,440",
+          "text": "Kiara is having a party? –Yes.",
+          "speaker": "Kiara"
+        },
+        {
+          "index": 162,
+          "start_time": "00:12:25,600",
+          "end_time": "00:12:30,000",
+          "text": "–No idea.",
+          "speaker": "Who the hell tricked her into that"
+        },
+        {
+          "index": 163,
+          "start_time": "00:12:30,800",
+          "end_time": "00:12:34,400",
+          "text": "Shit! It looks like asthma medicine for bats.",
+          "speaker": null
+        },
+        {
+          "index": 164,
+          "start_time": "00:12:34,560",
+          "end_time": "00:12:35,880",
+          "text": "It’s bats, not fladdermöss.",
+          "speaker": null
+        },
+        {
+          "index": 165,
+          "start_time": "00:12:36,040",
+          "end_time": "00:12:39,120",
+          "text": "Stop being such a nerd, Kevin. Bending words and stuff.",
+          "speaker": null
+        },
+        {
+          "index": 166,
+          "start_time": "00:12:39,280",
+          "end_time": "00:12:40,520",
+          "text": "How do you do it then?",
+          "speaker": null
+        },
+        {
+          "index": 167,
+          "start_time": "00:12:40,680",
+          "end_time": "00:12:42,720",
+          "text": "It’s anti-trigger medicine for vampires.",
+          "speaker": null
+        },
+        {
+          "index": 168,
+          "start_time": "00:12:42,880",
+          "end_time": "00:12:46,040",
+          "text": "–But you get the world’s biggest high. –Like laughing gas, kind of.",
+          "speaker": null
+        },
+        {
+          "index": 169,
+          "start_time": "00:12:46,200",
+          "end_time": "00:12:49,320",
+          "text": "–It’s not dangerous, right? –Who cares if you get a high.",
+          "speaker": null
+        },
+        {
+          "index": 170,
+          "start_time": "00:12:49,480",
+          "end_time": "00:12:50,960",
+          "text": "You’ll understand when you feel it.",
+          "speaker": null
+        },
+        {
+          "index": 171,
+          "start_time": "00:12:51,120",
+          "end_time": "00:12:53,400",
+          "text": "All impressions become a hundred times bigger.",
+          "speaker": null
+        },
+        {
+          "index": 172,
+          "start_time": "00:12:53,560",
+          "end_time": "00:12:56,080",
+          "text": "–It’s like an orgasm for the brain. –Nice!",
+          "speaker": null
+        },
+        {
+          "index": 173,
+          "start_time": "00:12:56,240",
+          "end_time": "00:12:57,680",
+          "text": "You get one if you get more.",
+          "speaker": null
+        },
+        {
+          "index": 174,
+          "start_time": "00:12:57,840",
+          "end_time": "00:13:01,000",
+          "text": "Okay, and where is that fucking party then?",
+          "speaker": null
+        },
+        {
+          "index": 175,
+          "start_time": "00:13:03,760",
+          "end_time": "00:13:07,800",
+          "text": "Okay, we need to set the table, get snacks, good music and drinks.",
+          "speaker": null
+        },
+        {
+          "index": 176,
+          "start_time": "00:13:07,960",
+          "end_time": "00:13:10,080",
+          "text": "Calm, calm, calm. Breathe.",
+          "speaker": null
+        },
+        {
+          "index": 177,
+          "start_time": "00:13:10,240",
+          "end_time": "00:13:14,160",
+          "text": "We start with the most important: drinks. My cousin Kalle Blyfot solves that.",
+          "speaker": null
+        },
+        {
+          "index": 178,
+          "start_time": "00:13:14,320",
+          "end_time": "00:13:15,680",
+          "text": "–No, we don’t need that. –No?",
+          "speaker": null
+        },
+        {
+          "index": 179,
+          "start_time": "00:13:15,840",
+          "end_time": "00:13:17,400",
+          "text": "We’ve got it here.",
+          "speaker": null
+        },
+        {
+          "index": 180,
+          "start_time": "00:13:17,560",
+          "end_time": "00:13:20,880",
+          "text": "–Yeah, here.",
+          "speaker": "What do you mean here"
+        },
+        {
+          "index": 181,
+          "start_time": "00:13:23,560",
+          "end_time": "00:13:26,120",
+          "text": "–You’re joking. –Come on, let’s go down.",
+          "speaker": null
+        },
+        {
+          "index": 182,
+          "start_time": "00:13:26,280",
+          "end_time": "00:13:29,040",
+          "text": "–No, no, we can’t go down there. –Yes we can.",
+          "speaker": null
+        },
+        {
+          "index": 183,
+          "start_time": "00:13:31,760",
+          "end_time": "00:13:35,840",
+          "text": "–Shit, how cool this is. –You can take the lamp.",
+          "speaker": null
+        },
+        {
+          "index": 184,
+          "start_time": "00:13:36,000",
+          "end_time": "00:13:40,680",
+          "text": "Can you see in the dark? –Yeah, I’m a vampire.",
+          "speaker": "What"
+        },
+        {
+          "index": 185,
+          "start_time": "00:13:40,840",
+          "end_time": "00:13:46,200",
+          "text": "–Right. I forgot about that.",
+          "speaker": "Stop staring at me like that"
+        },
+        {
+          "index": 186,
+          "start_time": "00:13:47,280",
+          "end_time": "00:13:51,200",
+          "text": "It’s fucking creepy. –Coward!",
+          "speaker": "Wait for me"
+        },
+        {
+          "index": 187,
+          "start_time": "00:13:52,840",
+          "end_time": "00:13:56,880",
+          "text": "Holy shit! I was thinking maybe cider, but witch brew absolutely works.",
+          "speaker": null
+        },
+        {
+          "index": 188,
+          "start_time": "00:13:57,040",
+          "end_time": "00:13:58,840",
+          "text": "Now tell me why you like vampires.",
+          "speaker": null
+        },
+        {
+          "index": 189,
+          "start_time": "00:13:59,000",
+          "end_time": "00:14:03,200",
+          "text": "–When I can’t run away, you mean? –Yes. And be serious now.",
+          "speaker": null
+        },
+        {
+          "index": 190,
+          "start_time": "00:14:03,360",
+          "end_time": "00:14:06,920",
+          "text": "–Stop, look at me. –Sorry.",
+          "speaker": null
+        },
+        {
+          "index": 191,
+          "start_time": "00:14:07,080",
+          "end_time": "00:14:10,560",
+          "text": "–I can’t be bothered to tell the whole story. –Come on.",
+          "speaker": null
+        },
+        {
+          "index": 192,
+          "start_time": "00:14:13,280",
+          "end_time": "00:14:17,720",
+          "text": "Okay then. It was winter. Me and Mom were on our way to Grandma.",
+          "speaker": null
+        },
+        {
+          "index": 193,
+          "start_time": "00:14:17,880",
+          "end_time": "00:14:21,280",
+          "text": "Suddenly the car skidded and we ended up in the ditch.",
+          "speaker": null
+        },
+        {
+          "index": 194,
+          "start_time": "00:14:21,440",
+          "end_time": "00:14:24,280",
+          "text": "Wow! What happened?",
+          "speaker": null
+        },
+        {
+          "index": 195,
+          "start_time": "00:14:24,440",
+          "end_time": "00:14:27,760",
+          "text": "I barely remember. There was just blood everywhere.",
+          "speaker": null
+        },
+        {
+          "index": 196,
+          "start_time": "00:14:27,920",
+          "end_time": "00:14:29,760",
+          "text": "I thought I was going to die.",
+          "speaker": null
+        },
+        {
+          "index": 197,
+          "start_time": "00:14:29,920",
+          "end_time": "00:14:32,000",
+          "text": "Then suddenly a vampire came into the car.",
+          "speaker": null
+        },
+        {
+          "index": 198,
+          "start_time": "00:14:32,160",
+          "end_time": "00:14:35,520",
+          "text": "But somehow it felt like he wanted to help me.",
+          "speaker": null
+        },
+        {
+          "index": 199,
+          "start_time": "00:14:35,680",
+          "end_time": "00:14:39,120",
+          "text": "–No.",
+          "speaker": "Did he get triggered"
+        },
+        {
+          "index": 200,
+          "start_time": "00:14:39,280",
+          "end_time": "00:14:43,840",
+          "text": "He just saved me somehow. Then the ambulance arrived.",
+          "speaker": null
+        },
+        {
+          "index": 201,
+          "start_time": "00:14:44,000",
+          "end_time": "00:14:45,760",
+          "text": "Damn!",
+          "speaker": null
+        },
+        {
+          "index": 202,
+          "start_time": "00:14:45,920",
+          "end_time": "00:14:48,240",
+          "text": "–Yeah. You guys swear.",
+          "speaker": "You swear"
+        },
+        {
+          "index": 203,
+          "start_time": "00:14:48,400",
+          "end_time": "00:14:51,280",
+          "text": "I don’t fucking swear. Eric swears.",
+          "speaker": null
+        },
+        {
+          "index": 204,
+          "start_time": "00:14:53,240",
+          "end_time": "00:14:54,880",
+          "text": "What kind of place is this?",
+          "speaker": null
+        },
+        {
+          "index": 205,
+          "start_time": "00:14:55,040",
+          "end_time": "00:14:58,080",
+          "text": "An old sacrificial place and a secret escape route",
+          "speaker": null
+        },
+        {
+          "index": 206,
+          "start_time": "00:14:58,240",
+          "end_time": "00:15:00,520",
+          "text": "from the time before humans and vampires made peace.",
+          "speaker": null
+        },
+        {
+          "index": 207,
+          "start_time": "00:15:00,680",
+          "end_time": "00:15:04,240",
+          "text": "Before the blood pact and everything? –Yeah, long before that.",
+          "speaker": "What"
+        },
+        {
+          "index": 208,
+          "start_time": "00:15:04,400",
+          "end_time": "00:15:06,400",
+          "text": "Back when vampires ate humans",
+          "speaker": null
+        },
+        {
+          "index": 209,
+          "start_time": "00:15:06,560",
+          "end_time": "00:15:09,680",
+          "text": "and humans staked vampires to death.",
+          "speaker": null
+        },
+        {
+          "index": 210,
+          "start_time": "00:15:09,840",
+          "end_time": "00:15:11,960",
+          "text": "–Now it’s your turn. –What?",
+          "speaker": null
+        },
+        {
+          "index": 211,
+          "start_time": "00:15:12,120",
+          "end_time": "00:15:15,280",
+          "text": "–What?",
+          "speaker": "To tell something personal"
+        },
+        {
+          "index": 212,
+          "start_time": "00:15:15,440",
+          "end_time": "00:15:18,920",
+          "text": "–Long story.",
+          "speaker": "Why your brother is so fucking creepy"
+        },
+        {
+          "index": 213,
+          "start_time": "00:15:19,080",
+          "end_time": "00:15:22,640",
+          "text": "But he’s pissed because I’m going to inherit our family’s assets.",
+          "speaker": null
+        },
+        {
+          "index": 214,
+          "start_time": "00:15:22,800",
+          "end_time": "00:15:26,200",
+          "text": "Because we vampires are matriarchal.",
+          "speaker": null
+        },
+        {
+          "index": 215,
+          "start_time": "00:15:26,360",
+          "end_time": "00:15:29,080",
+          "text": "The youngest daughter inherits everything, including name and title.",
+          "speaker": null
+        },
+        {
+          "index": 216,
+          "start_time": "00:15:29,240",
+          "end_time": "00:15:32,080",
+          "text": "So when you get married your husband has to change his name to Natt and Dag.",
+          "speaker": null
+        },
+        {
+          "index": 217,
+          "start_time": "00:15:32,240",
+          "end_time": "00:15:34,480",
+          "text": "–And the money?",
+          "speaker": "Correct"
+        },
+        {
+          "index": 218,
+          "start_time": "00:15:34,640",
+          "end_time": "00:15:36,360",
+          "text": "Everything.",
+          "speaker": null
+        },
+        {
+          "index": 219,
+          "start_time": "00:15:36,520",
+          "end_time": "00:15:39,640",
+          "text": "Yeah, then you can understand why he’s a bit crooked.",
+          "speaker": null
+        },
+        {
+          "index": 220,
+          "start_time": "00:15:39,800",
+          "end_time": "00:15:42,040",
+          "text": "Though he has a long time to save up.",
+          "speaker": null
+        },
+        {
+          "index": 221,
+          "start_time": "00:15:42,200",
+          "end_time": "00:15:44,480",
+          "text": "Yeah, like 200 years.",
+          "speaker": null
+        },
+        {
+          "index": 222,
+          "start_time": "00:15:45,600",
+          "end_time": "00:15:48,760",
+          "text": "–What?",
+          "speaker": "But something happened too"
+        },
+        {
+          "index": 223,
+          "start_time": "00:15:48,920",
+          "end_time": "00:15:51,120",
+          "text": "Yeah, when he started high school.",
+          "speaker": null
+        },
+        {
+          "index": 224,
+          "start_time": "00:15:51,280",
+          "end_time": "00:15:53,840",
+          "text": "It almost ended badly with a girl.",
+          "speaker": null
+        },
+        {
+          "index": 225,
+          "start_time": "00:15:54,000",
+          "end_time": "00:15:55,720",
+          "text": "That’s why you’re not allowed to hang out with humans.",
+          "speaker": null
+        },
+        {
+          "index": 226,
+          "start_time": "00:15:55,880",
+          "end_time": "00:15:57,600",
+          "text": "I am allowed to hang out with humans.",
+          "speaker": null
+        },
+        {
+          "index": 227,
+          "start_time": "00:15:57,760",
+          "end_time": "00:16:01,880",
+          "text": "I mean hang out, really hang out with humans. Human guys.",
+          "speaker": null
+        },
+        {
+          "index": 228,
+          "start_time": "00:16:02,040",
+          "end_time": "00:16:06,440",
+          "text": "Oh! They’re probably afraid I’ll fall in love with a human.",
+          "speaker": null
+        },
+        {
+          "index": 229,
+          "start_time": "00:16:08,000",
+          "end_time": "00:16:10,240",
+          "text": "Is it that dangerous?",
+          "speaker": null
+        },
+        {
+          "index": 230,
+          "start_time": "00:16:13,920",
+          "end_time": "00:16:17,080",
+          "text": "Is it true that vampires cry if they love someone?",
+          "speaker": null
+        },
+        {
+          "index": 231,
+          "start_time": "00:16:18,640",
+          "end_time": "00:16:20,600",
+          "text": "Yes.",
+          "speaker": null
+        },
+        {
+          "index": 232,
+          "start_time": "00:16:21,560",
+          "end_time": "00:16:24,720",
+          "text": "So you would have cried if you were in love with someone?",
+          "speaker": null
+        },
+        {
+          "index": 233,
+          "start_time": "00:16:27,440",
+          "end_time": "00:16:29,880",
+          "text": "The party! Hello! We have to hurry.",
+          "speaker": null
+        },
+        {
+          "index": 234,
+          "start_time": "00:16:36,760",
+          "end_time": "00:16:40,680",
+          "text": "–What the hell! Is it good? –Yeah, it’s good. You?",
+          "speaker": null
+        },
+        {
+          "index": 235,
+          "start_time": "00:16:40,840",
+          "end_time": "00:16:44,360",
+          "text": "So cool that you came! –It’s so fucking cool.",
+          "speaker": "Here"
+        },
+        {
+          "index": 236,
+          "start_time": "00:16:45,920",
+          "end_time": "00:16:48,040",
+          "text": "–Pleasure! –The snacks should be enough for everyone.",
+          "speaker": null
+        },
+        {
+          "index": 237,
+          "start_time": "00:16:48,200",
+          "end_time": "00:16:50,120",
+          "text": "Yeah, no problem.",
+          "speaker": null
+        },
+        {
+          "index": 238,
+          "start_time": "00:16:50,280",
+          "end_time": "00:16:51,440",
+          "text": "Hi!",
+          "speaker": null
+        },
+        {
+          "index": 239,
+          "start_time": "00:16:52,960",
+          "end_time": "00:16:55,040",
+          "text": "–Hi! –Hi!",
+          "speaker": null
+        },
+        {
+          "index": 240,
+          "start_time": "00:16:59,440",
+          "end_time": "00:17:04,160",
+          "text": "–Hey, do you know if Chloe is coming? –No. Why?",
+          "speaker": null
+        },
+        {
+          "index": 241,
+          "start_time": "00:17:04,320",
+          "end_time": "00:17:07,480",
+          "text": "No, I mean it would have been fun if she was here.",
+          "speaker": null
+        },
+        {
+          "index": 242,
+          "start_time": "00:17:10,920",
+          "end_time": "00:17:14,720",
+          "text": "Go to Eric now. He’s sitting there. Tell him you want him.",
+          "speaker": null
+        },
+        {
+          "index": 243,
+          "start_time": "00:17:14,880",
+          "end_time": "00:17:17,800",
+          "text": "–I can’t do that. –Yes, go there now.",
+          "speaker": null
+        },
+        {
+          "index": 244,
+          "start_time": "00:17:17,960",
+          "end_time": "00:17:20,280",
+          "text": "Tell him he looks hot tonight.",
+          "speaker": null
+        },
+        {
+          "index": 245,
+          "start_time": "00:17:20,440",
+          "end_time": "00:17:24,360",
+          "text": "–You can’t trust your gut feeling. –Yes you can.",
+          "speaker": null
+        },
+        {
+          "index": 246,
+          "start_time": "00:17:24,520",
+          "end_time": "00:17:26,120",
+          "text": "Hi.",
+          "speaker": null
+        },
+        {
+          "index": 247,
+          "start_time": "00:17:26,280",
+          "end_time": "00:17:29,120",
+          "text": "–Hi! –You look so hot tonight!",
+          "speaker": null
+        },
+        {
+          "index": 248,
+          "start_time": "00:17:29,280",
+          "end_time": "00:17:33,720",
+          "text": "–Then we have something in common.",
+          "speaker": "That was so cute what you wrote earlier"
+        },
+        {
+          "index": 249,
+          "start_time": "00:17:34,920",
+          "end_time": "00:17:37,920",
+          "text": "–Yeah, it’s good.",
+          "speaker": "Is it good"
+        },
+        {
+          "index": 250,
+          "start_time": "00:17:38,080",
+          "end_time": "00:17:39,800",
+          "text": "–Hi! –Hi.",
+          "speaker": null
+        },
+        {
+          "index": 251,
+          "start_time": "00:17:44,640",
+          "end_time": "00:17:47,560",
+          "text": "–You don’t think the rumor will spread? –About what?",
+          "speaker": null
+        },
+        {
+          "index": 252,
+          "start_time": "00:17:47,720",
+          "end_time": "00:17:49,960",
+          "text": "That I’m having a party, and uninvited guests show up.",
+          "speaker": null
+        },
+        {
+          "index": 253,
+          "start_time": "00:17:50,120",
+          "end_time": "00:17:51,640",
+          "text": "No, you live in the middle of nowhere.",
+          "speaker": null
+        },
+        {
+          "index": 254,
+          "start_time": "00:17:51,800",
+          "end_time": "00:17:54,760",
+          "text": "How do you even get here? Subway or what?",
+          "speaker": null
+        },
+        {
+          "index": 255,
+          "start_time": "00:17:54,920",
+          "end_time": "00:17:58,760",
+          "text": "Kevin and Didde in the fucking house!",
+          "speaker": null
+        },
+        {
+          "index": 256,
+          "start_time": "00:18:01,600",
+          "end_time": "00:18:04,600",
+          "text": "Hi Kiara! I brought some friends.",
+          "speaker": null
+        },
+        {
+          "index": 257,
+          "start_time": "00:18:09,480",
+          "end_time": "00:18:13,920",
+          "text": "–Yo, gay boys! –Is this the national pocket ping-pong team?",
+          "speaker": null
+        },
+        {
+          "index": 258,
+          "start_time": "00:18:14,080",
+          "end_time": "00:18:17,800",
+          "text": "Wait, I’ll help you. There! Kiss each other now.",
+          "speaker": null
+        },
+        {
+          "index": 259,
+          "start_time": "00:18:17,960",
+          "end_time": "00:18:20,240",
+          "text": "What the hell?",
+          "speaker": null
+        },
+        {
+          "index": 260,
+          "start_time": "00:18:27,360",
+          "end_time": "00:18:30,160",
+          "text": "It’s finished. I’m going to look for more.",
+          "speaker": null
+        },
+        {
+          "index": 261,
+          "start_time": "00:18:43,400",
+          "end_time": "00:18:44,960",
+          "text": "Bingo!",
+          "speaker": null
+        },
+        {
+          "index": 262,
+          "start_time": "00:18:48,600",
+          "end_time": "00:18:53,040",
+          "text": "Can everyone listen up for a second? Now we fucking go!",
+          "speaker": null
+        }
+      ]
+    },
+    {
+      "id": "s01e04_sc003",
+      "start_time": "00:19:42,960",
+      "end_time": "00:20:47,480",
+      "location": null,
+      "characters": [
+        "Should we go somewhere else",
+        "Somewhere else"
+      ],
+      "dialogue": [
+        {
+          "index": 263,
+          "start_time": "00:19:42,960",
+          "end_time": "00:19:44,960",
+          "text": "There we go!",
+          "speaker": null
+        },
+        {
+          "index": 264,
+          "start_time": "00:19:55,600",
+          "end_time": "00:19:57,680",
+          "text": "It’s really loud in here.",
+          "speaker": null
+        },
+        {
+          "index": 265,
+          "start_time": "00:19:57,840",
+          "end_time": "00:19:59,760",
+          "text": "–What?",
+          "speaker": "Should we go somewhere else"
+        },
+        {
+          "index": 266,
+          "start_time": "00:19:59,920",
+          "end_time": "00:20:02,560",
+          "text": "–Come on, let’s go dance.",
+          "speaker": "Somewhere else"
+        },
+        {
+          "index": 267,
+          "start_time": "00:20:08,320",
+          "end_time": "00:20:11,960",
+          "text": "Draw a razor blade.",
+          "speaker": null
+        },
+        {
+          "index": 268,
+          "start_time": "00:20:12,120",
+          "end_time": "00:20:14,200",
+          "text": "–Should we…? –What?",
+          "speaker": null
+        },
+        {
+          "index": 269,
+          "start_time": "00:20:14,360",
+          "end_time": "00:20:16,520",
+          "text": "–Should we…? –Okay.",
+          "speaker": null
+        },
+        {
+          "index": 270,
+          "start_time": "00:20:43,480",
+          "end_time": "00:20:47,480",
+          "text": "Subtitles: Iyuno for SVT",
+          "speaker": null
+        }
+      ]
+    }
+  ]
+}

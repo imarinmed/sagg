@@ -1,0 +1,458 @@
+{
+  "id": "s01e02",
+  "title": "Audition till Batgirls",
+  "title_en": "Audition for the Batgirls",
+  "season": 1,
+  "episode_number": 2,
+  "scenes": [
+    {
+      "id": "s01e02_sc001",
+      "start_time": "00:00:08,680",
+      "end_time": "00:04:04,440",
+      "location": null,
+      "characters": [
+        "Blood and honor",
+        "The skirt is really nice",
+        "And these guys",
+        "Screw the jacket",
+        "What"
+      ],
+      "dialogue": [
+        {
+          "index": 1,
+          "start_time": "00:00:08,680",
+          "end_time": "00:00:12,480",
+          "text": "Kiara, do you have your anti-trigger medication under control?",
+          "speaker": null
+        },
+        {
+          "index": 2,
+          "start_time": "00:00:12,640",
+          "end_time": "00:00:13,960",
+          "text": "Yes, Mother.",
+          "speaker": null
+        },
+        {
+          "index": 3,
+          "start_time": "00:00:14,120",
+          "end_time": "00:00:17,160",
+          "text": "We’re trusting you to come straight home after school now.",
+          "speaker": null
+        },
+        {
+          "index": 4,
+          "start_time": "00:00:17,320",
+          "end_time": "00:00:19,120",
+          "text": "Yes, Mother.",
+          "speaker": null
+        },
+        {
+          "index": 5,
+          "start_time": "00:00:21,040",
+          "end_time": "00:00:24,000",
+          "text": "And no more sneaking out and running around at night.",
+          "speaker": null
+        },
+        {
+          "index": 6,
+          "start_time": "00:00:24,160",
+          "end_time": "00:00:26,200",
+          "text": "That’s not what we agreed on.",
+          "speaker": null
+        },
+        {
+          "index": 7,
+          "start_time": "00:00:26,360",
+          "end_time": "00:00:28,560",
+          "text": "If this continues, we’ll have to reconsider,",
+          "speaker": null
+        },
+        {
+          "index": 8,
+          "start_time": "00:00:28,720",
+          "end_time": "00:00:31,760",
+          "text": "and then there’ll be no more human school.",
+          "speaker": null
+        },
+        {
+          "index": 9,
+          "start_time": "00:00:31,920",
+          "end_time": "00:00:36,080",
+          "text": "Ugh! That poster is so hideous.",
+          "speaker": null
+        },
+        {
+          "index": 10,
+          "start_time": "00:00:36,240",
+          "end_time": "00:00:39,840",
+          "text": "–Calling that dancing… –Mom, it’s modern.",
+          "speaker": null
+        },
+        {
+          "index": 11,
+          "start_time": "00:00:40,000",
+          "end_time": "00:00:42,440",
+          "text": "Oh, so now we’re saying “mom” too?",
+          "speaker": null
+        },
+        {
+          "index": 12,
+          "start_time": "00:00:42,600",
+          "end_time": "00:00:46,480",
+          "text": "–Blood and honor.",
+          "speaker": "Blood and honor"
+        },
+        {
+          "index": 13,
+          "start_time": "00:00:51,160",
+          "end_time": "00:00:56,200",
+          "text": "Cause we are young, wild, we are free",
+          "speaker": null
+        },
+        {
+          "index": 14,
+          "start_time": "00:00:56,360",
+          "end_time": "00:00:57,640",
+          "text": "B.S.T!",
+          "speaker": null
+        },
+        {
+          "index": 15,
+          "start_time": "00:00:57,800",
+          "end_time": "00:01:01,960",
+          "text": "It's just the way that it's supposed to be",
+          "speaker": null
+        },
+        {
+          "index": 16,
+          "start_time": "00:01:02,120",
+          "end_time": "00:01:03,960",
+          "text": "B.S.T!",
+          "speaker": null
+        },
+        {
+          "index": 17,
+          "start_time": "00:01:15,680",
+          "end_time": "00:01:18,040",
+          "text": "Hey, look! Here comes my ride!",
+          "speaker": null
+        },
+        {
+          "index": 18,
+          "start_time": "00:01:18,200",
+          "end_time": "00:01:22,040",
+          "text": "–Ew! He’s like in third year. –For the second time.",
+          "speaker": null
+        },
+        {
+          "index": 19,
+          "start_time": "00:01:22,200",
+          "end_time": "00:01:25,960",
+          "text": "–But he’s got a car and parties. –And a tiny dick.",
+          "speaker": null
+        },
+        {
+          "index": 20,
+          "start_time": "00:01:26,120",
+          "end_time": "00:01:27,880",
+          "text": "–What do you mean now?",
+          "speaker": "What"
+        },
+        {
+          "index": 21,
+          "start_time": "00:01:28,040",
+          "end_time": "00:01:32,320",
+          "text": "–Big car, small… –You’re so weird.",
+          "speaker": null
+        },
+        {
+          "index": 22,
+          "start_time": "00:01:32,480",
+          "end_time": "00:01:34,040",
+          "text": "Ew!",
+          "speaker": null
+        },
+        {
+          "index": 23,
+          "start_time": "00:01:39,040",
+          "end_time": "00:01:44,560",
+          "text": "–Yo! Hey, babes! –Hi, Didde!",
+          "speaker": null
+        },
+        {
+          "index": 24,
+          "start_time": "00:01:59,600",
+          "end_time": "00:02:02,960",
+          "text": "I just can’t take all the cheating and lies anymore.",
+          "speaker": null
+        },
+        {
+          "index": 25,
+          "start_time": "00:02:03,120",
+          "end_time": "00:02:06,400",
+          "text": "What do you mean? I would never cheat on you.",
+          "speaker": null
+        },
+        {
+          "index": 26,
+          "start_time": "00:02:06,560",
+          "end_time": "00:02:09,320",
+          "text": "No, I know. That’s why this is so hard.",
+          "speaker": null
+        },
+        {
+          "index": 27,
+          "start_time": "00:02:09,480",
+          "end_time": "00:02:11,720",
+          "text": "It’s not about you, it’s about me.",
+          "speaker": null
+        },
+        {
+          "index": 28,
+          "start_time": "00:02:11,880",
+          "end_time": "00:02:15,560",
+          "text": "So we’re done? –Mm.",
+          "speaker": "What"
+        },
+        {
+          "index": 29,
+          "start_time": "00:02:17,880",
+          "end_time": "00:02:22,160",
+          "text": "Hey, could I borrow 500 kr, if that’s okay?",
+          "speaker": null
+        },
+        {
+          "index": 30,
+          "start_time": "00:02:22,320",
+          "end_time": "00:02:24,320",
+          "text": "Well, I’ve probably only got 300, I think.",
+          "speaker": null
+        },
+        {
+          "index": 31,
+          "start_time": "00:02:24,480",
+          "end_time": "00:02:26,400",
+          "text": "You can give me the rest some other time.",
+          "speaker": null
+        },
+        {
+          "index": 32,
+          "start_time": "00:02:26,560",
+          "end_time": "00:02:28,360",
+          "text": "Swish is fine. Mwah!",
+          "speaker": null
+        },
+        {
+          "index": 33,
+          "start_time": "00:02:28,520",
+          "end_time": "00:02:29,840",
+          "text": "Yo!",
+          "speaker": null
+        },
+        {
+          "index": 34,
+          "start_time": "00:02:30,000",
+          "end_time": "00:02:32,320",
+          "text": "Happy birthday, Kevster!",
+          "speaker": null
+        },
+        {
+          "index": 35,
+          "start_time": "00:02:33,440",
+          "end_time": "00:02:35,480",
+          "text": "Damn, you better hold onto her tight.",
+          "speaker": null
+        },
+        {
+          "index": 36,
+          "start_time": "00:02:43,920",
+          "end_time": "00:02:46,480",
+          "text": "But what do you mean “didn’t make out”? What were you doing then?",
+          "speaker": null
+        },
+        {
+          "index": 37,
+          "start_time": "00:02:46,640",
+          "end_time": "00:02:48,960",
+          "text": "No, I didn’t make out. She kissed me, I’m telling you.",
+          "speaker": null
+        },
+        {
+          "index": 38,
+          "start_time": "00:02:49,120",
+          "end_time": "00:02:52,520",
+          "text": "–And you had no choice, you mean? –What was I supposed to do?",
+          "speaker": null
+        },
+        {
+          "index": 39,
+          "start_time": "00:02:52,680",
+          "end_time": "00:02:55,840",
+          "text": "–Not kiss back, maybe. –It didn’t mean anything.",
+          "speaker": null
+        },
+        {
+          "index": 40,
+          "start_time": "00:02:56,000",
+          "end_time": "00:02:59,720",
+          "text": "We’re not even together anyway. Or am I wrong?",
+          "speaker": null
+        },
+        {
+          "index": 41,
+          "start_time": "00:02:59,880",
+          "end_time": "00:03:05,520",
+          "text": "–Okay, fine. Now I know. –That’s not what I meant.",
+          "speaker": null
+        },
+        {
+          "index": 42,
+          "start_time": "00:03:05,680",
+          "end_time": "00:03:07,320",
+          "text": "Fuck!",
+          "speaker": null
+        },
+        {
+          "index": 43,
+          "start_time": "00:03:09,240",
+          "end_time": "00:03:11,680",
+          "text": "–How’d it go? –Fucking great. What do you think?",
+          "speaker": null
+        },
+        {
+          "index": 44,
+          "start_time": "00:03:11,840",
+          "end_time": "00:03:13,680",
+          "text": "Come on!",
+          "speaker": null
+        },
+        {
+          "index": 45,
+          "start_time": "00:03:15,760",
+          "end_time": "00:03:19,080",
+          "text": "And as you can see, I’ve been the mascot for quite a while.",
+          "speaker": null
+        },
+        {
+          "index": 46,
+          "start_time": "00:03:19,240",
+          "end_time": "00:03:20,440",
+          "text": "It’s an honorable position.",
+          "speaker": null
+        },
+        {
+          "index": 47,
+          "start_time": "00:03:20,600",
+          "end_time": "00:03:24,440",
+          "text": "Unfortunately everyone gets to know you and you get to know everyone,",
+          "speaker": null
+        },
+        {
+          "index": 48,
+          "start_time": "00:03:24,600",
+          "end_time": "00:03:26,600",
+          "text": "so I’m pretty popular.",
+          "speaker": null
+        },
+        {
+          "index": 49,
+          "start_time": "00:03:26,760",
+          "end_time": "00:03:28,760",
+          "text": "Not that it really matters.",
+          "speaker": null
+        },
+        {
+          "index": 50,
+          "start_time": "00:03:28,920",
+          "end_time": "00:03:31,120",
+          "text": "Yo, Fuckface.",
+          "speaker": null
+        },
+        {
+          "index": 51,
+          "start_time": "00:03:33,080",
+          "end_time": "00:03:36,440",
+          "text": "Sick! Sick, Didde. Fucking awesome.",
+          "speaker": null
+        },
+        {
+          "index": 52,
+          "start_time": "00:03:36,600",
+          "end_time": "00:03:37,600",
+          "text": "Who were they?",
+          "speaker": null
+        },
+        {
+          "index": 53,
+          "start_time": "00:03:37,760",
+          "end_time": "00:03:40,440",
+          "text": "Nah, just… They still think they’re cool.",
+          "speaker": null
+        },
+        {
+          "index": 54,
+          "start_time": "00:03:40,600",
+          "end_time": "00:03:44,120",
+          "text": "They’re third-years. They’ve repeated.",
+          "speaker": null
+        },
+        {
+          "index": 55,
+          "start_time": "00:03:44,280",
+          "end_time": "00:03:47,360",
+          "text": "–Just some nerds, honestly.",
+          "speaker": "And these guys"
+        },
+        {
+          "index": 56,
+          "start_time": "00:03:47,520",
+          "end_time": "00:03:50,120",
+          "text": "Yo, Affe! Wanna play Fortnite later or what?",
+          "speaker": null
+        },
+        {
+          "index": 57,
+          "start_time": "00:03:50,280",
+          "end_time": "00:03:53,080",
+          "text": "–No! No… –You forgot your jacket at my place yesterday.",
+          "speaker": null
+        },
+        {
+          "index": 58,
+          "start_time": "00:03:53,240",
+          "end_time": "00:03:55,040",
+          "text": "Mom said I should bring it to you.",
+          "speaker": null
+        },
+        {
+          "index": 59,
+          "start_time": "00:03:55,200",
+          "end_time": "00:03:57,480",
+          "text": "–Bye, Affe.",
+          "speaker": "Screw the jacket"
+        },
+        {
+          "index": 60,
+          "start_time": "00:03:57,640",
+          "end_time": "00:03:59,520",
+          "text": "–It’s super cute.",
+          "speaker": "The skirt is really nice"
+        },
+        {
+          "index": 61,
+          "start_time": "00:03:59,680",
+          "end_time": "00:04:01,800",
+          "text": "–It’s really good. –Yeah.",
+          "speaker": null
+        },
+        {
+          "index": 62,
+          "start_time": "00:04:01,960",
+          "end_time": "00:04:04,440",
+          "text": "–Hi! –Hi…",
+          "speaker": null
+        }
+      ]
+    }
+  ]
+}

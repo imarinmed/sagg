@@ -26,13 +26,89 @@ canonical:
 
 adaptation:
   age: 47
-  traits_added: []
-  arc_dark: ""
-  taboo_elements: []
-  explicit_scenes: []
-  psychological_profile: ""
-  power_dynamics: ""
-  
+  traits_added:
+    - patriarchal_control
+    - repressed_desires
+    - family_possessiveness
+    - traditional_authority
+  arc_dark: "Authoritarian patriarch whose control over daughter masks complex, repressed desires"
+  taboo_elements:
+    - patriarchal_control
+    - incest_themes
+    - authority_abuse
+    - age_gap
+  explicit_scenes:
+    - s01e06_father_daughter_confrontation
+    - s01e07_discipline_scene
+  psychological_profile: "Henry represents traditional patriarchal authority with dark undertones. His control over Kiara blurs lines between protection and possession. Repressed desires manifest through strict discipline and possessive monitoring."
+  power_dynamics: "Absolute patriarchal authority. Views family as property to be controlled and protected. Struggles with vampiric nature vs. traditional values."
+
+kink_profile:
+  preferences:
+    - id: patriarchal_control
+      intensity: 5
+      notes: "Absolute authority over family"
+    - id: master_slave
+      intensity: 4
+      notes: "Views family in ownership terms"
+    - id: discipline
+      intensity: 4
+      notes: "Believes in strict correction"
+    - id: daddy
+      intensity: 3
+      notes: "Paternal authority with dark edges"
+    - id: total_power_exchange
+      intensity: 4
+      notes: "Expects complete obedience"
+    - id: ownership
+      intensity: 5
+      notes: "Family as blood property"
+    - id: vampire_hierarchy
+      intensity: 5
+      notes: "Strict generational power"
+    - id: compulsion
+      intensity: 4
+      notes: "Uses glamour to enforce will"
+    - id: sire_bond
+      intensity: 5
+      notes: "Creator authority over progeny"
+    - id: traditional_marriage
+      intensity: 4
+      notes: "Political alliance, not romance"
+  limits:
+    - id: degradation
+      intensity: 2
+      notes: "Maintains dignity of house"
+    - id: public_shame
+      intensity: 1
+      notes: "Protects family reputation"
+    - id: weakness
+      intensity: 1
+      notes: "Views vulnerability as failure"
+    - id: romantic_love
+      intensity: 2
+      notes: "Sees marriage as alliance"
+  evolution:
+    s01e01:
+      - id: patriarchal_control
+        intensity: 4
+        notes: "Establishes strict rules"
+    s01e03:
+      - id: ownership
+        intensity: 5
+        notes: "Kiara's rebellion threatens control"
+    s01e06:
+      - id: discipline
+        intensity: 5
+        notes: "Confronts Kiara about Alfred"
+      - id: sire_bond
+        intensity: 4
+        notes: "Considers turning Kiara himself"
+    s01e07:
+      - id: total_power_exchange
+        intensity: 5
+        notes: "Ultimatum to Kiara"
+
 appearances:
   - s01e01
   - s01e03

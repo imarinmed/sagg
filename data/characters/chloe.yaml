@@ -22,13 +22,85 @@ canonical:
 
 adaptation:
   age: 17
-  traits_added: []
-  arc_dark: ""
-  taboo_elements: []
-  explicit_scenes: []
-  psychological_profile: ""
-  power_dynamics: ""
-  
+  traits_added:
+    - secretly_attracted
+    - observer_kink
+    - supportive_submissive
+    - hidden_desires
+  arc_dark: "Loyal friend harboring secret submissive desires and attraction to Kiara"
+  taboo_elements:
+    - unrequited_attraction
+    - voyeurism
+    - submission
+  explicit_scenes:
+    - s01e04_observation_scene
+    - s01e06_confession
+  psychological_profile: "Chloe's loyalty masks deeper submissive tendencies and attraction to Kiara. She finds satisfaction in supporting role, watching from sidelines. Her friendship contains unspoken romantic elements."
+  power_dynamics: "Natural submissive who finds fulfillment in supporting dominant personalities. Voyeuristic observer who prefers watching to participating."
+
+kink_profile:
+  preferences:
+    - id: submissive
+      intensity: 4
+      notes: "Natural follower, finds comfort in submission"
+    - id: voyeur
+      intensity: 4
+      notes: "Observes others' intimacy"
+    - id: supportive_submissive
+      intensity: 5
+      notes: "Finds purpose in serving friends"
+    - id: unrequited_love
+      intensity: 4
+      notes: "Secret attraction to Kiara"
+    - id: loyalty
+      intensity: 5
+      notes: "Devoted to those she serves"
+    - id: emotional_intimacy
+      intensity: 5
+      notes: "Values deep connection over sex"
+    - id: aftercare
+      intensity: 4
+      notes: "Natural caregiver post-intensity"
+    - id: hidden_desires
+      intensity: 4
+      notes: "Keeps true feelings secret"
+    - id: friendship_bonds
+      intensity: 5
+      notes: "Prioritizes platonic intimacy"
+    - id: observation
+      intensity: 4
+      notes: "Watcher rather than participant"
+  limits:
+    - id: dominance
+      intensity: 1
+      notes: "Uncomfortable leading"
+    - id: public_attention
+      intensity: 2
+      notes: "Prefers staying background"
+    - id: aggression
+      intensity: 1
+      notes: "Avoids conflict"
+    - id: betrayal
+      intensity: 1
+      notes: "Loyalty is absolute"
+  evolution:
+    s01e01:
+      - id: supportive_submissive
+        intensity: 4
+        notes: "Becomes Kiara's friend"
+    s01e03:
+      - id: unrequited_love
+        intensity: 3
+        notes: "Attraction develops"
+    s01e04:
+      - id: voyeur
+        intensity: 4
+        notes: "Observes Kiara and Alfred"
+    s01e06:
+      - id: hidden_desires
+        intensity: 4
+        notes: "Confesses feelings"
+
 appearances:
   - s01e01
   - s01e02
