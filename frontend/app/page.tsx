@@ -224,9 +224,9 @@ export default function Home() {
   ]
 
   return (
-    <div className="w-full">
+    <div className="w-full pt-24">
       {/* Full-Width Poster Showcase */}
-      <section className="relative min-h-screen w-full flex items-center overflow-hidden">
+      <section className="relative min-h-[calc(100vh-6rem)] w-full flex items-center overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <img

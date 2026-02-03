@@ -24,64 +24,60 @@ export function Navigation() {
   }, []);
 
   return (
-    <nav
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
-      style={{
-        background: scrolled
-          ? "rgba(8, 8, 8, 0.85)"
-          : "linear-gradient(to bottom, rgba(8, 8, 8, 0.6) 0%, transparent 100%)",
-        backdropFilter: scrolled ? "blur(20px)" : "none",
-        borderBottom: scrolled
-          ? "1px solid rgba(212, 175, 55, 0.2)"
-          : "1px solid transparent",
-        boxShadow: scrolled
-          ? "0 4px 30px rgba(0, 0, 0, 0.4), 0 0 60px rgba(139, 0, 0, 0.1)"
-          : "none",
-      }}
-    >
-      {/* Ambient Glow Line */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-px transition-opacity duration-500"
+    <div className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 pt-4">
+      <nav
+        className="relative mx-auto max-w-7xl transition-all duration-500 rounded-2xl overflow-hidden"
         style={{
           background: scrolled
-            ? "linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.5) 50%, transparent 100%)"
-            : "linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%)",
-          opacity: scrolled ? 1 : 0.5,
+            ? "rgba(12, 12, 14, 0.75)"
+            : "rgba(12, 12, 14, 0.5)",
+          backdropFilter: "blur(20px) saturate(180%)",
+          WebkitBackdropFilter: "blur(20px) saturate(180%)",
+          border: "1px solid rgba(212, 175, 55, 0.15)",
+          boxShadow: scrolled
+            ? "0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05)"
+            : "0 4px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.03)",
         }}
-      />
+      >
+        {/* Inner Glow Border */}
+        <div
+          className="absolute inset-0 rounded-2xl pointer-events-none"
+          style={{
+            boxShadow: "inset 0 0 0 1px rgba(212, 175, 55, 0.08)",
+          }}
+        />
 
-      <div className="w-full px-6 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo Section */}
+        <div className="relative flex items-center justify-between h-16 px-6">
+          {/* Left Side - BST Logo */}
           <Link
             href="/"
-            className="group relative flex items-center gap-3"
+            className="group relative flex items-center gap-2 shrink-0"
           >
-            {/* Logo Glow Effect */}
+            {/* Glow Effect */}
             <div
-              className="absolute -inset-4 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
+              className="absolute -inset-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
               style={{
                 background:
-                  "radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 70%)",
+                  "radial-gradient(circle, rgba(212, 175, 55, 0.25) 0%, transparent 70%)",
               }}
             />
 
             {/* Blood Drop Icon */}
             <svg
-              className="relative w-8 h-8 transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgba(139,0,0,0.8)]"
+              className="relative w-6 h-6 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(139,0,0,0.8)]"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M12 2C12 2 6 8 6 13C6 16.3137 8.68629 19 12 19C15.3137 19 18 16.3137 18 13C18 8 12 2 12 2Z"
-                fill="url(#bloodGradient)"
+                fill="url(#bloodGradientNav)"
                 stroke="rgba(139, 0, 0, 0.8)"
                 strokeWidth="1"
               />
               <defs>
                 <linearGradient
-                  id="bloodGradient"
+                  id="bloodGradientNav"
                   x1="6"
                   y1="2"
                   x2="18"
@@ -94,37 +90,24 @@ export function Navigation() {
               </defs>
             </svg>
 
-            {/* Title */}
-            <div className="relative">
-              <span
-                className="font-heading text-xl md:text-2xl tracking-[0.2em] uppercase transition-all duration-300"
-                style={{
-                  color: "var(--color-text-primary)",
-                  textShadow: scrolled
-                    ? "0 0 20px rgba(212, 175, 55, 0.3)"
-                    : "none",
-                }}
-              >
-                Blod
-              </span>
-              <span
-                className="font-heading text-xl md:text-2xl tracking-[0.2em] uppercase transition-all duration-300"
-                style={{
-                  color: "var(--color-accent-primary)",
-                }}
-              >
-                , Svett, Tårar
-              </span>
-            </div>
+            {/* BST Text */}
+            <span
+              className="font-heading text-lg tracking-[0.15em] uppercase transition-all duration-300"
+              style={{
+                color: "var(--color-text-primary)",
+              }}
+            >
+              BST
+            </span>
           </Link>
 
-          {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-1">
+          {/* Center - Navigation Links */}
+          <div className="hidden md:flex items-center justify-center gap-1 absolute left-1/2 -translate-x-1/2">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="group relative px-5 py-2"
+                className="group relative px-4 py-2"
                 onMouseEnter={() => setHoveredItem(item.href)}
                 onMouseLeave={() => setHoveredItem(null)}
               >
@@ -133,46 +116,95 @@ export function Navigation() {
                   className="absolute inset-0 rounded-lg transition-all duration-300 opacity-0 group-hover:opacity-100"
                   style={{
                     background:
-                      "linear-gradient(135deg, rgba(139, 0, 0, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%)",
-                    border: "1px solid rgba(212, 175, 55, 0.2)",
+                      "linear-gradient(135deg, rgba(139, 0, 0, 0.15) 0%, rgba(212, 175, 55, 0.08) 100%)",
+                    border: "1px solid rgba(212, 175, 55, 0.15)",
                   }}
                 />
 
                 {/* Text */}
                 <span
-                  className="relative font-heading text-sm tracking-[0.15em] uppercase transition-all duration-300"
+                  className="relative font-heading text-sm tracking-[0.12em] uppercase transition-all duration-300"
                   style={{
                     color:
                       hoveredItem === item.href
                         ? "var(--color-accent-primary)"
                         : "var(--color-text-secondary)",
-                    textShadow:
-                      hoveredItem === item.href
-                        ? "0 0 10px rgba(212, 175, 55, 0.5)"
-                        : "none",
                   }}
                 >
                   {item.label}
                 </span>
 
-                {/* Underline Effect */}
+                {/* Underline */}
                 <div
                   className="absolute bottom-1 left-1/2 -translate-x-1/2 h-px transition-all duration-300"
                   style={{
-                    width: hoveredItem === item.href ? "60%" : "0%",
+                    width: hoveredItem === item.href ? "50%" : "0%",
                     background:
-                      "linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.8), transparent)",
+                      "linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.6), transparent)",
                   }}
                 />
               </Link>
             ))}
           </div>
 
-          {/* Right Section */}
-          <div className="flex items-center gap-4">
-            {/* Decorative Separator */}
+          {/* Right Side - BSS Logo + Theme Toggle */}
+          <div className="flex items-center gap-4 shrink-0">
+            {/* BSS Text */}
+            <Link
+              href="/"
+              className="group relative flex items-center gap-2"
+            >
+              {/* Glow Effect */}
+              <div
+                className="absolute -inset-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"
+                style={{
+                  background:
+                    "radial-gradient(circle, rgba(139, 0, 0, 0.25) 0%, transparent 70%)",
+                }}
+              />
+
+              {/* BSS Text */}
+              <span
+                className="relative font-heading text-lg tracking-[0.15em] uppercase transition-all duration-300"
+                style={{
+                  color: "var(--color-accent-primary)",
+                }}
+              >
+                BSS
+              </span>
+
+              {/* Secondary Blood Drop */}
+              <svg
+                className="relative w-5 h-5 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(139,0,0,0.8)]"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C12 2 6 8 6 13C6 16.3137 8.68629 19 12 19C15.3137 19 18 16.3137 18 13C18 8 12 2 12 2Z"
+                  fill="url(#bloodGradientNav2)"
+                  stroke="rgba(139, 0, 0, 0.8)"
+                  strokeWidth="1"
+                />
+                <defs>
+                  <linearGradient
+                    id="bloodGradientNav2"
+                    x1="6"
+                    y1="2"
+                    x2="18"
+                    y2="19"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#8B0000" />
+                    <stop offset="1" stopColor="#4A0404" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </Link>
+
+            {/* Divider */}
             <div
-              className="hidden md:block w-px h-8"
+              className="w-px h-6"
               style={{
                 background:
                   "linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.3), transparent)",
@@ -185,14 +217,14 @@ export function Navigation() {
                 className="absolute -inset-2 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300 blur-md"
                 style={{
                   background:
-                    "radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 70%)",
+                    "radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%)",
                 }}
               />
               <ThemeToggle />
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
