@@ -1,10 +1,9 @@
 {
-  "active_plan": "/Users/wolfy/Developer/2026.Y/bats/.sisyphus/plans/complete-wiki-features.md",
-  "started_at": "2026-02-03T10:54:38.427Z",
+  "active_plan": "/Users/wolfy/Developer/2026.Y/bats/.sisyphus/plans/blod-visual-redesign.md",
+  "started_at": "2026-02-03T14:20:00.000Z",
   "session_ids": [
-    "ses_3dd5c2901ffeRRQOt7AwPdCOsf",
     "ses_3dcd89dc6ffeRW82ykAjLobi22"
   ],
-  "plan_name": "complete-wiki-features",
-  "resumed_from": "blod-dark-adaptation-kb"
+  "plan_name": "blod-visual-redesign",
+  "resumed_from": "complete-wiki-features"
 }
