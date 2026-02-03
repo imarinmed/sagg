@@ -59,10 +59,15 @@ export function ThemeToggle() {
           variant="ghost"
           size="sm"
           aria-label={`Current theme: ${THEMES[currentTheme].name}. Click to change theme.`}
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 px-3 py-2 rounded-lg border transition-all duration-300 hover:scale-105"
+          style={{
+            borderColor: "rgba(212, 175, 55, 0.4)",
+            background: "rgba(20, 20, 20, 0.5)",
+            color: "var(--color-accent-primary)",
+          }}
         >
           {getThemeIcon()}
-          <span className="hidden sm:inline text-sm">{THEMES[currentTheme].name}</span>
+          <span className="hidden sm:inline text-sm font-medium tracking-wide">{THEMES[currentTheme].name}</span>
         </Button>
       </Popover.Trigger>
       <Popover.Content placement="bottom end" className="w-64">

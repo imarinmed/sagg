@@ -173,30 +173,31 @@ export function Navigation() {
                 BSS
               </span>
 
-              {/* Secondary Blood Drop */}
+              {/* Pearl White Drop */}
               <svg
-                className="relative w-5 h-5 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(139,0,0,0.8)]"
+                className="relative w-5 h-5 transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   d="M12 2C12 2 6 8 6 13C6 16.3137 8.68629 19 12 19C15.3137 19 18 16.3137 18 13C18 8 12 2 12 2Z"
-                  fill="url(#bloodGradientNav2)"
-                  stroke="rgba(139, 0, 0, 0.8)"
+                  fill="url(#pearlGradientNav)"
+                  stroke="rgba(255, 255, 255, 0.6)"
                   strokeWidth="1"
                 />
                 <defs>
                   <linearGradient
-                    id="bloodGradientNav2"
+                    id="pearlGradientNav"
                     x1="6"
                     y1="2"
                     x2="18"
                     y2="19"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stopColor="#8B0000" />
-                    <stop offset="1" stopColor="#4A0404" />
+                    <stop stopColor="#FFFFFF" />
+                    <stop offset="0.5" stopColor="#F5F5F5" />
+                    <stop offset="1" stopColor="#E8E8E8" />
                   </linearGradient>
                 </defs>
               </svg>
