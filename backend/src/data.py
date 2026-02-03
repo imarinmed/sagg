@@ -1,6 +1,7 @@
 import json
-import yaml
 from pathlib import Path
+
+import yaml
 
 from .models import (
     Character,

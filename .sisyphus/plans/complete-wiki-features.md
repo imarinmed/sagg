@@ -220,12 +220,12 @@ Evidence: Terminal output captured
 - **Blocked By**: None
 
 **Acceptance Criteria**:
-- [ ] Backend loads all 7 episodes from parsed JSON
-- [ ] Backend loads all scenes with dialogue
-- [ ] Backend loads all 10 characters from YAML
-- [ ] Backend loads all mythos elements
-- [ ] API endpoints return real data, not placeholders
-- [ ] No errors during data loading
+- [x] Backend loads all 7 episodes from parsed JSON
+- [x] Backend loads all scenes with dialogue
+- [x] Backend loads all 10 characters from YAML
+- [x] Backend loads all mythos elements
+- [x] API endpoints return real data, not placeholders
+- [x] No errors during data loading
 
 **Agent-Executed QA Scenario**:
 Scenario: Data loading verification
