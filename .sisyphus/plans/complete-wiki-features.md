@@ -68,12 +68,12 @@ Transform the wiki from a browsing tool into a comprehensive research and refere
    - Highlight connections on hover
 
 ### Definition of Done
-- [ ] Episode detail page displays all scenes with dialogue
-- [ ] Search returns relevant results with context snippets
-- [ ] Graph visualization shows interactive relationship network
-- [ ] All features work on both desktop and mobile
-- [ ] Dark mode styling consistent across all new features
-- [ ] All features integrated with existing API
+- [x] Episode detail page displays all scenes with dialogue
+- [x] Search returns relevant results with context snippets
+- [x] Graph visualization shows interactive relationship network
+- [x] All features work on both desktop and mobile
+- [x] Dark mode styling consistent across all new features
+- [x] All features integrated with existing API
 
 ### Must Have
 - Scene-level detail view with dialogue
@@ -276,13 +276,13 @@ Scenario: Data loading verification
 - **Blocked By**: Task 1
 
 **Acceptance Criteria**:
-- [ ] Episode detail page accessible at `/episodes/[id]`
-- [ ] Episode metadata displays correctly
-- [ ] Scene list shows all scenes with timestamps
-- [ ] Dialogue visible when expanding scene
-- [ ] Character chips link to character pages
-- [ ] Loading and error states handled
-- [ ] Responsive design works on mobile
+- [x] Episode detail page accessible at `/episodes/[id]`
+- [x] Episode metadata displays correctly
+- [x] Scene list shows all scenes with timestamps
+- [x] Dialogue visible when expanding scene
+- [x] Character chips link to character pages
+- [x] Loading and error states handled
+- [x] Responsive design works on mobile
 
 **Agent-Executed QA Scenario**:
 Scenario: Episode detail page
@@ -344,13 +344,13 @@ Scenario: Episode detail page
 - **Blocked By**: Tasks 1, 2, 4
 
 **Acceptance Criteria**:
-- [ ] Graph page accessible at `/graph`
-- [ ] Nodes render for all entity types
-- [ ] Edges show relationships
-- [ ] Zoom and pan work
-- [ ] Clicking node shows details panel
-- [ ] Dark mode styling applied
-- [ ] Responsive layout
+- [x] Graph page accessible at `/graph`
+- [x] Nodes render for all entity types
+- [x] Edges show relationships
+- [x] Zoom and pan work
+- [x] Clicking node shows details panel
+- [x] Dark mode styling applied
+- [x] Responsive layout
 
 **Agent-Executed QA Scenario**:
 Scenario: Graph visualization
@@ -464,13 +464,13 @@ Scenario: Port configuration verification
 - **Blocked By**: None
 
 **Acceptance Criteria**:
-- [ ] Search endpoint returns results for queries
-- [ ] Results include context snippets
-- [ ] Type filter works
-- [ ] Frontend search box shows dropdown results
-- [ ] Clicking result navigates to correct page
-- [ ] Debounce prevents excessive requests
-- [ ] Empty state handled gracefully
+- [x] Search endpoint returns results for queries
+- [x] Results include context snippets
+- [x] Type filter works
+- [x] Frontend search box shows dropdown results
+- [x] Clicking result navigates to correct page
+- [x] Debounce prevents excessive requests
+- [x] Empty state handled gracefully
 
 **Agent-Executed QA Scenario**:
 Scenario: Search functionality
@@ -527,14 +527,14 @@ curl http://localhost:3000/episodes/s01e01
 ```
 
 ### Final Checklist
-- [ ] All 5 tasks complete (including port configuration)
-- [ ] Backend runs on port 6666
-- [ ] Episode detail shows scenes and dialogue
-- [ ] Search works across all content types
-- [ ] Graph visualization interactive
-- [ ] All QA scenarios pass
-- [ ] Dark mode consistent
-- [ ] Mobile responsive
+- [x] All 5 tasks complete (including port configuration)
+- [x] Backend runs on port 6666
+- [x] Episode detail shows scenes and dialogue
+- [x] Search works across all content types
+- [x] Graph visualization interactive
+- [x] All QA scenarios pass
+- [x] Dark mode consistent
+- [x] Mobile responsive
 
 ---
 
