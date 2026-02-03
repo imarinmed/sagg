@@ -64,6 +64,19 @@ export interface GraphData {
   edges: GraphEdge[];
 }
 
+export interface SearchResult {
+  id: string;
+  type: "episode" | "character" | "scene" | "mythos";
+  title: string;
+  snippet: string;
+  url: string;
+}
+
+export interface SearchResponse {
+  results: SearchResult[];
+  total: number;
+}
+
 async function fetchApi<T>(endpoint: string): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${endpoint}`);
   if (!response.ok) {
@@ -91,5 +104,8 @@ export const api = {
   graph: {
     getFull: () => fetchApi<GraphData>("/api/graph"),
     getRelated: (id: string) => fetchApi<GraphData>(`/api/graph/related/${id}`),
+  },
+  search: {
+    query: (q: string) => fetchApi<SearchResponse>(`/api/search?q=${encodeURIComponent(q)}`),
   },
 };
