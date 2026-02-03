@@ -401,11 +401,11 @@ Scenario: Graph visualization
 - **Blocked By**: None
 
 **Acceptance Criteria**:
-- [ ] Backend runs on port 6666 by default
-- [ ] Frontend API client points to port 6666
-- [ ] CORS allows requests from frontend to port 6666
-- [ ] All verification commands updated to use port 6666
-- [ ] Backend starts successfully on port 6666
+- [x] Backend runs on port 6666 by default
+- [x] Frontend API client points to port 6666
+- [x] CORS allows requests from frontend to port 6666
+- [x] All verification commands updated to use port 6666
+- [x] Backend starts successfully on port 6666
 
 **Agent-Executed QA Scenario**:
 Scenario: Port configuration verification
