@@ -1,0 +1,164 @@
+# Character Arc Documentation
+
+## Kiara Natt och Dag
+
+### Canonical Arc
+**Starting Point**: Sheltered vampire teen, wants normal human life
+**Journey**: Learning to navigate human high school while hiding her nature
+**Ending Point**: Acceptance of her dual nature, first steps toward independence
+
+### Dark Adaptation Arc
+**Starting Point**: Sheltered but with suppressed predatory instincts
+**Journey**: 
+- Discovery of bloodlust as sexual awakening
+- Attraction to danger (Alfred) and taboo (Jacques)
+- Rebellion against father's control
+- Embracing vampire nature as power
+**Ending Point**: Fully embracing her vampire sexuality, complicated relationships with both humans and family
+
+### Key Transformation Points
+1. **First Feed** (s01e03) - Sexual awakening through blood
+2. **Party Scene** (s01e04) - Human vulnerability as arousing
+3. **Jacques's Attention** (s01e05) - Taboo attraction
+4. **Final Choice** (s01e07) - Acceptance of dark nature
+
+## Henry Natt och Dag
+
+### Canonical Arc
+**Role**: Strict father, antagonist to Kiara's desires
+**Motivation**: Protecting family secrets, maintaining tradition
+**Character**: Authoritarian, controlling, distant
+
+### Dark Adaptation Arc
+**Role**: Patriarchal tyrant, potential abuser
+**Motivation**: Control over family through blood bonds and tradition
+**Character**: 
+- Uses blood bonds to maintain control
+- Patriarchal dominance with sexual undertones
+- Jealous of Jacques's influence over Kiara
+- Represents old-world vampire morality
+
+### Dark Elements
+- Blood bond violations with family members
+- Control as erotic power
+- Traditional vampire customs with dark sexual elements
+- Potential incestuous undertones in overprotectiveness
+
+## Jacques Natt och Dag
+
+### Canonical Arc
+**Role**: Mysterious uncle, outsider to family
+**Motivation**: Unknown, seems to enjoy provoking Henry
+**Character**: Charming, dangerous, unpredictable
+
+### Dark Adaptation Arc
+**Role**: Seductive predator, corruptor of innocence
+**Motivation**: Desire for Kiara, rivalry with Henry
+**Character**:
+- Represents forbidden desire
+- Blood bond with Kiara as intimate violation
+- Sexual predator masking as charming uncle
+- Rebellion against family norms through taboo acts
+
+### Dark Elements
+- Blood bond with niece
+- Seduction of Kiara
+- Competition with Henry for family dominance
+- Represents the dangerous freedom of vampire nature
+
+## Alfred
+
+### Canonical Arc
+**Role**: Human love interest, represents normal life
+**Journey**: Unaware of vampires, attracted to Kiara's mystery
+**Character**: Popular, athletic, kind
+
+### Dark Adaptation Arc
+**Role**: Prey object, innocence to be corrupted
+**Journey**:
+- Attraction to Kiara's danger
+- Vulnerability as arousing to Kiara
+- Potential victim of feeding
+- Represents the cost of vampire-human relationships
+
+### Dark Elements
+- Predator-prey dynamic with Kiara
+- His innocence makes him desirable
+- Potential non-consensual elements in vampire attraction
+- Physical vulnerability during intimate moments
+
+## Elise
+
+### Canonical Arc
+**Role**: Rival, antagonist
+**Motivation**: Jealousy, social dominance
+**Character**: Mean girl, threatened by Kiara
+
+### Dark Adaptation Arc
+**Role**: Rival, potential victim
+**Motivation**: Jealousy mixed with unconscious attraction to Kiara's danger
+**Character**:
+- Represents human cruelty
+- Potential target of vampire retaliation
+- Complex relationship with Kiara (rivalry/attraction)
+
+## Chloe
+
+### Canonical Arc
+**Role**: Ally, friend
+**Motivation**: Genuine friendship
+**Character**: Loyal, outsider, supportive
+
+### Dark Adaptation Arc
+**Role**: Ally, confidant
+**Motivation**: Accepts Kiara's dark nature
+**Character**:
+- Knows or suspects Kiara's nature
+- Accepts the darkness
+- Potential human-vampire relationship exploration
+
+## Relationship Dynamics
+
+### Kiara + Alfred
+**Canonical**: Sweet teen romance
+**Dark**: Predator-prey, danger and innocence, feeding as intimacy
+
+### Kiara + Jacques
+**Canonical**: None (uncle-niece)
+**Dark**: Taboo attraction, blood bond intimacy, corruption
+
+### Kiara + Henry
+**Canonical**: Father-daughter conflict
+**Dark**: Patriarchal control, blood bond violations, Oedipal undertones
+
+### Henry + Desirée
+**Canonical**: Married couple
+**Dark**: Political marriage, blood bond partnership, distant intimacy
+
+### Henry + Jacques
+**Canonical**: Brother rivalry
+**Dark**: Competition for family dominance, Kiara as object of rivalry
+
+## Arc Tracking Template
+
+```yaml
+character: [name]
+canonical_arc: [description]
+dark_arc: [description]
+
+transformation_points:
+  - episode: [ep_id]
+    scene: [description]
+    canonical: [what happens]
+    dark_adaptation: [dark version]
+    taboo_elements: [list]
+    content_warnings: [list]
+
+relationships:
+  - character: [name]
+    canonical: [dynamic]
+    dark: [dynamic]
+    explicit_scenes: [list]
+
+adaptation_notes: [freeform notes]
+```
