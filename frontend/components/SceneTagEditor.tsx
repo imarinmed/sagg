@@ -3,13 +3,10 @@
 import React, { useState } from "react";
 import {
   Card,
-  Card.Header,
-  Card.Content,
   Button,
   Input,
-  Textarea,
+  TextArea,
   Chip,
-  Divider,
   Tabs,
   Tab,
   ScrollShadow,
@@ -149,7 +146,7 @@ export function SceneTagEditor({
             <Chip size="sm" variant="soft" color="warning">
               {value.content_warnings.length} Warnings
             </Chip>
-            <Chip size="sm" variant="soft" color="primary">
+            <Chip size="sm" variant="soft" color="accent">
               {value.descriptors.length} Descriptors
             </Chip>
           </div>
@@ -247,7 +244,7 @@ export function SceneTagEditor({
                                 }
                                 label="Warning Level"
                               />
-                              <Textarea
+                              <TextArea
                                 label="Notes"
                                 value={editForm?.notes || ""}
                                 onChange={(e) =>
@@ -392,7 +389,7 @@ export function SceneTagEditor({
                                 }
                                 label="Scene Intensity"
                               />
-                              <Textarea
+                              <TextArea
                                 label="Implementation Notes"
                                 value={editForm?.notes || ""}
                                 onChange={(e) =>
@@ -409,7 +406,7 @@ export function SceneTagEditor({
                               <div className="flex-1">
                                 <div className="flex items-center gap-2">
                                   <span className="font-medium">{descriptor.name}</span>
-                                  <Chip size="sm" variant="soft" color="primary">
+                                  <Chip size="sm" variant="soft" color="accent">
                                     {descriptor.category}
                                   </Chip>
                                   <IntensityBadge value={tag.intensity} />

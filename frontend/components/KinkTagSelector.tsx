@@ -2,11 +2,8 @@
 
 import React, { useState, useMemo } from "react";
 import {
-  Chip,
   Input,
   Popover,
-  PopoverTrigger,
-  PopoverContent,
   Button,
   ScrollShadow,
 } from "@heroui/react";
@@ -131,12 +128,11 @@ export function KinkTagSelector({
       )}
 
       {/* Selector Popover */}
-      <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="bottom-start">
-        <PopoverTrigger>
+      <Popover>
+        <Popover.Trigger>
           <Button
-            variant="bordered"
-            className="w-full justify-start text-left h-auto min-h-[40px] py-2"
-            endContent={<Search className="w-4 h-4 text-default-400" />}
+            variant="outline"
+            className="w-full justify-between text-left h-auto min-h-[40px] py-2"
           >
             {selectedIds.length > 0 ? (
               <span className="text-default-600">
@@ -145,29 +141,28 @@ export function KinkTagSelector({
             ) : (
               <span className="text-default-400">{placeholder}</span>
             )}
+            <Search className="w-4 h-4 text-default-400" />
           </Button>
-        </PopoverTrigger>
-        <PopoverContent className="w-[400px] p-0">
+        </Popover.Trigger>
+        <Popover.Content className="w-[400px] p-0">
           <div className="w-full">
             {/* Search Input */}
-            <div className="p-3 border-b border-default-200">
+            <div className="p-3 border-b border-default-200 flex items-center gap-2">
+              <Search className="w-4 h-4 text-default-400" />
               <Input
                 placeholder="Search descriptors..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                startContent={<Search className="w-4 h-4 text-default-400" />}
-                endContent={
-                  searchQuery && (
-                    <button
-                      onClick={() => setSearchQuery("")}
-                      className="text-default-400 hover:text-default-600"
-                    >
-                      <X className="w-4 h-4" />
-                    </button>
-                  )
-                }
-                size="sm"
+                className="flex-1"
               />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="text-default-400 hover:text-default-600"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
             </div>
 
             {/* Results */}
@@ -189,11 +184,11 @@ export function KinkTagSelector({
                           <button
                             key={descriptor.id}
                             onClick={() => toggleSelection(descriptor.id)}
-                            disabled={
+                            disabled={Boolean(
                               !isSelected &&
                               maxSelections &&
                               selectedIds.length >= maxSelections
-                            }
+                            )}
                             className={`
                               w-full text-left px-3 py-2 rounded-lg mb-1
                               flex items-start gap-3
@@ -262,7 +257,7 @@ export function KinkTagSelector({
               )}
             </div>
           </div>
-        </PopoverContent>
+        </Popover.Content>
       </Popover>
     </div>
   );

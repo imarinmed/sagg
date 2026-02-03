@@ -184,10 +184,11 @@ Evidence: Terminal output captured
 
 | Task | Depends On | Blocks | Can Parallelize With |
 |------|------------|--------|---------------------|
-| 1 | None | 2 | 4 |
-| 2 | 1 | None | 4 |
+| 0 | None | None | 1, 4 |
+| 1 | None | 2 | 0, 4 |
+| 2 | 1 | None | 0, 4 |
 | 3 | 1, 2 | None | None |
-| 4 | None | 3 | 1, 2 |
+| 4 | None | 3 | 0, 1, 2 |
 
 ---
 
@@ -376,6 +377,51 @@ Scenario: Graph visualization
 
 ---
 
+### Task 0: Configure Default Port to 6666
+
+**What to do**:
+- Update `backend/src/main.py` to use port 6666 instead of 8000
+- Update `frontend/lib/api.ts` to point to port 6666
+- Update CORS configuration in backend to allow port 6666
+- Update any documentation or README files referencing port 8000
+- Update verification commands in this plan to use port 6666
+
+**Must NOT do**:
+- Do not change the frontend development server port (keep 3000)
+- Do not break existing functionality
+
+**Recommended Agent Profile**:
+- **Category**: `quick`
+- **Skills**: None specific
+
+**Parallelization**:
+- **Can Run In Parallel**: YES
+- **Parallel Group**: Wave 0 (can run before other tasks)
+- **Blocks**: None
+- **Blocked By**: None
+
+**Acceptance Criteria**:
+- [ ] Backend runs on port 6666 by default
+- [ ] Frontend API client points to port 6666
+- [ ] CORS allows requests from frontend to port 6666
+- [ ] All verification commands updated to use port 6666
+- [ ] Backend starts successfully on port 6666
+
+**Agent-Executed QA Scenario**:
+Scenario: Port configuration verification
+  Tool: Bash
+  Steps:
+    1. Start backend: python -m uvicorn src.main:app --port 6666
+    2. curl -s http://localhost:6666/api/episodes | jq 'length' → Assert: 7
+    3. Verify frontend builds with API_URL pointing to 6666
+  Expected Result: Backend and frontend communicate on port 6666
+
+**Commit**: YES
+- Message: `config: change default port to 6666`
+- Files: backend/src/main.py, frontend/lib/api.ts, backend/src/main.py (CORS)
+
+---
+
 ### Task 4: Search Implementation
 
 **What to do**:
@@ -455,6 +501,7 @@ Scenario: Search functionality
 
 | After Task | Message | Files | Verification |
 |------------|---------|-------|--------------|
+| 0 | `config: change default port to 6666` | backend/src/main.py, frontend/lib/api.ts | Backend on port 6666 |
 | 1 | `feat: load real data from parsed transcripts` | backend/src/data.py | API returns real data |
 | 2 | `feat: add episode detail page` | frontend/app/episodes/[id]/ | Episode detail QA |
 | 3 | `feat: implement graph visualization` | frontend/app/graph/, components/ | Graph QA |
@@ -466,12 +513,12 @@ Scenario: Search functionality
 
 ### Verification Commands
 ```bash
-# Backend data loading
-curl http://localhost:8000/api/episodes | jq 'length'
+# Backend data loading (now on port 6666)
+curl http://localhost:6666/api/episodes | jq 'length'
 # Expected: 7
 
 # Search API
-curl "http://localhost:8000/api/search?q=Kiara"
+curl "http://localhost:6666/api/search?q=Kiara"
 # Expected: JSON with results
 
 # Frontend episode detail
@@ -480,7 +527,8 @@ curl http://localhost:3000/episodes/s01e01
 ```
 
 ### Final Checklist
-- [ ] All 4 tasks complete
+- [ ] All 5 tasks complete (including port configuration)
+- [ ] Backend runs on port 6666
 - [ ] Episode detail shows scenes and dialogue
 - [ ] Search works across all content types
 - [ ] Graph visualization interactive
