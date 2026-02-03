@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import { Layout } from "@/components/Layout"
 
 export const metadata: Metadata = {
   title: "Blod, Svett, Tårar - Dark Adaptation Wiki",
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
-        {children}
+        <Layout>{children}</Layout>
       </body>
     </html>
   )
