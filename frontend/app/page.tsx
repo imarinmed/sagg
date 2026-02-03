@@ -1,87 +1,136 @@
 "use client"
 
-import { Card } from "@heroui/react"
-import Link from "next/link"
+import Image from "next/image"
+import { NavCard } from "@/components/GlassCard"
 
 export default function Home() {
   return (
     <div className="space-y-8">
-      <div className="text-center py-12">
-        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Blod, Svett, Tårar
-        </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400">
-          Dark Adaptation Knowledge Base
-        </p>
-        <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">
-          A comprehensive wiki for the dark, explicit adaptation of the Swedish YA vampire series
-        </p>
+      {/* Hero Section with Poster */}
+      <div className="relative rounded-2xl overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/assets/posters/poster-3.jpg"
+            alt="Blod, Svett, Tårar"
+            fill
+            className="object-cover opacity-40"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/80 to-transparent" />
+        </div>
+        
+        <div className="relative z-10 py-16 px-8 text-center">
+          <h1 className="font-heading text-5xl md:text-6xl font-bold text-[var(--color-text-primary)] mb-4 tracking-wide">
+            Blod, Svett, Tårar
+          </h1>
+          <p className="text-xl md:text-2xl text-[var(--color-text-secondary)] font-light">
+            Dark Adaptation Knowledge Base
+          </p>
+          <p className="text-sm text-[var(--color-text-muted)] mt-4 max-w-2xl mx-auto">
+            A comprehensive wiki for the dark, explicit adaptation of the Swedish YA vampire series
+          </p>
+        </div>
       </div>
 
+      {/* Featured Posters Gallery */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="relative aspect-[2/3] rounded-lg overflow-hidden glass">
+          <Image
+            src="/assets/posters/poster-1.jpg"
+            alt="Official Poster 1"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative aspect-[2/3] rounded-lg overflow-hidden glass">
+          <Image
+            src="/assets/posters/poster-2.jpg"
+            alt="Official Poster 2"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="relative aspect-[2/3] rounded-lg overflow-hidden glass">
+          <Image
+            src="/assets/posters/poster-3.jpg"
+            alt="Official Poster 3"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Navigation Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Link href="/episodes">
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-            <Card.Header>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Episodes</h2>
-            </Card.Header>
-            <Card.Content>
-              <p className="text-gray-600 dark:text-gray-400">
-                Browse all 7 episodes with scene breakdowns and character appearances
-              </p>
-            </Card.Content>
-          </Card>
-        </Link>
+        <NavCard
+          title="Episodes"
+          description="Browse all 7 episodes with scene breakdowns and character appearances"
+          href="/episodes"
+        />
 
-        <Link href="/characters">
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-            <Card.Header>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Characters</h2>
-            </Card.Header>
-            <Card.Content>
-              <p className="text-gray-600 dark:text-gray-400">
-                Character profiles with canonical and adaptation tracking
-              </p>
-            </Card.Content>
-          </Card>
-        </Link>
+        <NavCard
+          title="Characters"
+          description="Character profiles with canonical and adaptation tracking"
+          href="/characters"
+        />
 
-        <Link href="/mythos">
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-            <Card.Header>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Mythos</h2>
-            </Card.Header>
-            <Card.Content>
-              <p className="text-gray-600 dark:text-gray-400">
-                Vampire lore, blood bonds, and world-building elements
-              </p>
-            </Card.Content>
-          </Card>
-        </Link>
+        <NavCard
+          title="Mythos"
+          description="Vampire lore, blood bonds, and world-building elements"
+          href="/mythos"
+        />
 
-        <Link href="/graph">
-          <Card className="hover:shadow-lg transition-shadow cursor-pointer h-full">
-            <Card.Header>
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Graph</h2>
-            </Card.Header>
-            <Card.Content>
-              <p className="text-gray-600 dark:text-gray-400">
-                Visual relationship graph connecting all entities
-              </p>
-            </Card.Content>
-          </Card>
-        </Link>
+        <NavCard
+          title="Graph"
+          description="Visual relationship graph connecting all entities"
+          href="/graph"
+        />
       </div>
 
-      <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+      {/* Behind the Scenes */}
+      <div className="glass rounded-lg overflow-hidden">
+        <div className="relative h-64 w-full">
+          <Image
+            src="/assets/posters/behind-scenes.jpg"
+            alt="Behind the Scenes"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-background)]/90 to-transparent" />
+          <div className="absolute inset-0 flex items-center p-8">
+            <div>
+              <h2 className="font-heading text-2xl text-[var(--color-text-primary)] mb-2">
+                Behind the Scenes
+              </h2>
+              <p className="text-[var(--color-text-secondary)]">
+                Production photos and exclusive content from the series
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Project Status */}
+      <div className="glass rounded-lg p-6">
+        <h2 className="font-heading text-xl text-[var(--color-text-primary)] mb-4">
           Project Status
         </h2>
-        <ul className="space-y-2 text-gray-600 dark:text-gray-400">
-          <li>✅ 7 episodes parsed and indexed</li>
-          <li>✅ 9 character profiles created</li>
-          <li>✅ 7 mythos elements cataloged</li>
-          <li>🔄 Frontend wiki interface (in progress)</li>
-          <li>⏳ Graph visualization (pending)</li>
+        <ul className="space-y-2 text-[var(--color-text-secondary)]">
+          <li className="flex items-center gap-2">
+            <span className="text-green-500">✓</span> 7 episodes parsed and indexed
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="text-green-500">✓</span> 10 character profiles created
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="text-green-500">✓</span> 7 mythos elements cataloged
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="text-green-500">✓</span> Interactive graph visualization
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="text-green-500">✓</span> Full-text search across all content
+          </li>
         </ul>
       </div>
     </div>

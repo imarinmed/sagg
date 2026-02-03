@@ -1,6 +1,6 @@
 "use client";
 
-import { Card } from "@heroui/react";
+import { StaticMythosCard } from "@/components/GlassCard";
 
 const mythosElements = [
   { id: "vampire-physiology", name: "Vampire Physiology", category: "biology" },
@@ -12,33 +12,19 @@ const mythosElements = [
   { id: "daywalking", name: "Daywalking", category: "biology" },
 ];
 
-const categoryColors: Record<string, string> = {
-  biology: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
-  supernatural: "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200",
-  society: "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
-};
-
 export default function MythosPage() {
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Mythos</h1>
+      <h1 className="font-heading text-3xl font-bold mb-6 text-[var(--color-text-primary)]">Mythos</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {mythosElements.map((element) => (
-          <Card key={element.id} className="hover:shadow-lg transition-shadow">
-            <Card.Header>
-              <div className="flex items-center justify-between w-full">
-                <span className={`text-xs px-2 py-1 rounded-full ${categoryColors[element.category] || "bg-gray-100 text-gray-800"}`}>
-                  {element.category}
-                </span>
-              </div>
-            </Card.Header>
-            <Card.Content>
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                {element.name}
-              </h3>
-            </Card.Content>
-          </Card>
+          <StaticMythosCard
+            key={element.id}
+            id={element.id}
+            name={element.name}
+            category={element.category}
+          />
         ))}
       </div>
     </div>

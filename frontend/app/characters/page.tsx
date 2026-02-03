@@ -1,7 +1,6 @@
 "use client";
 
-import { Card } from "@heroui/react";
-import Link from "next/link";
+import { StaticCharacterCard } from "@/components/GlassCard";
 
 const characters = [
   { id: "kiara", name: "Kiara Natt och Dag", portrayedBy: "Filippa Kavalic", species: "vampire" },
@@ -17,33 +16,17 @@ const characters = [
 export default function CharactersPage() {
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Characters</h1>
+      <h1 className="font-heading text-3xl font-bold mb-6 text-[var(--color-text-primary)]">Characters</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {characters.map((character) => (
-          <Link key={character.id} href={`/characters/${character.id}`}>
-            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
-              <Card.Header>
-                <div className="flex items-center justify-between w-full">
-                  <span className={`text-xs px-2 py-1 rounded-full ${
-                    character.species === "vampire" 
-                      ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200" 
-                      : "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-                  }`}>
-                    {character.species}
-                  </span>
-                </div>
-              </Card.Header>
-              <Card.Content>
-                <h3 className="font-semibold text-gray-900 dark:text-white">
-                  {character.name}
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Portrayed by {character.portrayedBy}
-                </p>
-              </Card.Content>
-            </Card>
-          </Link>
+          <StaticCharacterCard
+            key={character.id}
+            id={character.id}
+            name={character.name}
+            portrayedBy={character.portrayedBy}
+            species={character.species}
+          />
         ))}
       </div>
     </div>
