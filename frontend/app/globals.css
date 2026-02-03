@@ -242,6 +242,56 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* ============================================
+   BACKGROUND TEXTURES
+   ============================================ */
+
+/* Main textured background - blood-cloud atmosphere */
+.bg-texture {
+  background-image: url('/assets/backgrounds/background.texture.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Pattern overlay - subtle tiled texture for depth */
+.bg-pattern {
+  background-image: url('/assets/backgrounds/background.pattern.png');
+  background-size: 400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Combined: texture base with pattern overlay */
+.bg-texture-pattern {
+  background-image: 
+    url('/assets/backgrounds/background.pattern.png'),
+    url('/assets/backgrounds/background.texture.png');
+  background-size: 400px, cover;
+  background-position: center, center;
+  background-attachment: fixed, fixed;
+  background-repeat: repeat, no-repeat;
+}
+
+/* Gradient overlay for readability - can be combined with backgrounds */
+.bg-overlay::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 8, 8, 0.7) 0%,
+    rgba(8, 8, 8, 0.5) 50%,
+    rgba(8, 8, 8, 0.7) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: var(--weight-normal);

@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { NavCard } from "@/components/GlassCard"
 
 export default function Home() {
@@ -8,26 +7,23 @@ export default function Home() {
     <div className="space-y-8">
       {/* Hero Section with BST Logo and Main Poster */}
       <div className="relative rounded-2xl overflow-hidden min-h-[500px]">
+        {/* Background texture with pattern overlay */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/assets/posters/poster-main.png"
-            alt="Blod, Svett, Tårar"
-            fill
-            className="object-cover"
-            priority
+          <img
+            src="/assets/backgrounds/background.texture.png"
+            alt=""
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/60 to-[var(--color-background)]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-primary)] via-[var(--color-bg-primary)]/80 to-[var(--color-bg-primary)]/60" />
         </div>
         
         <div className="relative z-10 py-20 px-8 text-center flex flex-col items-center">
           {/* BST Logo */}
           <div className="relative w-48 h-48 md:w-64 md:h-64 mb-8">
-            <Image
+            <img
               src="/assets/posters/bst-logo.png"
               alt="Blod, Svett, Tårar Logo"
-              fill
-              className="object-contain drop-shadow-2xl"
-              priority
+              className="w-full h-full object-contain drop-shadow-2xl"
             />
           </div>
           
@@ -43,20 +39,18 @@ export default function Home() {
       {/* Featured Posters Gallery */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="relative aspect-[16/9] rounded-lg overflow-hidden glass">
-          <Image
+          <img
             src="/assets/posters/poster-main.png"
             alt="Blod, Svett, Tårar Main Poster"
-            fill
-            className="object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         
         <div className="relative aspect-[16/9] rounded-lg overflow-hidden glass">
-          <Image
+          <img
             src="/assets/posters/poster-alt.png"
             alt="Blod, Svett, Tårar Alternative Poster"
-            fill
-            className="object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
