@@ -371,3 +371,94 @@ a:hover {
 .font-heading {
   font-family: var(--font-heading);
 }
+
+/* ============================================
+   TABOO TAG STYLING
+   Blood-hued border glow effect for taboo content
+   ============================================ */
+
+:root {
+  --taboo-border: rgba(139, 0, 0, 0.6);
+  --taboo-glow: rgba(139, 0, 0, 0.3);
+  --taboo-glow-strong: rgba(139, 0, 0, 0.5);
+  --taboo-bg: rgba(139, 0, 0, 0.1);
+  --taboo-text: #E5E5E5;
+}
+
+[data-theme="gothic"] {
+  --taboo-border: rgba(139, 0, 0, 0.7);
+  --taboo-glow: rgba(139, 0, 0, 0.4);
+  --taboo-glow-strong: rgba(139, 0, 0, 0.6);
+  --taboo-bg: rgba(139, 0, 0, 0.15);
+  --taboo-text: #E5E5E5;
+}
+
+[data-theme="luxury"] {
+  --taboo-border: rgba(114, 47, 55, 0.7);
+  --taboo-glow: rgba(114, 47, 55, 0.4);
+  --taboo-glow-strong: rgba(114, 47, 55, 0.6);
+  --taboo-bg: rgba(114, 47, 55, 0.15);
+  --taboo-text: #E5E5E5;
+}
+
+[data-theme="nordic"] {
+  --taboo-border: rgba(74, 4, 4, 0.7);
+  --taboo-glow: rgba(74, 4, 4, 0.4);
+  --taboo-glow-strong: rgba(74, 4, 4, 0.6);
+  --taboo-bg: rgba(74, 4, 4, 0.15);
+  --taboo-text: #F5F5F5;
+}
+
+.taboo-tag {
+  background: var(--taboo-bg);
+  border: 1px solid var(--taboo-border);
+  box-shadow: 
+    0 0 8px var(--taboo-glow),
+    inset 0 0 8px var(--taboo-glow);
+  color: var(--taboo-text);
+  letter-spacing: 0.02em;
+}
+
+.taboo-tag:hover {
+  box-shadow: 
+    0 0 16px var(--taboo-glow-strong),
+    inset 0 0 12px var(--taboo-glow-strong);
+  border-color: var(--taboo-glow-strong);
+  transform: translateY(-1px);
+}
+
+.taboo-tag-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.taboo-tag-remove:hover {
+  opacity: 1;
+}
+
+.taboo-tag-icon {
+  color: var(--taboo-text);
+}
+
+/* Selected state for taboo tags */
+.taboo-tag.selected {
+  background: var(--taboo-glow);
+  box-shadow: 
+    0 0 20px var(--taboo-glow-strong),
+    inset 0 0 15px var(--taboo-glow-strong);
+  border-color: var(--taboo-glow-strong);
+}
+
+/* Focus state for accessibility */
+.taboo-tag:focus-visible {
+  outline: 2px solid var(--taboo-border);
+  outline-offset: 2px;
+}

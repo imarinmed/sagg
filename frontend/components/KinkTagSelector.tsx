@@ -8,6 +8,7 @@ import {
   ScrollShadow,
 } from "@heroui/react";
 import { Search, X, Check } from "lucide-react";
+import { TabooTag } from "./TabooTag";
 
 interface KinkDescriptor {
   id: string;
@@ -33,11 +34,12 @@ const categoryColors: Record<string, string> = {
   physical_acts: "bg-red-100 text-red-800",
   psychological_dynamics: "bg-orange-100 text-orange-800",
   vampire_specific: "bg-violet-100 text-violet-800",
-  taboo_elements: "bg-rose-100 text-rose-800",
   relationship_structures: "bg-cyan-100 text-cyan-800",
   aftercare_safety: "bg-emerald-100 text-emerald-800",
   content_warnings: "bg-amber-100 text-amber-800",
 };
+
+const tabooCategories = ["taboo_elements"];
 
 const categoryLabels: Record<string, string> = {
   consent_frameworks: "Consent",
@@ -46,7 +48,6 @@ const categoryLabels: Record<string, string> = {
   physical_acts: "Physical Acts",
   psychological_dynamics: "Psychological",
   vampire_specific: "Vampire",
-  taboo_elements: "Taboo",
   relationship_structures: "Relationships",
   aftercare_safety: "Aftercare",
   content_warnings: "Warnings",
@@ -114,16 +115,31 @@ export function KinkTagSelector({
       {/* Selected Tags */}
       {selectedDescriptors.length > 0 && (
         <div className="flex flex-wrap gap-2">
-          {selectedDescriptors.map((descriptor) => (
-            <button
-              key={descriptor.id}
-              onClick={() => removeSelection(descriptor.id)}
-              className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${categoryColors[descriptor.category]} hover:opacity-80 transition-opacity`}
-            >
-              {descriptor.name}
-              <span className="ml-1">×</span>
-            </button>
-          ))}
+          {selectedDescriptors.map((descriptor) => {
+            const isTaboo = tabooCategories.includes(descriptor.category);
+            if (isTaboo) {
+              return (
+                <TabooTag
+                  key={descriptor.id}
+                  onClick={() => removeSelection(descriptor.id)}
+                  removable
+                  onRemove={() => removeSelection(descriptor.id)}
+                >
+                  {descriptor.name}
+                </TabooTag>
+              );
+            }
+            return (
+              <button
+                key={descriptor.id}
+                onClick={() => removeSelection(descriptor.id)}
+                className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${categoryColors[descriptor.category]} hover:opacity-80 transition-opacity`}
+              >
+                {descriptor.name}
+                <span className="ml-1">×</span>
+              </button>
+            );
+          })}
         </div>
       )}
 
