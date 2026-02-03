@@ -45,17 +45,23 @@ export interface MythosElement {
   description?: string;
 }
 
+export interface GraphNode {
+  id: string;
+  node_type: "episode" | "character" | "mythos";
+  label: string;
+  metadata?: Record<string, any>;
+}
+
+export interface GraphEdge {
+  source: string;
+  target: string;
+  edge_type: string;
+  label?: string;
+}
+
 export interface GraphData {
-  nodes: Array<{
-    id: string;
-    type: string;
-    label: string;
-  }>;
-  edges: Array<{
-    source: string;
-    target: string;
-    type: string;
-  }>;
+  nodes: GraphNode[];
+  edges: GraphEdge[];
 }
 
 async function fetchApi<T>(endpoint: string): Promise<T> {
