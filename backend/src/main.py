@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from .api import episodes, characters, mythos, graph
 
 app = FastAPI(
     title="Blod Wiki API",
@@ -15,6 +16,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include routers
+app.include_router(episodes.router)
+app.include_router(characters.router)
+app.include_router(mythos.router)
+app.include_router(graph.router)
 
 
 @app.get("/health")
