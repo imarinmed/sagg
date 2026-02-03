@@ -91,12 +91,17 @@ export function IntensitySlider({
       {label && (
         <div className="flex justify-between items-center">
           <span className="text-sm font-medium text-default-700">{label}</span>
-          <Tooltip content={currentIntensity?.description}>
-            <span
-              className={`text-sm font-bold ${currentIntensity?.color || "text-default-600"}`}
-            >
-              {value}/5
-            </span>
+          <Tooltip>
+            <Tooltip.Trigger>
+              <span
+                className={`text-sm font-bold ${currentIntensity?.color || "text-default-600"}`}
+              >
+                {value}/5
+              </span>
+            </Tooltip.Trigger>
+            <Tooltip.Content>
+              {currentIntensity?.description}
+            </Tooltip.Content>
           </Tooltip>
         </div>
       )}
@@ -132,14 +137,19 @@ export function IntensitySlider({
       {showLabels && (
         <div className="flex justify-between text-[10px] text-default-400 px-1">
           {Object.entries(intensityLabels).map(([level, info]) => (
-            <Tooltip key={level} content={info.description}>
-              <span
-                className={`cursor-help transition-colors ${
-                  parseInt(level) === value ? info.color : ""
-                }`}
-              >
-                {level}
-              </span>
+            <Tooltip key={level}>
+              <Tooltip.Trigger>
+                <span
+                  className={`cursor-help transition-colors ${
+                    parseInt(level) === value ? info.color : ""
+                  }`}
+                >
+                  {level}
+                </span>
+              </Tooltip.Trigger>
+              <Tooltip.Content>
+                {info.description}
+              </Tooltip.Content>
             </Tooltip>
           ))}
         </div>
@@ -165,21 +175,26 @@ export function IntensityBadge({ value }: { value: number }) {
   if (!info) return null;
 
   return (
-    <Tooltip content={info.description}>
-      <span
-        className={`
-          inline-flex items-center px-2 py-0.5 rounded text-xs font-medium
-          ${
-            value >= 4
-              ? "bg-danger-100 text-danger-700"
-              : value >= 3
-              ? "bg-warning-100 text-warning-700"
-              : "bg-success-100 text-success-700"
-          }
-        `}
-      >
-        {value}/5 {info.label}
-      </span>
+    <Tooltip>
+      <Tooltip.Trigger>
+        <span
+          className={`
+            inline-flex items-center px-2 py-0.5 rounded text-xs font-medium
+            ${
+              value >= 4
+                ? "bg-danger-100 text-danger-700"
+                : value >= 3
+                ? "bg-warning-100 text-warning-700"
+                : "bg-success-100 text-success-700"
+            }
+          `}
+        >
+          {value}/5 {info.label}
+        </span>
+      </Tooltip.Trigger>
+      <Tooltip.Content>
+        {info.description}
+      </Tooltip.Content>
     </Tooltip>
   );
 }

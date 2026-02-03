@@ -16,7 +16,26 @@ export interface Character {
   portrayed_by?: string;
   role?: string;
   description?: string;
-  family?: string;
+  family?: string | null;
+  canonical_traits: string[];
+  adaptation_traits: string[];
+  adaptation_notes: string;
+  kink_profile: {
+    preferences: Array<{
+      descriptor: string;
+      intensity: number;
+      context?: string;
+    }>;
+    limits: Array<{
+      descriptor: string;
+      type: string;
+      note?: string;
+    }>;
+    evolution: Array<{
+      episode_id: string;
+      descriptors: Record<string, number>;
+    }>;
+  };
 }
 
 export interface MythosElement {

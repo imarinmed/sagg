@@ -118,15 +118,14 @@ export function KinkTagSelector({
       {selectedDescriptors.length > 0 && (
         <div className="flex flex-wrap gap-2">
           {selectedDescriptors.map((descriptor) => (
-            <Chip
+            <button
               key={descriptor.id}
-              className={`${categoryColors[descriptor.category]} cursor-pointer`}
-              onClose={() => removeSelection(descriptor.id)}
-              variant="flat"
-              size="sm"
+              onClick={() => removeSelection(descriptor.id)}
+              className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${categoryColors[descriptor.category]} hover:opacity-80 transition-opacity`}
             >
               {descriptor.name}
-            </Chip>
+              <span className="ml-1">×</span>
+            </button>
           ))}
         </div>
       )}

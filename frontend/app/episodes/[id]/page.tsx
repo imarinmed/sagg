@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import {
   Card,
-  CardHeader,
-  CardBody,
   Accordion,
   AccordionItem,
   Chip,
@@ -83,7 +81,7 @@ export default function EpisodeDetailPage() {
       <div className="text-center py-12">
         <p className="text-danger-500">{error || "Episode not found"}</p>
         <Link href="/episodes">
-          <Button className="mt-4" variant="flat">
+          <Button className="mt-4" variant="ghost">
             <ChevronLeft className="w-4 h-4 mr-2" />
             Back to Episodes
           </Button>
@@ -97,7 +95,7 @@ export default function EpisodeDetailPage() {
       {/* Header */}
       <div className="flex items-center gap-4">
         <Link href="/episodes">
-          <Button isIconOnly variant="light">
+          <Button isIconOnly variant="ghost">
             <ChevronLeft className="w-5 h-5" />
           </Button>
         </Link>
@@ -111,32 +109,31 @@ export default function EpisodeDetailPage() {
 
       {/* Episode Info */}
       <Card>
-        <CardBody className="p-6">
+        <Card.Content className="p-6">
           {episode.synopsis && (
             <p className="text-default-600 mb-4">{episode.synopsis}</p>
           )}
           <div className="flex gap-2">
-            <Chip variant="flat" size="sm">
+            <Chip variant="soft" size="sm">
               {scenes.length} scenes
             </Chip>
-            <Chip variant="flat" size="sm" color="primary">
+            <Chip variant="soft" size="sm" color="accent">
               {episode.id.toUpperCase()}
             </Chip>
           </div>
-        </CardBody>
+        </Card.Content>
       </Card>
 
       {/* Scenes */}
       <Card>
-        <CardHeader>
+        <Card.Header>
           <h2 className="text-xl font-semibold">Scenes</h2>
-        </CardHeader>
-        <CardBody>
+        </Card.Header>
+        <Card.Content>
           <Accordion>
             {scenes.map((scene) => (
-              <AccordionItem
-                key={scene.id}
-                title={
+              <Accordion.Item key={scene.id}>
+                <Accordion.Trigger>
                   <div className="flex items-center justify-between w-full">
                     <div className="flex items-center gap-3">
                       <span className="text-sm font-medium text-default-500">
@@ -153,71 +150,72 @@ export default function EpisodeDetailPage() {
                       </div>
                     )}
                   </div>
-                }
-              >
-                <div className="space-y-4 py-2">
-                  {/* Characters */}
-                  {scene.characters && scene.characters.length > 0 && (
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <Users className="w-4 h-4 text-default-400" />
-                        <span className="text-sm font-medium text-default-600">
-                          Characters
-                        </span>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {scene.characters.map((char, idx) => (
-                          <Chip key={idx} size="sm" variant="flat">
-                            {char}
-                          </Chip>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Dialogue */}
-                  {scene.dialogue && scene.dialogue.length > 0 && (
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <MessageCircle className="w-4 h-4 text-default-400" />
-                        <span className="text-sm font-medium text-default-600">
-                          Dialogue
-                        </span>
-                      </div>
-                      <ScrollShadow className="max-h-64 bg-default-50 rounded-lg p-4">
-                        <div className="space-y-2">
-                          {scene.dialogue.map((line, idx) => (
-                            <div key={idx} className="text-sm">
-                              {line.speaker ? (
-                                <div className="flex gap-2">
-                                  <span className="font-medium text-primary-600 min-w-[100px]">
-                                    {line.speaker}:
-                                  </span>
-                                  <span className="text-default-700">{line.text}</span>
-                                </div>
-                              ) : (
-                                <span className="text-default-500 italic">
-                                  {line.text}
-                                </span>
-                              )}
-                            </div>
+                </Accordion.Trigger>
+                <Accordion.Panel>
+                  <div className="space-y-4 py-2">
+                    {/* Characters */}
+                    {scene.characters && scene.characters.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <Users className="w-4 h-4 text-default-400" />
+                          <span className="text-sm font-medium text-default-600">
+                            Characters
+                          </span>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          {scene.characters.map((char, idx) => (
+                            <Chip key={idx} size="sm" variant="soft">
+                              {char}
+                            </Chip>
                           ))}
                         </div>
-                      </ScrollShadow>
-                    </div>
-                  )}
+                      </div>
+                    )}
 
-                  {/* Time Range */}
-                  {(scene.start_time || scene.end_time) && (
-                    <div className="text-xs text-default-400">
-                      {scene.start_time} - {scene.end_time}
-                    </div>
-                  )}
-                </div>
-              </AccordionItem>
+                    {/* Dialogue */}
+                    {scene.dialogue && scene.dialogue.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <MessageCircle className="w-4 h-4 text-default-400" />
+                          <span className="text-sm font-medium text-default-600">
+                            Dialogue
+                          </span>
+                        </div>
+                        <ScrollShadow className="max-h-64 bg-default-50 rounded-lg p-4">
+                          <div className="space-y-2">
+                            {scene.dialogue.map((line, idx) => (
+                              <div key={idx} className="text-sm">
+                                {line.speaker ? (
+                                  <div className="flex gap-2">
+                                    <span className="font-medium text-primary-600 min-w-[100px]">
+                                      {line.speaker}:
+                                    </span>
+                                    <span className="text-default-700">{line.text}</span>
+                                  </div>
+                                ) : (
+                                  <span className="text-default-500 italic">
+                                    {line.text}
+                                  </span>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </ScrollShadow>
+                      </div>
+                    )}
+
+                    {/* Time Range */}
+                    {(scene.start_time || scene.end_time) && (
+                      <div className="text-xs text-default-400">
+                        {scene.start_time} - {scene.end_time}
+                      </div>
+                    )}
+                  </div>
+                </Accordion.Panel>
+              </Accordion.Item>
             ))}
           </Accordion>
-        </CardBody>
+        </Card.Content>
       </Card>
     </div>
   );

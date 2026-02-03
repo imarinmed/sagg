@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import {
   Card,
-  CardHeader,
-  CardBody,
+  Card.Header,
+  Card.Content,
   Button,
   Input,
   Textarea,
@@ -135,7 +135,7 @@ export function SceneTagEditor({
 
   return (
     <Card className="w-full">
-      <CardHeader className="flex flex-col gap-2">
+      <Card.Header className="flex flex-col gap-2">
         <div className="flex justify-between items-center w-full">
           <div>
             <h3 className="text-lg font-semibold">Scene Tags</h3>
@@ -146,17 +146,17 @@ export function SceneTagEditor({
             )}
           </div>
           <div className="flex gap-2">
-            <Chip size="sm" variant="flat" color="warning">
+            <Chip size="sm" variant="soft" color="warning">
               {value.content_warnings.length} Warnings
             </Chip>
-            <Chip size="sm" variant="flat" color="primary">
+            <Chip size="sm" variant="soft" color="primary">
               {value.descriptors.length} Descriptors
             </Chip>
           </div>
         </div>
-      </CardHeader>
+      </Card.Header>
 
-      <CardBody className="gap-4">
+      <Card.Content className="gap-4">
         <Tabs
           selectedKey={activeTab}
           onSelectionChange={(key) => setActiveTab(key as "warnings" | "descriptors")}
@@ -166,7 +166,7 @@ export function SceneTagEditor({
             title={
               <div className="flex items-center gap-2">
                 <span>Content Warnings</span>
-                <Chip size="sm" variant="flat">
+                <Chip size="sm" variant="soft">
                   {value.content_warnings.length}
                 </Chip>
               </div>
@@ -212,7 +212,7 @@ export function SceneTagEditor({
 
                     return (
                       <Card key={tag.id} className="bg-default-50">
-                        <CardBody className="p-3">
+                        <Card.Content className="p-3">
                           {isEditing ? (
                             <div className="space-y-3">
                               <div className="flex justify-between items-start">
@@ -293,7 +293,7 @@ export function SceneTagEditor({
                               </div>
                             </div>
                           )}
-                        </CardBody>
+                        </Card.Content>
                       </Card>
                     );
                   })}
@@ -307,7 +307,7 @@ export function SceneTagEditor({
             title={
               <div className="flex items-center gap-2">
                 <span>Scene Descriptors</span>
-                <Chip size="sm" variant="flat">
+                <Chip size="sm" variant="soft">
                   {value.descriptors.length}
                 </Chip>
               </div>
@@ -352,7 +352,7 @@ export function SceneTagEditor({
 
                     return (
                       <Card key={tag.id} className="bg-default-50">
-                        <CardBody className="p-3">
+                        <Card.Content className="p-3">
                           {isEditing ? (
                             <div className="space-y-3">
                               <div className="flex justify-between items-start">
@@ -409,7 +409,7 @@ export function SceneTagEditor({
                               <div className="flex-1">
                                 <div className="flex items-center gap-2">
                                   <span className="font-medium">{descriptor.name}</span>
-                                  <Chip size="sm" variant="flat" color="primary">
+                                  <Chip size="sm" variant="soft" color="primary">
                                     {descriptor.category}
                                   </Chip>
                                   <IntensityBadge value={tag.intensity} />
@@ -441,7 +441,7 @@ export function SceneTagEditor({
                               </div>
                             </div>
                           )}
-                        </CardBody>
+                        </Card.Content>
                       </Card>
                     );
                   })}
@@ -450,7 +450,7 @@ export function SceneTagEditor({
             </div>
           </Tab>
         </Tabs>
-      </CardBody>
+      </Card.Content>
     </Card>
   );
 }
