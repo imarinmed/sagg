@@ -57,6 +57,7 @@ export const api = {
     list: () => fetchApi<Character[]>("/api/characters"),
     get: (id: string) => fetchApi<Character>(`/api/characters/${id}`),
     getRelationships: (id: string) => fetchApi<any[]>(`/api/characters/${id}/relationships`),
+    getCharacter: (id: string) => fetchApi<Character>(`/api/characters/${id}`),
   },
   mythos: {
     list: () => fetchApi<MythosElement[]>("/api/mythos"),
