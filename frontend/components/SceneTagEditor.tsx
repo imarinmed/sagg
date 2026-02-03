@@ -8,7 +8,6 @@ import {
   TextArea,
   Chip,
   Tabs,
-  Tab,
   ScrollShadow,
 } from "@heroui/react";
 import { Plus, Trash2, Edit3, Save, X } from "lucide-react";
@@ -158,17 +157,30 @@ export function SceneTagEditor({
           selectedKey={activeTab}
           onSelectionChange={(key) => setActiveTab(key as "warnings" | "descriptors")}
         >
-          <Tab
-            key="warnings"
-            title={
-              <div className="flex items-center gap-2">
-                <span>Content Warnings</span>
-                <Chip size="sm" variant="soft">
-                  {value.content_warnings.length}
-                </Chip>
-              </div>
-            }
-          >
+          <Tabs.ListContainer>
+            <Tabs.List aria-label="Scene tag categories">
+              <Tabs.Tab id="warnings">
+                <div className="flex items-center gap-2">
+                  <span>Content Warnings</span>
+                  <Chip size="sm" variant="soft">
+                    {value.content_warnings.length}
+                  </Chip>
+                </div>
+                <Tabs.Indicator />
+              </Tabs.Tab>
+              <Tabs.Tab id="descriptors">
+                <div className="flex items-center gap-2">
+                  <span>Scene Descriptors</span>
+                  <Chip size="sm" variant="soft">
+                    {value.descriptors.length}
+                  </Chip>
+                </div>
+                <Tabs.Indicator />
+              </Tabs.Tab>
+            </Tabs.List>
+          </Tabs.ListContainer>
+
+          <Tabs.Panel id="warnings">
             <div className="space-y-4">
               <KinkTagSelector
                 descriptors={descriptors.filter(
@@ -218,8 +230,8 @@ export function SceneTagEditor({
                                   <Button
                                     size="sm"
                                     isIconOnly
-                                    variant="light"
-                                    color="success"
+                                    variant="ghost"
+                                    className="text-success"
                                     onPress={saveEdit}
                                   >
                                     <Save className="w-4 h-4" />
@@ -227,8 +239,8 @@ export function SceneTagEditor({
                                   <Button
                                     size="sm"
                                     isIconOnly
-                                    variant="light"
-                                    color="danger"
+                                    variant="ghost"
+                                    className="text-danger"
                                     onPress={cancelEdit}
                                   >
                                     <X className="w-4 h-4" />
@@ -244,17 +256,18 @@ export function SceneTagEditor({
                                 }
                                 label="Warning Level"
                               />
-                              <TextArea
-                                label="Notes"
-                                value={editForm?.notes || ""}
-                                onChange={(e) =>
-                                  setEditForm((prev) =>
-                                    prev ? { ...prev, notes: e.target.value } : null
-                                  )
-                                }
-                                size="sm"
-                                placeholder="Add context or trigger details..."
-                              />
+                              <div className="space-y-1">
+                                <span className="text-sm font-medium">Notes</span>
+                                <TextArea
+                                  value={editForm?.notes || ""}
+                                  onChange={(e) =>
+                                    setEditForm((prev) =>
+                                      prev ? { ...prev, notes: e.target.value } : null
+                                    )
+                                  }
+                                  placeholder="Add context or trigger details..."
+                                />
+                              </div>
                             </div>
                           ) : (
                             <div className="flex justify-between items-start">
@@ -273,7 +286,7 @@ export function SceneTagEditor({
                                 <Button
                                   size="sm"
                                   isIconOnly
-                                  variant="light"
+                                  variant="ghost"
                                   onPress={() => startEdit(tag)}
                                 >
                                   <Edit3 className="w-4 h-4" />
@@ -281,8 +294,8 @@ export function SceneTagEditor({
                                 <Button
                                   size="sm"
                                   isIconOnly
-                                  variant="light"
-                                  color="danger"
+                                  variant="ghost"
+                                  className="text-danger"
                                   onPress={() => removeTag(tag.id)}
                                 >
                                   <Trash2 className="w-4 h-4" />
@@ -297,19 +310,9 @@ export function SceneTagEditor({
                 </div>
               </ScrollShadow>
             </div>
-          </Tab>
+          </Tabs.Panel>
 
-          <Tab
-            key="descriptors"
-            title={
-              <div className="flex items-center gap-2">
-                <span>Scene Descriptors</span>
-                <Chip size="sm" variant="soft">
-                  {value.descriptors.length}
-                </Chip>
-              </div>
-            }
-          >
+          <Tabs.Panel id="descriptors">
             <div className="space-y-4">
               <KinkTagSelector
                 descriptors={descriptors.filter(
@@ -363,8 +366,8 @@ export function SceneTagEditor({
                                   <Button
                                     size="sm"
                                     isIconOnly
-                                    variant="light"
-                                    color="success"
+                                    variant="ghost"
+                                    className="text-success"
                                     onPress={saveEdit}
                                   >
                                     <Save className="w-4 h-4" />
@@ -372,8 +375,8 @@ export function SceneTagEditor({
                                   <Button
                                     size="sm"
                                     isIconOnly
-                                    variant="light"
-                                    color="danger"
+                                    variant="ghost"
+                                    className="text-danger"
                                     onPress={cancelEdit}
                                   >
                                     <X className="w-4 h-4" />
@@ -389,17 +392,18 @@ export function SceneTagEditor({
                                 }
                                 label="Scene Intensity"
                               />
-                              <TextArea
-                                label="Implementation Notes"
-                                value={editForm?.notes || ""}
-                                onChange={(e) =>
-                                  setEditForm((prev) =>
-                                    prev ? { ...prev, notes: e.target.value } : null
-                                  )
-                                }
-                                size="sm"
-                                placeholder="How this appears in the scene..."
-                              />
+                              <div className="space-y-1">
+                                <span className="text-sm font-medium">Implementation Notes</span>
+                                <TextArea
+                                  value={editForm?.notes || ""}
+                                  onChange={(e) =>
+                                    setEditForm((prev) =>
+                                      prev ? { ...prev, notes: e.target.value } : null
+                                    )
+                                  }
+                                  placeholder="How this appears in the scene..."
+                                />
+                              </div>
                             </div>
                           ) : (
                             <div className="flex justify-between items-start">
@@ -421,7 +425,7 @@ export function SceneTagEditor({
                                 <Button
                                   size="sm"
                                   isIconOnly
-                                  variant="light"
+                                  variant="ghost"
                                   onPress={() => startEdit(tag)}
                                 >
                                   <Edit3 className="w-4 h-4" />
@@ -429,8 +433,8 @@ export function SceneTagEditor({
                                 <Button
                                   size="sm"
                                   isIconOnly
-                                  variant="light"
-                                  color="danger"
+                                  variant="ghost"
+                                  className="text-danger"
                                   onPress={() => removeTag(tag.id)}
                                 >
                                   <Trash2 className="w-4 h-4" />
@@ -445,7 +449,7 @@ export function SceneTagEditor({
                 </div>
               </ScrollShadow>
             </div>
-          </Tab>
+          </Tabs.Panel>
         </Tabs>
       </Card.Content>
     </Card>
