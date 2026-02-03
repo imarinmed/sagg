@@ -9,8 +9,15 @@
    Themes: Gothic | Luxury | Nordic
    ============================================ */
 
-/* Base/Reset Variables */
 :root {
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --stagger-delay: 50ms;
+  --stagger-max: 500ms;
   --radius: 0.625rem;
   
   /* Default to Gothic theme (applied immediately) */
@@ -310,7 +317,46 @@ a:hover {
   color: var(--color-text-primary);
 }
 
-/* Reduced motion */
+[data-theme] {
+  transition:
+    background-color var(--duration-normal) var(--ease-out),
+    color var(--duration-normal) var(--ease-out);
+}
+
+[data-theme] * {
+  transition:
+    background-color var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp var(--duration-normal) var(--ease-out) forwards;
+  opacity: 0;
+}
+
+.stagger-1 { animation-delay: calc(var(--stagger-delay) * 1); }
+.stagger-2 { animation-delay: calc(var(--stagger-delay) * 2); }
+.stagger-3 { animation-delay: calc(var(--stagger-delay) * 3); }
+.stagger-4 { animation-delay: calc(var(--stagger-delay) * 4); }
+.stagger-5 { animation-delay: calc(var(--stagger-delay) * 5); }
+.stagger-6 { animation-delay: calc(var(--stagger-delay) * 6); }
+.stagger-7 { animation-delay: calc(var(--stagger-delay) * 7); }
+.stagger-8 { animation-delay: calc(var(--stagger-delay) * 8); }
+.stagger-9 { animation-delay: calc(var(--stagger-delay) * 9); }
+.stagger-10 { animation-delay: calc(var(--stagger-delay) * 10); }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -319,9 +365,19 @@ a:hover {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
+
   html {
     scroll-behavior: auto;
+  }
+
+  [data-theme],
+  [data-theme] * {
+    transition: none !important;
+  }
+
+  .animate-fade-in-up {
+    opacity: 1;
+    animation: none;
   }
 }
 
@@ -358,14 +414,16 @@ a:hover {
 }
 
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
 }
 
 .hover-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 
+  box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(212, 175, 55, 0.15);
+    0 0 30px rgba(197, 160, 89, 0.15);
 }
 
 .font-heading {

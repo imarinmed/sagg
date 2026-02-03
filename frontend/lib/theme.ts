@@ -39,11 +39,24 @@ export function getStoredTheme(): Theme {
 
 /**
  * Set the theme in localStorage and apply to document
+ * Uses smooth transition unless reduced motion is preferred
  */
 export function setTheme(theme: Theme): void {
   if (typeof window === 'undefined') return;
-  
-  document.documentElement.setAttribute('data-theme', theme);
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion) {
+    document.documentElement.setAttribute('data-theme', theme);
+  } else {
+    document.documentElement.classList.add('theme-transitioning');
+    document.documentElement.setAttribute('data-theme', theme);
+
+    setTimeout(() => {
+      document.documentElement.classList.remove('theme-transitioning');
+    }, 300);
+  }
+
   localStorage.setItem(THEME_STORAGE_KEY, theme);
 }
 
