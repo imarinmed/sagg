@@ -6,54 +6,55 @@ import { NavCard } from "@/components/GlassCard"
 export default function Home() {
   return (
     <div className="space-y-8">
-      {/* Hero Section with Poster */}
-      <div className="relative rounded-2xl overflow-hidden">
+      {/* Hero Section with BST Logo and Main Poster */}
+      <div className="relative rounded-2xl overflow-hidden min-h-[500px]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/posters/poster-3.jpg"
+            src="/assets/posters/poster-main.png"
             alt="Blod, Svett, Tårar"
             fill
-            className="object-cover opacity-40"
+            className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-background)] via-[var(--color-background)]/60 to-[var(--color-background)]/30" />
         </div>
         
-        <div className="relative z-10 py-16 px-8 text-center">
-          <h1 className="font-heading text-5xl md:text-6xl font-bold text-[var(--color-text-primary)] mb-4 tracking-wide">
-            Blod, Svett, Tårar
-          </h1>
-          <p className="text-xl md:text-2xl text-[var(--color-text-secondary)] font-light">
+        <div className="relative z-10 py-20 px-8 text-center flex flex-col items-center">
+          {/* BST Logo */}
+          <div className="relative w-48 h-48 md:w-64 md:h-64 mb-8">
+            <Image
+              src="/assets/posters/bst-logo.png"
+              alt="Blod, Svett, Tårar Logo"
+              fill
+              className="object-contain drop-shadow-2xl"
+              priority
+            />
+          </div>
+          
+          <p className="text-xl md:text-2xl text-[var(--color-text-secondary)] font-light mb-4">
             Dark Adaptation Knowledge Base
           </p>
-          <p className="text-sm text-[var(--color-text-muted)] mt-4 max-w-2xl mx-auto">
+          <p className="text-sm text-[var(--color-text-muted)] max-w-2xl mx-auto">
             A comprehensive wiki for the dark, explicit adaptation of the Swedish YA vampire series
           </p>
         </div>
       </div>
 
       {/* Featured Posters Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="relative aspect-[2/3] rounded-lg overflow-hidden glass">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="relative aspect-[16/9] rounded-lg overflow-hidden glass">
           <Image
-            src="/assets/posters/poster-1.jpg"
-            alt="Official Poster 1"
+            src="/assets/posters/poster-main.png"
+            alt="Blod, Svett, Tårar Main Poster"
             fill
             className="object-cover"
           />
         </div>
-        <div className="relative aspect-[2/3] rounded-lg overflow-hidden glass">
+        
+        <div className="relative aspect-[16/9] rounded-lg overflow-hidden glass">
           <Image
-            src="/assets/posters/poster-2.jpg"
-            alt="Official Poster 2"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className="relative aspect-[2/3] rounded-lg overflow-hidden glass">
-          <Image
-            src="/assets/posters/poster-3.jpg"
-            alt="Official Poster 3"
+            src="/assets/posters/poster-alt.png"
+            alt="Blod, Svett, Tårar Alternative Poster"
             fill
             className="object-cover"
           />
@@ -85,29 +86,6 @@ export default function Home() {
           description="Visual relationship graph connecting all entities"
           href="/graph"
         />
-      </div>
-
-      {/* Behind the Scenes */}
-      <div className="glass rounded-lg overflow-hidden">
-        <div className="relative h-64 w-full">
-          <Image
-            src="/assets/posters/behind-scenes.jpg"
-            alt="Behind the Scenes"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-background)]/90 to-transparent" />
-          <div className="absolute inset-0 flex items-center p-8">
-            <div>
-              <h2 className="font-heading text-2xl text-[var(--color-text-primary)] mb-2">
-                Behind the Scenes
-              </h2>
-              <p className="text-[var(--color-text-secondary)]">
-                Production photos and exclusive content from the series
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Project Status */}
