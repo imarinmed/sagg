@@ -1,25 +1,36 @@
 id: vampire_physiology
 name: Vampire Physiology
 category: biology
-short_description: "Enhanced physical abilities and biological adaptations that define vampire existence"
+short_description: Enhanced physical abilities and biological adaptations that define
+  vampire existence
 related_characters:
-  - saga
-  - boris
-  - vera
-  - agnes
+- saga
+- boris
+- vera
+- agnes
 media_urls: []
+versions:
+  bst:
+    description: 'Vampires in the series appear human but possess enhanced abilities
+      and depend on blood for sustenance.
 
-canonical:
-  description: |
-    Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenance.
-    They can blend into human society and attend regular schools, making them virtually indistinguishable
-    from humans in everyday interactions.
-    
-    Their bodies have adapted to process blood as their primary source of nutrition, converting its
-    components into the energy needed to sustain their enhanced abilities. The exact biological
-    mechanisms remain mysterious, but the results are undeniable: increased strength, heightened
-    senses, and extended lifespans that span centuries.
-  traits:
+      They can blend into human society and attend regular schools, making them virtually
+      indistinguishable
+
+      from humans in everyday interactions.
+
+
+      Their bodies have adapted to process blood as their primary source of nutrition,
+      converting its
+
+      components into the energy needed to sustain their enhanced abilities. The exact
+      biological
+
+      mechanisms remain mysterious, but the results are undeniable: increased strength,
+      heightened
+
+      senses, and extended lifespans that span centuries.'
+    traits: &id001
     - enhanced_strength
     - enhanced_senses
     - extended_lifespan
@@ -27,36 +38,106 @@ canonical:
     - human_appearance
     - accelerated_healing
     - temperature_regulation
-  weaknesses: []
-  abilities:
+    abilities: &id003
     - strength
     - speed
     - senses
     - healing
-  significance: "Forms the biological foundation for all vampire existence"
-  source_episodes:
+    weaknesses: &id002 []
+    significance: Forms the biological foundation for all vampire existence
+    source_episodes: &id004
     - s01e01
     - s01e03
     - s01e06
+  sst:
+    description: 'In the dark adaptation, vampire physiology becomes more explicitly
+      tied to predatory nature.
 
-adaptation_expansion:
-  dark_variant: |
-    In the dark adaptation, vampire physiology becomes more explicitly tied to predatory nature.
-    The enhanced senses are heightened to predatory levels, allowing vampires to detect heartbeats,
-    fear hormones, and the subtle flush of arousal in human prey.
-  mechanics: |
-    Blood consumption not only sustains but enhances. Recent feeding amplifies all abilities,
-    while blood deprivation leads to a feral state where instinct overrides reason.
-  erotic_implications: |
-    The heightened senses make vampires exquisitely attuned to physical pleasure and pain.
-    Their enhanced stamina and strength open possibilities for intense physical encounters
-    that would be dangerous or impossible with human partners.
-  horror_elements:
+      The enhanced senses are heightened to predatory levels, allowing vampires to
+      detect heartbeats,
+
+      fear hormones, and the subtle flush of arousal in human prey.'
+    traits: &id005
     - predatory_instincts
     - feral_state_during_starvation
     - inhuman_strength_potential
     - immortal_perspective_on_mortal_fragility
-  taboo_potential: |
-    The power differential inherent in vampire physiology raises questions of consent
+    significance: 'The power differential inherent in vampire physiology raises questions
+      of consent
+
+      and equality in any vampire-human relationship. Can true consent exist when
+      one
+
+      partner could physically overwhelm the other at any moment?'
+    mechanics: 'Blood consumption not only sustains but enhances. Recent feeding amplifies
+      all abilities,
+
+      while blood deprivation leads to a feral state where instinct overrides reason.'
+    erotic_implications: 'The heightened senses make vampires exquisitely attuned
+      to physical pleasure and pain.
+
+      Their enhanced stamina and strength open possibilities for intense physical
+      encounters
+
+      that would be dangerous or impossible with human partners.'
+divergences: []
+_deprecated_canonical:
+  description: 'Vampires in the series appear human but possess enhanced abilities
+    and depend on blood for sustenance.
+
+    They can blend into human society and attend regular schools, making them virtually
+    indistinguishable
+
+    from humans in everyday interactions.
+
+
+    Their bodies have adapted to process blood as their primary source of nutrition,
+    converting its
+
+    components into the energy needed to sustain their enhanced abilities. The exact
+    biological
+
+    mechanisms remain mysterious, but the results are undeniable: increased strength,
+    heightened
+
+    senses, and extended lifespans that span centuries.
+
+    '
+  traits: *id001
+  weaknesses: *id002
+  abilities: *id003
+  significance: Forms the biological foundation for all vampire existence
+  source_episodes: *id004
+_deprecated_adaptation:
+  dark_variant: 'In the dark adaptation, vampire physiology becomes more explicitly
+    tied to predatory nature.
+
+    The enhanced senses are heightened to predatory levels, allowing vampires to detect
+    heartbeats,
+
+    fear hormones, and the subtle flush of arousal in human prey.
+
+    '
+  mechanics: 'Blood consumption not only sustains but enhances. Recent feeding amplifies
+    all abilities,
+
+    while blood deprivation leads to a feral state where instinct overrides reason.
+
+    '
+  erotic_implications: 'The heightened senses make vampires exquisitely attuned to
+    physical pleasure and pain.
+
+    Their enhanced stamina and strength open possibilities for intense physical encounters
+
+    that would be dangerous or impossible with human partners.
+
+    '
+  horror_elements: *id005
+  taboo_potential: 'The power differential inherent in vampire physiology raises questions
+    of consent
+
     and equality in any vampire-human relationship. Can true consent exist when one
+
     partner could physically overwhelm the other at any moment?
+
+    '

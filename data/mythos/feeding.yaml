@@ -1,62 +1,158 @@
 id: feeding
 name: Feeding
 category: biology
-short_description: "The primal act of blood consumption that sustains vampire existence"
+short_description: The primal act of blood consumption that sustains vampire existence
 related_characters:
-  - saga
-  - boris
-  - vera
-  - agnes
+- saga
+- boris
+- vera
+- agnes
 media_urls: []
+versions:
+  bst:
+    description: 'The act of consuming blood for sustenance. Vampires require blood
+      to survive, though the
 
-canonical:
-  description: |
-    The act of consuming blood for sustenance. Vampires require blood to survive, though the
-    exact mechanics and frequency are not detailed in the series. What is clear is that feeding
-    is both a biological necessity and an intimate act that carries profound significance.
-    
-    The series suggests feeding creates connections between vampire and donor, with repeated
-    feeding from the same source building emotional bonds. The act itself appears to be
-    pleasurable for both parties under the right circumstances.
-  traits:
+      exact mechanics and frequency are not detailed in the series. What is clear
+      is that feeding
+
+      is both a biological necessity and an intimate act that carries profound significance.
+
+
+      The series suggests feeding creates connections between vampire and donor, with
+      repeated
+
+      feeding from the same source building emotional bonds. The act itself appears
+      to be
+
+      pleasurable for both parties under the right circumstances.'
+    traits: &id001
     - blood_consumption
     - survival_necessity
     - intimate_act
     - power_exchange
     - sensory_experience
-  weaknesses:
-    - blood_dependency
-    - feeding_frenzy_risk
-  abilities:
+    abilities: &id003
     - sustenance_extraction
     - pleasure_induction
-  significance: "The most fundamental and frequent vampire interaction with prey or partners"
-  source_episodes:
+    weaknesses: &id002
+    - blood_dependency
+    - feeding_frenzy_risk
+    significance: The most fundamental and frequent vampire interaction with prey
+      or partners
+    source_episodes: &id004
     - s01e03
     - s01e06
+  sst:
+    description: 'In the dark adaptation, feeding becomes explicitly sexualized. The
+      act of penetrating
 
-adaptation_expansion:
-  dark_variant: |
-    In the dark adaptation, feeding becomes explicitly sexualized. The act of penetrating
-    skin, the rush of blood, the shared pleasure—feeding mirrors and often accompanies
-    sexual intimacy. Vampires who deny this connection are either lying or dangerously repressed.
-  mechanics: |
-    Vampire saliva contains compounds that numb pain and induce euphoria. A skilled feeder
-    can make the experience purely pleasurable, while a cruel one can weaponize the pain.
-    The bite location matters: neck feeding is intimate, wrist is practical, thigh is explicitly
-    sexual. Inner thigh and femoral access is reserved for the most trusted or claimed donors.
-  erotic_implications: |
-    Feeding can range from clinical sustenance to the most intimate act a vampire can share.
-    Many vampires only feed during sex, finding the combination of penetration irresistible.
-    The power exchange inherent in feeding—one partner entirely vulnerable while the other
-    takes what they need—mirrors many dynamics explored in BDSM communities.
-  horror_elements:
+      skin, the rush of blood, the shared pleasure—feeding mirrors and often accompanies
+
+      sexual intimacy. Vampires who deny this connection are either lying or dangerously
+      repressed.'
+    traits: &id005
     - loss_of_control_during_feeding
     - addiction_in_human_donors
     - fatal_overfeeding
     - predator_prey_dynamic
-  taboo_potential: |
-    Feeding blurs lines between nutrition, intimacy, and violation. The same act that
+    significance: 'Feeding blurs lines between nutrition, intimacy, and violation.
+      The same act that
+
+      can be loving can be weaponized as assault. The addictive nature of vampire
+      saliva
+
+      raises consent questions: can a donor truly choose freely after experiencing
+
+      vampire feeding''s euphoria?'
+    mechanics: 'Vampire saliva contains compounds that numb pain and induce euphoria.
+      A skilled feeder
+
+      can make the experience purely pleasurable, while a cruel one can weaponize
+      the pain.
+
+      The bite location matters: neck feeding is intimate, wrist is practical, thigh
+      is explicitly
+
+      sexual. Inner thigh and femoral access is reserved for the most trusted or claimed
+      donors.'
+    erotic_implications: 'Feeding can range from clinical sustenance to the most intimate
+      act a vampire can share.
+
+      Many vampires only feed during sex, finding the combination of penetration irresistible.
+
+      The power exchange inherent in feeding—one partner entirely vulnerable while
+      the other
+
+      takes what they need—mirrors many dynamics explored in BDSM communities.'
+divergences: []
+_deprecated_canonical:
+  description: 'The act of consuming blood for sustenance. Vampires require blood
+    to survive, though the
+
+    exact mechanics and frequency are not detailed in the series. What is clear is
+    that feeding
+
+    is both a biological necessity and an intimate act that carries profound significance.
+
+
+    The series suggests feeding creates connections between vampire and donor, with
+    repeated
+
+    feeding from the same source building emotional bonds. The act itself appears
+    to be
+
+    pleasurable for both parties under the right circumstances.
+
+    '
+  traits: *id001
+  weaknesses: *id002
+  abilities: *id003
+  significance: The most fundamental and frequent vampire interaction with prey or
+    partners
+  source_episodes: *id004
+_deprecated_adaptation:
+  dark_variant: 'In the dark adaptation, feeding becomes explicitly sexualized. The
+    act of penetrating
+
+    skin, the rush of blood, the shared pleasure—feeding mirrors and often accompanies
+
+    sexual intimacy. Vampires who deny this connection are either lying or dangerously
+    repressed.
+
+    '
+  mechanics: 'Vampire saliva contains compounds that numb pain and induce euphoria.
+    A skilled feeder
+
+    can make the experience purely pleasurable, while a cruel one can weaponize the
+    pain.
+
+    The bite location matters: neck feeding is intimate, wrist is practical, thigh
+    is explicitly
+
+    sexual. Inner thigh and femoral access is reserved for the most trusted or claimed
+    donors.
+
+    '
+  erotic_implications: 'Feeding can range from clinical sustenance to the most intimate
+    act a vampire can share.
+
+    Many vampires only feed during sex, finding the combination of penetration irresistible.
+
+    The power exchange inherent in feeding—one partner entirely vulnerable while the
+    other
+
+    takes what they need—mirrors many dynamics explored in BDSM communities.
+
+    '
+  horror_elements: *id005
+  taboo_potential: 'Feeding blurs lines between nutrition, intimacy, and violation.
+    The same act that
+
     can be loving can be weaponized as assault. The addictive nature of vampire saliva
+
     raises consent questions: can a donor truly choose freely after experiencing
-    vampire feeding's euphoria?
+
+    vampire feeding''s euphoria?
+
+    '
