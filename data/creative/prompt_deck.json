@@ -1,0 +1,3257 @@
+{
+  "version": "1.0.0",
+  "total_prompts": 100,
+  "prompts_by_type": {
+    "what_if": 30,
+    "yes_and": 25,
+    "tell_from": 25,
+    "without": 20
+  },
+  "prompts": [
+    {
+      "prompt_id": "prompt-whatif-001",
+      "type": "what_if",
+      "title": "The Dependence vampire_physiology",
+      "prompt": "What if vampire_physiology had dependence as its defining characteristic?",
+      "source_elements": [
+        "vampire_physiology"
+      ],
+      "tags": [
+        "dependence"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-whatif-002",
+      "type": "what_if",
+      "title": "The Violated didde",
+      "prompt": "What if didde became a source of violated instead of its original purpose?",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "violated"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-003",
+      "type": "what_if",
+      "title": "The Inheritance_As_Cage blood_bond",
+      "prompt": "What if blood_bond was reimagined through the lens of inheritance_as_cage?",
+      "source_elements": [
+        "blood_bond"
+      ],
+      "tags": [
+        "inheritance_as_cage"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-whatif-004",
+      "type": "what_if",
+      "title": "The Supernatural_Dread transformation",
+      "prompt": "What if transformation had supernatural_dread as its defining characteristic?",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "supernatural_dread"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-005",
+      "type": "what_if",
+      "title": "The Eternal_Youth didde",
+      "prompt": "What if didde led to eternal_youth in unexpected ways?",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "eternal_youth"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-006",
+      "type": "what_if",
+      "title": "The Negotiated vampire_human_relations",
+      "prompt": "What if vampire_human_relations led to negotiated in unexpected ways?",
+      "source_elements": [
+        "vampire_human_relations"
+      ],
+      "tags": [
+        "negotiated"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-whatif-007",
+      "type": "what_if",
+      "title": "The Forbidden_Desire vampire_human_relations",
+      "prompt": "What if vampire_human_relations had forbidden_desire as its defining characteristic?",
+      "source_elements": [
+        "vampire_human_relations"
+      ],
+      "tags": [
+        "forbidden_desire"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-008",
+      "type": "what_if",
+      "title": "The Transformation blood_bond",
+      "prompt": "What if the transformation aspects of blood_bond were amplified tenfold?",
+      "source_elements": [
+        "blood_bond"
+      ],
+      "tags": [
+        "transformation"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-009",
+      "type": "what_if",
+      "title": "The Coercion felicia",
+      "prompt": "What if felicia had coercion as its defining characteristic?",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "coercion"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-whatif-010",
+      "type": "what_if",
+      "title": "The Intensity_5 desiree_natt_och_dag",
+      "prompt": "What if the intensity_5 aspects of desiree_natt_och_dag were amplified tenfold?",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "intensity_5"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-011",
+      "type": "what_if",
+      "title": "The Rescue henry_natt_och_dag",
+      "prompt": "What if henry_natt_och_dag became a source of rescue instead of its original purpose?",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "rescue"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-012",
+      "type": "what_if",
+      "title": "The Manipulation vampire_physiology",
+      "prompt": "What if vampire_physiology was reimagined through the lens of manipulation?",
+      "source_elements": [
+        "vampire_physiology"
+      ],
+      "tags": [
+        "manipulation"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-013",
+      "type": "what_if",
+      "title": "The Inheritance_As_Cage didde",
+      "prompt": "What if the inheritance_as_cage aspects of didde were amplified tenfold?",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "inheritance_as_cage"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-014",
+      "type": "what_if",
+      "title": "The Luxury_Dread chloe",
+      "prompt": "What if chloe was reimagined through the lens of luxury_dread?",
+      "source_elements": [
+        "chloe"
+      ],
+      "tags": [
+        "luxury_dread"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-015",
+      "type": "what_if",
+      "title": "The Humiliation transformation",
+      "prompt": "What if the humiliation aspects of transformation were amplified tenfold?",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "humiliation"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-016",
+      "type": "what_if",
+      "title": "The Intensity_3 transformation",
+      "prompt": "What if transformation had intensity_3 as its defining characteristic?",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "intensity_3"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-017",
+      "type": "what_if",
+      "title": "The Manipulation vampire_human_relations",
+      "prompt": "What if vampire_human_relations became a source of manipulation instead of its original purpose?",
+      "source_elements": [
+        "vampire_human_relations"
+      ],
+      "tags": [
+        "manipulation"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-018",
+      "type": "what_if",
+      "title": "The Inheritance_As_Cage family_hierarchy",
+      "prompt": "What if family_hierarchy was reimagined through the lens of inheritance_as_cage?",
+      "source_elements": [
+        "family_hierarchy"
+      ],
+      "tags": [
+        "inheritance_as_cage"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-019",
+      "type": "what_if",
+      "title": "The Eternal_Youth vampire_human_relations",
+      "prompt": "What if vampire_human_relations became a source of eternal_youth instead of its original purpose?",
+      "source_elements": [
+        "vampire_human_relations"
+      ],
+      "tags": [
+        "eternal_youth"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-020",
+      "type": "what_if",
+      "title": "The Teen_Angst kiara_natt_och_dag",
+      "prompt": "What if the teen_angst aspects of kiara_natt_och_dag were amplified tenfold?",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "teen_angst"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-whatif-021",
+      "type": "what_if",
+      "title": "The Inheritance_As_Cage vampire_human_relations",
+      "prompt": "What if the inheritance_as_cage aspects of vampire_human_relations were amplified tenfold?",
+      "source_elements": [
+        "vampire_human_relations"
+      ],
+      "tags": [
+        "inheritance_as_cage"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-022",
+      "type": "what_if",
+      "title": "The Rebellion alfred",
+      "prompt": "What if alfred was reimagined through the lens of rebellion?",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "rebellion"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-023",
+      "type": "what_if",
+      "title": "The Intensity_2 henry_natt_och_dag",
+      "prompt": "What if henry_natt_och_dag became a source of intensity_2 instead of its original purpose?",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "intensity_2"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-024",
+      "type": "what_if",
+      "title": "The Seduction alfred",
+      "prompt": "What if alfred was reimagined through the lens of seduction?",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "seduction"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-025",
+      "type": "what_if",
+      "title": "The Supernatural_Dread alfred",
+      "prompt": "What if alfred became a source of supernatural_dread instead of its original purpose?",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "supernatural_dread"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-026",
+      "type": "what_if",
+      "title": "The Manipulation family_hierarchy",
+      "prompt": "What if family_hierarchy became a source of manipulation instead of its original purpose?",
+      "source_elements": [
+        "family_hierarchy"
+      ],
+      "tags": [
+        "manipulation"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-027",
+      "type": "what_if",
+      "title": "The Intensity_3 henry_natt_och_dag",
+      "prompt": "What if henry_natt_och_dag was reimagined through the lens of intensity_3?",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "intensity_3"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-028",
+      "type": "what_if",
+      "title": "The Intensity_5 henry_natt_och_dag",
+      "prompt": "What if henry_natt_och_dag had intensity_5 as its defining characteristic?",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "intensity_5"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "easy",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-whatif-029",
+      "type": "what_if",
+      "title": "The Teen_Angst alfred",
+      "prompt": "What if the teen_angst aspects of alfred were amplified tenfold?",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "teen_angst"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-whatif-030",
+      "type": "what_if",
+      "title": "The Submission feeding",
+      "prompt": "What if feeding became a source of submission instead of its original purpose?",
+      "source_elements": [
+        "feeding"
+      ],
+      "tags": [
+        "submission"
+      ],
+      "constraints": [
+        "Must maintain internal consistency",
+        "Must serve narrative arc"
+      ],
+      "variations": [
+        {
+          "twist": "From antagonist's perspective",
+          "focus": "motivation"
+        },
+        {
+          "twist": "Without dialogue",
+          "focus": "visual_storytelling"
+        },
+        {
+          "twist": "In a public setting",
+          "focus": "social_dynamics"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-001",
+      "type": "yes_and",
+      "title": "Yes, And: didde + gothic_romance",
+      "prompt": "Yes, didde exists, and it also creates gothic_romance in those who encounter it.",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "gothic_romance"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-002",
+      "type": "yes_and",
+      "title": "Yes, And: henry_natt_och_dag + compelled",
+      "prompt": "Yes, henry_natt_och_dag exists, and it also creates compelled in those who encounter it.",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "compelled"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-003",
+      "type": "yes_and",
+      "title": "Yes, And: transformation + seduction",
+      "prompt": "Yes, the story has transformation, and seduction becomes its hidden undercurrent.",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "seduction"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-004",
+      "type": "yes_and",
+      "title": "Yes, And: transformation + coercion",
+      "prompt": "Yes, there's coercion, and it manifests through transformation in surprising ways.",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "coercion"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-yesand-005",
+      "type": "yes_and",
+      "title": "Yes, And: elise + erotic_menace",
+      "prompt": "Yes, there's erotic_menace, and it manifests through elise in surprising ways.",
+      "source_elements": [
+        "elise"
+      ],
+      "tags": [
+        "erotic_menace"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-006",
+      "type": "yes_and",
+      "title": "Yes, And: desiree_natt_och_dag + rescue",
+      "prompt": "Yes, there's rescue, and it manifests through desiree_natt_och_dag in surprising ways.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "rescue"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-007",
+      "type": "yes_and",
+      "title": "Yes, And: alfred + gothic_romance",
+      "prompt": "Yes, alfred exists, and it also creates gothic_romance in those who encounter it.",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "gothic_romance"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-yesand-008",
+      "type": "yes_and",
+      "title": "Yes, And: daywalking + confrontation",
+      "prompt": "Yes, daywalking exists, and it also creates confrontation in those who encounter it.",
+      "source_elements": [
+        "daywalking"
+      ],
+      "tags": [
+        "confrontation"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-009",
+      "type": "yes_and",
+      "title": "Yes, And: kiara_natt_och_dag + compelled",
+      "prompt": "Yes, there's compelled, and it manifests through kiara_natt_och_dag in surprising ways.",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "compelled"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-010",
+      "type": "yes_and",
+      "title": "Yes, And: family_hierarchy + dubious",
+      "prompt": "Yes, family_hierarchy has dubious, and this combination creates new possibilities.",
+      "source_elements": [
+        "family_hierarchy"
+      ],
+      "tags": [
+        "dubious"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-011",
+      "type": "yes_and",
+      "title": "Yes, And: feeding + eternal_youth",
+      "prompt": "Yes, there's eternal_youth, and it manifests through feeding in surprising ways.",
+      "source_elements": [
+        "feeding"
+      ],
+      "tags": [
+        "eternal_youth"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-yesand-012",
+      "type": "yes_and",
+      "title": "Yes, And: desiree_natt_och_dag + teen_angst",
+      "prompt": "Yes, there's teen_angst, and it manifests through desiree_natt_och_dag in surprising ways.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "teen_angst"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-yesand-013",
+      "type": "yes_and",
+      "title": "Yes, And: elise + confrontation",
+      "prompt": "Yes, the story has elise, and confrontation becomes its hidden undercurrent.",
+      "source_elements": [
+        "elise"
+      ],
+      "tags": [
+        "confrontation"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-014",
+      "type": "yes_and",
+      "title": "Yes, And: family_hierarchy + dubious",
+      "prompt": "Yes, family_hierarchy exists, and it also creates dubious in those who encounter it.",
+      "source_elements": [
+        "family_hierarchy"
+      ],
+      "tags": [
+        "dubious"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-015",
+      "type": "yes_and",
+      "title": "Yes, And: transformation + intensity_4",
+      "prompt": "Yes, transformation exists, and it also creates intensity_4 in those who encounter it.",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "intensity_4"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-016",
+      "type": "yes_and",
+      "title": "Yes, And: eric + humiliation",
+      "prompt": "Yes, eric has humiliation, and this combination creates new possibilities.",
+      "source_elements": [
+        "eric"
+      ],
+      "tags": [
+        "humiliation"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-017",
+      "type": "yes_and",
+      "title": "Yes, And: felicia + inheritance_as_cage",
+      "prompt": "Yes, there's inheritance_as_cage, and it manifests through felicia in surprising ways.",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "inheritance_as_cage"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-018",
+      "type": "yes_and",
+      "title": "Yes, And: transformation + humiliation",
+      "prompt": "Yes, the story has transformation, and humiliation becomes its hidden undercurrent.",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "humiliation"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-019",
+      "type": "yes_and",
+      "title": "Yes, And: kiara_natt_och_dag + intensity_4",
+      "prompt": "Yes, kiara_natt_och_dag exists, and it also creates intensity_4 in those who encounter it.",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "intensity_4"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-020",
+      "type": "yes_and",
+      "title": "Yes, And: alfred + supernatural_dread",
+      "prompt": "Yes, alfred has supernatural_dread, and this combination creates new possibilities.",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "supernatural_dread"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-021",
+      "type": "yes_and",
+      "title": "Yes, And: felicia + luxury_dread",
+      "prompt": "Yes, felicia has luxury_dread, and this combination creates new possibilities.",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "luxury_dread"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-yesand-022",
+      "type": "yes_and",
+      "title": "Yes, And: eric + blood_as_ritual",
+      "prompt": "Yes, eric has blood_as_ritual, and this combination creates new possibilities.",
+      "source_elements": [
+        "eric"
+      ],
+      "tags": [
+        "blood_as_ritual"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-yesand-023",
+      "type": "yes_and",
+      "title": "Yes, And: desiree_natt_och_dag + rebellion",
+      "prompt": "Yes, there's rebellion, and it manifests through desiree_natt_och_dag in surprising ways.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "rebellion"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-yesand-024",
+      "type": "yes_and",
+      "title": "Yes, And: kiara_natt_och_dag + eternal_youth",
+      "prompt": "Yes, the story has kiara_natt_och_dag, and eternal_youth becomes its hidden undercurrent.",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "eternal_youth"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 3
+    },
+    {
+      "prompt_id": "prompt-yesand-025",
+      "type": "yes_and",
+      "title": "Yes, And: jacques_natt_och_dag + compelled",
+      "prompt": "Yes, jacques_natt_och_dag has compelled, and this combination creates new possibilities.",
+      "source_elements": [
+        "jacques_natt_och_dag"
+      ],
+      "tags": [
+        "compelled"
+      ],
+      "constraints": [
+        "Must build on established lore",
+        "Must add meaningful depth"
+      ],
+      "variations": [
+        {
+          "twist": "Add complication",
+          "focus": "conflict"
+        },
+        {
+          "twist": "Add secondary character",
+          "focus": "relationship"
+        },
+        {
+          "twist": "Add time pressure",
+          "focus": "urgency"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-001",
+      "type": "tell_from",
+      "title": "henry_natt_och_dag: Through The Victim'S Perspective",
+      "prompt": "Tell a scene involving henry_natt_och_dag from the victim's perspective, emphasizing vulnerability.",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "vulnerability",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-002",
+      "type": "tell_from",
+      "title": "eric: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving eric from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "eric"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-003",
+      "type": "tell_from",
+      "title": "eric: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving eric from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "eric"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-004",
+      "type": "tell_from",
+      "title": "kiara_natt_och_dag: Through The Setting Itself",
+      "prompt": "Tell a scene involving kiara_natt_och_dag from the setting itself, emphasizing atmosphere.",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "atmosphere",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-005",
+      "type": "tell_from",
+      "title": "henry_natt_och_dag: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving henry_natt_och_dag from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-006",
+      "type": "tell_from",
+      "title": "chloe: Through A Child'S Perspective",
+      "prompt": "Tell a scene involving chloe from a child's perspective, emphasizing innocence.",
+      "source_elements": [
+        "chloe"
+      ],
+      "tags": [
+        "innocence",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-007",
+      "type": "tell_from",
+      "title": "desiree_natt_och_dag: Through The Predator'S Perspective",
+      "prompt": "Tell a scene involving desiree_natt_och_dag from the predator's perspective, emphasizing desire.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "desire",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-008",
+      "type": "tell_from",
+      "title": "felicia: Through The Predator'S Perspective",
+      "prompt": "Tell a scene involving felicia from the predator's perspective, emphasizing desire.",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "desire",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-009",
+      "type": "tell_from",
+      "title": "felicia: Through An Inanimate Object",
+      "prompt": "Tell a scene involving felicia from an inanimate object, emphasizing symbolism.",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "symbolism",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-010",
+      "type": "tell_from",
+      "title": "felicia: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving felicia from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-011",
+      "type": "tell_from",
+      "title": "kiara_natt_och_dag: Through The Setting Itself",
+      "prompt": "Tell a scene involving kiara_natt_och_dag from the setting itself, emphasizing atmosphere.",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "atmosphere",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-012",
+      "type": "tell_from",
+      "title": "henry_natt_och_dag: Through The Victim'S Perspective",
+      "prompt": "Tell a scene involving henry_natt_och_dag from the victim's perspective, emphasizing vulnerability.",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "vulnerability",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-013",
+      "type": "tell_from",
+      "title": "alfred: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving alfred from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-014",
+      "type": "tell_from",
+      "title": "eric: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving eric from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "eric"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-015",
+      "type": "tell_from",
+      "title": "elise: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving elise from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "elise"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-016",
+      "type": "tell_from",
+      "title": "didde: Through The Predator'S Perspective",
+      "prompt": "Tell a scene involving didde from the predator's perspective, emphasizing desire.",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "desire",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-017",
+      "type": "tell_from",
+      "title": "chloe: Through A Child'S Perspective",
+      "prompt": "Tell a scene involving chloe from a child's perspective, emphasizing innocence.",
+      "source_elements": [
+        "chloe"
+      ],
+      "tags": [
+        "innocence",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-018",
+      "type": "tell_from",
+      "title": "felicia: Through The Setting Itself",
+      "prompt": "Tell a scene involving felicia from the setting itself, emphasizing atmosphere.",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "atmosphere",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-019",
+      "type": "tell_from",
+      "title": "chloe: Through The Setting Itself",
+      "prompt": "Tell a scene involving chloe from the setting itself, emphasizing atmosphere.",
+      "source_elements": [
+        "chloe"
+      ],
+      "tags": [
+        "atmosphere",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-perspective-020",
+      "type": "tell_from",
+      "title": "elise: Through The Setting Itself",
+      "prompt": "Tell a scene involving elise from the setting itself, emphasizing atmosphere.",
+      "source_elements": [
+        "elise"
+      ],
+      "tags": [
+        "atmosphere",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-021",
+      "type": "tell_from",
+      "title": "jacques_natt_och_dag: Through An Inanimate Object",
+      "prompt": "Tell a scene involving jacques_natt_och_dag from an inanimate object, emphasizing symbolism.",
+      "source_elements": [
+        "jacques_natt_och_dag"
+      ],
+      "tags": [
+        "symbolism",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-022",
+      "type": "tell_from",
+      "title": "jacques_natt_och_dag: Through The Setting Itself",
+      "prompt": "Tell a scene involving jacques_natt_och_dag from the setting itself, emphasizing atmosphere.",
+      "source_elements": [
+        "jacques_natt_och_dag"
+      ],
+      "tags": [
+        "atmosphere",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-023",
+      "type": "tell_from",
+      "title": "desiree_natt_och_dag: Through The Predator'S Perspective",
+      "prompt": "Tell a scene involving desiree_natt_och_dag from the predator's perspective, emphasizing desire.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "desire",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "medium",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-024",
+      "type": "tell_from",
+      "title": "kiara_natt_och_dag: Through The Predator'S Perspective",
+      "prompt": "Tell a scene involving kiara_natt_och_dag from the predator's perspective, emphasizing desire.",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "desire",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-perspective-025",
+      "type": "tell_from",
+      "title": "desiree_natt_och_dag: Through An Outsider'S Perspective",
+      "prompt": "Tell a scene involving desiree_natt_och_dag from an outsider's perspective, emphasizing confusion.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "confusion",
+        "perspective_shift"
+      ],
+      "constraints": [
+        "Must maintain character voice",
+        "Must reveal new information"
+      ],
+      "variations": [
+        {
+          "twist": "Add sensory details",
+          "focus": "immersion"
+        },
+        {
+          "twist": "Use stream of consciousness",
+          "focus": "psychology"
+        },
+        {
+          "twist": "Include unreliable narration",
+          "focus": "ambiguity"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-001",
+      "type": "without",
+      "title": "eric: Using Only Sensory Details",
+      "prompt": "Write about eric and forbidden_desire using only sensory details.",
+      "source_elements": [
+        "eric"
+      ],
+      "tags": [
+        "forbidden_desire",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-002",
+      "type": "without",
+      "title": "vampire_physiology: Using Only Sensory Details",
+      "prompt": "Write about vampire_physiology and intensity_3 using only sensory details.",
+      "source_elements": [
+        "vampire_physiology"
+      ],
+      "tags": [
+        "intensity_3",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-without-003",
+      "type": "without",
+      "title": "alfred: In Exactly 7 Words",
+      "prompt": "Write about alfred and rescue in exactly 7 words.",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "rescue",
+        "precision"
+      ],
+      "constraints": [
+        "Must follow constraint: in exactly 7 words",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-without-004",
+      "type": "without",
+      "title": "jacques_natt_och_dag: In Exactly 7 Words",
+      "prompt": "Write about jacques_natt_och_dag and dependence in exactly 7 words.",
+      "source_elements": [
+        "jacques_natt_och_dag"
+      ],
+      "tags": [
+        "dependence",
+        "precision"
+      ],
+      "constraints": [
+        "Must follow constraint: in exactly 7 words",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-005",
+      "type": "without",
+      "title": "henry_natt_och_dag: In Reverse Chronological Order",
+      "prompt": "Write about henry_natt_och_dag and confrontation in reverse chronological order.",
+      "source_elements": [
+        "henry_natt_och_dag"
+      ],
+      "tags": [
+        "confrontation",
+        "structure"
+      ],
+      "constraints": [
+        "Must follow constraint: in reverse chronological order",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-006",
+      "type": "without",
+      "title": "desiree_natt_och_dag: In Exactly 7 Words",
+      "prompt": "Write about desiree_natt_och_dag and intensity_1 in exactly 7 words.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "intensity_1",
+        "precision"
+      ],
+      "constraints": [
+        "Must follow constraint: in exactly 7 words",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-without-007",
+      "type": "without",
+      "title": "elise: Using Only Sensory Details",
+      "prompt": "Write about elise and revelation using only sensory details.",
+      "source_elements": [
+        "elise"
+      ],
+      "tags": [
+        "revelation",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-without-008",
+      "type": "without",
+      "title": "alfred: Using Only Sensory Details",
+      "prompt": "Write about alfred and humiliation using only sensory details.",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "humiliation",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-009",
+      "type": "without",
+      "title": "desiree_natt_och_dag: In Exactly 7 Words",
+      "prompt": "Write about desiree_natt_och_dag and confrontation in exactly 7 words.",
+      "source_elements": [
+        "desiree_natt_och_dag"
+      ],
+      "tags": [
+        "confrontation",
+        "precision"
+      ],
+      "constraints": [
+        "Must follow constraint: in exactly 7 words",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-010",
+      "type": "without",
+      "title": "didde: Without Dialogue",
+      "prompt": "Write about didde and gothic_romance without dialogue.",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "gothic_romance",
+        "physicality"
+      ],
+      "constraints": [
+        "Must follow constraint: without dialogue",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-011",
+      "type": "without",
+      "title": "blood_bond: In Reverse Chronological Order",
+      "prompt": "Write about blood_bond and seduction in reverse chronological order.",
+      "source_elements": [
+        "blood_bond"
+      ],
+      "tags": [
+        "seduction",
+        "structure"
+      ],
+      "constraints": [
+        "Must follow constraint: in reverse chronological order",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-012",
+      "type": "without",
+      "title": "felicia: Using Only Sensory Details",
+      "prompt": "Write about felicia and compelled using only sensory details.",
+      "source_elements": [
+        "felicia"
+      ],
+      "tags": [
+        "compelled",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-without-013",
+      "type": "without",
+      "title": "daywalking: Using Only Sensory Details",
+      "prompt": "Write about daywalking and supernatural_dread using only sensory details.",
+      "source_elements": [
+        "daywalking"
+      ],
+      "tags": [
+        "supernatural_dread",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-014",
+      "type": "without",
+      "title": "didde: In Reverse Chronological Order",
+      "prompt": "Write about didde and rebellion in reverse chronological order.",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "rebellion",
+        "structure"
+      ],
+      "constraints": [
+        "Must follow constraint: in reverse chronological order",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-without-015",
+      "type": "without",
+      "title": "feeding: Without Mentioning The Protagonist",
+      "prompt": "Write about feeding and manipulation without mentioning the protagonist.",
+      "source_elements": [
+        "feeding"
+      ],
+      "tags": [
+        "manipulation",
+        "supporting_cast"
+      ],
+      "constraints": [
+        "Must follow constraint: without mentioning the protagonist",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-016",
+      "type": "without",
+      "title": "eric: In Exactly 7 Words",
+      "prompt": "Write about eric and forbidden_desire in exactly 7 words.",
+      "source_elements": [
+        "eric"
+      ],
+      "tags": [
+        "forbidden_desire",
+        "precision"
+      ],
+      "constraints": [
+        "Must follow constraint: in exactly 7 words",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-017",
+      "type": "without",
+      "title": "didde: Without Mentioning The Protagonist",
+      "prompt": "Write about didde and gothic_romance without mentioning the protagonist.",
+      "source_elements": [
+        "didde"
+      ],
+      "tags": [
+        "gothic_romance",
+        "supporting_cast"
+      ],
+      "constraints": [
+        "Must follow constraint: without mentioning the protagonist",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-018",
+      "type": "without",
+      "title": "alfred: In Reverse Chronological Order",
+      "prompt": "Write about alfred and erotic_menace in reverse chronological order.",
+      "source_elements": [
+        "alfred"
+      ],
+      "tags": [
+        "erotic_menace",
+        "structure"
+      ],
+      "constraints": [
+        "Must follow constraint: in reverse chronological order",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 5
+    },
+    {
+      "prompt_id": "prompt-without-019",
+      "type": "without",
+      "title": "transformation: Using Only Sensory Details",
+      "prompt": "Write about transformation and intensity_1 using only sensory details.",
+      "source_elements": [
+        "transformation"
+      ],
+      "tags": [
+        "intensity_1",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    },
+    {
+      "prompt_id": "prompt-without-020",
+      "type": "without",
+      "title": "kiara_natt_och_dag: Using Only Sensory Details",
+      "prompt": "Write about kiara_natt_och_dag and enthusiastic using only sensory details.",
+      "source_elements": [
+        "kiara_natt_och_dag"
+      ],
+      "tags": [
+        "enthusiastic",
+        "immersion"
+      ],
+      "constraints": [
+        "Must follow constraint: using only sensory details",
+        "Must still convey complete idea"
+      ],
+      "variations": [
+        {
+          "twist": "Add second constraint",
+          "focus": "difficulty"
+        },
+        {
+          "twist": "Change genre mid-piece",
+          "focus": "subversion"
+        },
+        {
+          "twist": "End with twist",
+          "focus": "surprise"
+        }
+      ],
+      "difficulty": "hard",
+      "creative_potential": 4
+    }
+  ]
+}
