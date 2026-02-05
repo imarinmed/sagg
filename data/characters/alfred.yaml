@@ -1,18 +1,17 @@
 id: alfred
 name: Alfred
 portrayed_by: Aaron Holgersson
-
-canonical:
-  age: 16
-  species: human
-  family: null
-  traits:
+versions:
+  bst:
+    age: 16
+    species: human
+    traits: &id001
     - popular
     - athletic
     - charming
     - unaware_of_vampires
-  arc: love_interest_unaware
-  relationships:
+    arc: love_interest_unaware
+    relationships: &id002
     - character: kiara_natt_och_dag
       type: love_interest
       dynamic: attracted_mysterious
@@ -22,115 +21,124 @@ canonical:
     - character: eric
       type: best_friend
       dynamic: loyal_brotherhood
-
-adaptation:
-  age: 17
-  traits_added:
+  sst:
+    age: 17
+    traits: &id003
     - protective_instincts
     - blood_bond_addiction
     - jealousy_possessiveness
     - awakening_dominance
-  arc_dark: "From popular jock to possessive blood-bound dominant struggling with supernatural addiction"
-  taboo_elements:
+    arc: From popular jock to possessive blood-bound dominant struggling with supernatural
+      addiction
+    taboo_elements: &id004
     - blood_bond
     - obsession
     - possessiveness
-  explicit_scenes:
+    explicit_scenes: &id005
     - s01e03_first_feeding
     - s01e05_possessive_confrontation
     - s01e07_blood_bond_consummation
-  psychological_profile: "Alfred's protective nature transforms into possessive dominance as the blood bond deepens. He struggles between his 'good guy' self-image and dark desires to control Kiara completely. The supernatural connection creates addiction-like obsession."
-  power_dynamics: "Emerging dominant, protective but possessive. Forms codependent bond with Kiara where he both protects and controls."
-
 kink_profile:
   preferences:
-    - id: dominant
-      intensity: 4
-      notes: "Natural leadership becomes sexual dominance"
-    - id: protective_possessive
-      intensity: 5
-      notes: "Protectiveness morphs into ownership"
-    - id: blood_bond
-      intensity: 5
-      notes: "Addicted to supernatural connection"
-    - id: compulsion
-      intensity: 3
-      notes: "Fascinated by influencing Kiara's mind"
-    - id: predator_prey
-      intensity: 3
-      notes: "Enjoys the hunt, being the predator"
-    - id: ownership
-      intensity: 4
-      notes: "Wants to possess Kiara completely"
-    - id: jealousy
-      intensity: 4
-      notes: "Intense possessiveness, hates rivals"
-    - id: marking
-      intensity: 3
-      notes: "Desire to leave claiming marks"
-    - id: blood_feeding
-      intensity: 5
-      notes: "Erotic charge from being fed upon"
-    - id: obsession
-      intensity: 5
-      notes: "Single-minded fixation on Kiara"
+  - id: dominant
+    intensity: 4
+    notes: Natural leadership becomes sexual dominance
+  - id: protective_possessive
+    intensity: 5
+    notes: Protectiveness morphs into ownership
+  - id: blood_bond
+    intensity: 5
+    notes: Addicted to supernatural connection
+  - id: compulsion
+    intensity: 3
+    notes: Fascinated by influencing Kiara's mind
+  - id: predator_prey
+    intensity: 3
+    notes: Enjoys the hunt, being the predator
+  - id: ownership
+    intensity: 4
+    notes: Wants to possess Kiara completely
+  - id: jealousy
+    intensity: 4
+    notes: Intense possessiveness, hates rivals
+  - id: marking
+    intensity: 3
+    notes: Desire to leave claiming marks
+  - id: blood_feeding
+    intensity: 5
+    notes: Erotic charge from being fed upon
+  - id: obsession
+    intensity: 5
+    notes: Single-minded fixation on Kiara
   limits:
-    - id: degradation
-      intensity: 2
-      notes: "Wants to elevate, not demean"
-    - id: humiliation
-      intensity: 1
-      notes: "Protective nature rejects public shame"
-    - id: sharing
-      intensity: 1
-      notes: "Extreme jealousy, no sharing"
-    - id: cuckolding
-      intensity: 1
-      notes: "Possessive, would never tolerate"
+  - id: degradation
+    intensity: 2
+    notes: Wants to elevate, not demean
+  - id: humiliation
+    intensity: 1
+    notes: Protective nature rejects public shame
+  - id: sharing
+    intensity: 1
+    notes: Extreme jealousy, no sharing
+  - id: cuckolding
+    intensity: 1
+    notes: Possessive, would never tolerate
   evolution:
     s01e01:
-      - id: predator_prey
-        intensity: 2
-        notes: "Attraction to Kiara's mystery"
+    - id: predator_prey
+      intensity: 2
+      notes: Attraction to Kiara's mystery
     s01e02:
-      - id: protective_possessive
-        intensity: 3
-        notes: "Protective instincts awaken"
+    - id: protective_possessive
+      intensity: 3
+      notes: Protective instincts awaken
     s01e03:
-      - id: blood_bond
-        intensity: 4
-        notes: "First feeding creates bond"
-      - id: obsession
-        intensity: 3
-        notes: "Begins fixating on Kiara"
+    - id: blood_bond
+      intensity: 4
+      notes: First feeding creates bond
+    - id: obsession
+      intensity: 3
+      notes: Begins fixating on Kiara
     s01e04:
-      - id: jealousy
-        intensity: 4
-        notes: "Threatened by Jacques"
+    - id: jealousy
+      intensity: 4
+      notes: Threatened by Jacques
     s01e05:
-      - id: dominant
-        intensity: 4
-        notes: "Asserting control over relationship"
-      - id: ownership
-        intensity: 4
-        notes: "Claims Kiara as his"
+    - id: dominant
+      intensity: 4
+      notes: Asserting control over relationship
+    - id: ownership
+      intensity: 4
+      notes: Claims Kiara as his
     s01e06:
-      - id: compulsion
-        intensity: 3
-        notes: "Tests influence over Kiara"
+    - id: compulsion
+      intensity: 3
+      notes: Tests influence over Kiara
     s01e07:
-      - id: blood_bond
-        intensity: 5
-        notes: "Bond fully consummated"
-      - id: total_power_exchange
-        intensity: 3
-        notes: "Exploring deeper control"
-
-appearances:
-  - s01e01
-  - s01e02
-  - s01e03
-  - s01e04
-  - s01e05
-  - s01e06
-  - s01e07
+    - id: blood_bond
+      intensity: 5
+      notes: Bond fully consummated
+    - id: total_power_exchange
+      intensity: 3
+      notes: Exploring deeper control
+divergences: []
+_deprecated_canonical:
+  age: 16
+  species: human
+  family: null
+  traits: *id001
+  arc: love_interest_unaware
+  relationships: *id002
+_deprecated_adaptation:
+  age: 17
+  traits_added: *id003
+  arc_dark: From popular jock to possessive blood-bound dominant struggling with supernatural
+    addiction
+  taboo_elements: *id004
+  explicit_scenes: *id005
+  psychological_profile: Alfred's protective nature transforms into possessive dominance
+    as the blood bond deepens. He struggles between his 'good guy' self-image and
+    dark desires to control Kiara completely. The supernatural connection creates
+    addiction-like obsession.
+  power_dynamics: Emerging dominant, protective but possessive. Forms codependent
+    bond with Kiara where he both protects and controls.

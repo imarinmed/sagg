@@ -1,19 +1,19 @@
 id: kiara_natt_och_dag
 name: Kiara Natt och Dag
 portrayed_by: Filippa Kavalic
-
-canonical:
-  age: 16
-  species: vampire
-  family: natt_och_dag
-  traits:
+versions:
+  bst:
+    age: 16
+    species: vampire
+    family: natt_och_dag
+    traits: &id001
     - rebellious
     - curious
     - naive
     - wants_normal_life
     - fish_out_of_water
-  arc: fish_out_of_water_teen
-  relationships:
+    arc: fish_out_of_water_teen
+    relationships: &id002
     - character: henry_natt_och_dag
       type: father
       dynamic: strict_authoritarian
@@ -32,116 +32,125 @@ canonical:
     - character: chloe
       type: friend
       dynamic: ally_confidant
-
-adaptation:
-  age: 17
-  traits_added:
+  sst:
+    age: 17
+    traits: &id003
     - sexually_awakening
     - bloodlust_struggles
     - daddy_issues
     - rebellion_through_sex
-  arc_dark: "From innocent fish-out-of-water to blood-bound submissive exploring dark desires"
-  taboo_elements:
+    arc: From innocent fish-out-of-water to blood-bound submissive exploring dark
+      desires
+    taboo_elements: &id004
     - age_gap
     - authority_abuse
     - incest_themes
     - pseudo_incest
-  explicit_scenes:
+    explicit_scenes: &id005
     - s01e03_blood_feeding_seduction
     - s01e05_uncle_jacques_tension
     - s01e06_father_confrontation
-  psychological_profile: "Kiara's rebellion manifests through sexual exploration. She uses intimacy as both weapon and vulnerability, discovering power in submission while maintaining defiance. Her blood bond with Alfred creates obsessive attachment patterns."
-  power_dynamics: "Submissive brat seeking dominant figures to rebel against. Attracted to dangerous authority (Jacques) while forming codependent bond with peer (Alfred)."
-
 kink_profile:
   preferences:
-    - id: brat
-      intensity: 4
-      notes: "Defies authority through sexual provocation"
-    - id: blood_bond
-      intensity: 5
-      notes: "Forms supernatural attachment through feeding"
-    - id: predator_prey
-      intensity: 3
-      notes: "Enjoys being hunted while pretending to resist"
-    - id: daddy
-      intensity: 3
-      notes: "Seeks father figures to both defy and please"
-    - id: age_gap
-      intensity: 4
-      notes: "Attracted to older authority figures"
-    - id: compulsion
-      intensity: 3
-      notes: "Fascinated by loss of control through glamour"
-    - id: corruption
-      intensity: 4
-      notes: "Wants to be corrupted, taught forbidden things"
-    - id: obsession
-      intensity: 5
-      notes: "Becomes fixated on romantic targets"
-    - id: blood_feeding
-      intensity: 5
-      notes: "Erotic charge from feeding and being fed upon"
-    - id: sire_bond
-      intensity: 2
-      notes: "Potential for future sire relationship"
+  - id: brat
+    intensity: 4
+    notes: Defies authority through sexual provocation
+  - id: blood_bond
+    intensity: 5
+    notes: Forms supernatural attachment through feeding
+  - id: predator_prey
+    intensity: 3
+    notes: Enjoys being hunted while pretending to resist
+  - id: daddy
+    intensity: 3
+    notes: Seeks father figures to both defy and please
+  - id: age_gap
+    intensity: 4
+    notes: Attracted to older authority figures
+  - id: compulsion
+    intensity: 3
+    notes: Fascinated by loss of control through glamour
+  - id: corruption
+    intensity: 4
+    notes: Wants to be corrupted, taught forbidden things
+  - id: obsession
+    intensity: 5
+    notes: Becomes fixated on romantic targets
+  - id: blood_feeding
+    intensity: 5
+    notes: Erotic charge from feeding and being fed upon
+  - id: sire_bond
+    intensity: 2
+    notes: Potential for future sire relationship
   limits:
-    - id: degradation
-      intensity: 2
-      notes: "Dislikes humiliation, prefers defiant submission"
-    - id: objectification
-      intensity: 2
-      notes: "Wants to be seen as person, not just object"
-    - id: abandonment_play
-      intensity: 1
-      notes: "Fear of rejection from father trauma"
-    - id: total_power_exchange
-      intensity: 2
-      notes: "Needs to maintain some autonomy"
+  - id: degradation
+    intensity: 2
+    notes: Dislikes humiliation, prefers defiant submission
+  - id: objectification
+    intensity: 2
+    notes: Wants to be seen as person, not just object
+  - id: abandonment_play
+    intensity: 1
+    notes: Fear of rejection from father trauma
+  - id: total_power_exchange
+    intensity: 2
+    notes: Needs to maintain some autonomy
   evolution:
     s01e01:
-      - id: predator_prey
-        intensity: 2
-        notes: "Initial attraction to Alfred, subtle hunting dynamic"
+    - id: predator_prey
+      intensity: 2
+      notes: Initial attraction to Alfred, subtle hunting dynamic
     s01e02:
-      - id: brat
-        intensity: 3
-        notes: "Rebellion against parents intensifies"
+    - id: brat
+      intensity: 3
+      notes: Rebellion against parents intensifies
     s01e03:
-      - id: blood_bond
-        intensity: 4
-        notes: "First intimate feeding with Alfred"
-      - id: compulsion
-        intensity: 3
-        notes: "Experiences glamour, conflicted feelings"
+    - id: blood_bond
+      intensity: 4
+      notes: First intimate feeding with Alfred
+    - id: compulsion
+      intensity: 3
+      notes: Experiences glamour, conflicted feelings
     s01e04:
-      - id: obsession
-        intensity: 4
-        notes: "Fixation on Alfred deepens"
+    - id: obsession
+      intensity: 4
+      notes: Fixation on Alfred deepens
     s01e05:
-      - id: daddy
-        intensity: 4
-        notes: "Jacques becomes object of attraction"
-      - id: age_gap
-        intensity: 5
-        notes: "Uncle attraction reaches peak"
+    - id: daddy
+      intensity: 4
+      notes: Jacques becomes object of attraction
+    - id: age_gap
+      intensity: 5
+      notes: Uncle attraction reaches peak
     s01e06:
-      - id: sire_bond
-        intensity: 3
-        notes: "Father's control creates complex feelings"
+    - id: sire_bond
+      intensity: 3
+      notes: Father's control creates complex feelings
     s01e07:
-      - id: blood_bond
-        intensity: 5
-        notes: "Fully committed bond with Alfred"
-      - id: total_power_exchange
-        intensity: 3
-        notes: "Begins exploring deeper submission"
-
-appearances:
-  - s01e01
-  - s01e02
-  - s01e03
-  - s01e04
-  - s01e05
-  - s01e06
-  - s01e07
+    - id: blood_bond
+      intensity: 5
+      notes: Fully committed bond with Alfred
+    - id: total_power_exchange
+      intensity: 3
+      notes: Begins exploring deeper submission
+divergences: []
+_deprecated_canonical:
+  age: 16
+  species: vampire
+  family: natt_och_dag
+  traits: *id001
+  arc: fish_out_of_water_teen
+  relationships: *id002
+_deprecated_adaptation:
+  age: 17
+  traits_added: *id003
+  arc_dark: From innocent fish-out-of-water to blood-bound submissive exploring dark
+    desires
+  taboo_elements: *id004
+  explicit_scenes: *id005
+  psychological_profile: Kiara's rebellion manifests through sexual exploration. She
+    uses intimacy as both weapon and vulnerability, discovering power in submission
+    while maintaining defiance. Her blood bond with Alfred creates obsessive attachment
+    patterns.
+  power_dynamics: Submissive brat seeking dominant figures to rebel against. Attracted
+    to dangerous authority (Jacques) while forming codependent bond with peer (Alfred).

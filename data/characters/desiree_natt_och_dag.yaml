@@ -1,18 +1,18 @@
 id: desiree_natt_och_dag
 name: Desirée Natt och Dag
 portrayed_by: Katarina Macli
-
-canonical:
-  age: 43
-  species: vampire
-  family: natt_och_dag
-  traits:
+versions:
+  bst:
+    age: 43
+    species: vampire
+    family: natt_och_dag
+    traits: &id001
     - elegant
     - distant
     - image_conscious
     - social_climber
-  arc: distant_mother
-  relationships:
+    arc: distant_mother
+    relationships: &id002
     - character: kiara_natt_och_dag
       type: daughter
       dynamic: disappointed_distant
@@ -22,85 +22,97 @@ canonical:
     - character: jacques_natt_och_dag
       type: brother_in_law
       dynamic: complicated_attraction
-
-adaptation:
-  age: 45
-  traits_added:
+  sst:
+    age: 45
+    traits: &id003
     - image_obsession
     - repressed_sexuality
     - political_marriage
     - brother_in_law_attraction
-  arc_dark: "Distant mother whose obsession with image masks repressed desires and political calculation"
-  taboo_elements:
+    arc: Distant mother whose obsession with image masks repressed desires and political
+      calculation
+    taboo_elements: &id004
     - political_marriage
     - brother_in_law_attraction
     - repressed_sexuality
-  explicit_scenes:
+    explicit_scenes: &id005
     - s01e06_marriage_bed_scene
     - s01e07_jacques_temptation
-  psychological_profile: "Desirée maintains perfect facade while suppressing genuine desires. Her marriage to Henry is political alliance; her attraction to Jacques represents everything she denies herself. Views daughter as extension of image."
-  power_dynamics: "Social dominant who controls through reputation and image. Submissive in private to patriarchal structures she publicly maintains."
-
 kink_profile:
   preferences:
-    - id: image_control
-      intensity: 5
-      notes: "Obsessed with perfect appearance"
-    - id: political_marriage
-      intensity: 4
-      notes: "Alliance over romance"
-    - id: repressed_desires
-      intensity: 5
-      notes: "Denies genuine attractions"
-    - id: forbidden_attraction
-      intensity: 4
-      notes: "Attracted to Jacques"
-    - id: social_domination
-      intensity: 4
-      notes: "Controls through reputation"
-    - id: matriarchal_control
-      intensity: 3
-      notes: "Manages family image"
-    - id: denial
-      intensity: 4
-      notes: "Suppresses own needs"
-    - id: duty
-      intensity: 5
-      notes: "Obligation over desire"
-    - id: elegance
-      intensity: 5
-      notes: "Aesthetic perfectionism"
-    - id: voyeurism
-      intensity: 3
-      notes: "Watches but doesn't act"
+  - id: image_control
+    intensity: 5
+    notes: Obsessed with perfect appearance
+  - id: political_marriage
+    intensity: 4
+    notes: Alliance over romance
+  - id: repressed_desires
+    intensity: 5
+    notes: Denies genuine attractions
+  - id: forbidden_attraction
+    intensity: 4
+    notes: Attracted to Jacques
+  - id: social_domination
+    intensity: 4
+    notes: Controls through reputation
+  - id: matriarchal_control
+    intensity: 3
+    notes: Manages family image
+  - id: denial
+    intensity: 4
+    notes: Suppresses own needs
+  - id: duty
+    intensity: 5
+    notes: Obligation over desire
+  - id: elegance
+    intensity: 5
+    notes: Aesthetic perfectionism
+  - id: voyeurism
+    intensity: 3
+    notes: Watches but doesn't act
   limits:
-    - id: vulnerability
-      intensity: 1
-      notes: "Never shows weakness"
-    - id: authenticity
-      intensity: 2
-      notes: "Hides true feelings"
-    - id: passion
-      intensity: 2
-      notes: "Avoids losing control"
-    - id: intimacy
-      intensity: 2
-      notes: "Maintains emotional distance"
+  - id: vulnerability
+    intensity: 1
+    notes: Never shows weakness
+  - id: authenticity
+    intensity: 2
+    notes: Hides true feelings
+  - id: passion
+    intensity: 2
+    notes: Avoids losing control
+  - id: intimacy
+    intensity: 2
+    notes: Maintains emotional distance
   evolution:
     s01e03:
-      - id: image_control
-        intensity: 5
-        notes: "Manages Kiara's debut"
+    - id: image_control
+      intensity: 5
+      notes: Manages Kiara's debut
     s01e06:
-      - id: repressed_desires
-        intensity: 5
-        notes: "Marriage tension surfaces"
+    - id: repressed_desires
+      intensity: 5
+      notes: Marriage tension surfaces
     s01e07:
-      - id: forbidden_attraction
-        intensity: 4
-        notes: "Jacques temptation peaks"
-
-appearances:
-  - s01e03
-  - s01e06
-  - s01e07
+    - id: forbidden_attraction
+      intensity: 4
+      notes: Jacques temptation peaks
+divergences: []
+_deprecated_canonical:
+  age: 43
+  species: vampire
+  family: natt_och_dag
+  traits: *id001
+  arc: distant_mother
+  relationships: *id002
+_deprecated_adaptation:
+  age: 45
+  traits_added: *id003
+  arc_dark: Distant mother whose obsession with image masks repressed desires and
+    political calculation
+  taboo_elements: *id004
+  explicit_scenes: *id005
+  psychological_profile: Desirée maintains perfect facade while suppressing genuine
+    desires. Her marriage to Henry is political alliance; her attraction to Jacques
+    represents everything she denies herself. Views daughter as extension of image.
+  power_dynamics: Social dominant who controls through reputation and image. Submissive
+    in private to patriarchal structures she publicly maintains.

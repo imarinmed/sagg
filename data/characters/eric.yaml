@@ -1,106 +1,114 @@
 id: eric
 name: Eric
 portrayed_by: Pontus Bennemyr
-
-canonical:
-  age: 16
-  species: human
-  family: null
-  traits:
+versions:
+  bst:
+    age: 16
+    species: human
+    traits: &id001
     - nerdy
     - loyal
     - awkward
     - tech_savvy
-  arc: sidekick_friend
-  relationships:
+    arc: sidekick_friend
+    relationships: &id002
     - character: alfred
       type: best_friend
       dynamic: loyal_sidekick
     - character: kiara_natt_och_dag
       type: acquaintance
       dynamic: curious
-
-adaptation:
-  age: 17
-  traits_added:
+  sst:
+    age: 17
+    traits: &id003
     - tech_voyeur
     - hidden_obsession
     - information_control
     - secret_knowledge
-  arc_dark: "Tech-savvy observer using surveillance to satisfy obsession with Kiara and vampires"
-  taboo_elements:
+    arc: Tech-savvy observer using surveillance to satisfy obsession with Kiara and
+      vampires
+    taboo_elements: &id004
     - voyeurism
     - surveillance
     - privacy_violation
-  explicit_scenes:
+    explicit_scenes: &id005
     - s01e04_hacking_scene
     - s01e06_discovery
-  psychological_profile: "Eric's technical skills enable secret observation. His curiosity about Kiara becomes obsession. Knowledge is power, and he gathers information compulsively."
-  power_dynamics: "Observer who controls through information. Uses technical skills to watch from shadows. Knowledge creates sense of power over subjects."
-
 kink_profile:
   preferences:
-    - id: voyeur
-      intensity: 5
-      notes: "Obsessive watcher, surveillance"
-    - id: information_control
-      intensity: 4
-      notes: "Knowledge as power"
-    - id: tech_fetish
-      intensity: 4
-      notes: "Aroused by surveillance tech"
-    - id: secret_knowledge
-      intensity: 5
-      notes: "Knowing what others don't"
-    - id: observation
-      intensity: 5
-      notes: "Prefers watching to participating"
-    - id: mystery_unraveling
-      intensity: 4
-      notes: "Investigation as foreplay"
-    - id: hidden_power
-      intensity: 3
-      notes: "Secret influence over situations"
-    - id: curiosity
-      intensity: 5
-      notes: "Driven to uncover secrets"
-    - id: documentation
-      intensity: 3
-      notes: "Records observations"
-    - id: analysis
-      intensity: 4
-      notes: "Studies subjects meticulously"
+  - id: voyeur
+    intensity: 5
+    notes: Obsessive watcher, surveillance
+  - id: information_control
+    intensity: 4
+    notes: Knowledge as power
+  - id: tech_fetish
+    intensity: 4
+    notes: Aroused by surveillance tech
+  - id: secret_knowledge
+    intensity: 5
+    notes: Knowing what others don't
+  - id: observation
+    intensity: 5
+    notes: Prefers watching to participating
+  - id: mystery_unraveling
+    intensity: 4
+    notes: Investigation as foreplay
+  - id: hidden_power
+    intensity: 3
+    notes: Secret influence over situations
+  - id: curiosity
+    intensity: 5
+    notes: Driven to uncover secrets
+  - id: documentation
+    intensity: 3
+    notes: Records observations
+  - id: analysis
+    intensity: 4
+    notes: Studies subjects meticulously
   limits:
-    - id: physical_intimacy
-      intensity: 2
-      notes: "More comfortable at distance"
-    - id: confrontation
-      intensity: 1
-      notes: "Avoids direct conflict"
-    - id: exposure
-      intensity: 1
-      notes: "Fears being discovered"
-    - id: vulnerability
-      intensity: 2
-      notes: "Guards personal information"
+  - id: physical_intimacy
+    intensity: 2
+    notes: More comfortable at distance
+  - id: confrontation
+    intensity: 1
+    notes: Avoids direct conflict
+  - id: exposure
+    intensity: 1
+    notes: Fears being discovered
+  - id: vulnerability
+    intensity: 2
+    notes: Guards personal information
   evolution:
     s01e01:
-      - id: curiosity
-        intensity: 3
-        notes: "Notices Kiara's oddities"
+    - id: curiosity
+      intensity: 3
+      notes: Notices Kiara's oddities
     s01e04:
-      - id: voyeur
-        intensity: 4
-        notes: "Begins surveillance"
+    - id: voyeur
+      intensity: 4
+      notes: Begins surveillance
     s01e06:
-      - id: secret_knowledge
-        intensity: 5
-        notes: "Discovers vampire truth"
-
-appearances:
-  - s01e01
-  - s01e02
-  - s01e04
-  - s01e05
-  - s01e06
-  - s01e07
+    - id: secret_knowledge
+      intensity: 5
+      notes: Discovers vampire truth
+divergences: []
+_deprecated_canonical:
+  age: 16
+  species: human
+  family: null
+  traits: *id001
+  arc: sidekick_friend
+  relationships: *id002
+_deprecated_adaptation:
+  age: 17
+  traits_added: *id003
+  arc_dark: Tech-savvy observer using surveillance to satisfy obsession with Kiara
+    and vampires
+  taboo_elements: *id004
+  explicit_scenes: *id005
+  psychological_profile: Eric's technical skills enable secret observation. His curiosity
+    about Kiara becomes obsession. Knowledge is power, and he gathers information
+    compulsively.
+  power_dynamics: Observer who controls through information. Uses technical skills
+    to watch from shadows. Knowledge creates sense of power over subjects.

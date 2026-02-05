@@ -1,111 +1,116 @@
 id: chloe
 name: Chloe
 portrayed_by: Laura Maik
-
-canonical:
-  age: 16
-  species: human
-  family: null
-  traits:
+versions:
+  bst:
+    age: 16
+    species: human
+    traits: &id001
     - loyal
     - supportive
     - outsider_observer
     - genuine
-  arc: ally_sidekick
-  relationships:
+    arc: ally_sidekick
+    relationships: &id002
     - character: kiara_natt_och_dag
       type: best_friend
       dynamic: accepting_protective
     - character: elise
       type: former_friend
       dynamic: betrayed_by
-
-adaptation:
-  age: 17
-  traits_added:
+  sst:
+    age: 17
+    traits: &id003
     - secretly_attracted
     - observer_kink
     - supportive_submissive
     - hidden_desires
-  arc_dark: "Loyal friend harboring secret submissive desires and attraction to Kiara"
-  taboo_elements:
+    arc: Loyal friend harboring secret submissive desires and attraction to Kiara
+    taboo_elements: &id004
     - unrequited_attraction
     - voyeurism
     - submission
-  explicit_scenes:
+    explicit_scenes: &id005
     - s01e04_observation_scene
     - s01e06_confession
-  psychological_profile: "Chloe's loyalty masks deeper submissive tendencies and attraction to Kiara. She finds satisfaction in supporting role, watching from sidelines. Her friendship contains unspoken romantic elements."
-  power_dynamics: "Natural submissive who finds fulfillment in supporting dominant personalities. Voyeuristic observer who prefers watching to participating."
-
 kink_profile:
   preferences:
-    - id: submissive
-      intensity: 4
-      notes: "Natural follower, finds comfort in submission"
-    - id: voyeur
-      intensity: 4
-      notes: "Observes others' intimacy"
-    - id: supportive_submissive
-      intensity: 5
-      notes: "Finds purpose in serving friends"
-    - id: unrequited_love
-      intensity: 4
-      notes: "Secret attraction to Kiara"
-    - id: loyalty
-      intensity: 5
-      notes: "Devoted to those she serves"
-    - id: emotional_intimacy
-      intensity: 5
-      notes: "Values deep connection over sex"
-    - id: aftercare
-      intensity: 4
-      notes: "Natural caregiver post-intensity"
-    - id: hidden_desires
-      intensity: 4
-      notes: "Keeps true feelings secret"
-    - id: friendship_bonds
-      intensity: 5
-      notes: "Prioritizes platonic intimacy"
-    - id: observation
-      intensity: 4
-      notes: "Watcher rather than participant"
+  - id: submissive
+    intensity: 4
+    notes: Natural follower, finds comfort in submission
+  - id: voyeur
+    intensity: 4
+    notes: Observes others' intimacy
+  - id: supportive_submissive
+    intensity: 5
+    notes: Finds purpose in serving friends
+  - id: unrequited_love
+    intensity: 4
+    notes: Secret attraction to Kiara
+  - id: loyalty
+    intensity: 5
+    notes: Devoted to those she serves
+  - id: emotional_intimacy
+    intensity: 5
+    notes: Values deep connection over sex
+  - id: aftercare
+    intensity: 4
+    notes: Natural caregiver post-intensity
+  - id: hidden_desires
+    intensity: 4
+    notes: Keeps true feelings secret
+  - id: friendship_bonds
+    intensity: 5
+    notes: Prioritizes platonic intimacy
+  - id: observation
+    intensity: 4
+    notes: Watcher rather than participant
   limits:
-    - id: dominance
-      intensity: 1
-      notes: "Uncomfortable leading"
-    - id: public_attention
-      intensity: 2
-      notes: "Prefers staying background"
-    - id: aggression
-      intensity: 1
-      notes: "Avoids conflict"
-    - id: betrayal
-      intensity: 1
-      notes: "Loyalty is absolute"
+  - id: dominance
+    intensity: 1
+    notes: Uncomfortable leading
+  - id: public_attention
+    intensity: 2
+    notes: Prefers staying background
+  - id: aggression
+    intensity: 1
+    notes: Avoids conflict
+  - id: betrayal
+    intensity: 1
+    notes: Loyalty is absolute
   evolution:
     s01e01:
-      - id: supportive_submissive
-        intensity: 4
-        notes: "Becomes Kiara's friend"
+    - id: supportive_submissive
+      intensity: 4
+      notes: Becomes Kiara's friend
     s01e03:
-      - id: unrequited_love
-        intensity: 3
-        notes: "Attraction develops"
+    - id: unrequited_love
+      intensity: 3
+      notes: Attraction develops
     s01e04:
-      - id: voyeur
-        intensity: 4
-        notes: "Observes Kiara and Alfred"
+    - id: voyeur
+      intensity: 4
+      notes: Observes Kiara and Alfred
     s01e06:
-      - id: hidden_desires
-        intensity: 4
-        notes: "Confesses feelings"
-
-appearances:
-  - s01e01
-  - s01e02
-  - s01e03
-  - s01e04
-  - s01e05
-  - s01e06
-  - s01e07
+    - id: hidden_desires
+      intensity: 4
+      notes: Confesses feelings
+divergences: []
+_deprecated_canonical:
+  age: 16
+  species: human
+  family: null
+  traits: *id001
+  arc: ally_sidekick
+  relationships: *id002
+_deprecated_adaptation:
+  age: 17
+  traits_added: *id003
+  arc_dark: Loyal friend harboring secret submissive desires and attraction to Kiara
+  taboo_elements: *id004
+  explicit_scenes: *id005
+  psychological_profile: Chloe's loyalty masks deeper submissive tendencies and attraction
+    to Kiara. She finds satisfaction in supporting role, watching from sidelines.
+    Her friendship contains unspoken romantic elements.
+  power_dynamics: Natural submissive who finds fulfillment in supporting dominant
+    personalities. Voyeuristic observer who prefers watching to participating.

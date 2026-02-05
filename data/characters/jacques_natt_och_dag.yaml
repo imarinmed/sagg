@@ -1,19 +1,19 @@
 id: jacques_natt_och_dag
 name: Jacques Natt och Dag
 portrayed_by: Åke Bremer Wold
-
-canonical:
-  age: 40
-  species: vampire
-  family: natt_och_dag
-  traits:
+versions:
+  bst:
+    age: 40
+    species: vampire
+    family: natt_och_dag
+    traits: &id001
     - mysterious
     - charming
     - rebellious
     - alluring
     - uncle_figure
-  arc: mysterious_uncle
-  relationships:
+    arc: mysterious_uncle
+    relationships: &id002
     - character: kiara_natt_och_dag
       type: niece
       dynamic: intriguing_magnetic
@@ -23,95 +23,104 @@ canonical:
     - character: desiree_natt_och_dag
       type: sister_in_law
       dynamic: unspoken_tension
-
-adaptation:
-  age: 42
-  traits_added:
+  sst:
+    age: 42
+    traits: &id003
     - seductive_corruptor
     - uncle_taboo
     - rival_to_brother
     - dark_mentor
-  arc_dark: "Seductive uncle figure who represents forbidden knowledge and taboo desire"
-  taboo_elements:
+    arc: Seductive uncle figure who represents forbidden knowledge and taboo desire
+    taboo_elements: &id004
     - pseudo_incest
     - age_gap
     - authority_abuse
     - corruption
-  explicit_scenes:
+    explicit_scenes: &id005
     - s01e05_uncle_niece_seduction
     - s01e06_brother_rivalry
     - s01e07_dark_proposition
-  psychological_profile: "Jacques embodies the dangerous allure of the forbidden. His interest in Kiara mixes genuine attraction with desire to usurp his brother's authority. He represents sexual knowledge and corruption."
-  power_dynamics: "Seductive dominant who uses charm and forbidden appeal. Competes with brother for dominance. Drawn to what he shouldn't have."
-
 kink_profile:
   preferences:
-    - id: corruption
-      intensity: 5
-      notes: "Enjoys corrupting innocence"
-    - id: forbidden_attraction
-      intensity: 5
-      notes: "Drawn to taboo relationships"
-    - id: pseudo_incest
-      intensity: 4
-      notes: "Uncle-niece dynamic excites"
-    - id: age_gap
-      intensity: 5
-      notes: "Prefers much younger partners"
-    - id: mentor_student
-      intensity: 4
-      notes: "Teaches dark knowledge"
-    - id: predator_prey
-      intensity: 4
-      notes: "Hunts those who trust him"
-    - id: glamour
-      intensity: 5
-      notes: "Uses supernatural allure freely"
-    - id: mind_control
-      intensity: 3
-      notes: "Subtle influence over will"
-    - id: rivalry
-      intensity: 4
-      notes: "Competes with Henry for everything"
-    - id: seduction
-      intensity: 5
-      notes: "Master manipulator of desire"
+  - id: corruption
+    intensity: 5
+    notes: Enjoys corrupting innocence
+  - id: forbidden_attraction
+    intensity: 5
+    notes: Drawn to taboo relationships
+  - id: pseudo_incest
+    intensity: 4
+    notes: Uncle-niece dynamic excites
+  - id: age_gap
+    intensity: 5
+    notes: Prefers much younger partners
+  - id: mentor_student
+    intensity: 4
+    notes: Teaches dark knowledge
+  - id: predator_prey
+    intensity: 4
+    notes: Hunts those who trust him
+  - id: glamour
+    intensity: 5
+    notes: Uses supernatural allure freely
+  - id: mind_control
+    intensity: 3
+    notes: Subtle influence over will
+  - id: rivalry
+    intensity: 4
+    notes: Competes with Henry for everything
+  - id: seduction
+    intensity: 5
+    notes: Master manipulator of desire
   limits:
-    - id: genuine_attachment
-      intensity: 2
-      notes: "Avoids real emotional bonds"
-    - id: responsibility
-      intensity: 1
-      notes: "Rejects accountability"
-    - id: commitment
-      intensity: 1
-      notes: "Prefers temporary conquests"
-    - id: love
-      intensity: 2
-      notes: "Distrusts romantic feelings"
+  - id: genuine_attachment
+    intensity: 2
+    notes: Avoids real emotional bonds
+  - id: responsibility
+    intensity: 1
+    notes: Rejects accountability
+  - id: commitment
+    intensity: 1
+    notes: Prefers temporary conquests
+  - id: love
+    intensity: 2
+    notes: Distrusts romantic feelings
   evolution:
     s01e03:
-      - id: forbidden_attraction
-        intensity: 3
-        notes: "First notices Kiara's potential"
+    - id: forbidden_attraction
+      intensity: 3
+      notes: First notices Kiara's potential
     s01e05:
-      - id: corruption
-        intensity: 5
-        notes: "Actively seduces Kiara"
-      - id: pseudo_incest
-        intensity: 5
-        notes: "Uncle role becomes erotic"
+    - id: corruption
+      intensity: 5
+      notes: Actively seduces Kiara
+    - id: pseudo_incest
+      intensity: 5
+      notes: Uncle role becomes erotic
     s01e06:
-      - id: rivalry
-        intensity: 5
-        notes: "Open conflict with Henry"
+    - id: rivalry
+      intensity: 5
+      notes: Open conflict with Henry
     s01e07:
-      - id: mentor_student
-        intensity: 4
-        notes: "Offers to teach Kiara dark arts"
-
-appearances:
-  - s01e03
-  - s01e05
-  - s01e06
-  - s01e07
+    - id: mentor_student
+      intensity: 4
+      notes: Offers to teach Kiara dark arts
+divergences: []
+_deprecated_canonical:
+  age: 40
+  species: vampire
+  family: natt_och_dag
+  traits: *id001
+  arc: mysterious_uncle
+  relationships: *id002
+_deprecated_adaptation:
+  age: 42
+  traits_added: *id003
+  arc_dark: Seductive uncle figure who represents forbidden knowledge and taboo desire
+  taboo_elements: *id004
+  explicit_scenes: *id005
+  psychological_profile: Jacques embodies the dangerous allure of the forbidden. His
+    interest in Kiara mixes genuine attraction with desire to usurp his brother's
+    authority. He represents sexual knowledge and corruption.
+  power_dynamics: Seductive dominant who uses charm and forbidden appeal. Competes
+    with brother for dominance. Drawn to what he shouldn't have.
