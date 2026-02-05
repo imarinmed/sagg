@@ -1,0 +1,2191 @@
+{
+  "version": "1.0.0",
+  "total_cards": 81,
+  "cards_by_type": {
+    "intensify": 17,
+    "transform": 17,
+    "complicate": 17,
+    "expose": 13,
+    "merge": 17
+  },
+  "cards": [
+    {
+      "card_id": "mut-vampire_physiology-001",
+      "title": "The Darker Vampire Physiology",
+      "hook": "What if vampire physiology became more explicitly predatory and dangerous?",
+      "source_element": "vampire_physiology",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "enhanced_strength",
+        "enhanced_senses",
+        "extended_lifespan"
+      ],
+      "constraints": [
+        "Must maintain vampire lore consistency",
+        "Must escalate existing traits, not contradict them"
+      ],
+      "possibilities": [
+        "The vampire physiology becomes a source of addiction rather than just sustenance",
+        "Characters lose control when using vampire physiology",
+        "The vampire physiology creates permanent bonds that cannot be broken"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "loss_of_control",
+        "addiction",
+        "irreversible_changes"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_physiology-002",
+      "title": "The Complicated Vampire Physiology",
+      "hook": "What if vampire physiology had darker implications that characters must navigate?",
+      "source_element": "vampire_physiology",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "enhanced_strength",
+        "enhanced_senses",
+        "extended_lifespan"
+      ],
+      "constraints": [
+        "Must add moral ambiguity",
+        "Must create difficult choices"
+      ],
+      "possibilities": [
+        "Using vampire physiology requires sacrificing something personal",
+        "The vampire physiology benefits some while harming others",
+        "Characters must choose between using vampire physiology and maintaining ethics"
+      ],
+      "intensity_increase": 2,
+      "taboo_potential": [
+        "moral_ambiguity",
+        "sacrifice",
+        "ethical_dilemmas"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_physiology-003",
+      "title": "The Explicit Vampire Physiology",
+      "hook": "What if the sensual/erotic aspects of vampire physiology were made explicit?",
+      "source_element": "vampire_physiology",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "enhanced_strength",
+        "enhanced_senses",
+        "extended_lifespan"
+      ],
+      "constraints": [
+        "Must respect consent framework",
+        "Must serve character development"
+      ],
+      "possibilities": [
+        "The vampire physiology becomes intertwined with sexual awakening",
+        "Characters discover vampire physiology through intimate encounters",
+        "Power dynamics in vampire physiology become explicitly sexual"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexual_awakening",
+        "power_dynamics",
+        "forbidden_desire"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_physiology-004",
+      "title": "The Transformed Vampire Physiology",
+      "hook": "What if vampire physiology became its opposite - a source of corruption rather than benefit?",
+      "source_element": "vampire_physiology",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "enhanced_strength",
+        "enhanced_senses",
+        "extended_lifespan"
+      ],
+      "constraints": [
+        "Must invert the core concept",
+        "Must create dramatic irony"
+      ],
+      "possibilities": [
+        "What was protective about vampire physiology becomes suffocating",
+        "The vampire physiology that gave power now takes it away",
+        "Characters must reject vampire physiology to survive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "corruption",
+        "loss_of_identity",
+        "betrayal"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_physiology-005",
+      "title": "Vampire Physiology Reimagined",
+      "hook": "What if vampire physiology combined with taboo elements to create something new?",
+      "source_element": "vampire_physiology",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "enhanced_strength",
+        "enhanced_senses",
+        "extended_lifespan"
+      ],
+      "constraints": [
+        "Must synthesize concepts meaningfully",
+        "Must escalate intensity"
+      ],
+      "possibilities": [
+        "The vampire physiology becomes a ritual of submission",
+        "Power and pleasure become inseparable in vampire physiology",
+        "The vampire physiology creates bonds that cannot be broken"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "ritual",
+        "submission",
+        "unbreakable_bonds"
+      ]
+    },
+    {
+      "card_id": "mut-family_hierarchy-001",
+      "title": "The Darker Vampire Family Hierarchy",
+      "hook": "What if vampire family hierarchy became more explicitly predatory and dangerous?",
+      "source_element": "family_hierarchy",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "patriarchal_structure",
+        "traditional_values",
+        "strict_upbringing"
+      ],
+      "constraints": [
+        "Must maintain vampire lore consistency",
+        "Must escalate existing traits, not contradict them"
+      ],
+      "possibilities": [
+        "The vampire family hierarchy becomes a source of addiction rather than just sustenance",
+        "Characters lose control when using vampire family hierarchy",
+        "The vampire family hierarchy creates permanent bonds that cannot be broken"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "loss_of_control",
+        "addiction",
+        "irreversible_changes"
+      ]
+    },
+    {
+      "card_id": "mut-family_hierarchy-002",
+      "title": "The Complicated Vampire Family Hierarchy",
+      "hook": "What if vampire family hierarchy had darker implications that characters must navigate?",
+      "source_element": "family_hierarchy",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "patriarchal_structure",
+        "traditional_values",
+        "strict_upbringing"
+      ],
+      "constraints": [
+        "Must add moral ambiguity",
+        "Must create difficult choices"
+      ],
+      "possibilities": [
+        "Using vampire family hierarchy requires sacrificing something personal",
+        "The vampire family hierarchy benefits some while harming others",
+        "Characters must choose between using vampire family hierarchy and maintaining ethics"
+      ],
+      "intensity_increase": 2,
+      "taboo_potential": [
+        "moral_ambiguity",
+        "sacrifice",
+        "ethical_dilemmas"
+      ]
+    },
+    {
+      "card_id": "mut-family_hierarchy-003",
+      "title": "The Explicit Vampire Family Hierarchy",
+      "hook": "What if the sensual/erotic aspects of vampire family hierarchy were made explicit?",
+      "source_element": "family_hierarchy",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "patriarchal_structure",
+        "traditional_values",
+        "strict_upbringing"
+      ],
+      "constraints": [
+        "Must respect consent framework",
+        "Must serve character development"
+      ],
+      "possibilities": [
+        "The vampire family hierarchy becomes intertwined with sexual awakening",
+        "Characters discover vampire family hierarchy through intimate encounters",
+        "Power dynamics in vampire family hierarchy become explicitly sexual"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexual_awakening",
+        "power_dynamics",
+        "forbidden_desire"
+      ]
+    },
+    {
+      "card_id": "mut-family_hierarchy-004",
+      "title": "The Transformed Vampire Family Hierarchy",
+      "hook": "What if vampire family hierarchy became its opposite - a source of corruption rather than benefit?",
+      "source_element": "family_hierarchy",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "patriarchal_structure",
+        "traditional_values",
+        "strict_upbringing"
+      ],
+      "constraints": [
+        "Must invert the core concept",
+        "Must create dramatic irony"
+      ],
+      "possibilities": [
+        "What was protective about vampire family hierarchy becomes suffocating",
+        "The vampire family hierarchy that gave power now takes it away",
+        "Characters must reject vampire family hierarchy to survive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "corruption",
+        "loss_of_identity",
+        "betrayal"
+      ]
+    },
+    {
+      "card_id": "mut-family_hierarchy-005",
+      "title": "Vampire Family Hierarchy Reimagined",
+      "hook": "What if vampire family hierarchy combined with taboo elements to create something new?",
+      "source_element": "family_hierarchy",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "patriarchal_structure",
+        "traditional_values",
+        "strict_upbringing"
+      ],
+      "constraints": [
+        "Must synthesize concepts meaningfully",
+        "Must escalate intensity"
+      ],
+      "possibilities": [
+        "The vampire family hierarchy becomes a ritual of submission",
+        "Power and pleasure become inseparable in vampire family hierarchy",
+        "The vampire family hierarchy creates bonds that cannot be broken"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "ritual",
+        "submission",
+        "unbreakable_bonds"
+      ]
+    },
+    {
+      "card_id": "mut-blood_bond-001",
+      "title": "The Darker The Blood Bond",
+      "hook": "What if the blood bond became more explicitly predatory and dangerous?",
+      "source_element": "blood_bond",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "blood_exchange_required",
+        "mystical_connection",
+        "familial_implications"
+      ],
+      "constraints": [
+        "Must maintain vampire lore consistency",
+        "Must escalate existing traits, not contradict them"
+      ],
+      "possibilities": [
+        "The the blood bond becomes a source of addiction rather than just sustenance",
+        "Characters lose control when using the blood bond",
+        "The the blood bond creates permanent bonds that cannot be broken"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "loss_of_control",
+        "addiction",
+        "irreversible_changes"
+      ]
+    },
+    {
+      "card_id": "mut-blood_bond-002",
+      "title": "The Complicated The Blood Bond",
+      "hook": "What if the blood bond had darker implications that characters must navigate?",
+      "source_element": "blood_bond",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "blood_exchange_required",
+        "mystical_connection",
+        "familial_implications"
+      ],
+      "constraints": [
+        "Must add moral ambiguity",
+        "Must create difficult choices"
+      ],
+      "possibilities": [
+        "Using the blood bond requires sacrificing something personal",
+        "The the blood bond benefits some while harming others",
+        "Characters must choose between using the blood bond and maintaining ethics"
+      ],
+      "intensity_increase": 2,
+      "taboo_potential": [
+        "moral_ambiguity",
+        "sacrifice",
+        "ethical_dilemmas"
+      ]
+    },
+    {
+      "card_id": "mut-blood_bond-003",
+      "title": "The Explicit The Blood Bond",
+      "hook": "What if the sensual/erotic aspects of the blood bond were made explicit?",
+      "source_element": "blood_bond",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "blood_exchange_required",
+        "mystical_connection",
+        "familial_implications"
+      ],
+      "constraints": [
+        "Must respect consent framework",
+        "Must serve character development"
+      ],
+      "possibilities": [
+        "The the blood bond becomes intertwined with sexual awakening",
+        "Characters discover the blood bond through intimate encounters",
+        "Power dynamics in the blood bond become explicitly sexual"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexual_awakening",
+        "power_dynamics",
+        "forbidden_desire"
+      ]
+    },
+    {
+      "card_id": "mut-blood_bond-004",
+      "title": "The Transformed The Blood Bond",
+      "hook": "What if the blood bond became its opposite - a source of corruption rather than benefit?",
+      "source_element": "blood_bond",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "blood_exchange_required",
+        "mystical_connection",
+        "familial_implications"
+      ],
+      "constraints": [
+        "Must invert the core concept",
+        "Must create dramatic irony"
+      ],
+      "possibilities": [
+        "What was protective about the blood bond becomes suffocating",
+        "The the blood bond that gave power now takes it away",
+        "Characters must reject the blood bond to survive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "corruption",
+        "loss_of_identity",
+        "betrayal"
+      ]
+    },
+    {
+      "card_id": "mut-blood_bond-005",
+      "title": "The Blood Bond Reimagined",
+      "hook": "What if the blood bond combined with taboo elements to create something new?",
+      "source_element": "blood_bond",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "blood_exchange_required",
+        "mystical_connection",
+        "familial_implications"
+      ],
+      "constraints": [
+        "Must synthesize concepts meaningfully",
+        "Must escalate intensity"
+      ],
+      "possibilities": [
+        "The the blood bond becomes a ritual of submission",
+        "Power and pleasure become inseparable in the blood bond",
+        "The the blood bond creates bonds that cannot be broken"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "ritual",
+        "submission",
+        "unbreakable_bonds"
+      ]
+    },
+    {
+      "card_id": "mut-feeding-001",
+      "title": "The Darker Feeding",
+      "hook": "What if feeding became more explicitly predatory and dangerous?",
+      "source_element": "feeding",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "blood_consumption",
+        "survival_necessity",
+        "intimate_act"
+      ],
+      "constraints": [
+        "Must maintain vampire lore consistency",
+        "Must escalate existing traits, not contradict them"
+      ],
+      "possibilities": [
+        "The feeding becomes a source of addiction rather than just sustenance",
+        "Characters lose control when using feeding",
+        "The feeding creates permanent bonds that cannot be broken"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "loss_of_control",
+        "addiction",
+        "irreversible_changes"
+      ]
+    },
+    {
+      "card_id": "mut-feeding-002",
+      "title": "The Complicated Feeding",
+      "hook": "What if feeding had darker implications that characters must navigate?",
+      "source_element": "feeding",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "blood_consumption",
+        "survival_necessity",
+        "intimate_act"
+      ],
+      "constraints": [
+        "Must add moral ambiguity",
+        "Must create difficult choices"
+      ],
+      "possibilities": [
+        "Using feeding requires sacrificing something personal",
+        "The feeding benefits some while harming others",
+        "Characters must choose between using feeding and maintaining ethics"
+      ],
+      "intensity_increase": 2,
+      "taboo_potential": [
+        "moral_ambiguity",
+        "sacrifice",
+        "ethical_dilemmas"
+      ]
+    },
+    {
+      "card_id": "mut-feeding-003",
+      "title": "The Explicit Feeding",
+      "hook": "What if the sensual/erotic aspects of feeding were made explicit?",
+      "source_element": "feeding",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "blood_consumption",
+        "survival_necessity",
+        "intimate_act"
+      ],
+      "constraints": [
+        "Must respect consent framework",
+        "Must serve character development"
+      ],
+      "possibilities": [
+        "The feeding becomes intertwined with sexual awakening",
+        "Characters discover feeding through intimate encounters",
+        "Power dynamics in feeding become explicitly sexual"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexual_awakening",
+        "power_dynamics",
+        "forbidden_desire"
+      ]
+    },
+    {
+      "card_id": "mut-feeding-004",
+      "title": "The Transformed Feeding",
+      "hook": "What if feeding became its opposite - a source of corruption rather than benefit?",
+      "source_element": "feeding",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "blood_consumption",
+        "survival_necessity",
+        "intimate_act"
+      ],
+      "constraints": [
+        "Must invert the core concept",
+        "Must create dramatic irony"
+      ],
+      "possibilities": [
+        "What was protective about feeding becomes suffocating",
+        "The feeding that gave power now takes it away",
+        "Characters must reject feeding to survive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "corruption",
+        "loss_of_identity",
+        "betrayal"
+      ]
+    },
+    {
+      "card_id": "mut-feeding-005",
+      "title": "Feeding Reimagined",
+      "hook": "What if feeding combined with taboo elements to create something new?",
+      "source_element": "feeding",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "blood_consumption",
+        "survival_necessity",
+        "intimate_act"
+      ],
+      "constraints": [
+        "Must synthesize concepts meaningfully",
+        "Must escalate intensity"
+      ],
+      "possibilities": [
+        "The feeding becomes a ritual of submission",
+        "Power and pleasure become inseparable in feeding",
+        "The feeding creates bonds that cannot be broken"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "ritual",
+        "submission",
+        "unbreakable_bonds"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_human_relations-001",
+      "title": "The Darker Vampire-Human Relations",
+      "hook": "What if vampire-human relations became more explicitly predatory and dangerous?",
+      "source_element": "vampire_human_relations",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "secret_coexistence",
+        "integration",
+        "forbidden_romance_potential"
+      ],
+      "constraints": [
+        "Must maintain vampire lore consistency",
+        "Must escalate existing traits, not contradict them"
+      ],
+      "possibilities": [
+        "The vampire-human relations becomes a source of addiction rather than just sustenance",
+        "Characters lose control when using vampire-human relations",
+        "The vampire-human relations creates permanent bonds that cannot be broken"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "loss_of_control",
+        "addiction",
+        "irreversible_changes"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_human_relations-002",
+      "title": "The Complicated Vampire-Human Relations",
+      "hook": "What if vampire-human relations had darker implications that characters must navigate?",
+      "source_element": "vampire_human_relations",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "secret_coexistence",
+        "integration",
+        "forbidden_romance_potential"
+      ],
+      "constraints": [
+        "Must add moral ambiguity",
+        "Must create difficult choices"
+      ],
+      "possibilities": [
+        "Using vampire-human relations requires sacrificing something personal",
+        "The vampire-human relations benefits some while harming others",
+        "Characters must choose between using vampire-human relations and maintaining ethics"
+      ],
+      "intensity_increase": 2,
+      "taboo_potential": [
+        "moral_ambiguity",
+        "sacrifice",
+        "ethical_dilemmas"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_human_relations-003",
+      "title": "The Explicit Vampire-Human Relations",
+      "hook": "What if the sensual/erotic aspects of vampire-human relations were made explicit?",
+      "source_element": "vampire_human_relations",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "secret_coexistence",
+        "integration",
+        "forbidden_romance_potential"
+      ],
+      "constraints": [
+        "Must respect consent framework",
+        "Must serve character development"
+      ],
+      "possibilities": [
+        "The vampire-human relations becomes intertwined with sexual awakening",
+        "Characters discover vampire-human relations through intimate encounters",
+        "Power dynamics in vampire-human relations become explicitly sexual"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexual_awakening",
+        "power_dynamics",
+        "forbidden_desire"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_human_relations-004",
+      "title": "The Transformed Vampire-Human Relations",
+      "hook": "What if vampire-human relations became its opposite - a source of corruption rather than benefit?",
+      "source_element": "vampire_human_relations",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "secret_coexistence",
+        "integration",
+        "forbidden_romance_potential"
+      ],
+      "constraints": [
+        "Must invert the core concept",
+        "Must create dramatic irony"
+      ],
+      "possibilities": [
+        "What was protective about vampire-human relations becomes suffocating",
+        "The vampire-human relations that gave power now takes it away",
+        "Characters must reject vampire-human relations to survive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "corruption",
+        "loss_of_identity",
+        "betrayal"
+      ]
+    },
+    {
+      "card_id": "mut-vampire_human_relations-005",
+      "title": "Vampire-Human Relations Reimagined",
+      "hook": "What if vampire-human relations combined with taboo elements to create something new?",
+      "source_element": "vampire_human_relations",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "secret_coexistence",
+        "integration",
+        "forbidden_romance_potential"
+      ],
+      "constraints": [
+        "Must synthesize concepts meaningfully",
+        "Must escalate intensity"
+      ],
+      "possibilities": [
+        "The vampire-human relations becomes a ritual of submission",
+        "Power and pleasure become inseparable in vampire-human relations",
+        "The vampire-human relations creates bonds that cannot be broken"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "ritual",
+        "submission",
+        "unbreakable_bonds"
+      ]
+    },
+    {
+      "card_id": "mut-transformation-001",
+      "title": "The Darker Vampire Transformation",
+      "hook": "What if vampire transformation became more explicitly predatory and dangerous?",
+      "source_element": "transformation",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "blood_exchange_required",
+        "death_and_rebirth",
+        "irreversible"
+      ],
+      "constraints": [
+        "Must maintain vampire lore consistency",
+        "Must escalate existing traits, not contradict them"
+      ],
+      "possibilities": [
+        "The vampire transformation becomes a source of addiction rather than just sustenance",
+        "Characters lose control when using vampire transformation",
+        "The vampire transformation creates permanent bonds that cannot be broken"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "loss_of_control",
+        "addiction",
+        "irreversible_changes"
+      ]
+    },
+    {
+      "card_id": "mut-transformation-002",
+      "title": "The Complicated Vampire Transformation",
+      "hook": "What if vampire transformation had darker implications that characters must navigate?",
+      "source_element": "transformation",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "blood_exchange_required",
+        "death_and_rebirth",
+        "irreversible"
+      ],
+      "constraints": [
+        "Must add moral ambiguity",
+        "Must create difficult choices"
+      ],
+      "possibilities": [
+        "Using vampire transformation requires sacrificing something personal",
+        "The vampire transformation benefits some while harming others",
+        "Characters must choose between using vampire transformation and maintaining ethics"
+      ],
+      "intensity_increase": 2,
+      "taboo_potential": [
+        "moral_ambiguity",
+        "sacrifice",
+        "ethical_dilemmas"
+      ]
+    },
+    {
+      "card_id": "mut-transformation-003",
+      "title": "The Explicit Vampire Transformation",
+      "hook": "What if the sensual/erotic aspects of vampire transformation were made explicit?",
+      "source_element": "transformation",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "blood_exchange_required",
+        "death_and_rebirth",
+        "irreversible"
+      ],
+      "constraints": [
+        "Must respect consent framework",
+        "Must serve character development"
+      ],
+      "possibilities": [
+        "The vampire transformation becomes intertwined with sexual awakening",
+        "Characters discover vampire transformation through intimate encounters",
+        "Power dynamics in vampire transformation become explicitly sexual"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexual_awakening",
+        "power_dynamics",
+        "forbidden_desire"
+      ]
+    },
+    {
+      "card_id": "mut-transformation-004",
+      "title": "The Transformed Vampire Transformation",
+      "hook": "What if vampire transformation became its opposite - a source of corruption rather than benefit?",
+      "source_element": "transformation",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "blood_exchange_required",
+        "death_and_rebirth",
+        "irreversible"
+      ],
+      "constraints": [
+        "Must invert the core concept",
+        "Must create dramatic irony"
+      ],
+      "possibilities": [
+        "What was protective about vampire transformation becomes suffocating",
+        "The vampire transformation that gave power now takes it away",
+        "Characters must reject vampire transformation to survive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "corruption",
+        "loss_of_identity",
+        "betrayal"
+      ]
+    },
+    {
+      "card_id": "mut-transformation-005",
+      "title": "Vampire Transformation Reimagined",
+      "hook": "What if vampire transformation combined with taboo elements to create something new?",
+      "source_element": "transformation",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "blood_exchange_required",
+        "death_and_rebirth",
+        "irreversible"
+      ],
+      "constraints": [
+        "Must synthesize concepts meaningfully",
+        "Must escalate intensity"
+      ],
+      "possibilities": [
+        "The vampire transformation becomes a ritual of submission",
+        "Power and pleasure become inseparable in vampire transformation",
+        "The vampire transformation creates bonds that cannot be broken"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "ritual",
+        "submission",
+        "unbreakable_bonds"
+      ]
+    },
+    {
+      "card_id": "mut-daywalking-001",
+      "title": "The Darker Daywalking",
+      "hook": "What if daywalking became more explicitly predatory and dangerous?",
+      "source_element": "daywalking",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "daylight_tolerance",
+        "no_sunlight_weakness",
+        "full_integration"
+      ],
+      "constraints": [
+        "Must maintain vampire lore consistency",
+        "Must escalate existing traits, not contradict them"
+      ],
+      "possibilities": [
+        "The daywalking becomes a source of addiction rather than just sustenance",
+        "Characters lose control when using daywalking",
+        "The daywalking creates permanent bonds that cannot be broken"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "loss_of_control",
+        "addiction",
+        "irreversible_changes"
+      ]
+    },
+    {
+      "card_id": "mut-daywalking-002",
+      "title": "The Complicated Daywalking",
+      "hook": "What if daywalking had darker implications that characters must navigate?",
+      "source_element": "daywalking",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "daylight_tolerance",
+        "no_sunlight_weakness",
+        "full_integration"
+      ],
+      "constraints": [
+        "Must add moral ambiguity",
+        "Must create difficult choices"
+      ],
+      "possibilities": [
+        "Using daywalking requires sacrificing something personal",
+        "The daywalking benefits some while harming others",
+        "Characters must choose between using daywalking and maintaining ethics"
+      ],
+      "intensity_increase": 2,
+      "taboo_potential": [
+        "moral_ambiguity",
+        "sacrifice",
+        "ethical_dilemmas"
+      ]
+    },
+    {
+      "card_id": "mut-daywalking-003",
+      "title": "The Explicit Daywalking",
+      "hook": "What if the sensual/erotic aspects of daywalking were made explicit?",
+      "source_element": "daywalking",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "daylight_tolerance",
+        "no_sunlight_weakness",
+        "full_integration"
+      ],
+      "constraints": [
+        "Must respect consent framework",
+        "Must serve character development"
+      ],
+      "possibilities": [
+        "The daywalking becomes intertwined with sexual awakening",
+        "Characters discover daywalking through intimate encounters",
+        "Power dynamics in daywalking become explicitly sexual"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexual_awakening",
+        "power_dynamics",
+        "forbidden_desire"
+      ]
+    },
+    {
+      "card_id": "mut-daywalking-004",
+      "title": "The Transformed Daywalking",
+      "hook": "What if daywalking became its opposite - a source of corruption rather than benefit?",
+      "source_element": "daywalking",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "daylight_tolerance",
+        "no_sunlight_weakness",
+        "full_integration"
+      ],
+      "constraints": [
+        "Must invert the core concept",
+        "Must create dramatic irony"
+      ],
+      "possibilities": [
+        "What was protective about daywalking becomes suffocating",
+        "The daywalking that gave power now takes it away",
+        "Characters must reject daywalking to survive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "corruption",
+        "loss_of_identity",
+        "betrayal"
+      ]
+    },
+    {
+      "card_id": "mut-daywalking-005",
+      "title": "Daywalking Reimagined",
+      "hook": "What if daywalking combined with taboo elements to create something new?",
+      "source_element": "daywalking",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "daylight_tolerance",
+        "no_sunlight_weakness",
+        "full_integration"
+      ],
+      "constraints": [
+        "Must synthesize concepts meaningfully",
+        "Must escalate intensity"
+      ],
+      "possibilities": [
+        "The daywalking becomes a ritual of submission",
+        "Power and pleasure become inseparable in daywalking",
+        "The daywalking creates bonds that cannot be broken"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "ritual",
+        "submission",
+        "unbreakable_bonds"
+      ]
+    },
+    {
+      "card_id": "mut-kiara_natt_och_dag-001",
+      "title": "Kiara Natt och Dag's Dark Transformation",
+      "hook": "What if Kiara Natt och Dag embraced their darker impulses fully?",
+      "source_element": "kiara_natt_och_dag",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "rebellious",
+        "curious",
+        "naive"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Kiara Natt och Dag uses their sexually_awakening bloodlust_struggles to manipulate others",
+        "Kiara Natt och Dag discovers power through sexually_awakening bloodlust_struggles",
+        "Kiara Natt och Dag's journey becomes a descent into sexually_awakening bloodlust_struggles"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexually_awakening",
+        "bloodlust_struggles",
+        "daddy_issues"
+      ]
+    },
+    {
+      "card_id": "mut-kiara_natt_och_dag-002",
+      "title": "Kiara Natt och Dag and henry_natt_och_dag",
+      "hook": "What if the father between Kiara Natt och Dag and henry_natt_och_dag became more intense?",
+      "source_element": "kiara_natt_och_dag",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "rebellious",
+        "curious",
+        "naive"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The father becomes a source of both pleasure and pain",
+        "Kiara Natt och Dag and henry_natt_och_dag push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-kiara_natt_och_dag-003",
+      "title": "Kiara Natt och Dag and the Blood",
+      "hook": "What if Kiara Natt och Dag's relationship with vampire nature became central?",
+      "source_element": "kiara_natt_och_dag",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "rebellious",
+        "curious",
+        "naive"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Kiara Natt och Dag discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Kiara Natt och Dag",
+        "Kiara Natt och Dag must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-kiara_natt_och_dag-004",
+      "title": "Kiara Natt och Dag's Hidden Desires",
+      "hook": "What if Kiara Natt och Dag's sexually_awakening bloodlust_struggles were explored explicitly?",
+      "source_element": "kiara_natt_och_dag",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "rebellious",
+        "curious",
+        "naive"
+      ],
+      "constraints": [
+        "Must handle mature themes with care",
+        "Must advance character development"
+      ],
+      "possibilities": [
+        "Kiara Natt och Dag acts on their sexually_awakening bloodlust_struggles in unexpected ways",
+        "The sexually_awakening bloodlust_struggles become sources of both power and vulnerability",
+        "Kiara Natt och Dag must confront the consequences of their sexually_awakening bloodlust_struggles"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexually_awakening",
+        "bloodlust_struggles",
+        "daddy_issues"
+      ]
+    },
+    {
+      "card_id": "mut-kiara_natt_och_dag-005",
+      "title": "Kiara Natt och Dag's Twisted Path",
+      "hook": "What if Kiara Natt och Dag's arc took a darker, more complicated turn?",
+      "source_element": "kiara_natt_och_dag",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "rebellious",
+        "curious",
+        "naive"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Kiara Natt och Dag's journey toward growth becomes a descent",
+        "What seemed like progress for Kiara Natt och Dag reveals itself as corruption",
+        "Kiara Natt och Dag achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-henry_natt_och_dag-001",
+      "title": "Henry Natt och Dag's Dark Transformation",
+      "hook": "What if Henry Natt och Dag embraced their darker impulses fully?",
+      "source_element": "henry_natt_och_dag",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "strict",
+        "controlling",
+        "protective"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Henry Natt och Dag uses their patriarchal_control repressed_desires to manipulate others",
+        "Henry Natt och Dag discovers power through patriarchal_control repressed_desires",
+        "Henry Natt och Dag's journey becomes a descent into patriarchal_control repressed_desires"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "patriarchal_control",
+        "repressed_desires",
+        "family_possessiveness"
+      ]
+    },
+    {
+      "card_id": "mut-henry_natt_och_dag-002",
+      "title": "Henry Natt och Dag and kiara_natt_och_dag",
+      "hook": "What if the daughter between Henry Natt och Dag and kiara_natt_och_dag became more intense?",
+      "source_element": "henry_natt_och_dag",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "strict",
+        "controlling",
+        "protective"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The daughter becomes a source of both pleasure and pain",
+        "Henry Natt och Dag and kiara_natt_och_dag push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-henry_natt_och_dag-003",
+      "title": "Henry Natt och Dag and the Blood",
+      "hook": "What if Henry Natt och Dag's relationship with vampire nature became central?",
+      "source_element": "henry_natt_och_dag",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "strict",
+        "controlling",
+        "protective"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Henry Natt och Dag discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Henry Natt och Dag",
+        "Henry Natt och Dag must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-henry_natt_och_dag-005",
+      "title": "Henry Natt och Dag's Twisted Path",
+      "hook": "What if Henry Natt och Dag's arc took a darker, more complicated turn?",
+      "source_element": "henry_natt_och_dag",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "strict",
+        "controlling",
+        "protective"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Henry Natt och Dag's journey toward growth becomes a descent",
+        "What seemed like progress for Henry Natt och Dag reveals itself as corruption",
+        "Henry Natt och Dag achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-elise-001",
+      "title": "Elise's Dark Transformation",
+      "hook": "What if Elise embraced their darker impulses fully?",
+      "source_element": "elise",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "popular",
+        "manipulative",
+        "jealous"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Elise uses their sexually_aggressive alpha_female to manipulate others",
+        "Elise discovers power through sexually_aggressive alpha_female",
+        "Elise's journey becomes a descent into sexually_aggressive alpha_female"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexually_aggressive",
+        "alpha_female",
+        "revenge_obsessed"
+      ]
+    },
+    {
+      "card_id": "mut-elise-002",
+      "title": "Elise and alfred",
+      "hook": "What if the ex_boyfriend between Elise and alfred became more intense?",
+      "source_element": "elise",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "popular",
+        "manipulative",
+        "jealous"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The ex_boyfriend becomes a source of both pleasure and pain",
+        "Elise and alfred push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-elise-003",
+      "title": "Elise and the Blood",
+      "hook": "What if Elise's relationship with vampire nature became central?",
+      "source_element": "elise",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "popular",
+        "manipulative",
+        "jealous"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Elise discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Elise",
+        "Elise must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-elise-004",
+      "title": "Elise's Hidden Desires",
+      "hook": "What if Elise's sexually_aggressive were explored explicitly?",
+      "source_element": "elise",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "popular",
+        "manipulative",
+        "jealous"
+      ],
+      "constraints": [
+        "Must handle mature themes with care",
+        "Must advance character development"
+      ],
+      "possibilities": [
+        "Elise acts on their sexually_aggressive in unexpected ways",
+        "The sexually_aggressive become sources of both power and vulnerability",
+        "Elise must confront the consequences of their sexually_aggressive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "sexually_aggressive"
+      ]
+    },
+    {
+      "card_id": "mut-elise-005",
+      "title": "Elise's Twisted Path",
+      "hook": "What if Elise's arc took a darker, more complicated turn?",
+      "source_element": "elise",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "popular",
+        "manipulative",
+        "jealous"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Elise's journey toward growth becomes a descent",
+        "What seemed like progress for Elise reveals itself as corruption",
+        "Elise achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-chloe-001",
+      "title": "Chloe's Dark Transformation",
+      "hook": "What if Chloe embraced their darker impulses fully?",
+      "source_element": "chloe",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "loyal",
+        "supportive",
+        "outsider_observer"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Chloe uses their secretly_attracted observer_kink to manipulate others",
+        "Chloe discovers power through secretly_attracted observer_kink",
+        "Chloe's journey becomes a descent into secretly_attracted observer_kink"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "secretly_attracted",
+        "observer_kink",
+        "supportive_submissive"
+      ]
+    },
+    {
+      "card_id": "mut-chloe-002",
+      "title": "Chloe and kiara_natt_och_dag",
+      "hook": "What if the best_friend between Chloe and kiara_natt_och_dag became more intense?",
+      "source_element": "chloe",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "loyal",
+        "supportive",
+        "outsider_observer"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The best_friend becomes a source of both pleasure and pain",
+        "Chloe and kiara_natt_och_dag push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-chloe-003",
+      "title": "Chloe and the Blood",
+      "hook": "What if Chloe's relationship with vampire nature became central?",
+      "source_element": "chloe",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "loyal",
+        "supportive",
+        "outsider_observer"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Chloe discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Chloe",
+        "Chloe must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-chloe-004",
+      "title": "Chloe's Hidden Desires",
+      "hook": "What if Chloe's supportive_submissive were explored explicitly?",
+      "source_element": "chloe",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "loyal",
+        "supportive",
+        "outsider_observer"
+      ],
+      "constraints": [
+        "Must handle mature themes with care",
+        "Must advance character development"
+      ],
+      "possibilities": [
+        "Chloe acts on their supportive_submissive in unexpected ways",
+        "The supportive_submissive become sources of both power and vulnerability",
+        "Chloe must confront the consequences of their supportive_submissive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "supportive_submissive"
+      ]
+    },
+    {
+      "card_id": "mut-chloe-005",
+      "title": "Chloe's Twisted Path",
+      "hook": "What if Chloe's arc took a darker, more complicated turn?",
+      "source_element": "chloe",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "loyal",
+        "supportive",
+        "outsider_observer"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Chloe's journey toward growth becomes a descent",
+        "What seemed like progress for Chloe reveals itself as corruption",
+        "Chloe achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-alfred-001",
+      "title": "Alfred's Dark Transformation",
+      "hook": "What if Alfred embraced their darker impulses fully?",
+      "source_element": "alfred",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "popular",
+        "athletic",
+        "charming"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Alfred uses their protective_instincts blood_bond_addiction to manipulate others",
+        "Alfred discovers power through protective_instincts blood_bond_addiction",
+        "Alfred's journey becomes a descent into protective_instincts blood_bond_addiction"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "protective_instincts",
+        "blood_bond_addiction",
+        "jealousy_possessiveness"
+      ]
+    },
+    {
+      "card_id": "mut-alfred-002",
+      "title": "Alfred and kiara_natt_och_dag",
+      "hook": "What if the love_interest between Alfred and kiara_natt_och_dag became more intense?",
+      "source_element": "alfred",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "popular",
+        "athletic",
+        "charming"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The love_interest becomes a source of both pleasure and pain",
+        "Alfred and kiara_natt_och_dag push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-alfred-003",
+      "title": "Alfred and the Blood",
+      "hook": "What if Alfred's relationship with vampire nature became central?",
+      "source_element": "alfred",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "popular",
+        "athletic",
+        "charming"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Alfred discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Alfred",
+        "Alfred must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-alfred-004",
+      "title": "Alfred's Hidden Desires",
+      "hook": "What if Alfred's blood_bond_addiction awakening_dominance were explored explicitly?",
+      "source_element": "alfred",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "popular",
+        "athletic",
+        "charming"
+      ],
+      "constraints": [
+        "Must handle mature themes with care",
+        "Must advance character development"
+      ],
+      "possibilities": [
+        "Alfred acts on their blood_bond_addiction awakening_dominance in unexpected ways",
+        "The blood_bond_addiction awakening_dominance become sources of both power and vulnerability",
+        "Alfred must confront the consequences of their blood_bond_addiction awakening_dominance"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "blood_bond_addiction",
+        "awakening_dominance"
+      ]
+    },
+    {
+      "card_id": "mut-alfred-005",
+      "title": "Alfred's Twisted Path",
+      "hook": "What if Alfred's arc took a darker, more complicated turn?",
+      "source_element": "alfred",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "popular",
+        "athletic",
+        "charming"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Alfred's journey toward growth becomes a descent",
+        "What seemed like progress for Alfred reveals itself as corruption",
+        "Alfred achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-desiree_natt_och_dag-001",
+      "title": "Desir\u00e9e Natt och Dag's Dark Transformation",
+      "hook": "What if Desir\u00e9e Natt och Dag embraced their darker impulses fully?",
+      "source_element": "desiree_natt_och_dag",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "elegant",
+        "distant",
+        "image_conscious"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Desir\u00e9e Natt och Dag uses their image_obsession repressed_sexuality to manipulate others",
+        "Desir\u00e9e Natt och Dag discovers power through image_obsession repressed_sexuality",
+        "Desir\u00e9e Natt och Dag's journey becomes a descent into image_obsession repressed_sexuality"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "image_obsession",
+        "repressed_sexuality",
+        "political_marriage"
+      ]
+    },
+    {
+      "card_id": "mut-desiree_natt_och_dag-002",
+      "title": "Desir\u00e9e Natt och Dag and kiara_natt_och_dag",
+      "hook": "What if the daughter between Desir\u00e9e Natt och Dag and kiara_natt_och_dag became more intense?",
+      "source_element": "desiree_natt_och_dag",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "elegant",
+        "distant",
+        "image_conscious"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The daughter becomes a source of both pleasure and pain",
+        "Desir\u00e9e Natt och Dag and kiara_natt_och_dag push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-desiree_natt_och_dag-003",
+      "title": "Desir\u00e9e Natt och Dag and the Blood",
+      "hook": "What if Desir\u00e9e Natt och Dag's relationship with vampire nature became central?",
+      "source_element": "desiree_natt_och_dag",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "elegant",
+        "distant",
+        "image_conscious"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Desir\u00e9e Natt och Dag discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Desir\u00e9e Natt och Dag",
+        "Desir\u00e9e Natt och Dag must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-desiree_natt_och_dag-004",
+      "title": "Desir\u00e9e Natt och Dag's Hidden Desires",
+      "hook": "What if Desir\u00e9e Natt och Dag's repressed_sexuality were explored explicitly?",
+      "source_element": "desiree_natt_och_dag",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "elegant",
+        "distant",
+        "image_conscious"
+      ],
+      "constraints": [
+        "Must handle mature themes with care",
+        "Must advance character development"
+      ],
+      "possibilities": [
+        "Desir\u00e9e Natt och Dag acts on their repressed_sexuality in unexpected ways",
+        "The repressed_sexuality become sources of both power and vulnerability",
+        "Desir\u00e9e Natt och Dag must confront the consequences of their repressed_sexuality"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "repressed_sexuality"
+      ]
+    },
+    {
+      "card_id": "mut-desiree_natt_och_dag-005",
+      "title": "Desir\u00e9e Natt och Dag's Twisted Path",
+      "hook": "What if Desir\u00e9e Natt och Dag's arc took a darker, more complicated turn?",
+      "source_element": "desiree_natt_och_dag",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "elegant",
+        "distant",
+        "image_conscious"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Desir\u00e9e Natt och Dag's journey toward growth becomes a descent",
+        "What seemed like progress for Desir\u00e9e Natt och Dag reveals itself as corruption",
+        "Desir\u00e9e Natt och Dag achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-jacques_natt_och_dag-001",
+      "title": "Jacques Natt och Dag's Dark Transformation",
+      "hook": "What if Jacques Natt och Dag embraced their darker impulses fully?",
+      "source_element": "jacques_natt_och_dag",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "mysterious",
+        "charming",
+        "rebellious"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Jacques Natt och Dag uses their seductive_corruptor uncle_taboo to manipulate others",
+        "Jacques Natt och Dag discovers power through seductive_corruptor uncle_taboo",
+        "Jacques Natt och Dag's journey becomes a descent into seductive_corruptor uncle_taboo"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "seductive_corruptor",
+        "uncle_taboo",
+        "rival_to_brother"
+      ]
+    },
+    {
+      "card_id": "mut-jacques_natt_och_dag-002",
+      "title": "Jacques Natt och Dag and kiara_natt_och_dag",
+      "hook": "What if the niece between Jacques Natt och Dag and kiara_natt_och_dag became more intense?",
+      "source_element": "jacques_natt_och_dag",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "mysterious",
+        "charming",
+        "rebellious"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The niece becomes a source of both pleasure and pain",
+        "Jacques Natt och Dag and kiara_natt_och_dag push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-jacques_natt_och_dag-003",
+      "title": "Jacques Natt och Dag and the Blood",
+      "hook": "What if Jacques Natt och Dag's relationship with vampire nature became central?",
+      "source_element": "jacques_natt_och_dag",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "mysterious",
+        "charming",
+        "rebellious"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Jacques Natt och Dag discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Jacques Natt och Dag",
+        "Jacques Natt och Dag must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-jacques_natt_och_dag-005",
+      "title": "Jacques Natt och Dag's Twisted Path",
+      "hook": "What if Jacques Natt och Dag's arc took a darker, more complicated turn?",
+      "source_element": "jacques_natt_och_dag",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "mysterious",
+        "charming",
+        "rebellious"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Jacques Natt och Dag's journey toward growth becomes a descent",
+        "What seemed like progress for Jacques Natt och Dag reveals itself as corruption",
+        "Jacques Natt och Dag achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-eric-001",
+      "title": "Eric's Dark Transformation",
+      "hook": "What if Eric embraced their darker impulses fully?",
+      "source_element": "eric",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "nerdy",
+        "loyal",
+        "awkward"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Eric uses their tech_voyeur hidden_obsession to manipulate others",
+        "Eric discovers power through tech_voyeur hidden_obsession",
+        "Eric's journey becomes a descent into tech_voyeur hidden_obsession"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "tech_voyeur",
+        "hidden_obsession",
+        "information_control"
+      ]
+    },
+    {
+      "card_id": "mut-eric-002",
+      "title": "Eric and alfred",
+      "hook": "What if the best_friend between Eric and alfred became more intense?",
+      "source_element": "eric",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "nerdy",
+        "loyal",
+        "awkward"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The best_friend becomes a source of both pleasure and pain",
+        "Eric and alfred push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-eric-003",
+      "title": "Eric and the Blood",
+      "hook": "What if Eric's relationship with vampire nature became central?",
+      "source_element": "eric",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "nerdy",
+        "loyal",
+        "awkward"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Eric discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Eric",
+        "Eric must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-eric-005",
+      "title": "Eric's Twisted Path",
+      "hook": "What if Eric's arc took a darker, more complicated turn?",
+      "source_element": "eric",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "nerdy",
+        "loyal",
+        "awkward"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Eric's journey toward growth becomes a descent",
+        "What seemed like progress for Eric reveals itself as corruption",
+        "Eric achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-didde-001",
+      "title": "Didde's Dark Transformation",
+      "hook": "What if Didde embraced their darker impulses fully?",
+      "source_element": "didde",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "jock",
+        "simple",
+        "elise_follower"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Didde uses their jock_brute physical_intimidation to manipulate others",
+        "Didde discovers power through jock_brute physical_intimidation",
+        "Didde's journey becomes a descent into jock_brute physical_intimidation"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "jock_brute",
+        "physical_intimidation",
+        "simple_desires"
+      ]
+    },
+    {
+      "card_id": "mut-didde-002",
+      "title": "Didde and elise",
+      "hook": "What if the ally between Didde and elise became more intense?",
+      "source_element": "didde",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "jock",
+        "simple",
+        "elise_follower"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The ally becomes a source of both pleasure and pain",
+        "Didde and elise push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-didde-003",
+      "title": "Didde and the Blood",
+      "hook": "What if Didde's relationship with vampire nature became central?",
+      "source_element": "didde",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "jock",
+        "simple",
+        "elise_follower"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Didde discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Didde",
+        "Didde must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-didde-005",
+      "title": "Didde's Twisted Path",
+      "hook": "What if Didde's arc took a darker, more complicated turn?",
+      "source_element": "didde",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "jock",
+        "simple",
+        "elise_follower"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Didde's journey toward growth becomes a descent",
+        "What seemed like progress for Didde reveals itself as corruption",
+        "Didde achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    },
+    {
+      "card_id": "mut-felicia-001",
+      "title": "Felicia's Dark Transformation",
+      "hook": "What if Felicia embraced their darker impulses fully?",
+      "source_element": "felicia",
+      "mutation_type": "transform",
+      "bst_signature": [
+        "follower",
+        "mean_girl",
+        "elise_lackey"
+      ],
+      "constraints": [
+        "Must maintain character core",
+        "Must show gradual change"
+      ],
+      "possibilities": [
+        "Felicia uses their follower_submissive mean_girl_enforcer to manipulate others",
+        "Felicia discovers power through follower_submissive mean_girl_enforcer",
+        "Felicia's journey becomes a descent into follower_submissive mean_girl_enforcer"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "follower_submissive",
+        "mean_girl_enforcer",
+        "seeks_approval"
+      ]
+    },
+    {
+      "card_id": "mut-felicia-002",
+      "title": "Felicia and elise",
+      "hook": "What if the leader between Felicia and elise became more intense?",
+      "source_element": "felicia",
+      "mutation_type": "intensify",
+      "bst_signature": [
+        "follower",
+        "mean_girl",
+        "elise_lackey"
+      ],
+      "constraints": [
+        "Must explore power dynamics",
+        "Must escalate emotional stakes"
+      ],
+      "possibilities": [
+        "The leader becomes a source of both pleasure and pain",
+        "Felicia and elise push each other to darker places",
+        "Their bond becomes addictive and destructive"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "power_dynamics",
+        "obsession",
+        "destructive_relationships"
+      ]
+    },
+    {
+      "card_id": "mut-felicia-003",
+      "title": "Felicia and the Blood",
+      "hook": "What if Felicia's relationship with vampire nature became central?",
+      "source_element": "felicia",
+      "mutation_type": "merge",
+      "bst_signature": [
+        "follower",
+        "mean_girl",
+        "elise_lackey"
+      ],
+      "constraints": [
+        "Must explore vampire mythology",
+        "Must serve character arc"
+      ],
+      "possibilities": [
+        "Felicia discovers new depths to their vampiric nature",
+        "Blood becomes a source of power and pleasure for Felicia",
+        "Felicia must choose between humanity and vampire nature"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "blood_as_ritual",
+        "predatory_nature",
+        "loss_of_humanity"
+      ]
+    },
+    {
+      "card_id": "mut-felicia-004",
+      "title": "Felicia's Hidden Desires",
+      "hook": "What if Felicia's follower_submissive were explored explicitly?",
+      "source_element": "felicia",
+      "mutation_type": "expose",
+      "bst_signature": [
+        "follower",
+        "mean_girl",
+        "elise_lackey"
+      ],
+      "constraints": [
+        "Must handle mature themes with care",
+        "Must advance character development"
+      ],
+      "possibilities": [
+        "Felicia acts on their follower_submissive in unexpected ways",
+        "The follower_submissive become sources of both power and vulnerability",
+        "Felicia must confront the consequences of their follower_submissive"
+      ],
+      "intensity_increase": 4,
+      "taboo_potential": [
+        "follower_submissive"
+      ]
+    },
+    {
+      "card_id": "mut-felicia-005",
+      "title": "Felicia's Twisted Path",
+      "hook": "What if Felicia's arc took a darker, more complicated turn?",
+      "source_element": "felicia",
+      "mutation_type": "complicate",
+      "bst_signature": [
+        "follower",
+        "mean_girl",
+        "elise_lackey"
+      ],
+      "constraints": [
+        "Must subvert expectations",
+        "Must create moral complexity"
+      ],
+      "possibilities": [
+        "Felicia's journey toward growth becomes a descent",
+        "What seemed like progress for Felicia reveals itself as corruption",
+        "Felicia achieves their goals but loses something essential"
+      ],
+      "intensity_increase": 3,
+      "taboo_potential": [
+        "corruption",
+        "moral_ambiguity",
+        "tragic_choices"
+      ]
+    }
+  ]
+}
