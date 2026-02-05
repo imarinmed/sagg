@@ -1,0 +1,785 @@
+{
+  "version": "1.0.0",
+  "episode_dna": [
+    {
+      "entity_type": "episode",
+      "entity_id": "s01e01",
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.588579581879917
+        ],
+        [
+          "intensity_2",
+          0.08167565806643148
+        ],
+        [
+          "teen_angst",
+          0.06624225853159554
+        ],
+        [
+          "intensity_3",
+          0.049109868342303596
+        ],
+        [
+          "dependence",
+          0.04677886601130126
+        ],
+        [
+          "blood_as_ritual",
+          0.04677886601130126
+        ],
+        [
+          "intensity_4",
+          0.0374134831360031
+        ],
+        [
+          "seduction",
+          0.03213240852318193
+        ],
+        [
+          "temptation",
+          0.029801406192179594
+        ],
+        [
+          "forbidden_desire",
+          0.010743801652892564
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {},
+        "motifs": {},
+        "beats": {},
+        "power_dynamics": {},
+        "atmosphere": {},
+        "consent": {}
+      },
+      "signature_vector": [],
+      "total_tags": 0
+    },
+    {
+      "entity_type": "episode",
+      "entity_id": "s01e02",
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7978395061728395
+        ],
+        [
+          "intensity_4",
+          0.0787037037037037
+        ],
+        [
+          "intensity_3",
+          0.037037037037037035
+        ],
+        [
+          "teen_angst",
+          0.024691358024691357
+        ],
+        [
+          "seduction",
+          0.024691358024691357
+        ],
+        [
+          "intensity_2",
+          0.012345679012345678
+        ],
+        [
+          "dependence",
+          0.012345679012345678
+        ],
+        [
+          "blood_as_ritual",
+          0.012345679012345678
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {},
+        "motifs": {},
+        "beats": {},
+        "power_dynamics": {},
+        "atmosphere": {},
+        "consent": {}
+      },
+      "signature_vector": [],
+      "total_tags": 0
+    },
+    {
+      "entity_type": "episode",
+      "entity_id": "s01e03",
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.762333296353356
+        ],
+        [
+          "intensity_2",
+          0.05364127755019595
+        ],
+        [
+          "intensity_4",
+          0.045750589631045044
+        ],
+        [
+          "teen_angst",
+          0.037706153218487186
+        ],
+        [
+          "intensity_3",
+          0.026908512609244515
+        ],
+        [
+          "dependence",
+          0.021515757216489125
+        ],
+        [
+          "blood_as_ritual",
+          0.021515757216489125
+        ],
+        [
+          "seduction",
+          0.01801070579872423
+        ],
+        [
+          "temptation",
+          0.01261795040596884
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {},
+        "motifs": {},
+        "beats": {},
+        "power_dynamics": {},
+        "atmosphere": {},
+        "consent": {}
+      },
+      "signature_vector": [],
+      "total_tags": 0
+    },
+    {
+      "entity_type": "episode",
+      "entity_id": "s01e04",
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.675775324749783
+        ],
+        [
+          "intensity_4",
+          0.10487581662117267
+        ],
+        [
+          "intensity_2",
+          0.05707846236580757
+        ],
+        [
+          "intensity_3",
+          0.03600962447711673
+        ],
+        [
+          "seduction",
+          0.03276227789095436
+        ],
+        [
+          "teen_angst",
+          0.03240383573684657
+        ],
+        [
+          "dependence",
+          0.021447334914827174
+        ],
+        [
+          "blood_as_ritual",
+          0.021447334914827174
+        ],
+        [
+          "temptation",
+          0.0181999883286648
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {},
+        "motifs": {},
+        "beats": {},
+        "power_dynamics": {},
+        "atmosphere": {},
+        "consent": {}
+      },
+      "signature_vector": [],
+      "total_tags": 0
+    },
+    {
+      "entity_type": "episode",
+      "entity_id": "s01e05",
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6619562258803674
+        ],
+        [
+          "intensity_4",
+          0.13998837427938543
+        ],
+        [
+          "intensity_2",
+          0.08422899549234644
+        ],
+        [
+          "teen_angst",
+          0.05688633826445348
+        ],
+        [
+          "seduction",
+          0.014315709104790991
+        ],
+        [
+          "intensity_3",
+          0.01191760553611886
+        ],
+        [
+          "temptation",
+          0.01183431952662722
+        ],
+        [
+          "dependence",
+          0.009436215957955088
+        ],
+        [
+          "blood_as_ritual",
+          0.009436215957955088
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {},
+        "motifs": {},
+        "beats": {},
+        "power_dynamics": {},
+        "atmosphere": {},
+        "consent": {}
+      },
+      "signature_vector": [],
+      "total_tags": 0
+    },
+    {
+      "entity_type": "episode",
+      "entity_id": "s01e06",
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6842661699113312
+        ],
+        [
+          "intensity_4",
+          0.06617601036955877
+        ],
+        [
+          "intensity_2",
+          0.05216687136041975
+        ],
+        [
+          "intensity_3",
+          0.04964679884034723
+        ],
+        [
+          "teen_angst",
+          0.04294938633648312
+        ],
+        [
+          "dependence",
+          0.042910202103750496
+        ],
+        [
+          "blood_as_ritual",
+          0.042910202103750496
+        ],
+        [
+          "seduction",
+          0.013729603729603732
+        ],
+        [
+          "temptation",
+          0.005244755244755245
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {},
+        "motifs": {},
+        "beats": {},
+        "power_dynamics": {},
+        "atmosphere": {},
+        "consent": {}
+      },
+      "signature_vector": [],
+      "total_tags": 0
+    },
+    {
+      "entity_type": "episode",
+      "entity_id": "s01e07",
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7609255906607828
+        ],
+        [
+          "intensity_2",
+          0.0682358160455834
+        ],
+        [
+          "intensity_4",
+          0.05370256702545104
+        ],
+        [
+          "teen_angst",
+          0.05029718329297606
+        ],
+        [
+          "intensity_3",
+          0.015736914600550964
+        ],
+        [
+          "dependence",
+          0.012982093663911847
+        ],
+        [
+          "blood_as_ritual",
+          0.012982093663911847
+        ],
+        [
+          "seduction",
+          0.008264462809917356
+        ],
+        [
+          "coercion",
+          0.005681818181818182
+        ],
+        [
+          "inheritance_as_cage",
+          0.005681818181818182
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {},
+        "motifs": {},
+        "beats": {},
+        "power_dynamics": {},
+        "atmosphere": {},
+        "consent": {}
+      },
+      "signature_vector": [],
+      "total_tags": 0
+    }
+  ],
+  "character_dna": [
+    {
+      "entity_type": "character",
+      "entity_id": "kiara_natt_och_dag",
+      "dominant_tags": [
+        [
+          "rebellion",
+          0.3
+        ],
+        [
+          "forbidden_desire",
+          0.25
+        ],
+        [
+          "temptation",
+          0.2
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {
+          "intensity_3": 0.4,
+          "intensity_4": 0.3
+        },
+        "motifs": {
+          "forbidden_desire": 0.3,
+          "inheritance_as_cage": 0.2
+        },
+        "beats": {
+          "temptation": 0.3,
+          "seduction": 0.2
+        },
+        "power_dynamics": {
+          "rebellion": 0.4,
+          "dependence": 0.2
+        },
+        "atmosphere": {
+          "gothic_romance": 0.3,
+          "teen_angst": 0.2
+        },
+        "consent": {
+          "dubious": 0.3,
+          "negotiated": 0.2
+        }
+      },
+      "evolution_curve": [
+        {
+          "episode": "s01e01",
+          "intensity": 0.3,
+          "dominant_tag": "temptation"
+        },
+        {
+          "episode": "s01e02",
+          "intensity": 0.4,
+          "dominant_tag": "forbidden_desire"
+        },
+        {
+          "episode": "s01e03",
+          "intensity": 0.6,
+          "dominant_tag": "seduction"
+        },
+        {
+          "episode": "s01e04",
+          "intensity": 0.7,
+          "dominant_tag": "rebellion"
+        },
+        {
+          "episode": "s01e05",
+          "intensity": 0.8,
+          "dominant_tag": "dominance"
+        }
+      ],
+      "total_tags": 15
+    },
+    {
+      "entity_type": "character",
+      "entity_id": "alfred",
+      "dominant_tags": [
+        [
+          "rebellion",
+          0.3
+        ],
+        [
+          "forbidden_desire",
+          0.25
+        ],
+        [
+          "temptation",
+          0.2
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {
+          "intensity_3": 0.4,
+          "intensity_4": 0.3
+        },
+        "motifs": {
+          "forbidden_desire": 0.3,
+          "inheritance_as_cage": 0.2
+        },
+        "beats": {
+          "temptation": 0.3,
+          "seduction": 0.2
+        },
+        "power_dynamics": {
+          "rebellion": 0.4,
+          "dependence": 0.2
+        },
+        "atmosphere": {
+          "gothic_romance": 0.3,
+          "teen_angst": 0.2
+        },
+        "consent": {
+          "dubious": 0.3,
+          "negotiated": 0.2
+        }
+      },
+      "evolution_curve": [
+        {
+          "episode": "s01e01",
+          "intensity": 0.3,
+          "dominant_tag": "temptation"
+        },
+        {
+          "episode": "s01e02",
+          "intensity": 0.4,
+          "dominant_tag": "forbidden_desire"
+        },
+        {
+          "episode": "s01e03",
+          "intensity": 0.6,
+          "dominant_tag": "seduction"
+        },
+        {
+          "episode": "s01e04",
+          "intensity": 0.7,
+          "dominant_tag": "rebellion"
+        },
+        {
+          "episode": "s01e05",
+          "intensity": 0.8,
+          "dominant_tag": "dominance"
+        }
+      ],
+      "total_tags": 15
+    },
+    {
+      "entity_type": "character",
+      "entity_id": "jacques_natt_och_dag",
+      "dominant_tags": [
+        [
+          "rebellion",
+          0.3
+        ],
+        [
+          "forbidden_desire",
+          0.25
+        ],
+        [
+          "temptation",
+          0.2
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {
+          "intensity_3": 0.4,
+          "intensity_4": 0.3
+        },
+        "motifs": {
+          "forbidden_desire": 0.3,
+          "inheritance_as_cage": 0.2
+        },
+        "beats": {
+          "temptation": 0.3,
+          "seduction": 0.2
+        },
+        "power_dynamics": {
+          "rebellion": 0.4,
+          "dependence": 0.2
+        },
+        "atmosphere": {
+          "gothic_romance": 0.3,
+          "teen_angst": 0.2
+        },
+        "consent": {
+          "dubious": 0.3,
+          "negotiated": 0.2
+        }
+      },
+      "evolution_curve": [
+        {
+          "episode": "s01e01",
+          "intensity": 0.3,
+          "dominant_tag": "temptation"
+        },
+        {
+          "episode": "s01e02",
+          "intensity": 0.4,
+          "dominant_tag": "forbidden_desire"
+        },
+        {
+          "episode": "s01e03",
+          "intensity": 0.6,
+          "dominant_tag": "seduction"
+        },
+        {
+          "episode": "s01e04",
+          "intensity": 0.7,
+          "dominant_tag": "rebellion"
+        },
+        {
+          "episode": "s01e05",
+          "intensity": 0.8,
+          "dominant_tag": "dominance"
+        }
+      ],
+      "total_tags": 15
+    },
+    {
+      "entity_type": "character",
+      "entity_id": "elise",
+      "dominant_tags": [
+        [
+          "rebellion",
+          0.3
+        ],
+        [
+          "forbidden_desire",
+          0.25
+        ],
+        [
+          "temptation",
+          0.2
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {
+          "intensity_3": 0.4,
+          "intensity_4": 0.3
+        },
+        "motifs": {
+          "forbidden_desire": 0.3,
+          "inheritance_as_cage": 0.2
+        },
+        "beats": {
+          "temptation": 0.3,
+          "seduction": 0.2
+        },
+        "power_dynamics": {
+          "rebellion": 0.4,
+          "dependence": 0.2
+        },
+        "atmosphere": {
+          "gothic_romance": 0.3,
+          "teen_angst": 0.2
+        },
+        "consent": {
+          "dubious": 0.3,
+          "negotiated": 0.2
+        }
+      },
+      "evolution_curve": [
+        {
+          "episode": "s01e01",
+          "intensity": 0.3,
+          "dominant_tag": "temptation"
+        },
+        {
+          "episode": "s01e02",
+          "intensity": 0.4,
+          "dominant_tag": "forbidden_desire"
+        },
+        {
+          "episode": "s01e03",
+          "intensity": 0.6,
+          "dominant_tag": "seduction"
+        },
+        {
+          "episode": "s01e04",
+          "intensity": 0.7,
+          "dominant_tag": "rebellion"
+        },
+        {
+          "episode": "s01e05",
+          "intensity": 0.8,
+          "dominant_tag": "dominance"
+        }
+      ],
+      "total_tags": 15
+    },
+    {
+      "entity_type": "character",
+      "entity_id": "chloe",
+      "dominant_tags": [
+        [
+          "rebellion",
+          0.3
+        ],
+        [
+          "forbidden_desire",
+          0.25
+        ],
+        [
+          "temptation",
+          0.2
+        ]
+      ],
+      "tag_profile": {
+        "intensity": {
+          "intensity_3": 0.4,
+          "intensity_4": 0.3
+        },
+        "motifs": {
+          "forbidden_desire": 0.3,
+          "inheritance_as_cage": 0.2
+        },
+        "beats": {
+          "temptation": 0.3,
+          "seduction": 0.2
+        },
+        "power_dynamics": {
+          "rebellion": 0.4,
+          "dependence": 0.2
+        },
+        "atmosphere": {
+          "gothic_romance": 0.3,
+          "teen_angst": 0.2
+        },
+        "consent": {
+          "dubious": 0.3,
+          "negotiated": 0.2
+        }
+      },
+      "evolution_curve": [
+        {
+          "episode": "s01e01",
+          "intensity": 0.3,
+          "dominant_tag": "temptation"
+        },
+        {
+          "episode": "s01e02",
+          "intensity": 0.4,
+          "dominant_tag": "forbidden_desire"
+        },
+        {
+          "episode": "s01e03",
+          "intensity": 0.6,
+          "dominant_tag": "seduction"
+        },
+        {
+          "episode": "s01e04",
+          "intensity": 0.7,
+          "dominant_tag": "rebellion"
+        },
+        {
+          "episode": "s01e05",
+          "intensity": 0.8,
+          "dominant_tag": "dominance"
+        }
+      ],
+      "total_tags": 15
+    }
+  ],
+  "comparisons": [
+    {
+      "from": "s01e01",
+      "to": "s01e02",
+      "similarity": 0.0,
+      "shared_tags": [],
+      "unique_to_first": [],
+      "unique_to_second": []
+    },
+    {
+      "from": "s01e02",
+      "to": "s01e03",
+      "similarity": 0.0,
+      "shared_tags": [],
+      "unique_to_first": [],
+      "unique_to_second": []
+    },
+    {
+      "from": "s01e03",
+      "to": "s01e04",
+      "similarity": 0.0,
+      "shared_tags": [],
+      "unique_to_first": [],
+      "unique_to_second": []
+    },
+    {
+      "from": "s01e04",
+      "to": "s01e05",
+      "similarity": 0.0,
+      "shared_tags": [],
+      "unique_to_first": [],
+      "unique_to_second": []
+    },
+    {
+      "from": "s01e05",
+      "to": "s01e06",
+      "similarity": 0.0,
+      "shared_tags": [],
+      "unique_to_first": [],
+      "unique_to_second": []
+    },
+    {
+      "from": "s01e06",
+      "to": "s01e07",
+      "similarity": 0.0,
+      "shared_tags": [],
+      "unique_to_first": [],
+      "unique_to_second": []
+    }
+  ]
+}
