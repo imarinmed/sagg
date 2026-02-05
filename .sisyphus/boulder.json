@@ -1,9 +1,9 @@
 {
-  "active_plan": "/Users/wolfy/Developer/2026.Y/bats/.sisyphus/plans/blod-visual-redesign.md",
-  "started_at": "2026-02-03T14:20:00.000Z",
+  "active_plan": "/Users/wolfy/Developer/2026.Y/bats/.sisyphus/plans/dual-narrative-mythos-system.md",
+  "started_at": "2026-02-05T22:43:56.908Z",
   "session_ids": [
-    "ses_3dcd89dc6ffeRW82ykAjLobi22"
+    "ses_3d10beec5ffeG57YbGYVIwP1k3",
+    "ses_3d342026fffe4HdG57kcW8Zyjm"
   ],
-  "plan_name": "blod-visual-redesign",
-  "resumed_from": "complete-wiki-features"
+  "plan_name": "dual-narrative-mythos-system"
 }

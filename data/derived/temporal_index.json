@@ -1,0 +1,758 @@
+{
+  "version": "1.0.0",
+  "total_episodes": 7,
+  "total_scenes": 21,
+  "total_moments": 1698,
+  "seasons": [
+    {
+      "season_id": "s01",
+      "season_number": 1,
+      "episodes": [
+        {
+          "episode_id": "s01e01",
+          "title": "Kallblodig skolstart",
+          "title_en": "Cold-blooded School Start",
+          "episode_number": 1,
+          "air_date": null,
+          "scenes": [
+            {
+              "scene_id": "s01e01-sc001",
+              "start_time": "00:00:01",
+              "end_time": "00:14:46",
+              "duration_seconds": 884,
+              "moments": [
+                "beat-s01e01-001",
+                "beat-s01e01-002",
+                "beat-s01e01-003",
+                "beat-s01e01-004",
+                "beat-s01e01-005",
+                "beat-s01e01-006",
+                "beat-s01e01-007",
+                "beat-s01e01-008",
+                "beat-s01e01-009"
+              ],
+              "characters_present": [
+                "alfred",
+                "batgirl_1",
+                "batgirl_2",
+                "batgirl_3",
+                "chloe",
+                "elise",
+                "eric",
+                "jonas",
+                "kiara_natt_och_dag",
+                "livia",
+                "party_student_2",
+                "party_student_3",
+                "principal",
+                "substitute_teacher",
+                "teacher_math"
+              ],
+              "intensity": {
+                "erotic": 0.027,
+                "horror": 0.057,
+                "drama": 0.043
+              },
+              "tags": [
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence",
+                "seduction",
+                "temptation"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e01-sc002",
+              "start_time": "00:15:41",
+              "end_time": "00:16:29",
+              "duration_seconds": 48,
+              "moments": [
+                "beat-s01e01-009",
+                "beat-s01e01-010"
+              ],
+              "characters_present": [
+                "jacques_natt_och_dag"
+              ],
+              "intensity": {
+                "erotic": 0.058,
+                "horror": 0.009,
+                "drama": 0.058
+              },
+              "tags": [
+                "teen_angst",
+                "seduction",
+                "temptation",
+                "forbidden_desire",
+                "manipulation"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e01-sc003",
+              "start_time": "00:17:31",
+              "end_time": "00:17:35",
+              "duration_seconds": 4,
+              "moments": [
+                "beat-s01e01-010",
+                "beat-s01e01-011"
+              ],
+              "characters_present": [],
+              "intensity": {
+                "erotic": 0.02,
+                "horror": 0.0,
+                "drama": 0.033
+              },
+              "tags": [
+                "forbidden_desire",
+                "manipulation",
+                "teen_angst"
+              ],
+              "has_branches": false
+            }
+          ],
+          "cumulative_intensity": {
+            "erotic": 0.029,
+            "horror": 0.054,
+            "drama": 0.044
+          }
+        },
+        {
+          "episode_id": "s01e02",
+          "title": "Audition till Batgirls",
+          "title_en": "Audition for the Batgirls",
+          "episode_number": 2,
+          "air_date": null,
+          "scenes": [
+            {
+              "scene_id": "s01e02-sc001",
+              "start_time": "00:00:08",
+              "end_time": "00:04:04",
+              "duration_seconds": 236,
+              "moments": [
+                "beat-s01e02-001",
+                "beat-s01e02-002",
+                "beat-s01e02-003"
+              ],
+              "characters_present": [
+                "alfred",
+                "didde",
+                "kevin",
+                "kiara_natt_och_dag",
+                "mother"
+              ],
+              "intensity": {
+                "erotic": 0.007,
+                "horror": 0.012,
+                "drama": 0.012
+              },
+              "tags": [
+                "seduction",
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence"
+              ],
+              "has_branches": false
+            }
+          ],
+          "cumulative_intensity": {
+            "erotic": 0.007,
+            "horror": 0.012,
+            "drama": 0.012
+          }
+        },
+        {
+          "episode_id": "s01e03",
+          "title": "Lunch hos Natt och Dag",
+          "title_en": "Lunch at Natt och Dag's",
+          "episode_number": 3,
+          "air_date": null,
+          "scenes": [
+            {
+              "scene_id": "s01e03-sc001",
+              "start_time": "00:00:12",
+              "end_time": "00:14:06",
+              "duration_seconds": 833,
+              "moments": [
+                "beat-s01e03-001",
+                "beat-s01e03-002",
+                "beat-s01e03-003",
+                "beat-s01e03-004",
+                "beat-s01e03-005",
+                "beat-s01e03-006",
+                "beat-s01e03-007",
+                "beat-s01e03-008",
+                "beat-s01e03-009"
+              ],
+              "characters_present": [
+                "adam",
+                "alfred",
+                "batgirl_1",
+                "batgirl_3",
+                "chloe",
+                "elise",
+                "eric",
+                "jacques",
+                "kiara_natt_och_dag",
+                "lunch_lady",
+                "mother",
+                "party_student_3"
+              ],
+              "intensity": {
+                "erotic": 0.012,
+                "horror": 0.028,
+                "drama": 0.025
+              },
+              "tags": [
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence",
+                "seduction",
+                "temptation"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e03-sc002",
+              "start_time": "00:14:37",
+              "end_time": "00:23:13",
+              "duration_seconds": 516,
+              "moments": [
+                "beat-s01e03-009",
+                "beat-s01e03-010",
+                "beat-s01e03-011",
+                "beat-s01e03-012",
+                "beat-s01e03-013",
+                "beat-s01e03-014"
+              ],
+              "characters_present": [
+                "adam",
+                "batgirl_1",
+                "batgirl_3",
+                "chloe",
+                "party_student_3",
+                "principal"
+              ],
+              "intensity": {
+                "erotic": 0.011,
+                "horror": 0.016,
+                "drama": 0.011
+              },
+              "tags": [
+                "seduction",
+                "temptation",
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence"
+              ],
+              "has_branches": false
+            }
+          ],
+          "cumulative_intensity": {
+            "erotic": 0.012,
+            "horror": 0.023,
+            "drama": 0.02
+          }
+        },
+        {
+          "episode_id": "s01e04",
+          "title": "En ov\u00e4ntad fest",
+          "title_en": "An Unexpected Party",
+          "episode_number": 4,
+          "air_date": null,
+          "scenes": [
+            {
+              "scene_id": "s01e04-sc001",
+              "start_time": "00:00:09",
+              "end_time": "00:01:30",
+              "duration_seconds": 81,
+              "moments": [
+                "beat-s01e04-001"
+              ],
+              "characters_present": [
+                "eric"
+              ],
+              "intensity": {
+                "erotic": 0.018,
+                "horror": 0.091,
+                "drama": 0.03
+              },
+              "tags": [
+                "blood_as_ritual",
+                "dependence"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e04-sc002",
+              "start_time": "00:02:31",
+              "end_time": "00:18:53",
+              "duration_seconds": 982,
+              "moments": [
+                "beat-s01e04-001",
+                "beat-s01e04-002",
+                "beat-s01e04-003",
+                "beat-s01e04-004",
+                "beat-s01e04-005",
+                "beat-s01e04-006",
+                "beat-s01e04-007",
+                "beat-s01e04-008",
+                "beat-s01e04-009",
+                "beat-s01e04-010",
+                "beat-s01e04-011"
+              ],
+              "characters_present": [
+                "alfred",
+                "batgirl_1",
+                "batgirl_3",
+                "chloe",
+                "coach",
+                "didde",
+                "elise",
+                "eric",
+                "father",
+                "kevin",
+                "kiara_natt_och_dag",
+                "mother",
+                "party_student_1",
+                "party_student_3"
+              ],
+              "intensity": {
+                "erotic": 0.016,
+                "horror": 0.023,
+                "drama": 0.02
+              },
+              "tags": [
+                "seduction",
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence",
+                "temptation"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e04-sc003",
+              "start_time": "00:19:42",
+              "end_time": "00:20:47",
+              "duration_seconds": 65,
+              "moments": [
+                "beat-s01e04-011",
+                "beat-s01e04-012"
+              ],
+              "characters_present": [],
+              "intensity": {
+                "erotic": 0.011,
+                "horror": 0.0,
+                "drama": 0.0
+              },
+              "tags": [
+                "seduction"
+              ],
+              "has_branches": false
+            }
+          ],
+          "cumulative_intensity": {
+            "erotic": 0.016,
+            "horror": 0.027,
+            "drama": 0.02
+          }
+        },
+        {
+          "episode_id": "s01e05",
+          "title": "N\u00f6dvamp och n\u00f6rdar",
+          "title_en": "Vampires in Distress and Nerds",
+          "episode_number": 5,
+          "air_date": null,
+          "scenes": [
+            {
+              "scene_id": "s01e05-sc001",
+              "start_time": "00:00:01",
+              "end_time": "00:01:08",
+              "duration_seconds": 67,
+              "moments": [
+                "beat-s01e05-001"
+              ],
+              "characters_present": [
+                "alfred",
+                "eric"
+              ],
+              "intensity": {
+                "erotic": 0.009,
+                "horror": 0.043,
+                "drama": 0.029
+              },
+              "tags": [
+                "blood_as_ritual",
+                "dependence",
+                "teen_angst"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e05-sc002",
+              "start_time": "00:02:26",
+              "end_time": "00:16:15",
+              "duration_seconds": 829,
+              "moments": [
+                "beat-s01e05-001",
+                "beat-s01e05-002",
+                "beat-s01e05-003",
+                "beat-s01e05-004",
+                "beat-s01e05-005",
+                "beat-s01e05-006",
+                "beat-s01e05-007",
+                "beat-s01e05-008",
+                "beat-s01e05-009"
+              ],
+              "characters_present": [
+                "adam",
+                "alfred",
+                "batgirl_1",
+                "batgirl_3",
+                "chloe",
+                "didde",
+                "elise",
+                "eric",
+                "father",
+                "felicia",
+                "jacques",
+                "jacques_natt_och_dag",
+                "kevin",
+                "kiara_natt_och_dag",
+                "livia",
+                "mother",
+                "party_student_3",
+                "siri"
+              ],
+              "intensity": {
+                "erotic": 0.01,
+                "horror": 0.014,
+                "drama": 0.026
+              },
+              "tags": [
+                "teen_angst",
+                "seduction",
+                "temptation",
+                "blood_as_ritual",
+                "dependence"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e05-sc003",
+              "start_time": "00:17:10",
+              "end_time": "00:18:36",
+              "duration_seconds": 86,
+              "moments": [
+                "beat-s01e05-009",
+                "beat-s01e05-010"
+              ],
+              "characters_present": [],
+              "intensity": {
+                "erotic": 0.031,
+                "horror": 0.0,
+                "drama": 0.042
+              },
+              "tags": [
+                "teen_angst",
+                "seduction",
+                "temptation"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e05-sc004",
+              "start_time": "00:19:07",
+              "end_time": "00:19:29",
+              "duration_seconds": 22,
+              "moments": [
+                "beat-s01e05-010",
+                "beat-s01e05-011"
+              ],
+              "characters_present": [],
+              "intensity": {
+                "erotic": 0.0,
+                "horror": 0.0,
+                "drama": 0.025
+              },
+              "tags": [
+                "teen_angst"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e05-sc005",
+              "start_time": "00:20:23",
+              "end_time": "00:21:11",
+              "duration_seconds": 48,
+              "moments": [
+                "beat-s01e05-011",
+                "beat-s01e05-012"
+              ],
+              "characters_present": [
+                "eric"
+              ],
+              "intensity": {
+                "erotic": 0.0,
+                "horror": 0.0,
+                "drama": 0.0
+              },
+              "tags": [],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e05-sc006",
+              "start_time": "00:21:52",
+              "end_time": "00:23:12",
+              "duration_seconds": 80,
+              "moments": [
+                "beat-s01e05-012",
+                "beat-s01e05-013"
+              ],
+              "characters_present": [],
+              "intensity": {
+                "erotic": 0.0,
+                "horror": 0.0,
+                "drama": 0.0
+              },
+              "tags": [],
+              "has_branches": false
+            }
+          ],
+          "cumulative_intensity": {
+            "erotic": 0.01,
+            "horror": 0.013,
+            "drama": 0.024
+          }
+        },
+        {
+          "episode_id": "s01e06",
+          "title": "Bl\u00e5ljus och blod",
+          "title_en": "Blue Lights and Blood",
+          "episode_number": 6,
+          "air_date": null,
+          "scenes": [
+            {
+              "scene_id": "s01e06-sc001",
+              "start_time": "00:00:01",
+              "end_time": "00:06:25",
+              "duration_seconds": 384,
+              "moments": [
+                "beat-s01e06-001",
+                "beat-s01e06-002",
+                "beat-s01e06-003",
+                "beat-s01e06-004"
+              ],
+              "characters_present": [
+                "adam",
+                "alfred",
+                "batgirl_1",
+                "batgirl_3",
+                "chloe",
+                "elise",
+                "eric",
+                "father",
+                "kiara_natt_och_dag",
+                "kylie",
+                "mother",
+                "party_student_3",
+                "principal",
+                "siri"
+              ],
+              "intensity": {
+                "erotic": 0.019,
+                "horror": 0.062,
+                "drama": 0.035
+              },
+              "tags": [
+                "blood_as_ritual",
+                "dependence",
+                "teen_angst",
+                "seduction",
+                "temptation"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e06-sc002",
+              "start_time": "00:07:00",
+              "end_time": "00:12:45",
+              "duration_seconds": 345,
+              "moments": [
+                "beat-s01e06-004",
+                "beat-s01e06-005",
+                "beat-s01e06-006",
+                "beat-s01e06-007",
+                "beat-s01e06-008"
+              ],
+              "characters_present": [
+                "chloe",
+                "elise",
+                "kiara_natt_och_dag",
+                "kylie"
+              ],
+              "intensity": {
+                "erotic": 0.015,
+                "horror": 0.061,
+                "drama": 0.046
+              },
+              "tags": [
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence",
+                "seduction"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e06-sc003",
+              "start_time": "00:14:19",
+              "end_time": "00:17:20",
+              "duration_seconds": 180,
+              "moments": [
+                "beat-s01e06-008",
+                "beat-s01e06-009",
+                "beat-s01e06-010"
+              ],
+              "characters_present": [
+                "alfred",
+                "kiara_natt_och_dag"
+              ],
+              "intensity": {
+                "erotic": 0.008,
+                "horror": 0.042,
+                "drama": 0.032
+              },
+              "tags": [
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e06-sc004",
+              "start_time": "00:18:12",
+              "end_time": "00:21:50",
+              "duration_seconds": 218,
+              "moments": [
+                "beat-s01e06-010",
+                "beat-s01e06-011",
+                "beat-s01e06-012",
+                "beat-s01e06-013"
+              ],
+              "characters_present": [
+                "chloe",
+                "livia"
+              ],
+              "intensity": {
+                "erotic": 0.004,
+                "horror": 0.01,
+                "drama": 0.003
+              },
+              "tags": [
+                "blood_as_ritual",
+                "dependence",
+                "seduction"
+              ],
+              "has_branches": false
+            }
+          ],
+          "cumulative_intensity": {
+            "erotic": 0.013,
+            "horror": 0.048,
+            "drama": 0.032
+          }
+        },
+        {
+          "episode_id": "s01e07",
+          "title": "F\u00f6rsonas i en kyss",
+          "title_en": "Reconciled in a Kiss",
+          "episode_number": 7,
+          "air_date": null,
+          "scenes": [
+            {
+              "scene_id": "s01e07-sc001",
+              "start_time": "00:00:33",
+              "end_time": "00:11:02",
+              "duration_seconds": 629,
+              "moments": [
+                "beat-s01e07-001",
+                "beat-s01e07-002",
+                "beat-s01e07-003",
+                "beat-s01e07-004",
+                "beat-s01e07-005",
+                "beat-s01e07-006",
+                "beat-s01e07-007"
+              ],
+              "characters_present": [
+                "alfred",
+                "batgirl_1",
+                "batgirl_3",
+                "desiree_natt_och_dag",
+                "elise",
+                "eric",
+                "felicia",
+                "jacques_natt_och_dag",
+                "kiara_natt_och_dag",
+                "livia",
+                "party_student_1",
+                "party_student_2",
+                "siri"
+              ],
+              "intensity": {
+                "erotic": 0.007,
+                "horror": 0.011,
+                "drama": 0.029
+              },
+              "tags": [
+                "teen_angst",
+                "seduction",
+                "blood_as_ritual",
+                "dependence",
+                "coercion"
+              ],
+              "has_branches": false
+            },
+            {
+              "scene_id": "s01e07-sc002",
+              "start_time": "00:11:49",
+              "end_time": "00:17:24",
+              "duration_seconds": 335,
+              "moments": [
+                "beat-s01e07-007",
+                "beat-s01e07-008",
+                "beat-s01e07-009",
+                "beat-s01e07-010",
+                "beat-s01e07-011"
+              ],
+              "characters_present": [
+                "chloe",
+                "didde",
+                "kevin",
+                "principal"
+              ],
+              "intensity": {
+                "erotic": 0.003,
+                "horror": 0.013,
+                "drama": 0.011
+              },
+              "tags": [
+                "teen_angst",
+                "blood_as_ritual",
+                "dependence"
+              ],
+              "has_branches": false
+            }
+          ],
+          "cumulative_intensity": {
+            "erotic": 0.006,
+            "horror": 0.012,
+            "drama": 0.023
+          }
+        }
+      ]
+    }
+  ]
+}

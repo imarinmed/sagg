@@ -1625,7 +1625,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: They get triggered by blood and sweat....",
-        "task": "Develop interaction between principal, eric",
+        "task": "Develop interaction between eric, principal",
         "action": "Continued scene",
         "consequence": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ..."
       },
@@ -1636,8 +1636,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "principal",
-            "eric"
+            "eric",
+            "principal"
           ],
           "time_gap_seconds": 100.18000000000006
         }
@@ -1701,7 +1701,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ...",
-        "task": "Develop interaction between elise, batgirl_1",
+        "task": "Develop interaction between eric, batgirl_3",
         "action": "Continued scene",
         "consequence": "Dialogue: I\u2019m going to teach you everything I can, okay?..."
       },
@@ -1712,10 +1712,10 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "batgirl_1",
+            "eric",
             "batgirl_3",
-            "eric"
+            "batgirl_1",
+            "elise"
           ],
           "time_gap_seconds": 101.23999999999995
         }
@@ -1729,7 +1729,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ...",
-        "task": "Develop interaction between elise, batgirl_1",
+        "task": "Develop interaction between eric, batgirl_3",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013900\u2026 \u2013Blood and honor...."
       },
@@ -1740,10 +1740,10 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "batgirl_1",
+            "eric",
             "batgirl_3",
-            "eric"
+            "batgirl_1",
+            "elise"
           ],
           "time_gap_seconds": 202.62000000000006
         }
@@ -1757,7 +1757,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric....",
-        "task": "Develop interaction between alfred, eric",
+        "task": "Develop interaction between eric, alfred",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013900\u2026 \u2013Blood and honor...."
       },
@@ -1768,8 +1768,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "alfred",
-            "eric"
+            "eric",
+            "alfred"
           ],
           "time_gap_seconds": 101.38000000000011
         }
@@ -1783,7 +1783,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric....",
-        "task": "Develop interaction between alfred, eric",
+        "task": "Develop interaction between eric, alfred",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013Well, technically. But I\u2019ve got the vamp kit. \u2013Oh..."
       },
@@ -1794,8 +1794,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "alfred",
-            "eric"
+            "eric",
+            "alfred"
           ],
           "time_gap_seconds": 203.18000000000006
         }
@@ -1809,7 +1809,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: I\u2019m going to teach you everything I can, okay?...",
-        "task": "Develop interaction between batgirl_1, alfred",
+        "task": "Develop interaction between alfred, batgirl_3",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013Well, technically. But I\u2019ve got the vamp kit. \u2013Oh..."
       },
@@ -1820,12 +1820,12 @@
       "evidence": [
         {
           "shared_characters": [
-            "batgirl_1",
             "alfred",
-            "elise",
-            "kiara_natt_och_dag",
             "batgirl_3",
-            "eric"
+            "kiara_natt_och_dag",
+            "batgirl_1",
+            "eric",
+            "elise"
           ],
           "time_gap_seconds": 101.79999999999995
         }
@@ -1839,7 +1839,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: I\u2019m going to teach you everything I can, okay?...",
-        "task": "Develop interaction between batgirl_1, kiara_natt_och_dag",
+        "task": "Develop interaction between kiara_natt_och_dag, batgirl_1",
         "action": "Continued scene",
         "consequence": "Dialogue: Where\u2019s Kiara? We can\u2019t have another accident, Jac..."
       },
@@ -1850,8 +1850,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "batgirl_1",
-            "kiara_natt_och_dag"
+            "kiara_natt_och_dag",
+            "batgirl_1"
           ],
           "time_gap_seconds": 237.15999999999985
         }
@@ -1865,7 +1865,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: \u2013900\u2026 \u2013Blood and honor....",
-        "task": "Develop interaction between batgirl_1, kiara_natt_och_dag",
+        "task": "Develop interaction between kiara_natt_och_dag, batgirl_1",
         "action": "Continued scene",
         "consequence": "Dialogue: Where\u2019s Kiara? We can\u2019t have another accident, Jac..."
       },
@@ -1876,8 +1876,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "batgirl_1",
-            "kiara_natt_och_dag"
+            "kiara_natt_och_dag",
+            "batgirl_1"
           ],
           "time_gap_seconds": 135.3599999999999
         }
@@ -1941,7 +1941,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Oh, Kiara! Kiara! Kiara!...",
-        "task": "Develop interaction between kiara_natt_och_dag, mother",
+        "task": "Develop interaction between mother, kiara_natt_och_dag",
         "action": "Continued scene",
         "consequence": "Dialogue: Absolutely. I show her around everywhere at school..."
       },
@@ -1952,8 +1952,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "kiara_natt_och_dag",
-            "mother"
+            "mother",
+            "kiara_natt_och_dag"
           ],
           "time_gap_seconds": 208.06
         }
@@ -1967,7 +1967,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Okay. Welcome to Natt and Dag. Blood and honor....",
-        "task": "Develop interaction between alfred, mother",
+        "task": "Develop interaction between mother, alfred",
         "action": "Continued scene",
         "consequence": "Dialogue: Absolutely. I show her around everywhere at school..."
       },
@@ -1978,8 +1978,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "alfred",
             "mother",
+            "alfred",
             "party_student_3"
           ],
           "time_gap_seconds": 103.21999999999997
@@ -2120,7 +2120,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: His whole hand was bloody....",
-        "task": "Develop interaction between elise, eric",
+        "task": "Develop interaction between eric, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013Do they? But I thought that\u2026 \u2013Yup. You need rhine..."
       },
@@ -2131,8 +2131,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "eric"
+            "eric",
+            "elise"
           ],
           "time_gap_seconds": 102.67999999999984
         }
@@ -2398,7 +2398,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Have you ever thought about how fast I solve probl...",
-        "task": "Develop interaction between elise, eric",
+        "task": "Develop interaction between eric, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Well\u2026 We decide together...."
       },
@@ -2409,8 +2409,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "eric"
+            "eric",
+            "elise"
           ],
           "time_gap_seconds": 201.86
         }
@@ -2424,7 +2424,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: I think I know. I can help you if you want....",
-        "task": "Develop interaction between elise, chloe",
+        "task": "Develop interaction between alfred, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Well\u2026 We decide together...."
       },
@@ -2435,9 +2435,9 @@
       "evidence": [
         {
           "shared_characters": [
+            "alfred",
             "elise",
-            "chloe",
-            "alfred"
+            "chloe"
           ],
           "time_gap_seconds": 101.30000000000001
         }
@@ -2477,7 +2477,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: \u2013What the fuck? Miss the training! \u2013It was worth i...",
-        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "task": "Develop interaction between kevin, alfred",
         "action": "Continued scene",
         "consequence": "Dialogue: What the hell do we do now?..."
       },
@@ -2488,9 +2488,9 @@
       "evidence": [
         {
           "shared_characters": [
-            "kiara_natt_och_dag",
+            "kevin",
             "alfred",
-            "kevin"
+            "kiara_natt_och_dag"
           ],
           "time_gap_seconds": 103.60000000000002
         }
@@ -2579,7 +2579,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: What the hell do we do now?...",
-        "task": "Develop interaction between kiara_natt_och_dag, eric",
+        "task": "Develop interaction between eric, kevin",
         "action": "Continued scene",
         "consequence": "Dialogue: Yes...."
       },
@@ -2590,9 +2590,9 @@
       "evidence": [
         {
           "shared_characters": [
-            "kiara_natt_och_dag",
             "eric",
-            "kevin"
+            "kevin",
+            "kiara_natt_och_dag"
           ],
           "time_gap_seconds": 204.80000000000007
         }
@@ -2731,7 +2731,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Hey, thanks for helping me. I\u2019ve been so worried....",
-        "task": "Develop interaction between didde, kevin",
+        "task": "Develop interaction between kevin, didde",
         "action": "Continued scene",
         "consequence": "Dialogue: It\u2019s also really important that we remember..."
       },
@@ -2742,8 +2742,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "didde",
-            "kevin"
+            "kevin",
+            "didde"
           ],
           "time_gap_seconds": 105.98000000000002
         }
@@ -2757,7 +2757,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Hey, thanks for helping me. I\u2019ve been so worried....",
-        "task": "Develop interaction between elise, kevin",
+        "task": "Develop interaction between kevin, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?..."
       },
@@ -2768,8 +2768,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "kevin"
+            "kevin",
+            "elise"
           ],
           "time_gap_seconds": 220.7800000000001
         }
@@ -2783,7 +2783,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: \u2013Have you heard? \u2013Heard what?...",
-        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "task": "Develop interaction between kiara_natt_och_dag, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?..."
       },
@@ -2794,8 +2794,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "kiara_natt_och_dag"
+            "kiara_natt_och_dag",
+            "elise"
           ],
           "time_gap_seconds": 114.80000000000007
         }
@@ -2874,8 +2874,8 @@
           "shared_characters": [
             "batgirl_3",
             "batgirl_1",
-            "chloe",
-            "siri"
+            "siri",
+            "chloe"
           ],
           "time_gap_seconds": 113.51999999999998
         }
@@ -2889,7 +2889,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?...",
-        "task": "Develop interaction between batgirl_1, chloe",
+        "task": "Develop interaction between party_student_3, batgirl_3",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013Ew! That\u2019s so gross. \u2013Yeah, I know...."
       },
@@ -2900,11 +2900,11 @@
       "evidence": [
         {
           "shared_characters": [
-            "batgirl_1",
+            "party_student_3",
+            "batgirl_3",
             "chloe",
             "kiara_natt_och_dag",
-            "batgirl_3",
-            "party_student_3"
+            "batgirl_1"
           ],
           "time_gap_seconds": 215.89999999999986
         }
@@ -3071,7 +3071,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Well look who\u2019s here!...",
-        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "task": "Develop interaction between kiara_natt_och_dag, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Elise, what the fuck? Stop it...."
       },
@@ -3082,8 +3082,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "kiara_natt_och_dag"
+            "kiara_natt_och_dag",
+            "elise"
           ],
           "time_gap_seconds": 102.51999999999998
         }
@@ -3148,7 +3148,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: And vamp is just as dangerous as vampires. Shut up...",
-        "task": "Develop interaction between batgirl_1, alfred",
+        "task": "Develop interaction between alfred, batgirl_3",
         "action": "Continued scene",
         "consequence": "Dialogue: If you swam in cold water..."
       },
@@ -3159,10 +3159,10 @@
       "evidence": [
         {
           "shared_characters": [
-            "batgirl_1",
             "alfred",
-            "kiara_natt_och_dag",
             "batgirl_3",
+            "kiara_natt_och_dag",
+            "batgirl_1",
             "eric"
           ],
           "time_gap_seconds": 100.45999999999998
@@ -3177,7 +3177,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: And vamp is just as dangerous as vampires. Shut up...",
-        "task": "Develop interaction between kiara_natt_och_dag, eric",
+        "task": "Develop interaction between eric, kiara_natt_och_dag",
         "action": "Continued scene",
         "consequence": "Dialogue: Do you see who it is?..."
       },
@@ -3188,8 +3188,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "kiara_natt_och_dag",
-            "eric"
+            "eric",
+            "kiara_natt_och_dag"
           ],
           "time_gap_seconds": 216.29999999999995
         }
@@ -3228,7 +3228,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: The Blood System is going to file a child welfare ...",
-        "task": "Develop interaction between elise, eric",
+        "task": "Develop interaction between eric, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: What are you doing? You\u2019re not holding your positi..."
       },
@@ -3239,8 +3239,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "eric"
+            "eric",
+            "elise"
           ],
           "time_gap_seconds": 234.2
         }
@@ -3254,7 +3254,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: If you swam in cold water...",
-        "task": "Develop interaction between elise, chloe",
+        "task": "Develop interaction between eric, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: What are you doing? You\u2019re not holding your positi..."
       },
@@ -3265,10 +3265,10 @@
       "evidence": [
         {
           "shared_characters": [
+            "eric",
             "elise",
-            "chloe",
             "kiara_natt_och_dag",
-            "eric"
+            "chloe"
           ],
           "time_gap_seconds": 118.36000000000001
         }
@@ -3282,7 +3282,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: What are you doing? You\u2019re not holding your positi...",
-        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "task": "Develop interaction between eric, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Yo. Need help, or?..."
       },
@@ -3293,9 +3293,9 @@
       "evidence": [
         {
           "shared_characters": [
+            "eric",
             "elise",
-            "kiara_natt_och_dag",
-            "eric"
+            "kiara_natt_och_dag"
           ],
           "time_gap_seconds": 221.79999999999995
         }
@@ -3385,7 +3385,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: For those of you thinking about buying tickets, it...",
-        "task": "Develop interaction between livia, batgirl_3",
+        "task": "Develop interaction between alfred, batgirl_3",
         "action": "Continued scene",
         "consequence": "Dialogue: Come pick me up. Of course I\u2019ll help you...."
       },
@@ -3396,10 +3396,10 @@
       "evidence": [
         {
           "shared_characters": [
-            "livia",
+            "alfred",
             "batgirl_3",
-            "batgirl_1",
-            "alfred"
+            "livia",
+            "batgirl_1"
           ],
           "time_gap_seconds": 103.17999999999998
         }
@@ -3413,7 +3413,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: For those of you thinking about buying tickets, it...",
-        "task": "Develop interaction between livia, elise",
+        "task": "Develop interaction between eric, alfred",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013Cute, right? \u2013Super cute...."
       },
@@ -3424,10 +3424,10 @@
       "evidence": [
         {
           "shared_characters": [
-            "livia",
-            "elise",
+            "eric",
             "alfred",
-            "eric"
+            "livia",
+            "elise"
           ],
           "time_gap_seconds": 203.67999999999998
         }
@@ -3441,7 +3441,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Sorry. I didn\u2019t mean to make out with you....",
-        "task": "Develop interaction between elise, alfred",
+        "task": "Develop interaction between alfred, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013Cute, right? \u2013Super cute...."
       },
@@ -3452,8 +3452,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "alfred"
+            "alfred",
+            "elise"
           ],
           "time_gap_seconds": 100.5
         }
@@ -3467,7 +3467,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Sorry. I didn\u2019t mean to make out with you....",
-        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "task": "Develop interaction between kiara_natt_och_dag, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: \u2013You\u2019re all just cowards. \u2013Elise, the discussion i..."
       },
@@ -3478,8 +3478,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "kiara_natt_och_dag"
+            "kiara_natt_och_dag",
+            "elise"
           ],
           "time_gap_seconds": 201.68000000000006
         }
@@ -3493,7 +3493,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: \u2013Cute, right? \u2013Super cute....",
-        "task": "Develop interaction between elise, eric",
+        "task": "Develop interaction between eric, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Eric, did you hear what I said? Kiara is allowed a..."
       },
@@ -3504,8 +3504,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "eric"
+            "eric",
+            "elise"
           ],
           "time_gap_seconds": 102.57999999999993
         }
@@ -3519,7 +3519,7 @@
       "type": "reveals",
       "stac": {
         "situation": "Dialogue: Eric, did you hear what I said? Kiara is allowed a...",
-        "task": "Develop interaction between elise, eric",
+        "task": "Develop interaction between eric, elise",
         "action": "Continued scene",
         "consequence": "Dialogue: Hey! Didn\u2019t you hear what I said?..."
       },
@@ -3530,8 +3530,8 @@
       "evidence": [
         {
           "shared_characters": [
-            "elise",
-            "eric"
+            "eric",
+            "elise"
           ],
           "time_gap_seconds": 200.92000000000007
         }

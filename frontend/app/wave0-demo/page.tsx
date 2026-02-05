@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import { StudentCompanionCard } from '@/components/StudentCompanionCard';
 import { AuthorityPatronCard } from '@/components/AuthorityPatronCard';
+import { CharacterGraph, CharacterNode, RelationshipEdge } from '@/components/CharacterGraph';
 import { Crown } from 'lucide-react';
 
 const demoCommandItems: CommandItem[] = [
@@ -516,6 +517,66 @@ export default function Wave0DemoPage() {
           </div>
         </section>
 
+        <section className="glass rounded-2xl p-8 space-y-6">
+          <h2 className="text-2xl font-heading text-[var(--color-text-primary)] flex items-center gap-3">
+            <Share2 className="w-6 h-6 text-[var(--color-accent-primary)]" />
+            7. CharacterGraph (Wave 3)
+          </h2>
+
+          <div className="space-y-4">
+            <div className="p-4 bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)]">
+              <h3 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                Canvas-baserad Relationsgraf
+              </h3>
+              <p className="text-sm text-[var(--color-text-secondary)] mb-4">
+                En "beautiful chaos" visualisering av karaktärsrelationer. Hovra över noder för att fokusera, 
+                scrolla för att zooma, dra för att panorera. Relationer visas med pulserande färger baserat på typ.
+              </p>
+              
+              <CharacterGraph
+                nodes={[
+                  { id: 'kiara', name: 'Kiara', x: 400, y: 300, fitnessLevel: 9, danceSkill: 8, beautyRating: 9, family: 'Natt och Dag', beautyType: 'annabel-lucinda', color: '#d4af37' },
+                  { id: 'desiree', name: 'Desirée', x: 200, y: 200, fitnessLevel: 10, danceSkill: 9, beautyRating: 10, family: 'Natt och Dag', beautyType: 'helga-lovekaty-fit', color: '#c9a227' },
+                  { id: 'elise', name: 'Elise', x: 600, y: 250, fitnessLevel: 8, danceSkill: 9, beautyRating: 8, family: 'Independent', beautyType: 'alexis-ren', color: '#8B5CF6' },
+                  { id: 'chloe', name: 'Chloe', x: 550, y: 400, fitnessLevel: 7, danceSkill: 8, beautyRating: 8, family: 'Independent', beautyType: 'alexis-ren', color: '#ff6b9d' },
+                  { id: 'alfred', name: 'Alfred', x: 300, y: 400, fitnessLevel: 8, danceSkill: 6, beautyRating: 7, family: 'Natt och Dag', beautyType: 'nata-lee', color: '#991b1b' },
+                ]}
+                edges={[
+                  { id: '1', source: 'kiara', target: 'desiree', type: 'familial', strength: 5 },
+                  { id: '2', source: 'kiara', target: 'alfred', type: 'romantic', strength: 4 },
+                  { id: '3', source: 'kiara', target: 'elise', type: 'training', strength: 3 },
+                  { id: '4', source: 'desiree', target: 'alfred', type: 'blood-bond', strength: 5 },
+                  { id: '5', source: 'elise', target: 'chloe', type: 'desires', strength: 3 },
+                ]}
+                width={800}
+                height={500}
+              />
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="p-4 bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)]">
+                <h3 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                  50+ Noder vid 60fps
+                </h3>
+                <p className="text-sm text-[var(--color-text-secondary)]">
+                  Canvas-rendering för hög prestanda. Varje nod representerar en karaktär med storlek 
+                  baserat på fitness + dans + skönhet. Level 10 (Nata Lee-perfektion) = 120px diameter.
+                </p>
+              </div>
+
+              <div className="p-4 bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)]">
+                <h3 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                  Relationstyper med Färger
+                </h3>
+                <p className="text-sm text-[var(--color-text-secondary)]">
+                  Romantisk (crimson), Familjär (gold), Träning (purple), Blod-Bindning (dark red), 
+                  Begär (pink), Tjänar (silver). Kurvade Bezier-kopplingar med glow-effekt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="glass rounded-2xl p-8">
           <h2 className="text-2xl font-heading text-[var(--color-text-primary)] mb-4">
             Nästa steg
@@ -523,12 +584,12 @@ export default function Wave0DemoPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { wave: 'Wave 3', title: '50+ Node Graph', desc: 'Canvas-based relationship visualization' },
               { wave: 'Wave 4', title: 'Family Clustering', desc: 'Group characters by vampire family' },
               { wave: 'Wave 5', title: 'Multi-Track Timeline', desc: '6-track timeline with fitness focus' },
               { wave: 'Wave 6', title: 'Navigation', desc: 'Command palette, mini-map, breadcrumbs' },
               { wave: 'Wave 7', title: 'Spoilers & Secrets', desc: 'Hidden/Hinted/Revealed states' },
               { wave: 'Wave 8', title: 'Accessibility', desc: 'Keyboard nav, screen readers, colorblind' },
+              { wave: 'Wave 9', title: 'Mobile', desc: 'Vertical stack, bottom sheets, touch' },
             ].map((item) => (
               <div 
                 key={item.wave}

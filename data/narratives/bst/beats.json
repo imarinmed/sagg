@@ -62,10 +62,10 @@
       "location": "multiple",
       "intensity": 1,
       "content_types": [
+        "party",
         "dance",
-        "vampire_feeding",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -119,8 +119,8 @@
       "intensity": 1,
       "content_types": [
         "dance",
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -167,10 +167,10 @@
       "location": "multiple",
       "intensity": 2,
       "content_types": [
-        "dialogue",
-        "vampire_feeding",
+        "party",
         "physical_intimacy",
-        "party"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -210,8 +210,8 @@
       "location": "multiple",
       "intensity": 2,
       "content_types": [
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -320,8 +320,8 @@
       "location": "car",
       "intensity": 1,
       "content_types": [
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -441,9 +441,9 @@
       "intensity": 2,
       "content_types": [
         "dance",
-        "vampire_feeding",
+        "party",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -494,8 +494,8 @@
       "intensity": 2,
       "content_types": [
         "dance",
-        "vampire_feeding",
         "dialogue",
+        "vampire_feeding",
         "party"
       ]
     },
@@ -585,8 +585,8 @@
       "intensity": 1,
       "content_types": [
         "dance",
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -764,9 +764,9 @@
       "intensity": 2,
       "content_types": [
         "confrontation",
-        "vampire_feeding",
+        "party",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -853,8 +853,8 @@
       "intensity": 1,
       "content_types": [
         "dance",
-        "vampire_feeding",
         "dialogue",
+        "vampire_feeding",
         "party"
       ]
     },
@@ -966,9 +966,9 @@
       "location": "party",
       "intensity": 1,
       "content_types": [
-        "vampire_feeding",
+        "party",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -1100,8 +1100,8 @@
       "location": "multiple",
       "intensity": 1,
       "content_types": [
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -1238,8 +1238,8 @@
       "location": "home",
       "intensity": 1,
       "content_types": [
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -1342,8 +1342,8 @@
       "intensity": 1,
       "content_types": [
         "dance",
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -1491,9 +1491,9 @@
       "intensity": 1,
       "content_types": [
         "dance",
-        "vampire_feeding",
+        "party",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -1545,11 +1545,11 @@
       "location": "multiple",
       "intensity": 2,
       "content_types": [
-        "dialogue",
-        "party",
+        "vampire_feeding",
         "dance",
+        "dialogue",
         "training",
-        "vampire_feeding"
+        "party"
       ]
     },
     {
@@ -1694,8 +1694,8 @@
       "location": "multiple",
       "intensity": 2,
       "content_types": [
-        "vampire_feeding",
         "dialogue",
+        "vampire_feeding",
         "party"
       ]
     },
@@ -1748,8 +1748,8 @@
       "intensity": 1,
       "content_types": [
         "confrontation",
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -1941,8 +1941,8 @@
       "intensity": 1,
       "content_types": [
         "dance",
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -2155,9 +2155,9 @@
       "intensity": 1,
       "content_types": [
         "dance",
-        "training",
+        "party",
         "dialogue",
-        "party"
+        "training"
       ]
     },
     {
@@ -2199,8 +2199,8 @@
       "location": "car",
       "intensity": 1,
       "content_types": [
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -2486,9 +2486,9 @@
       "location": "party",
       "intensity": 2,
       "content_types": [
-        "vampire_feeding",
+        "party",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -2542,8 +2542,8 @@
       "intensity": 2,
       "content_types": [
         "dance",
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -2599,11 +2599,11 @@
       "location": "multiple",
       "intensity": 1,
       "content_types": [
-        "dialogue",
-        "party",
-        "confrontation",
+        "vampire_feeding",
         "dance",
-        "vampire_feeding"
+        "confrontation",
+        "dialogue",
+        "party"
       ]
     },
     {
@@ -2659,8 +2659,8 @@
       "intensity": 2,
       "content_types": [
         "dance",
-        "vampire_feeding",
         "dialogue",
+        "vampire_feeding",
         "party"
       ]
     },
@@ -2700,8 +2700,8 @@
       "location": "party",
       "intensity": 1,
       "content_types": [
-        "vampire_feeding",
         "dialogue",
+        "vampire_feeding",
         "party"
       ]
     },
@@ -2753,8 +2753,8 @@
       "location": "party",
       "intensity": 1,
       "content_types": [
-        "dialogue",
         "physical_intimacy",
+        "dialogue",
         "party"
       ]
     },
@@ -2794,9 +2794,9 @@
       "location": "multiple",
       "intensity": 2,
       "content_types": [
-        "vampire_feeding",
+        "party",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -2817,9 +2817,9 @@
       "location": "party",
       "intensity": 2,
       "content_types": [
-        "vampire_feeding",
+        "party",
         "dialogue",
-        "party"
+        "vampire_feeding"
       ]
     },
     {
@@ -3161,9 +3161,9 @@
       "location": "multiple",
       "intensity": 2,
       "content_types": [
+        "party",
         "physical_intimacy",
         "dialogue",
-        "party",
         "vampire_feeding"
       ]
     },
@@ -3312,8 +3312,8 @@
       "content_types": [
         "confrontation",
         "dance",
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
@@ -3384,8 +3384,8 @@
       "location": "multiple",
       "intensity": 2,
       "content_types": [
-        "vampire_feeding",
-        "dialogue"
+        "dialogue",
+        "vampire_feeding"
       ]
     },
     {
