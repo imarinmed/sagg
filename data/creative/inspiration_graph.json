@@ -1,0 +1,3477 @@
+{
+  "version": "1.0.0",
+  "total_nodes": 37,
+  "total_links": 177,
+  "node_types": {
+    "canonical": 37,
+    "extension": 0,
+    "what_if": 0
+  },
+  "nodes": [
+    {
+      "node_id": "insp-0001",
+      "type": "canonical",
+      "title": "Vampire Physiology",
+      "content": "Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenance.\nThey can blend into human society and attend regular schools, making them virtually indistinguishable\nfrom humans in everyday interactions.\n\nTheir bodies have adapted to process blood as their prim",
+      "source": {
+        "type": "mythos",
+        "id": "vampire_physiology"
+      },
+      "activation_keys": [
+        "process",
+        "biological",
+        "have",
+        "bodies",
+        "vampire_physiology",
+        "sustenance",
+        "series",
+        "into",
+        "remain",
+        "strength",
+        "humans"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: sus"
+        },
+        {
+          "node_id": "insp-0005",
+          "context": "Shares keywords: hum"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: int"
+        },
+        {
+          "node_id": "insp-0007",
+          "context": "Shares keywords: int"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: sus"
+        },
+        {
+          "node_id": "insp-0005",
+          "context": "Shares keywords: hum"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: int"
+        },
+        {
+          "node_id": "insp-0007",
+          "context": "Shares keywords: int"
+        },
+        {
+          "node_id": "insp-0023",
+          "context": "Shares keywords: hav"
+        },
+        {
+          "node_id": "insp-0027",
+          "context": "Shares keywords: hav"
+        },
+        {
+          "node_id": "insp-0029",
+          "context": "Shares keywords: hav"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0003",
+        "insp-0004",
+        "insp-0005"
+      ],
+      "creative_potential": 4,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0002",
+      "type": "canonical",
+      "title": "Vampire Family Hierarchy",
+      "content": "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family\nexemplifies this with clear patriarchal structure and expectations for their children.\nFamily position determines everything from feeding rights to mate selection.\n\nThe hierarchy extends beyond blood relations to in",
+      "source": {
+        "type": "mythos",
+        "id": "family_hierarchy"
+      },
+      "activation_keys": [
+        "servants",
+        "feeding",
+        "maintain",
+        "determined",
+        "vampire_family_hierarchy",
+        "determines",
+        "family",
+        "one's",
+        "include",
+        "lineage",
+        "relations",
+        "family_hierarchy"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: fee"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: fam"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: fee"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: fam"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0004",
+        "insp-0006"
+      ],
+      "creative_potential": 4,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0003",
+      "type": "canonical",
+      "title": "The Blood Bond",
+      "content": "A mystical connection formed through blood exchange between vampires. The exact nature is not\nfully explored in the series, but hints suggest deep emotional and possibly telepathic links\nform between bonded parties.\n\nBlood bonds appear to transcend ordinary relationships, creating connections that p",
+      "source": {
+        "type": "mythos",
+        "id": "blood_bond"
+      },
+      "activation_keys": [
+        "blood_bond",
+        "explored",
+        "bonded",
+        "dependency",
+        "connection",
+        "only",
+        "series",
+        "the_blood_bond",
+        "emotional",
+        "suggest",
+        "bonds",
+        "obligations"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0007",
+          "context": "Shares keywords: ser"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0007",
+          "context": "Shares keywords: ser"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0004",
+        "insp-0006"
+      ],
+      "creative_potential": 4,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0004",
+      "type": "canonical",
+      "title": "Feeding",
+      "content": "The act of consuming blood for sustenance. Vampires require blood to survive, though the\nexact mechanics and frequency are not detailed in the series. What is clear is that feeding\nis both a biological necessity and an intimate act that carries profound significance.\n\nThe series suggests feeding cre",
+      "source": {
+        "type": "mythos",
+        "id": "feeding"
+      },
+      "activation_keys": [
+        "biological",
+        "feeding",
+        "from",
+        "right",
+        "frequency",
+        "sustenance",
+        "series",
+        "building",
+        "emotional",
+        "bonds"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: sus"
+        },
+        {
+          "node_id": "insp-0002",
+          "context": "Shares keywords: fee"
+        },
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0007",
+          "context": "Shares keywords: ser"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: sus"
+        },
+        {
+          "node_id": "insp-0002",
+          "context": "Shares keywords: fee"
+        },
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0007",
+          "context": "Shares keywords: ser"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0002",
+        "insp-0003"
+      ],
+      "creative_potential": 4,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0005",
+      "type": "canonical",
+      "title": "Vampire-Human Relations",
+      "content": "Vampires coexist secretly with humans, attending the same schools and living in the\nsame communities. Most humans are unaware of vampires' existence, enabling vampires\nto move freely among their prey while maintaining the masquerade.\n\nThis coexistence creates unique tensions. Vampires must constantl",
+      "source": {
+        "type": "mythos",
+        "id": "vampire_human_relations"
+      },
+      "activation_keys": [
+        "vampire-human_relations",
+        "secretly",
+        "existential",
+        "faces",
+        "existence",
+        "tensions",
+        "part",
+        "vampire_human_relations",
+        "freely",
+        "coexistence",
+        "humans",
+        "choice"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: hum"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: hum"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: hum"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: hum"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0006"
+      ],
+      "creative_potential": 4,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0006",
+      "type": "canonical",
+      "title": "Vampire Transformation",
+      "content": "The process by which humans become vampires. Not explicitly detailed in the series,\nbut implied to involve blood exchange and a death-like transition. Once transformed,\nthere is no return to humanity\u2014the change is permanent and absolute.\n\nTransformation creates a bond between sire and progeny, with ",
+      "source": {
+        "type": "mythos",
+        "id": "transformation"
+      },
+      "activation_keys": [
+        "process",
+        "explicitly",
+        "maker's",
+        "lightly",
+        "vampire_transformation",
+        "connection",
+        "transformation",
+        "into",
+        "series",
+        "family",
+        "humans",
+        "permanent"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: int"
+        },
+        {
+          "node_id": "insp-0002",
+          "context": "Shares keywords: fam"
+        },
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0005",
+          "context": "Shares keywords: hum"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: int"
+        },
+        {
+          "node_id": "insp-0002",
+          "context": "Shares keywords: fam"
+        },
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0005",
+          "context": "Shares keywords: hum"
+        },
+        {
+          "node_id": "insp-0007",
+          "context": "Shares keywords: int"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0002",
+        "insp-0003"
+      ],
+      "creative_potential": 4,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0007",
+      "type": "canonical",
+      "title": "Daywalking",
+      "content": "Vampires in the series appear to be able to function during daylight hours without\nthe traditional vampire weakness to sunlight. This \"daywalking\" ability allows them\nto fully integrate into human society, attending schools and maintaining normal\nschedules alongside their human neighbors.\n\nWhether t",
+      "source": {
+        "type": "mythos",
+        "id": "daywalking"
+      },
+      "activation_keys": [
+        "this",
+        "whether",
+        "what",
+        "ability",
+        "special",
+        "integrate",
+        "series",
+        "removes",
+        "into",
+        "daywalking",
+        "neighbors"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: int"
+        },
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0006",
+          "context": "Shares keywords: int"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: int"
+        },
+        {
+          "node_id": "insp-0003",
+          "context": "Shares keywords: ser"
+        },
+        {
+          "node_id": "insp-0004",
+          "context": "Shares keywords: ser"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0003",
+        "insp-0004"
+      ],
+      "creative_potential": 4,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0008",
+      "type": "canonical",
+      "title": "Kiara Natt och Dag",
+      "content": "Kiara Natt och Dag: rebellious, curious, naive, wants_normal_life, fish_out_of_water. Arc: fish_out_of_water_teen",
+      "source": {
+        "type": "character",
+        "id": "kiara_natt_och_dag"
+      },
+      "activation_keys": [
+        "rebellious",
+        "fish_out_of_water",
+        "natt",
+        "wants_normal_life",
+        "kiara_natt_och_dag",
+        "arc",
+        "kiara",
+        "naive",
+        "dag",
+        "curious",
+        "fish_out_of_water_teen"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0035",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0014",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0016",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0017",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0027",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0029",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0032",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0035",
+          "context": "Shares keywords: kia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0033",
+        "insp-0035",
+        "insp-0009"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0009",
+      "type": "canonical",
+      "title": "Henry Natt och Dag",
+      "content": "Henry Natt och Dag: strict, controlling, protective, traditional, patriarch. Arc: authoritarian_father",
+      "source": {
+        "type": "character",
+        "id": "henry_natt_och_dag"
+      },
+      "activation_keys": [
+        "natt",
+        "strict",
+        "controlling",
+        "protective",
+        "arc",
+        "henry_natt_och_dag",
+        "traditional",
+        "dag",
+        "authoritarian_father",
+        "patriarch",
+        "henry"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0014",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0016",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0017",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: dag"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0033",
+        "insp-0008",
+        "insp-0010"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0010",
+      "type": "canonical",
+      "title": "Elise",
+      "content": "Elise: popular, manipulative, jealous, queen_bee. Arc: rival_antagonist",
+      "source": {
+        "type": "character",
+        "id": "elise"
+      },
+      "activation_keys": [
+        "queen_bee",
+        "manipulative",
+        "arc",
+        "rival_antagonist",
+        "elise",
+        "popular",
+        "jealous"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: eli"
+        },
+        {
+          "node_id": "insp-0037",
+          "context": "Shares keywords: eli"
+        },
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: pop"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0014",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0016",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0017",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: eli"
+        },
+        {
+          "node_id": "insp-0037",
+          "context": "Shares keywords: eli"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0033",
+        "insp-0037",
+        "insp-0008"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0011",
+      "type": "canonical",
+      "title": "Chloe",
+      "content": "Chloe: loyal, supportive, outsider_observer, genuine. Arc: ally_sidekick",
+      "source": {
+        "type": "character",
+        "id": "chloe"
+      },
+      "activation_keys": [
+        "supportive",
+        "loyal",
+        "chloe",
+        "arc",
+        "ally_sidekick",
+        "genuine",
+        "outsider_observer"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0014",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0016",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0017",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: chl"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0009",
+        "insp-0010"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0012",
+      "type": "canonical",
+      "title": "Alfred",
+      "content": "Alfred: popular, athletic, charming, unaware_of_vampires. Arc: love_interest_unaware",
+      "source": {
+        "type": "character",
+        "id": "alfred"
+      },
+      "activation_keys": [
+        "athletic",
+        "love_interest_unaware",
+        "charming",
+        "arc",
+        "popular",
+        "unaware_of_vampires",
+        "alfred"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: pop"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0016",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0017",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0023",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0024",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0025",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0026",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0031",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0034",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0035",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0036",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0037",
+          "context": "Shares keywords: alf"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0009",
+        "insp-0010"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0013",
+      "type": "canonical",
+      "title": "Desir\u00e9e Natt och Dag",
+      "content": "Desir\u00e9e Natt och Dag: elegant, distant, image_conscious, social_climber. Arc: distant_mother",
+      "source": {
+        "type": "character",
+        "id": "desiree_natt_och_dag"
+      },
+      "activation_keys": [
+        "desir\u00e9e_natt_och_dag",
+        "natt",
+        "image_conscious",
+        "desiree_natt_och_dag",
+        "arc",
+        "desir\u00e9e",
+        "distant_mother",
+        "social_climber",
+        "dag",
+        "distant",
+        "elegant"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: dag"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0033",
+        "insp-0008",
+        "insp-0009"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0014",
+      "type": "canonical",
+      "title": "Jacques Natt och Dag",
+      "content": "Jacques Natt och Dag: mysterious, charming, rebellious, alluring, uncle_figure. Arc: mysterious_uncle",
+      "source": {
+        "type": "character",
+        "id": "jacques_natt_och_dag"
+      },
+      "activation_keys": [
+        "jacques_natt_och_dag",
+        "rebellious",
+        "natt",
+        "alluring",
+        "mysterious_uncle",
+        "charming",
+        "arc",
+        "uncle_figure",
+        "dag",
+        "mysterious",
+        "jacques"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0033",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0027",
+          "context": "Shares keywords: jac"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0033",
+        "insp-0008",
+        "insp-0009"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0015",
+      "type": "canonical",
+      "title": "Eric",
+      "content": "Eric: nerdy, loyal, awkward, tech_savvy. Arc: sidekick_friend",
+      "source": {
+        "type": "character",
+        "id": "eric"
+      },
+      "activation_keys": [
+        "sidekick_friend",
+        "loyal",
+        "nerdy",
+        "eric",
+        "arc",
+        "tech_savvy",
+        "awkward"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: eri"
+        },
+        {
+          "node_id": "insp-0023",
+          "context": "Shares keywords: eri"
+        },
+        {
+          "node_id": "insp-0032",
+          "context": "Shares keywords: eri"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0009",
+        "insp-0010"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0016",
+      "type": "canonical",
+      "title": "Didde",
+      "content": "Didde: jock, simple, elise_follower. Arc: minor_character",
+      "source": {
+        "type": "character",
+        "id": "didde"
+      },
+      "activation_keys": [
+        "didde",
+        "jock",
+        "minor_character",
+        "simple",
+        "elise_follower",
+        "arc"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0030",
+          "context": "Shares keywords: did"
+        },
+        {
+          "node_id": "insp-0031",
+          "context": "Shares keywords: did"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0009",
+        "insp-0010"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0017",
+      "type": "canonical",
+      "title": "Felicia",
+      "content": "Felicia: follower, mean_girl, elise_lackey. Arc: minor_antagonist",
+      "source": {
+        "type": "character",
+        "id": "felicia"
+      },
+      "activation_keys": [
+        "elise_lackey",
+        "felicia",
+        "arc",
+        "follower",
+        "mean_girl",
+        "minor_antagonist"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: arc"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: arc"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0009",
+        "insp-0010"
+      ],
+      "creative_potential": 5,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0018",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-001",
+      "content": "Dialogue: Welcome back to the vampire channel Blood, Sweat, ...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-001"
+      },
+      "activation_keys": [
+        "channel",
+        "batgirl_3",
+        "sweat",
+        "vampire",
+        "dialogue",
+        "blood",
+        "back",
+        "alfred",
+        "welcome",
+        "batgirl_1"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: swe"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: swe"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0023",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0024",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0025",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0026",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0027",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0028",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0029",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0030",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0031",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0032",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0034",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0035",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0036",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0037",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0012",
+        "insp-0019",
+        "insp-0020"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0019",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-002",
+      "content": "Dialogue: Here it\u2019s not good grades that matter....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-002"
+      },
+      "activation_keys": [
+        "batgirl_3",
+        "here",
+        "that",
+        "chloe",
+        "it\u2019s",
+        "good",
+        "dialogue",
+        "matter",
+        "batgirl_1",
+        "grades"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0011",
+          "context": "Shares keywords: chl"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0023",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0024",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0025",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0026",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0027",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0028",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0029",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0030",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0031",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0032",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0034",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0035",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0036",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0037",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0011",
+        "insp-0018",
+        "insp-0020"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0020",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-003",
+      "content": "Dialogue: They get triggered by blood and sweat....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-003"
+      },
+      "activation_keys": [
+        "sweat",
+        "livia",
+        "eric",
+        "they",
+        "dialogue",
+        "triggered",
+        "principal",
+        "blood"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: eri"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: swe"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: swe"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0024",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0025",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0026",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0028",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0029",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0030",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0031",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0032",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0034",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0035",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0036",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0037",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0015",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0021",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-004",
+      "content": "Dialogue: Shit, seriously! I\u2019m gonna see if I can get a bett...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-004"
+      },
+      "activation_keys": [
+        "bett",
+        "gonna",
+        "seriously",
+        "kiara_natt_och_dag",
+        "dialogue",
+        "shit"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0024",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0025",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0026",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0028",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0030",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0034",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0036",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0022",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-005",
+      "content": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-005"
+      },
+      "activation_keys": [
+        "that\u2019s",
+        "batgirl_3",
+        "important",
+        "it\u2019s",
+        "with",
+        "dialogue",
+        "batgirl_2",
+        "stroke",
+        "fur",
+        "batgirl_1"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0023",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0028",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0018",
+        "insp-0019",
+        "insp-0020"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0023",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-006",
+      "content": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-006"
+      },
+      "activation_keys": [
+        "time",
+        "have",
+        "eric",
+        "dialogue",
+        "\u2013pick\u2019n\u2019mix",
+        "alfred",
+        "don\u2019t"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: hav"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: eri"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0012",
+        "insp-0015"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0024",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-007",
+      "content": "Dialogue: I\u2019m going to teach you everything I can, okay?...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-007"
+      },
+      "activation_keys": [
+        "okay",
+        "can",
+        "batgirl_3",
+        "going",
+        "dialogue",
+        "teach",
+        "everything",
+        "alfred",
+        "batgirl_1"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0012",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0025",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-008",
+      "content": "Dialogue: \u2013900\u2026 \u2013Blood and honor....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-008"
+      },
+      "activation_keys": [
+        "batgirl_3",
+        "\u2013blood",
+        "honor",
+        "dialogue",
+        "\u2013900\u2026",
+        "alfred",
+        "batgirl_1"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0012",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0026",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-009",
+      "content": "Dialogue: \u2013Well, technically. But I\u2019ve got the vamp kit. \u2013Oh...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-009"
+      },
+      "activation_keys": [
+        "kit",
+        "i\u2019ve",
+        "batgirl_3",
+        "dialogue",
+        "batgirl_1",
+        "\u2013well",
+        "technically",
+        "alfred",
+        "\u2013oh",
+        "vamp"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0012",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0027",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-010",
+      "content": "Dialogue: Where\u2019s Kiara? We can\u2019t have another accident, Jac...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-010"
+      },
+      "activation_keys": [
+        "jacques_natt_och_dag",
+        "jac",
+        "have",
+        "kiara_natt_och_dag",
+        "kiara",
+        "dialogue",
+        "can\u2019t",
+        "where\u2019s",
+        "accident",
+        "batgirl_1",
+        "another"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: hav"
+        },
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0014",
+          "context": "Shares keywords: jac"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0008",
+        "insp-0014"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0028",
+      "type": "canonical",
+      "title": "Beat: beat-s01e01-011",
+      "content": "Dialogue: Subtitles: Iyuno for SVT...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e01-011"
+      },
+      "activation_keys": [
+        "dialogue",
+        "subtitles",
+        "iyuno",
+        "svt"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0022",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0018",
+        "insp-0019",
+        "insp-0020"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0029",
+      "type": "canonical",
+      "title": "Beat: beat-s01e02-001",
+      "content": "Dialogue: Kiara, do you have your anti-trigger medication un...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e02-001"
+      },
+      "activation_keys": [
+        "mother",
+        "have",
+        "un",
+        "your",
+        "kiara_natt_och_dag",
+        "anti-trigger",
+        "dialogue",
+        "kiara",
+        "medication"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0001",
+          "context": "Shares keywords: hav"
+        },
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0001",
+        "insp-0008",
+        "insp-0018"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0030",
+      "type": "canonical",
+      "title": "Beat: beat-s01e02-002",
+      "content": "Dialogue: \u2013Yo! Hey, babes! \u2013Hi, Didde!...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e02-002"
+      },
+      "activation_keys": [
+        "\u2013yo",
+        "babes",
+        "didde",
+        "kevin",
+        "hey",
+        "\u2013hi",
+        "dialogue"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0016",
+          "context": "Shares keywords: did"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0016",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0031",
+      "type": "canonical",
+      "title": "Beat: beat-s01e02-003",
+      "content": "Dialogue: Unfortunately everyone gets to know you and you ge...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e02-003"
+      },
+      "activation_keys": [
+        "didde",
+        "mother",
+        "everyone",
+        "gets",
+        "know",
+        "dialogue",
+        "ge",
+        "unfortunately",
+        "alfred"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0016",
+          "context": "Shares keywords: did"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0012",
+        "insp-0016",
+        "insp-0018"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0032",
+      "type": "canonical",
+      "title": "Beat: beat-s01e03-001",
+      "content": "Dialogue: Oh, Kiara! Kiara! Kiara!...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e03-001"
+      },
+      "activation_keys": [
+        "mother",
+        "kiara_natt_och_dag",
+        "eric",
+        "kiara",
+        "dialogue"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0015",
+          "context": "Shares keywords: eri"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0015",
+        "insp-0018"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0033",
+      "type": "canonical",
+      "title": "Beat: beat-s01e03-002",
+      "content": "Dialogue: Okay. Welcome to Natt and Dag. Blood and honor....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e03-002"
+      },
+      "activation_keys": [
+        "okay",
+        "natt",
+        "alfred",
+        "lunch_lady",
+        "honor",
+        "dialogue",
+        "blood",
+        "elise",
+        "dag",
+        "welcome"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: eli"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: dag"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0009",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: eli"
+        },
+        {
+          "node_id": "insp-0013",
+          "context": "Shares keywords: dag"
+        },
+        {
+          "node_id": "insp-0014",
+          "context": "Shares keywords: dag"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0009",
+        "insp-0010"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0034",
+      "type": "canonical",
+      "title": "Beat: beat-s01e03-003",
+      "content": "Dialogue: \u2013Nice house. \u2013Thanks....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e03-003"
+      },
+      "activation_keys": [
+        "mother",
+        "house",
+        "dialogue",
+        "\u2013thanks",
+        "alfred",
+        "\u2013nice"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0012",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0035",
+      "type": "canonical",
+      "title": "Beat: beat-s01e03-004",
+      "content": "Dialogue: Absolutely. I show her around everywhere at school...",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e03-004"
+      },
+      "activation_keys": [
+        "show",
+        "mother",
+        "everywhere",
+        "kiara_natt_och_dag",
+        "dialogue",
+        "absolutely",
+        "around",
+        "alfred",
+        "school"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: kia"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0008",
+          "context": "Shares keywords: kia"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0008",
+        "insp-0012",
+        "insp-0018"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0036",
+      "type": "canonical",
+      "title": "Beat: beat-s01e03-005",
+      "content": "Dialogue: That went well....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e03-005"
+      },
+      "activation_keys": [
+        "batgirl_3",
+        "that",
+        "went",
+        "dialogue",
+        "well",
+        "alfred",
+        "batgirl_1"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0021",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [],
+      "cascade_triggers": [
+        "insp-0012",
+        "insp-0018",
+        "insp-0019"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    },
+    {
+      "node_id": "insp-0037",
+      "type": "canonical",
+      "title": "Beat: beat-s01e03-006",
+      "content": "Dialogue: His whole hand was bloody....",
+      "source": {
+        "type": "beat",
+        "id": "beat-s01e03-006"
+      },
+      "activation_keys": [
+        "alfred",
+        "hand",
+        "whole",
+        "dialogue",
+        "adam",
+        "elise",
+        "bloody"
+      ],
+      "links_to": [
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: eli"
+        },
+        {
+          "node_id": "insp-0012",
+          "context": "Shares keywords: alf"
+        },
+        {
+          "node_id": "insp-0018",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0019",
+          "context": "Shares keywords: dia"
+        },
+        {
+          "node_id": "insp-0020",
+          "context": "Shares keywords: dia"
+        }
+      ],
+      "linked_from": [
+        {
+          "node_id": "insp-0010",
+          "context": "Shares keywords: eli"
+        }
+      ],
+      "cascade_triggers": [
+        "insp-0010",
+        "insp-0012",
+        "insp-0018"
+      ],
+      "creative_potential": 3,
+      "is_discovered": true
+    }
+  ],
+  "links": [
+    {
+      "from_node": "insp-0001",
+      "to_node": "insp-0003",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0001",
+      "to_node": "insp-0004",
+      "context": "Shares keywords: sus"
+    },
+    {
+      "from_node": "insp-0001",
+      "to_node": "insp-0005",
+      "context": "Shares keywords: hum"
+    },
+    {
+      "from_node": "insp-0001",
+      "to_node": "insp-0006",
+      "context": "Shares keywords: int"
+    },
+    {
+      "from_node": "insp-0001",
+      "to_node": "insp-0007",
+      "context": "Shares keywords: int"
+    },
+    {
+      "from_node": "insp-0002",
+      "to_node": "insp-0004",
+      "context": "Shares keywords: fee"
+    },
+    {
+      "from_node": "insp-0002",
+      "to_node": "insp-0006",
+      "context": "Shares keywords: fam"
+    },
+    {
+      "from_node": "insp-0003",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0003",
+      "to_node": "insp-0004",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0003",
+      "to_node": "insp-0006",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0003",
+      "to_node": "insp-0007",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0004",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: sus"
+    },
+    {
+      "from_node": "insp-0004",
+      "to_node": "insp-0002",
+      "context": "Shares keywords: fee"
+    },
+    {
+      "from_node": "insp-0004",
+      "to_node": "insp-0003",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0004",
+      "to_node": "insp-0006",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0004",
+      "to_node": "insp-0007",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0005",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: hum"
+    },
+    {
+      "from_node": "insp-0005",
+      "to_node": "insp-0006",
+      "context": "Shares keywords: hum"
+    },
+    {
+      "from_node": "insp-0006",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: int"
+    },
+    {
+      "from_node": "insp-0006",
+      "to_node": "insp-0002",
+      "context": "Shares keywords: fam"
+    },
+    {
+      "from_node": "insp-0006",
+      "to_node": "insp-0003",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0006",
+      "to_node": "insp-0004",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0006",
+      "to_node": "insp-0005",
+      "context": "Shares keywords: hum"
+    },
+    {
+      "from_node": "insp-0007",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: int"
+    },
+    {
+      "from_node": "insp-0007",
+      "to_node": "insp-0003",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0007",
+      "to_node": "insp-0004",
+      "context": "Shares keywords: ser"
+    },
+    {
+      "from_node": "insp-0007",
+      "to_node": "insp-0006",
+      "context": "Shares keywords: int"
+    },
+    {
+      "from_node": "insp-0008",
+      "to_node": "insp-0033",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0008",
+      "to_node": "insp-0035",
+      "context": "Shares keywords: kia"
+    },
+    {
+      "from_node": "insp-0008",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0008",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0008",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0009",
+      "to_node": "insp-0033",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0009",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0009",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0009",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0009",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0010",
+      "to_node": "insp-0033",
+      "context": "Shares keywords: eli"
+    },
+    {
+      "from_node": "insp-0010",
+      "to_node": "insp-0037",
+      "context": "Shares keywords: eli"
+    },
+    {
+      "from_node": "insp-0010",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0010",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0010",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0011",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0011",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0011",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0011",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0011",
+      "to_node": "insp-0013",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0012",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0012",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0012",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: pop"
+    },
+    {
+      "from_node": "insp-0012",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0012",
+      "to_node": "insp-0013",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0013",
+      "to_node": "insp-0033",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0013",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0013",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0013",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0013",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0014",
+      "to_node": "insp-0033",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0014",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0014",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0014",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0014",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0015",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0015",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0015",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0015",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0015",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0016",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0016",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0016",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0016",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0016",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0017",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0017",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0017",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0017",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0017",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: arc"
+    },
+    {
+      "from_node": "insp-0018",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0018",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0018",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: swe"
+    },
+    {
+      "from_node": "insp-0018",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0018",
+      "to_node": "insp-0022",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0019",
+      "to_node": "insp-0011",
+      "context": "Shares keywords: chl"
+    },
+    {
+      "from_node": "insp-0019",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0019",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0019",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0019",
+      "to_node": "insp-0022",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0020",
+      "to_node": "insp-0015",
+      "context": "Shares keywords: eri"
+    },
+    {
+      "from_node": "insp-0020",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: swe"
+    },
+    {
+      "from_node": "insp-0020",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0020",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0020",
+      "to_node": "insp-0022",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0021",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: kia"
+    },
+    {
+      "from_node": "insp-0021",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0021",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0021",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0021",
+      "to_node": "insp-0022",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0022",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0022",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0022",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0022",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0022",
+      "to_node": "insp-0023",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0023",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: hav"
+    },
+    {
+      "from_node": "insp-0023",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0023",
+      "to_node": "insp-0015",
+      "context": "Shares keywords: eri"
+    },
+    {
+      "from_node": "insp-0023",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0023",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0024",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0024",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0024",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0024",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0024",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0025",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0025",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0025",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0025",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0025",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0026",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0026",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0026",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0026",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0026",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0027",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: hav"
+    },
+    {
+      "from_node": "insp-0027",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: kia"
+    },
+    {
+      "from_node": "insp-0027",
+      "to_node": "insp-0014",
+      "context": "Shares keywords: jac"
+    },
+    {
+      "from_node": "insp-0027",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0027",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0028",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0028",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0028",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0028",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0028",
+      "to_node": "insp-0022",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0029",
+      "to_node": "insp-0001",
+      "context": "Shares keywords: hav"
+    },
+    {
+      "from_node": "insp-0029",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: kia"
+    },
+    {
+      "from_node": "insp-0029",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0029",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0029",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0030",
+      "to_node": "insp-0016",
+      "context": "Shares keywords: did"
+    },
+    {
+      "from_node": "insp-0030",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0030",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0030",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0030",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0031",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0031",
+      "to_node": "insp-0016",
+      "context": "Shares keywords: did"
+    },
+    {
+      "from_node": "insp-0031",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0031",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0031",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0032",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: kia"
+    },
+    {
+      "from_node": "insp-0032",
+      "to_node": "insp-0015",
+      "context": "Shares keywords: eri"
+    },
+    {
+      "from_node": "insp-0032",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0032",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0032",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0033",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0033",
+      "to_node": "insp-0009",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0033",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: eli"
+    },
+    {
+      "from_node": "insp-0033",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0033",
+      "to_node": "insp-0013",
+      "context": "Shares keywords: dag"
+    },
+    {
+      "from_node": "insp-0034",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0034",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0034",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0034",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0034",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0035",
+      "to_node": "insp-0008",
+      "context": "Shares keywords: kia"
+    },
+    {
+      "from_node": "insp-0035",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0035",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0035",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0035",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0036",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0036",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0036",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0036",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0036",
+      "to_node": "insp-0021",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0037",
+      "to_node": "insp-0010",
+      "context": "Shares keywords: eli"
+    },
+    {
+      "from_node": "insp-0037",
+      "to_node": "insp-0012",
+      "context": "Shares keywords: alf"
+    },
+    {
+      "from_node": "insp-0037",
+      "to_node": "insp-0018",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0037",
+      "to_node": "insp-0019",
+      "context": "Shares keywords: dia"
+    },
+    {
+      "from_node": "insp-0037",
+      "to_node": "insp-0020",
+      "context": "Shares keywords: dia"
+    }
+  ]
+}
