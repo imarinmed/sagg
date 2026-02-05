@@ -1,22 +1,61 @@
 id: blood_bond
 name: The Blood Bond
 category: supernatural
+short_description: "A mystical connection formed through blood exchange, creating unbreakable ties"
+related_characters:
+  - saga
+  - boris
+  - vera
+media_urls: []
 
 canonical:
-  description: "A mystical connection formed through blood exchange between vampires. The exact nature is not fully explored in the series."
+  description: |
+    A mystical connection formed through blood exchange between vampires. The exact nature is not
+    fully explored in the series, but hints suggest deep emotional and possibly telepathic links
+    form between bonded parties.
+    
+    Blood bonds appear to transcend ordinary relationships, creating connections that persist
+    across centuries and can only be severed by death—and perhaps not even then. The bond
+    carries obligations, creating a web of loyalty and dependency that structures vampire society.
   traits:
     - blood_exchange_required
     - mystical_connection
     - familial_implications
-  weaknesses: []
-  abilities: []
+    - emotional_resonance
+    - telepathic_potential
+    - permanent_link
+  weaknesses:
+    - vulnerability_through_bond_partner
+    - emotional_dependence
+  abilities:
+    - sense_bonded_partner_location
+    - share_emotions
+    - enhanced_trust
+  significance: "The fundamental building block of vampire society and relationships"
   source_episodes:
     - s01e03
     - s01e06
 
 adaptation_expansion:
-  dark_variant: ""
-  mechanics: ""
-  erotic_implications: ""
-  horror_elements: []
-  taboo_potential: ""
+  dark_variant: |
+    In the dark adaptation, blood bonds become intensely possessive. The bonded can feel each
+    other's pleasure and pain, creating opportunities for both exquisite shared experiences
+    and cruel manipulations. Breaking a bond is not just difficult—it's psychologically devastating.
+  mechanics: |
+    Three exchanges create a partial bond. Seven exchanges create a full bond. Full bonds
+    allow emotional and sensory sharing. The older vampire in a bond typically has more
+    control over the connection, able to send sensations while blocking reception.
+  erotic_implications: |
+    Blood bonds transform intimacy into a shared experience. When bonded vampires feed from
+    each other during sex, both feel the pleasure of giving and receiving. This creates
+    unprecedented levels of connection—and vulnerability. Some vampires become addicted
+    to bonded feeding, unable to find satisfaction in ordinary encounters.
+  horror_elements:
+    - loss_of_emotional_autonomy
+    - psychological_dependency
+    - exploitation_potential
+    - death_of_bonded_causes_madness
+  taboo_potential: |
+    Blood bonds blur the lines of individual identity. When you can feel your partner's
+    desires as your own, where does consent begin? The power dynamics in bonds between
+    vampires of different ages raise troubling questions about manipulation and control.

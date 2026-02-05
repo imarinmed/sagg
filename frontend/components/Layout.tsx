@@ -6,9 +6,9 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-[var(--color-bg-primary)]">
+    <div className="min-h-screen bg-transparent">
       <Navigation />
-      <main className="w-full">
+      <main className="relative z-10 w-full pt-24 sm:pt-28 pointer-events-auto">
         {children}
       </main>
     </div>

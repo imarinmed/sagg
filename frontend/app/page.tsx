@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, MouseEvent } from "react"
+import { useState, useRef, MouseEvent, PointerEvent } from "react"
 import { NavCard } from "@/components/GlassCard"
 
 interface Poster {
@@ -21,8 +21,11 @@ function PosterCard({ poster, isMain = false }: PosterCardProps) {
   const [transform, setTransform] = useState({ rotateX: 0, rotateY: 0, scale: 1 })
   const [shine, setShine] = useState({ x: 50, y: 50, opacity: 0 })
   const [isHovered, setIsHovered] = useState(false)
+  const [debugHit, setDebugHit] = useState({ active: false, x: 0, y: 0 })
 
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
+  const handlePointerMove = (
+    e: PointerEvent<HTMLDivElement> | MouseEvent<HTMLDivElement>
+  ) => {
     if (!cardRef.current) return
 
     const rect = cardRef.current.getBoundingClientRect()
@@ -31,31 +34,47 @@ function PosterCard({ poster, isMain = false }: PosterCardProps) {
     const centerX = rect.width / 2
     const centerY = rect.height / 2
 
-    const rotateX = ((y - centerY) / centerY) * -8
-    const rotateY = ((x - centerX) / centerX) * 8
+    const rotateX = ((y - centerY) / centerY) * -16
+    const rotateY = ((x - centerX) / centerX) * 16
 
-    setTransform({ rotateX, rotateY, scale: 1 })
+    setTransform({ rotateX, rotateY, scale: isMain ? 1.08 : 1.05 })
+    setIsHovered(true)
+    setDebugHit({ active: true, x: Math.round(x), y: Math.round(y) })
 
     const shineX = (x / rect.width) * 100
     const shineY = (y / rect.height) * 100
-    setShine({ x: shineX, y: shineY, opacity: 0.5 })
+    setShine({ x: shineX, y: shineY, opacity: 0.55 })
   }
 
-  const handleMouseLeave = () => {
+  const handlePointerLeave = () => {
     setTransform({ rotateX: 0, rotateY: 0, scale: 1 })
     setShine({ x: 50, y: 50, opacity: 0 })
     setIsHovered(false)
+    setDebugHit({ active: false, x: 0, y: 0 })
   }
 
-  const handleMouseEnter = () => {
+  const handlePointerEnter = () => {
     setIsHovered(true)
   }
 
   return (
-    <div
-      className="relative group cursor-pointer"
-      style={{ perspective: "1200px" }}
-    >
+      <div
+        ref={cardRef}
+        className="relative group cursor-pointer z-10 pointer-events-auto"
+        style={{ perspective: "1400px", transformStyle: "preserve-3d" }}
+        onPointerMoveCapture={handlePointerMove}
+        onPointerMove={handlePointerMove}
+        onPointerLeave={handlePointerLeave}
+        onPointerEnter={handlePointerEnter}
+        onMouseMove={handlePointerMove}
+        onMouseLeave={handlePointerLeave}
+        onMouseEnter={handlePointerEnter}
+      >
+        {debugHit.active && (
+          <div className="absolute -top-6 left-0 z-20 px-2 py-1 text-[10px] rounded bg-[rgba(0,0,0,0.7)] text-white pointer-events-none">
+            hover {debugHit.x},{debugHit.y}
+          </div>
+        )}
       {/* Cast Shadow on Background */}
       <div
         className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[90%] h-12 rounded-[100%] transition-all duration-300 pointer-events-none"
@@ -74,28 +93,39 @@ function PosterCard({ poster, isMain = false }: PosterCardProps) {
       />
 
       <div
-        ref={cardRef}
         className="relative transition-all duration-300 ease-out"
         style={{
           transform: `
             rotateX(${transform.rotateX}deg)
             rotateY(${transform.rotateY}deg)
             scale(${transform.scale})
-            translateZ(${isHovered ? "30px" : "0px"})
+            translateZ(${isHovered ? "90px" : "0px"})
           `,
           transformStyle: "preserve-3d",
+          willChange: "transform",
         }}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-        onMouseEnter={handleMouseEnter}
       >
-        <div className="relative overflow-hidden rounded-lg shadow-2xl">
-          <div className={`relative overflow-hidden ${isMain ? "aspect-[2/3]" : "aspect-[2/3]"}`}>
-            <img
-              src={poster.src}
-              alt={poster.alt}
-              className="w-full h-full object-cover"
-            />
+          <div className="relative overflow-hidden rounded-lg shadow-2xl">
+            <div
+              className={`relative overflow-hidden ${isMain ? "aspect-[2/3]" : "aspect-[2/3]"}`}
+              style={{ transformStyle: "preserve-3d" }}
+              onPointerMove={handlePointerMove}
+              onPointerEnter={handlePointerEnter}
+              onPointerLeave={handlePointerLeave}
+              onMouseMove={handlePointerMove}
+              onMouseEnter={handlePointerEnter}
+              onMouseLeave={handlePointerLeave}
+            >
+              <img
+                src={poster.src}
+                alt={poster.alt}
+                className="w-full h-full object-cover"
+                style={{
+                  transform: isHovered ? "scale(1.05)" : "scale(1)",
+                  transition: "transform 300ms ease",
+                  backfaceVisibility: "hidden",
+                }}
+              />
 
             <div
               className="absolute inset-0 pointer-events-none transition-opacity duration-300"
@@ -103,8 +133,8 @@ function PosterCard({ poster, isMain = false }: PosterCardProps) {
                 background: `
                   radial-gradient(
                     circle at ${shine.x}% ${shine.y}%,
-                    rgba(255, 255, 255, ${shine.opacity * 0.4}) 0%,
-                    rgba(255, 255, 255, 0) 60%
+                    rgba(255, 255, 255, ${shine.opacity}) 0%,
+                    rgba(255, 255, 255, 0) 65%
                   )
                 `,
                 mixBlendMode: "soft-light",
@@ -135,8 +165,8 @@ function PosterCard({ poster, isMain = false }: PosterCardProps) {
                 background: `
                   radial-gradient(
                     ellipse at center,
-                    transparent 0%,
-                    rgba(0, 0, 0, 0.5) 100%
+                    rgba(0, 0, 0, 0.15) 0%,
+                    rgba(0, 0, 0, 0.6) 100%
                   )
                 `,
               }}
@@ -198,6 +228,7 @@ function PosterCard({ poster, isMain = false }: PosterCardProps) {
 }
 
 export default function Home() {
+
   const mainPoster: Poster = {
     id: "main",
     src: "/assets/posters/poster-main.png",
@@ -226,38 +257,7 @@ export default function Home() {
   return (
     <div className="w-full pt-24">
       {/* Full-Width Poster Showcase */}
-      <section className="relative min-h-[calc(100vh-6rem)] w-full flex items-center overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/assets/backgrounds/background.texture.png"
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: `
-                radial-gradient(
-                  ellipse at 20% 50%,
-                  rgba(139, 0, 0, 0.4) 0%,
-                  transparent 60%
-                ),
-                radial-gradient(
-                  ellipse at 80% 50%,
-                  rgba(212, 175, 55, 0.15) 0%,
-                  transparent 60%
-                ),
-                linear-gradient(
-                  to bottom,
-                  rgba(8, 8, 8, 0.4) 0%,
-                  rgba(8, 8, 8, 0.8) 100%
-                )
-              `,
-            }}
-          />
-        </div>
-
+      <section className="relative min-h-[calc(100vh-6rem)] w-full flex items-center pointer-events-auto">
         {/* Content Container */}
         <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-12">
           {/* Header */}

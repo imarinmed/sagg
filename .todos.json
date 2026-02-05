@@ -1,0 +1,70 @@
+{
+  "todos": [
+    {
+      "id": "task-12",
+      "content": "Task 12: Redesign Episode Detail Page - integrate all Wave 2 components",
+      "status": "completed",
+      "priority": "high"
+    },
+    {
+      "id": "wave-2-complete",
+      "content": "Wave 2: Episode Section Premium UI (Tasks 7-12) - COMPLETE",
+      "status": "completed",
+      "priority": "high"
+    },
+    {
+      "id": "wave-3",
+      "content": "Wave 3: Character Section Premium UI (Tasks 13-19)",
+      "status": "in_progress",
+      "priority": "high"
+    },
+    {
+      "id": "task-13",
+      "content": "Task 13: Create CharacterHero component",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "task-14",
+      "content": "Task 14: Create RelationshipConstellation (D3.js)",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "task-15",
+      "content": "Task 15: Create CharacterEvolutionTimeline",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "task-16",
+      "content": "Task 16: Create EpisodePresenceHeatmap",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "task-17",
+      "content": "Task 17: Create KinkProfileVisualization",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "task-18",
+      "content": "Task 18: Create QuoteCarousel",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "task-19",
+      "content": "Task 19: Redesign character detail page",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "wave-4",
+      "content": "Wave 4: Mythos Section + Integration (Tasks 20-25)",
+      "status": "pending",
+      "priority": "medium"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+================================================================================
+BLOD, SVETT, TÅRAR - VIDEO ANALYSIS ENHANCEMENT REPORT
+================================================================================
+
+Total Episodes Analyzed: 7
+
+--------------------------------------------------------------------------------
+OVERALL STATISTICS
+--------------------------------------------------------------------------------
+Total Moments Analyzed: 1698
+Suggestive/High-Intensity Scenes: 219
+Unique Characters Detected: 16
+Locations Identified: 5
+
+--------------------------------------------------------------------------------
+CONTENT TYPE DISTRIBUTION (All Episodes)
+--------------------------------------------------------------------------------
+  dialogue                      : 1104 ( 65.0%)
+  party                         :   77 (  4.5%)
+  vampire_lore                  :   74 (  4.4%)
+  dance                         :   66 (  3.9%)
+  dark_desire                   :   62 (  3.7%)
+  dialogue_exposition           :   57 (  3.4%)
+  dialogue_confrontational      :   44 (  2.6%)
+  hierarchy                     :   39 (  2.3%)
+  vampire_feeding               :   39 (  2.3%)
+  dialogue_emotional            :   38 (  2.2%)
+  dialogue_romantic             :   30 (  1.8%)
+  social_drama                  :   14 (  0.8%)
+  confrontation                 :   12 (  0.7%)
+  transformation                :   12 (  0.7%)
+  taboo                         :   12 (  0.7%)
+  power_dynamic                 :    9 (  0.5%)
+  physical_intimacy             :    7 (  0.4%)
+  training                      :    2 (  0.1%)
+
+--------------------------------------------------------------------------------
+LOCATIONS DETECTED
+--------------------------------------------------------------------------------
+  - bedroom
+  - natt_och_dag_mansion
+  - outdoors
+  - party_venue
+  - school
+
+--------------------------------------------------------------------------------
+CHARACTERS DETECTED
+--------------------------------------------------------------------------------
+  - adam
+  - alfred
+  - chloe
+  - desiree_natt_och_dag
+  - didde
+  - elise
+  - eric
+  - felicia
+  - jacques_natt_och_dag
+  - jonas
+  - kevin
+  - kiara_natt_och_dag
+  - kylie
+  - livia
+  - principal
+  - siri
+
+--------------------------------------------------------------------------------
+PER-EPISODE BREAKDOWN
+--------------------------------------------------------------------------------
+
+
+S01E01
+----------------------------------------
+  Title: S01E01 - Kallblodig skolstart [Blod svett tårar]
+  Duration: 0:17:35
+  Total Moments: 277
+  Suggestive Scenes: 48
+  Characters: 9
+  Locations: natt_och_dag_mansion, outdoors, party_venue, school
+  Top Content Types:
+    - dialogue: 153
+    - dialogue_exposition: 21
+    - vampire_lore: 20
+    - dance: 20
+    - party: 14
+  Top Character Interactions:
+    - desiree_natt_och_dag-kiara_natt_och_dag: 4 scenes
+
+S01E02
+----------------------------------------
+  Title: S01E02 - Audition till Batgirls [Blod svett tårar]
+  Duration: 0:20:54
+  Total Moments: 62
+  Suggestive Scenes: 5
+  Characters: 3
+  Locations: outdoors, school
+  Top Content Types:
+    - dialogue: 48
+    - hierarchy: 3
+    - dialogue_exposition: 2
+    - taboo: 2
+    - dialogue_romantic: 2
+
+S01E03
+----------------------------------------
+  Title: S01E03 - Lunch hos Natt och Dag [Blod svett tårar]
+  Duration: 0:23:15
+  Total Moments: 323
+  Suggestive Scenes: 39
+  Characters: 8
+  Locations: bedroom, natt_och_dag_mansion, outdoors, party_venue, school
+  Top Content Types:
+    - dialogue: 224
+    - dark_desire: 17
+    - vampire_lore: 13
+    - hierarchy: 12
+    - party: 12
+  Top Character Interactions:
+    - elise-eric: 2 scenes
+    - alfred-kiara_natt_och_dag: 2 scenes
+
+S01E04
+----------------------------------------
+  Title: S01E04 - En oväntad fest [Blod svett tårar]
+  Duration: 0:20:51
+  Total Moments: 270
+  Suggestive Scenes: 36
+  Characters: 8
+  Locations: natt_och_dag_mansion, outdoors, party_venue, school
+  Top Content Types:
+    - dialogue: 178
+    - dark_desire: 11
+    - party: 11
+    - hierarchy: 9
+    - vampire_lore: 9
+
+S01E05
+----------------------------------------
+  Title: S01E05 - Nödvamp och nördar [Blod svett tårar]
+  Duration: 0:23:14
+  Total Moments: 277
+  Suggestive Scenes: 29
+  Characters: 11
+  Locations: natt_och_dag_mansion, outdoors, party_venue
+  Top Content Types:
+    - dialogue: 201
+    - party: 23
+    - dance: 10
+    - dialogue_confrontational: 9
+    - dark_desire: 5
+  Top Character Interactions:
+    - elise-eric: 4 scenes
+
+S01E06
+----------------------------------------
+  Title: S01E06 - Blåljus och blod [Blod svett tårar]
+  Duration: 0:21:54
+  Total Moments: 272
+  Suggestive Scenes: 39
+  Characters: 9
+  Locations: bedroom, outdoors, party_venue, school
+  Top Content Types:
+    - dialogue: 166
+    - vampire_lore: 20
+    - vampire_feeding: 11
+    - dialogue_exposition: 11
+    - dialogue_emotional: 11
+
+S01E07
+----------------------------------------
+  Title: S01E07 - Försonas i en kyss [Blod svett tårar]
+  Duration: 0:17:31
+  Total Moments: 217
+  Suggestive Scenes: 23
+  Characters: 12
+  Locations: outdoors, party_venue, school
+  Top Content Types:
+    - dialogue: 134
+    - dialogue_confrontational: 13
+    - dark_desire: 9
+    - vampire_lore: 9
+    - dialogue_exposition: 9
+
+================================================================================
+END OF REPORT
+================================================================================

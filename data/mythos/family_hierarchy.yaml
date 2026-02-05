@@ -1,24 +1,66 @@
 id: family_hierarchy
 name: Vampire Family Hierarchy
 category: society
+short_description: "The rigid social structure that governs vampire families and lineages"
+related_characters:
+  - boris
+  - vera
+  - agnes
+  - saga
+media_urls: []
 
 canonical:
-  description: "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family exemplifies this with clear patriarchal structure and expectations for their children."
+  description: |
+    Vampire families maintain strict hierarchies and traditions. The Natt och Dag family
+    exemplifies this with clear patriarchal structure and expectations for their children.
+    Family position determines everything from feeding rights to mate selection.
+    
+    The hierarchy extends beyond blood relations to include turned vampires, who owe
+    allegiance to their sires, and human servants who serve the family. Position in the
+    hierarchy is determined by age, power, and the prestige of one's lineage.
   traits:
     - patriarchal_structure
     - traditional_values
     - strict_upbringing
     - arranged_connections
-  weaknesses: []
-  abilities: []
+    - lineage_importance
+    - obedience_expectations
+  weaknesses:
+    - rigid_structure_limits_adaptation
+    - internal_politics
+  abilities:
+    - unified_family_resources
+    - generational_knowledge_transfer
+  significance: "Defines the social order that all vampires must navigate"
   source_episodes:
     - s01e01
     - s01e03
     - s01e06
 
 adaptation_expansion:
-  dark_variant: ""
-  mechanics: ""
-  erotic_implications: ""
-  horror_elements: []
-  taboo_potential: ""
+  dark_variant: |
+    In the dark adaptation, family hierarchy takes on totalitarian dimensions. The head
+    of family has absolute authority over members' lives, including rights to feed from
+    them, arrange their marriages, and discipline them physically. Rebellion is rare
+    because it typically ends in death or exile—which for a vampire often means the same thing.
+  mechanics: |
+    Hierarchy follows strict rules: sire over progeny, elder over younger, direct bloodline
+    over turned. Within the same generation, power determines rank. Challenges to hierarchy
+    must be formal, witnessed, and often deadly. The head of family can command any member
+    through the blood bond, making resistance physiologically difficult.
+  erotic_implications: |
+    Family hierarchy extends into intimate matters. Arranged matings serve political purposes,
+    and young vampires may be forbidden from pursuing attractions that don't benefit the family.
+    In some families, elders claim "rights" to sample progeny before allowing them to mate.
+    The incestuous undertones of vampire families—where one might mate with someone their
+    sire once fed from or bedded—are rarely discussed but ever-present.
+  horror_elements:
+    - loss_of_bodily_autonomy
+    - arranged_matings_without_consent
+    - punishment_through_blood_bond
+    - familial_abuse_normalized
+  taboo_potential: |
+    The family structure creates power imbalances that would be recognized as abusive
+    in human contexts. Young vampires have little recourse against elders' demands.
+    The conflation of family, feeding, and sexuality creates situations where boundaries
+    become impossible to maintain or even identify.

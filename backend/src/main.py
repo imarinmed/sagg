@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
 from .api import episodes, characters, mythos, graph, search
 
 app = FastAPI(
@@ -16,6 +18,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount static files for video screenshots
+screenshots_dir = Path(__file__).parent.parent.parent / "data" / "video_analysis" / "screenshots"
+if screenshots_dir.exists():
+    app.mount(
+        "/static/screenshots", StaticFiles(directory=str(screenshots_dir)), name="screenshots"
+    )
 
 # Include routers
 app.include_router(episodes.router)

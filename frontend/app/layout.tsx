@@ -49,7 +49,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} antialiased bg-texture`}>
+      <body className={`${inter.className} antialiased bg-pattern bg-overlay`}>
         <Layout>{children}</Layout>
       </body>
     </html>

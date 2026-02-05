@@ -1,0 +1,5641 @@
+{
+  "total_presences": 98,
+  "total_episodes": 7,
+  "presences": [
+    {
+      "id": "s01e01_teacher_math",
+      "episode_id": "s01e01",
+      "character_id": "teacher_math",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:00:35",
+      "last_appearance_timestamp": "0:10:36",
+      "key_moments": [
+        {
+          "timestamp": "0:00:35",
+          "timestamp_seconds": 35.08,
+          "description": "Here come the number-one party planners, with an IQ roughly on the same level.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:00:47",
+          "timestamp_seconds": 47.42,
+          "description": "–Hey, Alfred. –Yo, Mr. Beast.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.28,
+          "description": "The ones you just sat with, that’s the evil side of the dance crew.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:12",
+          "timestamp_seconds": 612.44,
+          "description": "Chloe is mad because she thinks she’s the leader of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:19",
+          "timestamp_seconds": 619.3,
+          "description": "She’s the leader of the good side, and that’s why Chloe is mad.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:21",
+          "timestamp_seconds": 621.46,
+          "description": "They’re in the dance program.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.44,
+          "description": "and who doesn’t get to be in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:36",
+          "timestamp_seconds": 636.0799999999999,
+          "description": "Yeah, he’s Mr. Popular these days.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 1.75
+    },
+    {
+      "id": "s01e01_alfred",
+      "episode_id": "s01e01",
+      "character_id": "alfred",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 90,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:00:35",
+      "last_appearance_timestamp": "0:14:30",
+      "key_moments": [
+        {
+          "timestamp": "0:00:35",
+          "timestamp_seconds": 35.08,
+          "description": "Here come the number-one party planners, with an IQ roughly on the same level.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:00:47",
+          "timestamp_seconds": 47.42,
+          "description": "–Hey, Alfred. –Yo, Mr. Beast.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:40",
+          "timestamp_seconds": 580.8199999999999,
+          "description": "Alfred Carlsson, influencer, vampire researcher.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:59",
+          "timestamp_seconds": 599.48,
+          "description": "–Yeah, you get it –Hi, Alfred.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.28,
+          "description": "The ones you just sat with, that’s the evil side of the dance crew.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:12",
+          "timestamp_seconds": 612.44,
+          "description": "Chloe is mad because she thinks she’s the leader of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:19",
+          "timestamp_seconds": 619.3,
+          "description": "She’s the leader of the good side, and that’s why Chloe is mad.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:21",
+          "timestamp_seconds": 621.46,
+          "description": "They’re in the dance program.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.44,
+          "description": "and who doesn’t get to be in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:25",
+          "timestamp_seconds": 745.4000000000001,
+          "description": "I want to dance. What do I have to do to join?",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 30,
+      "avg_intensity": 1.87
+    },
+    {
+      "id": "s01e01_batgirl_1",
+      "episode_id": "s01e01",
+      "character_id": "batgirl_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 117,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:37",
+      "last_appearance_timestamp": "0:16:17",
+      "key_moments": [
+        {
+          "timestamp": "0:01:37",
+          "timestamp_seconds": 97.96000000000001,
+          "description": "How’s the vampire going to manage among bandy guys and dance girls?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:51",
+          "timestamp_seconds": 111.9,
+          "description": "They call themselves Batgirls. Ironically, since they love high UV.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:46",
+          "timestamp_seconds": 406.08,
+          "description": "As leader of the dance team Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:49",
+          "timestamp_seconds": 409.36,
+          "description": "you traditionally handle the dance performance at the masquerade.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:05",
+          "timestamp_seconds": 425.12,
+          "description": "for the Batgirls finale show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:09",
+          "timestamp_seconds": 429.79999999999995,
+          "description": "The school board has decided you need to hold an audition.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:13",
+          "timestamp_seconds": 433.6,
+          "description": "An open audition where everyone gets the chance to perform.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.0,
+          "description": "I know someone who’s going to be pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:19",
+          "timestamp_seconds": 439.36,
+          "description": "Audition?! Fuck that!",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.04,
+          "description": "Batgirls aren’t just any damn bottom scrap.",
+          "content_type": "dance",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 39,
+      "avg_intensity": 2.1
+    },
+    {
+      "id": "s01e01_batgirl_3",
+      "episode_id": "s01e01",
+      "character_id": "batgirl_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 114,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:37",
+      "last_appearance_timestamp": "0:14:30",
+      "key_moments": [
+        {
+          "timestamp": "0:01:37",
+          "timestamp_seconds": 97.96000000000001,
+          "description": "How’s the vampire going to manage among bandy guys and dance girls?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:51",
+          "timestamp_seconds": 111.9,
+          "description": "They call themselves Batgirls. Ironically, since they love high UV.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:46",
+          "timestamp_seconds": 406.08,
+          "description": "As leader of the dance team Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:49",
+          "timestamp_seconds": 409.36,
+          "description": "you traditionally handle the dance performance at the masquerade.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:05",
+          "timestamp_seconds": 425.12,
+          "description": "for the Batgirls finale show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:09",
+          "timestamp_seconds": 429.79999999999995,
+          "description": "The school board has decided you need to hold an audition.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:13",
+          "timestamp_seconds": 433.6,
+          "description": "An open audition where everyone gets the chance to perform.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.0,
+          "description": "I know someone who’s going to be pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:19",
+          "timestamp_seconds": 439.36,
+          "description": "Audition?! Fuck that!",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.04,
+          "description": "Batgirls aren’t just any damn bottom scrap.",
+          "content_type": "dance",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 38,
+      "avg_intensity": 2.11
+    },
+    {
+      "id": "s01e01_party_student_2",
+      "episode_id": "s01e01",
+      "character_id": "party_student_2",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:01:51",
+      "last_appearance_timestamp": "0:02:13",
+      "key_moments": [
+        {
+          "timestamp": "0:01:51",
+          "timestamp_seconds": 111.9,
+          "description": "They call themselves Batgirls. Ironically, since they love high UV.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:13",
+          "timestamp_seconds": 133.42000000000002,
+          "description": "First I’d like to introduce your new classmate Kiara.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e01_chloe",
+      "episode_id": "s01e01",
+      "character_id": "chloe",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 21,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:01:51",
+      "last_appearance_timestamp": "0:10:25",
+      "key_moments": [
+        {
+          "timestamp": "0:01:51",
+          "timestamp_seconds": 111.9,
+          "description": "They call themselves Batgirls. Ironically, since they love high UV.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:08",
+          "timestamp_seconds": 128.36,
+          "description": "Chloe…",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.28,
+          "description": "The ones you just sat with, that’s the evil side of the dance crew.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:12",
+          "timestamp_seconds": 612.44,
+          "description": "Chloe is mad because she thinks she’s the leader of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:19",
+          "timestamp_seconds": 619.3,
+          "description": "She’s the leader of the good side, and that’s why Chloe is mad.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:21",
+          "timestamp_seconds": 621.46,
+          "description": "They’re in the dance program.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.44,
+          "description": "and who doesn’t get to be in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 7,
+      "avg_intensity": 1.86
+    },
+    {
+      "id": "s01e01_kiara_natt_och_dag",
+      "episode_id": "s01e01",
+      "character_id": "kiara_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 93,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:51",
+      "last_appearance_timestamp": "0:16:17",
+      "key_moments": [
+        {
+          "timestamp": "0:01:51",
+          "timestamp_seconds": 111.9,
+          "description": "They call themselves Batgirls. Ironically, since they love high UV.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:13",
+          "timestamp_seconds": 133.42000000000002,
+          "description": "First I’d like to introduce your new classmate Kiara.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:21",
+          "timestamp_seconds": 141.82,
+          "description": "Good morning! My name is Kiara Natt och Dag.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:33",
+          "timestamp_seconds": 153.96,
+          "description": "It’s very important here now that no one offends Kiara",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:03",
+          "timestamp_seconds": 363.88,
+          "description": "Kiara Natt och Dag.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:11:30",
+          "timestamp_seconds": 690.8,
+          "description": "Kiara, we’ve already talked about this. The answer is still no.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:12:25",
+          "timestamp_seconds": 745.4000000000001,
+          "description": "I want to dance. What do I have to do to join?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:28",
+          "timestamp_seconds": 748.8,
+          "description": "Well, to go to the masquerade you just buy a ticket, but…",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:32",
+          "timestamp_seconds": 752.6,
+          "description": "–And dance? –No. Dancing, no way.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:35",
+          "timestamp_seconds": 755.12,
+          "description": "Sign up for the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 31,
+      "avg_intensity": 1.71
+    },
+    {
+      "id": "s01e01_jonas",
+      "episode_id": "s01e01",
+      "character_id": "jonas",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:03:08",
+      "last_appearance_timestamp": "0:03:08",
+      "key_moments": [
+        {
+          "timestamp": "0:03:08",
+          "timestamp_seconds": 188.3,
+          "description": "Good morning… Good morning! My name is Jonas, your substitute today.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e01_substitute_teacher",
+      "episode_id": "s01e01",
+      "character_id": "substitute_teacher",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:03:08",
+      "last_appearance_timestamp": "0:03:08",
+      "key_moments": [
+        {
+          "timestamp": "0:03:08",
+          "timestamp_seconds": 188.3,
+          "description": "Good morning… Good morning! My name is Jonas, your substitute today.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e01_eric",
+      "episode_id": "s01e01",
+      "character_id": "eric",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 132,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:03:26",
+      "last_appearance_timestamp": "0:14:30",
+      "key_moments": [
+        {
+          "timestamp": "0:03:26",
+          "timestamp_seconds": 206.44,
+          "description": "Triggered means they go completely hysterical.",
+          "content_type": "vampire_feeding",
+          "intensity": 3
+        },
+        {
+          "timestamp": "0:04:12",
+          "timestamp_seconds": 252.48000000000002,
+          "description": "Organizing this year’s masquerade as a project is super fun, Eric,",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:23",
+          "timestamp_seconds": 263.36,
+          "description": "I was also chair of the party committee just like you, Eric.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:09",
+          "timestamp_seconds": 429.79999999999995,
+          "description": "The school board has decided you need to hold an audition.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:13",
+          "timestamp_seconds": 433.6,
+          "description": "An open audition where everyone gets the chance to perform.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.0,
+          "description": "I know someone who’s going to be pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:19",
+          "timestamp_seconds": 439.36,
+          "description": "Audition?! Fuck that!",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.04,
+          "description": "Batgirls aren’t just any damn bottom scrap.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:34",
+          "timestamp_seconds": 454.4,
+          "description": "It’ll be fairer if the best dancers are in.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:38",
+          "timestamp_seconds": 458.34000000000003,
+          "description": "–As if you’re so damn good then. –Eric, what do you say?",
+          "content_type": "dialogue",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 44,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e01_principal",
+      "episode_id": "s01e01",
+      "character_id": "principal",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 45,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:04:12",
+      "last_appearance_timestamp": "0:08:11",
+      "key_moments": [
+        {
+          "timestamp": "0:04:12",
+          "timestamp_seconds": 252.48000000000002,
+          "description": "Organizing this year’s masquerade as a project is super fun, Eric,",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:17",
+          "timestamp_seconds": 257.0,
+          "description": "but as principal I would have preferred you chose Religion 2.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:23",
+          "timestamp_seconds": 263.36,
+          "description": "I was also chair of the party committee just like you, Eric.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:05",
+          "timestamp_seconds": 425.12,
+          "description": "for the Batgirls finale show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:09",
+          "timestamp_seconds": 429.79999999999995,
+          "description": "The school board has decided you need to hold an audition.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:13",
+          "timestamp_seconds": 433.6,
+          "description": "An open audition where everyone gets the chance to perform.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.0,
+          "description": "I know someone who’s going to be pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:19",
+          "timestamp_seconds": 439.36,
+          "description": "Audition?! Fuck that!",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.04,
+          "description": "Batgirls aren’t just any damn bottom scrap.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:25",
+          "timestamp_seconds": 445.32,
+          "description": "But the principal has decided it. I think it’s a good idea.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 15,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e01_livia",
+      "episode_id": "s01e01",
+      "character_id": "livia",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:04:23",
+      "last_appearance_timestamp": "0:04:49",
+      "key_moments": [
+        {
+          "timestamp": "0:04:23",
+          "timestamp_seconds": 263.36,
+          "description": "I was also chair of the party committee just like you, Eric.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:49",
+          "timestamp_seconds": 289.02,
+          "description": "And now! What we’ve all been waiting for. A living, breathing female vampire.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e01_elise",
+      "episode_id": "s01e01",
+      "character_id": "elise",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 102,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:06:42",
+      "last_appearance_timestamp": "0:14:30",
+      "key_moments": [
+        {
+          "timestamp": "0:06:42",
+          "timestamp_seconds": 402.34000000000003,
+          "description": "Now it’s important to stroke with the fur. That’s why you’re here, Elise.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:46",
+          "timestamp_seconds": 406.08,
+          "description": "As leader of the dance team Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:49",
+          "timestamp_seconds": 409.36,
+          "description": "you traditionally handle the dance performance at the masquerade.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:05",
+          "timestamp_seconds": 425.12,
+          "description": "for the Batgirls finale show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:09",
+          "timestamp_seconds": 429.79999999999995,
+          "description": "The school board has decided you need to hold an audition.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:13",
+          "timestamp_seconds": 433.6,
+          "description": "An open audition where everyone gets the chance to perform.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.0,
+          "description": "I know someone who’s going to be pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:19",
+          "timestamp_seconds": 439.36,
+          "description": "Audition?! Fuck that!",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.04,
+          "description": "Batgirls aren’t just any damn bottom scrap.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:34",
+          "timestamp_seconds": 454.4,
+          "description": "It’ll be fairer if the best dancers are in.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 34,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e01_batgirl_2",
+      "episode_id": "s01e01",
+      "character_id": "batgirl_2",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 33,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:06:46",
+      "last_appearance_timestamp": "0:08:11",
+      "key_moments": [
+        {
+          "timestamp": "0:06:46",
+          "timestamp_seconds": 406.08,
+          "description": "As leader of the dance team Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:49",
+          "timestamp_seconds": 409.36,
+          "description": "you traditionally handle the dance performance at the masquerade.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:05",
+          "timestamp_seconds": 425.12,
+          "description": "for the Batgirls finale show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:09",
+          "timestamp_seconds": 429.79999999999995,
+          "description": "The school board has decided you need to hold an audition.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:13",
+          "timestamp_seconds": 433.6,
+          "description": "An open audition where everyone gets the chance to perform.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.0,
+          "description": "I know someone who’s going to be pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:19",
+          "timestamp_seconds": 439.36,
+          "description": "Audition?! Fuck that!",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.04,
+          "description": "Batgirls aren’t just any damn bottom scrap.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:34",
+          "timestamp_seconds": 454.4,
+          "description": "It’ll be fairer if the best dancers are in.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:43",
+          "timestamp_seconds": 463.84000000000003,
+          "description": "I just think I’m organizing the masquerade",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 11,
+      "avg_intensity": 2.36
+    },
+    {
+      "id": "s01e01_party_student_3",
+      "episode_id": "s01e01",
+      "character_id": "party_student_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:10:09",
+      "last_appearance_timestamp": "0:10:34",
+      "key_moments": [
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.28,
+          "description": "The ones you just sat with, that’s the evil side of the dance crew.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:12",
+          "timestamp_seconds": 612.44,
+          "description": "Chloe is mad because she thinks she’s the leader of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:19",
+          "timestamp_seconds": 619.3,
+          "description": "She’s the leader of the good side, and that’s why Chloe is mad.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:21",
+          "timestamp_seconds": 621.46,
+          "description": "They’re in the dance program.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.44,
+          "description": "and who doesn’t get to be in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:34",
+          "timestamp_seconds": 634.02,
+          "description": "My childhood buddy Eric.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 1.83
+    },
+    {
+      "id": "s01e01_jacques_natt_och_dag",
+      "episode_id": "s01e01",
+      "character_id": "jacques_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:15:43",
+      "last_appearance_timestamp": "0:15:43",
+      "key_moments": [
+        {
+          "timestamp": "0:15:43",
+          "timestamp_seconds": 943.8599999999999,
+          "description": "Where’s Kiara? We can’t have another accident, Jacques.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e02_kiara_natt_och_dag",
+      "episode_id": "s01e02",
+      "character_id": "kiara_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:00:10",
+      "last_appearance_timestamp": "0:00:38",
+      "key_moments": [
+        {
+          "timestamp": "0:00:10",
+          "timestamp_seconds": 10.58,
+          "description": "Kiara, do you have your anti-trigger medication under control?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:38",
+          "timestamp_seconds": 38.040000000000006,
+          "description": "–Calling that dancing… –Mom, it’s modern.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e02_mother",
+      "episode_id": "s01e02",
+      "character_id": "mother",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 15,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:00:13",
+      "last_appearance_timestamp": "0:03:54",
+      "key_moments": [
+        {
+          "timestamp": "0:00:13",
+          "timestamp_seconds": 13.3,
+          "description": "Yes, Mother.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:18",
+          "timestamp_seconds": 18.22,
+          "description": "Yes, Mother.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:38",
+          "timestamp_seconds": 38.040000000000006,
+          "description": "–Calling that dancing… –Mom, it’s modern.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:00:41",
+          "timestamp_seconds": 41.22,
+          "description": "Oh, so now we’re saying “mom” too?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:54",
+          "timestamp_seconds": 234.14,
+          "description": "Mom said I should bring it to you.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 5,
+      "avg_intensity": 1.2
+    },
+    {
+      "id": "s01e02_didde",
+      "episode_id": "s01e02",
+      "character_id": "didde",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:01:41",
+      "last_appearance_timestamp": "0:03:34",
+      "key_moments": [
+        {
+          "timestamp": "0:01:41",
+          "timestamp_seconds": 101.8,
+          "description": "–Yo! Hey, babes! –Hi, Didde!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:34",
+          "timestamp_seconds": 214.76,
+          "description": "Sick! Sick, Didde. Fucking awesome.",
+          "content_type": "dialogue",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 2.5
+    },
+    {
+      "id": "s01e02_kevin",
+      "episode_id": "s01e02",
+      "character_id": "kevin",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:02:31",
+      "last_appearance_timestamp": "0:02:31",
+      "key_moments": [
+        {
+          "timestamp": "0:02:31",
+          "timestamp_seconds": 151.16,
+          "description": "Happy birthday, Kevster!",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e02_alfred",
+      "episode_id": "s01e02",
+      "character_id": "alfred",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:03:48",
+      "last_appearance_timestamp": "0:03:56",
+      "key_moments": [
+        {
+          "timestamp": "0:03:48",
+          "timestamp_seconds": 228.82,
+          "description": "Yo, Affe! Wanna play Fortnite later or what?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:56",
+          "timestamp_seconds": 236.33999999999997,
+          "description": "–Screw the jacket. –Bye, Affe.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e03_kiara_natt_och_dag",
+      "episode_id": "s01e03",
+      "character_id": "kiara_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 60,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:00:13",
+      "last_appearance_timestamp": "0:18:45",
+      "key_moments": [
+        {
+          "timestamp": "0:00:13",
+          "timestamp_seconds": 13.8,
+          "description": "Oh, Kiara! Kiara! Kiara!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:18",
+          "timestamp_seconds": 18.240000000000002,
+          "description": "Do you take the bat Kiara and love her in sickness and in health?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:27",
+          "timestamp_seconds": 27.740000000000002,
+          "description": "Kiara! Kiara!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:36",
+          "timestamp_seconds": 36.96,
+          "description": "Kiara? Kiara, is that you?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:05:13",
+          "timestamp_seconds": 313.32,
+          "description": "And we’re going to a party later.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:18",
+          "timestamp_seconds": 318.67999999999995,
+          "description": "Study party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:25",
+          "timestamp_seconds": 325.08000000000004,
+          "description": "Kiara is so happy to have met a human friend.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:00",
+          "timestamp_seconds": 360.41999999999996,
+          "description": "Kiara, maybe you could dance for our guest?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:24",
+          "timestamp_seconds": 564.7,
+          "description": "This party I’m going to…",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:27",
+          "timestamp_seconds": 567.28,
+          "description": "–I’ve never been to a party before. –The village hall party.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 20,
+      "avg_intensity": 1.6
+    },
+    {
+      "id": "s01e03_eric",
+      "episode_id": "s01e03",
+      "character_id": "eric",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 51,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:00:58",
+      "last_appearance_timestamp": "0:22:48",
+      "key_moments": [
+        {
+          "timestamp": "0:00:58",
+          "timestamp_seconds": 58.26,
+          "description": "–Who do you think it’s from? –Probably Eric and them.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:01:01",
+          "timestamp_seconds": 61.2,
+          "description": "It’s too nice to be from Eric, right?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:20",
+          "timestamp_seconds": 440.46000000000004,
+          "description": "–Go, Eric! Drive! Go! Go! –What the hell are you doing?",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.65999999999997,
+          "description": "Batgirls is the dance school’s elite group,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:43",
+          "timestamp_seconds": 463.58,
+          "description": "These are Batgirls’ competition costumes. We wear them with pride.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:51",
+          "timestamp_seconds": 471.52,
+          "description": "We’ve never had a guy in Batgirls before,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:28",
+          "timestamp_seconds": 508.26,
+          "description": "First she ate everyone at the whole dance school.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:42",
+          "timestamp_seconds": 522.54,
+          "description": "I mean, Eric just skidded off at 120 kilometers per hour.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:08:52",
+          "timestamp_seconds": 532.44,
+          "description": "You promise it’s only Eric who knows about it.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:24",
+          "timestamp_seconds": 564.7,
+          "description": "This party I’m going to…",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 17,
+      "avg_intensity": 1.71
+    },
+    {
+      "id": "s01e03_mother",
+      "episode_id": "s01e03",
+      "character_id": "mother",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:01:11",
+      "last_appearance_timestamp": "0:06:03",
+      "key_moments": [
+        {
+          "timestamp": "0:01:11",
+          "timestamp_seconds": 71.0,
+          "description": "Screw the pie, Mom.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:03",
+          "timestamp_seconds": 123.08000000000001,
+          "description": "Yo, Mom!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:18",
+          "timestamp_seconds": 138.28,
+          "description": "–Stop filming, Affe. –Here’s my driver who’s super pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:03:54",
+          "timestamp_seconds": 234.46,
+          "description": "And here’s my dance hall.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:04",
+          "timestamp_seconds": 244.8,
+          "description": "I don’t know who you think it is, but it’s my grandmother.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:07",
+          "timestamp_seconds": 247.8,
+          "description": "Is Countess Dracula your grandmother?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:00",
+          "timestamp_seconds": 360.41999999999996,
+          "description": "Kiara, maybe you could dance for our guest?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:03",
+          "timestamp_seconds": 363.42,
+          "description": "But Mom!",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 1.38
+    },
+    {
+      "id": "s01e03_party_student_3",
+      "episode_id": "s01e03",
+      "character_id": "party_student_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 33,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:50",
+      "last_appearance_timestamp": "0:18:41",
+      "key_moments": [
+        {
+          "timestamp": "0:01:50",
+          "timestamp_seconds": 110.74,
+          "description": "How nice that we get your first human friend over for dinner.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:18",
+          "timestamp_seconds": 138.28,
+          "description": "–Stop filming, Affe. –Here’s my driver who’s super pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:13",
+          "timestamp_seconds": 313.32,
+          "description": "And we’re going to a party later.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:18",
+          "timestamp_seconds": 318.67999999999995,
+          "description": "Study party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:25",
+          "timestamp_seconds": 325.08000000000004,
+          "description": "Kiara is so happy to have met a human friend.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:12:30",
+          "timestamp_seconds": 750.48,
+          "description": "I’m so nervous about the party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:37",
+          "timestamp_seconds": 757.1800000000001,
+          "description": "That’s what friends are for.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:15:40",
+          "timestamp_seconds": 940.88,
+          "description": "I know. And she’s good at dancing too.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:55",
+          "timestamp_seconds": 955.8,
+          "description": "–Sounds like you have a new friend. –And?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:15:58",
+          "timestamp_seconds": 958.64,
+          "description": "Maybe she can take your spot in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 11,
+      "avg_intensity": 1.55
+    },
+    {
+      "id": "s01e03_lunch_lady",
+      "episode_id": "s01e03",
+      "character_id": "lunch_lady",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:02:14",
+      "last_appearance_timestamp": "0:02:18",
+      "key_moments": [
+        {
+          "timestamp": "0:02:14",
+          "timestamp_seconds": 134.82,
+          "description": "Yo, channel. Going to a dinner. Lunch at the Natt and Dag family.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:18",
+          "timestamp_seconds": 138.28,
+          "description": "–Stop filming, Affe. –Here’s my driver who’s super pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e03_alfred",
+      "episode_id": "s01e03",
+      "character_id": "alfred",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 93,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:02:18",
+      "last_appearance_timestamp": "0:20:09",
+      "key_moments": [
+        {
+          "timestamp": "0:02:18",
+          "timestamp_seconds": 138.28,
+          "description": "–Stop filming, Affe. –Here’s my driver who’s super pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:34",
+          "timestamp_seconds": 154.54000000000002,
+          "description": "You’re completely fucking unbelievable, Affe.",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:49",
+          "timestamp_seconds": 169.02,
+          "description": "–And then party after. –What party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:51",
+          "timestamp_seconds": 171.74,
+          "description": "The village hall party you’re supposed to come to.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:40",
+          "timestamp_seconds": 280.1,
+          "description": "I’ve heard that you like tacos, Alfred.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:05:06",
+          "timestamp_seconds": 306.46000000000004,
+          "description": "Yes, Alfred, you’ll take good care of our daughter, I understand.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:05:13",
+          "timestamp_seconds": 313.32,
+          "description": "And we’re going to a party later.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:18",
+          "timestamp_seconds": 318.67999999999995,
+          "description": "Study party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:06",
+          "timestamp_seconds": 426.84000000000003,
+          "description": "Alfred, run!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.65999999999997,
+          "description": "Batgirls is the dance school’s elite group,",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 31,
+      "avg_intensity": 1.45
+    },
+    {
+      "id": "s01e03_elise",
+      "episode_id": "s01e03",
+      "character_id": "elise",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:02:49",
+      "last_appearance_timestamp": "0:13:25",
+      "key_moments": [
+        {
+          "timestamp": "0:02:49",
+          "timestamp_seconds": 169.02,
+          "description": "–And then party after. –What party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:51",
+          "timestamp_seconds": 171.74,
+          "description": "The village hall party you’re supposed to come to.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:57",
+          "timestamp_seconds": 177.5,
+          "description": "But come on… Elise is going.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:24",
+          "timestamp_seconds": 564.7,
+          "description": "This party I’m going to…",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:27",
+          "timestamp_seconds": 567.28,
+          "description": "–I’ve never been to a party before. –The village hall party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:30",
+          "timestamp_seconds": 570.0799999999999,
+          "description": "–Hello, there’s a party tonight. –What if she comes.",
+          "content_type": "party",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:09:37",
+          "timestamp_seconds": 577.66,
+          "description": "It’s only Eric who wants to go and hang out with Elise.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:13:25",
+          "timestamp_seconds": 805.8,
+          "description": "So mature of Elise to forgive Eric, despite everything. So big of her.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 1.88
+    },
+    {
+      "id": "s01e03_jacques",
+      "episode_id": "s01e03",
+      "character_id": "jacques",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:06:58",
+      "last_appearance_timestamp": "0:06:58",
+      "key_moments": [
+        {
+          "timestamp": "0:06:58",
+          "timestamp_seconds": 418.56,
+          "description": "Jack…",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e03_batgirl_1",
+      "episode_id": "s01e03",
+      "character_id": "batgirl_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:07:31",
+      "last_appearance_timestamp": "0:17:14",
+      "key_moments": [
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.65999999999997,
+          "description": "Batgirls is the dance school’s elite group,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:43",
+          "timestamp_seconds": 463.58,
+          "description": "These are Batgirls’ competition costumes. We wear them with pride.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:47",
+          "timestamp_seconds": 467.74,
+          "description": "Not just anyone can be a Batgirl.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:51",
+          "timestamp_seconds": 471.52,
+          "description": "We’ve never had a guy in Batgirls before,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:40",
+          "timestamp_seconds": 940.88,
+          "description": "I know. And she’s good at dancing too.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:58",
+          "timestamp_seconds": 958.64,
+          "description": "Maybe she can take your spot in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:10",
+          "timestamp_seconds": 1030.7600000000002,
+          "description": "but it’s for Batgirls’ best. Do you want to be in?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:14",
+          "timestamp_seconds": 1034.24,
+          "description": "And dance? I didn’t think I passed the audition.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 1.88
+    },
+    {
+      "id": "s01e03_batgirl_3",
+      "episode_id": "s01e03",
+      "character_id": "batgirl_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 21,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:07:31",
+      "last_appearance_timestamp": "0:17:14",
+      "key_moments": [
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.65999999999997,
+          "description": "Batgirls is the dance school’s elite group,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:43",
+          "timestamp_seconds": 463.58,
+          "description": "These are Batgirls’ competition costumes. We wear them with pride.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:51",
+          "timestamp_seconds": 471.52,
+          "description": "We’ve never had a guy in Batgirls before,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:40",
+          "timestamp_seconds": 940.88,
+          "description": "I know. And she’s good at dancing too.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:58",
+          "timestamp_seconds": 958.64,
+          "description": "Maybe she can take your spot in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:10",
+          "timestamp_seconds": 1030.7600000000002,
+          "description": "but it’s for Batgirls’ best. Do you want to be in?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:14",
+          "timestamp_seconds": 1034.24,
+          "description": "And dance? I didn’t think I passed the audition.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 7,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e03_adam",
+      "episode_id": "s01e03",
+      "character_id": "adam",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:10:05",
+      "last_appearance_timestamp": "0:17:17",
+      "key_moments": [
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.22,
+          "description": "Adam, I have bad news.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:17:10",
+          "timestamp_seconds": 1030.7600000000002,
+          "description": "but it’s for Batgirls’ best. Do you want to be in?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:14",
+          "timestamp_seconds": 1034.24,
+          "description": "And dance? I didn’t think I passed the audition.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:17",
+          "timestamp_seconds": 1037.44,
+          "description": "I get to choose who I want. You can take Adam’s spot.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e03_chloe",
+      "episode_id": "s01e03",
+      "character_id": "chloe",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:11:18",
+      "last_appearance_timestamp": "0:16:05",
+      "key_moments": [
+        {
+          "timestamp": "0:11:18",
+          "timestamp_seconds": 678.24,
+          "description": "–I have to go now. –See you at the village hall party, right?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:11:23",
+          "timestamp_seconds": 683.78,
+          "description": "By the way, it’s Chloe who’s lactose. I’m gluten.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:11:36",
+          "timestamp_seconds": 696.98,
+          "description": "I want to warn you there might be a dance circle later.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:11:40",
+          "timestamp_seconds": 700.74,
+          "description": "–A dance circle. What’s that? –You don’t know what a dance circle is?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:40",
+          "timestamp_seconds": 940.88,
+          "description": "I know. And she’s good at dancing too.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:43",
+          "timestamp_seconds": 943.24,
+          "description": "Yeah, she’s better than Chloe.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:15:58",
+          "timestamp_seconds": 958.64,
+          "description": "Maybe she can take your spot in Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:16:05",
+          "timestamp_seconds": 965.28,
+          "description": "I think Chloe is changing tactics now.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 1.62
+    },
+    {
+      "id": "s01e03_principal",
+      "episode_id": "s01e03",
+      "character_id": "principal",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:16:42",
+      "last_appearance_timestamp": "0:17:14",
+      "key_moments": [
+        {
+          "timestamp": "0:16:42",
+          "timestamp_seconds": 1002.1800000000001,
+          "description": "She’s cool, rich, hot and diversity, like the principal wants.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:17:10",
+          "timestamp_seconds": 1030.7600000000002,
+          "description": "but it’s for Batgirls’ best. Do you want to be in?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:14",
+          "timestamp_seconds": 1034.24,
+          "description": "And dance? I didn’t think I passed the audition.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 1.67
+    },
+    {
+      "id": "s01e04_eric",
+      "episode_id": "s01e04",
+      "character_id": "eric",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 27,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:00:18",
+      "last_appearance_timestamp": "0:17:12",
+      "key_moments": [
+        {
+          "timestamp": "0:00:18",
+          "timestamp_seconds": 18.42,
+          "description": "–Eric! Eric! –What are you doing?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:05:56",
+          "timestamp_seconds": 356.48,
+          "description": "How are you then? I saw what happened between you and Eric.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:52",
+          "timestamp_seconds": 592.12,
+          "description": "Okay, but help me now. What should I reply to Eric?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:08",
+          "timestamp_seconds": 608.44,
+          "description": "Affe, I think Elise is mad again.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:11:32",
+          "timestamp_seconds": 692.9200000000001,
+          "description": "–What the hell… –Calm down Eric, I’ve got this.",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:14:49",
+          "timestamp_seconds": 889.8399999999999,
+          "description": "I don’t fucking swear. Eric swears.",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:14:59",
+          "timestamp_seconds": 899.38,
+          "description": "from the time before humans and vampires made peace.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:20",
+          "timestamp_seconds": 920.86,
+          "description": "But he’s pissed because I’m going to inherit our family’s assets.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:12",
+          "timestamp_seconds": 1032.8200000000002,
+          "description": "Go to Eric now. He’s sitting there. Tell him you want him.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 9,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e04_didde",
+      "episode_id": "s01e04",
+      "character_id": "didde",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:03:12",
+      "last_appearance_timestamp": "0:17:56",
+      "key_moments": [
+        {
+          "timestamp": "0:03:12",
+          "timestamp_seconds": 192.44,
+          "description": "–Which one of you two is Didde? –That’s me.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:30",
+          "timestamp_seconds": 270.26,
+          "description": "You’re fucking king, Didde! You’re fucking king, you know that?",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:17:48",
+          "timestamp_seconds": 1068.8400000000001,
+          "description": "That I’m having a party, and uninvited guests show up.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:56",
+          "timestamp_seconds": 1076.8400000000001,
+          "description": "Kevin and Didde in the fucking house!",
+          "content_type": "dialogue",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 2.75
+    },
+    {
+      "id": "s01e04_party_student_3",
+      "episode_id": "s01e04",
+      "character_id": "party_student_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:03:51",
+      "last_appearance_timestamp": "0:18:03",
+      "key_moments": [
+        {
+          "timestamp": "0:03:51",
+          "timestamp_seconds": 231.06,
+          "description": "We’re friends. Don’t you trust me?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:08",
+          "timestamp_seconds": 608.44,
+          "description": "Affe, I think Elise is mad again.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:37",
+          "timestamp_seconds": 637.0799999999999,
+          "description": "I go from being your best friend, to the nerd you hang out with",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:11:01",
+          "timestamp_seconds": 661.78,
+          "description": "Sometimes women want men who take charge.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:17:48",
+          "timestamp_seconds": 1068.8400000000001,
+          "description": "That I’m having a party, and uninvited guests show up.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:18:03",
+          "timestamp_seconds": 1083.1,
+          "description": "Hi Kiara! I brought some friends.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e04_elise",
+      "episode_id": "s01e04",
+      "character_id": "elise",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 39,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:05:08",
+      "last_appearance_timestamp": "0:11:01",
+      "key_moments": [
+        {
+          "timestamp": "0:05:08",
+          "timestamp_seconds": 308.03999999999996,
+          "description": "I know! I can have a party. Then maybe I’ll become more popular.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:10",
+          "timestamp_seconds": 310.82,
+          "description": "Party? You? Here?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:21",
+          "timestamp_seconds": 321.14,
+          "description": "–What are you doing? –I’m calling Elise.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:21",
+          "timestamp_seconds": 381.1,
+          "description": "–I’m going to Elise. –I’m coming with you.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:53",
+          "timestamp_seconds": 413.6,
+          "description": "Is Kiara allowed in Batgirls now?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:10",
+          "timestamp_seconds": 430.5,
+          "description": "–Yeah, but Elise said… –Don’t worry. I’ll help you.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.03999999999996,
+          "description": "I know one thing you can do to get into Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.20000000000005,
+          "description": "I would have a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:49",
+          "timestamp_seconds": 469.82,
+          "description": "–What the fuck? Miss the training! –It was worth it. Smile.",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:10:08",
+          "timestamp_seconds": 608.44,
+          "description": "Affe, I think Elise is mad again.",
+          "content_type": "confrontation",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 13,
+      "avg_intensity": 1.77
+    },
+    {
+      "id": "s01e04_party_student_1",
+      "episode_id": "s01e04",
+      "character_id": "party_student_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:05:08",
+      "last_appearance_timestamp": "0:05:10",
+      "key_moments": [
+        {
+          "timestamp": "0:05:08",
+          "timestamp_seconds": 308.03999999999996,
+          "description": "I know! I can have a party. Then maybe I’ll become more popular.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:10",
+          "timestamp_seconds": 310.82,
+          "description": "Party? You? Here?",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e04_father",
+      "episode_id": "s01e04",
+      "character_id": "father",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:06:15",
+      "last_appearance_timestamp": "0:06:15",
+      "key_moments": [
+        {
+          "timestamp": "0:06:15",
+          "timestamp_seconds": 375.52,
+          "description": "–I promised Dad I’d change the timing belt. –Yeah, I’m coming.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e04_kiara_natt_och_dag",
+      "episode_id": "s01e04",
+      "character_id": "kiara_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 39,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:06:36",
+      "last_appearance_timestamp": "0:18:03",
+      "key_moments": [
+        {
+          "timestamp": "0:06:36",
+          "timestamp_seconds": 396.14,
+          "description": "–Kiara was so hot. –Yeah, like, how much do you think that cost?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:40",
+          "timestamp_seconds": 400.44,
+          "description": "Did you see Kiara this weekend? What an ass!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:47",
+          "timestamp_seconds": 407.96000000000004,
+          "description": "How did that happen? Kiara suddenly became super popular.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:53",
+          "timestamp_seconds": 413.6,
+          "description": "Is Kiara allowed in Batgirls now?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:56",
+          "timestamp_seconds": 416.34000000000003,
+          "description": "It’s not just because Chloe thinks Kiara is sassy now.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.03999999999996,
+          "description": "I know one thing you can do to get into Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.20000000000005,
+          "description": "I would have a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:49",
+          "timestamp_seconds": 469.82,
+          "description": "–What the fuck? Miss the training! –It was worth it. Smile.",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:12:11",
+          "timestamp_seconds": 731.74,
+          "description": "“Continuing at Kiara’s party.” What happens?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:17",
+          "timestamp_seconds": 737.4,
+          "description": "–Crazy that Kiara is having a party. –Super crazy.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 13,
+      "avg_intensity": 1.77
+    },
+    {
+      "id": "s01e04_alfred",
+      "episode_id": "s01e04",
+      "character_id": "alfred",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 45,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:06:51",
+      "last_appearance_timestamp": "0:12:23",
+      "key_moments": [
+        {
+          "timestamp": "0:06:51",
+          "timestamp_seconds": 411.12,
+          "description": "Yeah, and now Alfred is popular too.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:53",
+          "timestamp_seconds": 413.6,
+          "description": "Is Kiara allowed in Batgirls now?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:06",
+          "timestamp_seconds": 426.0,
+          "description": "You got triggered and you almost killed Alfred.",
+          "content_type": "vampire_feeding",
+          "intensity": 3
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.03999999999996,
+          "description": "I know one thing you can do to get into Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.20000000000005,
+          "description": "I would have a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:49",
+          "timestamp_seconds": 469.82,
+          "description": "–What the fuck? Miss the training! –It was worth it. Smile.",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:08:42",
+          "timestamp_seconds": 522.26,
+          "description": "–How do we get that then? –Come to the party and you’ll see.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:00",
+          "timestamp_seconds": 540.5999999999999,
+          "description": "...because Alfred has a bowl cut! Alfred is a nerd",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:05",
+          "timestamp_seconds": 545.48,
+          "description": "It’s an iconic dance move. Scorpion to bridge.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:15",
+          "timestamp_seconds": 555.28,
+          "description": "Rumor has it she was a vampire and the founder of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 15,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e04_batgirl_1",
+      "episode_id": "s01e04",
+      "character_id": "batgirl_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:06:53",
+      "last_appearance_timestamp": "0:09:15",
+      "key_moments": [
+        {
+          "timestamp": "0:06:53",
+          "timestamp_seconds": 413.6,
+          "description": "Is Kiara allowed in Batgirls now?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.03999999999996,
+          "description": "I know one thing you can do to get into Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.20000000000005,
+          "description": "I would have a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:49",
+          "timestamp_seconds": 469.82,
+          "description": "–What the fuck? Miss the training! –It was worth it. Smile.",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:09:05",
+          "timestamp_seconds": 545.48,
+          "description": "It’s an iconic dance move. Scorpion to bridge.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:15",
+          "timestamp_seconds": 555.28,
+          "description": "Rumor has it she was a vampire and the founder of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 2.33
+    },
+    {
+      "id": "s01e04_batgirl_3",
+      "episode_id": "s01e04",
+      "character_id": "batgirl_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:06:53",
+      "last_appearance_timestamp": "0:09:15",
+      "key_moments": [
+        {
+          "timestamp": "0:06:53",
+          "timestamp_seconds": 413.6,
+          "description": "Is Kiara allowed in Batgirls now?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.03999999999996,
+          "description": "I know one thing you can do to get into Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.20000000000005,
+          "description": "I would have a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:49",
+          "timestamp_seconds": 469.82,
+          "description": "–What the fuck? Miss the training! –It was worth it. Smile.",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:09:05",
+          "timestamp_seconds": 545.48,
+          "description": "It’s an iconic dance move. Scorpion to bridge.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:15",
+          "timestamp_seconds": 555.28,
+          "description": "Rumor has it she was a vampire and the founder of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 2.33
+    },
+    {
+      "id": "s01e04_chloe",
+      "episode_id": "s01e04",
+      "character_id": "chloe",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 36,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:06:53",
+      "last_appearance_timestamp": "0:17:01",
+      "key_moments": [
+        {
+          "timestamp": "0:06:53",
+          "timestamp_seconds": 413.6,
+          "description": "Is Kiara allowed in Batgirls now?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:56",
+          "timestamp_seconds": 416.34000000000003,
+          "description": "It’s not just because Chloe thinks Kiara is sassy now.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:17",
+          "timestamp_seconds": 437.03999999999996,
+          "description": "I know one thing you can do to get into Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:31",
+          "timestamp_seconds": 451.20000000000005,
+          "description": "I would have a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:49",
+          "timestamp_seconds": 469.82,
+          "description": "–What the fuck? Miss the training! –It was worth it. Smile.",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:09:05",
+          "timestamp_seconds": 545.48,
+          "description": "It’s an iconic dance move. Scorpion to bridge.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:15",
+          "timestamp_seconds": 555.28,
+          "description": "Rumor has it she was a vampire and the founder of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:22",
+          "timestamp_seconds": 562.9,
+          "description": "I think so. But if you ask Chloe",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:35",
+          "timestamp_seconds": 575.5799999999999,
+          "description": "I try to be fair, but Chloe is a bit more… you know.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:40",
+          "timestamp_seconds": 580.5,
+          "description": "If you just do what Chloe says, you’ll definitely get to be in.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 12,
+      "avg_intensity": 1.75
+    },
+    {
+      "id": "s01e04_kevin",
+      "episode_id": "s01e04",
+      "character_id": "kevin",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 39,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:07:49",
+      "last_appearance_timestamp": "0:17:56",
+      "key_moments": [
+        {
+          "timestamp": "0:07:49",
+          "timestamp_seconds": 469.82,
+          "description": "–What the fuck? Miss the training! –It was worth it. Smile.",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:08:16",
+          "timestamp_seconds": 496.46000000000004,
+          "description": "–I’m allergic to nuts. –But coconut isn’t a nut, Kevin.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:08:23",
+          "timestamp_seconds": 503.84000000000003,
+          "description": "You’re such a fucking party pooper. There’s no real coconut in it.",
+          "content_type": "party",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:08:42",
+          "timestamp_seconds": 522.26,
+          "description": "–How do we get that then? –Come to the party and you’ll see.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:05",
+          "timestamp_seconds": 545.48,
+          "description": "It’s an iconic dance move. Scorpion to bridge.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:15",
+          "timestamp_seconds": 555.28,
+          "description": "Rumor has it she was a vampire and the founder of Batgirls.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:11",
+          "timestamp_seconds": 731.74,
+          "description": "“Continuing at Kiara’s party.” What happens?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:17",
+          "timestamp_seconds": 737.4,
+          "description": "–Crazy that Kiara is having a party. –Super crazy.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:23",
+          "timestamp_seconds": 743.48,
+          "description": "–Kiara? Kiara is having a party? –Yes.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:37",
+          "timestamp_seconds": 757.5799999999999,
+          "description": "Stop being such a nerd, Kevin. Bending words and stuff.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 13,
+      "avg_intensity": 2.46
+    },
+    {
+      "id": "s01e04_coach",
+      "episode_id": "s01e04",
+      "character_id": "coach",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:10:39",
+      "last_appearance_timestamp": "0:11:01",
+      "key_moments": [
+        {
+          "timestamp": "0:10:39",
+          "timestamp_seconds": 639.44,
+          "description": "to being some fucking relationship coach.",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:11:01",
+          "timestamp_seconds": 661.78,
+          "description": "Sometimes women want men who take charge.",
+          "content_type": "confrontation",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 3.0
+    },
+    {
+      "id": "s01e04_mother",
+      "episode_id": "s01e04",
+      "character_id": "mother",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:14:15",
+      "last_appearance_timestamp": "0:14:15",
+      "key_moments": [
+        {
+          "timestamp": "0:14:15",
+          "timestamp_seconds": 855.5,
+          "description": "Okay then. It was winter. Me and Mom were on our way to Grandma.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e05_alfred",
+      "episode_id": "s01e05",
+      "character_id": "alfred",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 57,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:00:24",
+      "last_appearance_timestamp": "0:21:10",
+      "key_moments": [
+        {
+          "timestamp": "0:00:24",
+          "timestamp_seconds": 24.46,
+          "description": "Affe, come on. We gotta go. You coming?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:55",
+          "timestamp_seconds": 175.54000000000002,
+          "description": "What are you doing here, Alfred?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:00",
+          "timestamp_seconds": 180.89999999999998,
+          "description": "or are you here to dance with my sister?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:20",
+          "timestamp_seconds": 260.1,
+          "description": "And hey, suck up to them now so we can go to their party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:32",
+          "timestamp_seconds": 272.76,
+          "description": "–The nerd? –Yeah, Alfred.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:05:02",
+          "timestamp_seconds": 302.03999999999996,
+          "description": "You can forget about coming to the party tonight.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:25",
+          "timestamp_seconds": 865.04,
+          "description": "Siri is in Batgirls, right?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:49",
+          "timestamp_seconds": 889.34,
+          "description": "Same with the guys, especially Alfred.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:14:54",
+          "timestamp_seconds": 894.3199999999999,
+          "description": "Chloe hates Alfred, especially because he likes vampires.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:15:43",
+          "timestamp_seconds": 943.44,
+          "description": "Damn it, be here now instead. Screw that fucking party.",
+          "content_type": "party",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 19,
+      "avg_intensity": 1.95
+    },
+    {
+      "id": "s01e05_eric",
+      "episode_id": "s01e05",
+      "character_id": "eric",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 48,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:00:34",
+      "last_appearance_timestamp": "0:22:08",
+      "key_moments": [
+        {
+          "timestamp": "0:00:34",
+          "timestamp_seconds": 34.5,
+          "description": "What the fuck? Eric!",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:00:42",
+          "timestamp_seconds": 42.42,
+          "description": "–Did you see where Eric went? –He just left.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:51",
+          "timestamp_seconds": 51.5,
+          "description": "How was Eric, by the way?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:59",
+          "timestamp_seconds": 59.56,
+          "description": "Nothing. Nothing happened. Thanks for a great party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:02",
+          "timestamp_seconds": 362.54,
+          "description": "What happened between Elise and Eric at the party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:08",
+          "timestamp_seconds": 368.62,
+          "description": "Yeah, but now both are pissed. Drama!",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:17",
+          "timestamp_seconds": 377.24,
+          "description": "But what happened at the party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:31",
+          "timestamp_seconds": 391.46000000000004,
+          "description": "–I don’t get why Elise is mad. –But it’s Eric.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:36",
+          "timestamp_seconds": 396.26,
+          "description": "–Did you see Eric and Elise at the party? –What?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:20:27",
+          "timestamp_seconds": 1227.98,
+          "description": "What the hell, have you been drinking, Eric? Where’s Kiara? Where’s Elise?",
+          "content_type": "dialogue",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 16,
+      "avg_intensity": 2.19
+    },
+    {
+      "id": "s01e05_jacques",
+      "episode_id": "s01e05",
+      "character_id": "jacques",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:03:00",
+      "last_appearance_timestamp": "0:03:10",
+      "key_moments": [
+        {
+          "timestamp": "0:03:00",
+          "timestamp_seconds": 180.89999999999998,
+          "description": "or are you here to dance with my sister?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:03:06",
+          "timestamp_seconds": 186.32,
+          "description": "–Jack, you’re scaring him. –Good.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:10",
+          "timestamp_seconds": 190.38,
+          "description": "–That’s the point. –Jack, put that down.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 1.33
+    },
+    {
+      "id": "s01e05_chloe",
+      "episode_id": "s01e05",
+      "character_id": "chloe",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 81,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:03:41",
+      "last_appearance_timestamp": "0:16:09",
+      "key_moments": [
+        {
+          "timestamp": "0:03:41",
+          "timestamp_seconds": 221.96,
+          "description": "And Chloe will be here any second now.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:08:02",
+          "timestamp_seconds": 482.22,
+          "description": "–And Kevin. –Don’t miss the sickest party of the year.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:19",
+          "timestamp_seconds": 499.4,
+          "description": "How did it go afterwards? How mad was he?",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:23",
+          "timestamp_seconds": 503.46000000000004,
+          "description": "He calmed down, but I think he realised I’d had a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:28",
+          "timestamp_seconds": 508.86,
+          "description": "Chloe helped me get new ones.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:08:31",
+          "timestamp_seconds": 511.58000000000004,
+          "description": "Chloe? Why the hell did you get help from her?",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:08:34",
+          "timestamp_seconds": 514.56,
+          "description": "Wow, you’re really pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:46",
+          "timestamp_seconds": 526.5,
+          "description": "Well, I’ve been invited to a party I really want to go to.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:55",
+          "timestamp_seconds": 535.78,
+          "description": "I can come to the party. It’ll be fun.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:03",
+          "timestamp_seconds": 543.6800000000001,
+          "description": "You’re not invited. And I’m going to Chloe’s pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 27,
+      "avg_intensity": 2.07
+    },
+    {
+      "id": "s01e05_elise",
+      "episode_id": "s01e05",
+      "character_id": "elise",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 54,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:03:56",
+      "last_appearance_timestamp": "0:22:32",
+      "key_moments": [
+        {
+          "timestamp": "0:03:56",
+          "timestamp_seconds": 236.01999999999998,
+          "description": "I really want you to be in, but it’s Elise.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:20",
+          "timestamp_seconds": 260.1,
+          "description": "And hey, suck up to them now so we can go to their party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:02",
+          "timestamp_seconds": 362.54,
+          "description": "What happened between Elise and Eric at the party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:08",
+          "timestamp_seconds": 368.62,
+          "description": "Yeah, but now both are pissed. Drama!",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:17",
+          "timestamp_seconds": 377.24,
+          "description": "But what happened at the party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:31",
+          "timestamp_seconds": 391.46000000000004,
+          "description": "–I don’t get why Elise is mad. –But it’s Eric.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:36",
+          "timestamp_seconds": 396.26,
+          "description": "–Did you see Eric and Elise at the party? –What?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:17",
+          "timestamp_seconds": 617.04,
+          "description": "Your friends don’t make the cut, Elise.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 18,
+      "avg_intensity": 2.33
+    },
+    {
+      "id": "s01e05_didde",
+      "episode_id": "s01e05",
+      "character_id": "didde",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 48,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:04:14",
+      "last_appearance_timestamp": "0:18:29",
+      "key_moments": [
+        {
+          "timestamp": "0:04:14",
+          "timestamp_seconds": 254.86,
+          "description": "Or well, I can imagine. Kevin and Didde are super nice.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:20",
+          "timestamp_seconds": 260.1,
+          "description": "And hey, suck up to them now so we can go to their party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:30",
+          "timestamp_seconds": 450.36,
+          "description": "–It would be nice to see you. –Nice with a redneck party, huh?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:58",
+          "timestamp_seconds": 478.64,
+          "description": "Yo, yo, yo! DJ Didde in the house!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:08:02",
+          "timestamp_seconds": 482.22,
+          "description": "–And Kevin. –Don’t miss the sickest party of the year.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:19",
+          "timestamp_seconds": 499.4,
+          "description": "How did it go afterwards? How mad was he?",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:23",
+          "timestamp_seconds": 503.46000000000004,
+          "description": "He calmed down, but I think he realised I’d had a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:34",
+          "timestamp_seconds": 514.56,
+          "description": "Wow, you’re really pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:46",
+          "timestamp_seconds": 526.5,
+          "description": "Well, I’ve been invited to a party I really want to go to.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:55",
+          "timestamp_seconds": 535.78,
+          "description": "I can come to the party. It’ll be fun.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 16,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e05_kevin",
+      "episode_id": "s01e05",
+      "character_id": "kevin",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 48,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:04:14",
+      "last_appearance_timestamp": "0:18:29",
+      "key_moments": [
+        {
+          "timestamp": "0:04:14",
+          "timestamp_seconds": 254.86,
+          "description": "Or well, I can imagine. Kevin and Didde are super nice.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:20",
+          "timestamp_seconds": 260.1,
+          "description": "And hey, suck up to them now so we can go to their party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:02",
+          "timestamp_seconds": 482.22,
+          "description": "–And Kevin. –Don’t miss the sickest party of the year.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:19",
+          "timestamp_seconds": 499.4,
+          "description": "How did it go afterwards? How mad was he?",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:23",
+          "timestamp_seconds": 503.46000000000004,
+          "description": "He calmed down, but I think he realised I’d had a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:34",
+          "timestamp_seconds": 514.56,
+          "description": "Wow, you’re really pissed.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:46",
+          "timestamp_seconds": 526.5,
+          "description": "Well, I’ve been invited to a party I really want to go to.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:55",
+          "timestamp_seconds": 535.78,
+          "description": "I can come to the party. It’ll be fun.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:03",
+          "timestamp_seconds": 543.6800000000001,
+          "description": "You’re not invited. And I’m going to Chloe’s pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:11",
+          "timestamp_seconds": 551.4000000000001,
+          "description": "–I have Batgirls training. –Okay.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 16,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e05_mother",
+      "episode_id": "s01e05",
+      "character_id": "mother",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 21,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:06:31",
+      "last_appearance_timestamp": "0:07:30",
+      "key_moments": [
+        {
+          "timestamp": "0:06:31",
+          "timestamp_seconds": 391.46000000000004,
+          "description": "–I don’t get why Elise is mad. –But it’s Eric.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:36",
+          "timestamp_seconds": 396.26,
+          "description": "–Did you see Eric and Elise at the party? –What?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:47",
+          "timestamp_seconds": 407.9,
+          "description": "–Did you dock the mothership? –Exactly!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:11",
+          "timestamp_seconds": 431.22,
+          "description": "You saw how they were looking at each other at the party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.78,
+          "description": "–It’s sad when they fight. –Really.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:26",
+          "timestamp_seconds": 446.72,
+          "description": "Are you coming to the party tonight?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:30",
+          "timestamp_seconds": 450.36,
+          "description": "–It would be nice to see you. –Nice with a redneck party, huh?",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 7,
+      "avg_intensity": 1.86
+    },
+    {
+      "id": "s01e05_kiara_natt_och_dag",
+      "episode_id": "s01e05",
+      "character_id": "kiara_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 66,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:07:08",
+      "last_appearance_timestamp": "0:22:49",
+      "key_moments": [
+        {
+          "timestamp": "0:07:08",
+          "timestamp_seconds": 428.91999999999996,
+          "description": "–Kiara. –What?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:11",
+          "timestamp_seconds": 431.22,
+          "description": "You saw how they were looking at each other at the party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:22",
+          "timestamp_seconds": 442.78,
+          "description": "–It’s sad when they fight. –Really.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:26",
+          "timestamp_seconds": 446.72,
+          "description": "Are you coming to the party tonight?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:30",
+          "timestamp_seconds": 450.36,
+          "description": "–It would be nice to see you. –Nice with a redneck party, huh?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:14",
+          "timestamp_seconds": 614.28,
+          "description": "That’s not true. Kiara is in. She’s your friend, not mine.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.0,
+          "description": "See you at my place later then, at my pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:11:54",
+          "timestamp_seconds": 714.28,
+          "description": "Kiara…",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 22,
+      "avg_intensity": 1.91
+    },
+    {
+      "id": "s01e05_batgirl_1",
+      "episode_id": "s01e05",
+      "character_id": "batgirl_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 48,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:08:46",
+      "last_appearance_timestamp": "0:17:12",
+      "key_moments": [
+        {
+          "timestamp": "0:08:46",
+          "timestamp_seconds": 526.5,
+          "description": "Well, I’ve been invited to a party I really want to go to.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:55",
+          "timestamp_seconds": 535.78,
+          "description": "I can come to the party. It’ll be fun.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:03",
+          "timestamp_seconds": 543.6800000000001,
+          "description": "You’re not invited. And I’m going to Chloe’s pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:11",
+          "timestamp_seconds": 551.4000000000001,
+          "description": "–I have Batgirls training. –Okay.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.0,
+          "description": "See you at my place later then, at my pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:18",
+          "timestamp_seconds": 858.8199999999999,
+          "description": "if she could come to the pre-party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:25",
+          "timestamp_seconds": 865.04,
+          "description": "Siri is in Batgirls, right?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:43",
+          "timestamp_seconds": 943.44,
+          "description": "Damn it, be here now instead. Screw that fucking party.",
+          "content_type": "party",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 16,
+      "avg_intensity": 2.38
+    },
+    {
+      "id": "s01e05_batgirl_3",
+      "episode_id": "s01e05",
+      "character_id": "batgirl_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 48,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:08:46",
+      "last_appearance_timestamp": "0:17:12",
+      "key_moments": [
+        {
+          "timestamp": "0:08:46",
+          "timestamp_seconds": 526.5,
+          "description": "Well, I’ve been invited to a party I really want to go to.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:55",
+          "timestamp_seconds": 535.78,
+          "description": "I can come to the party. It’ll be fun.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:03",
+          "timestamp_seconds": 543.6800000000001,
+          "description": "You’re not invited. And I’m going to Chloe’s pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:11",
+          "timestamp_seconds": 551.4000000000001,
+          "description": "–I have Batgirls training. –Okay.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.0,
+          "description": "See you at my place later then, at my pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:18",
+          "timestamp_seconds": 858.8199999999999,
+          "description": "if she could come to the pre-party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:25",
+          "timestamp_seconds": 865.04,
+          "description": "Siri is in Batgirls, right?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:43",
+          "timestamp_seconds": 943.44,
+          "description": "Damn it, be here now instead. Screw that fucking party.",
+          "content_type": "party",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 16,
+      "avg_intensity": 2.38
+    },
+    {
+      "id": "s01e05_felicia",
+      "episode_id": "s01e05",
+      "character_id": "felicia",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:09:54",
+      "last_appearance_timestamp": "0:10:25",
+      "key_moments": [
+        {
+          "timestamp": "0:09:54",
+          "timestamp_seconds": 594.56,
+          "description": "So Felicia and Livia manage the choreography?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.0,
+          "description": "See you at my place later then, at my pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 1.75
+    },
+    {
+      "id": "s01e05_livia",
+      "episode_id": "s01e05",
+      "character_id": "livia",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:09:54",
+      "last_appearance_timestamp": "0:10:25",
+      "key_moments": [
+        {
+          "timestamp": "0:09:54",
+          "timestamp_seconds": 594.56,
+          "description": "So Felicia and Livia manage the choreography?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.0,
+          "description": "See you at my place later then, at my pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 1.75
+    },
+    {
+      "id": "s01e05_siri",
+      "episode_id": "s01e05",
+      "character_id": "siri",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:09:58",
+      "last_appearance_timestamp": "0:14:25",
+      "key_moments": [
+        {
+          "timestamp": "0:09:58",
+          "timestamp_seconds": 598.54,
+          "description": "–And Siri didn’t, right? –Yeah, but she’s from Källby.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.0,
+          "description": "See you at my place later then, at my pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:18",
+          "timestamp_seconds": 858.8199999999999,
+          "description": "if she could come to the pre-party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:25",
+          "timestamp_seconds": 865.04,
+          "description": "Siri is in Batgirls, right?",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 1.83
+    },
+    {
+      "id": "s01e05_party_student_3",
+      "episode_id": "s01e05",
+      "character_id": "party_student_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 39,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:10:05",
+      "last_appearance_timestamp": "0:16:09",
+      "key_moments": [
+        {
+          "timestamp": "0:10:05",
+          "timestamp_seconds": 605.24,
+          "description": "So maybe she can’t make it to training and stuff.",
+          "content_type": "training",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:09",
+          "timestamp_seconds": 609.5999999999999,
+          "description": "that all your friends suddenly are Batgirls",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:14",
+          "timestamp_seconds": 614.28,
+          "description": "That’s not true. Kiara is in. She’s your friend, not mine.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:17",
+          "timestamp_seconds": 617.04,
+          "description": "Your friends don’t make the cut, Elise.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:25",
+          "timestamp_seconds": 625.0,
+          "description": "See you at my place later then, at my pre-party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:12:15",
+          "timestamp_seconds": 735.5799999999999,
+          "description": "Me and some friends are studying for the test.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:12:33",
+          "timestamp_seconds": 753.26,
+          "description": "You haven’t had friends over while we were away, have you?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:15:43",
+          "timestamp_seconds": 943.44,
+          "description": "Damn it, be here now instead. Screw that fucking party.",
+          "content_type": "party",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:15:50",
+          "timestamp_seconds": 950.54,
+          "description": "We can’t just sit here nerding out. Come on, let’s go to the party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:15:53",
+          "timestamp_seconds": 953.1800000000001,
+          "description": "Chicks, music, dancing!",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 13,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e05_father",
+      "episode_id": "s01e05",
+      "character_id": "father",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:12:30",
+      "last_appearance_timestamp": "0:12:30",
+      "key_moments": [
+        {
+          "timestamp": "0:12:30",
+          "timestamp_seconds": 750.86,
+          "description": "No, Dad. No idea.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e05_jacques_natt_och_dag",
+      "episode_id": "s01e05",
+      "character_id": "jacques_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:12:39",
+      "last_appearance_timestamp": "0:12:39",
+      "key_moments": [
+        {
+          "timestamp": "0:12:39",
+          "timestamp_seconds": 759.5,
+          "description": "–Do you think it could be Jacques? –Yeah. Or I don’t know.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e05_adam",
+      "episode_id": "s01e05",
+      "character_id": "adam",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:14:18",
+      "last_appearance_timestamp": "0:14:36",
+      "key_moments": [
+        {
+          "timestamp": "0:14:18",
+          "timestamp_seconds": 858.8199999999999,
+          "description": "if she could come to the pre-party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:25",
+          "timestamp_seconds": 865.04,
+          "description": "Siri is in Batgirls, right?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:36",
+          "timestamp_seconds": 876.98,
+          "description": "Yeah. But Adam though. Can’t we help him buy his costume or something?",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 1.67
+    },
+    {
+      "id": "s01e06_party_student_3",
+      "episode_id": "s01e06",
+      "character_id": "party_student_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 15,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:00:02",
+      "last_appearance_timestamp": "0:05:15",
+      "key_moments": [
+        {
+          "timestamp": "0:00:02",
+          "timestamp_seconds": 2.1,
+          "description": "Your friend is doing as well as can be expected.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:14",
+          "timestamp_seconds": 254.42,
+          "description": "Come to this year’s big event: the masquerade. Don’t forget to sign up today.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:43",
+          "timestamp_seconds": 283.68,
+          "description": "First your best friend makes out with your girl.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:47",
+          "timestamp_seconds": 287.18,
+          "description": "Then the drunk clip of your vampire romance spreads all over school.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:15",
+          "timestamp_seconds": 315.34000000000003,
+          "description": "Hello? Is there anyone here who wants vampires to be allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 5,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e06_alfred",
+      "episode_id": "s01e06",
+      "character_id": "alfred",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 30,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:00:20",
+      "last_appearance_timestamp": "0:15:51",
+      "key_moments": [
+        {
+          "timestamp": "0:00:20",
+          "timestamp_seconds": 20.66,
+          "description": "Alfred, wait!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:00:37",
+          "timestamp_seconds": 37.18,
+          "description": "–Of course you bear the responsibility. –It’s just a party.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:48",
+          "timestamp_seconds": 108.47999999999999,
+          "description": "–She was fucking about to bite Eric to death. –What the hell, Alfred…",
+          "content_type": "vampire_feeding",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:01:56",
+          "timestamp_seconds": 116.4,
+          "description": "All she cares about is status and dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:58",
+          "timestamp_seconds": 118.92,
+          "description": "Who the fuck cares about dancing? It’s so fucking lame.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:01",
+          "timestamp_seconds": 121.88,
+          "description": "Batgirls can go to hell.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:12",
+          "timestamp_seconds": 132.24,
+          "description": "Look! Have you seen the video of Alfred?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:05:15",
+          "timestamp_seconds": 315.34000000000003,
+          "description": "Hello? Is there anyone here who wants vampires to be allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:05:25",
+          "timestamp_seconds": 325.88,
+          "description": "That’s right, Alfred. Cute clip. Really sassy.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:15:51",
+          "timestamp_seconds": 951.5,
+          "description": "No way! What do you think I’m trying to do, Affe?",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 10,
+      "avg_intensity": 2.4
+    },
+    {
+      "id": "s01e06_eric",
+      "episode_id": "s01e06",
+      "character_id": "eric",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 60,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:48",
+      "last_appearance_timestamp": "0:17:18",
+      "key_moments": [
+        {
+          "timestamp": "0:01:48",
+          "timestamp_seconds": 108.47999999999999,
+          "description": "–She was fucking about to bite Eric to death. –What the hell, Alfred…",
+          "content_type": "vampire_feeding",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:01:56",
+          "timestamp_seconds": 116.4,
+          "description": "All she cares about is status and dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:58",
+          "timestamp_seconds": 118.92,
+          "description": "Who the fuck cares about dancing? It’s so fucking lame.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:01",
+          "timestamp_seconds": 121.88,
+          "description": "Batgirls can go to hell.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:03:48",
+          "timestamp_seconds": 228.3,
+          "description": "My parents were mega pissed. Worst interrogation all damn morning.",
+          "content_type": "confrontation",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:04:04",
+          "timestamp_seconds": 244.98,
+          "description": "Will Eric turn into a vampire because he got bitten?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:14",
+          "timestamp_seconds": 254.42,
+          "description": "Come to this year’s big event: the masquerade. Don’t forget to sign up today.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:31",
+          "timestamp_seconds": 271.44,
+          "description": "–Eric… –Yeah.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:47",
+          "timestamp_seconds": 287.18,
+          "description": "Then the drunk clip of your vampire romance spreads all over school.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:15",
+          "timestamp_seconds": 315.34000000000003,
+          "description": "Hello? Is there anyone here who wants vampires to be allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 20,
+      "avg_intensity": 2.35
+    },
+    {
+      "id": "s01e06_kiara_natt_och_dag",
+      "episode_id": "s01e06",
+      "character_id": "kiara_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 45,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:52",
+      "last_appearance_timestamp": "0:18:37",
+      "key_moments": [
+        {
+          "timestamp": "0:01:52",
+          "timestamp_seconds": 112.82,
+          "description": "Kiara, who I thought I was in love with, you can’t trust her.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:01:56",
+          "timestamp_seconds": 116.4,
+          "description": "All she cares about is status and dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:58",
+          "timestamp_seconds": 118.92,
+          "description": "Who the fuck cares about dancing? It’s so fucking lame.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:01",
+          "timestamp_seconds": 121.88,
+          "description": "Batgirls can go to hell.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:19",
+          "timestamp_seconds": 379.68,
+          "description": "–What happened to Kiara then? –Yeah, you get it. Hello!",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:08:14",
+          "timestamp_seconds": 494.91999999999996,
+          "description": "–Where’s Kiara? –She’s not allowed anymore.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:10:23",
+          "timestamp_seconds": 623.36,
+          "description": "…shove my tongue down Kiara’s throat",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:14:58",
+          "timestamp_seconds": 898.24,
+          "description": "–What actually happened. –At Kiara’s party?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:16:55",
+          "timestamp_seconds": 1015.54,
+          "description": "You get that I didn’t make out with Kiara on purpose, right?",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 15,
+      "avg_intensity": 1.93
+    },
+    {
+      "id": "s01e06_batgirl_1",
+      "episode_id": "s01e06",
+      "character_id": "batgirl_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:01:56",
+      "last_appearance_timestamp": "0:06:04",
+      "key_moments": [
+        {
+          "timestamp": "0:01:56",
+          "timestamp_seconds": 116.4,
+          "description": "All she cares about is status and dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:58",
+          "timestamp_seconds": 118.92,
+          "description": "Who the fuck cares about dancing? It’s so fucking lame.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:01",
+          "timestamp_seconds": 121.88,
+          "description": "Batgirls can go to hell.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 3.0
+    },
+    {
+      "id": "s01e06_batgirl_3",
+      "episode_id": "s01e06",
+      "character_id": "batgirl_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:01:56",
+      "last_appearance_timestamp": "0:06:04",
+      "key_moments": [
+        {
+          "timestamp": "0:01:56",
+          "timestamp_seconds": 116.4,
+          "description": "All she cares about is status and dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:01:58",
+          "timestamp_seconds": 118.92,
+          "description": "Who the fuck cares about dancing? It’s so fucking lame.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:01",
+          "timestamp_seconds": 121.88,
+          "description": "Batgirls can go to hell.",
+          "content_type": "dance",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 3.0
+    },
+    {
+      "id": "s01e06_principal",
+      "episode_id": "s01e06",
+      "character_id": "principal",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:02:44",
+      "last_appearance_timestamp": "0:04:14",
+      "key_moments": [
+        {
+          "timestamp": "0:02:44",
+          "timestamp_seconds": 164.74,
+          "description": "Yes… We’ve spoken to the police and we’ve spoken to the principal.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:04",
+          "timestamp_seconds": 184.76,
+          "description": "And the dance!",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:03:29",
+          "timestamp_seconds": 209.5,
+          "description": "No more hanging out with humans, especially no more dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:03:38",
+          "timestamp_seconds": 218.64000000000001,
+          "description": "The principal will decide tonight.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:48",
+          "timestamp_seconds": 228.3,
+          "description": "My parents were mega pissed. Worst interrogation all damn morning.",
+          "content_type": "confrontation",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:04:14",
+          "timestamp_seconds": 254.42,
+          "description": "Come to this year’s big event: the masquerade. Don’t forget to sign up today.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e06_elise",
+      "episode_id": "s01e06",
+      "character_id": "elise",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 51,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:03:29",
+      "last_appearance_timestamp": "0:17:04",
+      "key_moments": [
+        {
+          "timestamp": "0:03:29",
+          "timestamp_seconds": 209.5,
+          "description": "No more hanging out with humans, especially no more dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:03:48",
+          "timestamp_seconds": 228.3,
+          "description": "My parents were mega pissed. Worst interrogation all damn morning.",
+          "content_type": "confrontation",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:03:52",
+          "timestamp_seconds": 232.22000000000003,
+          "description": "–I had Elise on the hook, you know. –What happened then?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:56",
+          "timestamp_seconds": 236.64,
+          "description": "I called her Elsa instead of Elise. She just left.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:14",
+          "timestamp_seconds": 254.42,
+          "description": "Come to this year’s big event: the masquerade. Don’t forget to sign up today.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:25",
+          "timestamp_seconds": 265.18,
+          "description": "No, damn it! Elise, sorry!",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:04:47",
+          "timestamp_seconds": 287.18,
+          "description": "Then the drunk clip of your vampire romance spreads all over school.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:15",
+          "timestamp_seconds": 315.34000000000003,
+          "description": "Hello? Is there anyone here who wants vampires to be allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:09:39",
+          "timestamp_seconds": 579.06,
+          "description": "Out? Now? The masquerade is any day now.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:50",
+          "timestamp_seconds": 590.7,
+          "description": "What are you waiting for? You get to take Elise’s spot now.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 17,
+      "avg_intensity": 2.06
+    },
+    {
+      "id": "s01e06_mother",
+      "episode_id": "s01e06",
+      "character_id": "mother",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:04:14",
+      "last_appearance_timestamp": "0:05:15",
+      "key_moments": [
+        {
+          "timestamp": "0:04:14",
+          "timestamp_seconds": 254.42,
+          "description": "Come to this year’s big event: the masquerade. Don’t forget to sign up today.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:34",
+          "timestamp_seconds": 274.2,
+          "description": "Can you come with me to my office for a moment?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:47",
+          "timestamp_seconds": 287.18,
+          "description": "Then the drunk clip of your vampire romance spreads all over school.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:05:15",
+          "timestamp_seconds": 315.34000000000003,
+          "description": "Hello? Is there anyone here who wants vampires to be allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 4
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 2.25
+    },
+    {
+      "id": "s01e06_father",
+      "episode_id": "s01e06",
+      "character_id": "father",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:05:56",
+      "last_appearance_timestamp": "0:06:04",
+      "key_moments": [
+        {
+          "timestamp": "0:05:56",
+          "timestamp_seconds": 356.94,
+          "description": "Dad’s going to take back his credit card.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e06_chloe",
+      "episode_id": "s01e06",
+      "character_id": "chloe",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:05:59",
+      "last_appearance_timestamp": "0:19:53",
+      "key_moments": [
+        {
+          "timestamp": "0:05:59",
+          "timestamp_seconds": 359.17999999999995,
+          "description": "Oh, poor you, Chloe!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:04",
+          "timestamp_seconds": 544.58,
+          "description": "The masquerade is any day now. You need to level up.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:33",
+          "timestamp_seconds": 573.9,
+          "description": "–Chloe, you’ve changed the choreography. –No, I haven’t.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:39",
+          "timestamp_seconds": 579.06,
+          "description": "Out? Now? The masquerade is any day now.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:19:20",
+          "timestamp_seconds": 1160.3,
+          "description": "–I heard what you said to Chloe. –Said what?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:19:41",
+          "timestamp_seconds": 1181.3400000000001,
+          "description": "I know how much you’ve been looking forward to dancing.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:19:53",
+          "timestamp_seconds": 1193.0,
+          "description": "and that I’ve made a fool of myself.",
+          "content_type": "confrontation",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 1.62
+    },
+    {
+      "id": "s01e06_kylie",
+      "episode_id": "s01e06",
+      "character_id": "kylie",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:06:04",
+      "last_appearance_timestamp": "0:08:21",
+      "key_moments": [
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:07",
+          "timestamp_seconds": 367.76,
+          "description": "Kylie has several thousand followers on TikTok now.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:08:21",
+          "timestamp_seconds": 501.62,
+          "description": "Don’t screw this up now, Kylie, like the bloodsucker did.",
+          "content_type": "vampire_feeding",
+          "intensity": 3
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e06_adam",
+      "episode_id": "s01e06",
+      "character_id": "adam",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:06:04",
+      "last_appearance_timestamp": "0:06:15",
+      "key_moments": [
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:11",
+          "timestamp_seconds": 371.15999999999997,
+          "description": "Oh, okay. What happened to Adam or Siri?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:15",
+          "timestamp_seconds": 375.64,
+          "description": "Adam is still poor, and the glasses worm can’t be in.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 1.33
+    },
+    {
+      "id": "s01e06_siri",
+      "episode_id": "s01e06",
+      "character_id": "siri",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:06:04",
+      "last_appearance_timestamp": "0:06:11",
+      "key_moments": [
+        {
+          "timestamp": "0:06:04",
+          "timestamp_seconds": 364.86,
+          "description": "I’ve found a new dancer for Batgirls: Kylie.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:11",
+          "timestamp_seconds": 371.15999999999997,
+          "description": "Oh, okay. What happened to Adam or Siri?",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e06_livia",
+      "episode_id": "s01e06",
+      "character_id": "livia",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:20:33",
+      "last_appearance_timestamp": "0:20:33",
+      "key_moments": [
+        {
+          "timestamp": "0:20:33",
+          "timestamp_seconds": 1233.1,
+          "description": "We have two completely different ways of living. It’s too complicated.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e07_desiree_natt_och_dag",
+      "episode_id": "s01e07",
+      "character_id": "desiree_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:00:35",
+      "last_appearance_timestamp": "0:00:35",
+      "key_moments": [
+        {
+          "timestamp": "0:00:35",
+          "timestamp_seconds": 35.400000000000006,
+          "description": "Desirée: Kiara… Please, can I come in?",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e07_kiara_natt_och_dag",
+      "episode_id": "s01e07",
+      "character_id": "kiara_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 36,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:00:35",
+      "last_appearance_timestamp": "0:10:48",
+      "key_moments": [
+        {
+          "timestamp": "0:00:35",
+          "timestamp_seconds": 35.400000000000006,
+          "description": "Desirée: Kiara… Please, can I come in?",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:17",
+          "timestamp_seconds": 137.83999999999997,
+          "description": "I decide who’s in Batgirls and in the final show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:20",
+          "timestamp_seconds": 140.76,
+          "description": "If you don’t come to my pre-party you’re not in.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:47",
+          "timestamp_seconds": 167.52,
+          "description": "–No. –It was probably Kiara.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:36",
+          "timestamp_seconds": 276.58,
+          "description": "But this isn’t about me. It’s about Alfred and Kiara.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:39",
+          "timestamp_seconds": 279.98,
+          "description": "I invited them to the masquerade, and now even Kiara can’t go.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:56",
+          "timestamp_seconds": 596.1600000000001,
+          "description": "So are you with me? Are you ready to fight",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:11",
+          "timestamp_seconds": 611.66,
+          "description": "Eric, did you hear what I said? Kiara is allowed at the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 12,
+      "avg_intensity": 1.83
+    },
+    {
+      "id": "s01e07_jacques_natt_och_dag",
+      "episode_id": "s01e07",
+      "character_id": "jacques_natt_och_dag",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 3,
+      "importance_rating": 1,
+      "first_appearance_timestamp": "0:00:49",
+      "last_appearance_timestamp": "0:00:49",
+      "key_moments": [
+        {
+          "timestamp": "0:00:49",
+          "timestamp_seconds": 49.239999999999995,
+          "description": "Jacques: It’s me. We need to talk.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 1,
+      "avg_intensity": 1.0
+    },
+    {
+      "id": "s01e07_alfred",
+      "episode_id": "s01e07",
+      "character_id": "alfred",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 45,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:07",
+      "last_appearance_timestamp": "0:08:11",
+      "key_moments": [
+        {
+          "timestamp": "0:01:07",
+          "timestamp_seconds": 67.28,
+          "description": "I was wrong about Alfred. He wanted to give you this.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:10",
+          "timestamp_seconds": 190.66,
+          "description": "Is Alfred here? I need to talk to him.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:34",
+          "timestamp_seconds": 214.72,
+          "description": "No, it’s fucking not okay. I gave the invitation to you and Alfred,",
+          "content_type": "dialogue",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:04:36",
+          "timestamp_seconds": 276.58,
+          "description": "But this isn’t about me. It’s about Alfred and Kiara.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:39",
+          "timestamp_seconds": 279.98,
+          "description": "I invited them to the masquerade, and now even Kiara can’t go.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:25",
+          "timestamp_seconds": 385.62,
+          "description": "Name it Batgirls final show masquerade,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:31",
+          "timestamp_seconds": 391.6,
+          "description": "–There. –So sweet of you, Alfred.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:38",
+          "timestamp_seconds": 398.15999999999997,
+          "description": "Since no one wants to go with you I’ve fixed you a date for the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:01",
+          "timestamp_seconds": 421.36,
+          "description": "–What are you doing here then? –I’m going to talk to Alfred.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:10",
+          "timestamp_seconds": 430.2,
+          "description": "now that he’s going to the masquerade and everything.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 15,
+      "avg_intensity": 1.73
+    },
+    {
+      "id": "s01e07_eric",
+      "episode_id": "s01e07",
+      "character_id": "eric",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 48,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:01:58",
+      "last_appearance_timestamp": "0:16:07",
+      "key_moments": [
+        {
+          "timestamp": "0:01:58",
+          "timestamp_seconds": 118.47999999999999,
+          "description": "The face of the USA. America’s indigenous people.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:01",
+          "timestamp_seconds": 121.22,
+          "description": "Screw Depp-Eric now.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:06",
+          "timestamp_seconds": 126.02,
+          "description": "–If he wants to go with someone to the masquerade? –Yeah.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:12",
+          "timestamp_seconds": 132.92000000000002,
+          "description": "Are you talking about the nerds you want to go to the masquerade with?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:17",
+          "timestamp_seconds": 137.83999999999997,
+          "description": "I decide who’s in Batgirls and in the final show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:20",
+          "timestamp_seconds": 140.76,
+          "description": "If you don’t come to my pre-party you’re not in.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:11",
+          "timestamp_seconds": 491.03999999999996,
+          "description": "why aren’t vampires allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:08:33",
+          "timestamp_seconds": 513.06,
+          "description": "I have nothing more to say to you. And Eric, you’re just as cowardly.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 16,
+      "avg_intensity": 1.81
+    },
+    {
+      "id": "s01e07_siri",
+      "episode_id": "s01e07",
+      "character_id": "siri",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:02:06",
+      "last_appearance_timestamp": "0:02:35",
+      "key_moments": [
+        {
+          "timestamp": "0:02:06",
+          "timestamp_seconds": 126.02,
+          "description": "–If he wants to go with someone to the masquerade? –Yeah.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:12",
+          "timestamp_seconds": 132.92000000000002,
+          "description": "Are you talking about the nerds you want to go to the masquerade with?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:17",
+          "timestamp_seconds": 137.83999999999997,
+          "description": "I decide who’s in Batgirls and in the final show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:20",
+          "timestamp_seconds": 140.76,
+          "description": "If you don’t come to my pre-party you’re not in.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 2.33
+    },
+    {
+      "id": "s01e07_batgirl_1",
+      "episode_id": "s01e07",
+      "character_id": "batgirl_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:02:06",
+      "last_appearance_timestamp": "0:06:38",
+      "key_moments": [
+        {
+          "timestamp": "0:02:06",
+          "timestamp_seconds": 126.02,
+          "description": "–If he wants to go with someone to the masquerade? –Yeah.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:12",
+          "timestamp_seconds": 132.92000000000002,
+          "description": "Are you talking about the nerds you want to go to the masquerade with?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:17",
+          "timestamp_seconds": 137.83999999999997,
+          "description": "I decide who’s in Batgirls and in the final show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:20",
+          "timestamp_seconds": 140.76,
+          "description": "If you don’t come to my pre-party you’re not in.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:25",
+          "timestamp_seconds": 385.62,
+          "description": "Name it Batgirls final show masquerade,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:38",
+          "timestamp_seconds": 398.15999999999997,
+          "description": "Since no one wants to go with you I’ve fixed you a date for the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 2.25
+    },
+    {
+      "id": "s01e07_elise",
+      "episode_id": "s01e07",
+      "character_id": "elise",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 54,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:02:06",
+      "last_appearance_timestamp": "0:17:04",
+      "key_moments": [
+        {
+          "timestamp": "0:02:06",
+          "timestamp_seconds": 126.02,
+          "description": "–If he wants to go with someone to the masquerade? –Yeah.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:12",
+          "timestamp_seconds": 132.92000000000002,
+          "description": "Are you talking about the nerds you want to go to the masquerade with?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:15",
+          "timestamp_seconds": 135.32,
+          "description": "When Elise isn’t here",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:02:17",
+          "timestamp_seconds": 137.83999999999997,
+          "description": "I decide who’s in Batgirls and in the final show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:20",
+          "timestamp_seconds": 140.76,
+          "description": "If you don’t come to my pre-party you’re not in.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:04:15",
+          "timestamp_seconds": 255.82,
+          "description": "And you should probably take care of Elise. I know you both want each other.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:04:39",
+          "timestamp_seconds": 279.98,
+          "description": "I invited them to the masquerade, and now even Kiara can’t go.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:59",
+          "timestamp_seconds": 479.9,
+          "description": "and that’s what the masquerade should show.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 18,
+      "avg_intensity": 1.72
+    },
+    {
+      "id": "s01e07_batgirl_3",
+      "episode_id": "s01e07",
+      "character_id": "batgirl_3",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 24,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:02:06",
+      "last_appearance_timestamp": "0:06:38",
+      "key_moments": [
+        {
+          "timestamp": "0:02:06",
+          "timestamp_seconds": 126.02,
+          "description": "–If he wants to go with someone to the masquerade? –Yeah.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:12",
+          "timestamp_seconds": 132.92000000000002,
+          "description": "Are you talking about the nerds you want to go to the masquerade with?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:17",
+          "timestamp_seconds": 137.83999999999997,
+          "description": "I decide who’s in Batgirls and in the final show.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:20",
+          "timestamp_seconds": 140.76,
+          "description": "If you don’t come to my pre-party you’re not in.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:25",
+          "timestamp_seconds": 385.62,
+          "description": "Name it Batgirls final show masquerade,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:38",
+          "timestamp_seconds": 398.15999999999997,
+          "description": "Since no one wants to go with you I’ve fixed you a date for the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 8,
+      "avg_intensity": 2.25
+    },
+    {
+      "id": "s01e07_felicia",
+      "episode_id": "s01e07",
+      "character_id": "felicia",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:02:29",
+      "last_appearance_timestamp": "0:02:55",
+      "key_moments": [
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:55",
+          "timestamp_seconds": 175.82,
+          "description": "Yeah, I mean you! Livia and Felicia, out!",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 2.33
+    },
+    {
+      "id": "s01e07_livia",
+      "episode_id": "s01e07",
+      "character_id": "livia",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 39,
+      "importance_rating": 5,
+      "first_appearance_timestamp": "0:02:29",
+      "last_appearance_timestamp": "0:08:11",
+      "key_moments": [
+        {
+          "timestamp": "0:02:29",
+          "timestamp_seconds": 149.6,
+          "description": "Come on, damn it! It’s dress rehearsal and you don’t know the choreography. Try again!",
+          "content_type": "training",
+          "intensity": 4
+        },
+        {
+          "timestamp": "0:02:35",
+          "timestamp_seconds": 155.42000000000002,
+          "description": "And Siri, my grandma dances better.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:02:55",
+          "timestamp_seconds": 175.82,
+          "description": "Yeah, I mean you! Livia and Felicia, out!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:03:00",
+          "timestamp_seconds": 180.3,
+          "description": "Livia, go change. It smells like sweat all the way over here!",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:06:25",
+          "timestamp_seconds": 385.62,
+          "description": "Name it Batgirls final show masquerade,",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:38",
+          "timestamp_seconds": 398.15999999999997,
+          "description": "Since no one wants to go with you I’ve fixed you a date for the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:06:41",
+          "timestamp_seconds": 401.08000000000004,
+          "description": "–With who? –Livia.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:10",
+          "timestamp_seconds": 430.2,
+          "description": "now that he’s going to the masquerade and everything.",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:07:18",
+          "timestamp_seconds": 438.72,
+          "description": "Alfred is going with Livia.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:07:25",
+          "timestamp_seconds": 445.62,
+          "description": "You wouldn’t have handled the dance anyway. So just forget about it.",
+          "content_type": "dance",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 13,
+      "avg_intensity": 1.85
+    },
+    {
+      "id": "s01e07_party_student_2",
+      "episode_id": "s01e07",
+      "character_id": "party_student_2",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 21,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:08:54",
+      "last_appearance_timestamp": "0:10:11",
+      "key_moments": [
+        {
+          "timestamp": "0:08:54",
+          "timestamp_seconds": 534.7,
+          "description": "Schoolmates, I have an important announcement.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:05",
+          "timestamp_seconds": 545.6800000000001,
+          "description": "having a dance performance at the masquerade.",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:08",
+          "timestamp_seconds": 548.6400000000001,
+          "description": "Should we choose the prettiest ones or the ones who are best at dancing?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:23",
+          "timestamp_seconds": 563.66,
+          "description": "I made out with the vampire, even forced it",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:27",
+          "timestamp_seconds": 567.8,
+          "description": "Then I made everything even worse when I also invited her to something",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:56",
+          "timestamp_seconds": 596.1600000000001,
+          "description": "So are you with me? Are you ready to fight",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:11",
+          "timestamp_seconds": 611.66,
+          "description": "Eric, did you hear what I said? Kiara is allowed at the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 7,
+      "avg_intensity": 1.86
+    },
+    {
+      "id": "s01e07_party_student_1",
+      "episode_id": "s01e07",
+      "character_id": "party_student_1",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 18,
+      "importance_rating": 4,
+      "first_appearance_timestamp": "0:09:08",
+      "last_appearance_timestamp": "0:10:11",
+      "key_moments": [
+        {
+          "timestamp": "0:09:08",
+          "timestamp_seconds": 548.6400000000001,
+          "description": "Should we choose the prettiest ones or the ones who are best at dancing?",
+          "content_type": "dance",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:23",
+          "timestamp_seconds": 563.66,
+          "description": "I made out with the vampire, even forced it",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:27",
+          "timestamp_seconds": 567.8,
+          "description": "Then I made everything even worse when I also invited her to something",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:09:36",
+          "timestamp_seconds": 576.62,
+          "description": "But we students have to stand up for what we believe in.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:09:56",
+          "timestamp_seconds": 596.1600000000001,
+          "description": "So are you with me? Are you ready to fight",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:10:11",
+          "timestamp_seconds": 611.66,
+          "description": "Eric, did you hear what I said? Kiara is allowed at the masquerade.",
+          "content_type": "party",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 6,
+      "avg_intensity": 1.83
+    },
+    {
+      "id": "s01e07_chloe",
+      "episode_id": "s01e07",
+      "character_id": "chloe",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 12,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:13:53",
+      "last_appearance_timestamp": "0:14:35",
+      "key_moments": [
+        {
+          "timestamp": "0:13:53",
+          "timestamp_seconds": 833.22,
+          "description": "I figured. Chloe is how she is.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:14:08",
+          "timestamp_seconds": 848.22,
+          "description": "Screw Chloe for once.",
+          "content_type": "dialogue",
+          "intensity": 1
+        },
+        {
+          "timestamp": "0:14:31",
+          "timestamp_seconds": 871.12,
+          "description": "But what about the invitation? Are vampires allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:35",
+          "timestamp_seconds": 875.06,
+          "description": "I talked to the principal and we made a deal.",
+          "content_type": "confrontation",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 4,
+      "avg_intensity": 1.5
+    },
+    {
+      "id": "s01e07_didde",
+      "episode_id": "s01e07",
+      "character_id": "didde",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:14:31",
+      "last_appearance_timestamp": "0:14:50",
+      "key_moments": [
+        {
+          "timestamp": "0:14:31",
+          "timestamp_seconds": 871.12,
+          "description": "But what about the invitation? Are vampires allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:35",
+          "timestamp_seconds": 875.06,
+          "description": "I talked to the principal and we made a deal.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:50",
+          "timestamp_seconds": 890.7,
+          "description": "My old sweaty bandy clothes or Kevin and Didde’s stolen goods.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 1.67
+    },
+    {
+      "id": "s01e07_principal",
+      "episode_id": "s01e07",
+      "character_id": "principal",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 6,
+      "importance_rating": 2,
+      "first_appearance_timestamp": "0:14:31",
+      "last_appearance_timestamp": "0:14:35",
+      "key_moments": [
+        {
+          "timestamp": "0:14:31",
+          "timestamp_seconds": 871.12,
+          "description": "But what about the invitation? Are vampires allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:35",
+          "timestamp_seconds": 875.06,
+          "description": "I talked to the principal and we made a deal.",
+          "content_type": "confrontation",
+          "intensity": 2
+        }
+      ],
+      "moment_count": 2,
+      "avg_intensity": 2.0
+    },
+    {
+      "id": "s01e07_kevin",
+      "episode_id": "s01e07",
+      "character_id": "kevin",
+      "scene_appearances": [],
+      "total_screen_time_seconds": 9,
+      "importance_rating": 3,
+      "first_appearance_timestamp": "0:14:31",
+      "last_appearance_timestamp": "0:14:50",
+      "key_moments": [
+        {
+          "timestamp": "0:14:31",
+          "timestamp_seconds": 871.12,
+          "description": "But what about the invitation? Are vampires allowed at the masquerade?",
+          "content_type": "party",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:35",
+          "timestamp_seconds": 875.06,
+          "description": "I talked to the principal and we made a deal.",
+          "content_type": "confrontation",
+          "intensity": 2
+        },
+        {
+          "timestamp": "0:14:50",
+          "timestamp_seconds": 890.7,
+          "description": "My old sweaty bandy clothes or Kevin and Didde’s stolen goods.",
+          "content_type": "dialogue",
+          "intensity": 1
+        }
+      ],
+      "moment_count": 3,
+      "avg_intensity": 1.67
+    }
+  ]
+}

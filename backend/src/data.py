@@ -5,14 +5,21 @@ import yaml
 
 from .models import (
     Character,
+    CharacterEvolutionMilestone,
     Episode,
+    EpisodeCharacterPresence,
     EpisodeEvolution,
+    KeyMomentSummary,
     KinkDescriptor,
     KinkLimit,
     KinkProfile,
+    MythosConnection,
     MythosElement,
     Relationship,
     Scene,
+    VideoAnalysis,
+    VideoMoment,
+    VideoScene,
 )
 
 # Base path for data files
@@ -202,7 +209,6 @@ def load_characters_from_yaml() -> tuple:
 
 
 def load_mythos_from_yaml() -> dict:
-    """Load mythos elements from data/mythos/*.yaml files"""
     mythos_db = {}
     mythos_dir = DATA_DIR / "mythos"
 
@@ -210,7 +216,6 @@ def load_mythos_from_yaml() -> dict:
         print(f"Warning: mythos directory not found at {mythos_dir}")
         return mythos_db
 
-    # Find all mythos YAML files
     mythos_files = sorted(mythos_dir.glob("*.yaml"))
 
     try:
@@ -222,27 +227,39 @@ def load_mythos_from_yaml() -> dict:
                 continue
 
             mythos_id = mythos_data.get("id", mythos_file.stem)
-
-            # Get canonical info
             canonical = mythos_data.get("canonical", {})
+            adaptation = mythos_data.get("adaptation_expansion", {})
 
-            # Extract related characters
-            related_chars = []
+            related_chars: list[str] = []
             for ability in canonical.get("abilities", []):
                 if isinstance(ability, str):
                     related_chars.append(ability)
-
-            # Also check if there's explicit character references
             if "related_characters" in canonical:
                 related_chars.extend(canonical.get("related_characters", []))
+            if "related_characters" in mythos_data:
+                related_chars.extend(mythos_data.get("related_characters", []))
+
+            related_episodes: list[str] = canonical.get("source_episodes", [])
+            if "related_episodes" in mythos_data:
+                related_episodes = mythos_data.get("related_episodes", [])
 
             mythos_element = MythosElement(
                 id=mythos_id,
                 name=mythos_data.get("name", ""),
                 category=mythos_data.get("category", "General"),
                 description=canonical.get("description"),
-                related_characters=related_chars if related_chars else None,
+                short_description=mythos_data.get("short_description"),
+                related_episodes=related_episodes,
+                related_characters=related_chars,
+                media_urls=mythos_data.get("media_urls", []),
+                traits=canonical.get("traits", []),
+                abilities=canonical.get("abilities", []),
+                weaknesses=canonical.get("weaknesses", []),
                 significance=canonical.get("significance"),
+                dark_variant=adaptation.get("dark_variant"),
+                erotic_implications=adaptation.get("erotic_implications"),
+                horror_elements=adaptation.get("horror_elements", []),
+                taboo_potential=adaptation.get("taboo_potential"),
             )
             mythos_db[mythos_id] = mythos_element
 
@@ -253,12 +270,201 @@ def load_mythos_from_yaml() -> dict:
     return mythos_db
 
 
+def load_mythos_connections_from_json() -> dict:
+    connections_db = {}
+    connections_file = DATA_DIR / "mythos" / "connections.json"
+
+    if not connections_file.exists():
+        print(f"Warning: mythos connections.json not found at {connections_file}")
+        return connections_db
+
+    try:
+        with open(connections_file, encoding="utf-8") as f:
+            connections_data = json.load(f)
+
+        seen_pairs: set[tuple[str, str]] = set()
+        for conn_data in connections_data.get("connections", []):
+            from_id = conn_data.get("from_element_id", "")
+            to_id = conn_data.get("to_element_id", "")
+
+            pair = (from_id, to_id)
+            if pair in seen_pairs:
+                print(f"Warning: Duplicate connection {from_id} -> {to_id}, skipping")
+                continue
+            seen_pairs.add(pair)
+
+            if from_id == to_id:
+                print(f"Warning: Self-referential connection {from_id}, skipping")
+                continue
+
+            conn_id = conn_data.get("id", f"{from_id}_to_{to_id}")
+            connection = MythosConnection(
+                id=conn_id,
+                from_element_id=from_id,
+                to_element_id=to_id,
+                connection_type=conn_data.get("connection_type", "related"),
+                description=conn_data.get("description"),
+                strength=conn_data.get("strength", 3),
+            )
+            connections_db[conn_id] = connection
+
+        print(f"Loaded {len(connections_db)} mythos connections from connections.json")
+    except Exception as e:
+        print(f"Error loading mythos connections: {e}")
+
+    return connections_db
+
+
+def load_video_analysis_from_json() -> dict:
+    """Load video analysis from data/video_analysis/video_analysis_v2.json"""
+    video_analysis_db = {}
+    video_analysis_file = DATA_DIR / "video_analysis" / "video_analysis_v2.json"
+
+    if not video_analysis_file.exists():
+        print(f"Warning: video_analysis_v2.json not found at {video_analysis_file}")
+        return video_analysis_db
+
+    try:
+        with open(video_analysis_file, encoding="utf-8") as f:
+            data = json.load(f)
+
+        episodes_list = data.get("episodes", [])
+
+        for ep_data in episodes_list:
+            episode_id = ep_data.get("episode_id", "")
+
+            # Parse moments
+            moments = []
+            for moment_data in ep_data.get("key_moments", []):
+                moment = VideoMoment(
+                    timestamp=moment_data.get("timestamp", ""),
+                    timestamp_seconds=moment_data.get("timestamp_seconds", 0.0),
+                    description=moment_data.get("description", ""),
+                    characters_present=moment_data.get("characters_present", []),
+                    content_type=moment_data.get("content_type", ""),
+                    intensity=moment_data.get("intensity", 1),
+                    screenshot_path=moment_data.get("screenshot_path"),
+                )
+                moments.append(moment)
+
+            # Parse scenes (if present)
+            scenes = []
+            for scene_data in ep_data.get("scenes", []):
+                scene = VideoScene(
+                    scene_id=scene_data.get("scene_id", ""),
+                    start_timestamp=scene_data.get("start_timestamp", ""),
+                    end_timestamp=scene_data.get("end_timestamp", ""),
+                    start_seconds=scene_data.get("start_seconds", 0.0),
+                    end_seconds=scene_data.get("end_seconds", 0.0),
+                    location=scene_data.get("location"),
+                    characters=scene_data.get("characters", []),
+                    content_summary=scene_data.get("content_summary", ""),
+                    moments_count=scene_data.get("moments_count", 0),
+                )
+                scenes.append(scene)
+
+            video_analysis = VideoAnalysis(
+                episode_id=episode_id,
+                episode_number=ep_data.get("episode_number", 0),
+                title=ep_data.get("title", ""),
+                duration=ep_data.get("duration", ""),
+                duration_seconds=ep_data.get("duration_seconds", 0.0),
+                key_moments=moments,
+                scenes=scenes,
+                total_moments=len(moments),
+                total_scenes=len(scenes),
+            )
+            video_analysis_db[episode_id] = video_analysis
+
+        print(f"Loaded {len(video_analysis_db)} video analyses from video_analysis_v2.json")
+    except Exception as e:
+        print(f"Error loading video analysis: {e}")
+
+    return video_analysis_db
+
+
+def load_character_presence_from_video_analysis(video_analysis_db: dict, scenes_db: dict) -> dict:
+    presence_db = {}
+
+    for episode_id, video_analysis in video_analysis_db.items():
+        character_moments: dict = {}
+
+        for moment in video_analysis.key_moments:
+            for char_id in moment.characters_present:
+                if char_id not in character_moments:
+                    character_moments[char_id] = []
+                character_moments[char_id].append(moment)
+
+        for char_id, moments in character_moments.items():
+            if not moments:
+                continue
+
+            moments_sorted = sorted(moments, key=lambda m: m.timestamp_seconds)
+            first_moment = moments_sorted[0]
+            last_moment = moments_sorted[-1]
+
+            avg_interval_seconds = 3.0
+            estimated_screen_time = len(moments) * int(avg_interval_seconds)
+
+            intensities = [m.intensity for m in moments]
+            avg_intensity = sum(intensities) / len(intensities) if intensities else 0.0
+
+            if len(moments) >= 10:
+                importance = 5
+            elif len(moments) >= 5:
+                importance = 4
+            elif len(moments) >= 3:
+                importance = 3
+            elif len(moments) >= 2:
+                importance = 2
+            else:
+                importance = 1
+
+            episode_scenes = [s for s in scenes_db.values() if s.episode_id == episode_id]
+            scene_appearances = []
+            for scene in episode_scenes:
+                if char_id in scene.characters:
+                    scene_appearances.append(scene.id)
+
+            key_moment_summaries = [
+                KeyMomentSummary(
+                    timestamp=m.timestamp,
+                    timestamp_seconds=m.timestamp_seconds,
+                    description=m.description,
+                    content_type=m.content_type,
+                    intensity=m.intensity,
+                )
+                for m in moments_sorted[:10]
+            ]
+
+            presence_id = f"{episode_id}_{char_id}"
+            presence = EpisodeCharacterPresence(
+                id=presence_id,
+                episode_id=episode_id,
+                character_id=char_id,
+                scene_appearances=scene_appearances,
+                total_screen_time_seconds=estimated_screen_time,
+                importance_rating=importance,
+                first_appearance_timestamp=first_moment.timestamp,
+                last_appearance_timestamp=last_moment.timestamp,
+                key_moments=key_moment_summaries,
+                moment_count=len(moments),
+                avg_intensity=round(avg_intensity, 2),
+            )
+            presence_db[presence_id] = presence
+
+    print(f"Generated {len(presence_db)} character presence records from video analysis")
+    return presence_db
+
+
 # Initialize databases on module load
 print("Loading data files...")
 episodes_db = load_episodes_from_json()
 scenes_db = load_scenes_from_episodes()
 characters_db, relationships_db = load_characters_from_yaml()
 mythos_db = load_mythos_from_yaml()
+mythos_connections_db = load_mythos_connections_from_json()
+video_analysis_db = load_video_analysis_from_json()
 
 print("\nData loading complete:")
 print(f"  Episodes: {len(episodes_db)}")
@@ -266,3 +472,92 @@ print(f"  Scenes: {len(scenes_db)}")
 print(f"  Characters: {len(characters_db)}")
 print(f"  Relationships: {len(relationships_db)}")
 print(f"  Mythos Elements: {len(mythos_db)}")
+print(f"  Mythos Connections: {len(mythos_connections_db)}")
+print(f"  Video Analyses: {len(video_analysis_db)}")
+
+character_presence_db = load_character_presence_from_video_analysis(video_analysis_db, scenes_db)
+print(f"  Character Presences: {len(character_presence_db)}")
+
+
+def load_character_evolution_from_json() -> dict:
+    evolution_db = {}
+    evolution_file = DATA_DIR / "character_evolution.json"
+
+    if not evolution_file.exists():
+        print(f"Warning: character_evolution.json not found at {evolution_file}")
+        return evolution_db
+
+    try:
+        with open(evolution_file, encoding="utf-8") as f:
+            evolution_data = json.load(f)
+
+        for milestone_data in evolution_data:
+            milestone_id = milestone_data.get("id", "")
+            milestone = CharacterEvolutionMilestone(
+                id=milestone_id,
+                character_id=milestone_data.get("character_id", ""),
+                episode_id=milestone_data.get("episode_id", ""),
+                timestamp=milestone_data.get("timestamp", "00:00:00"),
+                milestone_type=milestone_data.get("milestone_type", "character_growth"),
+                description=milestone_data.get("description", ""),
+                importance=milestone_data.get("importance", 3),
+                related_characters=milestone_data.get("related_characters", []),
+                quote=milestone_data.get("quote"),
+                intensity=milestone_data.get("intensity", 3),
+                content_type=milestone_data.get("content_type"),
+                screenshot_path=milestone_data.get("screenshot_path"),
+            )
+            evolution_db[milestone_id] = milestone
+
+        print(f"Loaded {len(evolution_db)} character evolution milestones")
+    except Exception as e:
+        print(f"Error loading character evolution: {e}")
+
+    return evolution_db
+
+
+def load_relationships_from_json(existing_relationships: dict) -> dict:
+    """Load relationships from JSON, merging with existing YAML relationships (YAML takes precedence)."""
+    relationships_db = dict(existing_relationships)
+    relationships_file = DATA_DIR / "character_relationships.json"
+
+    if not relationships_file.exists():
+        print(f"Note: character_relationships.json not found, using YAML relationships only")
+        return relationships_db
+
+    try:
+        with open(relationships_file, encoding="utf-8") as f:
+            data = json.load(f)
+
+        added_count = 0
+        for rel_data in data.get("relationships", []):
+            rel_id = rel_data.get("id", "")
+            from_char = rel_data.get("from_character_id", "")
+            to_char = rel_data.get("to_character_id", "")
+
+            existing_keys = {rel_id, f"{from_char}-{to_char}", f"{to_char}-{from_char}"}
+            if any(key in relationships_db for key in existing_keys):
+                continue
+
+            relationship = Relationship(
+                id=rel_id,
+                from_character_id=from_char,
+                to_character_id=to_char,
+                relationship_type=rel_data.get("relationship_type", "acquaintance"),
+                description=rel_data.get("description"),
+            )
+            relationships_db[rel_id] = relationship
+            added_count += 1
+
+        print(f"Added {added_count} relationships from character_relationships.json")
+    except Exception as e:
+        print(f"Error loading relationships from JSON: {e}")
+
+    return relationships_db
+
+
+character_evolution_db = load_character_evolution_from_json()
+print(f"  Character Evolution: {len(character_evolution_db)}")
+
+relationships_db = load_relationships_from_json(relationships_db)
+print(f"  Total Relationships (after merge): {len(relationships_db)}")

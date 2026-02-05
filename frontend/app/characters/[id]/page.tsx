@@ -1,120 +1,123 @@
 "use client";
 
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import { useEffect, useState, useMemo } from "react";
 import {
   Tabs,
   Chip,
-  Avatar,
-  Skeleton,
+  Spinner,
   ScrollShadow,
-  Accordion,
 } from "@heroui/react";
-import { User, Heart, TrendingUp, ChevronDown } from "lucide-react";
+import {
+  User,
+  Heart,
+  TrendingUp,
+  Network,
+  Grid3X3,
+  Quote,
+  Sparkles,
+} from "lucide-react";
 import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
-import { IntensityBadge } from "@/components/IntensitySlider";
-import { api } from "@/lib/api";
-
-interface KinkPreference {
-  id: string;
-  intensity: number;
-  notes: string;
-}
-
-interface KinkEvolution {
-  [episode: string]: KinkPreference[];
-}
-
-interface KinkProfile {
-  preferences: KinkPreference[];
-  limits: KinkPreference[];
-  evolution: KinkEvolution;
-}
-
-interface Character {
-  id: string;
-  name: string;
-  portrayed_by?: string;
-  role?: string;
-  description?: string;
-  family?: string | null;
-  canonical_traits: string[];
-  adaptation_traits: string[];
-  adaptation_notes: string;
-  kink_profile: {
-    preferences: Array<{
-      descriptor: string;
-      intensity: number;
-      context?: string;
-    }>;
-    limits: Array<{
-      descriptor: string;
-      type: string;
-      note?: string;
-    }>;
-    evolution: Array<{
-      episode_id: string;
-      descriptors: Record<string, number>;
-    }>;
-  };
-}
-
-const categoryColors: Record<string, string> = {
-  consent_frameworks: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-  power_exchange: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-  roles: "bg-green-500/20 text-green-400 border-green-500/30",
-  physical_acts: "bg-red-500/20 text-red-400 border-red-500/30",
-  psychological_dynamics: "bg-orange-500/20 text-orange-400 border-orange-500/30",
-  vampire_specific: "bg-violet-500/20 text-violet-400 border-violet-500/30",
-  taboo_elements: "bg-rose-500/20 text-rose-400 border-rose-500/30",
-  relationship_structures: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-  aftercare_safety: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
-  content_warnings: "bg-amber-500/20 text-amber-400 border-amber-500/30",
-};
-
-const categoryLabels: Record<string, string> = {
-  consent_frameworks: "Consent",
-  power_exchange: "Power Exchange",
-  roles: "Roles",
-  physical_acts: "Physical Acts",
-  psychological_dynamics: "Psychological",
-  vampire_specific: "Vampire",
-  taboo_elements: "Taboo",
-  relationship_structures: "Relationships",
-  aftercare_safety: "Aftercare",
-  content_warnings: "Warnings",
-};
+import { CharacterHero } from "@/components/CharacterHero";
+import { RelationshipConstellation } from "@/components/RelationshipConstellation";
+import { CharacterEvolutionTimeline } from "@/components/CharacterEvolutionTimeline";
+import { EpisodePresenceHeatmap } from "@/components/EpisodePresenceHeatmap";
+import { KinkProfileVisualization } from "@/components/KinkProfileVisualization";
+import { QuoteCarousel, extractQuotesFromEvolution } from "@/components/QuoteCarousel";
+import {
+  getCharacterById,
+  getMockRelationshipGraph,
+  getMockEvolutionData,
+  getMockEpisodePresence,
+  StaticCharacter,
+} from "@/lib/characterData";
 
 export default function CharacterDetailPage() {
   const params = useParams();
+  const router = useRouter();
   const characterId = params.id as string;
-  const [character, setCharacter] = useState<Character | null>(null);
+
+  const [character, setCharacter] = useState<StaticCharacter | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState("overview");
 
+  // Load character data
   useEffect(() => {
-    const fetchCharacter = async () => {
+    const loadCharacter = () => {
       try {
         setLoading(true);
-        const data = await api.characters.get(characterId);
-        setCharacter(data);
+        setError(null);
+
+        const charData = getCharacterById(characterId);
+        if (!charData) {
+          setError("Character not found");
+        } else {
+          setCharacter(charData);
+        }
       } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to load character");
+        setError("Failed to load character");
       } finally {
         setLoading(false);
       }
     };
 
     if (characterId) {
-      fetchCharacter();
+      loadCharacter();
     }
   }, [characterId]);
 
+  // Get mock data
+  const relationshipGraph = useMemo(() => {
+    return getMockRelationshipGraph(characterId);
+  }, [characterId]);
+
+  const evolutionData = useMemo(() => {
+    return getMockEvolutionData(characterId);
+  }, [characterId]);
+
+  const episodePresence = useMemo(() => {
+    return getMockEpisodePresence(characterId);
+  }, [characterId]);
+
+  const canonicalTraits = character?.canonical_traits ?? [];
+  const adaptationTraits = character?.adaptation_traits ?? [];
+  const kinkProfile = character?.kink_profile ?? {
+    preferences: [],
+    limits: [],
+    evolution: [],
+  };
+
+  // Determine if vampire based on canonical_traits
+  const isVampire = useMemo(() => {
+    return canonicalTraits.includes("vampire");
+  }, [canonicalTraits]);
+
+  // Calculate stats for hero
+  const heroStats = useMemo(() => {
+    return {
+      episodesAppeared: episodePresence?.total_episodes || 0,
+      relationships: relationshipGraph?.nodes ? relationshipGraph.nodes.length - 1 : 0,
+      totalScreenTime: episodePresence
+        ? formatScreenTime(episodePresence.total_screen_time)
+        : "0m",
+    };
+  }, [episodePresence, relationshipGraph]);
+
+  // Extract quotes from evolution milestones
+  const quotes = useMemo(() => {
+    if (!evolutionData?.milestones) return [];
+    return extractQuotesFromEvolution(evolutionData.milestones);
+  }, [evolutionData]);
+
+  const handleNodeClick = (nodeId: string) => {
+    router.push(`/characters/${nodeId}`);
+  };
+
   if (loading) {
     return (
-      <div className="space-y-6">
-        <Skeleton className="h-32 rounded-lg" />
-        <Skeleton className="h-64 rounded-lg" />
+      <div className="flex justify-center items-center h-[50vh]">
+        <Spinner size="lg" />
       </div>
     );
   }
@@ -122,261 +125,334 @@ export default function CharacterDetailPage() {
   if (error || !character) {
     return (
       <div className="text-center py-12">
-        <p className="text-[var(--color-accent-secondary)]">{error || "Character not found"}</p>
+        <p className="text-[var(--color-accent-secondary)]">
+          {error || "Character not found"}
+        </p>
       </div>
     );
   }
 
-  // Determine if vampire based on canonical_traits
-  const isVampire = character.canonical_traits?.includes("vampire") || false;
-
   return (
-    <div className="space-y-6 animate-fade-in-up">
-      {/* Header */}
-      <GlassCard>
-        <CardContent>
-          <div className="flex items-start gap-6">
-            <Avatar
-              className={`w-24 h-24 text-2xl ${
-                isVampire
-                  ? "bg-gradient-to-br from-[var(--color-accent-secondary)] to-purple-600"
-                  : "bg-gradient-to-br from-blue-500 to-cyan-600"
-              }`}
-            >
-              <Avatar.Fallback className="text-white font-bold">
-                {character.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
-              </Avatar.Fallback>
-            </Avatar>
-            <div className="flex-1">
-              <div className="flex items-center gap-3 mb-2">
-                <h1 className="font-heading text-3xl text-[var(--color-text-primary)]">{character.name}</h1>
-                <Chip
-                  variant="soft"
-                  size="sm"
-                  className={isVampire 
-                    ? "bg-[var(--color-accent-secondary)]/20 text-[var(--color-accent-secondary)]" 
-                    : "bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)]"
-                  }
-                >
-                  {character.role ? "Character" : "Unknown"}
-                </Chip>
-              </div>
-              <p className="text-[var(--color-text-muted)]">
-                {character.portrayed_by ? `Portrayed by ${character.portrayed_by}` : "Actor unknown"}
-              </p>
-              <div className="flex gap-4 mt-4 text-sm text-[var(--color-text-secondary)]">
-                {character.description && (
-                  <span className="truncate">{character.description}</span>
-                )}
-              </div>
-            </div>
+    <div className="space-y-0 animate-fade-in-up">
+      {/* Character Hero */}
+      <CharacterHero
+        character={{
+          id: character.id,
+          name: character.name,
+          portrayed_by: character.portrayed_by,
+          role: character.role,
+          description: character.description,
+        }}
+        stats={heroStats}
+        isVampire={isVampire}
+      />
+
+      {/* Quotes Carousel (if quotes available) */}
+      {quotes.length > 0 && (
+        <div className="px-4 md:px-8 lg:px-16 py-6 bg-[var(--color-bg-secondary)]">
+          <div className="max-w-4xl mx-auto">
+            <QuoteCarousel
+              quotes={quotes}
+              characterName={character.name}
+              autoRotate={true}
+              autoRotateInterval={8000}
+            />
           </div>
-        </CardContent>
-      </GlassCard>
+        </div>
+      )}
 
       {/* Main Content */}
-      <Tabs>
-        <Tabs.ListContainer>
-          <Tabs.List aria-label="Character sections">
-            <Tabs.Tab id="overview">
-              <div className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                <span>Overview</span>
-              </div>
-              <Tabs.Indicator />
-            </Tabs.Tab>
-            <Tabs.Tab id="kink-profile">
-              <div className="flex items-center gap-2">
-                <Heart className="w-4 h-4" />
-                <span>Kink Profile</span>
-              </div>
-              <Tabs.Indicator />
-            </Tabs.Tab>
-            <Tabs.Tab id="evolution">
-              <div className="flex items-center gap-2">
-                <TrendingUp className="w-4 h-4" />
-                <span>Evolution</span>
-              </div>
-              <Tabs.Indicator />
-            </Tabs.Tab>
-          </Tabs.List>
-        </Tabs.ListContainer>
-
-        <Tabs.Panel id="overview" className="mt-4">
-          <div className="space-y-6">
-            {/* Canonical Info */}
-            <GlassCard>
-              <CardHeader>
-                <h3 className="font-heading text-lg text-[var(--color-text-primary)]">Canonical Traits</h3>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {character.canonical_traits.map((trait) => (
-                    <Chip 
-                      key={trait} 
-                      variant="soft" 
-                      size="sm"
-                      className="bg-[var(--color-surface-elevated)] text-[var(--color-text-secondary)]"
-                    >
-                      {trait}
-                    </Chip>
-                  ))}
+      <div className="px-4 md:px-8 lg:px-16 py-8">
+        <div className="max-w-7xl mx-auto space-y-8">
+          {/* Tabs */}
+          <Tabs
+            selectedKey={activeTab}
+            onSelectionChange={(key) => setActiveTab(key as string)}
+          >
+            <Tabs.List className="glass rounded-lg p-1 mb-6">
+              <Tabs.Tab key="overview">
+                <div className="flex items-center gap-2">
+                  <User className="w-4 h-4" />
+                  Overview
                 </div>
-              </CardContent>
-            </GlassCard>
-
-            {/* Dark Adaptation */}
-            <GlassCard className="border-[var(--color-accent-secondary)]/30">
-              <CardHeader className="border-b border-[var(--color-accent-secondary)]/20">
-                <h3 className="font-heading text-lg text-[var(--color-accent-secondary)]">
-                  Dark Adaptation
-                </h3>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-medium text-[var(--color-text-primary)] mb-2">Adaptation Notes</h4>
-                  <p className="text-[var(--color-text-secondary)]">
-                    {character.adaptation_notes || "Not yet defined"}
-                  </p>
+              </Tabs.Tab>
+              <Tabs.Tab key="relationships">
+                <div className="flex items-center gap-2">
+                  <Network className="w-4 h-4" />
+                  Relationships
+                  {relationshipGraph && relationshipGraph.nodes.length > 1 && (
+                    <span className="text-xs bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] px-1.5 rounded">
+                      {relationshipGraph.nodes.length - 1}
+                    </span>
+                  )}
                 </div>
+              </Tabs.Tab>
+              <Tabs.Tab key="evolution">
+                <div className="flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4" />
+                  Evolution
+                  {evolutionData && evolutionData.milestones.length > 0 && (
+                    <span className="text-xs bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] px-1.5 rounded">
+                      {evolutionData.milestones.length}
+                    </span>
+                  )}
+                </div>
+              </Tabs.Tab>
+              <Tabs.Tab key="episodes">
+                <div className="flex items-center gap-2">
+                  <Grid3X3 className="w-4 h-4" />
+                  Episodes
+                  {episodePresence && (
+                    <span className="text-xs bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] px-1.5 rounded">
+                      {episodePresence.total_episodes}
+                    </span>
+                  )}
+                </div>
+              </Tabs.Tab>
+              <Tabs.Tab key="kink-profile">
+                <div className="flex items-center gap-2">
+                  <Heart className="w-4 h-4" />
+                  Profile
+                </div>
+              </Tabs.Tab>
+            </Tabs.List>
 
-                {character.adaptation_traits && character.adaptation_traits.length > 0 && (
-                  <div>
-                    <h4 className="font-medium text-[var(--color-text-primary)] mb-2">Added Traits</h4>
+            {/* Overview Tab */}
+            <Tabs.Panel key="overview">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Canonical Info */}
+                <GlassCard>
+                  <CardHeader>
+                    <div className="flex items-center gap-2">
+                      <Sparkles className="w-4 h-4 text-[#D4AF37]" />
+                      <h3 className="font-heading text-lg text-[var(--color-text-primary)]">
+                        Canonical Traits
+                      </h3>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
                     <div className="flex flex-wrap gap-2">
-                      {character.adaptation_traits.map((trait) => (
-                        <Chip 
-                          key={trait} 
-                          variant="soft" 
+                      {canonicalTraits.map((trait) => (
+                        <Chip
+                          key={trait}
+                          variant="soft"
                           size="sm"
-                          className="bg-[var(--color-accent-secondary)]/20 text-[var(--color-accent-secondary)]"
+                          className="bg-[var(--color-surface-elevated)] text-[var(--color-text-secondary)] capitalize"
                         >
-                          {trait}
+                          {trait.replace(/_/g, " ")}
                         </Chip>
                       ))}
                     </div>
-                  </div>
-                )}
-              </CardContent>
-            </GlassCard>
-          </div>
-        </Tabs.Panel>
+                  </CardContent>
+                </GlassCard>
 
-        <Tabs.Panel id="kink-profile" className="mt-4">
-          <div className="space-y-6">
-            {/* Preferences */}
-            <GlassCard>
-              <CardHeader>
-                <h3 className="font-heading text-lg text-[var(--color-text-primary)]">Preferences</h3>
-              </CardHeader>
-              <CardContent>
-                <ScrollShadow className="max-h-[400px]">
-                  <div className="space-y-3">
-                    {character.kink_profile.preferences.map((pref, idx) => (
-                      <div
-                        key={idx}
-                        className="p-4 rounded-lg bg-[var(--color-surface-elevated)]"
-                      >
-                        <div className="flex items-center justify-between mb-2">
-                          <span className="font-medium capitalize text-[var(--color-text-primary)]">
-                            {pref.descriptor.replace(/_/g, " ")}
-                          </span>
-                          <IntensityBadge value={pref.intensity} />
-                        </div>
-                        {pref.context && (
-                          <p className="text-sm text-[var(--color-text-muted)]">{pref.context}</p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </ScrollShadow>
-              </CardContent>
-            </GlassCard>
-
-            {/* Limits */}
-            <GlassCard className="border-[var(--color-accent-secondary)]/30">
-              <CardHeader className="border-b border-[var(--color-accent-secondary)]/20">
-                <h3 className="font-heading text-lg text-[var(--color-accent-secondary)]">Limits</h3>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  {character.kink_profile.limits.map((limit, idx) => (
-                    <div
-                      key={idx}
-                      className="p-4 rounded-lg bg-[var(--color-accent-secondary)]/10 border border-[var(--color-accent-secondary)]/20"
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="font-medium capitalize text-[var(--color-accent-secondary)]">
-                          {limit.descriptor.replace(/_/g, " ")}
-                        </span>
-                        <Chip 
-                          size="sm" 
-                          variant="soft"
-                          className="bg-[var(--color-accent-secondary)]/20 text-[var(--color-accent-secondary)]"
-                        >
-                          Type: {limit.type}
-                        </Chip>
-                      </div>
-                      {limit.note && (
-                        <p className="text-sm text-[var(--color-accent-secondary)]/80">{limit.note}</p>
-                      )}
+                {/* Dark Adaptation */}
+                <GlassCard className="border-[var(--color-accent-secondary)]/30">
+                  <CardHeader className="border-b border-[var(--color-accent-secondary)]/20">
+                    <h3 className="font-heading text-lg text-[var(--color-accent-secondary)]">
+                      Dark Adaptation
+                    </h3>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div>
+                      <h4 className="font-medium text-[var(--color-text-primary)] mb-2">
+                        Adaptation Notes
+                      </h4>
+                      <p className="text-sm text-[var(--color-text-secondary)]">
+                        {character.adaptation_notes || "Not yet defined"}
+                      </p>
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </GlassCard>
-          </div>
-        </Tabs.Panel>
 
-        <Tabs.Panel id="evolution" className="mt-4">
-          <div className="space-y-6">
-            <Accordion>
-              {character.kink_profile.evolution.map((evo) => (
-                <Accordion.Item key={evo.episode_id}>
-                  <Accordion.Heading>
-                    <Accordion.Trigger>
-                      <span className="font-semibold uppercase text-[var(--color-text-primary)]">{evo.episode_id}</span>
-                      <Chip 
-                        size="sm" 
-                        variant="soft" 
-                        className="ml-2 bg-[var(--color-surface-elevated)] text-[var(--color-text-secondary)]"
-                      >
-                        {Object.keys(evo.descriptors).length} descriptors
-                      </Chip>
-                      <Accordion.Indicator>
-                        <ChevronDown className="w-4 h-4 text-[var(--color-text-muted)]" />
-                      </Accordion.Indicator>
-                    </Accordion.Trigger>
-                  </Accordion.Heading>
-                  <Accordion.Panel>
-                    <Accordion.Body>
-                      <div className="space-y-3">
-                        {Object.entries(evo.descriptors).map(([descriptor, intensity]) => (
-                          <div
-                            key={descriptor}
-                            className="p-3 rounded-lg bg-[var(--color-surface-elevated)]"
-                          >
-                            <div className="flex items-center justify-between">
-                              <span className="font-medium capitalize text-[var(--color-text-primary)]">
-                                {descriptor.replace(/_/g, " ")}
-                              </span>
-                              <IntensityBadge value={intensity} />
-                            </div>
-                          </div>
-                        ))}
+                    {adaptationTraits.length > 0 && (
+                      <div>
+                        <h4 className="font-medium text-[var(--color-text-primary)] mb-2">
+                          Added Traits
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {adaptationTraits.map((trait) => (
+                            <Chip
+                              key={trait}
+                              variant="soft"
+                              size="sm"
+                              className="bg-[var(--color-accent-secondary)]/20 text-[var(--color-accent-secondary)] capitalize"
+                            >
+                              {trait.replace(/_/g, " ")}
+                            </Chip>
+                          ))}
+                        </div>
                       </div>
-                    </Accordion.Body>
-                  </Accordion.Panel>
-                </Accordion.Item>
-              ))}
-            </Accordion>
-          </div>
-        </Tabs.Panel>
+                    )}
+                  </CardContent>
+                </GlassCard>
 
-      </Tabs>
+                {/* Quick Episode Presence (mini heatmap) */}
+                {episodePresence && episodePresence.episodes.length > 0 && (
+                  <GlassCard className="lg:col-span-2">
+                    <CardHeader>
+                      <h3 className="font-heading text-lg text-[var(--color-text-primary)]">
+                        Episode Appearances
+                      </h3>
+                    </CardHeader>
+                    <CardContent>
+                      <EpisodePresenceHeatmap
+                        characterId={characterId}
+                        characterName={character.name}
+                        episodes={episodePresence.episodes}
+                      />
+                    </CardContent>
+                  </GlassCard>
+                )}
+              </div>
+            </Tabs.Panel>
+
+            {/* Relationships Tab */}
+            <Tabs.Panel key="relationships">
+              <GlassCard>
+                <CardHeader>
+                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
+                    Relationship Constellation
+                  </h2>
+                </CardHeader>
+                <CardContent>
+                  {relationshipGraph && relationshipGraph.nodes.length > 0 ? (
+                    <RelationshipConstellation
+                      characterId={characterId}
+                      nodes={relationshipGraph.nodes}
+                      links={relationshipGraph.links}
+                      centralCharacterName={character.name}
+                      onNodeClick={handleNodeClick}
+                      height={550}
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center h-64 text-[var(--color-text-muted)]">
+                      <Network className="w-12 h-12 mb-3 opacity-50" />
+                      <p>No relationship data available</p>
+                    </div>
+                  )}
+                </CardContent>
+              </GlassCard>
+            </Tabs.Panel>
+
+            {/* Evolution Tab */}
+            <Tabs.Panel key="evolution">
+              <GlassCard>
+                <CardHeader>
+                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
+                    Character Evolution
+                  </h2>
+                </CardHeader>
+                <CardContent>
+                  {evolutionData && evolutionData.milestones.length > 0 ? (
+                    <ScrollShadow className="max-h-[600px]">
+                      <CharacterEvolutionTimeline
+                        characterId={characterId}
+                        characterName={character.name}
+                        milestones={evolutionData.milestones}
+                        arcSummary={evolutionData.arc_summary}
+                      />
+                    </ScrollShadow>
+                  ) : (
+                    <div className="flex flex-col items-center justify-center h-64 text-[var(--color-text-muted)]">
+                      <TrendingUp className="w-12 h-12 mb-3 opacity-50" />
+                      <p>No evolution data available</p>
+                    </div>
+                  )}
+                </CardContent>
+              </GlassCard>
+            </Tabs.Panel>
+
+            {/* Episodes Tab */}
+            <Tabs.Panel key="episodes">
+              <GlassCard>
+                <CardHeader>
+                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
+                    Episode Presence
+                  </h2>
+                </CardHeader>
+                <CardContent>
+                  {episodePresence && episodePresence.episodes.length > 0 ? (
+                    <EpisodePresenceHeatmap
+                      characterId={characterId}
+                      characterName={character.name}
+                      episodes={episodePresence.episodes}
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center h-64 text-[var(--color-text-muted)]">
+                      <Grid3X3 className="w-12 h-12 mb-3 opacity-50" />
+                      <p>No episode presence data available</p>
+                    </div>
+                  )}
+                </CardContent>
+              </GlassCard>
+            </Tabs.Panel>
+
+            {/* Kink Profile Tab */}
+            <Tabs.Panel key="kink-profile">
+              <GlassCard>
+                <CardHeader>
+                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
+                    Character Profile
+                  </h2>
+                </CardHeader>
+                <CardContent>
+                  <ScrollShadow className="max-h-[600px]">
+                    <div className="space-y-6">
+                      {/* Preferences */}
+                      <div>
+                        <h4 className="text-sm font-medium text-[var(--color-text-primary)] mb-3">Preferences</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {kinkProfile.preferences.map((pref: string) => (
+                            <Chip key={pref} variant="soft" size="sm" className="bg-[#ff6b9d]/20 text-[#ff6b9d]">
+                              {pref}
+                            </Chip>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      {/* Limits */}
+                      <div>
+                        <h4 className="text-sm font-medium text-[var(--color-text-primary)] mb-3">Limits</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {kinkProfile.limits.map((limit: string) => (
+                            <Chip key={limit} variant="soft" size="sm" className="bg-red-500/20 text-red-400">
+                              {limit}
+                            </Chip>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      {/* Evolution */}
+                      <div>
+                        <h4 className="text-sm font-medium text-[var(--color-text-primary)] mb-3">Evolution</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {kinkProfile.evolution.map((evo: string) => (
+                            <Chip key={evo} variant="soft" size="sm" className="bg-[#D4AF37]/20 text-[#D4AF37]">
+                              {evo}
+                            </Chip>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </ScrollShadow>
+                </CardContent>
+              </GlassCard>
+            </Tabs.Panel>
+          </Tabs>
+        </div>
+      </div>
     </div>
   );
+}
+
+// Utility function to format screen time
+function formatScreenTime(seconds: number): string {
+  if (seconds < 60) {
+    return `${seconds}s`;
+  }
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  if (hours > 0) {
+    return `${hours}h ${minutes}m`;
+  }
+  return `${minutes}m`;
 }

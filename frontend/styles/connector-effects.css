@@ -1,0 +1,41 @@
+.connector {
+  transition: all 0.3s ease;
+}
+
+.connector:hover {
+  filter: hue-rotate(15deg) brightness(1.2);
+}
+
+.connector[data-intensity="1"]:hover {
+  stroke-width: 2.5px;
+}
+.connector[data-intensity="2"]:hover {
+  stroke-width: 3px;
+}
+.connector[data-intensity="3"]:hover {
+  stroke-width: 3.5px;
+}
+.connector[data-intensity="4"]:hover {
+  stroke-width: 4px;
+}
+.connector[data-intensity="5"]:hover {
+  stroke-width: 5px;
+}
+
+.connector-glow {
+  filter: drop-shadow(0 0 5px currentColor);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.relationship-resonance {
+  animation: pulse 1s ease-in-out infinite;
+}

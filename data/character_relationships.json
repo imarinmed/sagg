@@ -1,0 +1,2222 @@
+{
+  "total_relationships": 103,
+  "relationship_types": {
+    "social": 71,
+    "antagonistic": 10,
+    "professional": 17,
+    "acquaintance": 5
+  },
+  "relationships": [
+    {
+      "id": "batgirl_1-batgirl_3",
+      "from_character_id": "batgirl_1",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 79 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 79,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.23,
+        "content_types": {
+          "dance": 49,
+          "confrontation": 2,
+          "party": 25,
+          "training": 3
+        }
+      }
+    },
+    {
+      "id": "elise-eric",
+      "from_character_id": "elise",
+      "to_character_id": "eric",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 9 confrontational moments across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 53,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.23,
+        "content_types": {
+          "dance": 20,
+          "confrontation": 7,
+          "party": 22,
+          "dialogue": 3,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "alfred-batgirl_1",
+      "from_character_id": "alfred",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 48 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 48,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.21,
+        "content_types": {
+          "dance": 30,
+          "confrontation": 1,
+          "party": 16,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "alfred-batgirl_3",
+      "from_character_id": "alfred",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 48 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 48,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.21,
+        "content_types": {
+          "dance": 30,
+          "confrontation": 1,
+          "party": 16,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "eric-batgirl_1",
+      "from_character_id": "eric",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 46 co-occurrences across 4 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 46,
+        "episode_count": 4,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.22,
+        "content_types": {
+          "dance": 29,
+          "confrontation": 2,
+          "party": 14,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "eric-batgirl_3",
+      "from_character_id": "eric",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 46 co-occurrences across 4 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 46,
+        "episode_count": 4,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.22,
+        "content_types": {
+          "dance": 29,
+          "confrontation": 2,
+          "party": 14,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-batgirl_1",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 45 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 45,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.27,
+        "content_types": {
+          "dance": 25,
+          "party": 17,
+          "training": 3
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-batgirl_3",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 44 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 44,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.27,
+        "content_types": {
+          "dance": 24,
+          "party": 17,
+          "training": 3
+        }
+      }
+    },
+    {
+      "id": "elise-batgirl_1",
+      "from_character_id": "elise",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 43 co-occurrences across 4 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 43,
+        "episode_count": 4,
+        "episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.19,
+        "content_types": {
+          "dance": 25,
+          "confrontation": 2,
+          "party": 13,
+          "training": 3
+        }
+      }
+    },
+    {
+      "id": "elise-batgirl_3",
+      "from_character_id": "elise",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 43 co-occurrences across 4 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 43,
+        "episode_count": 4,
+        "episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.19,
+        "content_types": {
+          "dance": 25,
+          "confrontation": 2,
+          "party": 13,
+          "training": 3
+        }
+      }
+    },
+    {
+      "id": "alfred-kiara_natt_och_dag",
+      "from_character_id": "alfred",
+      "to_character_id": "kiara_natt_och_dag",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 43 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 43,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.14,
+        "content_types": {
+          "dance": 17,
+          "party": 21,
+          "dialogue": 4,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "alfred-eric",
+      "from_character_id": "alfred",
+      "to_character_id": "eric",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 38 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 38,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.18,
+        "content_types": {
+          "dance": 22,
+          "confrontation": 2,
+          "party": 12,
+          "dialogue": 1,
+          "vampire_feeding": 1
+        }
+      }
+    },
+    {
+      "id": "eric-kiara_natt_och_dag",
+      "from_character_id": "eric",
+      "to_character_id": "kiara_natt_och_dag",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 35 co-occurrences across 5 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 35,
+        "episode_count": 5,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.29,
+        "content_types": {
+          "dance": 16,
+          "party": 15,
+          "dialogue": 1,
+          "confrontation": 2,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "elise-kiara_natt_och_dag",
+      "from_character_id": "elise",
+      "to_character_id": "kiara_natt_och_dag",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 35 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 35,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.2,
+        "content_types": {
+          "party": 16,
+          "dance": 12,
+          "training": 3,
+          "dialogue": 2,
+          "confrontation": 2
+        }
+      }
+    },
+    {
+      "id": "alfred-elise",
+      "from_character_id": "alfred",
+      "to_character_id": "elise",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 32 co-occurrences across 6 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 32,
+        "episode_count": 6,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.12,
+        "content_types": {
+          "dance": 14,
+          "confrontation": 2,
+          "party": 15,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "chloe-batgirl_1",
+      "from_character_id": "chloe",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 30 co-occurrences across 5 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 30,
+        "episode_count": 5,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.2,
+        "content_types": {
+          "dance": 17,
+          "confrontation": 1,
+          "party": 10,
+          "training": 2
+        }
+      }
+    },
+    {
+      "id": "chloe-batgirl_3",
+      "from_character_id": "chloe",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 30 co-occurrences across 5 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 30,
+        "episode_count": 5,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.2,
+        "content_types": {
+          "dance": 17,
+          "confrontation": 1,
+          "party": 10,
+          "training": 2
+        }
+      }
+    },
+    {
+      "id": "alfred-chloe",
+      "from_character_id": "alfred",
+      "to_character_id": "chloe",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 5 confrontational moments across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 20,
+        "episode_count": 3,
+        "episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.25,
+        "content_types": {
+          "dance": 11,
+          "confrontation": 2,
+          "party": 5,
+          "training": 1,
+          "dialogue": 1
+        }
+      }
+    },
+    {
+      "id": "didde-kevin",
+      "from_character_id": "didde",
+      "to_character_id": "kevin",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 4 confrontational moments across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 19,
+        "episode_count": 3,
+        "episodes": [
+          "s01e04",
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.11,
+        "content_types": {
+          "party": 12,
+          "dialogue": 3,
+          "confrontation": 3,
+          "dance": 1
+        }
+      }
+    },
+    {
+      "id": "chloe-kiara_natt_och_dag",
+      "from_character_id": "chloe",
+      "to_character_id": "kiara_natt_och_dag",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 18 co-occurrences across 5 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 18,
+        "episode_count": 5,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.28,
+        "content_types": {
+          "dance": 9,
+          "dialogue": 1,
+          "party": 6,
+          "training": 2
+        }
+      }
+    },
+    {
+      "id": "chloe-party_student_3",
+      "from_character_id": "chloe",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 17 co-occurrences across 4 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 17,
+        "episode_count": 4,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.24,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 2,
+          "training": 1,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-party_student_3",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 17 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 17,
+        "episode_count": 3,
+        "episodes": [
+          "s01e03",
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.06,
+        "content_types": {
+          "party": 8,
+          "dialogue": 3,
+          "dance": 5,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "batgirl_1-party_student_3",
+      "from_character_id": "batgirl_1",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 16 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 16,
+        "episode_count": 3,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e05"
+        ],
+        "avg_intensity": 2.25,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 1,
+          "training": 1,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "batgirl_3-party_student_3",
+      "from_character_id": "batgirl_3",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 16 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 16,
+        "episode_count": 3,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e05"
+        ],
+        "avg_intensity": 2.25,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 1,
+          "training": 1,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "alfred-party_student_3",
+      "from_character_id": "alfred",
+      "to_character_id": "party_student_3",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 5 confrontational moments across 5 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 16,
+        "episode_count": 5,
+        "episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.38,
+        "content_types": {
+          "dance": 6,
+          "confrontation": 3,
+          "party": 7
+        }
+      }
+    },
+    {
+      "id": "elise-party_student_3",
+      "from_character_id": "elise",
+      "to_character_id": "party_student_3",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 5 confrontational moments across 4 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 14,
+        "episode_count": 4,
+        "episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.07,
+        "content_types": {
+          "dance": 5,
+          "confrontation": 3,
+          "training": 1,
+          "dialogue": 1,
+          "party": 4
+        }
+      }
+    },
+    {
+      "id": "chloe-elise",
+      "from_character_id": "chloe",
+      "to_character_id": "elise",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 14 co-occurrences across 4 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 14,
+        "episode_count": 4,
+        "episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.14,
+        "content_types": {
+          "dance": 7,
+          "confrontation": 2,
+          "party": 3,
+          "training": 2
+        }
+      }
+    },
+    {
+      "id": "chloe-kevin",
+      "from_character_id": "chloe",
+      "to_character_id": "kevin",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 4 confrontational moments across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 14,
+        "episode_count": 3,
+        "episodes": [
+          "s01e04",
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.14,
+        "content_types": {
+          "training": 1,
+          "dance": 3,
+          "party": 7,
+          "confrontation": 3
+        }
+      }
+    },
+    {
+      "id": "eric-principal",
+      "from_character_id": "eric",
+      "to_character_id": "principal",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 12 scenes across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 12,
+        "episode_count": 2,
+        "episodes": [
+          "s01e01",
+          "s01e06"
+        ],
+        "avg_intensity": 2.5,
+        "content_types": {
+          "party": 4,
+          "dance": 6,
+          "confrontation": 2
+        }
+      }
+    },
+    {
+      "id": "elise-principal",
+      "from_character_id": "elise",
+      "to_character_id": "principal",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 12 scenes across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 12,
+        "episode_count": 2,
+        "episodes": [
+          "s01e01",
+          "s01e06"
+        ],
+        "avg_intensity": 2.5,
+        "content_types": {
+          "dance": 8,
+          "confrontation": 2,
+          "party": 2
+        }
+      }
+    },
+    {
+      "id": "batgirl_1-siri",
+      "from_character_id": "batgirl_1",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 12 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 12,
+        "episode_count": 3,
+        "episodes": [
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.17,
+        "content_types": {
+          "training": 2,
+          "dance": 5,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "batgirl_3-siri",
+      "from_character_id": "batgirl_3",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 12 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 12,
+        "episode_count": 3,
+        "episodes": [
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.17,
+        "content_types": {
+          "training": 2,
+          "dance": 5,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "batgirl_1-batgirl_2",
+      "from_character_id": "batgirl_1",
+      "to_character_id": "batgirl_2",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 11 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 11,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.36,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "elise-batgirl_2",
+      "from_character_id": "elise",
+      "to_character_id": "batgirl_2",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 11 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 11,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.36,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "batgirl_2-batgirl_3",
+      "from_character_id": "batgirl_2",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 11 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 11,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.36,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "principal-batgirl_1",
+      "from_character_id": "principal",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 11 scenes across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 11,
+        "episode_count": 2,
+        "episodes": [
+          "s01e01",
+          "s01e03"
+        ],
+        "avg_intensity": 2.36,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "principal-batgirl_3",
+      "from_character_id": "principal",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 11 scenes across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 11,
+        "episode_count": 2,
+        "episodes": [
+          "s01e01",
+          "s01e03"
+        ],
+        "avg_intensity": 2.36,
+        "content_types": {
+          "dance": 9,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "eric-party_student_3",
+      "from_character_id": "eric",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 10 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 10,
+        "episode_count": 3,
+        "episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e06"
+        ],
+        "avg_intensity": 2.1,
+        "content_types": {
+          "dance": 4,
+          "confrontation": 2,
+          "dialogue": 1,
+          "party": 3
+        }
+      }
+    },
+    {
+      "id": "chloe-didde",
+      "from_character_id": "chloe",
+      "to_character_id": "didde",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 4 confrontational moments across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 10,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 6,
+          "confrontation": 3,
+          "dance": 1
+        }
+      }
+    },
+    {
+      "id": "principal-batgirl_2",
+      "from_character_id": "principal",
+      "to_character_id": "batgirl_2",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 9 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 9,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.44,
+        "content_types": {
+          "dance": 7,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "elise-siri",
+      "from_character_id": "elise",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 9 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 9,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.22,
+        "content_types": {
+          "training": 2,
+          "dance": 3,
+          "party": 4
+        }
+      }
+    },
+    {
+      "id": "eric-batgirl_2",
+      "from_character_id": "eric",
+      "to_character_id": "batgirl_2",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 8 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 8,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.5,
+        "content_types": {
+          "dance": 6,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "alfred-kevin",
+      "from_character_id": "alfred",
+      "to_character_id": "kevin",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 8 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 8,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.25,
+        "content_types": {
+          "training": 1,
+          "party": 5,
+          "dance": 2
+        }
+      }
+    },
+    {
+      "id": "batgirl_1-kevin",
+      "from_character_id": "batgirl_1",
+      "to_character_id": "kevin",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 8 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 8,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.25,
+        "content_types": {
+          "training": 1,
+          "dance": 3,
+          "party": 4
+        }
+      }
+    },
+    {
+      "id": "batgirl_3-kevin",
+      "from_character_id": "batgirl_3",
+      "to_character_id": "kevin",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 8 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 8,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.25,
+        "content_types": {
+          "training": 1,
+          "dance": 3,
+          "party": 4
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-siri",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 8 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 8,
+        "episode_count": 3,
+        "episodes": [
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.25,
+        "content_types": {
+          "training": 2,
+          "dance": 4,
+          "party": 2
+        }
+      }
+    },
+    {
+      "id": "alfred-livia",
+      "from_character_id": "alfred",
+      "to_character_id": "livia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 8 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 8,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 1.88,
+        "content_types": {
+          "dance": 3,
+          "party": 4,
+          "dialogue": 1
+        }
+      }
+    },
+    {
+      "id": "alfred-teacher_math",
+      "from_character_id": "alfred",
+      "to_character_id": "teacher_math",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 7 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 7,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 1.86,
+        "content_types": {
+          "party": 1,
+          "dialogue": 1,
+          "dance": 4,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "chloe-eric",
+      "from_character_id": "chloe",
+      "to_character_id": "eric",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 7 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 7,
+        "episode_count": 3,
+        "episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e06"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 5,
+          "confrontation": 2
+        }
+      }
+    },
+    {
+      "id": "felicia-livia",
+      "from_character_id": "felicia",
+      "to_character_id": "livia",
+      "relationship_type": "acquaintance",
+      "description": "General acquaintances, appearing together 7 times across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 7,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dialogue": 2,
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "batgirl_1-livia",
+      "from_character_id": "batgirl_1",
+      "to_character_id": "livia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 7 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 7,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.29,
+        "content_types": {
+          "training": 2,
+          "dance": 3,
+          "party": 2
+        }
+      }
+    },
+    {
+      "id": "elise-livia",
+      "from_character_id": "elise",
+      "to_character_id": "livia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 7 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 7,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.29,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 3
+        }
+      }
+    },
+    {
+      "id": "batgirl_3-livia",
+      "from_character_id": "batgirl_3",
+      "to_character_id": "livia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 7 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 7,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.29,
+        "content_types": {
+          "training": 2,
+          "dance": 3,
+          "party": 2
+        }
+      }
+    },
+    {
+      "id": "eric-siri",
+      "from_character_id": "eric",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 7 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 7,
+        "episode_count": 2,
+        "episodes": [
+          "s01e06",
+          "s01e07"
+        ],
+        "avg_intensity": 2.29,
+        "content_types": {
+          "dance": 3,
+          "party": 3,
+          "training": 1
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-mother",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "mother",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 6 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 6,
+        "episode_count": 3,
+        "episodes": [
+          "s01e02",
+          "s01e03",
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 2,
+          "party": 3,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "elise-kevin",
+      "from_character_id": "elise",
+      "to_character_id": "kevin",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 6 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 6,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.67,
+        "content_types": {
+          "training": 1,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-kevin",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "kevin",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 6 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 6,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.33,
+        "content_types": {
+          "training": 1,
+          "party": 5
+        }
+      }
+    },
+    {
+      "id": "chloe-siri",
+      "from_character_id": "chloe",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 6 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 6,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "training": 1,
+          "dance": 3,
+          "party": 2
+        }
+      }
+    },
+    {
+      "id": "batgirl_1-teacher_math",
+      "from_character_id": "batgirl_1",
+      "to_character_id": "teacher_math",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 5 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "party_student_3-teacher_math",
+      "from_character_id": "party_student_3",
+      "to_character_id": "teacher_math",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 5 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "batgirl_3-teacher_math",
+      "from_character_id": "batgirl_3",
+      "to_character_id": "teacher_math",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 5 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "eric-teacher_math",
+      "from_character_id": "eric",
+      "to_character_id": "teacher_math",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 5 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "elise-teacher_math",
+      "from_character_id": "elise",
+      "to_character_id": "teacher_math",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 5 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "chloe-teacher_math",
+      "from_character_id": "chloe",
+      "to_character_id": "teacher_math",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 5 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 1,
+        "episodes": [
+          "s01e01"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "adam-batgirl_1",
+      "from_character_id": "adam",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 3,
+        "episodes": [
+          "s01e03",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "adam-batgirl_3",
+      "from_character_id": "adam",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 3 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 3,
+        "episodes": [
+          "s01e03",
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 4,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "eric-mother",
+      "from_character_id": "eric",
+      "to_character_id": "mother",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "confrontation": 1,
+          "party": 4
+        }
+      }
+    },
+    {
+      "id": "elise-mother",
+      "from_character_id": "elise",
+      "to_character_id": "mother",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "confrontation": 1,
+          "party": 4
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-felicia",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "felicia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "felicia-siri",
+      "from_character_id": "felicia",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "felicia-batgirl_1",
+      "from_character_id": "felicia",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "elise-felicia",
+      "from_character_id": "elise",
+      "to_character_id": "felicia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "felicia-batgirl_3",
+      "from_character_id": "felicia",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-livia",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "livia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "livia-siri",
+      "from_character_id": "livia",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 5 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e07"
+        ],
+        "avg_intensity": 2.4,
+        "content_types": {
+          "training": 2,
+          "dance": 2,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "party_student_1-party_student_2",
+      "from_character_id": "party_student_1",
+      "to_character_id": "party_student_2",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 5 confrontational moments across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 5,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 1,
+          "confrontation": 3,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-party_student_2",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "party_student_2",
+      "relationship_type": "acquaintance",
+      "description": "General acquaintances, appearing together 4 times across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 2,
+        "episodes": [
+          "s01e01",
+          "s01e07"
+        ],
+        "avg_intensity": 1.75,
+        "content_types": {
+          "dance": 1,
+          "dialogue": 1,
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "eric-livia",
+      "from_character_id": "eric",
+      "to_character_id": "livia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 4 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 2,
+        "episodes": [
+          "s01e01",
+          "s01e07"
+        ],
+        "avg_intensity": 2.5,
+        "content_types": {
+          "party": 2,
+          "training": 1,
+          "dance": 1
+        }
+      }
+    },
+    {
+      "id": "mother-party_student_3",
+      "from_character_id": "mother",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 4 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 2,
+        "episodes": [
+          "s01e03",
+          "s01e06"
+        ],
+        "avg_intensity": 2.5,
+        "content_types": {
+          "confrontation": 1,
+          "party": 3
+        }
+      }
+    },
+    {
+      "id": "elise-didde",
+      "from_character_id": "elise",
+      "to_character_id": "didde",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 4 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.5,
+        "content_types": {
+          "party": 4
+        }
+      }
+    },
+    {
+      "id": "didde-batgirl_1",
+      "from_character_id": "didde",
+      "to_character_id": "batgirl_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 4 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 3,
+          "dance": 1
+        }
+      }
+    },
+    {
+      "id": "didde-batgirl_3",
+      "from_character_id": "didde",
+      "to_character_id": "batgirl_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 4 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 3,
+          "dance": 1
+        }
+      }
+    },
+    {
+      "id": "adam-siri",
+      "from_character_id": "adam",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 4 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 1.75,
+        "content_types": {
+          "party": 1,
+          "dance": 2,
+          "dialogue": 1
+        }
+      }
+    },
+    {
+      "id": "eric-party_student_2",
+      "from_character_id": "eric",
+      "to_character_id": "party_student_2",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 5 confrontational moments across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "confrontation": 3,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "eric-party_student_1",
+      "from_character_id": "eric",
+      "to_character_id": "party_student_1",
+      "relationship_type": "antagonistic",
+      "description": "Conflict-based relationship with 5 confrontational moments across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 4,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "confrontation": 3,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "alfred-adam",
+      "from_character_id": "alfred",
+      "to_character_id": "adam",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 2,
+        "episodes": [
+          "s01e03",
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 3
+        }
+      }
+    },
+    {
+      "id": "elise-party_student_1",
+      "from_character_id": "elise",
+      "to_character_id": "party_student_1",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 3
+        }
+      }
+    },
+    {
+      "id": "chloe-felicia",
+      "from_character_id": "chloe",
+      "to_character_id": "felicia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "training": 1,
+          "dance": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "felicia-party_student_3",
+      "from_character_id": "felicia",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "training": 1,
+          "dance": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "chloe-livia",
+      "from_character_id": "chloe",
+      "to_character_id": "livia",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "training": 1,
+          "dance": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "party_student_3-siri",
+      "from_character_id": "party_student_3",
+      "to_character_id": "siri",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "training": 1,
+          "dance": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "livia-party_student_3",
+      "from_character_id": "livia",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 1,
+        "episodes": [
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "training": 1,
+          "dance": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "chloe-adam",
+      "from_character_id": "chloe",
+      "to_character_id": "adam",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 3 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 3,
+        "episode_count": 2,
+        "episodes": [
+          "s01e05",
+          "s01e06"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 1,
+          "dance": 2
+        }
+      }
+    },
+    {
+      "id": "alfred-mother",
+      "from_character_id": "alfred",
+      "to_character_id": "mother",
+      "relationship_type": "acquaintance",
+      "description": "General acquaintances, appearing together 2 times across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 2,
+        "episodes": [
+          "s01e03",
+          "s01e06"
+        ],
+        "avg_intensity": 3.0,
+        "content_types": {
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "principal-adam",
+      "from_character_id": "principal",
+      "to_character_id": "adam",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 2 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 1,
+        "episodes": [
+          "s01e03"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 2
+        }
+      }
+    },
+    {
+      "id": "alfred-principal",
+      "from_character_id": "alfred",
+      "to_character_id": "principal",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 2 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 1,
+        "episodes": [
+          "s01e03"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "dance": 2
+        }
+      }
+    },
+    {
+      "id": "kevin-party_student_3",
+      "from_character_id": "kevin",
+      "to_character_id": "party_student_3",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 2 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 2
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-didde",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "didde",
+      "relationship_type": "social",
+      "description": "Social acquaintances, primarily seen together at parties/events. 2 co-occurrences across 2 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 2,
+        "episodes": [
+          "s01e04",
+          "s01e05"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 2
+        }
+      }
+    },
+    {
+      "id": "eric-felicia",
+      "from_character_id": "eric",
+      "to_character_id": "felicia",
+      "relationship_type": "acquaintance",
+      "description": "General acquaintances, appearing together 2 times across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 3.0,
+        "content_types": {
+          "training": 1,
+          "dance": 1
+        }
+      }
+    },
+    {
+      "id": "kiara_natt_och_dag-party_student_1",
+      "from_character_id": "kiara_natt_och_dag",
+      "to_character_id": "party_student_1",
+      "relationship_type": "acquaintance",
+      "description": "General acquaintances, appearing together 2 times across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "confrontation": 1,
+          "party": 1
+        }
+      }
+    },
+    {
+      "id": "didde-principal",
+      "from_character_id": "didde",
+      "to_character_id": "principal",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 2 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 1,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "principal-kevin",
+      "from_character_id": "principal",
+      "to_character_id": "kevin",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 2 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 1,
+          "confrontation": 1
+        }
+      }
+    },
+    {
+      "id": "chloe-principal",
+      "from_character_id": "chloe",
+      "to_character_id": "principal",
+      "relationship_type": "professional",
+      "description": "Student-teacher or professional relationship. Co-appear in 2 scenes across 1 episode(s).",
+      "metadata": {
+        "co_occurrence_count": 2,
+        "episode_count": 1,
+        "episodes": [
+          "s01e07"
+        ],
+        "avg_intensity": 2.0,
+        "content_types": {
+          "party": 1,
+          "confrontation": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,13 +1,34 @@
-/* Tailwind CSS v4 - Must be first */
 @import "tailwindcss";
 
-/* HeroUI v3 styles - Must be after Tailwind */
 @import "@heroui/styles";
 
-/* ============================================
-   BLOD THEME SYSTEM - Three Theme Infrastructure
-   Themes: Gothic | Luxury | Nordic
-   ============================================ */
+:root {
+  --polar-night: #0d0d12;
+  --arctic-ice: #e8f4f8;
+  --frost-blue: #b8d4e3;
+  --nordic-gold: #d4af37;
+
+  --blood-crimson: #8b0000;
+  --blush-rose: #d4a5a5;
+  --neon-pink: #ff6b9d;
+  --gym-pink: #ffb6c1;
+  --pearl-white: #f0e6d8;
+
+  --platinum-blonde: #f5f5dc;
+  --bronze-tan: #cd853f;
+  --voluptuous-red: #c53030;
+
+  --shadow-purple: #2d1b2d;
+  --choker-black: #0a0a0a;
+  --midnight-velvet: #1a0a1a;
+
+  --romantic-crimson: #be185d;
+  --familial-gold: #c9a227;
+  --training-purple: #8B5CF6;
+  --blood-bond-red: #991b1b;
+  --desires-pink: #ff6b9d;
+  --serves-silver: #a0a0a0;
+}
 
 :root {
   --duration-fast: 150ms;
@@ -258,8 +279,9 @@ body {
 /* Pattern overlay - subtle tiled texture for depth */
 .bg-pattern {
   background-image: url('/assets/backgrounds/background.pattern.png');
-  background-size: 400px;
-  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -275,6 +297,11 @@ body {
 }
 
 /* Gradient overlay for readability - can be combined with backgrounds */
+.bg-overlay {
+  position: relative;
+  isolation: isolate;
+}
+
 .bg-overlay::before {
   content: '';
   position: fixed;
@@ -581,4 +608,261 @@ a:hover {
 .taboo-tag:focus-visible {
   outline: 2px solid var(--taboo-border);
   outline-offset: 2px;
+}
+
+.nordic-gold { color: var(--nordic-gold); }
+.blood-crimson { color: var(--blood-crimson); }
+.blush-rose { color: var(--blush-rose); }
+.neon-pink { color: var(--neon-pink); }
+.gym-pink { color: var(--gym-pink); }
+.pearl-white { color: var(--pearl-white); }
+.platinum-blonde { color: var(--platinum-blonde); }
+.bronze-tan { color: var(--bronze-tan); }
+.voluptuous-red { color: var(--voluptuous-red); }
+.shadow-purple { color: var(--shadow-purple); }
+.choker-black { color: var(--choker-black); }
+.midnight-velvet { color: var(--midnight-velvet); }
+
+.bg-nordic-gold { background-color: var(--nordic-gold); }
+.bg-blood-crimson { background-color: var(--blood-crimson); }
+.bg-blush-rose { background-color: var(--blush-rose); }
+.bg-neon-pink { background-color: var(--neon-pink); }
+.bg-gym-pink { background-color: var(--gym-pink); }
+.bg-pearl-white { background-color: var(--pearl-white); }
+.bg-platinum-blonde { background-color: var(--platinum-blonde); }
+.bg-bronze-tan { background-color: var(--bronze-tan); }
+.bg-voluptuous-red { background-color: var(--voluptuous-red); }
+.bg-shadow-purple { background-color: var(--shadow-purple); }
+.bg-choker-black { background-color: var(--choker-black); }
+.bg-midnight-velvet { background-color: var(--midnight-velvet); }
+
+.border-nordic-gold { border-color: var(--nordic-gold); }
+.border-blood-crimson { border-color: var(--blood-crimson); }
+.border-blush-rose { border-color: var(--blush-rose); }
+.border-neon-pink { border-color: var(--neon-pink); }
+.border-gym-pink { border-color: var(--gym-pink); }
+.border-pearl-white { border-color: var(--pearl-white); }
+.border-platinum-blonde { border-color: var(--platinum-blonde); }
+.border-bronze-tan { border-color: var(--bronze-tan); }
+.border-voluptuous-red { border-color: var(--voluptuous-red); }
+.border-shadow-purple { border-color: var(--shadow-purple); }
+.border-choker-black { border-color: var(--choker-black); }
+.border-midnight-velvet { border-color: var(--midnight-velvet); }
+
+.relationship-romantic { color: var(--romantic-crimson); }
+.relationship-familial { color: var(--familial-gold); }
+.relationship-training { color: var(--training-purple); }
+.relationship-blood-bond { color: var(--blood-bond-red); }
+.relationship-desires { color: var(--desires-pink); }
+.relationship-serves { color: var(--serves-silver); }
+
+.bg-relationship-romantic { background-color: var(--romantic-crimson); }
+.bg-relationship-familial { background-color: var(--familial-gold); }
+.bg-relationship-training { background-color: var(--training-purple); }
+.bg-relationship-blood-bond { background-color: var(--blood-bond-red); }
+.bg-relationship-desires { background-color: var(--desires-pink); }
+.bg-relationship-serves { background-color: var(--serves-silver); }
+
+.border-relationship-romantic { border-color: var(--romantic-crimson); }
+.border-relationship-familial { border-color: var(--familial-gold); }
+.border-relationship-training { border-color: var(--training-purple); }
+.border-relationship-blood-bond { border-color: var(--blood-bond-red); }
+.border-relationship-desires { border-color: var(--desires-pink); }
+.border-relationship-serves { border-color: var(--serves-silver); }
+
+.glow-romantic { box-shadow: 0 0 20px var(--romantic-crimson); }
+.glow-familial { box-shadow: 0 0 20px var(--familial-gold); }
+.glow-training { box-shadow: 0 0 20px var(--training-purple); }
+.glow-blood-bond { box-shadow: 0 0 20px var(--blood-bond-red); }
+.glow-desires { box-shadow: 0 0 20px var(--desires-pink); }
+.glow-serves { box-shadow: 0 0 20px var(--serves-silver); }
+
+.glow-nordic-gold { box-shadow: 0 0 20px var(--nordic-gold); }
+.glow-blood-crimson { box-shadow: 0 0 20px var(--blood-crimson); }
+.glow-neon-pink { box-shadow: 0 0 20px var(--neon-pink); }
+
+.text-shadow-gold { text-shadow: 0 0 10px var(--nordic-gold); }
+.text-shadow-crimson { text-shadow: 0 0 10px var(--blood-crimson); }
+.text-shadow-pink { text-shadow: 0 0 10px var(--neon-pink); }
+
+.pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.pulse-medium { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.pulse-fast { animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.05); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.05); }
+}
+
+.heartbeat { animation: heartbeat 1.5s ease-in-out infinite; }
+
+@keyframes flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.flowing-border {
+  background: linear-gradient(90deg, var(--nordic-gold), var(--blood-crimson), var(--neon-pink), var(--nordic-gold));
+  background-size: 300% 100%;
+  animation: flow 3s ease infinite;
+}
+
+.card-3d {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.card-3d-inner {
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d;
+}
+
+.card-3d.flipped .card-3d-inner {
+  transform: rotateY(180deg);
+}
+
+.card-3d-front, .card-3d-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.card-3d-back {
+  transform: rotateY(180deg);
+}
+
+.glass-premium {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-nordic {
+  background: rgba(15, 15, 26, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(183, 110, 121, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.gradient-nordic {
+  background: linear-gradient(135deg, var(--polar-night) 0%, var(--shadow-purple) 100%);
+}
+
+.gradient-luxury {
+  background: linear-gradient(135deg, var(--midnight-velvet) 0%, var(--choker-black) 100%);
+}
+
+.gradient-erotic {
+  background: linear-gradient(135deg, var(--blood-crimson) 0%, var(--neon-pink) 50%, var(--blush-rose) 100%);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, var(--nordic-gold) 0%, #f4e5c2 50%, var(--nordic-gold) 100%);
+}
+
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px var(--nordic-gold);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.truncate-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.touch-none {
+  touch-action: none;
+}
+
+.touch-pan-x {
+  touch-action: pan-x;
+}
+
+.touch-pan-y {
+  touch-action: pan-y;
+}
+
+.select-none {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.drag-none {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-slow,
+  .pulse-medium,
+  .pulse-fast,
+  .heartbeat,
+  .flowing-border {
+    animation: none;
+  }
+  
+  .card-3d-inner {
+    transition: none;
+  }
+  
+  .hover-scale,
+  .hover-glow {
+    transition: none;
+  }
 }
