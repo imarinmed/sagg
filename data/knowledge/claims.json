@@ -1,0 +1,5395 @@
+{
+  "version": "1.0.0",
+  "total_claims": 286,
+  "claims_by_type": {
+    "rule": 43,
+    "fact": 79,
+    "relationship": 0,
+    "event": 164
+  },
+  "claims": [
+    {
+      "claim_id": "claim-0001",
+      "type": "rule",
+      "subject": "vampire_physiology",
+      "predicate": "is_defined_as",
+      "object": "Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenance.\nThey can blend into human society and attend regular schools, making them virtually indistinguish",
+      "canon_layer": "bst",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_physiology",
+          "quote": "Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenanc"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0002",
+      "type": "fact",
+      "subject": "vampire_physiology",
+      "predicate": "grants_ability",
+      "object": "strength",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_physiology"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0003",
+      "type": "fact",
+      "subject": "vampire_physiology",
+      "predicate": "grants_ability",
+      "object": "speed",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_physiology"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0004",
+      "type": "fact",
+      "subject": "vampire_physiology",
+      "predicate": "grants_ability",
+      "object": "senses",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_physiology"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0005",
+      "type": "fact",
+      "subject": "vampire_physiology",
+      "predicate": "grants_ability",
+      "object": "healing",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_physiology"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0006",
+      "type": "rule",
+      "subject": "family_hierarchy",
+      "predicate": "is_defined_as",
+      "object": "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family\nexemplifies this with clear patriarchal structure and expectations for their children.\nFamily position determines e",
+      "canon_layer": "bst",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "family_hierarchy",
+          "quote": "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family\nexemplifies thi"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0007",
+      "type": "fact",
+      "subject": "family_hierarchy",
+      "predicate": "grants_ability",
+      "object": "unified_family_resources",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "family_hierarchy"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0008",
+      "type": "fact",
+      "subject": "family_hierarchy",
+      "predicate": "grants_ability",
+      "object": "generational_knowledge_transfer",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "family_hierarchy"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0009",
+      "type": "fact",
+      "subject": "family_hierarchy",
+      "predicate": "has_weakness",
+      "object": "rigid_structure_limits_adaptation",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "family_hierarchy"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0010",
+      "type": "fact",
+      "subject": "family_hierarchy",
+      "predicate": "has_weakness",
+      "object": "internal_politics",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "family_hierarchy"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0011",
+      "type": "rule",
+      "subject": "blood_bond",
+      "predicate": "is_defined_as",
+      "object": "A mystical connection formed through blood exchange between vampires. The exact nature is not\nfully explored in the series, but hints suggest deep emotional and possibly telepathic links\nform between ",
+      "canon_layer": "bst",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "blood_bond",
+          "quote": "A mystical connection formed through blood exchange between vampires. The exact nature is not\nfully "
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0012",
+      "type": "fact",
+      "subject": "blood_bond",
+      "predicate": "grants_ability",
+      "object": "sense_bonded_partner_location",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "blood_bond"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0013",
+      "type": "fact",
+      "subject": "blood_bond",
+      "predicate": "grants_ability",
+      "object": "share_emotions",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "blood_bond"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0014",
+      "type": "fact",
+      "subject": "blood_bond",
+      "predicate": "grants_ability",
+      "object": "enhanced_trust",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "blood_bond"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0015",
+      "type": "fact",
+      "subject": "blood_bond",
+      "predicate": "has_weakness",
+      "object": "vulnerability_through_bond_partner",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "blood_bond"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0016",
+      "type": "fact",
+      "subject": "blood_bond",
+      "predicate": "has_weakness",
+      "object": "emotional_dependence",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "blood_bond"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0017",
+      "type": "rule",
+      "subject": "feeding",
+      "predicate": "is_defined_as",
+      "object": "The act of consuming blood for sustenance. Vampires require blood to survive, though the\nexact mechanics and frequency are not detailed in the series. What is clear is that feeding\nis both a biologica",
+      "canon_layer": "bst",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "feeding",
+          "quote": "The act of consuming blood for sustenance. Vampires require blood to survive, though the\nexact mecha"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0018",
+      "type": "fact",
+      "subject": "feeding",
+      "predicate": "grants_ability",
+      "object": "sustenance_extraction",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "feeding"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0019",
+      "type": "fact",
+      "subject": "feeding",
+      "predicate": "grants_ability",
+      "object": "pleasure_induction",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "feeding"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0020",
+      "type": "fact",
+      "subject": "feeding",
+      "predicate": "has_weakness",
+      "object": "blood_dependency",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "feeding"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0021",
+      "type": "fact",
+      "subject": "feeding",
+      "predicate": "has_weakness",
+      "object": "feeding_frenzy_risk",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "feeding"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0022",
+      "type": "rule",
+      "subject": "vampire_human_relations",
+      "predicate": "is_defined_as",
+      "object": "Vampires coexist secretly with humans, attending the same schools and living in the\nsame communities. Most humans are unaware of vampires' existence, enabling vampires\nto move freely among their prey ",
+      "canon_layer": "bst",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_human_relations",
+          "quote": "Vampires coexist secretly with humans, attending the same schools and living in the\nsame communities"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0023",
+      "type": "fact",
+      "subject": "vampire_human_relations",
+      "predicate": "grants_ability",
+      "object": "perfect_camouflage",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_human_relations"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0024",
+      "type": "fact",
+      "subject": "vampire_human_relations",
+      "predicate": "grants_ability",
+      "object": "human_manipulation",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_human_relations"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0025",
+      "type": "fact",
+      "subject": "vampire_human_relations",
+      "predicate": "has_weakness",
+      "object": "discovery_risk",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_human_relations"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0026",
+      "type": "fact",
+      "subject": "vampire_human_relations",
+      "predicate": "has_weakness",
+      "object": "emotional_attachment_to_prey",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "vampire_human_relations"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0027",
+      "type": "rule",
+      "subject": "transformation",
+      "predicate": "is_defined_as",
+      "object": "The process by which humans become vampires. Not explicitly detailed in the series,\nbut implied to involve blood exchange and a death-like transition. Once transformed,\nthere is no return to humanity\u2014",
+      "canon_layer": "bst",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "transformation",
+          "quote": "The process by which humans become vampires. Not explicitly detailed in the series,\nbut implied to i"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0028",
+      "type": "fact",
+      "subject": "transformation",
+      "predicate": "grants_ability",
+      "object": "grant_immortality",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "transformation"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0029",
+      "type": "fact",
+      "subject": "transformation",
+      "predicate": "grants_ability",
+      "object": "create_progeny",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "transformation"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0030",
+      "type": "fact",
+      "subject": "transformation",
+      "predicate": "has_weakness",
+      "object": "loss_of_human_life",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "transformation"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0031",
+      "type": "fact",
+      "subject": "transformation",
+      "predicate": "has_weakness",
+      "object": "eternal_obligation_to_sire",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "transformation"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0032",
+      "type": "rule",
+      "subject": "daywalking",
+      "predicate": "is_defined_as",
+      "object": "Vampires in the series appear to be able to function during daylight hours without\nthe traditional vampire weakness to sunlight. This \"daywalking\" ability allows them\nto fully integrate into human soc",
+      "canon_layer": "bst",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "daywalking",
+          "quote": "Vampires in the series appear to be able to function during daylight hours without\nthe traditional v"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0033",
+      "type": "fact",
+      "subject": "daywalking",
+      "predicate": "grants_ability",
+      "object": "daytime_activity",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "daywalking"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0034",
+      "type": "fact",
+      "subject": "daywalking",
+      "predicate": "grants_ability",
+      "object": "human_schedule_adherence",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "daywalking"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0035",
+      "type": "fact",
+      "subject": "daywalking",
+      "predicate": "grants_ability",
+      "object": "unrestricted_hunting",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "mythos",
+          "source_id": "daywalking"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0200",
+      "type": "fact",
+      "subject": "kiara_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "rebellious",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "kiara_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0201",
+      "type": "fact",
+      "subject": "kiara_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "curious",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "kiara_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0202",
+      "type": "fact",
+      "subject": "kiara_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "naive",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "kiara_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0203",
+      "type": "fact",
+      "subject": "kiara_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "wants_normal_life",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "kiara_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0204",
+      "type": "fact",
+      "subject": "kiara_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "fish_out_of_water",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "kiara_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0205",
+      "type": "fact",
+      "subject": "kiara_natt_och_dag",
+      "predicate": "has_arc",
+      "object": "fish_out_of_water_teen",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "kiara_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0206",
+      "type": "fact",
+      "subject": "henry_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "strict",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "henry_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0207",
+      "type": "fact",
+      "subject": "henry_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "controlling",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "henry_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0208",
+      "type": "fact",
+      "subject": "henry_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "protective",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "henry_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0209",
+      "type": "fact",
+      "subject": "henry_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "traditional",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "henry_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0210",
+      "type": "fact",
+      "subject": "henry_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "patriarch",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "henry_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0211",
+      "type": "fact",
+      "subject": "henry_natt_och_dag",
+      "predicate": "has_arc",
+      "object": "authoritarian_father",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "henry_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0212",
+      "type": "fact",
+      "subject": "elise",
+      "predicate": "has_trait",
+      "object": "popular",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "elise"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0213",
+      "type": "fact",
+      "subject": "elise",
+      "predicate": "has_trait",
+      "object": "manipulative",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "elise"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0214",
+      "type": "fact",
+      "subject": "elise",
+      "predicate": "has_trait",
+      "object": "jealous",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "elise"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0215",
+      "type": "fact",
+      "subject": "elise",
+      "predicate": "has_trait",
+      "object": "queen_bee",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "elise"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0216",
+      "type": "fact",
+      "subject": "elise",
+      "predicate": "has_arc",
+      "object": "rival_antagonist",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "elise"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0217",
+      "type": "fact",
+      "subject": "chloe",
+      "predicate": "has_trait",
+      "object": "loyal",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "chloe"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0218",
+      "type": "fact",
+      "subject": "chloe",
+      "predicate": "has_trait",
+      "object": "supportive",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "chloe"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0219",
+      "type": "fact",
+      "subject": "chloe",
+      "predicate": "has_trait",
+      "object": "outsider_observer",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "chloe"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0220",
+      "type": "fact",
+      "subject": "chloe",
+      "predicate": "has_trait",
+      "object": "genuine",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "chloe"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0221",
+      "type": "fact",
+      "subject": "chloe",
+      "predicate": "has_arc",
+      "object": "ally_sidekick",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "chloe"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0222",
+      "type": "fact",
+      "subject": "alfred",
+      "predicate": "has_trait",
+      "object": "popular",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "alfred"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0223",
+      "type": "fact",
+      "subject": "alfred",
+      "predicate": "has_trait",
+      "object": "athletic",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "alfred"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0224",
+      "type": "fact",
+      "subject": "alfred",
+      "predicate": "has_trait",
+      "object": "charming",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "alfred"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0225",
+      "type": "fact",
+      "subject": "alfred",
+      "predicate": "has_trait",
+      "object": "unaware_of_vampires",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "alfred"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0226",
+      "type": "fact",
+      "subject": "alfred",
+      "predicate": "has_arc",
+      "object": "love_interest_unaware",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "alfred"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0227",
+      "type": "fact",
+      "subject": "desiree_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "elegant",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "desiree_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0228",
+      "type": "fact",
+      "subject": "desiree_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "distant",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "desiree_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0229",
+      "type": "fact",
+      "subject": "desiree_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "image_conscious",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "desiree_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0230",
+      "type": "fact",
+      "subject": "desiree_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "social_climber",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "desiree_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0231",
+      "type": "fact",
+      "subject": "desiree_natt_och_dag",
+      "predicate": "has_arc",
+      "object": "distant_mother",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "desiree_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0232",
+      "type": "fact",
+      "subject": "jacques_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "mysterious",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "jacques_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0233",
+      "type": "fact",
+      "subject": "jacques_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "charming",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "jacques_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0234",
+      "type": "fact",
+      "subject": "jacques_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "rebellious",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "jacques_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0235",
+      "type": "fact",
+      "subject": "jacques_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "alluring",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "jacques_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0236",
+      "type": "fact",
+      "subject": "jacques_natt_och_dag",
+      "predicate": "has_trait",
+      "object": "uncle_figure",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "jacques_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0237",
+      "type": "fact",
+      "subject": "jacques_natt_och_dag",
+      "predicate": "has_arc",
+      "object": "mysterious_uncle",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "jacques_natt_och_dag"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0238",
+      "type": "fact",
+      "subject": "eric",
+      "predicate": "has_trait",
+      "object": "nerdy",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "eric"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0239",
+      "type": "fact",
+      "subject": "eric",
+      "predicate": "has_trait",
+      "object": "loyal",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "eric"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0240",
+      "type": "fact",
+      "subject": "eric",
+      "predicate": "has_trait",
+      "object": "awkward",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "eric"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0241",
+      "type": "fact",
+      "subject": "eric",
+      "predicate": "has_trait",
+      "object": "tech_savvy",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "eric"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0242",
+      "type": "fact",
+      "subject": "eric",
+      "predicate": "has_arc",
+      "object": "sidekick_friend",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "eric"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0243",
+      "type": "fact",
+      "subject": "didde",
+      "predicate": "has_trait",
+      "object": "jock",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "didde"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0244",
+      "type": "fact",
+      "subject": "didde",
+      "predicate": "has_trait",
+      "object": "simple",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "didde"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0245",
+      "type": "fact",
+      "subject": "didde",
+      "predicate": "has_trait",
+      "object": "elise_follower",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "didde"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0246",
+      "type": "fact",
+      "subject": "didde",
+      "predicate": "has_arc",
+      "object": "minor_character",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "didde"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0247",
+      "type": "fact",
+      "subject": "felicia",
+      "predicate": "has_trait",
+      "object": "follower",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "felicia"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0248",
+      "type": "fact",
+      "subject": "felicia",
+      "predicate": "has_trait",
+      "object": "mean_girl",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "felicia"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0249",
+      "type": "fact",
+      "subject": "felicia",
+      "predicate": "has_trait",
+      "object": "elise_lackey",
+      "canon_layer": "bst",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "felicia"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0250",
+      "type": "fact",
+      "subject": "felicia",
+      "predicate": "has_arc",
+      "object": "minor_antagonist",
+      "canon_layer": "bst",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source_type": "character",
+          "source_id": "felicia"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0400",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "Welcome back to the vampire channel Blood, Sweat, Tears.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:03",
+          "moment_id": "m-0400",
+          "quote": "Welcome back to the vampire channel Blood, Sweat, Tears.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_000_0-00-03.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0401",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "and unfortunately way too little smut for a vampire series.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:08",
+          "moment_id": "m-0401",
+          "quote": "and unfortunately way too little smut for a vampire series.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0402",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Here come the number-one party planners, with an IQ roughly on the same level.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:35",
+          "moment_id": "m-0402",
+          "quote": "Here come the number-one party planners, with an IQ roughly on the same level.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0403",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "So get ready for a new term of Blood, Sweat, Tears.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:37",
+          "moment_id": "m-0403",
+          "quote": "So get ready for a new term of Blood, Sweat, Tears.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_001_0-00-37.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0404",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I, your very own vampire researcher, am ready with brand-new equipment.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:43",
+          "moment_id": "m-0404",
+          "quote": "I, your very own vampire researcher, am ready with brand-new equipment.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0405",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "A vampire is starting at our school. How cool is that?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:53",
+          "moment_id": "m-0405",
+          "quote": "A vampire is starting at our school. How cool is that?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0406",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "I went and donated blood to the Blood System just for today.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:56",
+          "moment_id": "m-0406",
+          "quote": "I went and donated blood to the Blood System just for today.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_002_0-00-56.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0407",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "Imagine! My blood will be eaten by the vampires to keep them calm.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:00:59",
+          "moment_id": "m-0407",
+          "quote": "Imagine! My blood will be eaten by the vampires to keep them calm.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_003_0-00-59.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0408",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "They eat our blood and in return their blood becomes medicine for us.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:05",
+          "moment_id": "m-0408",
+          "quote": "They eat our blood and in return their blood becomes medicine for us.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_004_0-01-05.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0409",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Humans and vampires side by side.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:08",
+          "moment_id": "m-0409",
+          "quote": "Humans and vampires side by side.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0410",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "But one misstep and they get triggered and bloodthirsty.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:11",
+          "moment_id": "m-0410",
+          "quote": "But one misstep and they get triggered and bloodthirsty.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_005_0-01-11.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0411",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "when the vampire finally steps out of the shadows.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:15",
+          "moment_id": "m-0411",
+          "quote": "when the vampire finally steps out of the shadows.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0412",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "And above all: How big are the fangs?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:20",
+          "moment_id": "m-0412",
+          "quote": "And above all: How big are the fangs?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0413",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "See it? Or? That\u2019s the new vampire.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:26",
+          "moment_id": "m-0413",
+          "quote": "See it? Or? That\u2019s the new vampire.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0414",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "How\u2019s the vampire going to manage among bandy guys and dance girls?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:37",
+          "moment_id": "m-0414",
+          "quote": "How\u2019s the vampire going to manage among bandy guys and dance girls?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_007_0-01-37.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0415",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "They call themselves Batgirls. Ironically, since they love high UV.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:51",
+          "moment_id": "m-0415",
+          "quote": "They call themselves Batgirls. Ironically, since they love high UV.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_008_0-01-51.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0416",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "This is Skaraborg High School. This is Blood, Sweat, Tears.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:01:56",
+          "moment_id": "m-0416",
+          "quote": "This is Skaraborg High School. This is Blood, Sweat, Tears.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_009_0-01-56.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0417",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "that the politically correct term is cold-blooded.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:02:27",
+          "moment_id": "m-0417",
+          "quote": "that the politically correct term is cold-blooded.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_010_0-02-27.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0418",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "because she\u2019s a vampire.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:02:37",
+          "moment_id": "m-0418",
+          "quote": "because she\u2019s a vampire.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0419",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "But as you know we\u2019ve got a vampire in the class,",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:03:15",
+          "moment_id": "m-0419",
+          "quote": "But as you know we\u2019ve got a vampire in the class,",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0420",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "so the school has decided to install this kind of emergency vampire kit.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:03:17",
+          "moment_id": "m-0420",
+          "quote": "so the school has decided to install this kind of emergency vampire kit.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0421",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "They get triggered by blood and sweat.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:03:21",
+          "moment_id": "m-0421",
+          "quote": "They get triggered by blood and sweat.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_011_0-03-21.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0422",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "So you, chubby, maybe shouldn\u2019t stand so close.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:03:23",
+          "moment_id": "m-0422",
+          "quote": "So you, chubby, maybe shouldn\u2019t stand so close.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_012_0-03-23.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0423",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "Triggered means they go completely hysterical.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:03:26",
+          "moment_id": "m-0423",
+          "quote": "Triggered means they go completely hysterical.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_013_0-03-26.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0424",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "Yes, and we have a responsibility to offer schooling to cold-bloodeds too.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:04:00",
+          "moment_id": "m-0424",
+          "quote": "Yes, and we have a responsibility to offer schooling to cold-bloodeds too.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_014_0-04-00.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0425",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Organizing this year\u2019s masquerade as a project is super fun, Eric,",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:04:12",
+          "moment_id": "m-0425",
+          "quote": "Organizing this year\u2019s masquerade as a project is super fun, Eric,",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0426",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I was also chair of the party committee just like you, Eric.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:04:23",
+          "moment_id": "m-0426",
+          "quote": "I was also chair of the party committee just like you, Eric.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0427",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "And now! What we\u2019ve all been waiting for. A living, breathing female vampire.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:04:49",
+          "moment_id": "m-0427",
+          "quote": "And now! What we\u2019ve all been waiting for. A living, breathing female vampire.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0428",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "Cold\u2026 Cold-blooded\u2026",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:06:10",
+          "moment_id": "m-0428",
+          "quote": "Cold\u2026 Cold-blooded\u2026",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_019_0-06-10.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0429",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "I\u2019m not taking responsibility for any bloodbath.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:06:21",
+          "moment_id": "m-0429",
+          "quote": "I\u2019m not taking responsibility for any bloodbath.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_021_0-06-21.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0430",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "A cold-blood has started at the school.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:06:36",
+          "moment_id": "m-0430",
+          "quote": "A cold-blood has started at the school.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_023_0-06-36.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0431",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "As leader of the dance team Batgirls",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:06:46",
+          "moment_id": "m-0431",
+          "quote": "As leader of the dance team Batgirls",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_024_0-06-46.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0432",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "you traditionally handle the dance performance at the masquerade.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:06:49",
+          "moment_id": "m-0432",
+          "quote": "you traditionally handle the dance performance at the masquerade.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_025_0-06-49.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0433",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "for the Batgirls finale show.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:05",
+          "moment_id": "m-0433",
+          "quote": "for the Batgirls finale show.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_026_0-07-05.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0434",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "The school board has decided you need to hold an audition.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:09",
+          "moment_id": "m-0434",
+          "quote": "The school board has decided you need to hold an audition.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_027_0-07-09.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0435",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "An open audition where everyone gets the chance to perform.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:13",
+          "moment_id": "m-0435",
+          "quote": "An open audition where everyone gets the chance to perform.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_028_0-07-13.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0436",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I know someone who\u2019s going to be pissed.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:17",
+          "moment_id": "m-0436",
+          "quote": "I know someone who\u2019s going to be pissed.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0437",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Audition?! Fuck that!",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:19",
+          "moment_id": "m-0437",
+          "quote": "Audition?! Fuck that!",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_029_0-07-19.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0438",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Batgirls aren\u2019t just any damn bottom scrap.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:22",
+          "moment_id": "m-0438",
+          "quote": "Batgirls aren\u2019t just any damn bottom scrap.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_030_0-07-22.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0439",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "It\u2019ll be fairer if the best dancers are in.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:34",
+          "moment_id": "m-0439",
+          "quote": "It\u2019ll be fairer if the best dancers are in.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_031_0-07-34.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0440",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I just think I\u2019m organizing the masquerade",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:07:43",
+          "moment_id": "m-0440",
+          "quote": "I just think I\u2019m organizing the masquerade",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0441",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "She claims Elise and the Batgirls are too homogay.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:08:11",
+          "moment_id": "m-0441",
+          "quote": "She claims Elise and the Batgirls are too homogay.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_034_0-08-11.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0442",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "Good thing I\u2019m not on my period. Then she might have gotten triggered and eaten me?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:09:12",
+          "moment_id": "m-0442",
+          "quote": "Good thing I\u2019m not on my period. Then she might have gotten triggered and eaten me?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_035_0-09-12.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0443",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "What does human blood taste like?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:09:32",
+          "moment_id": "m-0443",
+          "quote": "What does human blood taste like?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_036_0-09-32.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0444",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Are there vegan vampires?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:09:34",
+          "moment_id": "m-0444",
+          "quote": "Are there vegan vampires?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0445",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Alfred Carlsson, influencer, vampire researcher.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:09:40",
+          "moment_id": "m-0445",
+          "quote": "Alfred Carlsson, influencer, vampire researcher.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0446",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Vampire researcher? Sexy.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:09:44",
+          "moment_id": "m-0446",
+          "quote": "Vampire researcher? Sexy.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_037_0-09-44.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0447",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I\u2019ve got a thing for vampires. A fetish.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:09:47",
+          "moment_id": "m-0447",
+          "quote": "I\u2019ve got a thing for vampires. A fetish.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0448",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Or I mean fascination for vampires\u2026 like you.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:09:50",
+          "moment_id": "m-0448",
+          "quote": "Or I mean fascination for vampires\u2026 like you.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0449",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "The ones you just sat with, that\u2019s the evil side of the dance crew.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:10:09",
+          "moment_id": "m-0449",
+          "quote": "The ones you just sat with, that\u2019s the evil side of the dance crew.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_038_0-10-09.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0450",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Chloe is mad because she thinks she\u2019s the leader of Batgirls.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:10:12",
+          "moment_id": "m-0450",
+          "quote": "Chloe is mad because she thinks she\u2019s the leader of Batgirls.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_039_0-10-12.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0451",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "She\u2019s the leader of the good side, and that\u2019s why Chloe is mad.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:10:19",
+          "moment_id": "m-0451",
+          "quote": "She\u2019s the leader of the good side, and that\u2019s why Chloe is mad.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0452",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "They\u2019re in the dance program.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:10:21",
+          "moment_id": "m-0452",
+          "quote": "They\u2019re in the dance program.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_040_0-10-21.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0453",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "and who doesn\u2019t get to be in Batgirls.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:10:25",
+          "moment_id": "m-0453",
+          "quote": "and who doesn\u2019t get to be in Batgirls.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_041_0-10-25.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0454",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "But what? Aren\u2019t there only advantages to being a vampire?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:10:50",
+          "moment_id": "m-0454",
+          "quote": "But what? Aren\u2019t there only advantages to being a vampire?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0455",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "And remember, a vampire always speaks the truth",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:11:02",
+          "moment_id": "m-0455",
+          "quote": "And remember, a vampire always speaks the truth",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0456",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "\u2013900\u2026 \u2013Blood and honor.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:11:46",
+          "moment_id": "m-0456",
+          "quote": "\u2013900\u2026 \u2013Blood and honor.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_042_0-11-46.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0457",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "would you get triggered then?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:11:52",
+          "moment_id": "m-0457",
+          "quote": "would you get triggered then?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_043_0-11-52.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0458",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I want to dance. What do I have to do to join?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:25",
+          "moment_id": "m-0458",
+          "quote": "I want to dance. What do I have to do to join?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_044_0-12-25.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0459",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Well, to go to the masquerade you just buy a ticket, but\u2026",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:28",
+          "moment_id": "m-0459",
+          "quote": "Well, to go to the masquerade you just buy a ticket, but\u2026",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0460",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "\u2013And dance? \u2013No. Dancing, no way.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:32",
+          "moment_id": "m-0460",
+          "quote": "\u2013And dance? \u2013No. Dancing, no way.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_045_0-12-32.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0461",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Sign up for the masquerade.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:35",
+          "moment_id": "m-0461",
+          "quote": "Sign up for the masquerade.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0462",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "And sign up for the Batgirls audition.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:37",
+          "moment_id": "m-0462",
+          "quote": "And sign up for the Batgirls audition.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_046_0-12-37.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0463",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Can\u2019t you sign up for the masquerade, please?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:43",
+          "moment_id": "m-0463",
+          "quote": "Can\u2019t you sign up for the masquerade, please?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0464",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "You can\u2019t stay home watching vampire porn again this year.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:45",
+          "moment_id": "m-0464",
+          "quote": "You can\u2019t stay home watching vampire porn again this year.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0465",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "\u2013Do you want to come to the masquerade? \u2013Yes, I\u2019d love to.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:48",
+          "moment_id": "m-0465",
+          "quote": "\u2013Do you want to come to the masquerade? \u2013Yes, I\u2019d love to.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0466",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "and chair of the party committee.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:12:53",
+          "moment_id": "m-0466",
+          "quote": "and chair of the party committee.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0467",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Then allow me with dignity to invite the countess to a dance at the castle.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:13:03",
+          "moment_id": "m-0467",
+          "quote": "Then allow me with dignity to invite the countess to a dance at the castle.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_047_0-13-03.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0468",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "I also know cold-bloodeds require an invitation, right?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:13:06",
+          "moment_id": "m-0468",
+          "quote": "I also know cold-bloodeds require an invitation, right?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_048_0-13-06.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0469",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I\u2019d like to sign up for the masquerade and audition.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:13:17",
+          "moment_id": "m-0469",
+          "quote": "I\u2019d like to sign up for the masquerade and audition.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e01_moment_049_0-13-17.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0470",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "but can cold-bloodeds really dance with everyone?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:13:22",
+          "moment_id": "m-0470",
+          "quote": "but can cold-bloodeds really dance with everyone?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0471",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Are you coming to the party tonight?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:13:43",
+          "moment_id": "m-0471",
+          "quote": "Are you coming to the party tonight?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0472",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Did Eric invite you to the beach party?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:01",
+          "moment_id": "m-0472",
+          "quote": "Did Eric invite you to the beach party?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0473",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "\u2013Exactly, because you\u2019re not invited. \u2013And vampires aren\u2019t welcome.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:06",
+          "moment_id": "m-0473",
+          "quote": "\u2013Exactly, because you\u2019re not invited. \u2013And vampires aren\u2019t welcome.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0474",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "The beach party isn\u2019t for just anyone.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:09",
+          "moment_id": "m-0474",
+          "quote": "The beach party isn\u2019t for just anyone.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0475",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "I heard you want to audition.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:12",
+          "moment_id": "m-0475",
+          "quote": "I heard you want to audition.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0476",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "We could use some new blood in Batgirls.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:15",
+          "moment_id": "m-0476",
+          "quote": "We could use some new blood in Batgirls.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0477",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "\u2013Can you dance? \u2013Yes. Ballet.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:18",
+          "moment_id": "m-0477",
+          "quote": "\u2013Can you dance? \u2013Yes. Ballet.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0478",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "Ballet? Why am I not surprised?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:22",
+          "moment_id": "m-0478",
+          "quote": "Ballet? Why am I not surprised?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0479",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "See you at the dance school tomorrow then. Changed and ready.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:26",
+          "moment_id": "m-0479",
+          "quote": "See you at the dance school tomorrow then. Changed and ready.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0480",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "You can wear ballet clothes.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:30",
+          "moment_id": "m-0480",
+          "quote": "You can wear ballet clothes.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0481",
+      "type": "rule",
+      "subject": "s01e01",
+      "predicate": "establishes",
+      "object": "Exactly. That\u2019s not the only thing that makes the bloodsucker cry.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:14:43",
+          "moment_id": "m-0481",
+          "quote": "Exactly. That\u2019s not the only thing that makes the bloodsucker cry.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0482",
+      "type": "event",
+      "subject": "s01e01",
+      "predicate": "depicts",
+      "object": "K\u00e5r! (School spirit cheer)",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e01",
+          "timestamp": "0:16:17",
+          "moment_id": "m-0482",
+          "quote": "K\u00e5r! (School spirit cheer)",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0483",
+      "type": "event",
+      "subject": "s01e02",
+      "predicate": "depicts",
+      "object": "Kiara, do you have your anti-trigger medication under control?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e02",
+          "timestamp": "0:00:10",
+          "moment_id": "m-0483",
+          "quote": "Kiara, do you have your anti-trigger medication under control?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e02_moment_000_0-00-10.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0484",
+      "type": "event",
+      "subject": "s01e02",
+      "predicate": "depicts",
+      "object": "\u2013Calling that dancing\u2026 \u2013Mom, it\u2019s modern.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e02",
+          "timestamp": "0:00:38",
+          "moment_id": "m-0484",
+          "quote": "\u2013Calling that dancing\u2026 \u2013Mom, it\u2019s modern.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e02_moment_009_0-00-38.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0485",
+      "type": "rule",
+      "subject": "s01e02",
+      "predicate": "establishes",
+      "object": "\u2013Blood and honor. \u2013Blood and honor.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e02",
+          "timestamp": "0:00:44",
+          "moment_id": "m-0485",
+          "quote": "\u2013Blood and honor. \u2013Blood and honor.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e02_moment_011_0-00-44.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0486",
+      "type": "event",
+      "subject": "s01e02",
+      "predicate": "depicts",
+      "object": "No, I didn\u2019t make out. She kissed me, I\u2019m telling you.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e02",
+          "timestamp": "0:02:47",
+          "moment_id": "m-0486",
+          "quote": "No, I didn\u2019t make out. She kissed me, I\u2019m telling you.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e02_moment_036_0-02-47.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0487",
+      "type": "event",
+      "subject": "s01e02",
+      "predicate": "depicts",
+      "object": "\u2013Not kiss back, maybe. \u2013It didn\u2019t mean anything.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e02",
+          "timestamp": "0:02:54",
+          "moment_id": "m-0487",
+          "quote": "\u2013Not kiss back, maybe. \u2013It didn\u2019t mean anything.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e02_moment_038_0-02-54.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0488",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "You may kiss the bat.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:00:32",
+          "moment_id": "m-0488",
+          "quote": "You may kiss the bat.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_001_0-00-32.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0489",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "I\u2019ve never been to a vampire castle before.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:01:38",
+          "moment_id": "m-0489",
+          "quote": "I\u2019ve never been to a vampire castle before.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0490",
+      "type": "rule",
+      "subject": "s01e03",
+      "predicate": "establishes",
+      "object": "Okay. Welcome to Natt and Dag. Blood and honor.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:01:42",
+          "moment_id": "m-0490",
+          "quote": "Okay. Welcome to Natt and Dag. Blood and honor.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_002_0-01-42.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0491",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "\u2013Stop filming, Affe. \u2013Here\u2019s my driver who\u2019s super pissed.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:02:18",
+          "moment_id": "m-0491",
+          "quote": "\u2013Stop filming, Affe. \u2013Here\u2019s my driver who\u2019s super pissed.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0492",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "\u2013And then party after. \u2013What party?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:02:49",
+          "moment_id": "m-0492",
+          "quote": "\u2013And then party after. \u2013What party?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0493",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "The village hall party you\u2019re supposed to come to.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:02:51",
+          "moment_id": "m-0493",
+          "quote": "The village hall party you\u2019re supposed to come to.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0494",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "And here\u2019s my dance hall.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:03:54",
+          "moment_id": "m-0494",
+          "quote": "And here\u2019s my dance hall.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_011_0-03-54.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0495",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "And we\u2019re going to a party later.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:05:13",
+          "moment_id": "m-0495",
+          "quote": "And we\u2019re going to a party later.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0496",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Study party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:05:18",
+          "moment_id": "m-0496",
+          "quote": "Study party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0497",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Yeah, I like vampires.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:05:39",
+          "moment_id": "m-0497",
+          "quote": "Yeah, I like vampires.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0498",
+      "type": "rule",
+      "subject": "s01e03",
+      "predicate": "establishes",
+      "object": "Sorry. Cold-bloods.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:05:41",
+          "moment_id": "m-0498",
+          "quote": "Sorry. Cold-bloods.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_013_0-05-41.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0499",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "It\u2019s fine to say vampires.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:05:43",
+          "moment_id": "m-0499",
+          "quote": "It\u2019s fine to say vampires.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0500",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "We\u2019re proud to be called vampires.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:05:46",
+          "moment_id": "m-0500",
+          "quote": "We\u2019re proud to be called vampires.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0501",
+      "type": "rule",
+      "subject": "s01e03",
+      "predicate": "establishes",
+      "object": "It\u2019s humans who came up with that nonsense about cold-bloods.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:05:49",
+          "moment_id": "m-0501",
+          "quote": "It\u2019s humans who came up with that nonsense about cold-bloods.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_014_0-05-49.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0502",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Kiara, maybe you could dance for our guest?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:06:00",
+          "moment_id": "m-0502",
+          "quote": "Kiara, maybe you could dance for our guest?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_015_0-06-00.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0503",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Batgirls is the dance school\u2019s elite group,",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:07:31",
+          "moment_id": "m-0503",
+          "quote": "Batgirls is the dance school\u2019s elite group,",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_018_0-07-31.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0504",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "These are Batgirls\u2019 competition costumes. We wear them with pride.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:07:43",
+          "moment_id": "m-0504",
+          "quote": "These are Batgirls\u2019 competition costumes. We wear them with pride.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_019_0-07-43.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0505",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "We\u2019ve never had a guy in Batgirls before,",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:07:51",
+          "moment_id": "m-0505",
+          "quote": "We\u2019ve never had a guy in Batgirls before,",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_020_0-07-51.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0506",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "I told you. Vampires are deadly.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:08:21",
+          "moment_id": "m-0506",
+          "quote": "I told you. Vampires are deadly.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0507",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "First she ate everyone at the whole dance school.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:08:28",
+          "moment_id": "m-0507",
+          "quote": "First she ate everyone at the whole dance school.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_022_0-08-28.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0508",
+      "type": "rule",
+      "subject": "s01e03",
+      "predicate": "establishes",
+      "object": "His whole hand was bloody.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:08:36",
+          "moment_id": "m-0508",
+          "quote": "His whole hand was bloody.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_023_0-08-36.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0509",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "This party I\u2019m going to\u2026",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:09:24",
+          "moment_id": "m-0509",
+          "quote": "This party I\u2019m going to\u2026",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0510",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "\u2013I\u2019ve never been to a party before. \u2013The village hall party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:09:27",
+          "moment_id": "m-0510",
+          "quote": "\u2013I\u2019ve never been to a party before. \u2013The village hall party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0511",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "\u2013Hello, there\u2019s a party tonight. \u2013What if she comes.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:09:30",
+          "moment_id": "m-0511",
+          "quote": "\u2013Hello, there\u2019s a party tonight. \u2013What if she comes.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_024_0-09-30.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0512",
+      "type": "rule",
+      "subject": "s01e03",
+      "predicate": "establishes",
+      "object": "The bloodsucker Kiara isn\u2019t welcome anyway.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:09:49",
+          "moment_id": "m-0512",
+          "quote": "The bloodsucker Kiara isn\u2019t welcome anyway.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_026_0-09-49.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0513",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "\u2013I have to go now. \u2013See you at the village hall party, right?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:11:18",
+          "moment_id": "m-0513",
+          "quote": "\u2013I have to go now. \u2013See you at the village hall party, right?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0514",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "I want to warn you there might be a dance circle later.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:11:36",
+          "moment_id": "m-0514",
+          "quote": "I want to warn you there might be a dance circle later.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_031_0-11-36.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0515",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "\u2013A dance circle. What\u2019s that? \u2013You don\u2019t know what a dance circle is?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:11:40",
+          "moment_id": "m-0515",
+          "quote": "\u2013A dance circle. What\u2019s that? \u2013You don\u2019t know what a dance circle is?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_032_0-11-40.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0516",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "If you touch an A-brunn you get anal sex or bad luck?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:12:15",
+          "moment_id": "m-0516",
+          "quote": "If you touch an A-brunn you get anal sex or bad luck?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_033_0-12-15.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0517",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "I\u2019m so nervous about the party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:12:30",
+          "moment_id": "m-0517",
+          "quote": "I\u2019m so nervous about the party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0518",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "I\u2019m trying, but sometimes I wish I wasn\u2019t a vampire.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:12:42",
+          "moment_id": "m-0518",
+          "quote": "I\u2019m trying, but sometimes I wish I wasn\u2019t a vampire.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0519",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "It\u2019s so cool to be a vampire, and a little scary.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:12:46",
+          "moment_id": "m-0519",
+          "quote": "It\u2019s so cool to be a vampire, and a little scary.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0520",
+      "type": "rule",
+      "subject": "s01e03",
+      "predicate": "establishes",
+      "object": "She might think she\u2019s not invited because she\u2019s a cold-blood.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:13:59",
+          "moment_id": "m-0520",
+          "quote": "She might think she\u2019s not invited because she\u2019s a cold-blood.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_035_0-13-59.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0521",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Yeah, vampires are still pretty cool.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:15:38",
+          "moment_id": "m-0521",
+          "quote": "Yeah, vampires are still pretty cool.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0522",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "I know. And she\u2019s good at dancing too.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:15:40",
+          "moment_id": "m-0522",
+          "quote": "I know. And she\u2019s good at dancing too.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_036_0-15-40.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0523",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Maybe she can take your spot in Batgirls.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:15:58",
+          "moment_id": "m-0523",
+          "quote": "Maybe she can take your spot in Batgirls.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_038_0-15-58.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0524",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "but it\u2019s for Batgirls\u2019 best. Do you want to be in?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:17:10",
+          "moment_id": "m-0524",
+          "quote": "but it\u2019s for Batgirls\u2019 best. Do you want to be in?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_039_0-17-10.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0525",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "And dance? I didn\u2019t think I passed the audition.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:17:14",
+          "moment_id": "m-0525",
+          "quote": "And dance? I didn\u2019t think I passed the audition.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_040_0-17-14.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0526",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "There\u2019s a guy at this school who\u2019s obsessed with vampires",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:18:02",
+          "moment_id": "m-0526",
+          "quote": "There\u2019s a guy at this school who\u2019s obsessed with vampires",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0527",
+      "type": "rule",
+      "subject": "s01e03",
+      "predicate": "establishes",
+      "object": "Don\u2019t worry about a bloodthirsty big brother.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:20:06",
+          "moment_id": "m-0527",
+          "quote": "Don\u2019t worry about a bloodthirsty big brother.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e03_moment_045_0-20-06.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0528",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Jump in then. Vampires can\u2019t handle water?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:21:00",
+          "moment_id": "m-0528",
+          "quote": "Jump in then. Vampires can\u2019t handle water?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0529",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "But tell me why you like vampires so much.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:21:09",
+          "moment_id": "m-0529",
+          "quote": "But tell me why you like vampires so much.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0530",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "Tell me why vampires are so rich instead.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:21:32",
+          "moment_id": "m-0530",
+          "quote": "Tell me why vampires are so rich instead.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0531",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "\u2013Don\u2019t rub against me! \u2013It smells like balls in here.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:21:56",
+          "moment_id": "m-0531",
+          "quote": "\u2013Don\u2019t rub against me! \u2013It smells like balls in here.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0532",
+      "type": "event",
+      "subject": "s01e03",
+      "predicate": "depicts",
+      "object": "It\u2019s kind of a party killer actually.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e03",
+          "timestamp": "0:22:06",
+          "moment_id": "m-0532",
+          "quote": "It\u2019s kind of a party killer actually.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0533",
+      "type": "rule",
+      "subject": "s01e04",
+      "predicate": "establishes",
+      "object": "What happened? Did she get triggered?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:00:41",
+          "moment_id": "m-0533",
+          "quote": "What happened? Did she get triggered?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_001_0-00-41.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0534",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "I\u2019m just scared that I won\u2019t be allowed to dance anymore.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:01:00",
+          "moment_id": "m-0534",
+          "quote": "I\u2019m just scared that I won\u2019t be allowed to dance anymore.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_002_0-01-00.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0535",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Forget about dancing. You can hang with us instead.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:01:03",
+          "moment_id": "m-0535",
+          "quote": "Forget about dancing. You can hang with us instead.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_003_0-01-03.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0536",
+      "type": "rule",
+      "subject": "s01e04",
+      "predicate": "establishes",
+      "object": "Blood and honor.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:01:08",
+          "moment_id": "m-0536",
+          "quote": "Blood and honor.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_004_0-01-08.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0537",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "I know! I can have a party. Then maybe I\u2019ll become more popular.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:05:08",
+          "moment_id": "m-0537",
+          "quote": "I know! I can have a party. Then maybe I\u2019ll become more popular.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0538",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Party? You? Here?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:05:10",
+          "moment_id": "m-0538",
+          "quote": "Party? You? Here?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0539",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "I\u2019m a woman who is a vampire. Red heart.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:05:24",
+          "moment_id": "m-0539",
+          "quote": "I\u2019m a woman who is a vampire. Red heart.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0540",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "He left right when you were going to kiss.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:06:02",
+          "moment_id": "m-0540",
+          "quote": "He left right when you were going to kiss.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_011_0-06-02.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0541",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Is Kiara allowed in Batgirls now?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:06:53",
+          "moment_id": "m-0541",
+          "quote": "Is Kiara allowed in Batgirls now?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_012_0-06-53.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0542",
+      "type": "rule",
+      "subject": "s01e04",
+      "predicate": "establishes",
+      "object": "You got triggered and you almost killed Alfred.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:07:06",
+          "moment_id": "m-0542",
+          "quote": "You got triggered and you almost killed Alfred.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_014_0-07-06.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0543",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "I know one thing you can do to get into Batgirls.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:07:17",
+          "moment_id": "m-0543",
+          "quote": "I know one thing you can do to get into Batgirls.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_015_0-07-17.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0544",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "I would have a party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:07:31",
+          "moment_id": "m-0544",
+          "quote": "I would have a party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0545",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "\u2013What the fuck? Miss the training! \u2013It was worth it. Smile.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:07:49",
+          "moment_id": "m-0545",
+          "quote": "\u2013What the fuck? Miss the training! \u2013It was worth it. Smile.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_017_0-07-49.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0546",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "You\u2019re such a fucking party pooper. There\u2019s no real coconut in it.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:08:23",
+          "moment_id": "m-0546",
+          "quote": "You\u2019re such a fucking party pooper. There\u2019s no real coconut in it.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_021_0-08-23.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0547",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "\u2013How do we get that then? \u2013Come to the party and you\u2019ll see.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:08:42",
+          "moment_id": "m-0547",
+          "quote": "\u2013How do we get that then? \u2013Come to the party and you\u2019ll see.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0548",
+      "type": "rule",
+      "subject": "s01e04",
+      "predicate": "establishes",
+      "object": "Radio: Oh yes, today\u2019s hits are presented by the Blood System.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:08:53",
+          "moment_id": "m-0548",
+          "quote": "Radio: Oh yes, today\u2019s hits are presented by the Blood System.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_022_0-08-53.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0549",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "It\u2019s an iconic dance move. Scorpion to bridge.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:09:05",
+          "moment_id": "m-0549",
+          "quote": "It\u2019s an iconic dance move. Scorpion to bridge.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_023_0-09-05.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0550",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Rumor has it she was a vampire and the founder of Batgirls.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:09:15",
+          "moment_id": "m-0550",
+          "quote": "Rumor has it she was a vampire and the founder of Batgirls.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_024_0-09-15.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0551",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Affe, I think Elise is mad again.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:10:08",
+          "moment_id": "m-0551",
+          "quote": "Affe, I think Elise is mad again.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0552",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Shit! It\u2019s enough that I touch the phone and she\u2019s already going.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:10:46",
+          "moment_id": "m-0552",
+          "quote": "Shit! It\u2019s enough that I touch the phone and she\u2019s already going.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_027_0-10-46.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0553",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Sometimes women want men who take charge.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:11:01",
+          "moment_id": "m-0553",
+          "quote": "Sometimes women want men who take charge.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0554",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "\u201cContinuing at Kiara\u2019s party.\u201d What happens?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:12:11",
+          "moment_id": "m-0554",
+          "quote": "\u201cContinuing at Kiara\u2019s party.\u201d What happens?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0555",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "\u2013Crazy that Kiara is having a party. \u2013Super crazy.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:12:17",
+          "moment_id": "m-0555",
+          "quote": "\u2013Crazy that Kiara is having a party. \u2013Super crazy.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0556",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "\u2013Kiara? Kiara is having a party? \u2013Yes.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:12:23",
+          "moment_id": "m-0556",
+          "quote": "\u2013Kiara? Kiara is having a party? \u2013Yes.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0557",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "It\u2019s anti-trigger medicine for vampires.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:12:41",
+          "moment_id": "m-0557",
+          "quote": "It\u2019s anti-trigger medicine for vampires.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0558",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Okay, and where is that fucking party then?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:12:59",
+          "moment_id": "m-0558",
+          "quote": "Okay, and where is that fucking party then?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_032_0-12-59.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0559",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "\u2013What? Can you see in the dark? \u2013Yeah, I\u2019m a vampire.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:13:38",
+          "moment_id": "m-0559",
+          "quote": "\u2013What? Can you see in the dark? \u2013Yeah, I\u2019m a vampire.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0560",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Now tell me why you like vampires.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:13:57",
+          "moment_id": "m-0560",
+          "quote": "Now tell me why you like vampires.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0561",
+      "type": "rule",
+      "subject": "s01e04",
+      "predicate": "establishes",
+      "object": "I barely remember. There was just blood everywhere.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:14:26",
+          "moment_id": "m-0561",
+          "quote": "I barely remember. There was just blood everywhere.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_036_0-14-26.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0562",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Then suddenly a vampire came into the car.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:14:30",
+          "moment_id": "m-0562",
+          "quote": "Then suddenly a vampire came into the car.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0563",
+      "type": "rule",
+      "subject": "s01e04",
+      "predicate": "establishes",
+      "object": "\u2013Did he get triggered? \u2013No.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:14:37",
+          "moment_id": "m-0563",
+          "quote": "\u2013Did he get triggered? \u2013No.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_037_0-14-37.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0564",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "from the time before humans and vampires made peace.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:14:59",
+          "moment_id": "m-0564",
+          "quote": "from the time before humans and vampires made peace.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0565",
+      "type": "rule",
+      "subject": "s01e04",
+      "predicate": "establishes",
+      "object": "\u2013What? Before the blood pact and everything? \u2013Yeah, long before that.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:15:02",
+          "moment_id": "m-0565",
+          "quote": "\u2013What? Before the blood pact and everything? \u2013Yeah, long before that.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_040_0-15-02.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0566",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Back when vampires ate humans",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:15:05",
+          "moment_id": "m-0566",
+          "quote": "Back when vampires ate humans",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0567",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "and humans staked vampires to death.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:15:08",
+          "moment_id": "m-0567",
+          "quote": "and humans staked vampires to death.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0568",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "But he\u2019s pissed because I\u2019m going to inherit our family\u2019s assets.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:15:20",
+          "moment_id": "m-0568",
+          "quote": "But he\u2019s pissed because I\u2019m going to inherit our family\u2019s assets.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0569",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Because we vampires are matriarchal.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:15:24",
+          "moment_id": "m-0569",
+          "quote": "Because we vampires are matriarchal.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0570",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Is it true that vampires cry if they love someone?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:16:15",
+          "moment_id": "m-0570",
+          "quote": "Is it true that vampires cry if they love someone?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0571",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "The party! Hello! We have to hurry.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:16:28",
+          "moment_id": "m-0571",
+          "quote": "The party! Hello! We have to hurry.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_042_0-16-28.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0572",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "That I\u2019m having a party, and uninvited guests show up.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:17:48",
+          "moment_id": "m-0572",
+          "quote": "That I\u2019m having a party, and uninvited guests show up.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0573",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "Wait, I\u2019ll help you. There! Kiss each other now.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:18:15",
+          "moment_id": "m-0573",
+          "quote": "Wait, I\u2019ll help you. There! Kiss each other now.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_046_0-18-15.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0574",
+      "type": "event",
+      "subject": "s01e04",
+      "predicate": "depicts",
+      "object": "\u2013Somewhere else. \u2013Come on, let\u2019s go dance.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e04",
+          "timestamp": "0:20:01",
+          "moment_id": "m-0574",
+          "quote": "\u2013Somewhere else. \u2013Come on, let\u2019s go dance.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e04_moment_049_0-20-01.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0575",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "Nothing. Nothing happened. Thanks for a great party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:00:59",
+          "moment_id": "m-0575",
+          "quote": "Nothing. Nothing happened. Thanks for a great party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0576",
+      "type": "rule",
+      "subject": "s01e05",
+      "predicate": "establishes",
+      "object": "You\u2019re not getting triggered, right?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:02:27",
+          "moment_id": "m-0576",
+          "quote": "You\u2019re not getting triggered, right?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e05_moment_002_0-02-27.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0577",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "or are you here to dance with my sister?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:03:00",
+          "moment_id": "m-0577",
+          "quote": "or are you here to dance with my sister?",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e05_moment_003_0-03-00.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0578",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "But trust me. She\u2019s bringing the vampire.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:03:48",
+          "moment_id": "m-0578",
+          "quote": "But trust me. She\u2019s bringing the vampire.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0579",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "And hey, suck up to them now so we can go to their party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:04:20",
+          "moment_id": "m-0579",
+          "quote": "And hey, suck up to them now so we can go to their party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0580",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "You can forget about coming to the party tonight.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:05:02",
+          "moment_id": "m-0580",
+          "quote": "You can forget about coming to the party tonight.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0581",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "What happened between Elise and Eric at the party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:06:02",
+          "moment_id": "m-0581",
+          "quote": "What happened between Elise and Eric at the party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0582",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "Yeah, but now both are pissed. Drama!",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:06:08",
+          "moment_id": "m-0582",
+          "quote": "Yeah, but now both are pissed. Drama!",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0583",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "But what happened at the party?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:06:17",
+          "moment_id": "m-0583",
+          "quote": "But what happened at the party?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0584",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "\u2013I don\u2019t get why Elise is mad. \u2013But it\u2019s Eric.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:06:31",
+          "moment_id": "m-0584",
+          "quote": "\u2013I don\u2019t get why Elise is mad. \u2013But it\u2019s Eric.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0585",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "\u2013Did you see Eric and Elise at the party? \u2013What?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:06:36",
+          "moment_id": "m-0585",
+          "quote": "\u2013Did you see Eric and Elise at the party? \u2013What?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0586",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "You saw how they were looking at each other at the party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:07:11",
+          "moment_id": "m-0586",
+          "quote": "You saw how they were looking at each other at the party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0587",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "\u2013It\u2019s sad when they fight. \u2013Really.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:07:22",
+          "moment_id": "m-0587",
+          "quote": "\u2013It\u2019s sad when they fight. \u2013Really.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0588",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "\u2013It would be nice to see you. \u2013Nice with a redneck party, huh?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:07:30",
+          "moment_id": "m-0588",
+          "quote": "\u2013It would be nice to see you. \u2013Nice with a redneck party, huh?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0589",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "\u2013And Kevin. \u2013Don\u2019t miss the sickest party of the year.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:08:02",
+          "moment_id": "m-0589",
+          "quote": "\u2013And Kevin. \u2013Don\u2019t miss the sickest party of the year.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0590",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "How did it go afterwards? How mad was he?",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:08:19",
+          "moment_id": "m-0590",
+          "quote": "How did it go afterwards? How mad was he?",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0591",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "He calmed down, but I think he realised I\u2019d had a party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:08:23",
+          "moment_id": "m-0591",
+          "quote": "He calmed down, but I think he realised I\u2019d had a party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0592",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "Wow, you\u2019re really pissed.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:08:34",
+          "moment_id": "m-0592",
+          "quote": "Wow, you\u2019re really pissed.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0593",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "Well, I\u2019ve been invited to a party I really want to go to.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:08:46",
+          "moment_id": "m-0593",
+          "quote": "Well, I\u2019ve been invited to a party I really want to go to.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0594",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "I can come to the party. It\u2019ll be fun.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:08:55",
+          "moment_id": "m-0594",
+          "quote": "I can come to the party. It\u2019ll be fun.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0595",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "You\u2019re not invited. And I\u2019m going to Chloe\u2019s pre-party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:09:03",
+          "moment_id": "m-0595",
+          "quote": "You\u2019re not invited. And I\u2019m going to Chloe\u2019s pre-party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0596",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "\u2013I have Batgirls training. \u2013Okay.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:09:11",
+          "moment_id": "m-0596",
+          "quote": "\u2013I have Batgirls training. \u2013Okay.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e05_moment_014_0-09-11.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0597",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "So maybe she can\u2019t make it to training and stuff.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:10:05",
+          "moment_id": "m-0597",
+          "quote": "So maybe she can\u2019t make it to training and stuff.",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e05_moment_016_0-10-05.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0598",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "that all your friends suddenly are Batgirls",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:10:09",
+          "moment_id": "m-0598",
+          "quote": "that all your friends suddenly are Batgirls",
+          "screenshot_path": "/Users/wolfy/Developer/2026.Y/bats/data/video_analysis/screenshots/s01e05_moment_017_0-10-09.jpg"
+        }
+      ],
+      "derived_from": []
+    },
+    {
+      "claim_id": "claim-0599",
+      "type": "event",
+      "subject": "s01e05",
+      "predicate": "depicts",
+      "object": "See you at my place later then, at my pre-party.",
+      "canon_layer": "bst",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "source_type": "episode",
+          "source_id": "s01e05",
+          "timestamp": "0:10:25",
+          "moment_id": "m-0599",
+          "quote": "See you at my place later then, at my pre-party.",
+          "screenshot_path": null
+        }
+      ],
+      "derived_from": []
+    }
+  ]
+}
