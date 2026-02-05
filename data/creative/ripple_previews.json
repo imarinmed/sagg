@@ -1,0 +1,3046 @@
+{
+  "version": "1.0.0",
+  "total_previews": 81,
+  "previews": [
+    {
+      "ripple_id": "ripple-mut-vampire_physiology-001",
+      "source_card": "mut-vampire_physiology-001",
+      "source_title": "The Darker Vampire Physiology",
+      "change_summary": "What if vampire physiology became more explicitly predatory and dangerous?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "vampire_physiology_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving vampire_physiology become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: loss_of_control, addiction, irreversible_changes",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_physiology-002",
+      "source_card": "mut-vampire_physiology-002",
+      "source_title": "The Complicated Vampire Physiology",
+      "change_summary": "What if vampire physiology had darker implications that characters must navigate?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: moral_ambiguity, sacrifice, ethical_dilemmas",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_physiology-003",
+      "source_card": "mut-vampire_physiology-003",
+      "source_title": "The Explicit Vampire Physiology",
+      "change_summary": "What if the sensual/erotic aspects of vampire physiology were made explicit?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexual_awakening, power_dynamics, forbidden_desire",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_physiology-004",
+      "source_card": "mut-vampire_physiology-004",
+      "source_title": "The Transformed Vampire Physiology",
+      "change_summary": "What if vampire physiology became its opposite - a source of corruption rather than benefit?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "vampire_physiology_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving vampire_physiology become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, loss_of_identity, betrayal",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_physiology-005",
+      "source_card": "mut-vampire_physiology-005",
+      "source_title": "Vampire Physiology Reimagined",
+      "change_summary": "What if vampire physiology combined with taboo elements to create something new?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: ritual, submission, unbreakable_bonds",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-family_hierarchy-001",
+      "source_card": "mut-family_hierarchy-001",
+      "source_title": "The Darker Vampire Family Hierarchy",
+      "change_summary": "What if vampire family hierarchy became more explicitly predatory and dangerous?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "family_hierarchy_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving family_hierarchy become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: loss_of_control, addiction, irreversible_changes",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-family_hierarchy-002",
+      "source_card": "mut-family_hierarchy-002",
+      "source_title": "The Complicated Vampire Family Hierarchy",
+      "change_summary": "What if vampire family hierarchy had darker implications that characters must navigate?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: moral_ambiguity, sacrifice, ethical_dilemmas",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-family_hierarchy-003",
+      "source_card": "mut-family_hierarchy-003",
+      "source_title": "The Explicit Vampire Family Hierarchy",
+      "change_summary": "What if the sensual/erotic aspects of vampire family hierarchy were made explicit?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexual_awakening, power_dynamics, forbidden_desire",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-family_hierarchy-004",
+      "source_card": "mut-family_hierarchy-004",
+      "source_title": "The Transformed Vampire Family Hierarchy",
+      "change_summary": "What if vampire family hierarchy became its opposite - a source of corruption rather than benefit?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "family_hierarchy_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving family_hierarchy become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, loss_of_identity, betrayal",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-family_hierarchy-005",
+      "source_card": "mut-family_hierarchy-005",
+      "source_title": "Vampire Family Hierarchy Reimagined",
+      "change_summary": "What if vampire family hierarchy combined with taboo elements to create something new?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: ritual, submission, unbreakable_bonds",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-blood_bond-001",
+      "source_card": "mut-blood_bond-001",
+      "source_title": "The Darker The Blood Bond",
+      "change_summary": "What if the blood bond became more explicitly predatory and dangerous?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "blood_bond_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving blood_bond become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: loss_of_control, addiction, irreversible_changes",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-blood_bond-002",
+      "source_card": "mut-blood_bond-002",
+      "source_title": "The Complicated The Blood Bond",
+      "change_summary": "What if the blood bond had darker implications that characters must navigate?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: moral_ambiguity, sacrifice, ethical_dilemmas",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-blood_bond-003",
+      "source_card": "mut-blood_bond-003",
+      "source_title": "The Explicit The Blood Bond",
+      "change_summary": "What if the sensual/erotic aspects of the blood bond were made explicit?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexual_awakening, power_dynamics, forbidden_desire",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-blood_bond-004",
+      "source_card": "mut-blood_bond-004",
+      "source_title": "The Transformed The Blood Bond",
+      "change_summary": "What if the blood bond became its opposite - a source of corruption rather than benefit?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "blood_bond_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving blood_bond become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, loss_of_identity, betrayal",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-blood_bond-005",
+      "source_card": "mut-blood_bond-005",
+      "source_title": "The Blood Bond Reimagined",
+      "change_summary": "What if the blood bond combined with taboo elements to create something new?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: ritual, submission, unbreakable_bonds",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-feeding-001",
+      "source_card": "mut-feeding-001",
+      "source_title": "The Darker Feeding",
+      "change_summary": "What if feeding became more explicitly predatory and dangerous?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "feeding_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving feeding become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: loss_of_control, addiction, irreversible_changes",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-feeding-002",
+      "source_card": "mut-feeding-002",
+      "source_title": "The Complicated Feeding",
+      "change_summary": "What if feeding had darker implications that characters must navigate?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: moral_ambiguity, sacrifice, ethical_dilemmas",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-feeding-003",
+      "source_card": "mut-feeding-003",
+      "source_title": "The Explicit Feeding",
+      "change_summary": "What if the sensual/erotic aspects of feeding were made explicit?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexual_awakening, power_dynamics, forbidden_desire",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-feeding-004",
+      "source_card": "mut-feeding-004",
+      "source_title": "The Transformed Feeding",
+      "change_summary": "What if feeding became its opposite - a source of corruption rather than benefit?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "feeding_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving feeding become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, loss_of_identity, betrayal",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-feeding-005",
+      "source_card": "mut-feeding-005",
+      "source_title": "Feeding Reimagined",
+      "change_summary": "What if feeding combined with taboo elements to create something new?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: ritual, submission, unbreakable_bonds",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_human_relations-001",
+      "source_card": "mut-vampire_human_relations-001",
+      "source_title": "The Darker Vampire-Human Relations",
+      "change_summary": "What if vampire-human relations became more explicitly predatory and dangerous?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "vampire_human_relations_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving vampire_human_relations become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: loss_of_control, addiction, irreversible_changes",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_human_relations-002",
+      "source_card": "mut-vampire_human_relations-002",
+      "source_title": "The Complicated Vampire-Human Relations",
+      "change_summary": "What if vampire-human relations had darker implications that characters must navigate?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: moral_ambiguity, sacrifice, ethical_dilemmas",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_human_relations-003",
+      "source_card": "mut-vampire_human_relations-003",
+      "source_title": "The Explicit Vampire-Human Relations",
+      "change_summary": "What if the sensual/erotic aspects of vampire-human relations were made explicit?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexual_awakening, power_dynamics, forbidden_desire",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_human_relations-004",
+      "source_card": "mut-vampire_human_relations-004",
+      "source_title": "The Transformed Vampire-Human Relations",
+      "change_summary": "What if vampire-human relations became its opposite - a source of corruption rather than benefit?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "vampire_human_relations_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving vampire_human_relations become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, loss_of_identity, betrayal",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-vampire_human_relations-005",
+      "source_card": "mut-vampire_human_relations-005",
+      "source_title": "Vampire-Human Relations Reimagined",
+      "change_summary": "What if vampire-human relations combined with taboo elements to create something new?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: ritual, submission, unbreakable_bonds",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-transformation-001",
+      "source_card": "mut-transformation-001",
+      "source_title": "The Darker Vampire Transformation",
+      "change_summary": "What if vampire transformation became more explicitly predatory and dangerous?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "transformation_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving transformation become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: loss_of_control, addiction, irreversible_changes",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-transformation-002",
+      "source_card": "mut-transformation-002",
+      "source_title": "The Complicated Vampire Transformation",
+      "change_summary": "What if vampire transformation had darker implications that characters must navigate?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: moral_ambiguity, sacrifice, ethical_dilemmas",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-transformation-003",
+      "source_card": "mut-transformation-003",
+      "source_title": "The Explicit Vampire Transformation",
+      "change_summary": "What if the sensual/erotic aspects of vampire transformation were made explicit?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexual_awakening, power_dynamics, forbidden_desire",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-transformation-004",
+      "source_card": "mut-transformation-004",
+      "source_title": "The Transformed Vampire Transformation",
+      "change_summary": "What if vampire transformation became its opposite - a source of corruption rather than benefit?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "transformation_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving transformation become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, loss_of_identity, betrayal",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-transformation-005",
+      "source_card": "mut-transformation-005",
+      "source_title": "Vampire Transformation Reimagined",
+      "change_summary": "What if vampire transformation combined with taboo elements to create something new?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: ritual, submission, unbreakable_bonds",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-daywalking-001",
+      "source_card": "mut-daywalking-001",
+      "source_title": "The Darker Daywalking",
+      "change_summary": "What if daywalking became more explicitly predatory and dangerous?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "daywalking_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving daywalking become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: loss_of_control, addiction, irreversible_changes",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-daywalking-002",
+      "source_card": "mut-daywalking-002",
+      "source_title": "The Complicated Daywalking",
+      "change_summary": "What if daywalking had darker implications that characters must navigate?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: moral_ambiguity, sacrifice, ethical_dilemmas",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-daywalking-003",
+      "source_card": "mut-daywalking-003",
+      "source_title": "The Explicit Daywalking",
+      "change_summary": "What if the sensual/erotic aspects of daywalking were made explicit?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexual_awakening, power_dynamics, forbidden_desire",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-daywalking-004",
+      "source_card": "mut-daywalking-004",
+      "source_title": "The Transformed Daywalking",
+      "change_summary": "What if daywalking became its opposite - a source of corruption rather than benefit?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "daywalking_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving daywalking become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, loss_of_identity, betrayal",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-daywalking-005",
+      "source_card": "mut-daywalking-005",
+      "source_title": "Daywalking Reimagined",
+      "change_summary": "What if daywalking combined with taboo elements to create something new?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: ritual, submission, unbreakable_bonds",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-kiara_natt_och_dag-001",
+      "source_card": "mut-kiara_natt_och_dag-001",
+      "source_title": "Kiara Natt och Dag's Dark Transformation",
+      "change_summary": "What if Kiara Natt och Dag embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-004",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shit, seriously! I\u2019m gonna see if I can ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "kiara_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving kiara_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexually_awakening, bloodlust_struggles, daddy_issues",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-kiara_natt_och_dag-002",
+      "source_card": "mut-kiara_natt_och_dag-002",
+      "source_title": "Kiara Natt och Dag and henry_natt_och_dag",
+      "change_summary": "What if the father between Kiara Natt och Dag and henry_natt_och_dag became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-004",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shit, seriously! I\u2019m gonna see if I can ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "kiara_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving kiara_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-kiara_natt_och_dag-003",
+      "source_card": "mut-kiara_natt_och_dag-003",
+      "source_title": "Kiara Natt och Dag and the Blood",
+      "change_summary": "What if Kiara Natt och Dag's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-004",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shit, seriously! I\u2019m gonna see if I can ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-kiara_natt_och_dag-004",
+      "source_card": "mut-kiara_natt_och_dag-004",
+      "source_title": "Kiara Natt och Dag's Hidden Desires",
+      "change_summary": "What if Kiara Natt och Dag's sexually_awakening bloodlust_struggles were explored explicitly?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-004",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shit, seriously! I\u2019m gonna see if I can ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexually_awakening, bloodlust_struggles, daddy_issues",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-kiara_natt_och_dag-005",
+      "source_card": "mut-kiara_natt_och_dag-005",
+      "source_title": "Kiara Natt och Dag's Twisted Path",
+      "change_summary": "What if Kiara Natt och Dag's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-004",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shit, seriously! I\u2019m gonna see if I can ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-henry_natt_och_dag-001",
+      "source_card": "mut-henry_natt_och_dag-001",
+      "source_title": "Henry Natt och Dag's Dark Transformation",
+      "change_summary": "What if Henry Natt och Dag embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "henry_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving henry_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: patriarchal_control, repressed_desires, family_possessiveness",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-henry_natt_och_dag-002",
+      "source_card": "mut-henry_natt_och_dag-002",
+      "source_title": "Henry Natt och Dag and kiara_natt_och_dag",
+      "change_summary": "What if the daughter between Henry Natt och Dag and kiara_natt_och_dag became more intense?",
+      "ripples": [
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "henry_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving henry_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-henry_natt_och_dag-003",
+      "source_card": "mut-henry_natt_och_dag-003",
+      "source_title": "Henry Natt och Dag and the Blood",
+      "change_summary": "What if Henry Natt och Dag's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-henry_natt_och_dag-005",
+      "source_card": "mut-henry_natt_och_dag-005",
+      "source_title": "Henry Natt och Dag's Twisted Path",
+      "change_summary": "What if Henry Natt och Dag's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-elise-001",
+      "source_card": "mut-elise-001",
+      "source_title": "Elise's Dark Transformation",
+      "change_summary": "What if Elise embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-008",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013900\u2026 \u2013Blood and honor.......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "elise_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving elise become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexually_aggressive, alpha_female, revenge_obsessed",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-elise-002",
+      "source_card": "mut-elise-002",
+      "source_title": "Elise and alfred",
+      "change_summary": "What if the ex_boyfriend between Elise and alfred became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-008",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013900\u2026 \u2013Blood and honor.......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "elise_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving elise become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-elise-003",
+      "source_card": "mut-elise-003",
+      "source_title": "Elise and the Blood",
+      "change_summary": "What if Elise's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-008",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013900\u2026 \u2013Blood and honor.......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-elise-004",
+      "source_card": "mut-elise-004",
+      "source_title": "Elise's Hidden Desires",
+      "change_summary": "What if Elise's sexually_aggressive were explored explicitly?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-008",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013900\u2026 \u2013Blood and honor.......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: sexually_aggressive",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-elise-005",
+      "source_card": "mut-elise-005",
+      "source_title": "Elise's Twisted Path",
+      "change_summary": "What if Elise's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-008",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013900\u2026 \u2013Blood and honor.......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-chloe-001",
+      "source_card": "mut-chloe-001",
+      "source_title": "Chloe's Dark Transformation",
+      "change_summary": "What if Chloe embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e03-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "chloe_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving chloe become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: secretly_attracted, observer_kink, supportive_submissive",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-chloe-002",
+      "source_card": "mut-chloe-002",
+      "source_title": "Chloe and kiara_natt_och_dag",
+      "change_summary": "What if the best_friend between Chloe and kiara_natt_och_dag became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e03-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "chloe_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving chloe become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-chloe-003",
+      "source_card": "mut-chloe-003",
+      "source_title": "Chloe and the Blood",
+      "change_summary": "What if Chloe's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e03-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-chloe-004",
+      "source_card": "mut-chloe-004",
+      "source_title": "Chloe's Hidden Desires",
+      "change_summary": "What if Chloe's supportive_submissive were explored explicitly?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e03-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: supportive_submissive",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-chloe-005",
+      "source_card": "mut-chloe-005",
+      "source_title": "Chloe's Twisted Path",
+      "change_summary": "What if Chloe's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Here it\u2019s not good grades that matter......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e03-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-alfred-001",
+      "source_card": "mut-alfred-001",
+      "source_title": "Alfred's Dark Transformation",
+      "change_summary": "What if Alfred embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "alfred_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving alfred become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: protective_instincts, blood_bond_addiction, jealousy_possessiveness",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-alfred-002",
+      "source_card": "mut-alfred-002",
+      "source_title": "Alfred and kiara_natt_och_dag",
+      "change_summary": "What if the love_interest between Alfred and kiara_natt_och_dag became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "alfred_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving alfred become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-alfred-003",
+      "source_card": "mut-alfred-003",
+      "source_title": "Alfred and the Blood",
+      "change_summary": "What if Alfred's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-alfred-004",
+      "source_card": "mut-alfred-004",
+      "source_title": "Alfred's Hidden Desires",
+      "change_summary": "What if Alfred's blood_bond_addiction awakening_dominance were explored explicitly?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_bond_addiction, awakening_dominance",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-alfred-005",
+      "source_card": "mut-alfred-005",
+      "source_title": "Alfred's Twisted Path",
+      "change_summary": "What if Alfred's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Welcome back to the vampire channel Bloo...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: I\u2019m going to teach you everything I can,...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-desiree_natt_och_dag-001",
+      "source_card": "mut-desiree_natt_och_dag-001",
+      "source_title": "Desir\u00e9e Natt och Dag's Dark Transformation",
+      "change_summary": "What if Desir\u00e9e Natt och Dag embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "desiree_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving desiree_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: image_obsession, repressed_sexuality, political_marriage",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-desiree_natt_och_dag-002",
+      "source_card": "mut-desiree_natt_och_dag-002",
+      "source_title": "Desir\u00e9e Natt och Dag and kiara_natt_och_dag",
+      "change_summary": "What if the daughter between Desir\u00e9e Natt och Dag and kiara_natt_och_dag became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "desiree_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving desiree_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-desiree_natt_och_dag-003",
+      "source_card": "mut-desiree_natt_och_dag-003",
+      "source_title": "Desir\u00e9e Natt och Dag and the Blood",
+      "change_summary": "What if Desir\u00e9e Natt och Dag's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-desiree_natt_och_dag-004",
+      "source_card": "mut-desiree_natt_och_dag-004",
+      "source_title": "Desir\u00e9e Natt och Dag's Hidden Desires",
+      "change_summary": "What if Desir\u00e9e Natt och Dag's repressed_sexuality were explored explicitly?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: repressed_sexuality",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-desiree_natt_och_dag-005",
+      "source_card": "mut-desiree_natt_och_dag-005",
+      "source_title": "Desir\u00e9e Natt och Dag's Twisted Path",
+      "change_summary": "What if Desir\u00e9e Natt och Dag's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-jacques_natt_och_dag-001",
+      "source_card": "mut-jacques_natt_och_dag-001",
+      "source_title": "Jacques Natt och Dag's Dark Transformation",
+      "change_summary": "What if Jacques Natt och Dag embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-010",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Where\u2019s Kiara? We can\u2019t have another acc...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: 2478. There we go!......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "jacques_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving jacques_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: seductive_corruptor, uncle_taboo, rival_to_brother",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-jacques_natt_och_dag-002",
+      "source_card": "mut-jacques_natt_och_dag-002",
+      "source_title": "Jacques Natt och Dag and kiara_natt_och_dag",
+      "change_summary": "What if the niece between Jacques Natt och Dag and kiara_natt_och_dag became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-010",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Where\u2019s Kiara? We can\u2019t have another acc...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: 2478. There we go!......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "jacques_natt_och_dag_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving jacques_natt_och_dag become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-jacques_natt_och_dag-003",
+      "source_card": "mut-jacques_natt_och_dag-003",
+      "source_title": "Jacques Natt och Dag and the Blood",
+      "change_summary": "What if Jacques Natt och Dag's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-010",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Where\u2019s Kiara? We can\u2019t have another acc...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: 2478. There we go!......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-jacques_natt_och_dag-005",
+      "source_card": "mut-jacques_natt_och_dag-005",
+      "source_title": "Jacques Natt och Dag's Twisted Path",
+      "change_summary": "What if Jacques Natt och Dag's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-010",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Where\u2019s Kiara? We can\u2019t have another acc...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-007",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: 2478. There we go!......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-001",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?.....' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-eric-001",
+      "source_card": "mut-eric-001",
+      "source_title": "Eric's Dark Transformation",
+      "change_summary": "What if Eric embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "eric_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving eric become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: tech_voyeur, hidden_obsession, information_control",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-eric-002",
+      "source_card": "mut-eric-002",
+      "source_title": "Eric and alfred",
+      "change_summary": "What if the best_friend between Eric and alfred became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "eric_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving eric become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-eric-003",
+      "source_card": "mut-eric-003",
+      "source_title": "Eric and the Blood",
+      "change_summary": "What if Eric's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-eric-005",
+      "source_card": "mut-eric-005",
+      "source_title": "Eric's Twisted Path",
+      "change_summary": "What if Eric's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: They get triggered by blood and sweat......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-005",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Now it\u2019s important to stroke with the fu...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e01-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-didde-001",
+      "source_card": "mut-didde-001",
+      "source_title": "Didde's Dark Transformation",
+      "change_summary": "What if Didde embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Yo! Hey, babes! \u2013Hi, Didde!......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Unfortunately everyone gets to know you ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e04-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: You\u2019re far from home now. You\u2019re lost......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "didde_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving didde become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: jock_brute, physical_intimidation, simple_desires",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-didde-002",
+      "source_card": "mut-didde-002",
+      "source_title": "Didde and elise",
+      "change_summary": "What if the ally between Didde and elise became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Yo! Hey, babes! \u2013Hi, Didde!......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Unfortunately everyone gets to know you ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e04-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: You\u2019re far from home now. You\u2019re lost......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "didde_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving didde become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-didde-003",
+      "source_card": "mut-didde-003",
+      "source_title": "Didde and the Blood",
+      "change_summary": "What if Didde's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Yo! Hey, babes! \u2013Hi, Didde!......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Unfortunately everyone gets to know you ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e04-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: You\u2019re far from home now. You\u2019re lost......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-didde-005",
+      "source_card": "mut-didde-005",
+      "source_title": "Didde's Twisted Path",
+      "change_summary": "What if Didde's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: \u2013Yo! Hey, babes! \u2013Hi, Didde!......' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e02-003",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Unfortunately everyone gets to know you ...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e04-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: You\u2019re far from home now. You\u2019re lost......' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-felicia-001",
+      "source_card": "mut-felicia-001",
+      "source_title": "Felicia's Dark Transformation",
+      "change_summary": "What if Felicia embraced their darker impulses fully?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shouldn\u2019t you be stretching your legs on...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: For those of you thinking about buying t...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "felicia_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving felicia become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: follower_submissive, mean_girl_enforcer, seeks_approval",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-felicia-002",
+      "source_card": "mut-felicia-002",
+      "source_title": "Felicia and elise",
+      "change_summary": "What if the leader between Felicia and elise became more intense?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shouldn\u2019t you be stretching your legs on...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: For those of you thinking about buying t...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 2,
+          "type": "relationship_web",
+          "target": "felicia_relationships",
+          "target_type": "relationship",
+          "effect": "Relationships involving felicia become more intense/complicated",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: power_dynamics, obsession, destructive_relationships",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-felicia-003",
+      "source_card": "mut-felicia-003",
+      "source_title": "Felicia and the Blood",
+      "change_summary": "What if Felicia's relationship with vampire nature became central?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shouldn\u2019t you be stretching your legs on...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: For those of you thinking about buying t...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: blood_as_ritual, predatory_nature, loss_of_humanity",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-felicia-004",
+      "source_card": "mut-felicia-004",
+      "source_title": "Felicia's Hidden Desires",
+      "change_summary": "What if Felicia's follower_submissive were explored explicitly?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shouldn\u2019t you be stretching your legs on...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: For those of you thinking about buying t...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: follower_submissive",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 4)",
+          "magnitude": "significant"
+        }
+      ]
+    },
+    {
+      "ripple_id": "ripple-mut-felicia-005",
+      "source_card": "mut-felicia-005",
+      "source_title": "Felicia's Twisted Path",
+      "change_summary": "What if Felicia's arc took a darker, more complicated turn?",
+      "ripples": [
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e05-006",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: Shouldn\u2019t you be stretching your legs on...' takes on darker tone",
+          "magnitude": "significant"
+        },
+        {
+          "order": 1,
+          "type": "beat_impact",
+          "target": "beat-s01e07-002",
+          "target_type": "beat",
+          "effect": "Beat 'Dialogue: For those of you thinking about buying t...' takes on darker tone",
+          "magnitude": "moderate"
+        },
+        {
+          "order": 3,
+          "type": "mythos_evolution",
+          "target": "series_themes",
+          "target_type": "theme",
+          "effect": "Series themes expand to include: corruption, moral_ambiguity, tragic_choices",
+          "magnitude": "significant"
+        },
+        {
+          "order": 3,
+          "type": "atmosphere_shift",
+          "target": "series_tone",
+          "target_type": "atmosphere",
+          "effect": "Overall series atmosphere becomes more intense (level 3)",
+          "magnitude": "moderate"
+        }
+      ]
+    }
+  ]
+}
