@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "categories": {
+    "motifs": {
+      "description": "Recurring symbolic elements",
+      "tags": [
+        {"id": "blood_as_ritual", "name": "Blood as Ritual", "description": "Blood feeding as sacred or ceremonial act", "examples": ["s01e03_feeding_scene"]},
+        {"id": "inheritance_as_cage", "name": "Inheritance as Cage", "description": "Family legacy as trapping rather than gift", "examples": ["kiara_family_expectations"]},
+        {"id": "eternal_youth", "name": "Eternal Youth", "description": "Immortality and its consequences", "examples": ["teen_vampires_forever"]},
+        {"id": "forbidden_desire", "name": "Forbidden Desire", "description": "Attraction across boundaries", "examples": ["kiara_alfred_tension"]},
+        {"id": "transformation", "name": "Transformation", "description": "Becoming vampire, physical and psychological", "examples": ["turning_ritual"]}
+      ]
+    },
+    "beats": {
+      "description": "Narrative moments and emotional turning points",
+      "tags": [
+        {"id": "temptation", "name": "Temptation", "description": "Character drawn toward forbidden action", "examples": ["kiara_first_blood_craving"]},
+        {"id": "seduction", "name": "Seduction", "description": "Enticement into intimacy or danger", "examples": ["jacques_kiara_tension"]},
+        {"id": "revelation", "name": "Revelation", "description": "Truth disclosed, changing understanding", "examples": ["vampire_identity_revealed"]},
+        {"id": "confrontation", "name": "Confrontation", "description": "Direct conflict between characters", "examples": ["kiara_father_argument"]},
+        {"id": "rescue", "name": "Rescue", "description": "Saving someone from danger or themselves", "examples": ["alfred_saves_kiara"]},
+        {"id": "humiliation", "name": "Humiliation", "description": "Loss of status or dignity", "examples": ["school_bullying_scene"]}
+      ]
+    },
+    "power_dynamics": {
+      "description": "Relationships of control and influence",
+      "tags": [
+        {"id": "dominance", "name": "Dominance", "description": "Asserting control over another", "examples": ["family_hierarchy_enforcement"]},
+        {"id": "submission", "name": "Submission", "description": "Yielding to another's will", "examples": ["blood_bond_compliance"]},
+        {"id": "dependence", "name": "Dependence", "description": "Reliance on another for survival or validation", "examples": ["blood_addiction"]},
+        {"id": "coercion", "name": "Coercion", "description": "Pressure to act against one's will", "examples": ["family_expectations_pressure"]},
+        {"id": "manipulation", "name": "Manipulation", "description": "Indirect influence through deception", "examples": ["jacques_manipulation"]},
+        {"id": "rebellion", "name": "Rebellion", "description": "Defiance against authority or norms", "examples": ["kiara_rejection_of_family"]}
+      ]
+    },
+    "atmosphere": {
+      "description": "Emotional tone and environmental mood",
+      "tags": [
+        {"id": "luxury_dread", "name": "Luxury Dread", "description": "Opulence masking danger", "examples": ["natt_och_dag_mansion"]},
+        {"id": "erotic_menace", "name": "Erotic Menace", "description": "Sexual tension with threat", "examples": ["feeding_seduction_scenes"]},
+        {"id": "gothic_romance", "name": "Gothic Romance", "description": "Dark, passionate, doomed love", "examples": ["kiara_alfred_relationship"]},
+        {"id": "teen_angst", "name": "Teen Angst", "description": "Adolescent anxiety and rebellion", "examples": ["high_school_drama"]},
+        {"id": "supernatural_dread", "name": "Supernatural Dread", "description": "Fear of the unknown and uncanny", "examples": ["vampire_powers_revealed"]}
+      ]
+    },
+    "consent": {
+      "description": "States of agreement and willingness",
+      "tags": [
+        {"id": "enthusiastic", "name": "Enthusiastic Consent", "description": "Wholehearted willing participation", "examples": ["mutual_attraction"]},
+        {"id": "negotiated", "name": "Negotiated Consent", "description": "Agreed upon with conditions", "examples": ["blood_bond_terms"]},
+        {"id": "dubious", "name": "Dubious Consent", "description": "Unclear or questionable willingness", "examples": ["power_imbalance_seduction"]},
+        {"id": "compelled", "name": "Compelled", "description": "Supernatural or psychological force", "examples": ["vampire_glamour"]},
+        {"id": "violated", "name": "Violated", "description": "Clear breach of boundaries", "examples": ["forced_feeding"]}
+      ]
+    },
+    "intensity": {
+      "description": "Degree of emotional/physical extremity",
+      "tags": [
+        {"id": "intensity_1", "name": "Subtle", "description": "Light suggestion, implication only", "examples": ["glances", "innuendo"]},
+        {"id": "intensity_2", "name": "Mild", "description": "Clear but restrained content", "examples": ["verbal_flirting"]},
+        {"id": "intensity_3", "name": "Moderate", "description": "Direct but not explicit", "examples": ["kissing", "implied_intimacy"]},
+        {"id": "intensity_4", "name": "Strong", "description": "Explicit but not extreme", "examples": ["detailed_sensual_scenes"]},
+        {"id": "intensity_5", "name": "Extreme", "description": "Maximum intensity, taboo elements", "examples": ["graphic_content", "taboo_scenarios"]}
+      ]
+    }
+  },
+  "relationships": {
+    "co_occurrence": [
+      {"tags": ["seduction", "power_dynamics"], "strength": 0.9},
+      {"tags": ["blood_as_ritual", "erotic_menace"], "strength": 0.85},
+      {"tags": ["forbidden_desire", "rebellion"], "strength": 0.8}
+    ],
+    "mutual_exclusion": [
+      ["enthusiastic", "violated"],
+      ["dominance", "rebellion"]
+    ]
+  }
+}
