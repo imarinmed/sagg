@@ -1,0 +1,3105 @@
+{
+  "version": "1.0.0",
+  "beat_signatures": [
+    {
+      "beat_id": "beat-s01e01-001",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "dependence": 0.1,
+        "intensity_3": 0.1,
+        "blood_as_ritual": 0.1,
+        "intensity_1": 0.55,
+        "teen_angst": 0.1,
+        "intensity_2": 0.03333333333333333,
+        "intensity_4": 0.016666666666666666
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.55
+        ],
+        [
+          "dependence",
+          0.1
+        ],
+        [
+          "intensity_3",
+          0.1
+        ],
+        [
+          "blood_as_ritual",
+          0.1
+        ],
+        [
+          "teen_angst",
+          0.1
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party",
+        "dance"
+      ],
+      "total_tag_instances": 60
+    },
+    {
+      "beat_id": "beat-s01e01-002",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_1": 0.6756756756756757,
+        "intensity_2": 0.02702702702702703,
+        "dependence": 0.08108108108108109,
+        "intensity_3": 0.08108108108108109,
+        "blood_as_ritual": 0.08108108108108109,
+        "teen_angst": 0.05405405405405406
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6756756756756757
+        ],
+        [
+          "dependence",
+          0.08108108108108109
+        ],
+        [
+          "intensity_3",
+          0.08108108108108109
+        ],
+        [
+          "blood_as_ritual",
+          0.08108108108108109
+        ],
+        [
+          "teen_angst",
+          0.05405405405405406
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 37
+    },
+    {
+      "beat_id": "beat-s01e01-003",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "dependence": 0.07692307692307693,
+        "intensity_3": 0.10256410256410256,
+        "blood_as_ritual": 0.07692307692307693,
+        "seduction": 0.02564102564102564,
+        "intensity_1": 0.48717948717948717,
+        "teen_angst": 0.1282051282051282,
+        "intensity_2": 0.05128205128205128,
+        "intensity_4": 0.05128205128205128
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.48717948717948717
+        ],
+        [
+          "teen_angst",
+          0.1282051282051282
+        ],
+        [
+          "intensity_3",
+          0.10256410256410256
+        ],
+        [
+          "dependence",
+          0.07692307692307693
+        ],
+        [
+          "blood_as_ritual",
+          0.07692307692307693
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party",
+        "physical_intimacy"
+      ],
+      "total_tag_instances": 39
+    },
+    {
+      "beat_id": "beat-s01e01-004",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_4": 0.1724137931034483,
+        "intensity_1": 0.4827586206896552,
+        "dependence": 0.10344827586206896,
+        "intensity_3": 0.10344827586206896,
+        "blood_as_ritual": 0.10344827586206896,
+        "teen_angst": 0.034482758620689655
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.4827586206896552
+        ],
+        [
+          "intensity_4",
+          0.1724137931034483
+        ],
+        [
+          "dependence",
+          0.10344827586206896
+        ],
+        [
+          "intensity_3",
+          0.10344827586206896
+        ],
+        [
+          "blood_as_ritual",
+          0.10344827586206896
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue"
+      ],
+      "total_tag_instances": 29
+    },
+    {
+      "beat_id": "beat-s01e01-005",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_1": 0.6153846153846154,
+        "intensity_2": 0.23076923076923078,
+        "teen_angst": 0.05128205128205128,
+        "intensity_4": 0.10256410256410256
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6153846153846154
+        ],
+        [
+          "intensity_2",
+          0.23076923076923078
+        ],
+        [
+          "intensity_4",
+          0.10256410256410256
+        ],
+        [
+          "teen_angst",
+          0.05128205128205128
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dance",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 39
+    },
+    {
+      "beat_id": "beat-s01e01-006",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_1": 0.7741935483870968,
+        "dependence": 0.06451612903225806,
+        "intensity_3": 0.06451612903225806,
+        "blood_as_ritual": 0.06451612903225806,
+        "intensity_4": 0.03225806451612903
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7741935483870968
+        ],
+        [
+          "dependence",
+          0.06451612903225806
+        ],
+        [
+          "intensity_3",
+          0.06451612903225806
+        ],
+        [
+          "blood_as_ritual",
+          0.06451612903225806
+        ],
+        [
+          "intensity_4",
+          0.03225806451612903
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue"
+      ],
+      "total_tag_instances": 31
+    },
+    {
+      "beat_id": "beat-s01e01-007",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_1": 0.717948717948718,
+        "intensity_2": 0.1282051282051282,
+        "teen_angst": 0.07692307692307693,
+        "dependence": 0.02564102564102564,
+        "intensity_3": 0.02564102564102564,
+        "blood_as_ritual": 0.02564102564102564
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.717948717948718
+        ],
+        [
+          "intensity_2",
+          0.1282051282051282
+        ],
+        [
+          "teen_angst",
+          0.07692307692307693
+        ],
+        [
+          "dependence",
+          0.02564102564102564
+        ],
+        [
+          "intensity_3",
+          0.02564102564102564
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dance",
+        "dialogue",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 39
+    },
+    {
+      "beat_id": "beat-s01e01-008",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "dependence": 0.04477611940298507,
+        "intensity_3": 0.04477611940298507,
+        "blood_as_ritual": 0.04477611940298507,
+        "intensity_1": 0.29850746268656714,
+        "temptation": 0.16417910447761194,
+        "seduction": 0.16417910447761194,
+        "intensity_2": 0.16417910447761194,
+        "teen_angst": 0.07462686567164178
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.29850746268656714
+        ],
+        [
+          "temptation",
+          0.16417910447761194
+        ],
+        [
+          "seduction",
+          0.16417910447761194
+        ],
+        [
+          "intensity_2",
+          0.16417910447761194
+        ],
+        [
+          "teen_angst",
+          0.07462686567164178
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party",
+        "dance"
+      ],
+      "total_tag_instances": 67
+    },
+    {
+      "beat_id": "beat-s01e01-009",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_1": 0.2727272727272727,
+        "intensity_4": 0.03636363636363636,
+        "temptation": 0.16363636363636364,
+        "teen_angst": 0.10909090909090909,
+        "seduction": 0.16363636363636364,
+        "intensity_2": 0.16363636363636364,
+        "dependence": 0.01818181818181818,
+        "intensity_3": 0.01818181818181818,
+        "blood_as_ritual": 0.01818181818181818,
+        "manipulation": 0.01818181818181818,
+        "forbidden_desire": 0.01818181818181818
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.2727272727272727
+        ],
+        [
+          "temptation",
+          0.16363636363636364
+        ],
+        [
+          "seduction",
+          0.16363636363636364
+        ],
+        [
+          "intensity_2",
+          0.16363636363636364
+        ],
+        [
+          "teen_angst",
+          0.10909090909090909
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 55
+    },
+    {
+      "beat_id": "beat-s01e01-010",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_1": 0.6,
+        "manipulation": 0.1,
+        "forbidden_desire": 0.1,
+        "teen_angst": 0.1,
+        "intensity_2": 0.1
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6
+        ],
+        [
+          "manipulation",
+          0.1
+        ],
+        [
+          "forbidden_desire",
+          0.1
+        ],
+        [
+          "teen_angst",
+          0.1
+        ],
+        [
+          "intensity_2",
+          0.1
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue"
+      ],
+      "total_tag_instances": 10
+    },
+    {
+      "beat_id": "beat-s01e01-011",
+      "episode_id": "s01e01",
+      "tag_frequencies": {
+        "intensity_1": 1.0
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          1.0
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 1
+    },
+    {
+      "beat_id": "beat-s01e02-001",
+      "episode_id": "s01e02",
+      "tag_frequencies": {
+        "intensity_1": 0.7777777777777778,
+        "teen_angst": 0.07407407407407407,
+        "intensity_2": 0.037037037037037035,
+        "dependence": 0.037037037037037035,
+        "intensity_3": 0.037037037037037035,
+        "blood_as_ritual": 0.037037037037037035
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7777777777777778
+        ],
+        [
+          "teen_angst",
+          0.07407407407407407
+        ],
+        [
+          "intensity_2",
+          0.037037037037037035
+        ],
+        [
+          "dependence",
+          0.037037037037037035
+        ],
+        [
+          "intensity_3",
+          0.037037037037037035
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 27
+    },
+    {
+      "beat_id": "beat-s01e02-002",
+      "episode_id": "s01e02",
+      "tag_frequencies": {
+        "intensity_1": 0.7407407407407407,
+        "intensity_4": 0.1111111111111111,
+        "intensity_3": 0.07407407407407407,
+        "seduction": 0.07407407407407407
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7407407407407407
+        ],
+        [
+          "intensity_4",
+          0.1111111111111111
+        ],
+        [
+          "intensity_3",
+          0.07407407407407407
+        ],
+        [
+          "seduction",
+          0.07407407407407407
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue"
+      ],
+      "total_tag_instances": 27
+    },
+    {
+      "beat_id": "beat-s01e02-003",
+      "episode_id": "s01e02",
+      "tag_frequencies": {
+        "intensity_1": 0.875,
+        "intensity_4": 0.125
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.875
+        ],
+        [
+          "intensity_4",
+          0.125
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 16
+    },
+    {
+      "beat_id": "beat-s01e03-001",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.8076923076923077,
+        "intensity_3": 0.07692307692307693,
+        "seduction": 0.038461538461538464,
+        "dependence": 0.038461538461538464,
+        "blood_as_ritual": 0.038461538461538464
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8076923076923077
+        ],
+        [
+          "intensity_3",
+          0.07692307692307693
+        ],
+        [
+          "seduction",
+          0.038461538461538464
+        ],
+        [
+          "dependence",
+          0.038461538461538464
+        ],
+        [
+          "blood_as_ritual",
+          0.038461538461538464
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 26
+    },
+    {
+      "beat_id": "beat-s01e03-002",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "dependence": 0.030303030303030304,
+        "intensity_3": 0.030303030303030304,
+        "blood_as_ritual": 0.030303030303030304,
+        "intensity_1": 0.5757575757575758,
+        "intensity_4": 0.18181818181818182,
+        "intensity_2": 0.09090909090909091,
+        "teen_angst": 0.06060606060606061
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5757575757575758
+        ],
+        [
+          "intensity_4",
+          0.18181818181818182
+        ],
+        [
+          "intensity_2",
+          0.09090909090909091
+        ],
+        [
+          "teen_angst",
+          0.06060606060606061
+        ],
+        [
+          "dependence",
+          0.030303030303030304
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "vampire_feeding",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 33
+    },
+    {
+      "beat_id": "beat-s01e03-003",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.8846153846153846,
+        "intensity_4": 0.038461538461538464,
+        "intensity_2": 0.038461538461538464,
+        "teen_angst": 0.038461538461538464
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8846153846153846
+        ],
+        [
+          "intensity_4",
+          0.038461538461538464
+        ],
+        [
+          "intensity_2",
+          0.038461538461538464
+        ],
+        [
+          "teen_angst",
+          0.038461538461538464
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue"
+      ],
+      "total_tag_instances": 26
+    },
+    {
+      "beat_id": "beat-s01e03-004",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.4838709677419355,
+        "teen_angst": 0.0967741935483871,
+        "temptation": 0.06451612903225806,
+        "seduction": 0.06451612903225806,
+        "intensity_2": 0.0967741935483871,
+        "dependence": 0.06451612903225806,
+        "intensity_3": 0.06451612903225806,
+        "blood_as_ritual": 0.06451612903225806
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.4838709677419355
+        ],
+        [
+          "teen_angst",
+          0.0967741935483871
+        ],
+        [
+          "intensity_2",
+          0.0967741935483871
+        ],
+        [
+          "temptation",
+          0.06451612903225806
+        ],
+        [
+          "seduction",
+          0.06451612903225806
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party",
+        "dance"
+      ],
+      "total_tag_instances": 31
+    },
+    {
+      "beat_id": "beat-s01e03-005",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.6764705882352942,
+        "intensity_4": 0.029411764705882353,
+        "teen_angst": 0.08823529411764706,
+        "intensity_2": 0.11764705882352941,
+        "dependence": 0.029411764705882353,
+        "intensity_3": 0.029411764705882353,
+        "blood_as_ritual": 0.029411764705882353
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6764705882352942
+        ],
+        [
+          "intensity_2",
+          0.11764705882352941
+        ],
+        [
+          "teen_angst",
+          0.08823529411764706
+        ],
+        [
+          "intensity_4",
+          0.029411764705882353
+        ],
+        [
+          "dependence",
+          0.029411764705882353
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 34
+    },
+    {
+      "beat_id": "beat-s01e03-006",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "dependence": 0.045454545454545456,
+        "intensity_3": 0.045454545454545456,
+        "blood_as_ritual": 0.045454545454545456,
+        "intensity_1": 0.7272727272727273,
+        "teen_angst": 0.06818181818181818,
+        "intensity_2": 0.045454545454545456,
+        "intensity_4": 0.022727272727272728
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7272727272727273
+        ],
+        [
+          "teen_angst",
+          0.06818181818181818
+        ],
+        [
+          "dependence",
+          0.045454545454545456
+        ],
+        [
+          "intensity_3",
+          0.045454545454545456
+        ],
+        [
+          "blood_as_ritual",
+          0.045454545454545456
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 44
+    },
+    {
+      "beat_id": "beat-s01e03-007",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.7741935483870968,
+        "intensity_4": 0.0967741935483871,
+        "teen_angst": 0.03225806451612903,
+        "intensity_2": 0.0967741935483871
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7741935483870968
+        ],
+        [
+          "intensity_4",
+          0.0967741935483871
+        ],
+        [
+          "intensity_2",
+          0.0967741935483871
+        ],
+        [
+          "teen_angst",
+          0.03225806451612903
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 31
+    },
+    {
+      "beat_id": "beat-s01e03-008",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.8148148148148148,
+        "intensity_4": 0.037037037037037035,
+        "intensity_3": 0.037037037037037035,
+        "seduction": 0.037037037037037035,
+        "teen_angst": 0.037037037037037035,
+        "intensity_2": 0.037037037037037035
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8148148148148148
+        ],
+        [
+          "intensity_4",
+          0.037037037037037035
+        ],
+        [
+          "intensity_3",
+          0.037037037037037035
+        ],
+        [
+          "seduction",
+          0.037037037037037035
+        ],
+        [
+          "teen_angst",
+          0.037037037037037035
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 27
+    },
+    {
+      "beat_id": "beat-s01e03-009",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.7619047619047619,
+        "dependence": 0.047619047619047616,
+        "intensity_3": 0.047619047619047616,
+        "blood_as_ritual": 0.047619047619047616,
+        "temptation": 0.047619047619047616,
+        "seduction": 0.047619047619047616
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7619047619047619
+        ],
+        [
+          "dependence",
+          0.047619047619047616
+        ],
+        [
+          "intensity_3",
+          0.047619047619047616
+        ],
+        [
+          "blood_as_ritual",
+          0.047619047619047616
+        ],
+        [
+          "temptation",
+          0.047619047619047616
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue"
+      ],
+      "total_tag_instances": 21
+    },
+    {
+      "beat_id": "beat-s01e03-010",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.8461538461538461,
+        "intensity_2": 0.15384615384615385
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8461538461538461
+        ],
+        [
+          "intensity_2",
+          0.15384615384615385
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue"
+      ],
+      "total_tag_instances": 26
+    },
+    {
+      "beat_id": "beat-s01e03-011",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.8064516129032258,
+        "intensity_4": 0.03225806451612903,
+        "teen_angst": 0.03225806451612903,
+        "temptation": 0.06451612903225806,
+        "seduction": 0.06451612903225806
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8064516129032258
+        ],
+        [
+          "temptation",
+          0.06451612903225806
+        ],
+        [
+          "seduction",
+          0.06451612903225806
+        ],
+        [
+          "intensity_4",
+          0.03225806451612903
+        ],
+        [
+          "teen_angst",
+          0.03225806451612903
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 31
+    },
+    {
+      "beat_id": "beat-s01e03-012",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.7727272727272727,
+        "intensity_4": 0.09090909090909091,
+        "dependence": 0.045454545454545456,
+        "intensity_3": 0.045454545454545456,
+        "blood_as_ritual": 0.045454545454545456
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7727272727272727
+        ],
+        [
+          "intensity_4",
+          0.09090909090909091
+        ],
+        [
+          "dependence",
+          0.045454545454545456
+        ],
+        [
+          "intensity_3",
+          0.045454545454545456
+        ],
+        [
+          "blood_as_ritual",
+          0.045454545454545456
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue"
+      ],
+      "total_tag_instances": 22
+    },
+    {
+      "beat_id": "beat-s01e03-013",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 0.7407407407407407,
+        "intensity_4": 0.1111111111111111,
+        "teen_angst": 0.07407407407407407,
+        "intensity_2": 0.07407407407407407
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7407407407407407
+        ],
+        [
+          "intensity_4",
+          0.1111111111111111
+        ],
+        [
+          "teen_angst",
+          0.07407407407407407
+        ],
+        [
+          "intensity_2",
+          0.07407407407407407
+        ]
+      ],
+      "content_types": [
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 27
+    },
+    {
+      "beat_id": "beat-s01e03-014",
+      "episode_id": "s01e03",
+      "tag_frequencies": {
+        "intensity_1": 1.0
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          1.0
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 5
+    },
+    {
+      "beat_id": "beat-s01e04-001",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.6363636363636364,
+        "dependence": 0.09090909090909091,
+        "intensity_3": 0.09090909090909091,
+        "blood_as_ritual": 0.09090909090909091,
+        "intensity_2": 0.09090909090909091
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6363636363636364
+        ],
+        [
+          "dependence",
+          0.09090909090909091
+        ],
+        [
+          "intensity_3",
+          0.09090909090909091
+        ],
+        [
+          "blood_as_ritual",
+          0.09090909090909091
+        ],
+        [
+          "intensity_2",
+          0.09090909090909091
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "dance"
+      ],
+      "total_tag_instances": 22
+    },
+    {
+      "beat_id": "beat-s01e04-002",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.9047619047619048,
+        "intensity_4": 0.09523809523809523
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.9047619047619048
+        ],
+        [
+          "intensity_4",
+          0.09523809523809523
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 21
+    },
+    {
+      "beat_id": "beat-s01e04-003",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.696969696969697,
+        "intensity_4": 0.12121212121212122,
+        "teen_angst": 0.06060606060606061,
+        "intensity_2": 0.06060606060606061,
+        "intensity_3": 0.030303030303030304,
+        "seduction": 0.030303030303030304
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.696969696969697
+        ],
+        [
+          "intensity_4",
+          0.12121212121212122
+        ],
+        [
+          "teen_angst",
+          0.06060606060606061
+        ],
+        [
+          "intensity_2",
+          0.06060606060606061
+        ],
+        [
+          "intensity_3",
+          0.030303030303030304
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 33
+    },
+    {
+      "beat_id": "beat-s01e04-004",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.5476190476190477,
+        "temptation": 0.09523809523809523,
+        "seduction": 0.09523809523809523,
+        "intensity_2": 0.07142857142857142,
+        "intensity_4": 0.07142857142857142,
+        "teen_angst": 0.047619047619047616,
+        "dependence": 0.023809523809523808,
+        "intensity_3": 0.023809523809523808,
+        "blood_as_ritual": 0.023809523809523808
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5476190476190477
+        ],
+        [
+          "temptation",
+          0.09523809523809523
+        ],
+        [
+          "seduction",
+          0.09523809523809523
+        ],
+        [
+          "intensity_2",
+          0.07142857142857142
+        ],
+        [
+          "intensity_4",
+          0.07142857142857142
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "party",
+        "training",
+        "dialogue",
+        "dance"
+      ],
+      "total_tag_instances": 42
+    },
+    {
+      "beat_id": "beat-s01e04-005",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "temptation": 0.029411764705882353,
+        "intensity_4": 0.14705882352941177,
+        "seduction": 0.029411764705882353,
+        "intensity_1": 0.5588235294117647,
+        "teen_angst": 0.058823529411764705,
+        "intensity_2": 0.08823529411764706,
+        "dependence": 0.029411764705882353,
+        "intensity_3": 0.029411764705882353,
+        "blood_as_ritual": 0.029411764705882353
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5588235294117647
+        ],
+        [
+          "intensity_4",
+          0.14705882352941177
+        ],
+        [
+          "intensity_2",
+          0.08823529411764706
+        ],
+        [
+          "teen_angst",
+          0.058823529411764705
+        ],
+        [
+          "temptation",
+          0.029411764705882353
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "party",
+        "training",
+        "dialogue",
+        "dance"
+      ],
+      "total_tag_instances": 34
+    },
+    {
+      "beat_id": "beat-s01e04-006",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.7333333333333333,
+        "intensity_2": 0.06666666666666667,
+        "intensity_4": 0.13333333333333333,
+        "intensity_3": 0.03333333333333333,
+        "seduction": 0.03333333333333333
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7333333333333333
+        ],
+        [
+          "intensity_4",
+          0.13333333333333333
+        ],
+        [
+          "intensity_2",
+          0.06666666666666667
+        ],
+        [
+          "intensity_3",
+          0.03333333333333333
+        ],
+        [
+          "seduction",
+          0.03333333333333333
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "physical_intimacy",
+        "dialogue"
+      ],
+      "total_tag_instances": 30
+    },
+    {
+      "beat_id": "beat-s01e04-007",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_4": 0.125,
+        "intensity_1": 0.5,
+        "temptation": 0.09375,
+        "teen_angst": 0.09375,
+        "seduction": 0.09375,
+        "intensity_2": 0.09375
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5
+        ],
+        [
+          "intensity_4",
+          0.125
+        ],
+        [
+          "temptation",
+          0.09375
+        ],
+        [
+          "teen_angst",
+          0.09375
+        ],
+        [
+          "seduction",
+          0.09375
+        ]
+      ],
+      "content_types": [
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 32
+    },
+    {
+      "beat_id": "beat-s01e04-008",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.6666666666666666,
+        "intensity_4": 0.12121212121212122,
+        "teen_angst": 0.030303030303030304,
+        "dependence": 0.06060606060606061,
+        "intensity_3": 0.06060606060606061,
+        "blood_as_ritual": 0.06060606060606061
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6666666666666666
+        ],
+        [
+          "intensity_4",
+          0.12121212121212122
+        ],
+        [
+          "dependence",
+          0.06060606060606061
+        ],
+        [
+          "intensity_3",
+          0.06060606060606061
+        ],
+        [
+          "blood_as_ritual",
+          0.06060606060606061
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 33
+    },
+    {
+      "beat_id": "beat-s01e04-009",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "dependence": 0.05263157894736842,
+        "intensity_3": 0.05263157894736842,
+        "blood_as_ritual": 0.05263157894736842,
+        "intensity_1": 0.6842105263157895,
+        "intensity_4": 0.07894736842105263,
+        "intensity_2": 0.05263157894736842,
+        "teen_angst": 0.02631578947368421
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6842105263157895
+        ],
+        [
+          "intensity_4",
+          0.07894736842105263
+        ],
+        [
+          "dependence",
+          0.05263157894736842
+        ],
+        [
+          "intensity_3",
+          0.05263157894736842
+        ],
+        [
+          "blood_as_ritual",
+          0.05263157894736842
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "vampire_feeding",
+        "dialogue"
+      ],
+      "total_tag_instances": 38
+    },
+    {
+      "beat_id": "beat-s01e04-010",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.75,
+        "intensity_4": 0.14285714285714285,
+        "teen_angst": 0.07142857142857142,
+        "intensity_2": 0.03571428571428571
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.75
+        ],
+        [
+          "intensity_4",
+          0.14285714285714285
+        ],
+        [
+          "teen_angst",
+          0.07142857142857142
+        ],
+        [
+          "intensity_2",
+          0.03571428571428571
+        ]
+      ],
+      "content_types": [
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 28
+    },
+    {
+      "beat_id": "beat-s01e04-011",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.5555555555555556,
+        "intensity_3": 0.1111111111111111,
+        "seduction": 0.1111111111111111,
+        "intensity_4": 0.2222222222222222
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5555555555555556
+        ],
+        [
+          "intensity_4",
+          0.2222222222222222
+        ],
+        [
+          "intensity_3",
+          0.1111111111111111
+        ],
+        [
+          "seduction",
+          0.1111111111111111
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue"
+      ],
+      "total_tag_instances": 9
+    },
+    {
+      "beat_id": "beat-s01e04-012",
+      "episode_id": "s01e04",
+      "tag_frequencies": {
+        "intensity_1": 0.875,
+        "intensity_2": 0.125
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.875
+        ],
+        [
+          "intensity_2",
+          0.125
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue"
+      ],
+      "total_tag_instances": 8
+    },
+    {
+      "beat_id": "beat-s01e05-001",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.7391304347826086,
+        "intensity_4": 0.043478260869565216,
+        "teen_angst": 0.043478260869565216,
+        "intensity_2": 0.043478260869565216,
+        "dependence": 0.043478260869565216,
+        "intensity_3": 0.043478260869565216,
+        "blood_as_ritual": 0.043478260869565216
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7391304347826086
+        ],
+        [
+          "intensity_4",
+          0.043478260869565216
+        ],
+        [
+          "teen_angst",
+          0.043478260869565216
+        ],
+        [
+          "intensity_2",
+          0.043478260869565216
+        ],
+        [
+          "dependence",
+          0.043478260869565216
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 23
+    },
+    {
+      "beat_id": "beat-s01e05-002",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "dependence": 0.03571428571428571,
+        "intensity_3": 0.03571428571428571,
+        "blood_as_ritual": 0.03571428571428571,
+        "intensity_1": 0.7857142857142857,
+        "intensity_2": 0.03571428571428571,
+        "intensity_4": 0.07142857142857142
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7857142857142857
+        ],
+        [
+          "intensity_4",
+          0.07142857142857142
+        ],
+        [
+          "dependence",
+          0.03571428571428571
+        ],
+        [
+          "intensity_3",
+          0.03571428571428571
+        ],
+        [
+          "blood_as_ritual",
+          0.03571428571428571
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "dance"
+      ],
+      "total_tag_instances": 28
+    },
+    {
+      "beat_id": "beat-s01e05-003",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.8387096774193549,
+        "teen_angst": 0.06451612903225806,
+        "intensity_2": 0.06451612903225806,
+        "intensity_4": 0.03225806451612903
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8387096774193549
+        ],
+        [
+          "teen_angst",
+          0.06451612903225806
+        ],
+        [
+          "intensity_2",
+          0.06451612903225806
+        ],
+        [
+          "intensity_4",
+          0.03225806451612903
+        ]
+      ],
+      "content_types": [
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 31
+    },
+    {
+      "beat_id": "beat-s01e05-004",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.5641025641025641,
+        "teen_angst": 0.15384615384615385,
+        "intensity_2": 0.23076923076923078,
+        "intensity_4": 0.05128205128205128
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5641025641025641
+        ],
+        [
+          "intensity_2",
+          0.23076923076923078
+        ],
+        [
+          "teen_angst",
+          0.15384615384615385
+        ],
+        [
+          "intensity_4",
+          0.05128205128205128
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 39
+    },
+    {
+      "beat_id": "beat-s01e05-005",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.53125,
+        "intensity_4": 0.0625,
+        "teen_angst": 0.15625,
+        "intensity_2": 0.25
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.53125
+        ],
+        [
+          "intensity_2",
+          0.25
+        ],
+        [
+          "teen_angst",
+          0.15625
+        ],
+        [
+          "intensity_4",
+          0.0625
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dance",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 32
+    },
+    {
+      "beat_id": "beat-s01e05-006",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.7692307692307693,
+        "intensity_4": 0.07692307692307693,
+        "intensity_2": 0.11538461538461539,
+        "teen_angst": 0.038461538461538464
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7692307692307693
+        ],
+        [
+          "intensity_2",
+          0.11538461538461539
+        ],
+        [
+          "intensity_4",
+          0.07692307692307693
+        ],
+        [
+          "teen_angst",
+          0.038461538461538464
+        ]
+      ],
+      "content_types": [
+        "training",
+        "dialogue",
+        "party",
+        "dance"
+      ],
+      "total_tag_instances": 26
+    },
+    {
+      "beat_id": "beat-s01e05-007",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.8695652173913043,
+        "dependence": 0.043478260869565216,
+        "intensity_3": 0.043478260869565216,
+        "blood_as_ritual": 0.043478260869565216
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8695652173913043
+        ],
+        [
+          "dependence",
+          0.043478260869565216
+        ],
+        [
+          "intensity_3",
+          0.043478260869565216
+        ],
+        [
+          "blood_as_ritual",
+          0.043478260869565216
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue"
+      ],
+      "total_tag_instances": 23
+    },
+    {
+      "beat_id": "beat-s01e05-008",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.7741935483870968,
+        "intensity_4": 0.06451612903225806,
+        "intensity_3": 0.03225806451612903,
+        "seduction": 0.03225806451612903,
+        "teen_angst": 0.03225806451612903,
+        "intensity_2": 0.06451612903225806
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7741935483870968
+        ],
+        [
+          "intensity_4",
+          0.06451612903225806
+        ],
+        [
+          "intensity_2",
+          0.06451612903225806
+        ],
+        [
+          "intensity_3",
+          0.03225806451612903
+        ],
+        [
+          "seduction",
+          0.03225806451612903
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue",
+        "party",
+        "dance"
+      ],
+      "total_tag_instances": 31
+    },
+    {
+      "beat_id": "beat-s01e05-009",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.38461538461538464,
+        "intensity_4": 0.10256410256410256,
+        "temptation": 0.15384615384615385,
+        "teen_angst": 0.10256410256410256,
+        "seduction": 0.15384615384615385,
+        "intensity_2": 0.10256410256410256
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.38461538461538464
+        ],
+        [
+          "temptation",
+          0.15384615384615385
+        ],
+        [
+          "seduction",
+          0.15384615384615385
+        ],
+        [
+          "intensity_4",
+          0.10256410256410256
+        ],
+        [
+          "teen_angst",
+          0.10256410256410256
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 39
+    },
+    {
+      "beat_id": "beat-s01e05-010",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_4": 0.18518518518518517,
+        "intensity_1": 0.5555555555555556,
+        "teen_angst": 0.14814814814814814,
+        "intensity_2": 0.1111111111111111
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5555555555555556
+        ],
+        [
+          "intensity_4",
+          0.18518518518518517
+        ],
+        [
+          "teen_angst",
+          0.14814814814814814
+        ],
+        [
+          "intensity_2",
+          0.1111111111111111
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 27
+    },
+    {
+      "beat_id": "beat-s01e05-011",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.5882352941176471,
+        "intensity_4": 0.4117647058823529
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5882352941176471
+        ],
+        [
+          "intensity_4",
+          0.4117647058823529
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 17
+    },
+    {
+      "beat_id": "beat-s01e05-012",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_1": 0.5384615384615384,
+        "intensity_2": 0.07692307692307693,
+        "intensity_4": 0.38461538461538464
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5384615384615384
+        ],
+        [
+          "intensity_4",
+          0.38461538461538464
+        ],
+        [
+          "intensity_2",
+          0.07692307692307693
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue"
+      ],
+      "total_tag_instances": 13
+    },
+    {
+      "beat_id": "beat-s01e05-013",
+      "episode_id": "s01e05",
+      "tag_frequencies": {
+        "intensity_4": 0.3333333333333333,
+        "intensity_1": 0.6666666666666666
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6666666666666666
+        ],
+        [
+          "intensity_4",
+          0.3333333333333333
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 3
+    },
+    {
+      "beat_id": "beat-s01e06-001",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.5925925925925926,
+        "dependence": 0.07407407407407407,
+        "intensity_3": 0.07407407407407407,
+        "blood_as_ritual": 0.07407407407407407,
+        "teen_angst": 0.037037037037037035,
+        "intensity_2": 0.037037037037037035,
+        "intensity_4": 0.1111111111111111
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5925925925925926
+        ],
+        [
+          "intensity_4",
+          0.1111111111111111
+        ],
+        [
+          "dependence",
+          0.07407407407407407
+        ],
+        [
+          "intensity_3",
+          0.07407407407407407
+        ],
+        [
+          "blood_as_ritual",
+          0.07407407407407407
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 27
+    },
+    {
+      "beat_id": "beat-s01e06-002",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.4772727272727273,
+        "intensity_4": 0.09090909090909091,
+        "dependence": 0.09090909090909091,
+        "blood_as_ritual": 0.09090909090909091,
+        "temptation": 0.06818181818181818,
+        "seduction": 0.06818181818181818,
+        "intensity_2": 0.045454545454545456,
+        "intensity_3": 0.06818181818181818
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.4772727272727273
+        ],
+        [
+          "intensity_4",
+          0.09090909090909091
+        ],
+        [
+          "dependence",
+          0.09090909090909091
+        ],
+        [
+          "blood_as_ritual",
+          0.09090909090909091
+        ],
+        [
+          "temptation",
+          0.06818181818181818
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "dance"
+      ],
+      "total_tag_instances": 44
+    },
+    {
+      "beat_id": "beat-s01e06-003",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "dependence": 0.047619047619047616,
+        "intensity_3": 0.047619047619047616,
+        "blood_as_ritual": 0.047619047619047616,
+        "intensity_1": 0.6190476190476191,
+        "intensity_2": 0.07142857142857142,
+        "teen_angst": 0.09523809523809523,
+        "intensity_4": 0.07142857142857142
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6190476190476191
+        ],
+        [
+          "teen_angst",
+          0.09523809523809523
+        ],
+        [
+          "intensity_2",
+          0.07142857142857142
+        ],
+        [
+          "intensity_4",
+          0.07142857142857142
+        ],
+        [
+          "dependence",
+          0.047619047619047616
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "party",
+        "dialogue",
+        "confrontation",
+        "dance"
+      ],
+      "total_tag_instances": 42
+    },
+    {
+      "beat_id": "beat-s01e06-004",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.6785714285714286,
+        "intensity_4": 0.14285714285714285,
+        "teen_angst": 0.03571428571428571,
+        "intensity_2": 0.03571428571428571,
+        "dependence": 0.03571428571428571,
+        "intensity_3": 0.03571428571428571,
+        "blood_as_ritual": 0.03571428571428571
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6785714285714286
+        ],
+        [
+          "intensity_4",
+          0.14285714285714285
+        ],
+        [
+          "teen_angst",
+          0.03571428571428571
+        ],
+        [
+          "intensity_2",
+          0.03571428571428571
+        ],
+        [
+          "dependence",
+          0.03571428571428571
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 28
+    },
+    {
+      "beat_id": "beat-s01e06-005",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.56,
+        "teen_angst": 0.04,
+        "intensity_2": 0.04,
+        "intensity_4": 0.04,
+        "dependence": 0.08,
+        "intensity_3": 0.12,
+        "blood_as_ritual": 0.08,
+        "seduction": 0.04
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.56
+        ],
+        [
+          "intensity_3",
+          0.12
+        ],
+        [
+          "dependence",
+          0.08
+        ],
+        [
+          "blood_as_ritual",
+          0.08
+        ],
+        [
+          "teen_angst",
+          0.04
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party",
+        "physical_intimacy"
+      ],
+      "total_tag_instances": 25
+    },
+    {
+      "beat_id": "beat-s01e06-006",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_3": 0.030303030303030304,
+        "seduction": 0.030303030303030304,
+        "intensity_1": 0.696969696969697,
+        "teen_angst": 0.06060606060606061,
+        "intensity_2": 0.06060606060606061,
+        "intensity_4": 0.12121212121212122
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.696969696969697
+        ],
+        [
+          "intensity_4",
+          0.12121212121212122
+        ],
+        [
+          "teen_angst",
+          0.06060606060606061
+        ],
+        [
+          "intensity_2",
+          0.06060606060606061
+        ],
+        [
+          "intensity_3",
+          0.030303030303030304
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 33
+    },
+    {
+      "beat_id": "beat-s01e06-007",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_4": 0.06451612903225806,
+        "intensity_1": 0.5483870967741935,
+        "dependence": 0.06451612903225806,
+        "intensity_3": 0.06451612903225806,
+        "blood_as_ritual": 0.06451612903225806,
+        "teen_angst": 0.12903225806451613,
+        "intensity_2": 0.06451612903225806
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5483870967741935
+        ],
+        [
+          "teen_angst",
+          0.12903225806451613
+        ],
+        [
+          "intensity_4",
+          0.06451612903225806
+        ],
+        [
+          "dependence",
+          0.06451612903225806
+        ],
+        [
+          "intensity_3",
+          0.06451612903225806
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 31
+    },
+    {
+      "beat_id": "beat-s01e06-008",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.375,
+        "dependence": 0.125,
+        "intensity_3": 0.125,
+        "blood_as_ritual": 0.125,
+        "teen_angst": 0.125,
+        "intensity_2": 0.125
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.375
+        ],
+        [
+          "dependence",
+          0.125
+        ],
+        [
+          "intensity_3",
+          0.125
+        ],
+        [
+          "blood_as_ritual",
+          0.125
+        ],
+        [
+          "teen_angst",
+          0.125
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 8
+    },
+    {
+      "beat_id": "beat-s01e06-009",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.8571428571428571,
+        "intensity_4": 0.07142857142857142,
+        "teen_angst": 0.03571428571428571,
+        "intensity_2": 0.03571428571428571
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8571428571428571
+        ],
+        [
+          "intensity_4",
+          0.07142857142857142
+        ],
+        [
+          "teen_angst",
+          0.03571428571428571
+        ],
+        [
+          "intensity_2",
+          0.03571428571428571
+        ]
+      ],
+      "content_types": [
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 28
+    },
+    {
+      "beat_id": "beat-s01e06-010",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.8333333333333334,
+        "intensity_4": 0.1111111111111111,
+        "intensity_2": 0.05555555555555555
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8333333333333334
+        ],
+        [
+          "intensity_4",
+          0.1111111111111111
+        ],
+        [
+          "intensity_2",
+          0.05555555555555555
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dialogue"
+      ],
+      "total_tag_instances": 18
+    },
+    {
+      "beat_id": "beat-s01e06-011",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.8571428571428571,
+        "intensity_2": 0.10714285714285714,
+        "intensity_4": 0.03571428571428571
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8571428571428571
+        ],
+        [
+          "intensity_2",
+          0.10714285714285714
+        ],
+        [
+          "intensity_4",
+          0.03571428571428571
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dance",
+        "dialogue"
+      ],
+      "total_tag_instances": 28
+    },
+    {
+      "beat_id": "beat-s01e06-012",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 0.8,
+        "intensity_3": 0.08,
+        "seduction": 0.04,
+        "dependence": 0.04,
+        "blood_as_ritual": 0.04
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8
+        ],
+        [
+          "intensity_3",
+          0.08
+        ],
+        [
+          "seduction",
+          0.04
+        ],
+        [
+          "dependence",
+          0.04
+        ],
+        [
+          "blood_as_ritual",
+          0.04
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 25
+    },
+    {
+      "beat_id": "beat-s01e06-013",
+      "episode_id": "s01e06",
+      "tag_frequencies": {
+        "intensity_1": 1.0
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          1.0
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 1
+    },
+    {
+      "beat_id": "beat-s01e07-001",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "inheritance_as_cage": 0.0625,
+        "intensity_1": 0.875,
+        "coercion": 0.0625
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.875
+        ],
+        [
+          "inheritance_as_cage",
+          0.0625
+        ],
+        [
+          "coercion",
+          0.0625
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 16
+    },
+    {
+      "beat_id": "beat-s01e07-002",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.7435897435897436,
+        "intensity_4": 0.05128205128205128,
+        "teen_angst": 0.07692307692307693,
+        "intensity_2": 0.1282051282051282
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7435897435897436
+        ],
+        [
+          "intensity_2",
+          0.1282051282051282
+        ],
+        [
+          "teen_angst",
+          0.07692307692307693
+        ],
+        [
+          "intensity_4",
+          0.05128205128205128
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party",
+        "training"
+      ],
+      "total_tag_instances": 39
+    },
+    {
+      "beat_id": "beat-s01e07-003",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.5151515151515151,
+        "intensity_4": 0.15151515151515152,
+        "intensity_3": 0.06060606060606061,
+        "seduction": 0.09090909090909091,
+        "dependence": 0.030303030303030304,
+        "blood_as_ritual": 0.030303030303030304,
+        "temptation": 0.06060606060606061,
+        "teen_angst": 0.030303030303030304,
+        "intensity_2": 0.030303030303030304
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.5151515151515151
+        ],
+        [
+          "intensity_4",
+          0.15151515151515152
+        ],
+        [
+          "seduction",
+          0.09090909090909091
+        ],
+        [
+          "intensity_3",
+          0.06060606060606061
+        ],
+        [
+          "temptation",
+          0.06060606060606061
+        ]
+      ],
+      "content_types": [
+        "physical_intimacy",
+        "dialogue",
+        "party",
+        "vampire_feeding"
+      ],
+      "total_tag_instances": 33
+    },
+    {
+      "beat_id": "beat-s01e07-004",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.8421052631578947,
+        "intensity_2": 0.10526315789473684,
+        "teen_angst": 0.05263157894736842
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8421052631578947
+        ],
+        [
+          "intensity_2",
+          0.10526315789473684
+        ],
+        [
+          "teen_angst",
+          0.05263157894736842
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 19
+    },
+    {
+      "beat_id": "beat-s01e07-005",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.6857142857142857,
+        "teen_angst": 0.17142857142857143,
+        "intensity_2": 0.14285714285714285
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6857142857142857
+        ],
+        [
+          "teen_angst",
+          0.17142857142857143
+        ],
+        [
+          "intensity_2",
+          0.14285714285714285
+        ]
+      ],
+      "content_types": [
+        "dance",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 35
+    },
+    {
+      "beat_id": "beat-s01e07-006",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.575,
+        "teen_angst": 0.125,
+        "intensity_2": 0.15,
+        "dependence": 0.05,
+        "intensity_3": 0.05,
+        "blood_as_ritual": 0.05
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.575
+        ],
+        [
+          "intensity_2",
+          0.15
+        ],
+        [
+          "teen_angst",
+          0.125
+        ],
+        [
+          "dependence",
+          0.05
+        ],
+        [
+          "intensity_3",
+          0.05
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "party",
+        "dialogue",
+        "confrontation",
+        "dance"
+      ],
+      "total_tag_instances": 40
+    },
+    {
+      "beat_id": "beat-s01e07-007",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "teen_angst": 0.0625,
+        "intensity_2": 0.125,
+        "intensity_1": 0.8125
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.8125
+        ],
+        [
+          "intensity_2",
+          0.125
+        ],
+        [
+          "teen_angst",
+          0.0625
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 16
+    },
+    {
+      "beat_id": "beat-s01e07-008",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.6875,
+        "intensity_4": 0.125,
+        "dependence": 0.0625,
+        "intensity_3": 0.0625,
+        "blood_as_ritual": 0.0625
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6875
+        ],
+        [
+          "intensity_4",
+          0.125
+        ],
+        [
+          "dependence",
+          0.0625
+        ],
+        [
+          "intensity_3",
+          0.0625
+        ],
+        [
+          "blood_as_ritual",
+          0.0625
+        ]
+      ],
+      "content_types": [
+        "vampire_feeding",
+        "dialogue"
+      ],
+      "total_tag_instances": 16
+    },
+    {
+      "beat_id": "beat-s01e07-009",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.7586206896551724,
+        "teen_angst": 0.034482758620689655,
+        "intensity_2": 0.06896551724137931,
+        "intensity_4": 0.13793103448275862
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7586206896551724
+        ],
+        [
+          "intensity_4",
+          0.13793103448275862
+        ],
+        [
+          "intensity_2",
+          0.06896551724137931
+        ],
+        [
+          "teen_angst",
+          0.034482758620689655
+        ]
+      ],
+      "content_types": [
+        "confrontation",
+        "dialogue",
+        "party"
+      ],
+      "total_tag_instances": 29
+    },
+    {
+      "beat_id": "beat-s01e07-010",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 0.875,
+        "intensity_4": 0.125
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.875
+        ],
+        [
+          "intensity_4",
+          0.125
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 16
+    },
+    {
+      "beat_id": "beat-s01e07-011",
+      "episode_id": "s01e07",
+      "tag_frequencies": {
+        "intensity_1": 1.0
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          1.0
+        ]
+      ],
+      "content_types": [
+        "dialogue"
+      ],
+      "total_tag_instances": 1
+    }
+  ],
+  "episode_signatures": [
+    {
+      "episode_id": "s01e01",
+      "tag_signature": {
+        "dependence": 0.04677886601130126,
+        "intensity_3": 0.049109868342303596,
+        "blood_as_ritual": 0.04677886601130126,
+        "intensity_1": 0.588579581879917,
+        "teen_angst": 0.06624225853159554,
+        "intensity_2": 0.08167565806643148,
+        "intensity_4": 0.0374134831360031,
+        "seduction": 0.03213240852318193,
+        "temptation": 0.029801406192179594,
+        "manipulation": 0.010743801652892564,
+        "forbidden_desire": 0.010743801652892564
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.588579581879917
+        ],
+        [
+          "intensity_2",
+          0.08167565806643148
+        ],
+        [
+          "teen_angst",
+          0.06624225853159554
+        ],
+        [
+          "intensity_3",
+          0.049109868342303596
+        ],
+        [
+          "dependence",
+          0.04677886601130126
+        ],
+        [
+          "blood_as_ritual",
+          0.04677886601130126
+        ],
+        [
+          "intensity_4",
+          0.0374134831360031
+        ],
+        [
+          "seduction",
+          0.03213240852318193
+        ],
+        [
+          "temptation",
+          0.029801406192179594
+        ],
+        [
+          "manipulation",
+          0.010743801652892564
+        ]
+      ],
+      "beat_count": 11
+    },
+    {
+      "episode_id": "s01e02",
+      "tag_signature": {
+        "intensity_1": 0.7978395061728395,
+        "teen_angst": 0.024691358024691357,
+        "intensity_2": 0.012345679012345678,
+        "dependence": 0.012345679012345678,
+        "intensity_3": 0.037037037037037035,
+        "blood_as_ritual": 0.012345679012345678,
+        "intensity_4": 0.0787037037037037,
+        "seduction": 0.024691358024691357
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7978395061728395
+        ],
+        [
+          "intensity_4",
+          0.0787037037037037
+        ],
+        [
+          "intensity_3",
+          0.037037037037037035
+        ],
+        [
+          "teen_angst",
+          0.024691358024691357
+        ],
+        [
+          "seduction",
+          0.024691358024691357
+        ],
+        [
+          "intensity_2",
+          0.012345679012345678
+        ],
+        [
+          "dependence",
+          0.012345679012345678
+        ],
+        [
+          "blood_as_ritual",
+          0.012345679012345678
+        ]
+      ],
+      "beat_count": 3
+    },
+    {
+      "episode_id": "s01e03",
+      "tag_signature": {
+        "intensity_1": 0.762333296353356,
+        "intensity_3": 0.026908512609244515,
+        "seduction": 0.01801070579872423,
+        "dependence": 0.021515757216489125,
+        "blood_as_ritual": 0.021515757216489125,
+        "intensity_4": 0.045750589631045044,
+        "intensity_2": 0.05364127755019595,
+        "teen_angst": 0.037706153218487186,
+        "temptation": 0.01261795040596884
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.762333296353356
+        ],
+        [
+          "intensity_2",
+          0.05364127755019595
+        ],
+        [
+          "intensity_4",
+          0.045750589631045044
+        ],
+        [
+          "teen_angst",
+          0.037706153218487186
+        ],
+        [
+          "intensity_3",
+          0.026908512609244515
+        ],
+        [
+          "dependence",
+          0.021515757216489125
+        ],
+        [
+          "blood_as_ritual",
+          0.021515757216489125
+        ],
+        [
+          "seduction",
+          0.01801070579872423
+        ],
+        [
+          "temptation",
+          0.01261795040596884
+        ]
+      ],
+      "beat_count": 14
+    },
+    {
+      "episode_id": "s01e04",
+      "tag_signature": {
+        "intensity_1": 0.675775324749783,
+        "dependence": 0.021447334914827174,
+        "intensity_3": 0.03600962447711673,
+        "blood_as_ritual": 0.021447334914827174,
+        "intensity_2": 0.05707846236580757,
+        "intensity_4": 0.10487581662117267,
+        "teen_angst": 0.03240383573684657,
+        "seduction": 0.03276227789095436,
+        "temptation": 0.0181999883286648
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.675775324749783
+        ],
+        [
+          "intensity_4",
+          0.10487581662117267
+        ],
+        [
+          "intensity_2",
+          0.05707846236580757
+        ],
+        [
+          "intensity_3",
+          0.03600962447711673
+        ],
+        [
+          "seduction",
+          0.03276227789095436
+        ],
+        [
+          "teen_angst",
+          0.03240383573684657
+        ],
+        [
+          "dependence",
+          0.021447334914827174
+        ],
+        [
+          "blood_as_ritual",
+          0.021447334914827174
+        ],
+        [
+          "temptation",
+          0.0181999883286648
+        ]
+      ],
+      "beat_count": 12
+    },
+    {
+      "episode_id": "s01e05",
+      "tag_signature": {
+        "intensity_1": 0.6619562258803674,
+        "intensity_4": 0.13998837427938543,
+        "teen_angst": 0.05688633826445348,
+        "intensity_2": 0.08422899549234644,
+        "dependence": 0.009436215957955088,
+        "intensity_3": 0.01191760553611886,
+        "blood_as_ritual": 0.009436215957955088,
+        "seduction": 0.014315709104790991,
+        "temptation": 0.01183431952662722
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6619562258803674
+        ],
+        [
+          "intensity_4",
+          0.13998837427938543
+        ],
+        [
+          "intensity_2",
+          0.08422899549234644
+        ],
+        [
+          "teen_angst",
+          0.05688633826445348
+        ],
+        [
+          "seduction",
+          0.014315709104790991
+        ],
+        [
+          "intensity_3",
+          0.01191760553611886
+        ],
+        [
+          "temptation",
+          0.01183431952662722
+        ],
+        [
+          "dependence",
+          0.009436215957955088
+        ],
+        [
+          "blood_as_ritual",
+          0.009436215957955088
+        ]
+      ],
+      "beat_count": 13
+    },
+    {
+      "episode_id": "s01e06",
+      "tag_signature": {
+        "intensity_1": 0.6842661699113312,
+        "dependence": 0.042910202103750496,
+        "intensity_3": 0.04964679884034723,
+        "blood_as_ritual": 0.042910202103750496,
+        "teen_angst": 0.04294938633648312,
+        "intensity_2": 0.05216687136041975,
+        "intensity_4": 0.06617601036955877,
+        "temptation": 0.005244755244755245,
+        "seduction": 0.013729603729603732
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.6842661699113312
+        ],
+        [
+          "intensity_4",
+          0.06617601036955877
+        ],
+        [
+          "intensity_2",
+          0.05216687136041975
+        ],
+        [
+          "intensity_3",
+          0.04964679884034723
+        ],
+        [
+          "teen_angst",
+          0.04294938633648312
+        ],
+        [
+          "dependence",
+          0.042910202103750496
+        ],
+        [
+          "blood_as_ritual",
+          0.042910202103750496
+        ],
+        [
+          "seduction",
+          0.013729603729603732
+        ],
+        [
+          "temptation",
+          0.005244755244755245
+        ]
+      ],
+      "beat_count": 13
+    },
+    {
+      "episode_id": "s01e07",
+      "tag_signature": {
+        "inheritance_as_cage": 0.005681818181818182,
+        "intensity_1": 0.7609255906607828,
+        "coercion": 0.005681818181818182,
+        "intensity_4": 0.05370256702545104,
+        "teen_angst": 0.05029718329297606,
+        "intensity_2": 0.0682358160455834,
+        "intensity_3": 0.015736914600550964,
+        "seduction": 0.008264462809917356,
+        "dependence": 0.012982093663911847,
+        "blood_as_ritual": 0.012982093663911847,
+        "temptation": 0.005509641873278237
+      },
+      "dominant_tags": [
+        [
+          "intensity_1",
+          0.7609255906607828
+        ],
+        [
+          "intensity_2",
+          0.0682358160455834
+        ],
+        [
+          "intensity_4",
+          0.05370256702545104
+        ],
+        [
+          "teen_angst",
+          0.05029718329297606
+        ],
+        [
+          "intensity_3",
+          0.015736914600550964
+        ],
+        [
+          "dependence",
+          0.012982093663911847
+        ],
+        [
+          "blood_as_ritual",
+          0.012982093663911847
+        ],
+        [
+          "seduction",
+          0.008264462809917356
+        ],
+        [
+          "inheritance_as_cage",
+          0.005681818181818182
+        ],
+        [
+          "coercion",
+          0.005681818181818182
+        ]
+      ],
+      "beat_count": 11
+    }
+  ],
+  "total_beats_processed": 77,
+  "total_episodes_processed": 7
+}
