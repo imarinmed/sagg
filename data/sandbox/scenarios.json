@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "description": "Shadow Sandbox - What-if scenario workspace for SST adaptation",
+  "scenarios": [],
+  "templates": [
+    {
+      "template_id": "character_arc_variant",
+      "name": "Character Arc Variant",
+      "description": "Explore an alternate path for a character",
+      "fields": [
+        "character_id",
+        "divergence_point",
+        "alternate_choice",
+        "consequences"
+      ]
+    },
+    {
+      "template_id": "relationship_shift",
+      "name": "Relationship Shift",
+      "description": "What if two characters had a different relationship?",
+      "fields": [
+        "character_a",
+        "character_b",
+        "new_dynamic",
+        "ripple_effects"
+      ]
+    },
+    {
+      "template_id": "mythos_change",
+      "name": "Mythos Change",
+      "description": "How would a changed lore element affect the story?",
+      "fields": [
+        "mythos_element",
+        "changed_property",
+        "downstream_effects"
+      ]
+    },
+    {
+      "template_id": "scene_rewrite",
+      "name": "Scene Rewrite",
+      "description": "Rewrite a key scene with different choices",
+      "fields": [
+        "episode_id",
+        "scene_id",
+        "original_outcome",
+        "new_outcome"
+      ]
+    }
+  ],
+  "example_scenarios": [
+    {
+      "scenario_id": "sandbox-example-001",
+      "title": "Kiara's Darker Awakening",
+      "description": "What if Kiara embraced her vampire nature immediately?",
+      "template": "character_arc_variant",
+      "based_on": {
+        "episode": "s01e01",
+        "scene": "arrival"
+      },
+      "changes": [
+        {
+          "type": "character_trait",
+          "target": "kiara_natt_och_dag",
+          "from": "reluctant",
+          "to": "embracing",
+          "magnitude": "dramatic"
+        }
+      ],
+      "predicted_ripples": [
+        {
+          "order": 1,
+          "effect": "Kiara seduces Alfred instead of hesitating"
+        },
+        {
+          "order": 2,
+          "effect": "Family reacts with fear rather than patience"
+        },
+        {
+          "order": 3,
+          "effect": "Power dynamics shift toward Kiara earlier"
+        }
+      ],
+      "status": "explore",
+      "created_at": "2026-02-05T10:00:00Z",
+      "forked_from": null,
+      "forks": [],
+      "notes": "This creates a more dominant Kiara arc..."
+    }
+  ]
+}
