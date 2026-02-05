@@ -1,6 +1,13 @@
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict
 from datetime import datetime
+from enum import Enum
+
+
+class NarrativeVersion(str, Enum):
+    BST = "bst"
+    SST = "sst"
+    BOTH = "both"
 
 
 class KinkDescriptor(BaseModel):
