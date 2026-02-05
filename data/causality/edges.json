@@ -1,0 +1,3541 @@
+{
+  "version": "1.0.0",
+  "total_edges": 147,
+  "edges": [
+    {
+      "edge_id": "edge-0001",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-001",
+      "to_beat_id": "beat-s01e01-002",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Welcome back to the vampire channel Blood, Sweat, ...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Here it\u2019s not good grades that matter...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-001",
+          "to_beat": "beat-s01e01-002"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0002",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-002",
+      "to_beat_id": "beat-s01e01-003",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Here it\u2019s not good grades that matter....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: They get triggered by blood and sweat...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-002",
+          "to_beat": "beat-s01e01-003"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0003",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-003",
+      "to_beat_id": "beat-s01e01-004",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: They get triggered by blood and sweat....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Shit, seriously! I\u2019m gonna see if I can get a bett..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-003",
+          "to_beat": "beat-s01e01-004"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0004",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-004",
+      "to_beat_id": "beat-s01e01-005",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Shit, seriously! I\u2019m gonna see if I can get a bett...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-004",
+          "to_beat": "beat-s01e01-005"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0005",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-005",
+      "to_beat_id": "beat-s01e01-006",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-005",
+          "to_beat": "beat-s01e01-006"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0006",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-006",
+      "to_beat_id": "beat-s01e01-007",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: I\u2019m going to teach you everything I can, okay?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-006",
+          "to_beat": "beat-s01e01-007"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0007",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-007",
+      "to_beat_id": "beat-s01e01-008",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: I\u2019m going to teach you everything I can, okay?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013900\u2026 \u2013Blood and honor...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-007",
+          "to_beat": "beat-s01e01-008"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0008",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-008",
+      "to_beat_id": "beat-s01e01-009",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013900\u2026 \u2013Blood and honor....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Well, technically. But I\u2019ve got the vamp kit. \u2013Oh..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-008",
+          "to_beat": "beat-s01e01-009"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0009",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-009",
+      "to_beat_id": "beat-s01e01-010",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Well, technically. But I\u2019ve got the vamp kit. \u2013Oh...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Where\u2019s Kiara? We can\u2019t have another accident, Jac..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-009",
+          "to_beat": "beat-s01e01-010"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0010",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-010",
+      "to_beat_id": "beat-s01e01-011",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Where\u2019s Kiara? We can\u2019t have another accident, Jac...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Subtitles: Iyuno for SVT..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e01",
+          "from_beat": "beat-s01e01-010",
+          "to_beat": "beat-s01e01-011"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0011",
+      "version": "bst",
+      "from_beat_id": "beat-s01e02-001",
+      "to_beat_id": "beat-s01e02-002",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Kiara, do you have your anti-trigger medication un...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Yo! Hey, babes! \u2013Hi, Didde!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e02",
+          "from_beat": "beat-s01e02-001",
+          "to_beat": "beat-s01e02-002"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0012",
+      "version": "bst",
+      "from_beat_id": "beat-s01e02-002",
+      "to_beat_id": "beat-s01e02-003",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Yo! Hey, babes! \u2013Hi, Didde!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Unfortunately everyone gets to know you and you ge..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e02",
+          "from_beat": "beat-s01e02-002",
+          "to_beat": "beat-s01e02-003"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0013",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-001",
+      "to_beat_id": "beat-s01e03-002",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Oh, Kiara! Kiara! Kiara!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Okay. Welcome to Natt and Dag. Blood and honor...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-001",
+          "to_beat": "beat-s01e03-002"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0014",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-002",
+      "to_beat_id": "beat-s01e03-003",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Okay. Welcome to Natt and Dag. Blood and honor....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Nice house. \u2013Thanks...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-002",
+          "to_beat": "beat-s01e03-003"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0015",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-003",
+      "to_beat_id": "beat-s01e03-004",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Nice house. \u2013Thanks....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Absolutely. I show her around everywhere at school..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-003",
+          "to_beat": "beat-s01e03-004"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0016",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-004",
+      "to_beat_id": "beat-s01e03-005",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Absolutely. I show her around everywhere at school...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: That went well...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-004",
+          "to_beat": "beat-s01e03-005"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0017",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-005",
+      "to_beat_id": "beat-s01e03-006",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: That went well....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: His whole hand was bloody...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-005",
+          "to_beat": "beat-s01e03-006"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0018",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-006",
+      "to_beat_id": "beat-s01e03-007",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: His whole hand was bloody....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-006",
+          "to_beat": "beat-s01e03-007"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0019",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-007",
+      "to_beat_id": "beat-s01e03-008",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Do they? But I thought that\u2026 \u2013Yup. You need rhine..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-007",
+          "to_beat": "beat-s01e03-008"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0020",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-008",
+      "to_beat_id": "beat-s01e03-009",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Do they? But I thought that\u2026 \u2013Yup. You need rhine...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Come on, Affe. Pull yourself together...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-008",
+          "to_beat": "beat-s01e03-009"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0021",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-009",
+      "to_beat_id": "beat-s01e03-010",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Come on, Affe. Pull yourself together....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Yeah, vampires are still pretty cool...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-009",
+          "to_beat": "beat-s01e03-010"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0022",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-010",
+      "to_beat_id": "beat-s01e03-011",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Yeah, vampires are still pretty cool....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: I think it\u2019s completely right for you. Congratulat..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-010",
+          "to_beat": "beat-s01e03-011"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0023",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-011",
+      "to_beat_id": "beat-s01e03-012",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: I think it\u2019s completely right for you. Congratulat...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Because Alfred is a nerd!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-011",
+          "to_beat": "beat-s01e03-012"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0024",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-012",
+      "to_beat_id": "beat-s01e03-013",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Because Alfred is a nerd!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Jump in then. Vampires can\u2019t handle water?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-012",
+          "to_beat": "beat-s01e03-013"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0025",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-013",
+      "to_beat_id": "beat-s01e03-014",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Jump in then. Vampires can\u2019t handle water?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Help! Help!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e03",
+          "from_beat": "beat-s01e03-013",
+          "to_beat": "beat-s01e03-014"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0026",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-001",
+      "to_beat_id": "beat-s01e04-002",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Guys! \u2013Help! Help!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: You\u2019re far from home now. You\u2019re lost...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-001",
+          "to_beat": "beat-s01e04-002"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0027",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-002",
+      "to_beat_id": "beat-s01e04-003",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: You\u2019re far from home now. You\u2019re lost....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Have you ever thought about how fast I solve probl..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-002",
+          "to_beat": "beat-s01e04-003"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0028",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-003",
+      "to_beat_id": "beat-s01e04-004",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Have you ever thought about how fast I solve probl...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: I think I know. I can help you if you want...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-003",
+          "to_beat": "beat-s01e04-004"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0029",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-004",
+      "to_beat_id": "beat-s01e04-005",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: I think I know. I can help you if you want....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013What the fuck? Miss the training! \u2013It was worth i..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-004",
+          "to_beat": "beat-s01e04-005"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0030",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-005",
+      "to_beat_id": "beat-s01e04-006",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013What the fuck? Miss the training! \u2013It was worth i...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Well\u2026 We decide together...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-005",
+          "to_beat": "beat-s01e04-006"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0031",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-006",
+      "to_beat_id": "beat-s01e04-007",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Well\u2026 We decide together....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: What the hell do we do now?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-006",
+          "to_beat": "beat-s01e04-007"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0032",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-007",
+      "to_beat_id": "beat-s01e04-008",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: What the hell do we do now?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013It\u2019s like an orgasm for the brain. \u2013Nice!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-007",
+          "to_beat": "beat-s01e04-008"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0033",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-008",
+      "to_beat_id": "beat-s01e04-009",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013It\u2019s like an orgasm for the brain. \u2013Nice!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Did he get triggered? \u2013No...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-008",
+          "to_beat": "beat-s01e04-009"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0034",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-009",
+      "to_beat_id": "beat-s01e04-010",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Did he get triggered? \u2013No....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Yes...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-009",
+          "to_beat": "beat-s01e04-010"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0035",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-010",
+      "to_beat_id": "beat-s01e04-011",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Yes....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Hi Kiara! I brought some friends...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-010",
+          "to_beat": "beat-s01e04-011"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0036",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-011",
+      "to_beat_id": "beat-s01e04-012",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Hi Kiara! I brought some friends....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: There we go!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e04",
+          "from_beat": "beat-s01e04-011",
+          "to_beat": "beat-s01e04-012"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0037",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-001",
+      "to_beat_id": "beat-s01e05-002",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Thanks for tonight, cutie! So annoying that someon...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: You\u2019re not getting triggered, right?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-001",
+          "to_beat": "beat-s01e05-002"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0038",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-002",
+      "to_beat_id": "beat-s01e05-003",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: You\u2019re not getting triggered, right?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Hey, thanks for helping me. I\u2019ve been so worried...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-002",
+          "to_beat": "beat-s01e05-003"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0039",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-003",
+      "to_beat_id": "beat-s01e05-004",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Hey, thanks for helping me. I\u2019ve been so worried....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Have you heard? \u2013Heard what?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-003",
+          "to_beat": "beat-s01e05-004"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0040",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-004",
+      "to_beat_id": "beat-s01e05-005",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Have you heard? \u2013Heard what?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: It\u2019s also really important that we remember..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-004",
+          "to_beat": "beat-s01e05-005"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0041",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-005",
+      "to_beat_id": "beat-s01e05-006",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: It\u2019s also really important that we remember...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-005",
+          "to_beat": "beat-s01e05-006"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0042",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-006",
+      "to_beat_id": "beat-s01e05-007",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: 2478. There we go!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-006",
+          "to_beat": "beat-s01e05-007"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0043",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-007",
+      "to_beat_id": "beat-s01e05-008",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: 2478. There we go!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Come on! We\u2019re late...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-007",
+          "to_beat": "beat-s01e05-008"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0044",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-008",
+      "to_beat_id": "beat-s01e05-009",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Come on! We\u2019re late....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Ew! That\u2019s so gross. \u2013Yeah, I know...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-008",
+          "to_beat": "beat-s01e05-009"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0045",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-009",
+      "to_beat_id": "beat-s01e05-010",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Ew! That\u2019s so gross. \u2013Yeah, I know....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: What the fuck?! They stole Batgirls\u2019 founder...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-009",
+          "to_beat": "beat-s01e05-010"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0046",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-010",
+      "to_beat_id": "beat-s01e05-011",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: What the fuck?! They stole Batgirls\u2019 founder....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Well look who\u2019s here!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-010",
+          "to_beat": "beat-s01e05-011"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0047",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-011",
+      "to_beat_id": "beat-s01e05-012",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Well look who\u2019s here!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Excuse me. Have you seen Eric? \u2013No...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-011",
+          "to_beat": "beat-s01e05-012"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0048",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-012",
+      "to_beat_id": "beat-s01e05-013",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Excuse me. Have you seen Eric? \u2013No....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Elise, what the fuck? Stop it...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e05",
+          "from_beat": "beat-s01e05-012",
+          "to_beat": "beat-s01e05-013"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0049",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-001",
+      "to_beat_id": "beat-s01e06-002",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Your friend is doing as well as can be expected....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: And vamp is just as dangerous as vampires. Shut up..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-001",
+          "to_beat": "beat-s01e06-002"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0050",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-002",
+      "to_beat_id": "beat-s01e06-003",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: And vamp is just as dangerous as vampires. Shut up...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: The Blood System is going to file a child welfare ..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-002",
+          "to_beat": "beat-s01e06-003"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0051",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-003",
+      "to_beat_id": "beat-s01e06-004",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: The Blood System is going to file a child welfare ...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: If you swam in cold water..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-003",
+          "to_beat": "beat-s01e06-004"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0052",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-004",
+      "to_beat_id": "beat-s01e06-005",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: If you swam in cold water...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Do you see who it is?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-004",
+          "to_beat": "beat-s01e06-005"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0053",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-005",
+      "to_beat_id": "beat-s01e06-006",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Do you see who it is?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: What are you doing? You\u2019re not holding your positi..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-005",
+          "to_beat": "beat-s01e06-006"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0054",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-006",
+      "to_beat_id": "beat-s01e06-007",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: What are you doing? You\u2019re not holding your positi...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Damn it!..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-006",
+          "to_beat": "beat-s01e06-007"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0055",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-007",
+      "to_beat_id": "beat-s01e06-008",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Damn it!...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: I\u2019ve come to a decision, and it wasn\u2019t easy, I\u2019ll ..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-007",
+          "to_beat": "beat-s01e06-008"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0056",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-008",
+      "to_beat_id": "beat-s01e06-009",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: I\u2019ve come to a decision, and it wasn\u2019t easy, I\u2019ll ...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Yo. Need help, or?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-008",
+          "to_beat": "beat-s01e06-009"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0057",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-009",
+      "to_beat_id": "beat-s01e06-010",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Yo. Need help, or?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: That I got bitten by a vampire and you didn\u2019t...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-009",
+          "to_beat": "beat-s01e06-010"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0058",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-010",
+      "to_beat_id": "beat-s01e06-011",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: That I got bitten by a vampire and you didn\u2019t....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: It takes a lot of courage for you to show up here...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-010",
+          "to_beat": "beat-s01e06-011"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0059",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-011",
+      "to_beat_id": "beat-s01e06-012",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: It takes a lot of courage for you to show up here....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: But I\u2019ve thought about vampires my whole life,..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-011",
+          "to_beat": "beat-s01e06-012"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0060",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-012",
+      "to_beat_id": "beat-s01e06-013",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: But I\u2019ve thought about vampires my whole life,...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Subtitles: Iyuno for SVT..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e06",
+          "from_beat": "beat-s01e06-012",
+          "to_beat": "beat-s01e06-013"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0061",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-001",
+      "to_beat_id": "beat-s01e07-002",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: For those of you thinking about buying tickets, it..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-001",
+          "to_beat": "beat-s01e07-002"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0062",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-002",
+      "to_beat_id": "beat-s01e07-003",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: For those of you thinking about buying tickets, it...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Sorry. I didn\u2019t mean to make out with you...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-002",
+          "to_beat": "beat-s01e07-003"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0063",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-003",
+      "to_beat_id": "beat-s01e07-004",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Sorry. I didn\u2019t mean to make out with you....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Come pick me up. Of course I\u2019ll help you...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-003",
+          "to_beat": "beat-s01e07-004"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0064",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-004",
+      "to_beat_id": "beat-s01e07-005",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Come pick me up. Of course I\u2019ll help you....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013Cute, right? \u2013Super cute...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-004",
+          "to_beat": "beat-s01e07-005"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0065",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-005",
+      "to_beat_id": "beat-s01e07-006",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013Cute, right? \u2013Super cute....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: \u2013You\u2019re all just cowards. \u2013Elise, the discussion i..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-005",
+          "to_beat": "beat-s01e07-006"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0066",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-006",
+      "to_beat_id": "beat-s01e07-007",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: \u2013You\u2019re all just cowards. \u2013Elise, the discussion i...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Eric, did you hear what I said? Kiara is allowed a..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-006",
+          "to_beat": "beat-s01e07-007"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0067",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-007",
+      "to_beat_id": "beat-s01e07-008",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Eric, did you hear what I said? Kiara is allowed a...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: You really love him...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-007",
+          "to_beat": "beat-s01e07-008"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0068",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-008",
+      "to_beat_id": "beat-s01e07-009",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: You really love him....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: I can manage...."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-008",
+          "to_beat": "beat-s01e07-009"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0069",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-009",
+      "to_beat_id": "beat-s01e07-010",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: I can manage....",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Hey! Didn\u2019t you hear what I said?..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-009",
+          "to_beat": "beat-s01e07-010"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0070",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-010",
+      "to_beat_id": "beat-s01e07-011",
+      "type": "enables",
+      "stac": {
+        "situation": "Dialogue: Hey! Didn\u2019t you hear what I said?...",
+        "task": "Narrative progression",
+        "action": "Scene transition",
+        "consequence": "Dialogue: Subtitles: Iyuno for SVT..."
+      },
+      "mechanism_refs": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "episode_id": "s01e07",
+          "from_beat": "beat-s01e07-010",
+          "to_beat": "beat-s01e07-011"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0071",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-014",
+      "to_beat_id": "beat-s01e04-001",
+      "type": "motivates",
+      "stac": {
+        "situation": "eric at end of s01e03",
+        "task": "Continue eric's arc",
+        "action": "Episode transition",
+        "consequence": "eric in s01e04"
+      },
+      "mechanism_refs": [
+        "character_arc"
+      ],
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "character": "eric",
+          "from_episode": "s01e03",
+          "to_episode": "s01e04"
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0072",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-002",
+      "to_beat_id": "beat-s01e01-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Here it\u2019s not good grades that matter....",
+        "task": "Develop interaction between kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Shit, seriously! I\u2019m gonna see if I can get a bett..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 101.11999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0073",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-002",
+      "to_beat_id": "beat-s01e01-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Here it\u2019s not good grades that matter....",
+        "task": "Develop interaction between batgirl_3, batgirl_1",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_3",
+            "batgirl_1"
+          ],
+          "time_gap_seconds": 201.3
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0074",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-003",
+      "to_beat_id": "beat-s01e01-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: They get triggered by blood and sweat....",
+        "task": "Develop interaction between principal, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "principal",
+            "eric"
+          ],
+          "time_gap_seconds": 100.18000000000006
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0075",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-003",
+      "to_beat_id": "beat-s01e01-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: They get triggered by blood and sweat....",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 201.92000000000002
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0076",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-004",
+      "to_beat_id": "beat-s01e01-007",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Shit, seriously! I\u2019m gonna see if I can get a bett...",
+        "task": "Develop interaction between kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: I\u2019m going to teach you everything I can, okay?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 202.9799999999999
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0077",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-005",
+      "to_beat_id": "beat-s01e01-007",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ...",
+        "task": "Develop interaction between elise, batgirl_1",
+        "action": "Continued scene",
+        "consequence": "Dialogue: I\u2019m going to teach you everything I can, okay?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "batgirl_1",
+            "batgirl_3",
+            "eric"
+          ],
+          "time_gap_seconds": 101.23999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0078",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-005",
+      "to_beat_id": "beat-s01e01-008",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Now it\u2019s important to stroke with the fur. That\u2019s ...",
+        "task": "Develop interaction between elise, batgirl_1",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013900\u2026 \u2013Blood and honor...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "batgirl_1",
+            "batgirl_3",
+            "eric"
+          ],
+          "time_gap_seconds": 202.62000000000006
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0079",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-006",
+      "to_beat_id": "beat-s01e01-008",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric....",
+        "task": "Develop interaction between alfred, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013900\u2026 \u2013Blood and honor...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred",
+            "eric"
+          ],
+          "time_gap_seconds": 101.38000000000011
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0080",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-006",
+      "to_beat_id": "beat-s01e01-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Pick\u2019n\u2019Mix? \u2013I don\u2019t have time, Eric....",
+        "task": "Develop interaction between alfred, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Well, technically. But I\u2019ve got the vamp kit. \u2013Oh..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred",
+            "eric"
+          ],
+          "time_gap_seconds": 203.18000000000006
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0081",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-007",
+      "to_beat_id": "beat-s01e01-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: I\u2019m going to teach you everything I can, okay?...",
+        "task": "Develop interaction between batgirl_1, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Well, technically. But I\u2019ve got the vamp kit. \u2013Oh..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_1",
+            "alfred",
+            "elise",
+            "kiara_natt_och_dag",
+            "batgirl_3",
+            "eric"
+          ],
+          "time_gap_seconds": 101.79999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0082",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-007",
+      "to_beat_id": "beat-s01e01-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: I\u2019m going to teach you everything I can, okay?...",
+        "task": "Develop interaction between batgirl_1, kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Where\u2019s Kiara? We can\u2019t have another accident, Jac..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_1",
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 237.15999999999985
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0083",
+      "version": "bst",
+      "from_beat_id": "beat-s01e01-008",
+      "to_beat_id": "beat-s01e01-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013900\u2026 \u2013Blood and honor....",
+        "task": "Develop interaction between batgirl_1, kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Where\u2019s Kiara? We can\u2019t have another accident, Jac..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_1",
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 135.3599999999999
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0084",
+      "version": "bst",
+      "from_beat_id": "beat-s01e02-001",
+      "to_beat_id": "beat-s01e02-003",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Kiara, do you have your anti-trigger medication un...",
+        "task": "Develop interaction between mother",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Unfortunately everyone gets to know you and you ge..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "mother"
+          ],
+          "time_gap_seconds": 100.71999999999998
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0085",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-001",
+      "to_beat_id": "beat-s01e03-003",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Oh, Kiara! Kiara! Kiara!...",
+        "task": "Develop interaction between mother",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Nice house. \u2013Thanks...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "mother"
+          ],
+          "time_gap_seconds": 104.84000000000002
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0086",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-001",
+      "to_beat_id": "beat-s01e03-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Oh, Kiara! Kiara! Kiara!...",
+        "task": "Develop interaction between kiara_natt_och_dag, mother",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Absolutely. I show her around everywhere at school..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "mother"
+          ],
+          "time_gap_seconds": 208.06
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0087",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-002",
+      "to_beat_id": "beat-s01e03-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Okay. Welcome to Natt and Dag. Blood and honor....",
+        "task": "Develop interaction between alfred, mother",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Absolutely. I show her around everywhere at school..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred",
+            "mother",
+            "party_student_3"
+          ],
+          "time_gap_seconds": 103.21999999999997
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0088",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-002",
+      "to_beat_id": "beat-s01e03-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Okay. Welcome to Natt and Dag. Blood and honor....",
+        "task": "Develop interaction between alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: That went well...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred"
+          ],
+          "time_gap_seconds": 207.71999999999997
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0089",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-003",
+      "to_beat_id": "beat-s01e03-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Nice house. \u2013Thanks....",
+        "task": "Develop interaction between alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: That went well...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred"
+          ],
+          "time_gap_seconds": 104.5
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0090",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-003",
+      "to_beat_id": "beat-s01e03-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Nice house. \u2013Thanks....",
+        "task": "Develop interaction between alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: His whole hand was bloody...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred"
+          ],
+          "time_gap_seconds": 206.5
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0091",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-004",
+      "to_beat_id": "beat-s01e03-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Absolutely. I show her around everywhere at school...",
+        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: His whole hand was bloody...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "alfred"
+          ],
+          "time_gap_seconds": 102.0
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0092",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-005",
+      "to_beat_id": "beat-s01e03-008",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: That went well....",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Do they? But I thought that\u2026 \u2013Yup. You need rhine..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 203.33999999999992
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0093",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-006",
+      "to_beat_id": "beat-s01e03-008",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: His whole hand was bloody....",
+        "task": "Develop interaction between elise, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Do they? But I thought that\u2026 \u2013Yup. You need rhine..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "eric"
+          ],
+          "time_gap_seconds": 102.67999999999984
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0094",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-006",
+      "to_beat_id": "beat-s01e03-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: His whole hand was bloody....",
+        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Come on, Affe. Pull yourself together...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "alfred"
+          ],
+          "time_gap_seconds": 218.96000000000004
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0095",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-007",
+      "to_beat_id": "beat-s01e03-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013But I don\u2019t have 11,000. \u2013Pookie\u2026...",
+        "task": "Develop interaction between chloe",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Yeah, vampires are still pretty cool...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "chloe"
+          ],
+          "time_gap_seconds": 218.5200000000001
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0096",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-008",
+      "to_beat_id": "beat-s01e03-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Do they? But I thought that\u2026 \u2013Yup. You need rhine...",
+        "task": "Develop interaction between party_student_3",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Yeah, vampires are still pretty cool...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "party_student_3"
+          ],
+          "time_gap_seconds": 102.2399999999999
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0097",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-008",
+      "to_beat_id": "beat-s01e03-011",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Do they? But I thought that\u2026 \u2013Yup. You need rhine...",
+        "task": "Develop interaction between party_student_3",
+        "action": "Continued scene",
+        "consequence": "Dialogue: I think it\u2019s completely right for you. Congratulat..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "party_student_3"
+          ],
+          "time_gap_seconds": 205.0999999999999
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0098",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-009",
+      "to_beat_id": "beat-s01e03-011",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Come on, Affe. Pull yourself together....",
+        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: I think it\u2019s completely right for you. Congratulat..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "alfred"
+          ],
+          "time_gap_seconds": 102.86000000000001
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0099",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-009",
+      "to_beat_id": "beat-s01e03-012",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Come on, Affe. Pull yourself together....",
+        "task": "Develop interaction between alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Because Alfred is a nerd!..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred"
+          ],
+          "time_gap_seconds": 207.41999999999996
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0100",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-010",
+      "to_beat_id": "beat-s01e03-012",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Yeah, vampires are still pretty cool....",
+        "task": "Develop interaction between alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Because Alfred is a nerd!..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred"
+          ],
+          "time_gap_seconds": 104.55999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0101",
+      "version": "bst",
+      "from_beat_id": "beat-s01e03-012",
+      "to_beat_id": "beat-s01e03-014",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Because Alfred is a nerd!...",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Help! Help!..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 101.53999999999996
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0102",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-001",
+      "to_beat_id": "beat-s01e04-003",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Guys! \u2013Help! Help!...",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Have you ever thought about how fast I solve probl..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 111.56
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0103",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-003",
+      "to_beat_id": "beat-s01e04-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Have you ever thought about how fast I solve probl...",
+        "task": "Develop interaction between elise",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013What the fuck? Miss the training! \u2013It was worth i..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise"
+          ],
+          "time_gap_seconds": 100.56
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0104",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-003",
+      "to_beat_id": "beat-s01e04-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Have you ever thought about how fast I solve probl...",
+        "task": "Develop interaction between elise, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Well\u2026 We decide together...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "eric"
+          ],
+          "time_gap_seconds": 201.86
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0105",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-004",
+      "to_beat_id": "beat-s01e04-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: I think I know. I can help you if you want....",
+        "task": "Develop interaction between elise, chloe",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Well\u2026 We decide together...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "chloe",
+            "alfred"
+          ],
+          "time_gap_seconds": 101.30000000000001
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0106",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-004",
+      "to_beat_id": "beat-s01e04-007",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: I think I know. I can help you if you want....",
+        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: What the hell do we do now?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "alfred"
+          ],
+          "time_gap_seconds": 204.90000000000003
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0107",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-005",
+      "to_beat_id": "beat-s01e04-007",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013What the fuck? Miss the training! \u2013It was worth i...",
+        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: What the hell do we do now?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "alfred",
+            "kevin"
+          ],
+          "time_gap_seconds": 103.60000000000002
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0108",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-005",
+      "to_beat_id": "beat-s01e04-008",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013What the fuck? Miss the training! \u2013It was worth i...",
+        "task": "Develop interaction between kevin",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013It\u2019s like an orgasm for the brain. \u2013Nice!..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kevin"
+          ],
+          "time_gap_seconds": 203.69999999999993
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0109",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-006",
+      "to_beat_id": "beat-s01e04-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Well\u2026 We decide together....",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Did he get triggered? \u2013No...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 202.67999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0110",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-007",
+      "to_beat_id": "beat-s01e04-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: What the hell do we do now?...",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Did he get triggered? \u2013No...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 102.58000000000004
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0111",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-007",
+      "to_beat_id": "beat-s01e04-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: What the hell do we do now?...",
+        "task": "Develop interaction between kiara_natt_och_dag, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Yes...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "eric",
+            "kevin"
+          ],
+          "time_gap_seconds": 204.80000000000007
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0112",
+      "version": "bst",
+      "from_beat_id": "beat-s01e04-008",
+      "to_beat_id": "beat-s01e04-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013It\u2019s like an orgasm for the brain. \u2013Nice!...",
+        "task": "Develop interaction between kevin",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Yes...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kevin"
+          ],
+          "time_gap_seconds": 102.22000000000003
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0113",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-001",
+      "to_beat_id": "beat-s01e05-003",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Thanks for tonight, cutie! So annoying that someon...",
+        "task": "Develop interaction between alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Hey, thanks for helping me. I\u2019ve been so worried...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred"
+          ],
+          "time_gap_seconds": 101.75999999999999
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0114",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-001",
+      "to_beat_id": "beat-s01e05-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Thanks for tonight, cutie! So annoying that someon...",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Have you heard? \u2013Heard what?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 211.84
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0115",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-002",
+      "to_beat_id": "beat-s01e05-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: You\u2019re not getting triggered, right?...",
+        "task": "Develop interaction between elise",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Have you heard? \u2013Heard what?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise"
+          ],
+          "time_gap_seconds": 110.08000000000001
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0116",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-002",
+      "to_beat_id": "beat-s01e05-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: You\u2019re not getting triggered, right?...",
+        "task": "Develop interaction between chloe",
+        "action": "Continued scene",
+        "consequence": "Dialogue: It\u2019s also really important that we remember..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "chloe"
+          ],
+          "time_gap_seconds": 216.06000000000003
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0117",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-003",
+      "to_beat_id": "beat-s01e05-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Hey, thanks for helping me. I\u2019ve been so worried....",
+        "task": "Develop interaction between didde, kevin",
+        "action": "Continued scene",
+        "consequence": "Dialogue: It\u2019s also really important that we remember..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "didde",
+            "kevin"
+          ],
+          "time_gap_seconds": 105.98000000000002
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0118",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-003",
+      "to_beat_id": "beat-s01e05-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Hey, thanks for helping me. I\u2019ve been so worried....",
+        "task": "Develop interaction between elise, kevin",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "kevin"
+          ],
+          "time_gap_seconds": 220.7800000000001
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0119",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-004",
+      "to_beat_id": "beat-s01e05-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Have you heard? \u2013Heard what?...",
+        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 114.80000000000007
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0120",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-004",
+      "to_beat_id": "beat-s01e05-007",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Have you heard? \u2013Heard what?...",
+        "task": "Develop interaction between kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: 2478. There we go!..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 223.34000000000003
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0121",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-005",
+      "to_beat_id": "beat-s01e05-008",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: It\u2019s also really important that we remember...",
+        "task": "Develop interaction between batgirl_3, batgirl_1",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Come on! We\u2019re late...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_3",
+            "batgirl_1",
+            "chloe"
+          ],
+          "time_gap_seconds": 222.05999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0122",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-006",
+      "to_beat_id": "beat-s01e05-008",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?...",
+        "task": "Develop interaction between batgirl_3, batgirl_1",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Come on! We\u2019re late...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_3",
+            "batgirl_1",
+            "chloe",
+            "siri"
+          ],
+          "time_gap_seconds": 113.51999999999998
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0123",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-006",
+      "to_beat_id": "beat-s01e05-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Shouldn\u2019t you be stretching your legs on the kick?...",
+        "task": "Develop interaction between batgirl_1, chloe",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Ew! That\u2019s so gross. \u2013Yeah, I know...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_1",
+            "chloe",
+            "kiara_natt_och_dag",
+            "batgirl_3",
+            "party_student_3"
+          ],
+          "time_gap_seconds": 215.89999999999986
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0124",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-007",
+      "to_beat_id": "beat-s01e05-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: 2478. There we go!...",
+        "task": "Develop interaction between kiara_natt_och_dag, party_student_3",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Ew! That\u2019s so gross. \u2013Yeah, I know...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "party_student_3"
+          ],
+          "time_gap_seconds": 102.37999999999988
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0125",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-008",
+      "to_beat_id": "beat-s01e05-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Come on! We\u2019re late....",
+        "task": "Develop interaction between batgirl_3, batgirl_1",
+        "action": "Continued scene",
+        "consequence": "Dialogue: What the fuck?! They stole Batgirls\u2019 founder...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_3",
+            "batgirl_1"
+          ],
+          "time_gap_seconds": 127.46000000000004
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0126",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-009",
+      "to_beat_id": "beat-s01e05-011",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Ew! That\u2019s so gross. \u2013Yeah, I know....",
+        "task": "Develop interaction between kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Well look who\u2019s here!..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 116.72000000000003
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0127",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-009",
+      "to_beat_id": "beat-s01e05-012",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Ew! That\u2019s so gross. \u2013Yeah, I know....",
+        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Excuse me. Have you seen Eric? \u2013No...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "alfred"
+          ],
+          "time_gap_seconds": 218.27999999999997
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0128",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-010",
+      "to_beat_id": "beat-s01e05-012",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: What the fuck?! They stole Batgirls\u2019 founder....",
+        "task": "Develop interaction between elise",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Excuse me. Have you seen Eric? \u2013No...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise"
+          ],
+          "time_gap_seconds": 101.55999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0129",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-010",
+      "to_beat_id": "beat-s01e05-013",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: What the fuck?! They stole Batgirls\u2019 founder....",
+        "task": "Develop interaction between elise",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Elise, what the fuck? Stop it...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise"
+          ],
+          "time_gap_seconds": 204.07999999999993
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0130",
+      "version": "bst",
+      "from_beat_id": "beat-s01e05-011",
+      "to_beat_id": "beat-s01e05-013",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Well look who\u2019s here!...",
+        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Elise, what the fuck? Stop it...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 102.51999999999998
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0131",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-001",
+      "to_beat_id": "beat-s01e06-003",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Your friend is doing as well as can be expected....",
+        "task": "Develop interaction between party_student_3",
+        "action": "Continued scene",
+        "consequence": "Dialogue: The Blood System is going to file a child welfare ..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "party_student_3"
+          ],
+          "time_gap_seconds": 102.54
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0132",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-001",
+      "to_beat_id": "beat-s01e06-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Your friend is doing as well as can be expected....",
+        "task": "Develop interaction between alfred, party_student_3",
+        "action": "Continued scene",
+        "consequence": "Dialogue: If you swam in cold water..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred",
+            "party_student_3"
+          ],
+          "time_gap_seconds": 203.0
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0133",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-002",
+      "to_beat_id": "beat-s01e06-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: And vamp is just as dangerous as vampires. Shut up...",
+        "task": "Develop interaction between batgirl_1, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: If you swam in cold water..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "batgirl_1",
+            "alfred",
+            "kiara_natt_och_dag",
+            "batgirl_3",
+            "eric"
+          ],
+          "time_gap_seconds": 100.45999999999998
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0134",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-002",
+      "to_beat_id": "beat-s01e06-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: And vamp is just as dangerous as vampires. Shut up...",
+        "task": "Develop interaction between kiara_natt_och_dag, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Do you see who it is?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "eric"
+          ],
+          "time_gap_seconds": 216.29999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0135",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-003",
+      "to_beat_id": "beat-s01e06-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: The Blood System is going to file a child welfare ...",
+        "task": "Develop interaction between eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Do you see who it is?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "eric"
+          ],
+          "time_gap_seconds": 115.83999999999997
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0136",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-003",
+      "to_beat_id": "beat-s01e06-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: The Blood System is going to file a child welfare ...",
+        "task": "Develop interaction between elise, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: What are you doing? You\u2019re not holding your positi..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "eric"
+          ],
+          "time_gap_seconds": 234.2
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0137",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-004",
+      "to_beat_id": "beat-s01e06-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: If you swam in cold water...",
+        "task": "Develop interaction between elise, chloe",
+        "action": "Continued scene",
+        "consequence": "Dialogue: What are you doing? You\u2019re not holding your positi..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "chloe",
+            "kiara_natt_och_dag",
+            "eric"
+          ],
+          "time_gap_seconds": 118.36000000000001
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0138",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-006",
+      "to_beat_id": "beat-s01e06-009",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: What are you doing? You\u2019re not holding your positi...",
+        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Yo. Need help, or?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "kiara_natt_och_dag",
+            "eric"
+          ],
+          "time_gap_seconds": 221.79999999999995
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0139",
+      "version": "bst",
+      "from_beat_id": "beat-s01e06-009",
+      "to_beat_id": "beat-s01e06-011",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Yo. Need help, or?...",
+        "task": "Develop interaction between kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: It takes a lot of courage for you to show up here...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 128.93999999999983
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0140",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-001",
+      "to_beat_id": "beat-s01e07-003",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?...",
+        "task": "Develop interaction between kiara_natt_och_dag, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Sorry. I didn\u2019t mean to make out with you...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "kiara_natt_och_dag",
+            "alfred"
+          ],
+          "time_gap_seconds": 103.28
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0141",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-001",
+      "to_beat_id": "beat-s01e07-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Desir\u00e9e: Kiara\u2026 Please, can I come in?...",
+        "task": "Develop interaction between alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Come pick me up. Of course I\u2019ll help you...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "alfred"
+          ],
+          "time_gap_seconds": 206.45999999999998
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0142",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-002",
+      "to_beat_id": "beat-s01e07-004",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: For those of you thinking about buying tickets, it...",
+        "task": "Develop interaction between livia, batgirl_3",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Come pick me up. Of course I\u2019ll help you...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "livia",
+            "batgirl_3",
+            "batgirl_1",
+            "alfred"
+          ],
+          "time_gap_seconds": 103.17999999999998
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0143",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-002",
+      "to_beat_id": "beat-s01e07-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: For those of you thinking about buying tickets, it...",
+        "task": "Develop interaction between livia, elise",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Cute, right? \u2013Super cute...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "livia",
+            "elise",
+            "alfred",
+            "eric"
+          ],
+          "time_gap_seconds": 203.67999999999998
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0144",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-003",
+      "to_beat_id": "beat-s01e07-005",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Sorry. I didn\u2019t mean to make out with you....",
+        "task": "Develop interaction between elise, alfred",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013Cute, right? \u2013Super cute...."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "alfred"
+          ],
+          "time_gap_seconds": 100.5
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0145",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-003",
+      "to_beat_id": "beat-s01e07-006",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Sorry. I didn\u2019t mean to make out with you....",
+        "task": "Develop interaction between elise, kiara_natt_och_dag",
+        "action": "Continued scene",
+        "consequence": "Dialogue: \u2013You\u2019re all just cowards. \u2013Elise, the discussion i..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "kiara_natt_och_dag"
+          ],
+          "time_gap_seconds": 201.68000000000006
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0146",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-005",
+      "to_beat_id": "beat-s01e07-007",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: \u2013Cute, right? \u2013Super cute....",
+        "task": "Develop interaction between elise, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Eric, did you hear what I said? Kiara is allowed a..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "eric"
+          ],
+          "time_gap_seconds": 102.57999999999993
+        }
+      ]
+    },
+    {
+      "edge_id": "edge-0147",
+      "version": "bst",
+      "from_beat_id": "beat-s01e07-007",
+      "to_beat_id": "beat-s01e07-010",
+      "type": "reveals",
+      "stac": {
+        "situation": "Dialogue: Eric, did you hear what I said? Kiara is allowed a...",
+        "task": "Develop interaction between elise, eric",
+        "action": "Continued scene",
+        "consequence": "Dialogue: Hey! Didn\u2019t you hear what I said?..."
+      },
+      "mechanism_refs": [
+        "relationship_development"
+      ],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "shared_characters": [
+            "elise",
+            "eric"
+          ],
+          "time_gap_seconds": 200.92000000000007
+        }
+      ]
+    }
+  ]
+}
