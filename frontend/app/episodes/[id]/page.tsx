@@ -33,6 +33,8 @@ import { CinematicHero } from "@/components/CinematicHero";
 import { CharacterPresenceTimeline } from "@/components/CharacterPresenceTimeline";
 import { ContentIntensityIndicator } from "@/components/ContentIntensityIndicator";
 import { SceneBreakdownCards } from "@/components/SceneBreakdownCards";
+import { ForgeButton } from "@/components/ForgeButton";
+import { CreativeCompanionPanel } from "@/components/CreativeCompanionPanel";
 import { api, Episode, VideoMoment, VideoAnalysisData } from "@/lib/api";
 
 interface DialogueLine {
@@ -92,6 +94,18 @@ export default function EpisodeDetailPage() {
   const [activeTab, setActiveTab] = useState("overview");
   const [selectedMoment, setSelectedMoment] = useState<VideoMoment | null>(null);
   const [activeSceneId, setActiveSceneId] = useState<string | null>(null);
+  const [isPanelOpen, setIsPanelOpen] = useState(false);
+
+  useEffect(() => {
+    const savedState = localStorage.getItem("creative-panel-open");
+    if (savedState === "true") {
+      setIsPanelOpen(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("creative-panel-open", String(isPanelOpen));
+  }, [isPanelOpen]);
 
   const episodeAnalysis = useMemo(() => {
     if (!videoAnalysis) return null;
@@ -227,6 +241,10 @@ export default function EpisodeDetailPage() {
 
   return (
     <div className="space-y-0 animate-fade-in-up">
+      <div className="absolute top-4 right-4 z-50">
+        <ForgeButton onClick={() => setIsPanelOpen(true)} />
+      </div>
+
       {/* Cinematic Hero */}
       <CinematicHero
         episode={episode}
@@ -558,6 +576,13 @@ export default function EpisodeDetailPage() {
         onNext={handleNextMoment}
         hasPrevious={selectedMomentIndex > 0}
         hasNext={selectedMomentIndex < screenshotMoments.length - 1}
+      />
+
+      <CreativeCompanionPanel
+        isOpen={isPanelOpen}
+        onClose={() => setIsPanelOpen(false)}
+        entityId={episodeId}
+        entityType="episode"
       />
     </div>
   );

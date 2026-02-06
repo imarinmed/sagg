@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
 import { LoreConnectionGraph } from "@/components/LoreConnectionGraph";
+import { ForgeButton } from "@/components/ForgeButton";
+import { CreativeCompanionPanel } from "@/components/CreativeCompanionPanel";
 import { api, MythosElement, MythosConnection, MythosGraphData } from "@/lib/api";
 
 const CATEGORY_STYLES: Record<string, string> = {
@@ -99,6 +101,18 @@ export default function MythosDetailPage() {
   const [elements, setElements] = useState<MythosElement[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isPanelOpen, setIsPanelOpen] = useState(false);
+
+  useEffect(() => {
+    const savedState = localStorage.getItem("creative-panel-open");
+    if (savedState === "true") {
+      setIsPanelOpen(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("creative-panel-open", String(isPanelOpen));
+  }, [isPanelOpen]);
 
   useEffect(() => {
     const load = async () => {
@@ -157,13 +171,14 @@ export default function MythosDetailPage() {
 
   return (
     <div className="space-y-8 animate-fade-in-up">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center justify-between gap-4">
         <Link href="/mythos">
           <Button variant="ghost" className="text-[var(--color-text-secondary)]">
             <ChevronLeft className="w-4 h-4" />
             Mythos
           </Button>
         </Link>
+        <ForgeButton onClick={() => setIsPanelOpen(true)} />
       </div>
 
       <GlassCard className="overflow-hidden">
@@ -409,6 +424,13 @@ export default function MythosDetailPage() {
           </CardContent>
         </GlassCard>
       )}
+
+      <CreativeCompanionPanel
+        isOpen={isPanelOpen}
+        onClose={() => setIsPanelOpen(false)}
+        entityId={mythosId}
+        entityType="mythos"
+      />
     </div>
   );
 }

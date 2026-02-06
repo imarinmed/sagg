@@ -24,6 +24,8 @@ import { CharacterEvolutionTimeline } from "@/components/CharacterEvolutionTimel
 import { EpisodePresenceHeatmap } from "@/components/EpisodePresenceHeatmap";
 import { KinkProfileVisualization } from "@/components/KinkProfileVisualization";
 import { QuoteCarousel, extractQuotesFromEvolution } from "@/components/QuoteCarousel";
+import { ForgeButton } from "@/components/ForgeButton";
+import { CreativeCompanionPanel } from "@/components/CreativeCompanionPanel";
 import {
   getCharacterById,
   getMockRelationshipGraph,
@@ -41,8 +43,19 @@ export default function CharacterDetailPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState("overview");
+  const [isPanelOpen, setIsPanelOpen] = useState(false);
 
-  // Load character data
+  useEffect(() => {
+    const savedState = localStorage.getItem("creative-panel-open");
+    if (savedState === "true") {
+      setIsPanelOpen(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("creative-panel-open", String(isPanelOpen));
+  }, [isPanelOpen]);
+
   useEffect(() => {
     const loadCharacter = () => {
       try {
@@ -134,6 +147,10 @@ export default function CharacterDetailPage() {
 
   return (
     <div className="space-y-0 animate-fade-in-up">
+      <div className="absolute top-4 right-4 z-50">
+        <ForgeButton onClick={() => setIsPanelOpen(true)} />
+      </div>
+
       {/* Character Hero */}
       <CharacterHero
         character={{
@@ -440,6 +457,13 @@ export default function CharacterDetailPage() {
           </Tabs>
         </div>
       </div>
+
+      <CreativeCompanionPanel
+        isOpen={isPanelOpen}
+        onClose={() => setIsPanelOpen(false)}
+        entityId={characterId}
+        entityType="character"
+      />
     </div>
   );
 }
