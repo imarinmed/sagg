@@ -58,3 +58,10 @@ Completed Waves 0-4 of the Premium Character Map Redesign with 8 components crea
 - Wave 8: Accessibility
 - Wave 9: Mobile Adaptations
 - Wave 10: Full Page Integration
+
+## Phone System - Lock Screen ID Overlay
+- Implemented `IDOverlay.tsx` with strict visual requirements.
+- Used 16-diamond divider pattern for decorative separation.
+- Enforced 30% opacity for Student ID as per "subtle surveillance" aesthetic.
+- Integrated Framer Motion for smooth entrance animations.
+- Supports 'public', 'student', and 'owner' modes for geofencing context.

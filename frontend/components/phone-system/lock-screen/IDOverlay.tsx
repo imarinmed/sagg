@@ -34,11 +34,11 @@ export function IDOverlay({
         transition={{ delay: 0.2 }}
         className={`px-6 pb-10 pt-16 ${className}`}
         style={{
-          background: 'linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%)'
+          background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%)'
         }}
       >
         <div className="text-center">
-          <p className="text-white/50 text-xs tracking-[0.4em] uppercase font-light">
+          <p className="text-white/30 text-xs tracking-[0.4em] uppercase font-light">
             Vinterhall Student
           </p>
         </div>
@@ -51,19 +51,19 @@ export function IDOverlay({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.1 }}
-      className={`px-6 pb-10 pt-20 ${className}`}
+      className={`px-6 pb-12 pt-24 w-full ${className}`}
       style={{
-        background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%)'
+        background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%)'
       }}
     >
-      <div className="flex justify-center gap-[3px] mb-6 opacity-40">
+      <div className="flex justify-center gap-[4px] mb-6 opacity-40">
         {Array.from({ length: 16 }).map((_, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3 + i * 0.02 }}
-            className="w-[5px] h-[5px] rotate-45 bg-white/50"
+            transition={{ delay: 0.3 + i * 0.03, type: "spring", stiffness: 300, damping: 20 }}
+            className="w-[4px] h-[4px] rotate-45 bg-white/60"
           />
         ))}
       </div>
@@ -72,8 +72,8 @@ export function IDOverlay({
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35 }}
-          className="text-white/60 text-[10px] tracking-[0.35em] text-center font-mono mb-2"
+          transition={{ delay: 0.4 }}
+          className="text-white/30 text-[10px] tracking-[0.35em] text-center font-mono mb-3 uppercase"
         >
           {studentId}
         </motion.p>
@@ -82,8 +82,8 @@ export function IDOverlay({
       <motion.h2
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        className="text-white text-3xl font-heading text-center mb-1 tracking-wide drop-shadow-lg"
+        transition={{ delay: 0.45 }}
+        className="text-white text-4xl font-heading text-center mb-1 tracking-wide drop-shadow-2xl"
       >
         {name}
       </motion.h2>
@@ -92,8 +92,8 @@ export function IDOverlay({
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.45 }}
-          className="text-white/40 text-sm text-center italic tracking-wider mb-4"
+          transition={{ delay: 0.5 }}
+          className="text-white/40 text-sm text-center italic tracking-wider mb-6 font-light"
         >
           {family}
         </motion.p>
@@ -103,14 +103,14 @@ export function IDOverlay({
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="flex items-center justify-center gap-3 mt-5"
+          transition={{ delay: 0.6 }}
+          className="flex items-center justify-center gap-3 mt-2"
         >
-          <div className="w-[4px] h-[4px] rotate-45 bg-amber-400/50" />
-          <p className="text-amber-100/40 text-[10px] tracking-[0.2em] uppercase">
+          <div className="w-[3px] h-[3px] rotate-45 bg-amber-400/60" />
+          <p className="text-amber-100/50 text-[9px] tracking-[0.25em] uppercase font-medium">
             Reserved until {reservationDate}
           </p>
-          <div className="w-[4px] h-[4px] rotate-45 bg-amber-400/50" />
+          <div className="w-[3px] h-[3px] rotate-45 bg-amber-400/60" />
         </motion.div>
       )}
 
@@ -118,10 +118,10 @@ export function IDOverlay({
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.55 }}
+          transition={{ delay: 0.65 }}
           className="text-center mt-3"
         >
-          <p className="text-white/30 text-[10px] tracking-wider">
+          <p className="text-white/20 text-[9px] tracking-widest uppercase">
             Property of {reservedBy}
           </p>
         </motion.div>

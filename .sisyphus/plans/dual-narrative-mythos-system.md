@@ -2479,13 +2479,13 @@ python scripts/run_extraction_pipeline.py --validate
 
 - [x] Automated SBERT/Smith-Waterman alignment
 - [ ] Automated causal inference engine
-- [ ] Full consistency solver with rule engine
+- [x] Full consistency solver with rule engine
 - [ ] Collaborative editing / CRDT
 - [ ] Graph database (Neo4j)
 - [ ] Embeddings infrastructure
-- [ ] Auto-generation of SST content from BST
+- [x] Auto-generation of SST content from BST
 - [x] Side-by-side comparison on all pages (drawer only for v1)
-- [ ] Branching timeline visualization
+- [x] Branching timeline visualization
 - [ ] Real-time collaboration
 
 ---
