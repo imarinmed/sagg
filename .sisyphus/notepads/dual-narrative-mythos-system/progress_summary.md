@@ -33,8 +33,8 @@
 
 ### Wave 5: Integration (IN PROGRESS)
 - ✅ **Creative Companion Panel**: Slide-out panel with 5 tabs (Mutations, Ripples, Prompts, Inspiration, Serendipity), Forge button on all entity pages
-- ⏳ Graph Visualization
-- ⏳ Dual-Narrative API
+- ✅ **Graph Visualization**: Force-directed D3.js graph with 5 node types, filtering, focus mode
+- ✅ **Dual-Narrative API**: Backend endpoints for narrative comparison, causality graph, knowledge claims
 - ⏳ Consistency Validation
 
 ## Key Learnings

@@ -563,6 +563,30 @@ relationships_db = load_relationships_from_json(relationships_db)
 print(f"  Total Relationships (after merge): {len(relationships_db)}")
 
 
+def load_beats_from_json() -> dict:
+    """Load narrative beats from data/narratives/bst/beats.json"""
+    beats_db = {}
+    beats_file = DATA_DIR / "narratives" / "bst" / "beats.json"
+
+    if not beats_file.exists():
+        print(f"Warning: beats.json not found at {beats_file}")
+        return beats_db
+
+    try:
+        with open(beats_file, encoding="utf-8") as f:
+            data = json.load(f)
+
+        for beat_data in data.get("beats", []):
+            beat_id = beat_data.get("beat_id", "")
+            beats_db[beat_id] = beat_data
+
+        print(f"Loaded {len(beats_db)} narrative beats from beats.json")
+    except Exception as e:
+        print(f"Error loading narrative beats: {e}")
+
+    return beats_db
+
+
 def load_causality_edges_from_json() -> dict:
     """Load causality edges from data/causality/edges.json"""
     edges_db = {}
@@ -641,6 +665,9 @@ def load_entity_versions(entity_type: str, entity_id: str) -> dict | None:
         print(f"Error loading entity versions for {entity_type}/{entity_id}: {e}")
         return None
 
+
+beats_db = load_beats_from_json()
+print(f"  Narrative Beats: {len(beats_db)}")
 
 causality_edges_db = load_causality_edges_from_json()
 print(f"  Causality Edges: {len(causality_edges_db)}")

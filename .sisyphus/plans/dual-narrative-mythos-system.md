@@ -956,7 +956,7 @@ Scenario: Pipeline produces valid data counts
 
 ---
 
-### Task 10: Implement Dual-Narrative API
+### Task 10: Implement Dual-Narrative API ✅
 
 **What to do**:
 1. Add `narrative` query parameter to existing endpoints (`?narrative=bst|sst|both`)

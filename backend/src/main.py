@@ -4,7 +4,17 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from .api import causality, characters, episodes, graph, knowledge, mythos, narratives, search
+from .api import (
+    causality,
+    characters,
+    episodes,
+    graph,
+    knowledge,
+    mythos,
+    narratives,
+    search,
+    validation,
+)
 
 app = FastAPI(
     title="Blod Wiki API",
@@ -37,6 +47,7 @@ app.include_router(search.router)
 app.include_router(narratives.router)
 app.include_router(causality.router)
 app.include_router(knowledge.router)
+app.include_router(validation.router)
 
 
 @app.get("/health")

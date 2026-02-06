@@ -209,6 +209,56 @@ kink_profile:
 - `from_character_id`, `to_character_id`, `relationship_type`, `description`
 - Types: romantic, family, friend, enemy, servant, master, ally, rival
 
+**Beat** (`data/narratives/bst/beats.json`):
+- `beat_id`, `episode_id`, `start_time`, `end_time`, `start_seconds`, `end_seconds`
+- `characters`, `moments`, narrative beat data
+
+**Causality Edge** (`data/causality/edges.json`):
+- `edge_id`, `from_beat_id`, `to_beat_id`, `type`, causality relationship between beats
+- Types: causes, enables, motivates, constrains, etc.
+
+**Knowledge Claim** (`data/knowledge/claims.json`):
+- `claim_id`, `subject`, `type`, `content`, factual claims about the narrative world
+- Types: rule, fact, inference, speculation
+
+## Consistency Validation
+
+The project includes a comprehensive validation system at `backend/src/validation/consistency.py` that checks data integrity:
+
+### Validation Rules
+
+1. **Beat ID Existence** - Ensures all beat IDs referenced in causality edges exist in the beats database
+2. **No Dangling References** - Warns about potentially orphaned entity references in claims (warnings only, since claims can reference abstract concepts)
+3. **No Self-Loops** - Prevents beats from causally linking to themselves
+4. **Temporal Consistency** - Ensures cause beats occur before effect beats:
+   - Within same episode: compares timestamps
+   - Cross-episode: compares episode IDs
+
+### Running Validation
+
+```bash
+# Via API endpoint
+curl http://localhost:8000/api/validation
+
+# Via Python
+from src.validation.consistency import run_validation
+report = run_validation()
+print(report.summary())
+```
+
+### Validation Response
+
+```json
+{
+  "valid": true,
+  "total_errors": 0,
+  "total_warnings": 11,
+  "passed_rules": 3,
+  "errors": [],
+  "warnings": [...]
+}
+```
+
 ## API Endpoints
 
 | Endpoint | Description |
@@ -224,6 +274,10 @@ kink_profile:
 | `GET /api/mythos/graph` | Full mythos graph |
 | `GET /api/graph` | Combined relationship graph |
 | `GET /api/search?q={query}` | Search all content |
+| `GET /api/validation` | Run consistency validation checks |
+| `GET /api/narratives/alignment` | Narrative alignment data |
+| `GET /api/causality/graph` | Causality graph |
+| `GET /api/knowledge/claims` | Knowledge claims |
 
 ## Important Gotchas
 
