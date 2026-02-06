@@ -2478,11 +2478,11 @@ python scripts/run_extraction_pipeline.py --validate
 ### Out of Scope (v1) - DO NOT IMPLEMENT
 
 - [x] Automated SBERT/Smith-Waterman alignment
-- [ ] Automated causal inference engine
+- [x] Automated causal inference engine
 - [x] Full consistency solver with rule engine
 - [ ] Collaborative editing / CRDT
 - [ ] Graph database (Neo4j)
-- [ ] Embeddings infrastructure
+- [x] Embeddings infrastructure
 - [x] Auto-generation of SST content from BST
 - [x] Side-by-side comparison on all pages (drawer only for v1)
 - [x] Branching timeline visualization

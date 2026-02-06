@@ -2,53 +2,30 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Camera, Dumbbell, GraduationCap, Sparkles, Users } from 'lucide-react';
-import type { PhotoContext } from '../lock-screen/PhoneLockScreen';
+import { TouchGestureZone } from '../../MobileSystem';
+
+export type PhotoContext = 'portrait' | 'gym' | 'school' | 'spa' | 'class';
+
+export interface PhotoItem {
+  id: string;
+  url: string;
+  context: PhotoContext;
+  contextLabel: string;
+  quality: 'poor' | 'average' | 'good' | 'excellent';
+  unlockedAt: number;
+  allure?: number;
+  sensuality?: number;
+}
 
 export interface PhotoGalleryProps {
-  photos: {
-    id: string;
-    url: string;
-    context: PhotoContext;
-    contextLabel: string;
-    quality: 'poor' | 'average' | 'good' | 'excellent';
-    unlockedAt: number;
-  }[];
+  photos: PhotoItem[];
   currentContext: PhotoContext;
   onContextChange: (context: PhotoContext) => void;
   currentEpisode: number;
   className?: string;
 }
 
-const contextConfig: Record<PhotoContext, { icon: React.ReactNode; label: string; color: string }> = {
-  portrait: {
-    icon: <Camera className="w-4 h-4" />,
-    label: 'Portrait',
-    color: 'from-rose-500/20 to-purple-500/20'
-  },
-  gym: {
-    icon: <Dumbbell className="w-4 h-4" />,
-    label: 'Gym',
-    color: 'from-emerald-500/20 to-teal-500/20'
-  },
-  school: {
-    icon: <GraduationCap className="w-4 h-4" />,
-    label: 'School',
-    color: 'from-blue-500/20 to-indigo-500/20'
-  },
-  spa: {
-    icon: <Sparkles className="w-4 h-4" />,
-    label: 'Spa',
-    color: 'from-amber-500/20 to-orange-500/20'
-  },
-  class: {
-    icon: <Users className="w-4 h-4" />,
-    label: 'Class',
-    color: 'from-violet-500/20 to-pink-500/20'
-  }
-};
-
-const contextOrder: PhotoContext[] = ['portrait', 'gym', 'school', 'spa', 'class'];
+const CONTEXT_ORDER: PhotoContext[] = ['portrait', 'gym', 'school', 'spa', 'class'];
 
 export function PhotoGallery({
   photos,
@@ -57,91 +34,83 @@ export function PhotoGallery({
   currentEpisode,
   className = ''
 }: PhotoGalleryProps) {
-  const unlockedContexts = contextOrder.filter(ctx =>
+  const unlockedContexts = CONTEXT_ORDER.filter(ctx =>
     photos.some(p => p.context === ctx && p.unlockedAt <= currentEpisode)
   );
 
   const currentIndex = unlockedContexts.indexOf(currentContext);
 
+  const handleSwipeLeft = () => {
+    if (currentIndex < unlockedContexts.length - 1) {
+      onContextChange(unlockedContexts[currentIndex + 1]);
+    }
+  };
+
+  const handleSwipeRight = () => {
+    if (currentIndex > 0) {
+      onContextChange(unlockedContexts[currentIndex - 1]);
+    }
+  };
+
+  const currentPhoto = photos
+    .filter(p => p.context === currentContext && p.unlockedAt <= currentEpisode)
+    .sort((a, b) => b.unlockedAt - a.unlockedAt)[0];
+
   return (
-    <div className={`flex flex-col h-full ${className}`}>
-      <div className="flex-1 relative">
-        {unlockedContexts.length > 1 && (
-          <div className="absolute top-4 left-4 right-4 flex justify-center gap-2 z-10">
-            {unlockedContexts.map((ctx, idx) => (
-              <motion.button
-                key={ctx}
-                onClick={() => onContextChange(ctx)}
-                className={`
-                  w-2 h-2 rounded-full transition-all
-                  ${idx === currentIndex ? 'bg-white w-6' : 'bg-white/30'}
-                `}
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-              />
-            ))}
+    <TouchGestureZone
+      onSwipeLeft={handleSwipeLeft}
+      onSwipeRight={handleSwipeRight}
+      className={`relative w-full h-full overflow-hidden ${className}`}
+    >
+      {unlockedContexts.length > 1 && (
+        <div className="absolute top-4 left-0 right-0 flex justify-center gap-2 z-20">
+          {unlockedContexts.map((ctx, idx) => (
+            <motion.button
+              key={ctx}
+              onClick={(e) => {
+                e.stopPropagation();
+                onContextChange(ctx);
+              }}
+              className={`
+                h-1.5 rounded-full transition-all duration-300
+                ${idx === currentIndex ? 'w-6 bg-white' : 'w-1.5 bg-white/40'}
+              `}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+            />
+          ))}
+        </div>
+      )}
+
+      <AnimatePresence mode="wait">
+        {currentPhoto ? (
+          <motion.div
+            key={currentPhoto.id}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full"
+          >
+            <img
+              src={currentPhoto.url}
+              alt={currentPhoto.contextLabel}
+              className={`
+                w-full h-full object-cover
+                ${getQualityFilter(currentPhoto.quality)}
+              `}
+              draggable={false}
+            />
+            
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 pointer-events-none" />
+          </motion.div>
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/90 text-white/40">
+            <p>No photos available</p>
           </div>
         )}
-
-        <AnimatePresence mode="wait">
-          {
-            photos
-              .filter(p => p.context === currentContext && p.unlockedAt <= currentEpisode)
-              .map(photo => (
-                <motion.div
-                  key={photo.id}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="absolute inset-0"
-                >
-                  <img
-                    src={photo.url}
-                    alt={photo.contextLabel}
-                    className={`w-full h-full object-cover ${getQualityFilter(photo.quality)}`}
-                    draggable={false}
-                  />
-                </motion.div>
-              ))[0]
-          }
-        </AnimatePresence>
-      </div>
-
-      {unlockedContexts.length > 1 && (
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          className="p-4 bg-gradient-to-t from-black/80 to-transparent"
-        >
-          <div className="flex justify-center gap-3">
-            {unlockedContexts.map(ctx => {
-              const config = contextConfig[ctx];
-              const isActive = ctx === currentContext;
-
-              return (
-                <motion.button
-                  key={ctx}
-                  onClick={() => onContextChange(ctx)}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`
-                    flex flex-col items-center gap-1 px-3 py-2 rounded-xl
-                    transition-all
-                    ${isActive
-                      ? `bg-gradient-to-br ${config.color} text-white`
-                      : 'bg-white/10 text-white/60 hover:bg-white/20'
-                    }
-                  `}
-                >
-                  {config.icon}
-                  <span className="text-[10px] font-medium">{config.label}</span>
-                </motion.button>
-              );
-            })}
-          </div>
-        </motion.div>
-      )}
-    </div>
+      </AnimatePresence>
+    </TouchGestureZone>
   );
 }
 
@@ -155,6 +124,8 @@ function getQualityFilter(quality: 'poor' | 'average' | 'good' | 'excellent'): s
       return 'contrast-100 brightness-100';
     case 'excellent':
       return 'contrast-105 brightness-105 saturate-110';
+    default:
+      return '';
   }
 }
 
