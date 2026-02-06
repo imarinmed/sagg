@@ -148,3 +148,32 @@ The Shadow Lore Forge is **COMPLETE**:
 - **Wave 5: Integration** - Creative Companion Panel, Graph Visualization, Dual-Narrative API, Consistency Validation
 
 **Total: 691+ creative data points powering the Shadow Lore Forge**
+
+## Blocker Documentation
+
+### Remaining Items (Intentionally Out of Scope)
+
+**Status**: 10 items remaining, all explicitly marked as "DO NOT IMPLEMENT" for v1
+
+The following items are listed in the plan under **"Out of Scope (v1) - DO NOT IMPLEMENT"**:
+
+1. Automated SBERT/Smith-Waterman alignment
+2. Automated causal inference engine
+3. Full consistency solver with rule engine
+4. Collaborative editing / CRDT
+5. Graph database (Neo4j)
+6. Embeddings infrastructure
+7. Auto-generation of SST content from BST
+8. Side-by-side comparison on all pages (drawer only for v1)
+9. Branching timeline visualization
+10. Real-time collaboration
+
+**Blocker Reason**: These are guardrails for v2+ per the Oracle's direction. The plan explicitly states:
+> "Out of Scope (v1) - DO NOT IMPLEMENT"
+
+**Resolution**: These items should remain unchecked as they are intentionally excluded from v1 scope. They represent future enhancements, not current deliverables.
+
+### Final Status
+- **Implementable Tasks**: 33/33 complete (100%)
+- **Out of Scope Items**: 10/10 correctly deferred (as designed)
+- **Overall Project**: v1.0 COMPLETE and production ready
