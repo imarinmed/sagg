@@ -1,0 +1,29 @@
+
+Directory: data/kb/characters
+  [PASS] jacques.mdx (ID: jacques)
+  [PASS] kevin.mdx (ID: kevin)
+  [PASS] livia.mdx (ID: livia)
+  [PASS] rektor.mdx (ID: rektor)
+
+Directory: data/kb/locations
+  [PASS] natt-och-dag-estate.mdx (ID: natt-och-dag-estate)
+  [PASS] skaraborg-high.mdx (ID: skaraborg-high)
+
+Directory: data/kb/social-groups
+  [PASS] batgirls.mdx (ID: batgirls)
+  [PASS] skaraborg-bats.mdx (ID: skaraborg-bats)
+
+Directory: data/kb/episodes
+  [PASS] s01e01.mdx (ID: s01e01)
+  [PASS] s01e02.mdx (ID: s01e02)
+  [PASS] s01e03.mdx (ID: s01e03)
+  [PASS] s01e04.mdx (ID: s01e04)
+  [PASS] s01e05.mdx (ID: s01e05)
+  [PASS] s01e06.mdx (ID: s01e06)
+  [PASS] s01e07.mdx (ID: s01e07)
+  [PASS] s01e08.mdx (ID: s01e08)
+
+Directory: data/kb/world-rules
+  [PASS] blood-system.mdx (ID: blood-system)
+  [PASS] matriarchal-inheritance.mdx (ID: matriarchal-inheritance)
+  [PASS] vampire-biology.mdx (ID: vampire-biology)

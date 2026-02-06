@@ -1,0 +1,9 @@
+    1292 data/kb/transcripts/s01e01.txt
+     288 data/kb/transcripts/s01e02.txt
+    1478 data/kb/transcripts/s01e03.txt
+    1261 data/kb/transcripts/s01e04.txt
+    1263 data/kb/transcripts/s01e05.txt
+    1264 data/kb/transcripts/s01e06.txt
+    1009 data/kb/transcripts/s01e07.txt
+    1478 data/kb/transcripts/s01e08.txt
+    9333 total

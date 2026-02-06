@@ -1,9 +1,14 @@
 {
-  "generated_at": "2026-02-06T19:17:57+00:00",
+  "generated_at": "2026-02-06T23:12:11.899855+00:00",
   "counts": {
     "mythos": 7,
     "foundations": 4,
-    "total": 11
+    "total": 30,
+    "characters": 4,
+    "locations": 2,
+    "social-groups": 2,
+    "episodes": 8,
+    "world-rules": 3
   },
   "categories": {
     "supernatural": 1,
@@ -107,6 +112,149 @@
       "path": "data/kb/foundations/video-analysis-improvements.mdx",
       "provenance": "docs/video-analysis-improvements.md",
       "kind": "foundation"
+    }
+  ],
+  "characters": [
+    {
+      "id": "jacques",
+      "slug": "jacques",
+      "name": "Jacques Natt och Dag",
+      "path": "data/kb/characters/jacques.mdx",
+      "kind": "character"
+    },
+    {
+      "id": "kevin",
+      "slug": "kevin",
+      "name": "Kevin",
+      "path": "data/kb/characters/kevin.mdx",
+      "kind": "character"
+    },
+    {
+      "id": "livia",
+      "slug": "livia",
+      "name": "Livia",
+      "path": "data/kb/characters/livia.mdx",
+      "kind": "character"
+    },
+    {
+      "id": "rektor",
+      "slug": "rektor",
+      "name": "Rektor (Principal)",
+      "path": "data/kb/characters/rektor.mdx",
+      "kind": "character"
+    }
+  ],
+  "locations": [
+    {
+      "id": "natt-och-dag-estate",
+      "slug": "natt-och-dag-estate",
+      "name": "Natt och Dag Estate",
+      "path": "data/kb/locations/natt-och-dag-estate.mdx",
+      "kind": "location"
+    },
+    {
+      "id": "skaraborg-high",
+      "slug": "skaraborg-high",
+      "name": "Skaraborg High",
+      "path": "data/kb/locations/skaraborg-high.mdx",
+      "kind": "location"
+    }
+  ],
+  "social-groups": [
+    {
+      "id": "batgirls",
+      "slug": "batgirls",
+      "name": "Batgirls",
+      "path": "data/kb/social-groups/batgirls.mdx",
+      "kind": "social-group"
+    },
+    {
+      "id": "skaraborg-bats",
+      "slug": "skaraborg-bats",
+      "name": "Skaraborg Bats",
+      "path": "data/kb/social-groups/skaraborg-bats.mdx",
+      "kind": "social-group"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "s01e01",
+      "slug": "s01e01",
+      "name": "Episode 1: Kallblodig skolstart",
+      "path": "data/kb/episodes/s01e01.mdx",
+      "kind": "episode"
+    },
+    {
+      "id": "s01e02",
+      "slug": "s01e02",
+      "name": "Episode 2: Audition till Batgirls",
+      "path": "data/kb/episodes/s01e02.mdx",
+      "kind": "episode"
+    },
+    {
+      "id": "s01e03",
+      "slug": "s01e03",
+      "name": "Episode 3: Lunch hos Natt och Dag",
+      "path": "data/kb/episodes/s01e03.mdx",
+      "kind": "episode"
+    },
+    {
+      "id": "s01e04",
+      "slug": "s01e04",
+      "name": "Episode 4: Matriarkatet",
+      "path": "data/kb/episodes/s01e04.mdx",
+      "kind": "episode"
+    },
+    {
+      "id": "s01e05",
+      "slug": "s01e05",
+      "name": "Episode 5: Festen i magasinet",
+      "path": "data/kb/episodes/s01e05.mdx",
+      "kind": "episode"
+    },
+    {
+      "id": "s01e06",
+      "slug": "s01e06",
+      "name": "Episode 6: Bl\u00e5ljus och blod",
+      "path": "data/kb/episodes/s01e06.mdx",
+      "kind": "episode"
+    },
+    {
+      "id": "s01e07",
+      "slug": "s01e07",
+      "name": "Episode 7: Erics tal",
+      "path": "data/kb/episodes/s01e07.mdx",
+      "kind": "episode"
+    },
+    {
+      "id": "s01e08",
+      "slug": "s01e08",
+      "name": "Episode 8: Maskeradbalen",
+      "path": "data/kb/episodes/s01e08.mdx",
+      "kind": "episode"
+    }
+  ],
+  "world-rules": [
+    {
+      "id": "blood-system",
+      "slug": "blood-system",
+      "name": "Blood System",
+      "path": "data/kb/world-rules/blood-system.mdx",
+      "kind": "world-rule"
+    },
+    {
+      "id": "matriarchal-inheritance",
+      "slug": "matriarchal-inheritance",
+      "name": "Matriarchal Inheritance",
+      "path": "data/kb/world-rules/matriarchal-inheritance.mdx",
+      "kind": "world-rule"
+    },
+    {
+      "id": "vampire-biology",
+      "slug": "vampire-biology",
+      "name": "Vampire Biology",
+      "path": "data/kb/world-rules/vampire-biology.mdx",
+      "kind": "world-rule"
     }
   ]
 }
