@@ -1,0 +1,34 @@
+[
+  {
+    "id": "adaptation-guide",
+    "slug": "adaptation-guide",
+    "title": "Dark Tone Adaptation Guide",
+    "path": "data/kb/foundations/adaptation-guide.mdx",
+    "provenance": "docs/adaptation-guide.md",
+    "kind": "foundation"
+  },
+  {
+    "id": "character-arcs",
+    "slug": "character-arcs",
+    "title": "Character Arc Documentation",
+    "path": "data/kb/foundations/character-arcs.mdx",
+    "provenance": "docs/character-arcs.md",
+    "kind": "foundation"
+  },
+  {
+    "id": "erotic-framework",
+    "slug": "erotic-framework",
+    "title": "Erotic Content Framework",
+    "path": "data/kb/foundations/erotic-framework.mdx",
+    "provenance": "docs/erotic-framework.md",
+    "kind": "foundation"
+  },
+  {
+    "id": "video-analysis-improvements",
+    "slug": "video-analysis-improvements",
+    "title": "Video Analysis System Improvements - BST Wiki",
+    "path": "data/kb/foundations/video-analysis-improvements.mdx",
+    "provenance": "docs/video-analysis-improvements.md",
+    "kind": "foundation"
+  }
+]

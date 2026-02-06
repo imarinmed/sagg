@@ -9,6 +9,7 @@ const navItems = [
   { href: "/characters", label: "Characters" },
   { href: "/mythos", label: "Mythos" },
   { href: "/graph", label: "Graph" },
+  { href: "/media-lab", label: "Media Lab" },
 ];
 
 export function Navigation() {

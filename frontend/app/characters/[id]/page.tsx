@@ -2,11 +2,13 @@
 
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState, useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Tabs,
   Chip,
   Spinner,
   ScrollShadow,
+  Button,
 } from "@heroui/react";
 import {
   User,
@@ -14,8 +16,13 @@ import {
   TrendingUp,
   Network,
   Grid3X3,
-  Quote,
+  ChevronLeft,
   Sparkles,
+  Clock,
+  Users,
+  Activity,
+  BookOpen,
+  ArrowUpRight,
 } from "lucide-react";
 import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
 import { CharacterHero } from "@/components/CharacterHero";
@@ -26,6 +33,7 @@ import { KinkProfileVisualization } from "@/components/KinkProfileVisualization"
 import { QuoteCarousel, extractQuotesFromEvolution } from "@/components/QuoteCarousel";
 import { ForgeButton } from "@/components/ForgeButton";
 import { CreativeCompanionPanel } from "@/components/CreativeCompanionPanel";
+import Link from "next/link";
 import {
   getCharacterById,
   getMockRelationshipGraph,
@@ -33,6 +41,137 @@ import {
   getMockEpisodePresence,
   StaticCharacter,
 } from "@/lib/characterData";
+
+// ============================================
+// TYPE DEFINITIONS
+// ============================================
+
+type TabKey = "overview" | "relationships" | "evolution" | "presence" | "profile";
+
+// ============================================
+// ANIMATION VARIANTS
+// ============================================
+
+const pageVariants = {
+  initial: { opacity: 0 },
+  animate: { 
+    opacity: 1,
+    transition: { duration: 0.5, staggerChildren: 0.1 }
+  },
+  exit: { opacity: 0 }
+};
+
+const sectionVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const }
+  }
+};
+
+// ============================================
+// UTILITY FUNCTIONS
+// ============================================
+
+function formatScreenTime(seconds: number): string {
+  if (seconds < 60) return `${seconds}s`;
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  if (hours > 0) return `${hours}h ${minutes}m`;
+  return `${minutes}m`;
+}
+
+function getInitials(name: string): string {
+  return name.split(" ").map(n => n[0]).join("").toUpperCase().slice(0, 2);
+}
+
+// ============================================
+// QUICK STATS BAR COMPONENT
+// ============================================
+
+interface QuickStatsBarProps {
+  episodes: number;
+  relationships: number;
+  screenTime: string;
+  milestones: number;
+  avgIntensity: number;
+}
+
+function QuickStatsBar({ episodes, relationships, screenTime, milestones, avgIntensity }: QuickStatsBarProps) {
+  const stats = [
+    { icon: Grid3X3, label: "Episodes", value: episodes, color: "text-[var(--color-accent-primary)]" },
+    { icon: Users, label: "Relationships", value: relationships, color: "text-[var(--color-accent-secondary)]" },
+    { icon: Clock, label: "Screen Time", value: screenTime, color: "text-[var(--color-text-primary)]" },
+    { icon: Activity, label: "Milestones", value: milestones, color: "text-[var(--color-accent-primary)]" },
+    { icon: TrendingUp, label: "Avg Intensity", value: avgIntensity.toFixed(1), color: "text-[var(--color-accent-secondary)]" },
+  ];
+
+  return (
+    <motion.div 
+      variants={sectionVariants}
+      className="w-full glass border-y border-[var(--glass-border)] py-4"
+    >
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+        <div className="flex flex-wrap items-center justify-center md:justify-between gap-6 md:gap-8">
+          {stats.map((stat, idx) => (
+            <div key={idx} className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-[var(--color-surface)] flex items-center justify-center">
+                <stat.icon className={`w-5 h-5 ${stat.color}`} />
+              </div>
+              <div>
+                <p className="text-2xl font-bold text-[var(--color-text-primary)]">{stat.value}</p>
+                <p className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider">{stat.label}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+// ============================================
+// LOADING STATE
+// ============================================
+
+function PageLoading() {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center space-y-4">
+      <div className="relative w-16 h-16">
+        <div className="absolute inset-0 border-4 border-[var(--color-accent-primary)]/20 rounded-full" />
+        <div className="absolute inset-0 border-4 border-[var(--color-accent-primary)] rounded-full border-t-transparent animate-spin" />
+      </div>
+      <p className="text-[var(--color-text-muted)]">Loading character profile...</p>
+    </div>
+  );
+}
+
+// ============================================
+// ERROR STATE
+// ============================================
+
+function PageError({ error, onBack }: { error: string; onBack: () => void }) {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center space-y-6 px-4">
+      <div className="w-20 h-20 rounded-full bg-[var(--color-accent-secondary)]/10 flex items-center justify-center">
+        <BookOpen className="w-10 h-10 text-[var(--color-accent-secondary)]" />
+      </div>
+      <div className="text-center">
+        <h1 className="text-2xl font-heading text-[var(--color-text-primary)] mb-2">Character Not Found</h1>
+        <p className="text-[var(--color-text-muted)]">{error}</p>
+      </div>
+      <Button variant="secondary" onPress={onBack} className="glass">
+        <ChevronLeft className="w-4 h-4 mr-2" />
+        Back to Characters
+      </Button>
+    </div>
+  );
+}
+
+// ============================================
+// MAIN PAGE COMPONENT
+// ============================================
 
 export default function CharacterDetailPage() {
   const params = useParams();
@@ -42,114 +181,178 @@ export default function CharacterDetailPage() {
   const [character, setCharacter] = useState<StaticCharacter | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState("overview");
+  const [activeTab, setActiveTab] = useState<TabKey>("overview");
   const [isPanelOpen, setIsPanelOpen] = useState(false);
 
+  // Load creative panel state
   useEffect(() => {
     const savedState = localStorage.getItem("creative-panel-open");
-    if (savedState === "true") {
-      setIsPanelOpen(true);
-    }
+    if (savedState === "true") setIsPanelOpen(true);
   }, []);
 
   useEffect(() => {
     localStorage.setItem("creative-panel-open", String(isPanelOpen));
   }, [isPanelOpen]);
 
+  // Load character data
   useEffect(() => {
     const loadCharacter = () => {
       try {
         setLoading(true);
         setError(null);
-
         const charData = getCharacterById(characterId);
         if (!charData) {
-          setError("Character not found");
+          setError("Character not found in database");
         } else {
           setCharacter(charData);
         }
       } catch (err) {
-        setError("Failed to load character");
+        setError("Failed to load character data");
       } finally {
         setLoading(false);
       }
     };
 
-    if (characterId) {
-      loadCharacter();
-    }
+    if (characterId) loadCharacter();
   }, [characterId]);
 
   // Get mock data
-  const relationshipGraph = useMemo(() => {
-    return getMockRelationshipGraph(characterId);
-  }, [characterId]);
+  const relationshipGraph = useMemo(() => getMockRelationshipGraph(characterId), [characterId]);
+  const evolutionData = useMemo(() => getMockEvolutionData(characterId), [characterId]);
+  const episodePresence = useMemo(() => getMockEpisodePresence(characterId), [characterId]);
 
-  const evolutionData = useMemo(() => {
-    return getMockEvolutionData(characterId);
-  }, [characterId]);
-
-  const episodePresence = useMemo(() => {
-    return getMockEpisodePresence(characterId);
-  }, [characterId]);
-
+  // Derived data
   const canonicalTraits = character?.canonical_traits ?? [];
   const adaptationTraits = character?.adaptation_traits ?? [];
-  const kinkProfile = character?.kink_profile ?? {
-    preferences: [],
-    limits: [],
-    evolution: [],
-  };
+  const kinkProfile = character?.kink_profile ?? { preferences: [], limits: [], evolution: [] };
+  
+  const isVampire = useMemo(() => canonicalTraits.includes("vampire"), [canonicalTraits]);
+  
+  const isSST = useMemo(() => {
+    return adaptationTraits.length > 0 || character?.adaptation_notes;
+  }, [adaptationTraits, character?.adaptation_notes]);
 
-  // Determine if vampire based on canonical_traits
-  const isVampire = useMemo(() => {
-    return canonicalTraits.includes("vampire");
-  }, [canonicalTraits]);
+  // Calculate stats
+  const heroStats = useMemo(() => ({
+    episodesAppeared: episodePresence?.total_episodes || 0,
+    relationships: relationshipGraph?.nodes ? relationshipGraph.nodes.length - 1 : 0,
+    totalScreenTime: episodePresence ? formatScreenTime(episodePresence.total_screen_time) : "0m",
+  }), [episodePresence, relationshipGraph]);
 
-  // Calculate stats for hero
-  const heroStats = useMemo(() => {
-    return {
-      episodesAppeared: episodePresence?.total_episodes || 0,
-      relationships: relationshipGraph?.nodes ? relationshipGraph.nodes.length - 1 : 0,
-      totalScreenTime: episodePresence
-        ? formatScreenTime(episodePresence.total_screen_time)
-        : "0m",
-    };
-  }, [episodePresence, relationshipGraph]);
+  const avgIntensity = useMemo(() => {
+    if (!episodePresence?.episodes?.length) return 0;
+    return episodePresence.episodes.reduce((acc, ep) => acc + ep.intensity, 0) / episodePresence.episodes.length;
+  }, [episodePresence]);
 
-  // Extract quotes from evolution milestones
+  // Extract quotes
   const quotes = useMemo(() => {
     if (!evolutionData?.milestones) return [];
-    return extractQuotesFromEvolution(evolutionData.milestones);
+    return extractQuotesFromEvolution(evolutionData.milestones, character?.name || "", characterId);
+  }, [evolutionData, character?.name, characterId]);
+
+  // Convert data for components
+  const presenceData = useMemo(() => {
+    if (!episodePresence?.episodes) return [];
+    return episodePresence.episodes.map(ep => ({
+      episode_id: ep.episode_id,
+      episode_number: parseInt(ep.episode_id.replace('s01e', '')),
+      presence_level: ep.intensity,
+      screen_time_seconds: ep.screen_time,
+      moment_count: ep.moment_count,
+      importance: ep.intensity >= 4 ? 'major' as const : ep.intensity >= 3 ? 'supporting' as const : ep.intensity >= 2 ? 'minor' as const : 'background' as const,
+      intensity: ep.intensity,
+    }));
+  }, [episodePresence]);
+
+  const relationshipData = useMemo(() => {
+    if (!relationshipGraph?.links) return [];
+    return relationshipGraph.links.map(link => ({
+      source: {
+        id: link.source,
+        name: relationshipGraph.nodes.find(n => n.id === link.source)?.name || link.source,
+        group: link.source === characterId ? 1 : 2,
+        radius: link.source === characterId ? 35 : 25,
+        color: link.source === characterId ? "#D4AF37" : link.color,
+        metadata: {
+          role: relationshipGraph.nodes.find(n => n.id === link.source)?.metadata?.role,
+          family: relationshipGraph.nodes.find(n => n.id === link.source)?.metadata?.family,
+        },
+      },
+      target: {
+        id: link.target,
+        name: relationshipGraph.nodes.find(n => n.id === link.target)?.name || link.target,
+        group: link.target === characterId ? 1 : 2,
+        radius: link.target === characterId ? 35 : 25,
+        color: link.target === characterId ? "#D4AF37" : link.color,
+        metadata: {
+          role: relationshipGraph.nodes.find(n => n.id === link.target)?.metadata?.role,
+          family: relationshipGraph.nodes.find(n => n.id === link.target)?.metadata?.family,
+        },
+      },
+      type: link.type,
+      intensity: link.intensity,
+      description: link.description,
+      color: link.color,
+      width: link.width,
+    }));
+  }, [relationshipGraph, characterId]);
+
+  const evolutionTimelineData = useMemo(() => {
+    if (!evolutionData?.milestones) return [];
+    const episodeMap = new Map();
+    
+    evolutionData.milestones.forEach(milestone => {
+      if (!episodeMap.has(milestone.episode_id)) {
+        episodeMap.set(milestone.episode_id, {
+          episode_id: milestone.episode_id,
+          episode_number: parseInt(milestone.episode_id.replace('s01e', '')),
+          episode_title: `Episode ${milestone.episode_id.slice(-2)}`,
+          traits: [],
+          arc_progression: milestone.importance > 3 ? 'transforming' as const : milestone.importance > 2 ? 'improving' as const : 'stable' as const,
+          key_moments: [],
+          overall_intensity: milestone.intensity,
+        });
+      }
+      const ep = episodeMap.get(milestone.episode_id);
+      ep.key_moments.push(milestone.description);
+      ep.traits.push({
+        id: milestone.milestone_type,
+        name: milestone.milestone_type,
+        intensity: milestone.intensity,
+        notes: milestone.description,
+      });
+    });
+    
+    return Array.from(episodeMap.values());
   }, [evolutionData]);
 
-  const handleNodeClick = (nodeId: string) => {
-    router.push(`/characters/${nodeId}`);
-  };
+  // Navigation handler
+  const handleNodeClick = (nodeId: string) => router.push(`/characters/${nodeId}`);
 
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-[50vh]">
-        <Spinner size="lg" />
-      </div>
-    );
-  }
-
-  if (error || !character) {
-    return (
-      <div className="text-center py-12">
-        <p className="text-[var(--color-accent-secondary)]">
-          {error || "Character not found"}
-        </p>
-      </div>
-    );
-  }
+  if (loading) return <PageLoading />;
+  if (error || !character) return <PageError error={error || "Character not found"} onBack={() => router.push('/characters')} />;
 
   return (
-    <div className="space-y-0 animate-fade-in-up">
-      <div className="absolute top-4 right-4 z-50">
+    <motion.div 
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      className="min-h-screen pb-20"
+    >
+      {/* Forge Button */}
+      <div className="fixed top-4 right-4 z-50">
         <ForgeButton onClick={() => setIsPanelOpen(true)} />
       </div>
+
+      {/* Back Navigation */}
+      <motion.div variants={sectionVariants} className="absolute top-4 left-4 z-40">
+        <Link href="/characters">
+          <Button variant="ghost" className="glass text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]">
+            <ChevronLeft className="w-4 h-4 mr-2" />
+            All Characters
+          </Button>
+        </Link>
+      </motion.div>
 
       {/* Character Hero */}
       <CharacterHero
@@ -159,140 +362,176 @@ export default function CharacterDetailPage() {
           portrayed_by: character.portrayed_by,
           role: character.role,
           description: character.description,
+          species: isVampire ? "vampire" : "human",
+          canonical_traits: canonicalTraits,
+          adaptation_traits: adaptationTraits,
+          arc_description: character.adaptation_notes,
         }}
-        stats={heroStats}
-        isVampire={isVampire}
+        stats={{
+          ...heroStats,
+          avgIntensity,
+          evolutionMilestones: evolutionData?.milestones?.length ?? 0,
+        }}
+        actions={{
+          onViewRelationships: () => setActiveTab("relationships"),
+          onViewEvolution: () => setActiveTab("evolution"),
+        }}
       />
 
-      {/* Quotes Carousel (if quotes available) */}
+      {/* Quick Stats Bar */}
+      <QuickStatsBar
+        episodes={heroStats.episodesAppeared}
+        relationships={heroStats.relationships}
+        screenTime={heroStats.totalScreenTime}
+        milestones={evolutionData?.milestones?.length ?? 0}
+        avgIntensity={avgIntensity}
+      />
+
+      {/* Quote Carousel */}
       {quotes.length > 0 && (
-        <div className="px-4 md:px-8 lg:px-16 py-6 bg-[var(--color-bg-secondary)]">
+        <motion.div variants={sectionVariants} className="px-4 md:px-8 lg:px-16 py-8">
           <div className="max-w-4xl mx-auto">
             <QuoteCarousel
               quotes={quotes}
-              characterName={character.name}
-              autoRotate={true}
-              autoRotateInterval={8000}
+              autoPlay={true}
+              interval={8000}
+              variant="featured"
             />
           </div>
-        </div>
+        </motion.div>
       )}
 
-      {/* Main Content */}
-      <div className="px-4 md:px-8 lg:px-16 py-8">
-        <div className="max-w-7xl mx-auto space-y-8">
-          {/* Tabs */}
+      {/* Main Content with Tabs */}
+      <motion.div variants={sectionVariants} className="px-4 md:px-8 lg:px-16 py-8">
+        <div className="max-w-7xl mx-auto">
           <Tabs
             selectedKey={activeTab}
-            onSelectionChange={(key) => setActiveTab(key as string)}
+            onSelectionChange={(key) => setActiveTab(key as TabKey)}
+            className="w-full"
           >
-            <Tabs.List className="glass rounded-lg p-1 mb-6">
-              <Tabs.Tab key="overview">
-                <div className="flex items-center gap-2">
+            {/* Tab List */}
+            <Tabs.List className="glass rounded-xl p-1.5 mb-8 flex flex-wrap gap-1">
+              <Tabs.Tab key="overview" className="flex-1 min-w-[120px]">
+                <div className="flex items-center justify-center gap-2 py-2">
                   <User className="w-4 h-4" />
-                  Overview
+                  <span className="hidden sm:inline">Overview</span>
+                  <span className="sm:hidden">Info</span>
                 </div>
               </Tabs.Tab>
-              <Tabs.Tab key="relationships">
-                <div className="flex items-center gap-2">
+              
+              <Tabs.Tab key="relationships" className="flex-1 min-w-[120px]">
+                <div className="flex items-center justify-center gap-2 py-2">
                   <Network className="w-4 h-4" />
-                  Relationships
-                  {relationshipGraph && relationshipGraph.nodes.length > 1 && (
-                    <span className="text-xs bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] px-1.5 rounded">
-                      {relationshipGraph.nodes.length - 1}
-                    </span>
+                  <span className="hidden sm:inline">Connections</span>
+                  <span className="sm:hidden">Links</span>
+                  {relationshipGraph && relationshipGraph.nodes && relationshipGraph.nodes.length > 1 && (
+                    <Chip size="sm" variant="soft" className="bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] text-xs">
+                      {(relationshipGraph?.nodes?.length ?? 0) - 1}
+                    </Chip>
                   )}
                 </div>
               </Tabs.Tab>
-              <Tabs.Tab key="evolution">
-                <div className="flex items-center gap-2">
+              
+              <Tabs.Tab key="evolution" className="flex-1 min-w-[120px]">
+                <div className="flex items-center justify-center gap-2 py-2">
                   <TrendingUp className="w-4 h-4" />
-                  Evolution
-                  {evolutionData && evolutionData.milestones.length > 0 && (
-                    <span className="text-xs bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] px-1.5 rounded">
-                      {evolutionData.milestones.length}
-                    </span>
+                  <span className="hidden sm:inline">Evolution</span>
+                  <span className="sm:hidden">Growth</span>
+                  {evolutionData && evolutionData.milestones && evolutionData.milestones.length > 0 && (
+                    <Chip size="sm" variant="soft" className="bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] text-xs">
+                      {evolutionData?.milestones?.length ?? 0}
+                    </Chip>
                   )}
                 </div>
               </Tabs.Tab>
-              <Tabs.Tab key="episodes">
-                <div className="flex items-center gap-2">
+              
+              <Tabs.Tab key="presence" className="flex-1 min-w-[120px]">
+                <div className="flex items-center justify-center gap-2 py-2">
                   <Grid3X3 className="w-4 h-4" />
-                  Episodes
-                  {episodePresence && (
-                    <span className="text-xs bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] px-1.5 rounded">
-                      {episodePresence.total_episodes}
-                    </span>
+                  <span className="hidden sm:inline">Presence</span>
+                  <span className="sm:hidden">Episodes</span>
+                  {episodePresence && episodePresence.total_episodes && episodePresence.total_episodes > 0 && (
+                    <Chip size="sm" variant="soft" className="bg-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] text-xs">
+                      {episodePresence?.total_episodes ?? 0}
+                    </Chip>
                   )}
                 </div>
               </Tabs.Tab>
-              <Tabs.Tab key="kink-profile">
-                <div className="flex items-center gap-2">
-                  <Heart className="w-4 h-4" />
-                  Profile
-                </div>
-              </Tabs.Tab>
+              
+              {isSST && (
+                <Tabs.Tab key="profile" className="flex-1 min-w-[120px]">
+                  <div className="flex items-center justify-center gap-2 py-2">
+                    <Heart className="w-4 h-4" />
+                    <span className="hidden sm:inline">Profile</span>
+                    <span className="sm:hidden">SST</span>
+                    <Chip size="sm" variant="soft" className="bg-[var(--color-accent-secondary)]/20 text-[var(--color-accent-secondary)] text-xs">
+                      SST
+                    </Chip>
+                  </div>
+                </Tabs.Tab>
+              )}
             </Tabs.List>
 
             {/* Overview Tab */}
             <Tabs.Panel key="overview">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {/* Canonical Info */}
+                {/* Character Info Card */}
                 <GlassCard>
-                  <CardHeader>
+                  <CardHeader className="border-b border-[var(--glass-border)]">
                     <div className="flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-[#D4AF37]" />
-                      <h3 className="font-heading text-lg text-[var(--color-text-primary)]">
-                        Canonical Traits
-                      </h3>
+                      <Sparkles className="w-5 h-5 text-[var(--color-accent-primary)]" />
+                      <h3 className="font-heading text-xl text-[var(--color-text-primary)]">Character Profile</h3>
                     </div>
                   </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      {canonicalTraits.map((trait) => (
-                        <Chip
-                          key={trait}
-                          variant="soft"
-                          size="sm"
-                          className="bg-[var(--color-surface-elevated)] text-[var(--color-text-secondary)] capitalize"
-                        >
-                          {trait.replace(/_/g, " ")}
-                        </Chip>
-                      ))}
-                    </div>
+                  <CardContent className="space-y-6">
+                    {/* Role */}
+                    {character.role && (
+                      <div>
+                        <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider mb-1">Role</p>
+                        <p className="text-lg text-[var(--color-text-primary)]">{character.role}</p>
+                      </div>
+                    )}
+                    
+                    {/* Description */}
+                    {character.description && (
+                      <div>
+                        <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider mb-2">Description</p>
+                        <p className="text-[var(--color-text-secondary)] leading-relaxed">{character.description}</p>
+                      </div>
+                    )}
                   </CardContent>
                 </GlassCard>
 
-                {/* Dark Adaptation */}
-                <GlassCard className="border-[var(--color-accent-secondary)]/30">
-                  <CardHeader className="border-b border-[var(--color-accent-secondary)]/20">
-                    <h3 className="font-heading text-lg text-[var(--color-accent-secondary)]">
-                      Dark Adaptation
-                    </h3>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div>
-                      <h4 className="font-medium text-[var(--color-text-primary)] mb-2">
-                        Adaptation Notes
-                      </h4>
-                      <p className="text-sm text-[var(--color-text-secondary)]">
-                        {character.adaptation_notes || "Not yet defined"}
-                      </p>
+                {/* Traits Card */}
+                <GlassCard>
+                  <CardHeader className="border-b border-[var(--glass-border)]">
+                    <div className="flex items-center gap-2">
+                      <Activity className="w-5 h-5 text-[var(--color-accent-primary)]" />
+                      <h3 className="font-heading text-xl text-[var(--color-text-primary)]">Traits</h3>
                     </div>
-
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    {/* Canonical Traits */}
+                    {canonicalTraits.length > 0 && (
+                      <div>
+                        <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider mb-3">Canonical</p>
+                        <div className="flex flex-wrap gap-2">
+                          {canonicalTraits.map(trait => (
+                            <Chip key={trait} variant="soft" size="sm" className="bg-[var(--color-surface)] text-[var(--color-text-secondary)] capitalize">
+                              {trait.replace(/_/g, " ")}
+                            </Chip>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Adaptation Traits */}
                     {adaptationTraits.length > 0 && (
                       <div>
-                        <h4 className="font-medium text-[var(--color-text-primary)] mb-2">
-                          Added Traits
-                        </h4>
+                        <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider mb-3">Dark Adaptation</p>
                         <div className="flex flex-wrap gap-2">
-                          {adaptationTraits.map((trait) => (
-                            <Chip
-                              key={trait}
-                              variant="soft"
-                              size="sm"
-                              className="bg-[var(--color-accent-secondary)]/20 text-[var(--color-accent-secondary)] capitalize"
-                            >
+                          {adaptationTraits.map(trait => (
+                            <Chip key={trait} variant="soft" size="sm" className="bg-[var(--color-accent-secondary)]/20 text-[var(--color-accent-secondary)] capitalize">
                               {trait.replace(/_/g, " ")}
                             </Chip>
                           ))}
@@ -302,19 +541,23 @@ export default function CharacterDetailPage() {
                   </CardContent>
                 </GlassCard>
 
-                {/* Quick Episode Presence (mini heatmap) */}
-                {episodePresence && episodePresence.episodes.length > 0 && (
+                {/* Quick Presence Preview */}
+                {presenceData.length > 0 && (
                   <GlassCard className="lg:col-span-2">
-                    <CardHeader>
-                      <h3 className="font-heading text-lg text-[var(--color-text-primary)]">
-                        Episode Appearances
-                      </h3>
+                    <CardHeader className="border-b border-[var(--glass-border)] flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Grid3X3 className="w-5 h-5 text-[var(--color-accent-primary)]" />
+                        <h3 className="font-heading text-xl text-[var(--color-text-primary)]">Episode Presence</h3>
+                      </div>
+                      <Button variant="ghost" size="sm" onPress={() => setActiveTab("presence")} className="text-[var(--color-accent-primary)]">
+                        View All <ArrowUpRight className="w-4 h-4 ml-1" />
+                      </Button>
                     </CardHeader>
                     <CardContent>
                       <EpisodePresenceHeatmap
                         characterId={characterId}
                         characterName={character.name}
-                        episodes={episodePresence.episodes}
+                        presence={presenceData.slice(0, 7)}
                       />
                     </CardContent>
                   </GlassCard>
@@ -325,25 +568,25 @@ export default function CharacterDetailPage() {
             {/* Relationships Tab */}
             <Tabs.Panel key="relationships">
               <GlassCard>
-                <CardHeader>
-                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
-                    Relationship Constellation
-                  </h2>
+                <CardHeader className="border-b border-[var(--glass-border)]">
+                  <h2 className="font-heading text-2xl text-[var(--color-text-primary)]">Relationship Constellation</h2>
+                  <p className="text-sm text-[var(--color-text-muted)] mt-1">
+                    Visualize connections and dynamics with other characters
+                  </p>
                 </CardHeader>
-                <CardContent>
-                  {relationshipGraph && relationshipGraph.nodes.length > 0 ? (
+                <CardContent className="pt-6">
+                  {relationshipData.length > 0 ? (
                     <RelationshipConstellation
                       characterId={characterId}
-                      nodes={relationshipGraph.nodes}
-                      links={relationshipGraph.links}
-                      centralCharacterName={character.name}
+                      relationships={relationshipData}
                       onNodeClick={handleNodeClick}
-                      height={550}
+                      height={600}
                     />
                   ) : (
-                    <div className="flex flex-col items-center justify-center h-64 text-[var(--color-text-muted)]">
-                      <Network className="w-12 h-12 mb-3 opacity-50" />
-                      <p>No relationship data available</p>
+                    <div className="flex flex-col items-center justify-center h-96 text-[var(--color-text-muted)]">
+                      <Network className="w-16 h-16 mb-4 opacity-30" />
+                      <p className="text-lg">No relationship data available</p>
+                      <p className="text-sm mt-2">This character has no recorded connections</p>
                     </div>
                   )}
                 </CardContent>
@@ -353,130 +596,100 @@ export default function CharacterDetailPage() {
             {/* Evolution Tab */}
             <Tabs.Panel key="evolution">
               <GlassCard>
-                <CardHeader>
-                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
-                    Character Evolution
-                  </h2>
+                <CardHeader className="border-b border-[var(--glass-border)]">
+                  <h2 className="font-heading text-2xl text-[var(--color-text-primary)]">Character Evolution</h2>
+                  <p className="text-sm text-[var(--color-text-muted)] mt-1">
+                    Track character growth and transformation across episodes
+                  </p>
                 </CardHeader>
-                <CardContent>
-                  {evolutionData && evolutionData.milestones.length > 0 ? (
-                    <ScrollShadow className="max-h-[600px]">
+                <CardContent className="pt-6">
+                  {evolutionTimelineData.length > 0 ? (
+                    <ScrollShadow className="max-h-[800px]">
                       <CharacterEvolutionTimeline
                         characterId={characterId}
                         characterName={character.name}
-                        milestones={evolutionData.milestones}
-                        arcSummary={evolutionData.arc_summary}
+                        evolution={evolutionTimelineData}
+                        milestones={evolutionData?.milestones}
+                        arcSummary={evolutionData?.arc_summary}
                       />
                     </ScrollShadow>
                   ) : (
-                    <div className="flex flex-col items-center justify-center h-64 text-[var(--color-text-muted)]">
-                      <TrendingUp className="w-12 h-12 mb-3 opacity-50" />
-                      <p>No evolution data available</p>
+                    <div className="flex flex-col items-center justify-center h-96 text-[var(--color-text-muted)]">
+                      <TrendingUp className="w-16 h-16 mb-4 opacity-30" />
+                      <p className="text-lg">No evolution data available</p>
+                      <p className="text-sm mt-2">Character progression has not been recorded</p>
                     </div>
                   )}
                 </CardContent>
               </GlassCard>
             </Tabs.Panel>
 
-            {/* Episodes Tab */}
-            <Tabs.Panel key="episodes">
+            {/* Presence Tab */}
+            <Tabs.Panel key="presence">
               <GlassCard>
-                <CardHeader>
-                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
-                    Episode Presence
-                  </h2>
+                <CardHeader className="border-b border-[var(--glass-border)]">
+                  <h2 className="font-heading text-2xl text-[var(--color-text-primary)]">Episode Presence</h2>
+                  <p className="text-sm text-[var(--color-text-muted)] mt-1">
+                    Screen time and importance across all episodes
+                  </p>
                 </CardHeader>
-                <CardContent>
-                  {episodePresence && episodePresence.episodes.length > 0 ? (
+                <CardContent className="pt-6">
+                  {presenceData.length > 0 ? (
                     <EpisodePresenceHeatmap
                       characterId={characterId}
                       characterName={character.name}
-                      episodes={episodePresence.episodes}
+                      presence={presenceData}
                     />
                   ) : (
-                    <div className="flex flex-col items-center justify-center h-64 text-[var(--color-text-muted)]">
-                      <Grid3X3 className="w-12 h-12 mb-3 opacity-50" />
-                      <p>No episode presence data available</p>
+                    <div className="flex flex-col items-center justify-center h-96 text-[var(--color-text-muted)]">
+                      <Grid3X3 className="w-16 h-16 mb-4 opacity-30" />
+                      <p className="text-lg">No episode presence data</p>
+                      <p className="text-sm mt-2">This character has not appeared in any episodes</p>
                     </div>
                   )}
                 </CardContent>
               </GlassCard>
             </Tabs.Panel>
 
-            {/* Kink Profile Tab */}
-            <Tabs.Panel key="kink-profile">
-              <GlassCard>
-                <CardHeader>
-                  <h2 className="font-heading text-xl text-[var(--color-text-primary)]">
-                    Character Profile
-                  </h2>
-                </CardHeader>
-                <CardContent>
-                  <ScrollShadow className="max-h-[600px]">
-                    <div className="space-y-6">
-                      {/* Preferences */}
-                      <div>
-                        <h4 className="text-sm font-medium text-[var(--color-text-primary)] mb-3">Preferences</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {kinkProfile.preferences.map((pref: string) => (
-                            <Chip key={pref} variant="soft" size="sm" className="bg-[#ff6b9d]/20 text-[#ff6b9d]">
-                              {pref}
-                            </Chip>
-                          ))}
-                        </div>
-                      </div>
-                      
-                      {/* Limits */}
-                      <div>
-                        <h4 className="text-sm font-medium text-[var(--color-text-primary)] mb-3">Limits</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {kinkProfile.limits.map((limit: string) => (
-                            <Chip key={limit} variant="soft" size="sm" className="bg-red-500/20 text-red-400">
-                              {limit}
-                            </Chip>
-                          ))}
-                        </div>
-                      </div>
-                      
-                      {/* Evolution */}
-                      <div>
-                        <h4 className="text-sm font-medium text-[var(--color-text-primary)] mb-3">Evolution</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {kinkProfile.evolution.map((evo: string) => (
-                            <Chip key={evo} variant="soft" size="sm" className="bg-[#D4AF37]/20 text-[#D4AF37]">
-                              {evo}
-                            </Chip>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </ScrollShadow>
-                </CardContent>
-              </GlassCard>
-            </Tabs.Panel>
+            {/* Profile Tab (SST Only) */}
+            {isSST && (
+              <Tabs.Panel key="profile">
+                <KinkProfileVisualization
+                  characterId={characterId}
+                  preferences={kinkProfile.preferences.map((p: any, idx: number) => ({
+                    id: `pref-${idx}`,
+                    descriptor: typeof p === 'string' ? p : p.descriptor,
+                    intensity: typeof p === 'string' ? 3 : p.intensity || 3,
+                    context: typeof p === 'string' ? undefined : p.context,
+                  }))}
+                  limits={kinkProfile.limits.map((l: any, idx: number) => ({
+                    id: `limit-${idx}`,
+                    descriptor: typeof l === 'string' ? l : l.descriptor,
+                    type: typeof l === 'string' ? 'hard' : l.type || 'hard',
+                    note: typeof l === 'string' ? undefined : l.note,
+                  }))}
+                  evolution={kinkProfile.evolution?.map((e: any, idx: number) => ({
+                    episode_id: e.episode_id,
+                    preferences: Object.entries(e.descriptors || {}).map(([key, value]) => ({
+                      id: `evo-${idx}-${key}`,
+                      descriptor: key,
+                      intensity: value as number,
+                    })),
+                  }))}
+                />
+              </Tabs.Panel>
+            )}
           </Tabs>
         </div>
-      </div>
+      </motion.div>
 
+      {/* Creative Companion Panel */}
       <CreativeCompanionPanel
         isOpen={isPanelOpen}
         onClose={() => setIsPanelOpen(false)}
         entityId={characterId}
         entityType="character"
       />
-    </div>
+    </motion.div>
   );
-}
-
-// Utility function to format screen time
-function formatScreenTime(seconds: number): string {
-  if (seconds < 60) {
-    return `${seconds}s`;
-  }
-  const hours = Math.floor(seconds / 3600);
-  const minutes = Math.floor((seconds % 3600) / 60);
-  if (hours > 0) {
-    return `${hours}h ${minutes}m`;
-  }
-  return `${minutes}m`;
 }

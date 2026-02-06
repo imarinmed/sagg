@@ -297,6 +297,122 @@ export interface CharacterEpisodePresenceData {
   total_episodes: number;
 }
 
+// Media Lab Types
+export enum MediaJobStatusEnum {
+  QUEUED = "QUEUED",
+  RUNNING = "RUNNING",
+  SUCCEEDED = "SUCCEEDED",
+  FAILED = "FAILED",
+  CANCELLED = "CANCELLED",
+}
+
+export enum WorkflowTypeEnum {
+  ENHANCE = "enhance",
+  INTERPOLATE = "interpolate",
+  GENERATE = "generate",
+  BLEND = "blend",
+}
+
+export interface ArtifactData {
+  id: string;
+  artifact_type: string;
+  file_path: string;
+  file_size_bytes?: number | null;
+  metadata_json?: Record<string, any> | null;
+}
+
+export interface MediaJobResponse {
+  id: string;
+  character_id: string;
+  workflow_type: string;
+  status: string;
+  progress: number;
+  error_message?: string | null;
+  artifacts: ArtifactData[];
+  created_at: string;
+  updated_at: string;
+}
+
+export interface MediaJobListResponse {
+  total: number;
+  jobs: MediaJobResponse[];
+}
+
+export interface ArtifactListResponse {
+  job_id: string;
+  total_artifacts: number;
+  artifacts: ArtifactData[];
+}
+
+export interface MediaJobSubmitPayload {
+  character_id: string;
+  workflow_type: string;
+  parameters?: Record<string, any>;
+}
+
+export interface CancelJobPayload {
+  reason?: string;
+}
+
+export interface RetryJobPayload {
+  reason?: string;
+}
+
+export interface MediaJobListParams {
+  status?: string;
+  workflow_type?: string;
+  character_id?: string;
+}
+
+// Helper function to build query string from params
+function buildQueryString(params: Record<string, any>): string {
+  const search = new URLSearchParams();
+  Object.entries(params).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) {
+      search.set(key, String(value));
+    }
+  });
+  const query = search.toString();
+  return query ? `?${query}` : "";
+}
+
+async function fetchApiWithBody<T>(
+  endpoint: string,
+  method: "POST" | "PUT" | "PATCH" = "POST",
+  body?: any
+): Promise<T> {
+  const primaryUrl = `${API_BASE_URL}${endpoint}`;
+
+  try {
+    const response = await fetch(primaryUrl, {
+      method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    if (!response.ok) {
+      throw new Error(`API error: ${response.status}`);
+    }
+    return response.json();
+  } catch (error) {
+    if (endpoint.startsWith("/api/")) {
+      const fallbackResponse = await fetch(endpoint, {
+        method,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: body ? JSON.stringify(body) : undefined,
+      });
+      if (!fallbackResponse.ok) {
+        throw error;
+      }
+      return fallbackResponse.json();
+    }
+    throw error;
+  }
+}
+
 export const api = {
   episodes: {
     list: () => fetchApi<Episode[]>("/api/episodes"),
@@ -339,5 +455,20 @@ export const api = {
   },
   search: {
     query: (q: string) => fetchApi<SearchResponse>(`/api/search?q=${encodeURIComponent(q)}`),
+  },
+  mediaLab: {
+    submitJob: (payload: MediaJobSubmitPayload) =>
+      fetchApiWithBody<MediaJobResponse>("/api/media-lab/jobs", "POST", payload),
+    listJobs: (params?: MediaJobListParams) => {
+      const query = buildQueryString(params || {});
+      return fetchApi<MediaJobListResponse>(`/api/media-lab/jobs${query}`);
+    },
+    getJob: (jobId: string) => fetchApi<MediaJobResponse>(`/api/media-lab/jobs/${jobId}`),
+    cancelJob: (jobId: string, payload?: CancelJobPayload) =>
+      fetchApiWithBody<MediaJobResponse>(`/api/media-lab/jobs/${jobId}/cancel`, "POST", payload),
+    retryJob: (jobId: string, payload?: RetryJobPayload) =>
+      fetchApiWithBody<MediaJobResponse>(`/api/media-lab/jobs/${jobId}/retry`, "POST", payload),
+    getArtifacts: (jobId: string) =>
+      fetchApi<ArtifactListResponse>(`/api/media-lab/jobs/${jobId}/artifacts`),
   },
 };

@@ -1,316 +1,334 @@
 'use client';
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   PhoneLockScreen,
   ChainHolster,
   type GeofenceMode,
   type PhotoContext,
-  type StudentData
+  type StudentData,
+  type PhotoItem,
+  type TimeOfDay,
+  type NextActivity,
+  type HolsterMaterial
 } from '@/components/phone-system';
-import { MapPin, Building2, Crown, ChevronLeft, ChevronRight, RefreshCcw } from 'lucide-react';
 
-const demoStudent: StudentData = {
+type ActivityKey = 'class' | 'gym' | 'meal' | 'sleep' | 'free' | 'transit';
+
+const ACTIVITIES: Record<ActivityKey, NextActivity> = {
+  class: {
+    type: 'class',
+    name: 'Advanced Studies',
+    location: 'Lecture Hall A',
+    timeUntil: '45 minutes',
+    isMandatory: true
+  },
+  gym: {
+    type: 'training',
+    name: 'Gym Training',
+    location: 'Athletic Complex',
+    timeUntil: '2 hours',
+    isMandatory: true
+  },
+  meal: {
+    type: 'rest',
+    name: 'Meal Time',
+    location: 'Dining Hall',
+    timeUntil: '30 minutes',
+    isMandatory: false
+  },
+  sleep: {
+    type: 'rest',
+    name: 'Sleep',
+    location: 'Dormitory',
+    timeUntil: '8 hours',
+    isMandatory: true
+  },
+  free: {
+    type: 'social',
+    name: 'Free Time',
+    location: 'Campus',
+    timeUntil: '1 hour',
+    isMandatory: false
+  },
+  transit: {
+    type: 'gym',
+    name: 'Transit',
+    location: 'Between Locations',
+    timeUntil: '15 minutes',
+    isMandatory: false
+  }
+};
+
+const KIARA_PHOTOS: PhotoItem[] = [
+  {
+    id: 'p1',
+    url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+    context: 'portrait',
+    contextLabel: 'Official Portrait',
+    quality: 'poor',
+    unlockedAt: 1,
+    allure: 65,
+    sensuality: 40
+  },
+  {
+    id: 'p2',
+    url: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop',
+    context: 'gym',
+    contextLabel: 'Gym Session',
+    quality: 'average',
+    unlockedAt: 3,
+    allure: 75,
+    sensuality: 60
+  },
+  {
+    id: 'p3',
+    url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop',
+    context: 'school',
+    contextLabel: 'Campus Grounds',
+    quality: 'good',
+    unlockedAt: 6,
+    allure: 85,
+    sensuality: 70
+  },
+  {
+    id: 'p4',
+    url: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop',
+    context: 'spa',
+    contextLabel: 'Wellness Center',
+    quality: 'excellent',
+    unlockedAt: 8,
+    allure: 95,
+    sensuality: 90
+  },
+  {
+    id: 'p5',
+    url: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=800&auto=format&fit=crop',
+    context: 'class',
+    contextLabel: 'Advanced Studies',
+    quality: 'excellent',
+    unlockedAt: 10,
+    allure: 98,
+    sensuality: 85
+  }
+];
+
+const KIARA_DATA: StudentData = {
   id: 'kiara',
   studentId: 'STD-24-KND-001',
   name: 'Kiara',
   family: 'Natt och Dag',
   role: 'protagonist',
-  photos: [
-    {
-      id: 'p1',
-      url: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80',
-      context: 'portrait',
-      contextLabel: 'Portrait',
-      quality: 'average',
-      unlockedAt: 1
-    },
-    {
-      id: 'p2',
-      url: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80',
-      context: 'gym',
-      contextLabel: 'Gym Training',
-      quality: 'good',
-      unlockedAt: 3
-    },
-    {
-      id: 'p3',
-      url: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80',
-      context: 'school',
-      contextLabel: 'School Uniform',
-      quality: 'excellent',
-      unlockedAt: 6
-    },
-    {
-      id: 'p4',
-      url: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80',
-      context: 'spa',
-      contextLabel: 'Spa Day',
-      quality: 'excellent',
-      unlockedAt: 8
-    },
-    {
-      id: 'p5',
-      url: 'https://images.unsplash.com/photo-1529693662653-9d480530a697?w=800&q=80',
-      context: 'class',
-      contextLabel: 'Companion Class',
-      quality: 'good',
-      unlockedAt: 10
-    }
-  ],
+  photos: KIARA_PHOTOS,
   isReserved: true,
-  reservationDate: 'Oct 15',
+  reservationDate: '2026-02-14',
   reservedBy: 'Desirée Natt och Dag'
 };
 
-const geofenceModes: { id: GeofenceMode; label: string; icon: React.ReactNode; description: string }[] = [
-  {
-    id: 'public',
-    label: 'Public',
-    icon: <MapPin className="w-4 h-4" />,
-    description: 'In town - minimal info shown'
-  },
-  {
-    id: 'student',
-    label: 'Student',
-    icon: <Building2 className="w-4 h-4" />,
-    description: 'On campus - full profile visible'
-  },
-  {
-    id: 'owner',
-    label: 'Owner',
-    icon: <Crown className="w-4 h-4" />,
-    description: 'Full access - live tracking active'
-  }
-];
+const ControlSection = ({ title, children }: { title: string; children: React.ReactNode }) => (
+  <div className="space-y-3">
+    <h3 className="text-xs uppercase tracking-wider text-white/50 font-medium">{title}</h3>
+    {children}
+  </div>
+);
 
-const chainMaterials = ['silver', 'gold', 'obsidian', 'rose-gold'] as const;
-const chainStyles = ['simple', 'ornate', 'spiked', 'minimal'] as const;
+const ButtonGroup = ({ children }: { children: React.ReactNode }) => (
+  <div className="flex flex-wrap gap-2">
+    {children}
+  </div>
+);
 
-export default function PhoneSystemDemoPage() {
+const ToggleButton = ({ 
+  active, 
+  onClick, 
+  children 
+}: { 
+  active: boolean; 
+  onClick: () => void; 
+  children: React.ReactNode 
+}) => (
+  <button
+    onClick={onClick}
+    className={`
+      px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200
+      ${active 
+        ? 'bg-white text-black shadow-lg shadow-white/10' 
+        : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'}
+    `}
+  >
+    {children}
+  </button>
+);
+
+export default function PhoneDemoPage() {
+  const [episode, setEpisode] = useState(1);
+  const [timeOfDay, setTimeOfDay] = useState<TimeOfDay>('morning');
   const [mode, setMode] = useState<GeofenceMode>('student');
-  const [currentEpisode, setCurrentEpisode] = useState(1);
-  const [material, setMaterial] = useState('silver');
-  const [chainStyle, setChainStyle] = useState('simple');
-  const [isHolsterActive, setIsHolsterActive] = useState(false);
+  const [activityKey, setActivityKey] = useState<ActivityKey>('class');
+  const [holsterMaterial, setHolsterMaterial] = useState<HolsterMaterial>('silver');
+  const [isChainActive, setIsChainActive] = useState(false);
 
-  const incrementEpisode = () => setCurrentEpisode(prev => Math.min(prev + 1, 10));
-  const decrementEpisode = () => setCurrentEpisode(prev => Math.max(prev - 1, 1));
+  const nextActivity = ACTIVITIES[activityKey];
+
+  const currentPhotos = KIARA_PHOTOS.map(p => ({
+    ...p,
+    quality: episode >= 8 ? 'excellent' : episode >= 5 ? 'good' : episode >= 3 ? 'average' : 'poor'
+  })) as PhotoItem[];
+
+  const studentData: StudentData = {
+    ...KIARA_DATA,
+    photos: currentPhotos
+  };
 
   return (
-    <div className="min-h-screen bg-[var(--color-bg-primary)]">
-      <header className="sticky top-0 z-30 glass border-b border-[var(--color-border)]">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <h1 className="text-2xl font-heading text-[var(--color-text-primary)]">
-            Vinterhall Phone System Demo
-          </h1>
-          <p className="text-sm text-[var(--color-text-secondary)]">
-            Testing the 95% photo, 5% overlay layout
-          </p>
+    <div className="min-h-screen bg-[#0a0a0a] text-white flex flex-col lg:flex-row overflow-hidden font-sans">
+      
+      <div className="flex-1 flex items-center justify-center p-8 lg:p-12 relative bg-gradient-to-br from-neutral-900 to-black">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[120px] opacity-20 transition-colors duration-1000
+            ${holsterMaterial === 'gold' ? 'bg-amber-500' : 
+              holsterMaterial === 'rose-gold' ? 'bg-rose-500' : 
+              holsterMaterial === 'obsidian' ? 'bg-blue-900' : 'bg-slate-500'}
+          `} />
         </div>
-      </header>
 
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="flex justify-center">
-            <ChainHolster
-              material={material as any}
-              chainStyle={chainStyle as any}
-              isActive={isHolsterActive}
-              onChainClick={() => setIsHolsterActive(!isHolsterActive)}
-              className="w-[320px]"
+        <div className="relative z-10 scale-90 lg:scale-100">
+          <ChainHolster 
+            material={holsterMaterial}
+            isActive={isChainActive}
+            onChainClick={() => setIsChainActive(!isChainActive)}
+          >
+            <PhoneLockScreen
+              student={studentData}
+              mode={mode}
+              currentEpisode={episode}
+              timeOfDay={timeOfDay}
+              nextActivity={nextActivity}
+              batteryLevel={87}
+              onSwipeUp={() => console.log('Swipe Up Triggered')}
+              onLongPress={() => console.log('Long Press Triggered')}
+            />
+          </ChainHolster>
+        </div>
+      </div>
+
+      <div className="w-full lg:w-[400px] bg-neutral-900/50 backdrop-blur-xl border-l border-white/10 p-8 flex flex-col gap-8 overflow-y-auto h-[50vh] lg:h-screen">
+        
+        <div className="space-y-2">
+          <h1 className="text-2xl font-light tracking-tight">Vinterhall Phone System</h1>
+          <p className="text-sm text-white/40">Interactive Demo • v1.0</p>
+        </div>
+
+        <div className="space-y-8">
+          
+          <ControlSection title={`Timeline: Episode ${episode}`}>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value={episode}
+              onChange={(e) => setEpisode(parseInt(e.target.value))}
+              className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-white"
+            />
+            <div className="flex justify-between text-xs text-white/30 font-mono">
+              <span>EP 01</span>
+              <span>EP 05</span>
+              <span>EP 10</span>
+            </div>
+            <p className="text-xs text-white/50 italic">
+              Adjusts photo availability, quality, and nickname evolution.
+            </p>
+          </ControlSection>
+
+          <ControlSection title="Time of Day">
+            <ButtonGroup>
+              {(['dawn', 'morning', 'midday', 'afternoon', 'evening', 'night'] as TimeOfDay[]).map((t) => (
+                <ToggleButton 
+                  key={t} 
+                  active={timeOfDay === t} 
+                  onClick={() => setTimeOfDay(t)}
+                >
+                  {t.charAt(0).toUpperCase() + t.slice(1)}
+                </ToggleButton>
+              ))}
+            </ButtonGroup>
+          </ControlSection>
+
+          <ControlSection title="Geofence Mode">
+            <div className="flex p-1 bg-white/5 rounded-lg">
+              {(['public', 'student', 'owner'] as GeofenceMode[]).map((m) => (
+                <button
+                  key={m}
+                  onClick={() => setMode(m)}
+                  className={`
+                    flex-1 py-2 text-sm font-medium rounded-md transition-all
+                    ${mode === m 
+                      ? 'bg-white/10 text-white shadow-sm' 
+                      : 'text-white/40 hover:text-white/60'}
+                  `}
+                >
+                  {m.charAt(0).toUpperCase() + m.slice(1)}
+                </button>
+              ))}
+            </div>
+          </ControlSection>
+
+           <ControlSection title="Next Activity">
+             <select
+               value={activityKey}
+               onChange={(e) => setActivityKey(e.target.value as ActivityKey)}
+               className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white/20"
+             >
+               <option value="class">Class</option>
+               <option value="gym">Gym Training</option>
+               <option value="meal">Meal Time</option>
+               <option value="sleep">Sleep</option>
+               <option value="free">Free Time</option>
+               <option value="transit">Transit</option>
+             </select>
+           </ControlSection>
+
+          <ControlSection title="Chain Holster Material">
+            <div className="flex gap-4">
+              {(['silver', 'gold', 'obsidian', 'rose-gold'] as HolsterMaterial[]).map((m) => (
+                <button
+                  key={m}
+                  onClick={() => setHolsterMaterial(m)}
+                  className={`
+                    w-12 h-12 rounded-full border-2 transition-all duration-300 relative
+                    ${holsterMaterial === m ? 'border-white scale-110' : 'border-transparent opacity-50 hover:opacity-100'}
+                  `}
+                  title={m}
+                >
+                  <div className={`
+                    absolute inset-1 rounded-full
+                    ${m === 'silver' ? 'bg-gradient-to-br from-slate-200 to-slate-400' :
+                      m === 'gold' ? 'bg-gradient-to-br from-amber-200 to-amber-500' :
+                      m === 'obsidian' ? 'bg-gradient-to-br from-slate-700 to-black' :
+                      'bg-gradient-to-br from-rose-200 to-rose-400'}
+                  `} />
+                </button>
+              ))}
+            </div>
+          </ControlSection>
+
+          <ControlSection title="Physics">
+            <button
+              onClick={() => setIsChainActive(!isChainActive)}
+              className={`
+                w-full py-3 rounded-lg text-sm font-medium transition-all
+                ${isChainActive 
+                  ? 'bg-white text-black' 
+                  : 'bg-white/5 text-white hover:bg-white/10'}
+              `}
             >
-              <div className="aspect-[9/19.5] bg-black">
-                <PhoneLockScreen
-                  student={demoStudent}
-                  mode={mode}
-                  currentEpisode={currentEpisode}
-                  onSwipeUp={() => console.log('Unlock phone')}
-                  onLongPress={() => console.log('Emergency mode')}
-                />
-              </div>
-            </ChainHolster>
-          </div>
+              {isChainActive ? 'Stop Motion' : 'Simulate Motion'}
+            </button>
+          </ControlSection>
 
-          <div className="space-y-6">
-            <section className="glass rounded-xl p-6">
-              <h2 className="text-lg font-heading text-[var(--color-text-primary)] mb-4">
-                Geofence Mode
-              </h2>
-              <div className="grid grid-cols-3 gap-3">
-                {geofenceModes.map((gmode) => (
-                  <motion.button
-                    key={gmode.id}
-                    onClick={() => setMode(gmode.id)}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`
-                      flex flex-col items-center gap-2 p-4 rounded-xl transition-all
-                      ${mode === gmode.id
-                        ? 'bg-[var(--color-accent-primary)] text-white'
-                        : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-tertiary)]'
-                      }
-                    `}
-                  >
-                    {gmode.icon}
-                    <span className="text-sm font-medium">{gmode.label}</span>
-                    <span className="text-[10px] opacity-70 text-center">{gmode.description}</span>
-                  </motion.button>
-                ))}
-              </div>
-            </section>
-
-            <section className="glass rounded-xl p-6">
-              <h2 className="text-lg font-heading text-[var(--color-text-primary)] mb-4">
-                Episode Progression
-              </h2>
-              <div className="flex items-center gap-4">
-                <motion.button
-                  onClick={decrementEpisode}
-                  whileTap={{ scale: 0.9 }}
-                  className="p-3 rounded-full bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)]"
-                  disabled={currentEpisode <= 1}
-                >
-                  <ChevronLeft className="w-5 h-5" />
-                </motion.button>
-
-                <div className="flex-1 text-center">
-                  <p className="text-3xl font-heading text-[var(--color-text-primary)]">
-                    Episode {currentEpisode}
-                  </p>
-                  <p className="text-sm text-[var(--color-text-secondary)]">
-                    {currentEpisode === 1 && 'Fresh start, poor photos'}
-                    {currentEpisode >= 2 && currentEpisode < 5 && 'Improving quality'}
-                    {currentEpisode >= 5 && currentEpisode < 8 && 'Good quality unlocked'}
-                    {currentEpisode >= 8 && 'Excellent photos available'}
-                  </p>
-                </div>
-
-                <motion.button
-                  onClick={incrementEpisode}
-                  whileTap={{ scale: 0.9 }}
-                  className="p-3 rounded-full bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)]"
-                  disabled={currentEpisode >= 10}
-                >
-                  <ChevronRight className="w-5 h-5" />
-                </motion.button>
-              </div>
-
-              <div className="mt-4">
-                <div className="h-2 bg-[var(--color-bg-tertiary)] rounded-full overflow-hidden">
-                  <motion.div
-                    className="h-full bg-[var(--color-accent-primary)]"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${(currentEpisode / 10) * 100}%` }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  />
-                </div>
-                <div className="flex justify-between mt-2 text-xs text-[var(--color-text-muted)]">
-                  <span>Ep 1</span>
-                  <span>Ep 10</span>
-                </div>
-              </div>
-            </section>
-
-            <section className="glass rounded-xl p-6">
-              <h2 className="text-lg font-heading text-[var(--color-text-primary)] mb-4">
-                Holster Customization
-              </h2>
-
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-[var(--color-text-secondary)] mb-2">Material</p>
-                  <div className="flex gap-2">
-                    {chainMaterials.map((mat) => (
-                      <motion.button
-                        key={mat}
-                        onClick={() => setMaterial(mat)}
-                        whileTap={{ scale: 0.95 }}
-                        className={`
-                          px-4 py-2 rounded-lg text-sm capitalize transition-all
-                          ${material === mat
-                            ? 'bg-[var(--color-accent-primary)] text-white'
-                            : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)]'
-                          }
-                        `}
-                      >
-                        {mat.replace('-', ' ')}
-                      </motion.button>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <p className="text-sm text-[var(--color-text-secondary)] mb-2">Chain Style</p>
-                  <div className="flex gap-2">
-                    {chainStyles.map((style) => (
-                      <motion.button
-                        key={style}
-                        onClick={() => setChainStyle(style)}
-                        whileTap={{ scale: 0.95 }}
-                        className={`
-                          px-4 py-2 rounded-lg text-sm capitalize transition-all
-                          ${chainStyle === style
-                            ? 'bg-[var(--color-accent-primary)] text-white'
-                            : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)]'
-                          }
-                        `}
-                      >
-                        {style}
-                      </motion.button>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section className="glass rounded-xl p-6">
-              <h2 className="text-lg font-heading text-[var(--color-text-primary)] mb-4">
-                Phone Behaviors
-              </h2>
-              <div className="space-y-3 text-sm text-[var(--color-text-secondary)]">
-                <p><strong>Swipe Left/Right:</strong> Change photo context (Portrait → Gym → School → Spa → Class)</p>
-                <p><strong>Swipe Up:</strong> Unlock phone to access home screen</p>
-                <p><strong>Long Press:</strong> Emergency override / SOS</p>
-                <p><strong>Click Chain:</strong> Animate holster</p>
-              </div>
-            </section>
-
-            <section className="glass rounded-xl p-6">
-              <h2 className="text-lg font-heading text-[var(--color-text-primary)] mb-4">
-                Features
-              </h2>
-              <ul className="space-y-2 text-sm text-[var(--color-text-secondary)]">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  95% photo, 5% overlay layout
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  Progressive photo quality (poor → excellent)
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  Name degradation (Kiara → Kia → Kiki → KK)
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  Geofence modes (Public/Student/Owner)
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  Subtle reservation badges
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                  Customizable chain holster materials
-                </li>
-              </ul>
-            </section>
-          </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

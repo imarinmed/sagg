@@ -101,6 +101,7 @@ const viewModeIcons: Record<ViewMode, React.ReactNode> = {
   graph: <Share2 className="w-4 h-4" />,
   timeline: <Clock className="w-4 h-4" />,
   split: <Columns2 className="w-4 h-4" />,
+  phone: <Smartphone className="w-4 h-4" />,
 };
 
 const cardModeLabels: Record<CardViewMode, string> = {

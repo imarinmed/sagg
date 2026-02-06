@@ -36,8 +36,11 @@ import {
   Users,
   Menu,
   Filter,
-  Search
+  Search,
+  Smartphone
 } from 'lucide-react';
+
+import PhoneView from './PhoneView';
 
 // Demo data for students
 const demoStudents = [
@@ -325,6 +328,7 @@ const filterGroups: FilterGroup[] = [
 // View mode options
 const viewModes = [
   { id: 'cards', label: 'Kort', icon: LayoutGrid },
+  { id: 'phone', label: 'Telefon', icon: Smartphone },
   { id: 'graph', label: 'Graf', icon: Share2 },
   { id: 'timeline', label: 'Tidslinje', icon: Clock },
   { id: 'families', label: 'Familjer', icon: Users },
@@ -343,7 +347,7 @@ export default function CharactersPage() {
   useCommandPalette(() => setCommandOpen(true));
 
   const handleViewChange = useCallback((view: string) => {
-    setMode(view as 'cards' | 'graph' | 'timeline' | 'split');
+    setMode(view as 'cards' | 'graph' | 'timeline' | 'split' | 'phone');
   }, [setMode]);
 
   const handleFilterChange = useCallback((filters: ActiveFilter[]) => {
@@ -520,6 +524,19 @@ export default function CharactersPage() {
                   ))}
                 </div>
               </section>
+            </motion.div>
+          )}
+
+          {/* Phone View */}
+          {state.mode === 'phone' && (
+            <motion.div
+              key="phone"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="space-y-4"
+            >
+              <PhoneView students={demoStudents} />
             </motion.div>
           )}
 

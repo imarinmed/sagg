@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react';
 
-export type ViewMode = 'cards' | 'graph' | 'timeline' | 'split';
+export type ViewMode = 'cards' | 'graph' | 'timeline' | 'split' | 'phone';
 export type CardViewMode = 'portrait' | 'compact' | 'list';
 export type GraphLayout = 'force' | 'hierarchical' | 'circular' | 'clustered';
 export type TimelineZoom = 'episode' | 'season' | 'series';

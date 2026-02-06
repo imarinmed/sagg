@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight, Home, Map, Users, Clock, Sparkles } from 'lucide-react';
+import { ChevronRight, Home, Map, Users, Clock, Sparkles, Smartphone } from 'lucide-react';
 
 export interface BreadcrumbItem {
   id: string;
@@ -113,7 +113,7 @@ export function MiniMap({
 }
 
 export interface NavigationShortcutsProps {
-  onNavigate?: (view: 'cards' | 'graph' | 'timeline' | 'families') => void;
+  onNavigate?: (view: 'cards' | 'graph' | 'timeline' | 'families' | 'phone') => void;
   currentView?: string;
   className?: string;
 }
@@ -121,9 +121,10 @@ export interface NavigationShortcutsProps {
 export function NavigationShortcuts({ onNavigate, currentView, className = '' }: NavigationShortcutsProps) {
   const shortcuts = [
     { id: 'cards', label: 'Kort', icon: <Users className="w-4 h-4" />, key: '1' },
-    { id: 'graph', label: 'Graf', icon: <Map className="w-4 h-4" />, key: '2' },
-    { id: 'timeline', label: 'Tidslinje', icon: <Clock className="w-4 h-4" />, key: '3' },
-    { id: 'families', label: 'Familjer', icon: <Sparkles className="w-4 h-4" />, key: '4' }
+    { id: 'phone', label: 'Telefon', icon: <Smartphone className="w-4 h-4" />, key: '2' },
+    { id: 'graph', label: 'Graf', icon: <Map className="w-4 h-4" />, key: '3' },
+    { id: 'timeline', label: 'Tidslinje', icon: <Clock className="w-4 h-4" />, key: '4' },
+    { id: 'families', label: 'Familjer', icon: <Sparkles className="w-4 h-4" />, key: '5' }
   ] as const;
 
   return (

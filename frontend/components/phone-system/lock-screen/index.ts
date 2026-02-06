@@ -1,8 +1,9 @@
 export { PhoneLockScreen } from './PhoneLockScreen';
-export { StatusBar } from './StatusBar';
+export { ClassStatusBar } from './ClassStatusBar';
 export { IDOverlay } from './IDOverlay';
 export { PhotoGallery } from './PhotoGallery';
-export type { PhotoContext, GeofenceMode, PhotoItem, StudentData, PhoneLockScreenProps } from './PhoneLockScreen';
-export type { StatusBarProps } from './StatusBar';
-export type { IDOverlayProps } from './IDOverlay';
-export type { PhotoGalleryProps } from './PhotoGallery';
+
+export type { PhoneLockScreenProps, StudentData } from './PhoneLockScreen';
+export type { ClassStatusBarProps, NextActivity, TimeOfDay } from './ClassStatusBar';
+export type { IDOverlayProps, GeofenceMode } from './IDOverlay';
+export type { PhotoGalleryProps, PhotoItem, PhotoContext } from './PhotoGallery';

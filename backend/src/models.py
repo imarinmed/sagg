@@ -354,3 +354,82 @@ class CharacterEvolutionSummary(BaseModel):
     milestone_count: int
     latest_milestone_type: str | None = None
     arc_completion_percentage: float = 0.0  # 0-100
+
+
+# Media Lab Models
+class MediaJobStatus(str, Enum):
+    """Job lifecycle states"""
+
+    QUEUED = "QUEUED"
+    RUNNING = "RUNNING"
+    SUCCEEDED = "SUCCEEDED"
+    FAILED = "FAILED"
+    CANCELLED = "CANCELLED"
+
+
+class WorkflowType(str, Enum):
+    """Supported media workflow types"""
+
+    ENHANCE = "enhance"
+    INTERPOLATE = "interpolate"
+    GENERATE = "generate"
+    BLEND = "blend"
+
+
+class MediaJobSubmitRequest(BaseModel):
+    """Request to submit a new media job"""
+
+    character_id: str
+    workflow_type: str = Field(..., pattern="^(enhance|interpolate|generate|blend)$")
+    parameters: dict = Field(default_factory=dict)
+
+
+class ArtifactData(BaseModel):
+    """Artifact metadata and reference"""
+
+    id: str
+    artifact_type: str
+    file_path: str
+    file_size_bytes: int | None = None
+    metadata_json: dict | None = None
+
+
+class MediaJobResponse(BaseModel):
+    """Response for a media job"""
+
+    id: str
+    character_id: str
+    workflow_type: str
+    status: str
+    progress: int = Field(ge=0, le=100)
+    error_message: str | None = None
+    artifacts: list[ArtifactData] = Field(default_factory=list)
+    created_at: datetime
+    updated_at: datetime
+
+
+class MediaJobListResponse(BaseModel):
+    """Response for listing media jobs"""
+
+    total: int
+    jobs: list[MediaJobResponse]
+
+
+class ArtifactListResponse(BaseModel):
+    """Response for listing artifacts for a job"""
+
+    job_id: str
+    total_artifacts: int
+    artifacts: list[ArtifactData]
+
+
+class CancelJobRequest(BaseModel):
+    """Request to cancel a job"""
+
+    reason: str | None = None
+
+
+class RetryJobRequest(BaseModel):
+    """Request to retry a job"""
+
+    reason: str | None = None

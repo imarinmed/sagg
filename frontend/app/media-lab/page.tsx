@@ -1,0 +1,660 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { Button, Input, Spinner } from "@heroui/react";
+import { Search, Wand2, Sparkles, Layers, Shuffle, History, Play, RefreshCw, AlertCircle } from "lucide-react";
+import { GlassCard } from "@/components/GlassCard";
+import Link from "next/link";
+import { api, MediaJobResponse, MediaJobStatusEnum } from "@/lib/api";
+import { getStatusColor, getStatusBadgeStyles, formatDate } from "./utils";
+
+export default function MediaLabPage() {
+  const [activeTab, setActiveTab] = useState<"generate" | "enhance" | "interpolate" | "blend" | "jobs">("generate");
+
+  return (
+    <div className="space-y-0">
+      <div className="relative w-full h-[40vh] min-h-[300px] overflow-hidden -mt-24 sm:-mt-28">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `linear-gradient(135deg, #0f172a 0%, #1e1b4b 40%, #0a0a0f 100%)`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-[#0a0a0f]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0f]/90 via-transparent to-[#0a0a0f]/70" />
+          
+          <div className="absolute top-20 right-20 w-64 h-64 border border-blue-500/10 rounded-full opacity-30" />
+          <div className="absolute top-32 right-32 w-48 h-48 border border-purple-500/20 rounded-full opacity-20" />
+        </div>
+
+        <div className="relative h-full flex flex-col justify-end p-8 md:p-12 lg:p-16 pt-32">
+          <div className="max-w-4xl space-y-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-blue-900/30 text-blue-400 border border-blue-500/50 rounded-full">
+              <Wand2 className="w-3 h-3" />
+              Beta
+            </span>
+
+            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl text-white leading-tight drop-shadow-2xl">
+              Media Lab
+            </h1>
+
+            <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed">
+              Generate, enhance, and manipulate media assets using advanced AI models.
+            </p>
+          </div>
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-60" />
+      </div>
+
+      <div className="sticky top-20 z-30 px-4 md:px-8 lg:px-16 py-4 bg-[#0a0a0f]/95 backdrop-blur-md border-b border-[var(--color-border)]">
+        <div className="max-w-7xl mx-auto flex overflow-x-auto pb-2 md:pb-0 gap-2 no-scrollbar">
+          <TabButton 
+            id="generate" 
+            label="Generate" 
+            icon={<Wand2 className="w-4 h-4" />} 
+            active={activeTab === "generate"} 
+            onClick={() => setActiveTab("generate")} 
+          />
+          <TabButton 
+            id="enhance" 
+            label="Enhance" 
+            icon={<Sparkles className="w-4 h-4" />} 
+            active={activeTab === "enhance"} 
+            onClick={() => setActiveTab("enhance")} 
+          />
+          <TabButton 
+            id="interpolate" 
+            label="Interpolate" 
+            icon={<Layers className="w-4 h-4" />} 
+            active={activeTab === "interpolate"} 
+            onClick={() => setActiveTab("interpolate")} 
+          />
+          <TabButton 
+            id="blend" 
+            label="Blend" 
+            icon={<Shuffle className="w-4 h-4" />} 
+            active={activeTab === "blend"} 
+            onClick={() => setActiveTab("blend")} 
+          />
+          <div className="w-px h-8 bg-[var(--color-border)] mx-2 self-center hidden md:block" />
+          <TabButton 
+            id="jobs" 
+            label="Job History" 
+            icon={<History className="w-4 h-4" />} 
+            active={activeTab === "jobs"} 
+            onClick={() => setActiveTab("jobs")} 
+          />
+        </div>
+      </div>
+
+      <div className="px-4 md:px-8 lg:px-16 py-8 min-h-[500px]">
+        <div className="max-w-7xl mx-auto">
+          {activeTab === "generate" && <GenerateView />}
+          {activeTab === "enhance" && <EnhanceView />}
+          {activeTab === "interpolate" && <InterpolateView />}
+          {activeTab === "blend" && <BlendView />}
+          {activeTab === "jobs" && <JobsView />}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TabButton({ 
+  id, 
+  label, 
+  icon, 
+  active, 
+  onClick 
+}: { 
+  id: string; 
+  label: string; 
+  icon: React.ReactNode; 
+  active: boolean; 
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`
+        flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 whitespace-nowrap
+        ${active 
+          ? "bg-blue-500/20 text-blue-400 border border-blue-500/30" 
+          : "text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-surface-hover)]"
+        }
+      `}
+    >
+      {icon}
+      {label}
+    </button>
+  );
+}
+
+function GenerateView() {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="lg:col-span-1 space-y-6">
+        <GlassCard className="p-6 space-y-4">
+          <h3 className="text-lg font-heading text-[var(--color-text-primary)]">Generation Settings</h3>
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <label className="text-sm text-[var(--color-text-muted)]">Prompt</label>
+              <textarea 
+                className="w-full h-32 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-3 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                placeholder="Describe the image you want to generate..."
+              />
+            </div>
+            <div className="space-y-2">
+              <label className="text-sm text-[var(--color-text-muted)]">Negative Prompt</label>
+              <Input 
+                placeholder="What to avoid..." 
+                className="bg-[var(--color-surface)] border-[var(--color-border)]"
+              />
+            </div>
+            <Button className="w-full bg-blue-600 text-white font-medium">
+              Generate Image
+            </Button>
+          </div>
+        </GlassCard>
+      </div>
+      <div className="lg:col-span-2">
+        <div className="h-full min-h-[400px] border-2 border-dashed border-[var(--color-border)] rounded-xl flex flex-col items-center justify-center text-[var(--color-text-muted)] bg-[var(--color-surface)]/30">
+          <Wand2 className="w-12 h-12 mb-4 opacity-50" />
+          <p>Generated results will appear here</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function EnhanceView() {
+  const [sourceImage, setSourceImage] = useState<File | null>(null);
+  const [sourcePreview, setSourcePreview] = useState<string | null>(null);
+  const [qualityPreset, setQualityPreset] = useState<"low" | "medium" | "high">("medium");
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [jobId, setJobId] = useState<string | null>(null);
+  const [jobStatus, setJobStatus] = useState<MediaJobStatusEnum | null>(null);
+  const [jobProgress, setJobProgress] = useState(0);
+  const [enhancedArtifact, setEnhancedArtifact] = useState<string | null>(null);
+  const [sliderPosition, setSliderPosition] = useState(50);
+  const [pollInterval, setPollInterval] = useState<NodeJS.Timeout | null>(null);
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
+        setSubmitError("Unsupported image format. Use JPG, PNG, or WebP.");
+        return;
+      }
+      setSourceImage(file);
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        setSourcePreview(event.target?.result as string);
+      };
+      reader.readAsDataURL(file);
+      setSubmitError(null);
+    }
+  };
+
+  const handleSubmit = async () => {
+    if (!sourceImage || !sourcePreview) {
+      setSubmitError("Please select an image first");
+      return;
+    }
+
+    setSubmitting(true);
+    setSubmitError(null);
+    try {
+      const response = await api.mediaLab.submitJob({
+        character_id: "media-lab",
+        workflow_type: "enhance",
+        parameters: {
+          source_image_path: sourceImage.name,
+          quality_preset: qualityPreset,
+        },
+      });
+      
+      setJobId(response.id);
+      setJobStatus(response.status);
+      setJobProgress(response.progress || 0);
+
+      // Start polling for job completion
+      const interval = setInterval(async () => {
+        try {
+          const jobData = await api.mediaLab.getJob(response.id);
+          setJobStatus(jobData.status);
+          setJobProgress(jobData.progress || 0);
+
+          if (jobData.status === "SUCCEEDED") {
+            if (jobData.artifacts && jobData.artifacts.length > 0) {
+              setEnhancedArtifact(jobData.artifacts[0].file_path);
+            }
+            clearInterval(interval);
+            setPollInterval(null);
+          } else if (jobData.status === "FAILED") {
+            setSubmitError(jobData.error_message || "Job failed");
+            clearInterval(interval);
+            setPollInterval(null);
+          }
+        } catch (err) {
+          console.error("Poll error:", err);
+        }
+      }, 1000);
+
+      setPollInterval(interval);
+    } catch (err) {
+      const errorMsg = err instanceof Error ? err.message : "Failed to submit job";
+      setSubmitError(errorMsg);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const resetForm = () => {
+    setSourceImage(null);
+    setSourcePreview(null);
+    setQualityPreset("medium");
+    setJobId(null);
+    setJobStatus(null);
+    setJobProgress(0);
+    setEnhancedArtifact(null);
+    setSliderPosition(50);
+    setSubmitError(null);
+    if (pollInterval) clearInterval(pollInterval);
+    setPollInterval(null);
+  };
+
+  // Show before/after comparison if job succeeded
+  if (jobStatus === "SUCCEEDED" && sourcePreview && enhancedArtifact) {
+    return (
+      <div className="space-y-6">
+        <div className="flex items-center justify-between">
+          <h3 className="text-xl font-heading text-[var(--color-text-primary)]">Enhancement Complete</h3>
+          <Button 
+            size="sm" 
+            variant="ghost" 
+            onPress={resetForm}
+          >
+            New Enhancement
+          </Button>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Before/After Comparison Slider */}
+          <div className="space-y-4">
+            <h4 className="font-heading text-[var(--color-text-primary)]">Before/After Comparison</h4>
+            <div className="relative w-full h-[400px] bg-[var(--color-surface)] rounded-lg overflow-hidden border border-[var(--color-border)]">
+              {/* Before image (full) */}
+              <img 
+                src={sourcePreview} 
+                alt="Original" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              
+              {/* After image (clipped by slider) */}
+              <div 
+                className="absolute inset-0 overflow-hidden"
+                style={{ width: `${sliderPosition}%` }}
+              >
+                <img 
+                  src={`/static/screenshots/${enhancedArtifact}`}
+                  alt="Enhanced" 
+                  className="w-screen h-[400px] object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23333' width='100' height='100'/%3E%3C/svg%3E";
+                  }}
+                />
+              </div>
+
+              {/* Slider handle */}
+              <input 
+                type="range" 
+                min="0" 
+                max="100" 
+                value={sliderPosition}
+                onChange={(e) => setSliderPosition(Number(e.target.value))}
+                className="absolute inset-0 w-full h-full opacity-0 cursor-col-resize z-10"
+                style={{ cursor: "col-resize" }}
+              />
+
+              {/* Visual slider line */}
+              <div 
+                className="absolute top-0 bottom-0 w-1 bg-blue-400 pointer-events-none"
+                style={{ left: `${sliderPosition}%`, transform: "translateX(-50%)" }}
+              />
+
+              {/* Labels */}
+              <div className="absolute bottom-4 left-4 text-xs font-medium text-white bg-black/50 px-2 py-1 rounded">
+                Original
+              </div>
+              <div className="absolute bottom-4 right-4 text-xs font-medium text-white bg-black/50 px-2 py-1 rounded">
+                Enhanced
+              </div>
+            </div>
+          </div>
+
+          {/* Job Details */}
+          <div className="space-y-6">
+            <GlassCard className="p-6 space-y-4">
+              <h4 className="font-heading text-[var(--color-text-primary)]">Job Details</h4>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-[var(--color-text-muted)]">Job ID</span>
+                  <code className="text-xs bg-[var(--color-surface)] px-2 py-1 rounded font-mono text-blue-400">
+                    {jobId}
+                  </code>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-[var(--color-text-muted)]">Status</span>
+                  <span className="px-2 py-1 rounded-full text-xs bg-green-500/20 text-green-400 border border-green-500/30">
+                    SUCCEEDED
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-[var(--color-text-muted)]">Quality Preset</span>
+                  <span className="capitalize font-medium text-[var(--color-text-primary)]">{qualityPreset}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-[var(--color-text-muted)]">Source Format</span>
+                  <span className="uppercase font-mono text-xs text-[var(--color-text-primary)]">
+                    {sourceImage?.name.split(".").pop()}
+                  </span>
+                </div>
+              </div>
+            </GlassCard>
+
+            <GlassCard className="p-6 space-y-4">
+              <h4 className="font-heading text-[var(--color-text-primary)]">Download</h4>
+              <Button 
+                className="w-full bg-blue-600 text-white font-medium"
+                onPress={() => {
+                  const link = document.createElement("a");
+                  link.href = `/static/screenshots/${enhancedArtifact}`;
+                  link.download = `enhanced-${Date.now()}.jpg`;
+                  link.click();
+                }}
+              >
+                Download Enhanced Image
+              </Button>
+            </GlassCard>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Show job progress if running
+  if (jobStatus && jobStatus !== "SUCCEEDED") {
+    return (
+      <div className="space-y-6">
+        <GlassCard className="p-8 space-y-6">
+          <div className="space-y-2">
+            <h4 className="font-heading text-[var(--color-text-primary)]">Processing Enhancement</h4>
+            <p className="text-sm text-[var(--color-text-muted)]">Job ID: {jobId}</p>
+          </div>
+
+          <div className="space-y-3">
+            <div className="flex items-center justify-between text-sm">
+              <span className="text-[var(--color-text-muted)]">Progress</span>
+              <span className="font-medium text-[var(--color-text-primary)]">{jobProgress}%</span>
+            </div>
+            <div className="h-2 bg-[var(--color-surface)] rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-500"
+                style={{ width: `${jobProgress}%` }}
+              />
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 p-4 bg-[var(--color-surface)]/50 rounded-lg">
+            <Spinner size="sm" color="accent" />
+            <span className="text-sm text-[var(--color-text-muted)]">
+              {jobStatus === "QUEUED" && "Waiting to process..."}
+              {jobStatus === "RUNNING" && "Enhancing your image..."}
+              {jobStatus === "FAILED" && "Enhancement failed"}
+            </span>
+          </div>
+
+          {jobStatus === "FAILED" && (
+            <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm">
+              {submitError || "Enhancement failed. Please try again."}
+            </div>
+          )}
+        </GlassCard>
+      </div>
+    );
+  }
+
+  // Show upload form
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="lg:col-span-1 space-y-6">
+        <GlassCard className="p-6 space-y-4">
+          <h3 className="text-lg font-heading text-[var(--color-text-primary)]">Enhancement Settings</h3>
+          
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <label className="text-sm text-[var(--color-text-muted)]">Quality Preset</label>
+              <select 
+                value={qualityPreset}
+                onChange={(e) => setQualityPreset(e.target.value as "low" | "medium" | "high")}
+                className="w-full bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-2 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors"
+              >
+                <option value="low">Low (Fast, less detail)</option>
+                <option value="medium">Medium (Balanced)</option>
+                <option value="high">High (Slow, maximum detail)</option>
+              </select>
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-sm text-[var(--color-text-muted)]">Source Image</label>
+              <input 
+                type="file"
+                accept="image/jpeg,image/png,image/webp"
+                onChange={handleFileSelect}
+                className="block w-full text-sm text-[var(--color-text-muted)] file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-600 file:text-white hover:file:bg-blue-700 transition-colors"
+              />
+              <p className="text-xs text-[var(--color-text-muted)]">JPG, PNG, or WebP (max 50MB)</p>
+            </div>
+
+            {submitError && (
+              <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm flex items-start gap-2">
+                <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span>{submitError}</span>
+              </div>
+            )}
+
+            <Button 
+              className="w-full bg-blue-600 text-white font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+              onPress={handleSubmit}
+              isDisabled={!sourceImage || submitting}
+            >
+              {submitting ? (
+                <>
+                  <Spinner size="sm" color="current" />
+                  <span className="ml-2">Submitting...</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles className="w-4 h-4 mr-2" />
+                  Enhance Image
+                </>
+              )}
+            </Button>
+          </div>
+        </GlassCard>
+
+        <GlassCard className="p-6 space-y-3 text-sm">
+          <h4 className="font-heading text-[var(--color-text-primary)]">How it works</h4>
+          <ol className="space-y-2 text-[var(--color-text-muted)] list-decimal list-inside">
+            <li>Upload a source image</li>
+            <li>Choose quality preset</li>
+            <li>Submit for enhancement</li>
+            <li>View before/after comparison</li>
+            <li>Download enhanced result</li>
+          </ol>
+        </GlassCard>
+      </div>
+
+      {/* Preview */}
+      <div className="lg:col-span-2">
+        {sourcePreview ? (
+          <div className="space-y-4">
+            <h4 className="font-heading text-[var(--color-text-primary)]">Source Preview</h4>
+            <div className="border-2 border-dashed border-[var(--color-border)] rounded-xl overflow-hidden bg-[var(--color-surface)]/30 aspect-square">
+              <img 
+                src={sourcePreview} 
+                alt="Preview" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        ) : (
+          <div className="h-full min-h-[400px] border-2 border-dashed border-[var(--color-border)] rounded-xl flex flex-col items-center justify-center text-[var(--color-text-muted)] bg-[var(--color-surface)]/30">
+            <Sparkles className="w-12 h-12 mb-4 opacity-50" />
+            <p>Upload an image to preview</p>
+            <p className="text-sm opacity-70 mt-1">JPG, PNG, or WebP format</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function InterpolateView() {
+  return (
+    <div className="flex flex-col items-center justify-center py-20 text-[var(--color-text-muted)]">
+      <Layers className="w-16 h-16 mb-6 opacity-20" />
+      <h3 className="text-xl font-heading mb-2">Frame Interpolation</h3>
+      <p className="max-w-md text-center">Generate smooth transitions between keyframes to create fluid animations.</p>
+    </div>
+  );
+}
+
+function BlendView() {
+  return (
+    <div className="flex flex-col items-center justify-center py-20 text-[var(--color-text-muted)]">
+      <Shuffle className="w-16 h-16 mb-6 opacity-20" />
+      <h3 className="text-xl font-heading mb-2">Style Blending</h3>
+      <p className="max-w-md text-center">Merge concepts and styles from multiple sources into a cohesive new asset.</p>
+    </div>
+  );
+}
+
+function JobsView() {
+  const [jobs, setJobs] = useState<MediaJobResponse[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [refreshing, setRefreshing] = useState(false);
+
+  const fetchJobs = async () => {
+    try {
+      setRefreshing(true);
+      const response = await api.mediaLab.listJobs();
+      setJobs(response.jobs);
+      setError(null);
+    } catch (err) {
+      console.error("Failed to fetch jobs:", err);
+      setError("Failed to load jobs. Please try again.");
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchJobs();
+    
+    // Poll for updates every 10 seconds
+    const intervalId = setInterval(() => {
+      // Only poll if we're not already refreshing manually
+      if (!refreshing) {
+        api.mediaLab.listJobs().then(response => {
+          setJobs(response.jobs);
+        }).catch(err => console.error("Polling error:", err));
+      }
+    }, 10000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  if (loading && jobs.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 text-[var(--color-text-muted)]">
+        <Spinner size="lg" color="accent" />
+        <p className="mt-4">Loading job history...</p>
+      </div>
+    );
+  }
+
+  if (error && jobs.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 text-red-400">
+        <AlertCircle className="w-12 h-12 mb-4 opacity-50" />
+        <p>{error}</p>
+        <Button 
+          variant="ghost" 
+          className="mt-4" 
+          onPress={fetchJobs}
+        >
+          Try Again
+        </Button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <h3 className="text-xl font-heading text-[var(--color-text-primary)]">Recent Jobs</h3>
+        <Button 
+          size="sm" 
+          variant="ghost" 
+          onPress={fetchJobs}
+          isDisabled={refreshing}
+        >
+          <RefreshCw className={`w-4 h-4 mr-2 ${refreshing ? "animate-spin" : ""}`} />
+          Refresh
+        </Button>
+      </div>
+      
+      {jobs.length === 0 ? (
+        <div className="flex flex-col items-center justify-center py-12 border border-dashed border-[var(--color-border)] rounded-xl bg-[var(--color-surface)]/30 text-[var(--color-text-muted)]">
+          <History className="w-12 h-12 mb-4 opacity-30" />
+          <p>No jobs found</p>
+          <p className="text-sm opacity-70 mt-1">Start a new generation task to see it here</p>
+        </div>
+      ) : (
+        <div className="grid gap-4">
+          {jobs.map((job) => (
+            <Link key={job.id} href={`/media-lab/jobs/${job.id}`}>
+              <GlassCard className="p-4 hover:bg-[var(--color-surface-hover)] transition-colors group">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className={`w-2 h-2 rounded-full ${getStatusColor(job.status)}`} />
+                    <div>
+                      <p className="font-medium text-[var(--color-text-primary)] group-hover:text-blue-400 transition-colors capitalize">
+                        {job.workflow_type} Task
+                      </p>
+                      <p className="text-xs text-[var(--color-text-muted)]">ID: {job.id}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm text-[var(--color-text-muted)] hidden sm:inline-block">
+                      {formatDate(job.created_at)}
+                    </span>
+                    <span className={`text-xs px-2 py-1 rounded-full border ${getStatusBadgeStyles(job.status)}`}>
+                      {job.status}
+                    </span>
+                  </div>
+                </div>
+              </GlassCard>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

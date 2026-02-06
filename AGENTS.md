@@ -2,6 +2,15 @@
 
 > Guide for AI agents working in this repository. Document what you discover about commands, patterns, and conventions.
 
+## Repository Remote
+
+- Canonical HTTPS: `https://github.com/imarinmed/sagg.git`
+- Canonical SSH: `git@github.com:imarinmed/sagg.git`
+- Verify current remotes: `git remote -v`
+- Set origin (new clone without origin): `git remote add origin https://github.com/imarinmed/sagg.git`
+- Set origin (existing origin): `git remote set-url origin https://github.com/imarinmed/sagg.git`
+- Push branch: `git push -u origin <branch>`
+
 ## Project Overview
 
 **Blod Wiki** - A dark adaptation wiki for "Blod svett tårar" (Blood, Sweat, Tears). A full-stack web application with a FastAPI backend and Next.js frontend.

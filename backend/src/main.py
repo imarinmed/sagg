@@ -10,11 +10,13 @@ from .api import (
     episodes,
     graph,
     knowledge,
+    media_lab,
     mythos,
     narratives,
     search,
     validation,
 )
+from .graphdb import router as neo4j_router
 
 app = FastAPI(
     title="Blod Wiki API",
@@ -48,6 +50,8 @@ app.include_router(narratives.router)
 app.include_router(causality.router)
 app.include_router(knowledge.router)
 app.include_router(validation.router)
+app.include_router(media_lab.router)
+app.include_router(neo4j_router)
 
 
 @app.get("/health")

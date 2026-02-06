@@ -22,6 +22,8 @@ export interface PhotoGalleryProps {
   currentContext: PhotoContext;
   onContextChange: (context: PhotoContext) => void;
   currentEpisode: number;
+  onSwipeUp?: () => void;
+  onLongPress?: () => void;
   className?: string;
 }
 
@@ -32,6 +34,8 @@ export function PhotoGallery({
   currentContext,
   onContextChange,
   currentEpisode,
+  onSwipeUp,
+  onLongPress,
   className = ''
 }: PhotoGalleryProps) {
   const unlockedContexts = CONTEXT_ORDER.filter(ctx =>
@@ -60,6 +64,8 @@ export function PhotoGallery({
     <TouchGestureZone
       onSwipeLeft={handleSwipeLeft}
       onSwipeRight={handleSwipeRight}
+      onSwipeUp={onSwipeUp}
+      onLongPress={onLongPress}
       className={`relative w-full h-full overflow-hidden ${className}`}
     >
       {unlockedContexts.length > 1 && (

@@ -1,0 +1,595 @@
+[
+  {
+    "id": "blood_bond",
+    "slug": "the-blood-bond",
+    "name": "The Blood Bond",
+    "category": "supernatural",
+    "description": "A mystical connection formed through blood exchange between vampires. The exact nature is not\nfully explored in the series, but hints suggest deep emotional and possibly telepathic links\nform between bonded parties.\n\nBlood bonds appear to transcend ordinary relationships, creating connections that persist\nacross centuries and can only be severed by death—and perhaps not even then. The bond\ncarries obligations, creating a web of loyalty and dependency that structures vampire society.",
+    "short_description": "A mystical connection formed through blood exchange between vampires. The exact nature is not\nfully explored in the series, but hints suggest deep emotional and possibly telepathic links\nform between bonded parties.\n\nBlood bonds appear to transcend ordinary relationships, creating connections that persist\nacross centuries and can only be severed by death—and perhaps not even then. The bond\ncarries obligations, creating a web of loyalty and dependency that structures vampire society.",
+    "related_episodes": [
+      "s01e03",
+      "s01e06"
+    ],
+    "related_characters": [
+      "saga",
+      "boris",
+      "vera"
+    ],
+    "traits": [
+      "blood_exchange_required",
+      "mystical_connection",
+      "familial_implications",
+      "emotional_resonance",
+      "telepathic_potential",
+      "permanent_link"
+    ],
+    "abilities": [
+      "sense_bonded_partner_location",
+      "share_emotions",
+      "enhanced_trust"
+    ],
+    "weaknesses": [
+      "vulnerability_through_bond_partner",
+      "emotional_dependence"
+    ],
+    "significance": "The fundamental building block of vampire society and relationships",
+    "dark_variant": "In the dark adaptation, blood bonds become intensely possessive. The bonded can feel each\nother's pleasure and pain, creating opportunities for both exquisite shared experiences\nand cruel manipulations. Breaking a bond is not just difficult—it's psychologically devastating.",
+    "erotic_implications": "Blood bonds transform intimacy into a shared experience. When bonded vampires feed from\neach other during sex, both feel the pleasure of giving and receiving. This creates\nunprecedented levels of connection—and vulnerability. Some vampires become addicted\nto bonded feeding, unable to find satisfaction in ordinary encounters.",
+    "horror_elements": [
+      "loss_of_emotional_autonomy",
+      "psychological_dependency",
+      "exploitation_potential",
+      "death_of_bonded_causes_madness"
+    ],
+    "taboo_potential": "Blood bonds blur the lines of individual identity. When you can feel your partner's\ndesires as your own, where does consent begin? The power dynamics in bonds between\nvampires of different ages raise troubling questions about manipulation and control.",
+    "versions": {
+      "bst": {
+        "description": "A mystical connection formed through blood exchange between vampires. The exact nature is not\nfully explored in the series, but hints suggest deep emotional and possibly telepathic links\nform between bonded parties.\n\nBlood bonds appear to transcend ordinary relationships, creating connections that persist\nacross centuries and can only be severed by death—and perhaps not even then. The bond\ncarries obligations, creating a web of loyalty and dependency that structures vampire society.",
+        "traits": [
+          "blood_exchange_required",
+          "mystical_connection",
+          "familial_implications",
+          "emotional_resonance",
+          "telepathic_potential",
+          "permanent_link"
+        ],
+        "abilities": [
+          "sense_bonded_partner_location",
+          "share_emotions",
+          "enhanced_trust"
+        ],
+        "weaknesses": [
+          "vulnerability_through_bond_partner",
+          "emotional_dependence"
+        ],
+        "significance": "The fundamental building block of vampire society and relationships",
+        "source_episodes": [
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, blood bonds become intensely possessive. The bonded can feel each\nother's pleasure and pain, creating opportunities for both exquisite shared experiences\nand cruel manipulations. Breaking a bond is not just difficult—it's psychologically devastating.",
+        "traits": [
+          "loss_of_emotional_autonomy",
+          "psychological_dependency",
+          "exploitation_potential",
+          "death_of_bonded_causes_madness"
+        ],
+        "significance": "Blood bonds blur the lines of individual identity. When you can feel your partner's\ndesires as your own, where does consent begin? The power dynamics in bonds between\nvampires of different ages raise troubling questions about manipulation and control.",
+        "mechanics": "Three exchanges create a partial bond. Seven exchanges create a full bond. Full bonds\nallow emotional and sensory sharing. The older vampire in a bond typically has more\ncontrol over the connection, able to send sensations while blocking reception.",
+        "erotic_implications": "Blood bonds transform intimacy into a shared experience. When bonded vampires feed from\neach other during sex, both feel the pleasure of giving and receiving. This creates\nunprecedented levels of connection—and vulnerability. Some vampires become addicted\nto bonded feeding, unable to find satisfaction in ordinary encounters."
+      }
+    },
+    "divergences": [],
+    "kind": "mythos",
+    "provenance": "data/mythos/blood_bond.yaml",
+    "created_at": "2026-02-06T19:17:57+00:00",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "daywalking",
+    "slug": "daywalking",
+    "name": "Daywalking",
+    "category": "biology",
+    "description": "Vampires in the series appear to be able to function during daylight hours without\nthe traditional vampire weakness to sunlight. This \"daywalking\" ability allows them\nto fully integrate into human society, attending schools and maintaining normal\nschedules alongside their human neighbors.\n\nWhether this is universal to all vampires in this world or a special adaptation\nremains unclear. What is certain is that it removes one of the traditional limitations\non vampire activity, making them far more dangerous predators.",
+    "short_description": "Vampires in the series appear to be able to function during daylight hours without\nthe traditional vampire weakness to sunlight. This \"daywalking\" ability allows them\nto fully integrate into human society, attending schools and maintaining normal\nschedules alongside their human neighbors.\n\nWhether this is universal to all vampires in this world or a special adaptation\nremains unclear. What is certain is that it removes one of the traditional limitations\non vampire activity, making them far more dangerous predators.",
+    "related_episodes": [
+      "s01e01",
+      "s01e03"
+    ],
+    "related_characters": [
+      "saga",
+      "agnes"
+    ],
+    "traits": [
+      "daylight_tolerance",
+      "no_sunlight_weakness",
+      "full_integration",
+      "unrestricted_activity"
+    ],
+    "abilities": [
+      "daytime_activity",
+      "human_schedule_adherence",
+      "unrestricted_hunting"
+    ],
+    "weaknesses": [],
+    "significance": "Removes the traditional barrier between vampire and human worlds",
+    "dark_variant": "In the dark adaptation, daywalking is not universal. Most vampires suffer weakness\nin direct sunlight—not death, but discomfort and reduced powers. True daywalkers\nare rare, often the result of powerful bloodlines or mysterious mutations. They\nare prized as mates and feared as hunters, able to strike when other vampires sleep.",
+    "erotic_implications": "Daywalker vampires can pursue human lovers during normal hours, joining them for\nlunch dates and afternoon trysts that nocturnal vampires miss. This creates a\ndifferent dynamic—less mysterious midnight visits, more normalized integration\nof feeding into everyday intimacy. Sun-warmed vampire skin feels almost human.",
+    "horror_elements": [
+      "nowhere_is_safe",
+      "predator_in_broad_daylight",
+      "false_sense_of_security_for_humans",
+      "evolutionary_advantage_in_hunting"
+    ],
+    "taboo_potential": "Daywalking challenges human assumptions about safety. Traditionally, daylight\nmeant sanctuary—a time when vampires couldn't touch you. Daywalkers remove that\nprotection, making humans vulnerable around the clock. The psychological impact\non humans who learn about daywalkers is profound: there is no escape, no safe time.",
+    "versions": {
+      "bst": {
+        "description": "Vampires in the series appear to be able to function during daylight hours without\nthe traditional vampire weakness to sunlight. This \"daywalking\" ability allows them\nto fully integrate into human society, attending schools and maintaining normal\nschedules alongside their human neighbors.\n\nWhether this is universal to all vampires in this world or a special adaptation\nremains unclear. What is certain is that it removes one of the traditional limitations\non vampire activity, making them far more dangerous predators.",
+        "traits": [
+          "daylight_tolerance",
+          "no_sunlight_weakness",
+          "full_integration",
+          "unrestricted_activity"
+        ],
+        "abilities": [
+          "daytime_activity",
+          "human_schedule_adherence",
+          "unrestricted_hunting"
+        ],
+        "weaknesses": [],
+        "significance": "Removes the traditional barrier between vampire and human worlds",
+        "source_episodes": [
+          "s01e01",
+          "s01e03"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, daywalking is not universal. Most vampires suffer weakness\nin direct sunlight—not death, but discomfort and reduced powers. True daywalkers\nare rare, often the result of powerful bloodlines or mysterious mutations. They\nare prized as mates and feared as hunters, able to strike when other vampires sleep.",
+        "traits": [
+          "nowhere_is_safe",
+          "predator_in_broad_daylight",
+          "false_sense_of_security_for_humans",
+          "evolutionary_advantage_in_hunting"
+        ],
+        "significance": "Daywalking challenges human assumptions about safety. Traditionally, daylight\nmeant sanctuary—a time when vampires couldn't touch you. Daywalkers remove that\nprotection, making humans vulnerable around the clock. The psychological impact\non humans who learn about daywalkers is profound: there is no escape, no safe time.",
+        "mechanics": "Daywalking ability runs in bloodlines. The Natt och Dag family possesses it through\nancient ancestry, giving them advantages in vampire politics. Daywalkers can sense\nother daywalkers, recognizing each other as equals in a world where most vampires\nare bound by night. Some theorize daywalking comes from dhampir ancestry.",
+        "erotic_implications": "Daywalker vampires can pursue human lovers during normal hours, joining them for\nlunch dates and afternoon trysts that nocturnal vampires miss. This creates a\ndifferent dynamic—less mysterious midnight visits, more normalized integration\nof feeding into everyday intimacy. Sun-warmed vampire skin feels almost human."
+      }
+    },
+    "divergences": [],
+    "kind": "mythos",
+    "provenance": "data/mythos/daywalking.yaml",
+    "created_at": "2026-02-06T19:17:57+00:00",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "family_hierarchy",
+    "slug": "vampire-family-hierarchy",
+    "name": "Vampire Family Hierarchy",
+    "category": "society",
+    "description": "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family\nexemplifies this with clear patriarchal structure and expectations for their children.\nFamily position determines everything from feeding rights to mate selection.\n\nThe hierarchy extends beyond blood relations to include turned vampires, who owe\nallegiance to their sires, and human servants who serve the family. Position in the\nhierarchy is determined by age, power, and the prestige of one's lineage.",
+    "short_description": "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family\nexemplifies this with clear patriarchal structure and expectations for their children.\nFamily position determines everything from feeding rights to mate selection.\n\nThe hierarchy extends beyond blood relations to include turned vampires, who owe\nallegiance to their sires, and human servants who serve the family. Position in the\nhierarchy is determined by age, power, and the prestige of one's lineage.",
+    "related_episodes": [
+      "s01e01",
+      "s01e03",
+      "s01e06"
+    ],
+    "related_characters": [
+      "boris",
+      "vera",
+      "agnes",
+      "saga"
+    ],
+    "traits": [
+      "patriarchal_structure",
+      "traditional_values",
+      "strict_upbringing",
+      "arranged_connections",
+      "lineage_importance",
+      "obedience_expectations"
+    ],
+    "abilities": [
+      "unified_family_resources",
+      "generational_knowledge_transfer"
+    ],
+    "weaknesses": [
+      "rigid_structure_limits_adaptation",
+      "internal_politics"
+    ],
+    "significance": "Defines the social order that all vampires must navigate",
+    "dark_variant": "In the dark adaptation, family hierarchy takes on totalitarian dimensions. The head\nof family has absolute authority over members' lives, including rights to feed from\nthem, arrange their marriages, and discipline them physically. Rebellion is rare\nbecause it typically ends in death or exile—which for a vampire often means the same thing.",
+    "erotic_implications": "Family hierarchy extends into intimate matters. Arranged matings serve political purposes,\nand young vampires may be forbidden from pursuing attractions that don't benefit the family.\nIn some families, elders claim \"rights\" to sample progeny before allowing them to mate.\nThe incestuous undertones of vampire families—where one might mate with someone their\nsire once fed from or bedded—are rarely discussed but ever-present.",
+    "horror_elements": [
+      "loss_of_bodily_autonomy",
+      "arranged_matings_without_consent",
+      "punishment_through_blood_bond",
+      "familial_abuse_normalized"
+    ],
+    "taboo_potential": "The family structure creates power imbalances that would be recognized as abusive\nin human contexts. Young vampires have little recourse against elders' demands.\nThe conflation of family, feeding, and sexuality creates situations where boundaries\nbecome impossible to maintain or even identify.",
+    "versions": {
+      "bst": {
+        "description": "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family\nexemplifies this with clear patriarchal structure and expectations for their children.\nFamily position determines everything from feeding rights to mate selection.\n\nThe hierarchy extends beyond blood relations to include turned vampires, who owe\nallegiance to their sires, and human servants who serve the family. Position in the\nhierarchy is determined by age, power, and the prestige of one's lineage.",
+        "traits": [
+          "patriarchal_structure",
+          "traditional_values",
+          "strict_upbringing",
+          "arranged_connections",
+          "lineage_importance",
+          "obedience_expectations"
+        ],
+        "abilities": [
+          "unified_family_resources",
+          "generational_knowledge_transfer"
+        ],
+        "weaknesses": [
+          "rigid_structure_limits_adaptation",
+          "internal_politics"
+        ],
+        "significance": "Defines the social order that all vampires must navigate",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, family hierarchy takes on totalitarian dimensions. The head\nof family has absolute authority over members' lives, including rights to feed from\nthem, arrange their marriages, and discipline them physically. Rebellion is rare\nbecause it typically ends in death or exile—which for a vampire often means the same thing.",
+        "traits": [
+          "loss_of_bodily_autonomy",
+          "arranged_matings_without_consent",
+          "punishment_through_blood_bond",
+          "familial_abuse_normalized"
+        ],
+        "significance": "The family structure creates power imbalances that would be recognized as abusive\nin human contexts. Young vampires have little recourse against elders' demands.\nThe conflation of family, feeding, and sexuality creates situations where boundaries\nbecome impossible to maintain or even identify.",
+        "mechanics": "Hierarchy follows strict rules: sire over progeny, elder over younger, direct bloodline\nover turned. Within the same generation, power determines rank. Challenges to hierarchy\nmust be formal, witnessed, and often deadly. The head of family can command any member\nthrough the blood bond, making resistance physiologically difficult.",
+        "erotic_implications": "Family hierarchy extends into intimate matters. Arranged matings serve political purposes,\nand young vampires may be forbidden from pursuing attractions that don't benefit the family.\nIn some families, elders claim \"rights\" to sample progeny before allowing them to mate.\nThe incestuous undertones of vampire families—where one might mate with someone their\nsire once fed from or bedded—are rarely discussed but ever-present."
+      }
+    },
+    "divergences": [],
+    "kind": "mythos",
+    "provenance": "data/mythos/family_hierarchy.yaml",
+    "created_at": "2026-02-06T19:17:57+00:00",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "feeding",
+    "slug": "feeding",
+    "name": "Feeding",
+    "category": "biology",
+    "description": "The act of consuming blood for sustenance. Vampires require blood to survive, though the\nexact mechanics and frequency are not detailed in the series. What is clear is that feeding\nis both a biological necessity and an intimate act that carries profound significance.\n\nThe series suggests feeding creates connections between vampire and donor, with repeated\nfeeding from the same source building emotional bonds. The act itself appears to be\npleasurable for both parties under the right circumstances.",
+    "short_description": "The act of consuming blood for sustenance. Vampires require blood to survive, though the\nexact mechanics and frequency are not detailed in the series. What is clear is that feeding\nis both a biological necessity and an intimate act that carries profound significance.\n\nThe series suggests feeding creates connections between vampire and donor, with repeated\nfeeding from the same source building emotional bonds. The act itself appears to be\npleasurable for both parties under the right circumstances.",
+    "related_episodes": [
+      "s01e03",
+      "s01e06"
+    ],
+    "related_characters": [
+      "saga",
+      "boris",
+      "vera",
+      "agnes"
+    ],
+    "traits": [
+      "blood_consumption",
+      "survival_necessity",
+      "intimate_act",
+      "power_exchange",
+      "sensory_experience"
+    ],
+    "abilities": [
+      "sustenance_extraction",
+      "pleasure_induction"
+    ],
+    "weaknesses": [
+      "blood_dependency",
+      "feeding_frenzy_risk"
+    ],
+    "significance": "The most fundamental and frequent vampire interaction with prey or partners",
+    "dark_variant": "In the dark adaptation, feeding becomes explicitly sexualized. The act of penetrating\nskin, the rush of blood, the shared pleasure—feeding mirrors and often accompanies\nsexual intimacy. Vampires who deny this connection are either lying or dangerously repressed.",
+    "erotic_implications": "Feeding can range from clinical sustenance to the most intimate act a vampire can share.\nMany vampires only feed during sex, finding the combination of penetration irresistible.\nThe power exchange inherent in feeding—one partner entirely vulnerable while the other\ntakes what they need—mirrors many dynamics explored in BDSM communities.",
+    "horror_elements": [
+      "loss_of_control_during_feeding",
+      "addiction_in_human_donors",
+      "fatal_overfeeding",
+      "predator_prey_dynamic"
+    ],
+    "taboo_potential": "Feeding blurs lines between nutrition, intimacy, and violation. The same act that\ncan be loving can be weaponized as assault. The addictive nature of vampire saliva\nraises consent questions: can a donor truly choose freely after experiencing\nvampire feeding's euphoria?",
+    "versions": {
+      "bst": {
+        "description": "The act of consuming blood for sustenance. Vampires require blood to survive, though the\nexact mechanics and frequency are not detailed in the series. What is clear is that feeding\nis both a biological necessity and an intimate act that carries profound significance.\n\nThe series suggests feeding creates connections between vampire and donor, with repeated\nfeeding from the same source building emotional bonds. The act itself appears to be\npleasurable for both parties under the right circumstances.",
+        "traits": [
+          "blood_consumption",
+          "survival_necessity",
+          "intimate_act",
+          "power_exchange",
+          "sensory_experience"
+        ],
+        "abilities": [
+          "sustenance_extraction",
+          "pleasure_induction"
+        ],
+        "weaknesses": [
+          "blood_dependency",
+          "feeding_frenzy_risk"
+        ],
+        "significance": "The most fundamental and frequent vampire interaction with prey or partners",
+        "source_episodes": [
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, feeding becomes explicitly sexualized. The act of penetrating\nskin, the rush of blood, the shared pleasure—feeding mirrors and often accompanies\nsexual intimacy. Vampires who deny this connection are either lying or dangerously repressed.",
+        "traits": [
+          "loss_of_control_during_feeding",
+          "addiction_in_human_donors",
+          "fatal_overfeeding",
+          "predator_prey_dynamic"
+        ],
+        "significance": "Feeding blurs lines between nutrition, intimacy, and violation. The same act that\ncan be loving can be weaponized as assault. The addictive nature of vampire saliva\nraises consent questions: can a donor truly choose freely after experiencing\nvampire feeding's euphoria?",
+        "mechanics": "Vampire saliva contains compounds that numb pain and induce euphoria. A skilled feeder\ncan make the experience purely pleasurable, while a cruel one can weaponize the pain.\nThe bite location matters: neck feeding is intimate, wrist is practical, thigh is explicitly\nsexual. Inner thigh and femoral access is reserved for the most trusted or claimed donors.",
+        "erotic_implications": "Feeding can range from clinical sustenance to the most intimate act a vampire can share.\nMany vampires only feed during sex, finding the combination of penetration irresistible.\nThe power exchange inherent in feeding—one partner entirely vulnerable while the other\ntakes what they need—mirrors many dynamics explored in BDSM communities."
+      }
+    },
+    "divergences": [],
+    "kind": "mythos",
+    "provenance": "data/mythos/feeding.yaml",
+    "created_at": "2026-02-06T19:17:57+00:00",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "transformation",
+    "slug": "vampire-transformation",
+    "name": "Vampire Transformation",
+    "category": "biology",
+    "description": "The process by which humans become vampires. Not explicitly detailed in the series,\nbut implied to involve blood exchange and a death-like transition. Once transformed,\nthere is no return to humanity—the change is permanent and absolute.\n\nTransformation creates a bond between sire and progeny, with the new vampire emerging\ninto their maker's family with all the obligations that entails. The decision to\ntransform someone is never taken lightly, as it creates an eternal connection.",
+    "short_description": "The process by which humans become vampires. Not explicitly detailed in the series,\nbut implied to involve blood exchange and a death-like transition. Once transformed,\nthere is no return to humanity—the change is permanent and absolute.\n\nTransformation creates a bond between sire and progeny, with the new vampire emerging\ninto their maker's family with all the obligations that entails. The decision to\ntransform someone is never taken lightly, as it creates an eternal connection.",
+    "related_episodes": [],
+    "related_characters": [
+      "boris",
+      "vera"
+    ],
+    "traits": [
+      "blood_exchange_required",
+      "death_and_rebirth",
+      "irreversible",
+      "life_changing",
+      "sire_bond_creation"
+    ],
+    "abilities": [
+      "grant_immortality",
+      "create_progeny"
+    ],
+    "weaknesses": [
+      "loss_of_human_life",
+      "eternal_obligation_to_sire"
+    ],
+    "significance": "The ultimate act of vampire creation and the most intimate gift possible",
+    "dark_variant": "In the dark adaptation, transformation is explicitly violent and sexual. The sire\nmust drain the human nearly to death, then share their blood in an act of reverse\nfeeding. The transition involves a death—the human dies, and what wakes is something\nelse wearing their face. Many new vampires struggle with what they've lost.",
+    "erotic_implications": "Transformation is the ultimate consummation. Sires often choose lovers to turn,\ncreating an eternal partner bound to them by blood. The act itself—draining,\nfeeding, the three nights of intimacy—is intensely sexual for both parties.\nSome vampires describe their transformation as the most erotic experience of\ntheir existence, colored by the terror and ecstasy of death.",
+    "horror_elements": [
+      "death_experience",
+      "loss_of_humanity",
+      "hunger_upon_waking",
+      "eternal_servitude_to_sire",
+      "identity_death"
+    ],
+    "taboo_potential": "Transformation raises the ultimate consent question: the human agrees to transform,\nbut the creature that wakes is not quite them. Did they consent to becoming a predator?\nTo losing their human life, loves, future? The power dynamic between sire and new\nprogeny mirrors abusive relationships, with the progeny dependent on their maker\nfor knowledge, protection, and often feeding in those first vulnerable nights.",
+    "versions": {
+      "bst": {
+        "description": "The process by which humans become vampires. Not explicitly detailed in the series,\nbut implied to involve blood exchange and a death-like transition. Once transformed,\nthere is no return to humanity—the change is permanent and absolute.\n\nTransformation creates a bond between sire and progeny, with the new vampire emerging\ninto their maker's family with all the obligations that entails. The decision to\ntransform someone is never taken lightly, as it creates an eternal connection.",
+        "traits": [
+          "blood_exchange_required",
+          "death_and_rebirth",
+          "irreversible",
+          "life_changing",
+          "sire_bond_creation"
+        ],
+        "abilities": [
+          "grant_immortality",
+          "create_progeny"
+        ],
+        "weaknesses": [
+          "loss_of_human_life",
+          "eternal_obligation_to_sire"
+        ],
+        "significance": "The ultimate act of vampire creation and the most intimate gift possible",
+        "source_episodes": []
+      },
+      "sst": {
+        "description": "In the dark adaptation, transformation is explicitly violent and sexual. The sire\nmust drain the human nearly to death, then share their blood in an act of reverse\nfeeding. The transition involves a death—the human dies, and what wakes is something\nelse wearing their face. Many new vampires struggle with what they've lost.",
+        "traits": [
+          "death_experience",
+          "loss_of_humanity",
+          "hunger_upon_waking",
+          "eternal_servitude_to_sire",
+          "identity_death"
+        ],
+        "significance": "Transformation raises the ultimate consent question: the human agrees to transform,\nbut the creature that wakes is not quite them. Did they consent to becoming a predator?\nTo losing their human life, loves, future? The power dynamic between sire and new\nprogeny mirrors abusive relationships, with the progeny dependent on their maker\nfor knowledge, protection, and often feeding in those first vulnerable nights.",
+        "mechanics": "Transformation requires the human to be drained past the point of no return, then\nfed vampire blood while the heart still weakly beats. The process takes three nights:\nthe first night the human dies, the second they sleep in the earth, the third they\nrise as vampire. The sire must stay close during this time, as their blood calls\nto the awakening progeny.",
+        "erotic_implications": "Transformation is the ultimate consummation. Sires often choose lovers to turn,\ncreating an eternal partner bound to them by blood. The act itself—draining,\nfeeding, the three nights of intimacy—is intensely sexual for both parties.\nSome vampires describe their transformation as the most erotic experience of\ntheir existence, colored by the terror and ecstasy of death."
+      }
+    },
+    "divergences": [],
+    "kind": "mythos",
+    "provenance": "data/mythos/transformation.yaml",
+    "created_at": "2026-02-06T19:17:57+00:00",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "vampire_human_relations",
+    "slug": "vampire-human-relations",
+    "name": "Vampire-Human Relations",
+    "category": "society",
+    "description": "Vampires coexist secretly with humans, attending the same schools and living in the\nsame communities. Most humans are unaware of vampires' existence, enabling vampires\nto move freely among their prey while maintaining the masquerade.\n\nThis coexistence creates unique tensions. Vampires must constantly restrain their\nnature, while any human who discovers the truth faces a choice: become part of\nvampire society or be silenced. Romance between vampires and humans is particularly\nfraught, carrying existential implications for both parties.",
+    "short_description": "Vampires coexist secretly with humans, attending the same schools and living in the\nsame communities. Most humans are unaware of vampires' existence, enabling vampires\nto move freely among their prey while maintaining the masquerade.\n\nThis coexistence creates unique tensions. Vampires must constantly restrain their\nnature, while any human who discovers the truth faces a choice: become part of\nvampire society or be silenced. Romance between vampires and humans is particularly\nfraught, carrying existential implications for both parties.",
+    "related_episodes": [
+      "s01e01",
+      "s01e03",
+      "s01e04"
+    ],
+    "related_characters": [
+      "saga",
+      "tommy",
+      "tove"
+    ],
+    "traits": [
+      "secret_coexistence",
+      "integration",
+      "forbidden_romance_potential",
+      "risk_of_exposure",
+      "predator_among_prey"
+    ],
+    "abilities": [
+      "perfect_camouflage",
+      "human_manipulation"
+    ],
+    "weaknesses": [
+      "discovery_risk",
+      "emotional_attachment_to_prey"
+    ],
+    "significance": "Defines how vampires navigate their dual existence",
+    "dark_variant": "In the dark adaptation, vampire-human relationships become explicitly about power and\nconsumption. Humans who enter vampire society do so as servants, donors, or pets.\nTrue equality is impossible when one partner could kill the other on a whim—or worse,\nturn them into an eternal subordinate.",
+    "erotic_implications": "The power differential creates intense dynamics. Some humans are drawn to vampires\nprecisely because of the danger, seeking the thrill of intimacy with a predator.\nVampires may view human lovers as beloved pets or forbidden fruit—the attraction\nheightened by the taboo. Cross-species romance often involves elements of feeding,\nblurring lines between sex and sustenance.",
+    "horror_elements": [
+      "humans_as_cattle_perspective",
+      "loss_of_humanity_in_relationships",
+      "addiction_to_vampire_attention",
+      "isolation_from_human_world"
+    ],
+    "taboo_potential": "Can a relationship ever be consensual when one partner is prey? The vampire's\nself-control is always tested, and the human's life always at risk. Some vampires\nfetishize human fragility, while some humans fetishize vampire power. Neither\ndynamic leads to healthy relationships by human standards—but vampire standards\nare different, and perhaps human morality doesn't apply.",
+    "versions": {
+      "bst": {
+        "description": "Vampires coexist secretly with humans, attending the same schools and living in the\nsame communities. Most humans are unaware of vampires' existence, enabling vampires\nto move freely among their prey while maintaining the masquerade.\n\nThis coexistence creates unique tensions. Vampires must constantly restrain their\nnature, while any human who discovers the truth faces a choice: become part of\nvampire society or be silenced. Romance between vampires and humans is particularly\nfraught, carrying existential implications for both parties.",
+        "traits": [
+          "secret_coexistence",
+          "integration",
+          "forbidden_romance_potential",
+          "risk_of_exposure",
+          "predator_among_prey"
+        ],
+        "abilities": [
+          "perfect_camouflage",
+          "human_manipulation"
+        ],
+        "weaknesses": [
+          "discovery_risk",
+          "emotional_attachment_to_prey"
+        ],
+        "significance": "Defines how vampires navigate their dual existence",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, vampire-human relationships become explicitly about power and\nconsumption. Humans who enter vampire society do so as servants, donors, or pets.\nTrue equality is impossible when one partner could kill the other on a whim—or worse,\nturn them into an eternal subordinate.",
+        "traits": [
+          "humans_as_cattle_perspective",
+          "loss_of_humanity_in_relationships",
+          "addiction_to_vampire_attention",
+          "isolation_from_human_world"
+        ],
+        "significance": "Can a relationship ever be consensual when one partner is prey? The vampire's\nself-control is always tested, and the human's life always at risk. Some vampires\nfetishize human fragility, while some humans fetishize vampire power. Neither\ndynamic leads to healthy relationships by human standards—but vampire standards\nare different, and perhaps human morality doesn't apply.",
+        "mechanics": "Humans who learn about vampires are given limited options: serve, be thralled (have\ntheir memories modified), or die. Those who choose to serve enter a society where\nthey have fewer rights than the lowest vampire. Human lovers are often viewed by\nvampire society as either future prey or future progeny—never equals.",
+        "erotic_implications": "The power differential creates intense dynamics. Some humans are drawn to vampires\nprecisely because of the danger, seeking the thrill of intimacy with a predator.\nVampires may view human lovers as beloved pets or forbidden fruit—the attraction\nheightened by the taboo. Cross-species romance often involves elements of feeding,\nblurring lines between sex and sustenance."
+      }
+    },
+    "divergences": [],
+    "kind": "mythos",
+    "provenance": "data/mythos/vampire_human_relations.yaml",
+    "created_at": "2026-02-06T19:17:57+00:00",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "vampire_physiology",
+    "slug": "vampire-physiology",
+    "name": "Vampire Physiology",
+    "category": "biology",
+    "description": "Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenance.\nThey can blend into human society and attend regular schools, making them virtually indistinguishable\nfrom humans in everyday interactions.\n\nTheir bodies have adapted to process blood as their primary source of nutrition, converting its\ncomponents into the energy needed to sustain their enhanced abilities. The exact biological\nmechanisms remain mysterious, but the results are undeniable: increased strength, heightened\nsenses, and extended lifespans that span centuries.",
+    "short_description": "Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenance.\nThey can blend into human society and attend regular schools, making them virtually indistinguishable\nfrom humans in everyday interactions.\n\nTheir bodies have adapted to process blood as their primary source of nutrition, converting its\ncomponents into the energy needed to sustain their enhanced abilities. The exact biological\nmechanisms remain mysterious, but the results are undeniable: increased strength, heightened\nsenses, and extended lifespans that span centuries.",
+    "related_episodes": [
+      "s01e01",
+      "s01e03",
+      "s01e06"
+    ],
+    "related_characters": [
+      "saga",
+      "boris",
+      "vera",
+      "agnes"
+    ],
+    "traits": [
+      "enhanced_strength",
+      "enhanced_senses",
+      "extended_lifespan",
+      "blood_dependency",
+      "human_appearance",
+      "accelerated_healing",
+      "temperature_regulation"
+    ],
+    "abilities": [
+      "strength",
+      "speed",
+      "senses",
+      "healing"
+    ],
+    "weaknesses": [],
+    "significance": "Forms the biological foundation for all vampire existence",
+    "dark_variant": "In the dark adaptation, vampire physiology becomes more explicitly tied to predatory nature.\nThe enhanced senses are heightened to predatory levels, allowing vampires to detect heartbeats,\nfear hormones, and the subtle flush of arousal in human prey.",
+    "erotic_implications": "The heightened senses make vampires exquisitely attuned to physical pleasure and pain.\nTheir enhanced stamina and strength open possibilities for intense physical encounters\nthat would be dangerous or impossible with human partners.",
+    "horror_elements": [
+      "predatory_instincts",
+      "feral_state_during_starvation",
+      "inhuman_strength_potential",
+      "immortal_perspective_on_mortal_fragility"
+    ],
+    "taboo_potential": "The power differential inherent in vampire physiology raises questions of consent\nand equality in any vampire-human relationship. Can true consent exist when one\npartner could physically overwhelm the other at any moment?",
+    "versions": {
+      "bst": {
+        "description": "Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenance.\nThey can blend into human society and attend regular schools, making them virtually indistinguishable\nfrom humans in everyday interactions.\n\nTheir bodies have adapted to process blood as their primary source of nutrition, converting its\ncomponents into the energy needed to sustain their enhanced abilities. The exact biological\nmechanisms remain mysterious, but the results are undeniable: increased strength, heightened\nsenses, and extended lifespans that span centuries.",
+        "traits": [
+          "enhanced_strength",
+          "enhanced_senses",
+          "extended_lifespan",
+          "blood_dependency",
+          "human_appearance",
+          "accelerated_healing",
+          "temperature_regulation"
+        ],
+        "abilities": [
+          "strength",
+          "speed",
+          "senses",
+          "healing"
+        ],
+        "weaknesses": [],
+        "significance": "Forms the biological foundation for all vampire existence",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, vampire physiology becomes more explicitly tied to predatory nature.\nThe enhanced senses are heightened to predatory levels, allowing vampires to detect heartbeats,\nfear hormones, and the subtle flush of arousal in human prey.",
+        "traits": [
+          "predatory_instincts",
+          "feral_state_during_starvation",
+          "inhuman_strength_potential",
+          "immortal_perspective_on_mortal_fragility"
+        ],
+        "significance": "The power differential inherent in vampire physiology raises questions of consent\nand equality in any vampire-human relationship. Can true consent exist when one\npartner could physically overwhelm the other at any moment?",
+        "mechanics": "Blood consumption not only sustains but enhances. Recent feeding amplifies all abilities,\nwhile blood deprivation leads to a feral state where instinct overrides reason.",
+        "erotic_implications": "The heightened senses make vampires exquisitely attuned to physical pleasure and pain.\nTheir enhanced stamina and strength open possibilities for intense physical encounters\nthat would be dangerous or impossible with human partners."
+      }
+    },
+    "divergences": [],
+    "kind": "mythos",
+    "provenance": "data/mythos/vampire_physiology.yaml",
+    "created_at": "2026-02-06T19:17:57+00:00",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  }
+]

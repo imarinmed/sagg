@@ -134,3 +134,92 @@ class RelationshipStats(SQLModel):
     total_relationships: int
     by_type: dict[str, int]
     average_intensity: float
+
+
+class MediaJobStatus(str, Enum):
+    """Status states for media processing jobs."""
+
+    PENDING = "pending"
+    PROCESSING = "processing"
+    COMPLETED = "completed"
+    FAILED = "failed"
+    CANCELLED = "cancelled"
+
+
+class MediaJob(SQLModel, table=True):
+    """Media processing job metadata.
+
+    Tracks the lifecycle of media generation workflows for a character.
+    """
+
+    __tablename__ = "media_jobs"
+    __table_args__ = (Index("ix_media_jobs_workflow_status", "workflow_type", "status"),)
+
+    id: str = Field(
+        default_factory=lambda: str(uuid.uuid4()),
+        primary_key=True,
+        description="Unique identifier for the job",
+    )
+    character_id: str = Field(..., index=True, description="Character being processed")
+    workflow_type: str = Field(..., description="Type of workflow (e.g., avatar, voice, animation)")
+    status: str = Field(
+        default=MediaJobStatus.PENDING,
+        index=True,
+        description="Current job status",
+    )
+    progress: int = Field(default=0, ge=0, le=100, description="Progress percentage (0-100)")
+    error_message: str | None = Field(default=None, description="Error details if job failed")
+    created_at: datetime = Field(
+        default_factory=datetime.utcnow, description="Job creation timestamp"
+    )
+    updated_at: datetime = Field(
+        default_factory=datetime.utcnow, description="Last update timestamp"
+    )
+
+
+class MediaArtifact(SQLModel, table=True):
+    """Generated media artifact metadata.
+
+    Tracks files produced by media processing jobs without storing binaries.
+    """
+
+    __tablename__ = "media_artifacts"
+
+    id: str = Field(
+        default_factory=lambda: str(uuid.uuid4()),
+        primary_key=True,
+        description="Unique identifier for the artifact",
+    )
+    job_id: str = Field(..., foreign_key="media_jobs.id", index=True)
+    artifact_type: str = Field(
+        ..., index=True, description="Type of artifact (e.g., image, video, audio)"
+    )
+    file_path: str = Field(..., description="Relative path to artifact file")
+    file_size_bytes: int | None = Field(default=None, description="File size in bytes")
+    metadata_json: str | None = Field(default=None, description="JSON metadata about the artifact")
+    created_at: datetime = Field(
+        default_factory=datetime.utcnow, description="Artifact creation timestamp"
+    )
+
+
+class AuditEvent(SQLModel, table=True):
+    """Audit event for media job lifecycle.
+
+    Tracks state transitions and operations performed on media jobs.
+    """
+
+    __tablename__ = "audit_events"
+    __table_args__ = (Index("ix_audit_events_job_timestamp", "job_id", "created_at"),)
+
+    id: str = Field(
+        default_factory=lambda: str(uuid.uuid4()),
+        primary_key=True,
+        description="Unique identifier for the audit event",
+    )
+    job_id: str = Field(..., foreign_key="media_jobs.id", index=True)
+    event_type: str = Field(
+        ..., index=True, description="Event type (e.g., started, progressed, completed)"
+    )
+    actor: str = Field(..., description="Actor who triggered the event (e.g., system, user)")
+    details_json: str | None = Field(default=None, description="JSON details about the event")
+    created_at: datetime = Field(default_factory=datetime.utcnow, description="Event timestamp")

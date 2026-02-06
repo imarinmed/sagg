@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-02-06T19:17:57+00:00",
+  "counts": {
+    "mythos": 7,
+    "foundations": 4,
+    "total": 11
+  },
+  "categories": {
+    "supernatural": 1,
+    "biology": 4,
+    "society": 2
+  },
+  "mythos": [
+    {
+      "id": "blood_bond",
+      "slug": "the-blood-bond",
+      "name": "The Blood Bond",
+      "category": "supernatural",
+      "path": "data/kb/mythos/the-blood-bond.mdx",
+      "provenance": "data/mythos/blood_bond.yaml",
+      "kind": "mythos"
+    },
+    {
+      "id": "daywalking",
+      "slug": "daywalking",
+      "name": "Daywalking",
+      "category": "biology",
+      "path": "data/kb/mythos/daywalking.mdx",
+      "provenance": "data/mythos/daywalking.yaml",
+      "kind": "mythos"
+    },
+    {
+      "id": "family_hierarchy",
+      "slug": "vampire-family-hierarchy",
+      "name": "Vampire Family Hierarchy",
+      "category": "society",
+      "path": "data/kb/mythos/vampire-family-hierarchy.mdx",
+      "provenance": "data/mythos/family_hierarchy.yaml",
+      "kind": "mythos"
+    },
+    {
+      "id": "feeding",
+      "slug": "feeding",
+      "name": "Feeding",
+      "category": "biology",
+      "path": "data/kb/mythos/feeding.mdx",
+      "provenance": "data/mythos/feeding.yaml",
+      "kind": "mythos"
+    },
+    {
+      "id": "transformation",
+      "slug": "vampire-transformation",
+      "name": "Vampire Transformation",
+      "category": "biology",
+      "path": "data/kb/mythos/vampire-transformation.mdx",
+      "provenance": "data/mythos/transformation.yaml",
+      "kind": "mythos"
+    },
+    {
+      "id": "vampire_human_relations",
+      "slug": "vampire-human-relations",
+      "name": "Vampire-Human Relations",
+      "category": "society",
+      "path": "data/kb/mythos/vampire-human-relations.mdx",
+      "provenance": "data/mythos/vampire_human_relations.yaml",
+      "kind": "mythos"
+    },
+    {
+      "id": "vampire_physiology",
+      "slug": "vampire-physiology",
+      "name": "Vampire Physiology",
+      "category": "biology",
+      "path": "data/kb/mythos/vampire-physiology.mdx",
+      "provenance": "data/mythos/vampire_physiology.yaml",
+      "kind": "mythos"
+    }
+  ],
+  "foundations": [
+    {
+      "id": "adaptation-guide",
+      "slug": "adaptation-guide",
+      "title": "Dark Tone Adaptation Guide",
+      "path": "data/kb/foundations/adaptation-guide.mdx",
+      "provenance": "docs/adaptation-guide.md",
+      "kind": "foundation"
+    },
+    {
+      "id": "character-arcs",
+      "slug": "character-arcs",
+      "title": "Character Arc Documentation",
+      "path": "data/kb/foundations/character-arcs.mdx",
+      "provenance": "docs/character-arcs.md",
+      "kind": "foundation"
+    },
+    {
+      "id": "erotic-framework",
+      "slug": "erotic-framework",
+      "title": "Erotic Content Framework",
+      "path": "data/kb/foundations/erotic-framework.mdx",
+      "provenance": "docs/erotic-framework.md",
+      "kind": "foundation"
+    },
+    {
+      "id": "video-analysis-improvements",
+      "slug": "video-analysis-improvements",
+      "title": "Video Analysis System Improvements - BST Wiki",
+      "path": "data/kb/foundations/video-analysis-improvements.mdx",
+      "provenance": "docs/video-analysis-improvements.md",
+      "kind": "foundation"
+    }
+  ]
+}
