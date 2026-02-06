@@ -116,31 +116,31 @@ Create a dual-narrative mythos management system that seamlessly tracks, compare
 ### Definition of Done
 
 #### Foundation (Must Have)
-- [ ] All 7 mythos elements have BST/SST version fields populated
-- [ ] All 10 characters have BST/SST version fields populated
-- [ ] Tag Library exists with 30+ controlled vocabulary terms
-- [ ] Causality edges exist for at least 50 key moments
-- [ ] Claims database contains 200+ atomic statements with evidence
-- [ ] API supports `?narrative=bst|sst|both` query parameter
+- [x] All 7 mythos elements have BST/SST version fields populated
+- [x] All 10 characters have BST/SST version fields populated
+- [x] Tag Library exists with 30+ controlled vocabulary terms
+- [x] Causality edges exist for at least 50 key moments
+- [x] Claims database contains 200+ atomic statements with evidence
+- [x] API supports `?narrative=bst|sst|both` query parameter
 
 #### Creative Engine (Extraordinary)
-- [ ] Mutation Cards generate for all mythos elements (3-7 cards each)
-- [ ] Ripple Preview shows downstream effects (top 5 ripples)
-- [ ] Prompt Deck contains 100+ combinatorial prompts
-- [ ] Inspiration Graph has bidirectional linking active
+- [x] Mutation Cards generate for all mythos elements (3-7 cards each)
+- [x] Ripple Preview shows downstream effects (top 5 ripples)
+- [x] Prompt Deck contains 100+ combinatorial prompts
+- [x] Inspiration Graph has bidirectional linking active
 
 #### Exploration Tools (The Magic)
-- [ ] Shadow Sandbox allows what-if scenarios with status tracking
-- [ ] Narrative DNA shows tag signatures for episodes/characters
-- [ ] Serendipity Engine suggests unexpected connections
-- [ ] Temporal Navigator displays episode/scene/moment hierarchy
+- [x] Shadow Sandbox allows what-if scenarios with status tracking
+- [x] Narrative DNA shows tag signatures for episodes/characters
+- [x] Serendipity Engine suggests unexpected connections
+- [x] Temporal Navigator displays episode/scene/moment hierarchy
 
 #### Integration (The Experience)
-- [ ] Creative Companion Panel appears on all entity pages
-- [ ] Graph Visualization shows relationship networks
-- [ ] Frontend has narrative mode toggle (BST/SST/Both)
-- [ ] Comparison view shows divergences with evidence links
-- [ ] Consistency validation passes with zero errors
+- [x] Creative Companion Panel appears on all entity pages
+- [x] Graph Visualization shows relationship networks
+- [x] Frontend has narrative mode toggle (BST/SST/Both)
+- [x] Comparison view shows divergences with evidence links
+- [x] Consistency validation passes with zero errors
 
 ### Must Have (Foundation)
 - BST canonical knowledge base fully extracted and queryable
@@ -2161,7 +2161,7 @@ Scenario: Serendipity discovery from graph
 
 ---
 
-### Task 11: Add Consistency Validation
+### Task 11: Add Consistency Validation ✅
 
 **What to do**:
 1. Create consistency validation rules:
