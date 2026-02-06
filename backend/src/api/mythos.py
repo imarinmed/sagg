@@ -1,5 +1,7 @@
+
 from fastapi import APIRouter, HTTPException, Query
-from typing import List, Optional
+
+from ..data import mythos_connections_db, mythos_db
 from ..models import (
     CONNECTION_TYPES,
     D3GraphLink,
@@ -8,7 +10,6 @@ from ..models import (
     MythosElement,
     MythosGraphResponse,
 )
-from ..data import mythos_db, mythos_connections_db
 
 router = APIRouter(prefix="/api/mythos", tags=["mythos"])
 
@@ -37,9 +38,9 @@ CONNECTION_TYPE_STRENGTHS = {
 }
 
 
-@router.get("", response_model=List[MythosElement])
+@router.get("", response_model=list[MythosElement])
 async def list_mythos(
-    category: Optional[str] = Query(None, description="Filter by category"),
+    category: str | None = Query(None, description="Filter by category"),
 ):
     elements = list(mythos_db.values())
     if category:
@@ -47,17 +48,17 @@ async def list_mythos(
     return elements
 
 
-@router.get("/categories", response_model=List[str])
+@router.get("/categories", response_model=list[str])
 async def list_categories():
     categories = set(e.category for e in mythos_db.values())
     return sorted(categories)
 
 
-@router.get("/connections", response_model=List[MythosConnection])
+@router.get("/connections", response_model=list[MythosConnection])
 async def list_connections(
-    connection_type: Optional[str] = Query(None, description="Filter by connection type"),
-    from_element_id: Optional[str] = Query(None, description="Filter by source element"),
-    to_element_id: Optional[str] = Query(None, description="Filter by target element"),
+    connection_type: str | None = Query(None, description="Filter by connection type"),
+    from_element_id: str | None = Query(None, description="Filter by source element"),
+    to_element_id: str | None = Query(None, description="Filter by target element"),
 ):
     connections = list(mythos_connections_db.values())
     if connection_type:
@@ -74,7 +75,7 @@ async def list_connections(
     return connections
 
 
-@router.get("/connections/types", response_model=List[str])
+@router.get("/connections/types", response_model=list[str])
 async def list_connection_types():
     return CONNECTION_TYPES
 
@@ -130,7 +131,7 @@ async def get_mythos(mythos_id: str):
     return mythos_db[mythos_id]
 
 
-@router.get("/{mythos_id}/connections", response_model=List[MythosConnection])
+@router.get("/{mythos_id}/connections", response_model=list[MythosConnection])
 async def get_element_connections(mythos_id: str):
     if mythos_id not in mythos_db:
         raise HTTPException(status_code=404, detail="Mythos element not found")

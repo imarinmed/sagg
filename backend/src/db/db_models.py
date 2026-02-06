@@ -6,10 +6,10 @@ These models use SQLModel which combines SQLAlchemy ORM with Pydantic validation
 import uuid
 from datetime import datetime
 from enum import Enum
-from typing import Optional
-from sqlmodel import Field, SQLModel, Index, Relationship as SQLRelationship
+
 from pydantic import field_validator, model_validator
 from sqlalchemy import UniqueConstraint
+from sqlmodel import Field, Index, SQLModel
 
 
 class RelationshipType(str, Enum):
@@ -30,10 +30,10 @@ class CharacterRelationshipBase(SQLModel):
     to_character_id: str = Field(..., index=True, description="ID of the target character")
     relationship_type: RelationshipType = Field(..., description="Type of relationship")
     intensity: int = Field(default=3, ge=1, le=5, description="Intensity of relationship (1-5)")
-    start_episode: Optional[str] = Field(
+    start_episode: str | None = Field(
         default=None, description="Episode where relationship begins"
     )
-    end_episode: Optional[str] = Field(
+    end_episode: str | None = Field(
         default=None, description="Episode where relationship ends (if applicable)"
     )
     description: str = Field(default="", description="Description of the relationship")
@@ -100,12 +100,12 @@ class CharacterRelationshipCreate(CharacterRelationshipBase):
 class CharacterRelationshipUpdate(SQLModel):
     """Schema for updating a relationship (all fields optional)."""
 
-    relationship_type: Optional[RelationshipType] = None
-    intensity: Optional[int] = Field(default=None, ge=1, le=5)
-    start_episode: Optional[str] = None
-    end_episode: Optional[str] = None
-    description: Optional[str] = None
-    is_canonical: Optional[bool] = None
+    relationship_type: RelationshipType | None = None
+    intensity: int | None = Field(default=None, ge=1, le=5)
+    start_episode: str | None = None
+    end_episode: str | None = None
+    description: str | None = None
+    is_canonical: bool | None = None
 
 
 class CharacterRelationshipRead(CharacterRelationshipBase):
@@ -119,8 +119,8 @@ class CharacterRelationshipRead(CharacterRelationshipBase):
 class CharacterRelationshipWithNames(CharacterRelationshipRead):
     """Schema for reading a relationship with character names resolved."""
 
-    from_character_name: Optional[str] = None
-    to_character_name: Optional[str] = None
+    from_character_name: str | None = None
+    to_character_name: str | None = None
 
 
 class RelationshipBulkCreate(SQLModel):

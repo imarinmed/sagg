@@ -11,7 +11,8 @@ import {
   Filter, 
   RefreshCw, 
   Share2, 
-  Sparkles
+  Sparkles,
+  Download
 } from "lucide-react";
 
 export type NodeType = "character" | "mythos" | "episode" | "beat" | "inspiration";
@@ -317,6 +318,21 @@ export function EnhancedGraphView({ initialData, height = "85vh" }: EnhancedGrap
     }
   };
 
+  const handleExport = () => {
+    if (!svgRef.current) return;
+    
+    const svgData = new XMLSerializer().serializeToString(svgRef.current);
+    const blob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "lore-graph.svg";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex flex-col h-full gap-4">
       <div className="flex flex-wrap items-center justify-between gap-4 p-4 bg-[var(--color-bg-secondary)]/50 backdrop-blur-md rounded-xl border border-[var(--color-border)]">
@@ -336,14 +352,17 @@ export function EnhancedGraphView({ initialData, height = "85vh" }: EnhancedGrap
         <div className="flex items-center gap-2">
           <Button 
             size="sm" 
-            variant="secondary"
+            variant="ghost" 
             onPress={handleDiscover}
             className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 text-pink-400"
           >
             <Sparkles className="w-4 h-4 mr-2" />
             Discover
           </Button>
-          <Button size="sm" variant="ghost" isIconOnly onPress={handleReset}>
+          <Button size="sm" variant="ghost" isIconOnly onPress={handleExport} title="Export SVG">
+            <Download className="w-4 h-4" />
+          </Button>
+          <Button size="sm" variant="ghost" isIconOnly onPress={handleReset} title="Reset View">
             <RefreshCw className="w-4 h-4" />
           </Button>
         </div>
@@ -359,16 +378,17 @@ export function EnhancedGraphView({ initialData, height = "85vh" }: EnhancedGrap
               <div className="flex flex-col gap-2">
                 {(Object.keys(NODE_COLORS) as NodeType[]).map(type => (
                   <div key={type} className="flex items-center justify-between">
-                    <label className="flex items-center gap-2 cursor-pointer">
-                      <input
+                    <label className="flex items-center gap-2 cursor-pointer text-sm">
+                      <input 
                         type="checkbox"
                         checked={visibleNodeTypes.includes(type)}
                         onChange={(e) => {
+                          const checked = e.target.checked;
                           setVisibleNodeTypes(prev => 
-                            e.target.checked ? [...prev, type] : prev.filter(t => t !== type)
+                            checked ? [...prev, type] : prev.filter(t => t !== type)
                           );
                         }}
-                        className="w-4 h-4 rounded border-[var(--color-border)] bg-[var(--color-bg-tertiary)]"
+                        className="rounded border-[var(--color-border)] bg-[var(--color-bg-primary)] text-[var(--color-accent-primary)] focus:ring-[var(--color-accent-primary)]"
                       />
                       <span className="capitalize">{type}</span>
                     </label>
@@ -386,16 +406,17 @@ export function EnhancedGraphView({ initialData, height = "85vh" }: EnhancedGrap
               <div className="flex flex-col gap-2">
                 {(Object.keys(EDGE_COLORS) as EdgeType[]).map(type => (
                   <div key={type} className="flex items-center justify-between">
-                    <label className="flex items-center gap-2 cursor-pointer">
-                      <input
+                    <label className="flex items-center gap-2 cursor-pointer text-sm">
+                      <input 
                         type="checkbox"
                         checked={visibleEdgeTypes.includes(type)}
                         onChange={(e) => {
+                          const checked = e.target.checked;
                           setVisibleEdgeTypes(prev => 
-                            e.target.checked ? [...prev, type] : prev.filter(t => t !== type)
+                            checked ? [...prev, type] : prev.filter(t => t !== type)
                           );
                         }}
-                        className="w-4 h-4 rounded border-[var(--color-border)] bg-[var(--color-bg-tertiary)]"
+                        className="rounded border-[var(--color-border)] bg-[var(--color-bg-primary)] text-[var(--color-accent-primary)] focus:ring-[var(--color-accent-primary)]"
                       />
                       <span className="capitalize">{type.replace('_', ' ')}</span>
                     </label>
@@ -415,13 +436,13 @@ export function EnhancedGraphView({ initialData, height = "85vh" }: EnhancedGrap
             <div className="pt-4 border-t border-[var(--color-border)]">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-semibold">Focus Mode</span>
-                <label className="flex items-center gap-2 cursor-pointer">
-                  <input
+                <label className="flex items-center gap-2 cursor-pointer text-sm">
+                  <input 
                     type="checkbox"
                     checked={isFocusMode}
                     onChange={(e) => setIsFocusMode(e.target.checked)}
                     disabled={!selectedNode}
-                    className="w-4 h-4 rounded border-[var(--color-border)] bg-[var(--color-bg-tertiary)] disabled:opacity-50"
+                    className="rounded border-[var(--color-border)] bg-[var(--color-bg-primary)] text-[var(--color-accent-primary)] focus:ring-[var(--color-accent-primary)] disabled:opacity-50"
                   />
                   Enable
                 </label>

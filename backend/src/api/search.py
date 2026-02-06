@@ -1,4 +1,3 @@
-from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
@@ -316,7 +315,7 @@ def search_mythos(query: str, limit: int = 10) -> list[SearchResult]:
 @router.get("", response_model=SearchResponse)
 async def search(
     q: str = Query(..., min_length=1, max_length=100, description="Search query"),
-    type: Optional[str] = Query(
+    type: str | None = Query(
         None,
         description=(
             "Filter by content type: episode, scene, character, or mythos. "

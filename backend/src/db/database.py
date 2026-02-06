@@ -1,8 +1,9 @@
 """Database configuration and session management using SQLModel."""
 
+from collections.abc import Generator
 from pathlib import Path
+
 from sqlmodel import Session, SQLModel, create_engine
-from typing import Generator
 
 # Database path
 DATA_DIR = Path(__file__).parent.parent.parent.parent / "data"

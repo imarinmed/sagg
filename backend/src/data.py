@@ -522,7 +522,7 @@ def load_relationships_from_json(existing_relationships: dict) -> dict:
     relationships_file = DATA_DIR / "character_relationships.json"
 
     if not relationships_file.exists():
-        print(f"Note: character_relationships.json not found, using YAML relationships only")
+        print("Note: character_relationships.json not found, using YAML relationships only")
         return relationships_db
 
     try:
@@ -561,3 +561,89 @@ print(f"  Character Evolution: {len(character_evolution_db)}")
 
 relationships_db = load_relationships_from_json(relationships_db)
 print(f"  Total Relationships (after merge): {len(relationships_db)}")
+
+
+def load_causality_edges_from_json() -> dict:
+    """Load causality edges from data/causality/edges.json"""
+    edges_db = {}
+    edges_file = DATA_DIR / "causality" / "edges.json"
+
+    if not edges_file.exists():
+        print(f"Warning: causality edges.json not found at {edges_file}")
+        return edges_db
+
+    try:
+        with open(edges_file, encoding="utf-8") as f:
+            data = json.load(f)
+
+        for edge_data in data.get("edges", []):
+            edge_id = edge_data.get("edge_id", "")
+            edges_db[edge_id] = edge_data
+
+        print(f"Loaded {len(edges_db)} causality edges from edges.json")
+    except Exception as e:
+        print(f"Error loading causality edges: {e}")
+
+    return edges_db
+
+
+def load_claims_from_json() -> dict:
+    """Load knowledge claims from data/knowledge/claims.json"""
+    claims_db = {}
+    claims_file = DATA_DIR / "knowledge" / "claims.json"
+
+    if not claims_file.exists():
+        print(f"Warning: knowledge claims.json not found at {claims_file}")
+        return claims_db
+
+    try:
+        with open(claims_file, encoding="utf-8") as f:
+            data = json.load(f)
+
+        for claim_data in data.get("claims", []):
+            claim_id = claim_data.get("claim_id", "")
+            claims_db[claim_id] = claim_data
+
+        print(f"Loaded {len(claims_db)} knowledge claims from claims.json")
+    except Exception as e:
+        print(f"Error loading knowledge claims: {e}")
+
+    return claims_db
+
+
+def load_entity_versions(entity_type: str, entity_id: str) -> dict | None:
+    """Load BST/SST versions for a mythos or character entity from YAML"""
+    if entity_type == "mythos":
+        entity_dir = DATA_DIR / "mythos"
+    elif entity_type == "character":
+        entity_dir = DATA_DIR / "characters"
+    else:
+        return None
+
+    yaml_file = entity_dir / f"{entity_id}.yaml"
+    if not yaml_file.exists():
+        return None
+
+    try:
+        with open(yaml_file, encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+
+        versions = data.get("versions", {})
+        return {
+            "entity_id": entity_id,
+            "entity_type": entity_type,
+            "name": data.get("name", entity_id),
+            "bst_version": versions.get("bst", {}),
+            "sst_version": versions.get("sst", {}),
+            "divergences": data.get("divergences", []),
+        }
+    except Exception as e:
+        print(f"Error loading entity versions for {entity_type}/{entity_id}: {e}")
+        return None
+
+
+causality_edges_db = load_causality_edges_from_json()
+print(f"  Causality Edges: {len(causality_edges_db)}")
+
+claims_db = load_claims_from_json()
+print(f"  Knowledge Claims: {len(claims_db)}")

@@ -1,25 +1,25 @@
-from fastapi import APIRouter, HTTPException, Body, Query
-from typing import List, Optional
-from pydantic import BaseModel, Field
+
+from fastapi import APIRouter, HTTPException, Query
+from pydantic import BaseModel
+
+from ..data import (
+    character_evolution_db,
+    character_presence_db,
+    characters_db,
+    episodes_db,
+    relationships_db,
+)
 from ..models import (
+    MILESTONE_TYPES,
     Character,
     CharacterEpisodePresenceResponse,
-    CharacterEvolutionMilestone,
     CharacterEvolutionResponse,
     CharacterEvolutionSummary,
     D3GraphLink,
     D3GraphNode,
     EpisodePresenceEntry,
-    MILESTONE_TYPES,
     Relationship,
     RelationshipGraphResponse,
-)
-from ..data import (
-    characters_db,
-    relationships_db,
-    character_presence_db,
-    episodes_db,
-    character_evolution_db,
 )
 
 router = APIRouter(prefix="/api/characters", tags=["characters"])
@@ -51,15 +51,15 @@ class RelationshipCreate(BaseModel):
     from_character_id: str
     to_character_id: str
     relationship_type: str
-    description: Optional[str] = None
+    description: str | None = None
 
 
 class RelationshipUpdate(BaseModel):
-    relationship_type: Optional[str] = None
-    description: Optional[str] = None
+    relationship_type: str | None = None
+    description: str | None = None
 
 
-@router.get("", response_model=List[Character])
+@router.get("", response_model=list[Character])
 async def list_characters():
     return list(characters_db.values())
 
@@ -71,7 +71,7 @@ async def get_character(character_id: str):
     return characters_db[character_id]
 
 
-@router.get("/{character_id}/relationships", response_model=List[Relationship])
+@router.get("/{character_id}/relationships", response_model=list[Relationship])
 async def get_character_relationships(character_id: str):
     if character_id not in characters_db:
         raise HTTPException(status_code=404, detail="Character not found")
@@ -90,7 +90,7 @@ async def get_character_relationship_graph(character_id: str, depth: int = 1):
         raise HTTPException(status_code=404, detail="Character not found")
 
     included_character_ids = {character_id}
-    relevant_relationships: List[Relationship] = []
+    relevant_relationships: list[Relationship] = []
 
     current_layer = {character_id}
     for _ in range(depth):
@@ -251,13 +251,13 @@ def _load_evolution_metadata() -> dict:
     return {"first_appearances": {}, "arc_summaries": {}}
 
 
-@router.get("/evolution/types", response_model=List[str])
+@router.get("/evolution/types", response_model=list[str])
 async def get_evolution_milestone_types():
     """Get all valid milestone types."""
     return MILESTONE_TYPES
 
 
-@router.get("/evolution/summary", response_model=List[CharacterEvolutionSummary])
+@router.get("/evolution/summary", response_model=list[CharacterEvolutionSummary])
 async def get_all_character_evolution_summaries():
     """Get evolution summary for all characters."""
     metadata = _load_evolution_metadata()
@@ -301,8 +301,8 @@ async def get_all_character_evolution_summaries():
 @router.get("/{character_id}/evolution", response_model=CharacterEvolutionResponse)
 async def get_character_evolution(
     character_id: str,
-    milestone_type: Optional[str] = Query(None, description="Filter by milestone type"),
-    min_importance: Optional[int] = Query(None, ge=1, le=5, description="Minimum importance"),
+    milestone_type: str | None = Query(None, description="Filter by milestone type"),
+    min_importance: int | None = Query(None, ge=1, le=5, description="Minimum importance"),
 ):
     """Get character evolution milestones with timeline format for frontend."""
     all_milestones = [m for m in character_evolution_db.values() if m.character_id == character_id]

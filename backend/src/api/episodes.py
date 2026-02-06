@@ -1,5 +1,7 @@
+
 from fastapi import APIRouter, HTTPException
-from typing import List
+
+from ..data import character_presence_db, characters_db, episodes_db, scenes_db, video_analysis_db
 from ..models import (
     CharacterHeatmapData,
     Episode,
@@ -11,12 +13,11 @@ from ..models import (
     VideoMoment,
     VideoScene,
 )
-from ..data import episodes_db, scenes_db, video_analysis_db, character_presence_db, characters_db
 
 router = APIRouter(prefix="/api/episodes", tags=["episodes"])
 
 
-@router.get("", response_model=List[Episode])
+@router.get("", response_model=list[Episode])
 async def list_episodes():
     return list(episodes_db.values())
 
@@ -28,7 +29,7 @@ async def get_episode(episode_id: str):
     return episodes_db[episode_id]
 
 
-@router.get("/{episode_id}/scenes", response_model=List[Scene])
+@router.get("/{episode_id}/scenes", response_model=list[Scene])
 async def get_episode_scenes(episode_id: str):
     if episode_id not in episodes_db:
         raise HTTPException(status_code=404, detail="Episode not found")
@@ -44,14 +45,14 @@ async def get_video_analysis(episode_id: str):
     return video_analysis_db[episode_id]
 
 
-@router.get("/{episode_id}/video-analysis/moments", response_model=List[VideoMoment])
+@router.get("/{episode_id}/video-analysis/moments", response_model=list[VideoMoment])
 async def get_video_analysis_moments(episode_id: str):
     if episode_id not in video_analysis_db:
         raise HTTPException(status_code=404, detail="Video analysis not found for this episode")
     return video_analysis_db[episode_id].key_moments
 
 
-@router.get("/{episode_id}/video-analysis/scenes", response_model=List[VideoScene])
+@router.get("/{episode_id}/video-analysis/scenes", response_model=list[VideoScene])
 async def get_video_analysis_scenes(episode_id: str):
     if episode_id not in video_analysis_db:
         raise HTTPException(status_code=404, detail="Video analysis not found for this episode")

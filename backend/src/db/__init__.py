@@ -1,5 +1,5 @@
 # Database module initialization
-from .database import get_session, init_db, engine
+from .database import engine, get_session, init_db
 from .db_models import CharacterRelationship, RelationshipType
 
 __all__ = [

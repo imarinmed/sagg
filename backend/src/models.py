@@ -1,7 +1,7 @@
-from pydantic import BaseModel, Field
-from typing import Optional, List, Dict
 from datetime import datetime
 from enum import Enum
+
+from pydantic import BaseModel, Field
 
 
 class NarrativeVersion(str, Enum):
@@ -13,13 +13,13 @@ class NarrativeVersion(str, Enum):
 class KinkDescriptor(BaseModel):
     descriptor: str
     intensity: int = Field(ge=1, le=5)
-    context: Optional[str] = None
+    context: str | None = None
 
 
 class KinkLimit(BaseModel):
     descriptor: str
     type: str
-    note: Optional[str] = None
+    note: str | None = None
 
 
 class PreferredDynamic(BaseModel):
@@ -30,34 +30,34 @@ class PreferredDynamic(BaseModel):
 
 class EpisodeEvolution(BaseModel):
     episode_id: str
-    descriptors: Dict[str, int] = {}
+    descriptors: dict[str, int] = {}
 
 
 class KinkProfile(BaseModel):
-    preferences: List[KinkDescriptor] = []
-    limits: List[KinkLimit] = []
-    evolution: List[EpisodeEvolution] = []
-    preferred_dynamics: List[PreferredDynamic] = []
-    consent_frameworks: List[str] = []
+    preferences: list[KinkDescriptor] = []
+    limits: list[KinkLimit] = []
+    evolution: list[EpisodeEvolution] = []
+    preferred_dynamics: list[PreferredDynamic] = []
+    consent_frameworks: list[str] = []
 
 
 class SceneTags(BaseModel):
-    content_warnings: List[str] = []
-    descriptors: List[KinkDescriptor] = []
-    consent_framework: Optional[str] = None
-    power_dynamic: Optional[Dict[str, str]] = None
+    content_warnings: list[str] = []
+    descriptors: list[KinkDescriptor] = []
+    consent_framework: str | None = None
+    power_dynamic: dict[str, str] | None = None
     intensity_rating: int = Field(ge=1, le=5, default=1)
-    narrative_purpose: Optional[str] = None
+    narrative_purpose: str | None = None
 
 
 class Episode(BaseModel):
     id: str
     title: str
     episode_number: int
-    air_date: Optional[str] = None
-    description: Optional[str] = None
+    air_date: str | None = None
+    description: str | None = None
     season: int
-    synopsis: Optional[str] = None
+    synopsis: str | None = None
 
 
 class Scene(BaseModel):
@@ -65,21 +65,21 @@ class Scene(BaseModel):
     episode_id: str
     scene_number: int
     title: str
-    description: Optional[str] = None
-    characters: List[str]
-    tags: Optional[SceneTags] = None
+    description: str | None = None
+    characters: list[str]
+    tags: SceneTags | None = None
 
 
 class Character(BaseModel):
     id: str
     name: str
     role: str
-    description: Optional[str] = None
-    family: Optional[str] = None
-    adaptation_notes: Optional[str] = None
-    canonical_traits: Optional[List[str]] = None
-    adaptation_traits: Optional[List[str]] = None
-    kink_profile: Optional[KinkProfile] = None
+    description: str | None = None
+    family: str | None = None
+    adaptation_notes: str | None = None
+    canonical_traits: list[str] | None = None
+    adaptation_traits: list[str] | None = None
+    kink_profile: KinkProfile | None = None
 
 
 class Relationship(BaseModel):
@@ -87,28 +87,28 @@ class Relationship(BaseModel):
     from_character_id: str
     to_character_id: str
     relationship_type: str
-    description: Optional[str] = None
+    description: str | None = None
 
 
 class MythosElement(BaseModel):
     id: str
     name: str
     category: str
-    description: Optional[str] = None
-    short_description: Optional[str] = None
-    related_episodes: List[str] = []
-    related_characters: List[str] = []
-    media_urls: List[str] = []
-    traits: List[str] = []
-    abilities: List[str] = []
-    weaknesses: List[str] = []
-    significance: Optional[str] = None
-    dark_variant: Optional[str] = None
-    erotic_implications: Optional[str] = None
-    horror_elements: List[str] = []
-    taboo_potential: Optional[str] = None
-    created_at: Optional[datetime] = None
-    updated_at: Optional[datetime] = None
+    description: str | None = None
+    short_description: str | None = None
+    related_episodes: list[str] = []
+    related_characters: list[str] = []
+    media_urls: list[str] = []
+    traits: list[str] = []
+    abilities: list[str] = []
+    weaknesses: list[str] = []
+    significance: str | None = None
+    dark_variant: str | None = None
+    erotic_implications: str | None = None
+    horror_elements: list[str] = []
+    taboo_potential: str | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
 
 
 CONNECTION_TYPES = ["prerequisite", "related", "contradicts", "evolves_to", "explains"]
@@ -121,7 +121,7 @@ class MythosConnection(BaseModel):
     connection_type: str = Field(
         ..., pattern="^(prerequisite|related|contradicts|evolves_to|explains)$"
     )
-    description: Optional[str] = None
+    description: str | None = None
     strength: int = Field(ge=1, le=5, default=3)
 
     def model_post_init(self, __context):
@@ -133,19 +133,19 @@ class GraphNode(BaseModel):
     id: str
     label: str
     node_type: str
-    metadata: Optional[dict] = None
+    metadata: dict | None = None
 
 
 class GraphEdge(BaseModel):
     source: str
     target: str
     edge_type: str
-    label: Optional[str] = None
+    label: str | None = None
 
 
 class GraphData(BaseModel):
-    nodes: List[GraphNode]
-    edges: List[GraphEdge]
+    nodes: list[GraphNode]
+    edges: list[GraphEdge]
 
 
 # D3.js Compatible Graph Models
@@ -156,8 +156,8 @@ class D3GraphNode(BaseModel):
     name: str
     group: int = 1
     radius: int = 20
-    color: Optional[str] = None
-    metadata: Optional[dict] = None
+    color: str | None = None
+    metadata: dict | None = None
 
 
 class D3GraphLink(BaseModel):
@@ -167,21 +167,21 @@ class D3GraphLink(BaseModel):
     target: str
     type: str
     value: int = 1
-    color: Optional[str] = None
+    color: str | None = None
 
 
 class D3GraphData(BaseModel):
     """D3.js compatible graph format"""
 
-    nodes: List[D3GraphNode]
-    links: List[D3GraphLink]
+    nodes: list[D3GraphNode]
+    links: list[D3GraphLink]
 
 
 # Character Relationship Graph Response
 class RelationshipGraphResponse(D3GraphData):
     """Character relationships in D3.js format"""
 
-    center_character_id: Optional[str] = None
+    center_character_id: str | None = None
     total_characters: int = 0
     total_relationships: int = 0
 
@@ -200,8 +200,8 @@ class CharacterHeatmapData(BaseModel):
     """Single character's heatmap data"""
 
     character_id: str
-    character_name: Optional[str] = None
-    episodes: List[EpisodePresenceEntry]
+    character_name: str | None = None
+    episodes: list[EpisodePresenceEntry]
     total_screen_time: int = 0
     total_appearances: int = 0
 
@@ -211,15 +211,15 @@ class EpisodeHeatmapResponse(BaseModel):
 
     episode_id: str
     episode_title: str
-    characters: List[CharacterHeatmapData]
+    characters: list[CharacterHeatmapData]
 
 
 class CharacterEpisodePresenceResponse(BaseModel):
     """Character's presence across all episodes"""
 
     character_id: str
-    character_name: Optional[str] = None
-    episodes: List[EpisodePresenceEntry]
+    character_name: str | None = None
+    episodes: list[EpisodePresenceEntry]
     total_episodes: int = 0
     total_screen_time: int = 0
 
@@ -230,17 +230,17 @@ class MythosGraphResponse(D3GraphData):
 
     total_elements: int = 0
     total_connections: int = 0
-    categories: List[str] = []
+    categories: list[str] = []
 
 
 class VideoMoment(BaseModel):
     timestamp: str
     timestamp_seconds: float
     description: str
-    characters_present: List[str] = []
+    characters_present: list[str] = []
     content_type: str
     intensity: int = Field(ge=1, le=5, default=1)
-    screenshot_path: Optional[str] = None
+    screenshot_path: str | None = None
 
 
 class VideoScene(BaseModel):
@@ -249,8 +249,8 @@ class VideoScene(BaseModel):
     end_timestamp: str
     start_seconds: float
     end_seconds: float
-    location: Optional[str] = None
-    characters: List[str] = []
+    location: str | None = None
+    characters: list[str] = []
     content_summary: str
     moments_count: int
 
@@ -261,8 +261,8 @@ class VideoAnalysis(BaseModel):
     title: str
     duration: str
     duration_seconds: float
-    key_moments: List[VideoMoment]
-    scenes: Optional[List[VideoScene]] = []
+    key_moments: list[VideoMoment]
+    scenes: list[VideoScene] | None = []
     total_moments: int
     total_scenes: int
 
@@ -279,12 +279,12 @@ class EpisodeCharacterPresence(BaseModel):
     id: str
     episode_id: str
     character_id: str
-    scene_appearances: List[str] = Field(default_factory=list)
+    scene_appearances: list[str] = Field(default_factory=list)
     total_screen_time_seconds: int = Field(default=0, ge=0)
     importance_rating: int = Field(default=3, ge=1, le=5)
-    first_appearance_timestamp: Optional[str] = None
-    last_appearance_timestamp: Optional[str] = None
-    key_moments: List[KeyMomentSummary] = Field(default_factory=list)
+    first_appearance_timestamp: str | None = None
+    last_appearance_timestamp: str | None = None
+    key_moments: list[KeyMomentSummary] = Field(default_factory=list)
     moment_count: int = Field(default=0, ge=0)
     avg_intensity: float = Field(default=0.0, ge=0.0, le=5.0)
 
@@ -293,7 +293,7 @@ class EpisodeCharacterPresenceResponse(BaseModel):
     episode_id: str
     episode_title: str
     total_characters: int
-    presences: List[EpisodeCharacterPresence]
+    presences: list[EpisodeCharacterPresence]
 
 
 # Character Evolution Tracking Models
@@ -322,11 +322,11 @@ class CharacterEvolutionMilestone(BaseModel):
     )
     description: str
     importance: int = Field(ge=1, le=5, default=3)
-    related_characters: List[str] = Field(default_factory=list)
-    quote: Optional[str] = None
+    related_characters: list[str] = Field(default_factory=list)
+    quote: str | None = None
     intensity: int = Field(ge=1, le=5, default=3)
-    content_type: Optional[str] = None
-    screenshot_path: Optional[str] = None
+    content_type: str | None = None
+    screenshot_path: str | None = None
 
     def model_post_init(self, __context):
         if self.importance < 1 or self.importance > 5:
@@ -338,11 +338,11 @@ class CharacterEvolutionResponse(BaseModel):
 
     character_id: str
     character_name: str
-    first_appearance_episode: Optional[str] = None
-    character_arc_summary: Optional[str] = None
+    first_appearance_episode: str | None = None
+    character_arc_summary: str | None = None
     total_milestones: int
-    milestones: List[CharacterEvolutionMilestone]
-    timeline: List[Dict] = Field(default_factory=list)  # Formatted for frontend
+    milestones: list[CharacterEvolutionMilestone]
+    timeline: list[dict] = Field(default_factory=list)  # Formatted for frontend
 
 
 class CharacterEvolutionSummary(BaseModel):
@@ -350,7 +350,7 @@ class CharacterEvolutionSummary(BaseModel):
 
     character_id: str
     character_name: str
-    first_appearance_episode: Optional[str] = None
+    first_appearance_episode: str | None = None
     milestone_count: int
-    latest_milestone_type: Optional[str] = None
+    latest_milestone_type: str | None = None
     arc_completion_percentage: float = 0.0  # 0-100

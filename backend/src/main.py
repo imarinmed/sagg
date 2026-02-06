@@ -1,8 +1,10 @@
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from pathlib import Path
-from .api import episodes, characters, mythos, graph, search
+
+from .api import causality, characters, episodes, graph, knowledge, mythos, narratives, search
 
 app = FastAPI(
     title="Blod Wiki API",
@@ -32,6 +34,9 @@ app.include_router(characters.router)
 app.include_router(mythos.router)
 app.include_router(graph.router)
 app.include_router(search.router)
+app.include_router(narratives.router)
+app.include_router(causality.router)
+app.include_router(knowledge.router)
 
 
 @app.get("/health")

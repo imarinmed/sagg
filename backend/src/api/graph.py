@@ -1,7 +1,8 @@
+
 from fastapi import APIRouter, HTTPException
-from typing import List
-from ..models import GraphData, GraphNode, GraphEdge
-from ..data import episodes_db, characters_db, mythos_db, relationships_db
+
+from ..data import characters_db, episodes_db, mythos_db, relationships_db
+from ..models import GraphData, GraphEdge, GraphNode
 
 router = APIRouter(prefix="/api/graph", tags=["graph"])
 
