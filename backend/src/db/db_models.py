@@ -30,16 +30,14 @@ class CharacterRelationshipBase(SQLModel):
     to_character_id: str = Field(..., index=True, description="ID of the target character")
     relationship_type: RelationshipType = Field(..., description="Type of relationship")
     intensity: int = Field(default=3, ge=1, le=5, description="Intensity of relationship (1-5)")
-    start_episode: str | None = Field(
-        default=None, description="Episode where relationship begins"
-    )
+    start_episode: str | None = Field(default=None, description="Episode where relationship begins")
     end_episode: str | None = Field(
         default=None, description="Episode where relationship ends (if applicable)"
     )
     description: str = Field(default="", description="Description of the relationship")
     is_canonical: bool = Field(
         default=True,
-        description="Whether relationship is from source material (True) or adaptation only (False)",
+        description="Whether relationship is from source material or adaptation only",
     )
 
     @field_validator("intensity")

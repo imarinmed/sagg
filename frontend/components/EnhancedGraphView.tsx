@@ -359,10 +359,10 @@ export function EnhancedGraphView({ initialData, height = "85vh" }: EnhancedGrap
             <Sparkles className="w-4 h-4 mr-2" />
             Discover
           </Button>
-          <Button size="sm" variant="ghost" isIconOnly onPress={handleExport} title="Export SVG">
+          <Button size="sm" variant="ghost" isIconOnly onPress={handleExport} aria-label="Export SVG">
             <Download className="w-4 h-4" />
           </Button>
-          <Button size="sm" variant="ghost" isIconOnly onPress={handleReset} title="Reset View">
+          <Button size="sm" variant="ghost" isIconOnly onPress={handleReset} aria-label="Reset View">
             <RefreshCw className="w-4 h-4" />
           </Button>
         </div>

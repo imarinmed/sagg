@@ -1,4 +1,3 @@
-
 from fastapi import APIRouter, HTTPException, Query
 
 from ..data import mythos_connections_db, mythos_db
@@ -50,7 +49,7 @@ async def list_mythos(
 
 @router.get("/categories", response_model=list[str])
 async def list_categories():
-    categories = set(e.category for e in mythos_db.values())
+    categories = {e.category for e in mythos_db.values()}
     return sorted(categories)
 
 
@@ -113,7 +112,7 @@ async def get_mythos_graph():
             )
         )
 
-    categories = sorted(set(e.category for e in mythos_db.values()))
+    categories = sorted({e.category for e in mythos_db.values()})
 
     return MythosGraphResponse(
         nodes=nodes,

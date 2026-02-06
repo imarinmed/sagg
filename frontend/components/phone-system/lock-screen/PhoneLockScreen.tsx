@@ -2,7 +2,7 @@
 
 import React, { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { TouchGestureZone } from '../MobileSystem';
+import { TouchGestureZone } from '../../MobileSystem';
 
 export type PhotoContext = 'portrait' | 'gym' | 'school' | 'spa' | 'class';
 export type GeofenceMode = 'public' | 'student' | 'owner';

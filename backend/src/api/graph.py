@@ -1,4 +1,3 @@
-
 from fastapi import APIRouter, HTTPException
 
 from ..data import characters_db, episodes_db, mythos_db, relationships_db
@@ -84,7 +83,7 @@ async def get_related_entities(entity_id: str):
     # Find all direct connections
     full_graph = build_full_graph()
 
-    related_ids = set([entity_id])
+    related_ids = {entity_id}
 
     # Find connected nodes
     for edge in full_graph.edges:

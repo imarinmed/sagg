@@ -517,7 +517,10 @@ def load_character_evolution_from_json() -> dict:
 
 
 def load_relationships_from_json(existing_relationships: dict) -> dict:
-    """Load relationships from JSON, merging with existing YAML relationships (YAML takes precedence)."""
+    """Load relationships from JSON, merging with existing YAML relationships.
+
+    Note: YAML relationships take precedence over JSON.
+    """
     relationships_db = dict(existing_relationships)
     relationships_file = DATA_DIR / "character_relationships.json"
 

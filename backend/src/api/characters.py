@@ -1,4 +1,3 @@
-
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
@@ -262,7 +261,6 @@ async def get_all_character_evolution_summaries():
     """Get evolution summary for all characters."""
     metadata = _load_evolution_metadata()
     first_appearances = metadata.get("first_appearances", {})
-    arc_summaries = metadata.get("arc_summaries", {})
 
     summaries = []
     character_milestones: dict[str, list] = {}
@@ -281,7 +279,7 @@ async def get_all_character_evolution_summaries():
         latest = sorted_milestones[-1] if sorted_milestones else None
 
         total_episodes = 7
-        episodes_with_milestones = len(set(m.episode_id for m in milestones))
+        episodes_with_milestones = len({m.episode_id for m in milestones})
         arc_completion = (episodes_with_milestones / total_episodes) * 100
 
         summaries.append(

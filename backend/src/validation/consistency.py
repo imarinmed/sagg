@@ -123,20 +123,19 @@ def validate_no_dangling_references(report: ValidationReport) -> None:
         subject = claim.get("subject", "")
 
         # Check if subject looks like an ID (contains hyphens or underscores)
-        if "-" in subject or "_" in subject:
-            if subject not in known_entities:
-                dangling_count += 1
-                # Only warn for first 10 to avoid spam
-                if dangling_count <= 10:
-                    report.add_warning(
-                        rule=rule_name,
-                        message=f"Claim references potentially unknown entity: {subject}",
-                        context={
-                            "claim_id": claim.get("claim_id"),
-                            "subject": subject,
-                            "type": claim.get("type"),
-                        },
-                    )
+        if ("-" in subject or "_" in subject) and subject not in known_entities:
+            dangling_count += 1
+            # Only warn for first 10 to avoid spam
+            if dangling_count <= 10:
+                report.add_warning(
+                    rule=rule_name,
+                    message=f"Claim references potentially unknown entity: {subject}",
+                    context={
+                        "claim_id": claim.get("claim_id"),
+                        "subject": subject,
+                        "type": claim.get("type"),
+                    },
+                )
 
     if dangling_count == 0:
         report.mark_passed(rule_name)
