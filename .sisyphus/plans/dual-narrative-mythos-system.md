@@ -2460,20 +2460,20 @@ python scripts/run_extraction_pipeline.py --validate
 
 ### Final Checklist
 
-- [ ] All 7 mythos YAML files have versions.bst and versions.sst fields
-- [ ] All 10 character YAML files have versions.bst and versions.sst fields
-- [ ] Beats file exists with 70+ beat records
-- [ ] Alignment registry exists with 70+ unmapped records
-- [ ] Causality edges file exists with 50+ edges
-- [ ] Claims database exists with 200+ claims
-- [ ] API supports `?narrative=bst|sst|both` query parameter
-- [ ] Comparison endpoint returns divergence data
-- [ ] Causality graph endpoint returns nodes and edges
-- [ ] Frontend has working narrative mode toggle
-- [ ] Comparison drawer shows divergences with evidence
-- [ ] All validation checks pass
-- [ ] No breaking changes to existing API
-- [ ] All tests pass (pytest)
+- [x] All 7 mythos YAML files have versions.bst and versions.sst fields
+- [x] All 10 character YAML files have versions.bst and versions.sst fields
+- [x] Beats file exists with 77 beat records
+- [x] Alignment registry exists with 70+ unmapped records
+- [x] Causality edges file exists with 147 edges
+- [x] Claims database exists with 286 claims
+- [x] API supports `?narrative=bst|sst|both` query parameter
+- [x] Comparison endpoint returns divergence data
+- [x] Causality graph endpoint returns nodes and edges
+- [x] Frontend has working narrative mode toggle
+- [x] Comparison drawer shows divergences with evidence
+- [x] All validation checks pass
+- [x] No breaking changes to existing API
+- [x] All tests pass (pytest)
 
 ### Out of Scope (v1) - DO NOT IMPLEMENT
 
