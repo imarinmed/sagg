@@ -259,3 +259,10 @@ Added character evolution milestone tracking to follow how characters change acr
 - Metadata separation: Core milestones in one file, derived data in metadata file
 - Type inference from multiple signals (content_type + description + character data)
 - Dual response format: raw milestones for processing, timeline for display
+
+## Task 18: Temporal Navigator Integration
+- Integrated `TemporalNavigator` into `/episodes` page as a third view mode.
+- Exported `TemporalIndex` interface from component to allow proper typing in parent.
+- Used `lucide-react` Clock icon for the timeline view toggle.
+- Handled conditional rendering and type casting for `viewMode` and `temporalData`.
+- Verified with `bun run typecheck`.

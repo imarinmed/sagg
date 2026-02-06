@@ -40,7 +40,7 @@ interface Season {
   episodes: Episode[];
 }
 
-interface TemporalIndex {
+export interface TemporalIndex {
   version: string;
   total_episodes: number;
   total_scenes: number;

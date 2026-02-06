@@ -25,11 +25,11 @@
 - ✅ **Prompt Deck**: 100 combinatorial prompts (what_if, yes_and, tell_from, without)
 - ✅ **Inspiration Graph**: 37 nodes, 177 bidirectional links, activation keys
 
-### Wave 4: Exploration Tools (PARTIAL)
+### Wave 4: Exploration Tools (COMPLETE)
 - ✅ **Shadow Sandbox**: 4 templates, status workflow, example scenario
-- ⏳ Narrative DNA Visualizer (pending)
-- ⏳ Serendipity Engine (pending)
-- ⏳ Temporal Navigator (pending)
+- ✅ **Narrative DNA Visualizer**: 7 episode profiles, 5 character profiles, similarity comparisons
+- ✅ **Serendipity Engine**: 70 unexpected connections with surprise factor
+- ✅ **Temporal Navigator**: Episode/scene/moment hierarchy with interactive timeline
 
 ### Wave 5: Integration (PENDING)
 - ⏳ Creative Companion Panel
@@ -82,6 +82,9 @@
 - `data/tags/library.json` - 32 tags
 - `data/narratives/bst/beats.json` - 77 beats
 - `data/derived/signatures.json` - Tag signatures
+- `data/derived/narrative_dna.json` - DNA profiles
+- `data/derived/serendipity_index.json` - 70 connections
+- `data/derived/temporal_index.json` - Temporal hierarchy
 - `data/causality/edges.json` - 147 edges
 - `data/knowledge/claims.json` - 286 claims
 - `data/creative/mutation_cards.json` - 81 cards
@@ -135,6 +138,10 @@ To complete the Shadow Lore Forge:
 - **Data Files**: 11 JSON/YAML data files
 - **Git Commits**: 15 commits
 
-## Status: FOUNDATION COMPLETE
+## Status: WAVE 4 COMPLETE
 
-The Shadow Lore Forge has a solid foundation with comprehensive data extraction and creative tools. The core infrastructure is production-ready. Remaining work is primarily frontend/UI implementation and API integration.
+The Shadow Lore Forge has completed all exploration tools:
+- **Wave 1-4: COMPLETE** (Foundation, Knowledge Extraction, Creative Engine, Exploration Tools)
+- **Wave 5: IN PROGRESS** (Integration - Creative Companion Panel, Graph Visualization, API)
+
+All 691+ creative data points are in place. Ready for final integration phase.

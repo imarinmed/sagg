@@ -2,11 +2,13 @@
 
 import { useEffect, useState, useMemo } from "react";
 import { Spinner, Input, Button } from "@heroui/react";
-import { Search, Play, Calendar, Grid3X3, List, Filter } from "lucide-react";
+import { Search, Play, Calendar, Grid3X3, List, Filter, Clock } from "lucide-react";
 import Link from "next/link";
 import { GlassCard } from "@/components/GlassCard";
 import { ContentIntensityIndicator } from "@/components/ContentIntensityIndicator";
 import { api, Episode } from "@/lib/api";
+import { TemporalNavigator, TemporalIndex } from "@/components/TemporalNavigator";
+import temporalData from "@/../data/derived/temporal_index.json";
 
 // Episode data with intensity ratings
 const EPISODE_INTENSITY: Record<string, number> = {
@@ -40,7 +42,7 @@ export default function EpisodesPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+  const [viewMode, setViewMode] = useState<"grid" | "list" | "timeline">("grid");
   const [filterIntensity, setFilterIntensity] = useState<number | null>(null);
 
   useEffect(() => {
@@ -208,6 +210,15 @@ export default function EpisodesPage() {
               >
                 <List className="w-4 h-4" />
               </Button>
+              <Button
+                isIconOnly
+                size="sm"
+                variant={viewMode === "timeline" ? "secondary" : "ghost"}
+                className={viewMode === "timeline" ? "text-[var(--color-accent-primary)]" : ""}
+                onPress={() => setViewMode("timeline")}
+              >
+                <Clock className="w-4 h-4" />
+              </Button>
             </div>
           </div>
         </div>
@@ -216,7 +227,9 @@ export default function EpisodesPage() {
       {/* Episodes Grid */}
       <div className="px-4 md:px-8 lg:px-16 py-8">
         <div className="max-w-7xl mx-auto">
-          {filteredEpisodes.length === 0 ? (
+          {viewMode === "timeline" ? (
+            <TemporalNavigator data={temporalData as unknown as TemporalIndex} />
+          ) : filteredEpisodes.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-[var(--color-text-muted)]">No episodes found</p>
             </div>
@@ -232,7 +245,7 @@ export default function EpisodesPage() {
                 <EpisodeListCard
                   key={episode.id}
                   episode={episode}
-                  viewMode={viewMode}
+                  viewMode={viewMode as "grid" | "list"}
                 />
               ))}
             </div>
