@@ -457,7 +457,7 @@ PY
 ```
 
 ### Final Checklist
-- [ ] All new KB entries exist and include BST/SST sections
-- [ ] All BST sections cite transcript episodes
-- [ ] No Episode 8 content fabricated
-- [ ] index.json registry counts correct
+- [x] All new KB entries exist and include BST/SST sections
+- [x] All BST sections cite transcript episodes
+- [x] No Episode 8 content fabricated
+- [x] index.json registry counts correct
