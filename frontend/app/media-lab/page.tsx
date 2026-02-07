@@ -2,11 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { Button, Input, Spinner } from "@heroui/react";
-import { Search, Wand2, Sparkles, Layers, Shuffle, History, Play, RefreshCw, AlertCircle } from "lucide-react";
+import { Search, Wand2, Sparkles, Layers, Shuffle, History, Play, RefreshCw, AlertCircle, UploadCloud } from "lucide-react";
 import { GlassCard } from "@/components/GlassCard";
 import Link from "next/link";
-import { api, MediaJobResponse, MediaJobStatusEnum } from "@/lib/api";
+import { api, MediaJobResponse, MediaJobStatusEnum, MediaCapabilitiesResponse } from "@/lib/api";
 import { getStatusColor, getStatusBadgeStyles, formatDate } from "./utils";
+
+function getMediaLabArtifactUrl(path: string): string {
+  if (/^https?:\/\//.test(path)) return path;
+  const normalized = path.replace(/^\/+/, "");
+  return `/static/media-lab/${normalized}`;
+}
 
 export default function MediaLabPage() {
   const [activeTab, setActiveTab] = useState<"generate" | "enhance" | "interpolate" | "blend" | "jobs">("generate");
@@ -171,34 +177,97 @@ function GenerateView() {
 function EnhanceView() {
   const [sourceImage, setSourceImage] = useState<File | null>(null);
   const [sourcePreview, setSourcePreview] = useState<string | null>(null);
+  const [sourceAspectRatio, setSourceAspectRatio] = useState(1);
   const [qualityPreset, setQualityPreset] = useState<"low" | "medium" | "high">("medium");
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [isDragOverPreview, setIsDragOverPreview] = useState(false);
   const [jobId, setJobId] = useState<string | null>(null);
   const [jobStatus, setJobStatus] = useState<MediaJobStatusEnum | null>(null);
   const [jobProgress, setJobProgress] = useState(0);
   const [enhancedArtifact, setEnhancedArtifact] = useState<string | null>(null);
   const [sliderPosition, setSliderPosition] = useState(50);
   const [pollInterval, setPollInterval] = useState<NodeJS.Timeout | null>(null);
+  const [capabilities, setCapabilities] = useState<MediaCapabilitiesResponse | null>(null);
+  const [checkingCapabilities, setCheckingCapabilities] = useState(true);
+
+  useEffect(() => {
+    const checkCapabilities = async () => {
+      try {
+        const caps = await api.mediaLab.getCapabilities();
+        setCapabilities(caps);
+      } catch (err) {
+        console.error("Failed to check capabilities:", err);
+      } finally {
+        setCheckingCapabilities(false);
+      }
+    };
+    checkCapabilities();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (pollInterval) clearInterval(pollInterval);
+    };
+  }, [pollInterval]);
+
+  const applySourceImage = (file: File | null) => {
+    if (!file) return;
+    if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
+      setSubmitError("Unsupported image format. Use JPG, PNG, or WebP.");
+      return;
+    }
+    if (file.size > 50 * 1024 * 1024) {
+      setSubmitError("Image exceeds 50MB limit.");
+      return;
+    }
+
+    setSourceImage(file);
+    setSubmitError(null);
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const result = event.target?.result;
+      if (typeof result !== "string") return;
+
+      setSourcePreview(result);
+      const image = new Image();
+      image.onload = () => {
+        if (image.width > 0 && image.height > 0) {
+          setSourceAspectRatio(image.width / image.height);
+        }
+      };
+      image.src = result;
+    };
+    reader.readAsDataURL(file);
+  };
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
-        setSubmitError("Unsupported image format. Use JPG, PNG, or WebP.");
-        return;
-      }
-      setSourceImage(file);
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        setSourcePreview(event.target?.result as string);
-      };
-      reader.readAsDataURL(file);
-      setSubmitError(null);
-    }
+    applySourceImage(e.target.files?.[0] ?? null);
+  };
+
+  const handlePreviewDragOver = (event: React.DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    setIsDragOverPreview(true);
+  };
+
+  const handlePreviewDragLeave = (event: React.DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    setIsDragOverPreview(false);
+  };
+
+  const handlePreviewDrop = (event: React.DragEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    setIsDragOverPreview(false);
+    applySourceImage(event.dataTransfer.files?.[0] ?? null);
   };
 
   const handleSubmit = async () => {
+    if (capabilities && !capabilities.enhance_supported) {
+      setSubmitError(capabilities.reason || "Enhancement is currently unavailable.");
+      return;
+    }
+
     if (!sourceImage || !sourcePreview) {
       setSubmitError("Please select an image first");
       return;
@@ -207,33 +276,45 @@ function EnhanceView() {
     setSubmitting(true);
     setSubmitError(null);
     try {
+      const upload = await api.mediaLab.uploadImage(sourceImage);
       const response = await api.mediaLab.submitJob({
         character_id: "media-lab",
         workflow_type: "enhance",
         parameters: {
-          source_image_path: sourceImage.name,
+          source_image_path: upload.stored_path,
           quality_preset: qualityPreset,
+          workflow_stack: {
+            orchestrator: "daggr",
+            model: "z-image-turbo",
+          },
+          quality_prompt:
+            "photorealistic, crisp focus, clean details, accurate colors",
         },
       });
       
+      if (pollInterval) {
+        clearInterval(pollInterval);
+      }
+
       setJobId(response.id);
-      setJobStatus(response.status);
+      setJobStatus(response.status as MediaJobStatusEnum);
       setJobProgress(response.progress || 0);
 
       // Start polling for job completion
       const interval = setInterval(async () => {
         try {
           const jobData = await api.mediaLab.getJob(response.id);
-          setJobStatus(jobData.status);
+          const nextStatus = jobData.status as MediaJobStatusEnum;
+          setJobStatus(nextStatus);
           setJobProgress(jobData.progress || 0);
 
-          if (jobData.status === "SUCCEEDED") {
+          if (nextStatus === MediaJobStatusEnum.SUCCEEDED) {
             if (jobData.artifacts && jobData.artifacts.length > 0) {
               setEnhancedArtifact(jobData.artifacts[0].file_path);
             }
             clearInterval(interval);
             setPollInterval(null);
-          } else if (jobData.status === "FAILED") {
+          } else if (nextStatus === MediaJobStatusEnum.FAILED) {
             setSubmitError(jobData.error_message || "Job failed");
             clearInterval(interval);
             setPollInterval(null);
@@ -246,7 +327,13 @@ function EnhanceView() {
       setPollInterval(interval);
     } catch (err) {
       const errorMsg = err instanceof Error ? err.message : "Failed to submit job";
-      setSubmitError(errorMsg);
+      if (errorMsg.toLowerCase().includes("failed to fetch")) {
+        setSubmitError(
+          "Could not reach Media Lab API. Check backend is running and /api proxy routing is active."
+        );
+      } else {
+        setSubmitError(errorMsg);
+      }
     } finally {
       setSubmitting(false);
     }
@@ -261,6 +348,8 @@ function EnhanceView() {
     setJobProgress(0);
     setEnhancedArtifact(null);
     setSliderPosition(50);
+    setSourceAspectRatio(1);
+    setIsDragOverPreview(false);
     setSubmitError(null);
     if (pollInterval) clearInterval(pollInterval);
     setPollInterval(null);
@@ -285,26 +374,26 @@ function EnhanceView() {
           {/* Before/After Comparison Slider */}
           <div className="space-y-4">
             <h4 className="font-heading text-[var(--color-text-primary)]">Before/After Comparison</h4>
-            <div className="relative w-full h-[400px] bg-[var(--color-surface)] rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <div
+              className="relative w-full max-h-[70vh] bg-[var(--color-surface)] rounded-lg overflow-hidden border border-[var(--color-border)]"
+              style={{ aspectRatio: sourceAspectRatio }}
+            >
               {/* Before image (full) */}
               <img 
                 src={sourcePreview} 
                 alt="Original" 
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-contain"
               />
               
               {/* After image (clipped by slider) */}
-              <div 
-                className="absolute inset-0 overflow-hidden"
-                style={{ width: `${sliderPosition}%` }}
+              <div
+                className="absolute inset-0"
+                style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
               >
                 <img 
-                  src={`/static/screenshots/${enhancedArtifact}`}
+                  src={getMediaLabArtifactUrl(enhancedArtifact)}
                   alt="Enhanced" 
-                  className="w-screen h-[400px] object-cover"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23333' width='100' height='100'/%3E%3C/svg%3E";
-                  }}
+                  className="absolute inset-0 w-full h-full object-contain"
                 />
               </div>
 
@@ -371,7 +460,7 @@ function EnhanceView() {
                 className="w-full bg-blue-600 text-white font-medium"
                 onPress={() => {
                   const link = document.createElement("a");
-                  link.href = `/static/screenshots/${enhancedArtifact}`;
+                  link.href = getMediaLabArtifactUrl(enhancedArtifact);
                   link.download = `enhanced-${Date.now()}.jpg`;
                   link.click();
                 }}
@@ -466,10 +555,17 @@ function EnhanceView() {
               </div>
             )}
 
+            {capabilities && !capabilities.enhance_supported && !submitError && (
+              <div className="p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-yellow-400 text-sm flex items-start gap-2">
+                <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span>{capabilities.reason || "Enhancement is currently unavailable."}</span>
+              </div>
+            )}
+
             <Button 
               className="w-full bg-blue-600 text-white font-medium disabled:opacity-50 disabled:cursor-not-allowed"
               onPress={handleSubmit}
-              isDisabled={!sourceImage || submitting}
+              isDisabled={!sourceImage || submitting || (capabilities ? !capabilities.enhance_supported : false)}
             >
               {submitting ? (
                 <>
@@ -500,24 +596,65 @@ function EnhanceView() {
 
       {/* Preview */}
       <div className="lg:col-span-2">
-        {sourcePreview ? (
-          <div className="space-y-4">
-            <h4 className="font-heading text-[var(--color-text-primary)]">Source Preview</h4>
-            <div className="border-2 border-dashed border-[var(--color-border)] rounded-xl overflow-hidden bg-[var(--color-surface)]/30 aspect-square">
-              <img 
-                src={sourcePreview} 
-                alt="Preview" 
-                className="w-full h-full object-cover"
-              />
+        <div className="space-y-4">
+          <h4 className="font-heading text-[var(--color-text-primary)]">Source Preview</h4>
+          <div
+            className={`relative border-2 border-dashed rounded-xl overflow-hidden transition-all duration-300 ${
+              isDragOverPreview
+                ? "border-cyan-300 bg-cyan-500/15 shadow-[0_0_0_3px_rgba(103,232,249,0.18),0_0_35px_rgba(59,130,246,0.2)]"
+                : "border-[var(--color-border)] bg-[var(--color-surface)]/30"
+            }`}
+            style={sourcePreview ? { aspectRatio: sourceAspectRatio } : undefined}
+            onDragOver={handlePreviewDragOver}
+            onDragLeave={handlePreviewDragLeave}
+            onDrop={handlePreviewDrop}
+          >
+            {sourcePreview ? (
+              <div className="relative min-h-[360px] max-h-[70vh] flex items-center justify-center">
+                <img
+                  src={sourcePreview}
+                  alt="Preview"
+                  className="w-full h-full object-contain"
+                />
+
+                <div
+                  className={`absolute inset-0 pointer-events-none transition-all duration-300 ${
+                    isDragOverPreview ? "opacity-100" : "opacity-0"
+                  }`}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-transparent backdrop-blur-[1px]" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/70 bg-black/65 px-6 py-2 text-cyan-100 shadow-lg shadow-cyan-500/20 animate-pulse">
+                      <UploadCloud className="h-4 w-4" />
+                      <span className="text-sm font-semibold tracking-wide">Drop to replace image</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div className="h-full min-h-[400px] flex flex-col items-center justify-center px-6 text-center text-[var(--color-text-muted)]">
+                <UploadCloud className="w-12 h-12 mb-4 opacity-70" />
+                <p>Drag and drop an image here</p>
+                <p className="text-sm opacity-70 mt-1">Or choose a file from the left panel</p>
+                <p className="text-xs opacity-60 mt-1">JPG, PNG, or WebP (max 50MB)</p>
+              </div>
+            )}
+
+            <div
+              className={`absolute inset-0 pointer-events-none transition-all duration-300 ${
+                isDragOverPreview ? "opacity-100 scale-100" : "opacity-0 scale-95"
+              }`}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-blue-500/20" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-black/60 px-5 py-2 text-white shadow-xl">
+                  <UploadCloud className="h-4 w-4" />
+                  <span className="text-sm font-medium">Drop to upload</span>
+                </div>
+              </div>
             </div>
           </div>
-        ) : (
-          <div className="h-full min-h-[400px] border-2 border-dashed border-[var(--color-border)] rounded-xl flex flex-col items-center justify-center text-[var(--color-text-muted)] bg-[var(--color-surface)]/30">
-            <Sparkles className="w-12 h-12 mb-4 opacity-50" />
-            <p>Upload an image to preview</p>
-            <p className="text-sm opacity-70 mt-1">JPG, PNG, or WebP format</p>
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );

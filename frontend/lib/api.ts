@@ -1,4 +1,9 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
+
+const joinApiUrl = (endpoint: string) => {
+  if (!API_BASE_URL) return endpoint;
+  return `${API_BASE_URL}${endpoint}`;
+};
 
 export interface Episode {
   id: string;
@@ -168,7 +173,7 @@ export interface VideoAnalysisData {
 }
 
 async function fetchApi<T>(endpoint: string): Promise<T> {
-  const primaryUrl = `${API_BASE_URL}${endpoint}`;
+  const primaryUrl = joinApiUrl(endpoint);
 
   try {
     const response = await fetch(primaryUrl);
@@ -177,10 +182,10 @@ async function fetchApi<T>(endpoint: string): Promise<T> {
     }
     return response.json();
   } catch (error) {
-    if (endpoint.startsWith("/api/")) {
+    if (endpoint.startsWith("/api/") && primaryUrl !== endpoint) {
       const fallbackResponse = await fetch(endpoint);
       if (!fallbackResponse.ok) {
-        throw error;
+        throw new Error(`API error: ${fallbackResponse.status}`);
       }
       return fallbackResponse.json();
     }
@@ -350,6 +355,13 @@ export interface MediaJobSubmitPayload {
   parameters?: Record<string, any>;
 }
 
+export interface MediaUploadResponse {
+  stored_path: string;
+  original_filename: string;
+  content_type: string;
+  size_bytes: number;
+}
+
 export interface CancelJobPayload {
   reason?: string;
 }
@@ -362,6 +374,13 @@ export interface MediaJobListParams {
   status?: string;
   workflow_type?: string;
   character_id?: string;
+}
+
+export interface MediaCapabilitiesResponse {
+  enhance_supported: boolean;
+  required_workflow_stack: Record<string, any>;
+  daggr_available: boolean;
+  reason?: string;
 }
 
 // Helper function to build query string from params
@@ -381,7 +400,7 @@ async function fetchApiWithBody<T>(
   method: "POST" | "PUT" | "PATCH" = "POST",
   body?: any
 ): Promise<T> {
-  const primaryUrl = `${API_BASE_URL}${endpoint}`;
+  const primaryUrl = joinApiUrl(endpoint);
 
   try {
     const response = await fetch(primaryUrl, {
@@ -396,7 +415,7 @@ async function fetchApiWithBody<T>(
     }
     return response.json();
   } catch (error) {
-    if (endpoint.startsWith("/api/")) {
+    if (endpoint.startsWith("/api/") && primaryUrl !== endpoint) {
       const fallbackResponse = await fetch(endpoint, {
         method,
         headers: {
@@ -405,7 +424,38 @@ async function fetchApiWithBody<T>(
         body: body ? JSON.stringify(body) : undefined,
       });
       if (!fallbackResponse.ok) {
-        throw error;
+        throw new Error(`API error: ${fallbackResponse.status}`);
+      }
+      return fallbackResponse.json();
+    }
+    throw error;
+  }
+}
+
+async function fetchApiWithFormData<T>(
+  endpoint: string,
+  method: "POST" | "PUT" | "PATCH" = "POST",
+  formData: FormData
+): Promise<T> {
+  const primaryUrl = joinApiUrl(endpoint);
+
+  try {
+    const response = await fetch(primaryUrl, {
+      method,
+      body: formData,
+    });
+    if (!response.ok) {
+      throw new Error(`API error: ${response.status}`);
+    }
+    return response.json();
+  } catch (error) {
+    if (endpoint.startsWith("/api/") && primaryUrl !== endpoint) {
+      const fallbackResponse = await fetch(endpoint, {
+        method,
+        body: formData,
+      });
+      if (!fallbackResponse.ok) {
+        throw new Error(`API error: ${fallbackResponse.status}`);
       }
       return fallbackResponse.json();
     }
@@ -457,6 +507,11 @@ export const api = {
     query: (q: string) => fetchApi<SearchResponse>(`/api/search?q=${encodeURIComponent(q)}`),
   },
   mediaLab: {
+    uploadImage: (file: File) => {
+      const form = new FormData();
+      form.append("file", file);
+      return fetchApiWithFormData<MediaUploadResponse>("/api/media-lab/uploads", "POST", form);
+    },
     submitJob: (payload: MediaJobSubmitPayload) =>
       fetchApiWithBody<MediaJobResponse>("/api/media-lab/jobs", "POST", payload),
     listJobs: (params?: MediaJobListParams) => {
@@ -470,5 +525,6 @@ export const api = {
       fetchApiWithBody<MediaJobResponse>(`/api/media-lab/jobs/${jobId}/retry`, "POST", payload),
     getArtifacts: (jobId: string) =>
       fetchApi<ArtifactListResponse>(`/api/media-lab/jobs/${jobId}/artifacts`),
+    getCapabilities: () => fetchApi<MediaCapabilitiesResponse>("/api/media-lab/capabilities"),
   },
 };
