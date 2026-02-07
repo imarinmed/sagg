@@ -1,6 +1,92 @@
 // Static character data for the frontend
 // This mirrors the structure expected from the API
 
+export interface CatalogId {
+  bst: string;
+  sst: string;
+}
+
+export interface Measurements {
+  bust: string;
+  waist: string;
+  hips: string;
+}
+
+export interface PhysicalProfile {
+  height: string;
+  measurements: Measurements;
+  build: string;
+  distinguishing_features: string[];
+}
+
+export interface PerformanceMetrics {
+  stamina: number;      // 1-10
+  flexibility: number;
+  pain_tolerance: number;
+  recovery_rate: number;
+}
+
+export interface Vitals {
+  blood_type: string;
+  heart_rate_resting: number;
+  body_temperature: string;
+}
+
+export interface SexualActivity {
+  encounters_total?: number;
+  encounters_by_episode?: Record<string, number>;
+  partners_unique?: number;
+  intensity_average?: number;
+  preferences_satisfied?: string[];
+}
+
+export interface ClassPeriod {
+  time: string;
+  subject: string;
+  location: string;
+}
+
+export interface DaySchedule {
+  day: string;
+  periods: ClassPeriod[];
+}
+
+export interface Obligation {
+  type: string;
+  role: string;
+  schedule: string;
+}
+
+export interface LoanEvent {
+  episode: string;
+  lender: string;
+  duration: string;
+  context: string;
+  restrictions: string[];
+}
+
+export interface Extracurricular {
+  name: string;
+  schedule: string;
+  role: string;
+}
+
+export interface StudentProfile {
+  school: string;
+  grade: string;
+  class_schedule: DaySchedule[];
+  obligations: Obligation[];
+  loan_schedule: LoanEvent[];
+  extracurriculars: Extracurricular[];
+}
+
+export interface AdultProfile {
+  occupation: string;
+  social_status: string;
+  political_role?: string;
+  obligations: string[];
+}
+
 export interface StaticCharacter {
   id: string;
   name: string;
@@ -11,6 +97,13 @@ export interface StaticCharacter {
   canonical_traits: string[];
   adaptation_traits: string[];
   adaptation_notes?: string;
+  catalog_id?: CatalogId;
+  physical_profile?: PhysicalProfile;
+  performance_metrics?: PerformanceMetrics;
+  vitals?: Vitals;
+  sexual_activity?: SexualActivity;
+  student_profile?: StudentProfile;
+  adult_profile?: AdultProfile;
   kink_profile?: {
     preferences: string[];
     limits: string[];

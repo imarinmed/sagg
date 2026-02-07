@@ -1,42 +1,51 @@
 id: elise
 name: Elise
+catalog_id:
+  bst: BST-002-EL
+  sst: SST-002-EL
 portrayed_by: Elsa Östlind
 versions:
-  bst:
-    age: 16
-    species: human
-    traits: &id001
-    - popular
-    - manipulative
-    - jealous
-    - queen_bee
-    arc: rival_antagonist
-    relationships: &id002
-    - character: alfred
-      type: ex_boyfriend
-      dynamic: possessive_bitter
-    - character: kiara_natt_och_dag
-      type: rival
-      dynamic: threatened_by_newcomer
-    - character: chloe
-      type: former_friend
-      dynamic: betrayed
-  sst:
-    age: 17
-    traits: &id003
-    - sexually_aggressive
-    - alpha_female
-    - revenge_obsessed
-    - power_hungry
-    arc: Queen bee turned vengeful seductress using sexuality as weapon against rival
-    taboo_elements: &id004
-    - manipulation
-    - sexual_aggression
-    - revenge_sex
-    explicit_scenes: &id005
-    - s01e02_seduction_attempt
-    - s01e04_revenge_plot
-    - s01e06_public_humiliation
+   bst:
+     age: 16
+     species: human
+     traits: &id001
+     - popular
+     - manipulative
+     - jealous
+     - queen_bee
+     arc: rival_antagonist
+     relationships: &id002
+     - character: alfred
+       type: ex_boyfriend
+       dynamic: possessive_bitter
+     - character: kiara_natt_och_dag
+       type: rival
+       dynamic: threatened_by_newcomer
+     - character: chloe
+       type: former_friend
+       dynamic: betrayed
+   sst:
+     age: 17
+     traits: &id003
+     - sexually_aggressive
+     - alpha_female
+     - revenge_obsessed
+     - power_hungry
+     arc: Queen bee turned vengeful seductress using sexuality as weapon against rival
+     taboo_elements: &id004
+     - manipulation
+     - sexual_aggression
+     - revenge_sex
+     explicit_scenes: &id005
+     - s01e02_seduction_attempt
+     - s01e04_revenge_plot
+     - s01e06_public_humiliation
+     sexual_activity:
+       debut_episode: s01e02
+       debut_context: seduction_attempt_on_alfred
+       frequency: multiple_partners_across_season
+       contraception: birth_control_pill
+       notes: Uses sexuality strategically as weapon. Partners primarily male high school students and occasionally adults. Activity increases with desperation and jealousy.
 kink_profile:
   preferences:
   - id: dominant
@@ -108,9 +117,104 @@ kink_profile:
       intensity: 4
       notes: Becomes more dangerous
     s01e07:
-    - id: defeat
-      intensity: 3
-      notes: Loses to Kiara
+     - id: defeat
+       intensity: 3
+       notes: Loses to Kiara
+physical_profile:
+  height: 171 cm
+  measurements:
+    bust: 85 cm
+    waist: 62 cm
+    hip: 88 cm
+    cup_size: C
+  build: athletic_lean
+  hair: blonde
+  eyes: blue
+  skin_tone: fair
+  distinguishing_features:
+    - sharp_cheekbones
+    - confident_posture
+    - designer_wardrobe_always
+    - manicured_appearance
+performance_metrics:
+  stamina: 8
+  flexibility: 4
+  pain_tolerance: 7
+  recovery_rate: 8
+  notes: High endurance and rapid recovery reflect her driven alpha personality. Lower flexibility due to lack of practice in submission contexts. High pain tolerance driven by psychological pain of rejection.
+vitals:
+  blood_type: A+
+  heart_rate_resting: 72 bpm
+  body_temperature: 37.0°C
+sexual_activity:
+  debut_episode: s01e02
+  debut_context: seduction_attempt_on_alfred
+  frequency: multiple_partners_across_season
+  contraception: birth_control_pill
+  notes: Uses sexuality strategically as weapon. Partners primarily male high school students and occasionally adults. Activity increases with desperation and jealousy.
+student_profile:
+  school: Natt och Dag High School
+  grade: 11th grade (SST)
+  class_schedule:
+    monday:
+      - period_1: Mathematics
+      - period_2: Swedish
+      - period_3: English
+      - lunch: 12:30-13:15
+      - period_4: History
+      - period_5: Physical Education
+    tuesday:
+      - period_1: Biology
+      - period_2: Chemistry
+      - period_3: Social Studies
+      - lunch: 12:30-13:15
+      - period_4: Art
+      - period_5: Information Technology
+    wednesday:
+      - period_1: Physics
+      - period_2: Mathematics
+      - period_3: Swedish
+      - lunch: 12:30-13:15
+      - period_4: Music
+      - period_5: English
+    thursday:
+      - period_1: History
+      - period_2: Chemistry
+      - period_3: Physical Education
+      - lunch: 12:30-13:15
+      - period_4: English
+      - period_5: Social Studies
+    friday:
+      - period_1: Swedish
+      - period_2: Art
+      - period_3: Biology
+      - lunch: 12:30-13:15
+      - period_4: Information Technology
+      - period_5: free_period
+  obligations:
+    - student_council_vice_president
+    - social_committee_leader
+    - popularity_maintenance
+    - controlling_cliques
+  loan_schedule:
+    - episode: s01e02
+      amount_sek: 5000
+      purpose: designer_handbag_coveted_item
+      status: obtained_through_manipulation
+    - episode: s01e04
+      amount_sek: 8000
+      purpose: party_funding_revenge_scheme
+      status: obtained_through_blackmail
+    - episode: s01e06
+      amount_sek: 3500
+      purpose: spa_treatment_confidence_restoration
+      status: obtained_through_parental_request
+  extracurriculars:
+    - student_council
+    - social_committee
+    - fashion_club_founder
+    - tennis_team_captain
+    - informal_social_hierarchy_maintenance
 divergences: []
 _deprecated_canonical:
   age: 16

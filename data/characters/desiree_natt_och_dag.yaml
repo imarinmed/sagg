@@ -1,5 +1,8 @@
 id: desiree_natt_och_dag
 name: Desirée Natt och Dag
+catalog_id:
+  bst: BST-005-DND
+  sst: SST-005-DND
 portrayed_by: Katarina Macli
 versions:
   bst:
@@ -96,6 +99,101 @@ kink_profile:
     - id: forbidden_attraction
       intensity: 4
       notes: Jacques temptation peaks
+physical_profile:
+  height: 178
+  height_unit: cm
+  measurements:
+    bust: 86
+    waist: 66
+    hip: 90
+    unit: cm
+  build: elegant_slim
+  body_type: lean_athletic
+  hair_color: dark_blonde
+  hair_length: shoulder_length
+  eye_color: pale_blue
+  skin_tone: pale_alabaster
+  distinguishing_features:
+    - aristocratic_bone_structure
+    - cold_pale_complexion
+    - elegant_posture
+    - controlled_movement
+  vampire_marks: none
+  body_modifications: none
+performance_metrics:
+  stamina: 9
+  stamina_notes: Ancient vampire physiology, exceptional endurance from centuries of existence
+  flexibility: 5
+  flexibility_notes: Values control and poise over contortion or acrobatic ability
+  pain_tolerance: 7
+  pain_tolerance_notes: Emotional pain deeply felt; physical pain masked by discipline
+  recovery_rate: 9
+  recovery_rate_notes: Vampire healing, ancient bloodline accelerates repair
+  strength: 6
+  strength_notes: Elegant strength, not crude power; capable but refined
+  speed: 7
+  speed_notes: Swift but measured, never crude or desperate movement
+vitals:
+  blood_type: AB_rare
+  blood_type_notes: Ancient vampire bloodline, rare and potent
+  heart_rate_resting: 35
+  heart_rate_resting_unit: bpm
+  heart_rate_notes: Vampire physiology, minimal metabolic need
+  body_temperature: 27
+  body_temperature_unit: celsius
+  body_temperature_notes: Cold-blooded vampire, always cool to touch
+  respiratory_rate: 8
+  respiratory_rate_unit: breaths_per_minute
+  respiratory_notes: Minimal respiration requirement
+sexual_activity:
+  sst:
+    frequency: occasional
+    frequency_notes: Strictly controlled, limited to political necessity and rare indulgence
+    orientation: heterosexual
+    preference_intensity: high
+    partner_preferences:
+      - sophistication
+      - power
+      - discretion
+      - forbidden_status
+    taboo_encounters:
+      - jacques_natt_och_dag
+      - marital_duty_resentment
+    arousal_triggers:
+      - power_dynamics
+      - forbidden_attraction
+      - intellectual_connection
+      - risk_of_exposure
+    inhibitions:
+      - fear_of_exposure
+      - image_maintenance
+      - emotional_vulnerability
+      - loss_of_control
+    bst_comparison: More sexually suppressed in canonical timeline; SST adds explicit forbidden desires
+adult_profile:
+  status: mature_adult
+  occupation: socialite
+  social_status: elite_vampire_society
+  social_role: matriarch
+  political_role: natt_och_dag_family_representative
+  obligations:
+    - family_image_maintenance
+    - social_event_attendance
+    - political_alliance_management
+    - vampire_society_standing
+  household_position: lady_of_natt_och_dag_manor
+  management_duties:
+    - household_staff_oversight
+    - family_reputation
+    - daughter_debut_management
+    - social_calendar
+  social_circles:
+    - vampire_elite
+    - political_families
+    - society_hostesses
+    - charitable_patrons
+  assets: family_manor_partial_control
+  influence_sphere: social_political
 divergences: []
 _deprecated_canonical:
   age: 43

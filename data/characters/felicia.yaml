@@ -1,6 +1,9 @@
 id: felicia
 name: Felicia
 portrayed_by: Jolina Bergmer
+catalog_id:
+  bst: "BST-004-BJ"
+  sst: "SST-004-BJ"
 versions:
   bst:
     age: 16
@@ -55,15 +58,128 @@ kink_profile:
     intensity: 1
     notes: Fears being alone
   evolution:
-    s01e01:
-    - id: group_submission
-      intensity: 4
-      notes: Established as follower
-    s01e04:
-    - id: enforcer
-      intensity: 4
-      notes: Helps attack Kiara
+     s01e01:
+     - id: group_submission
+       intensity: 4
+       notes: Established as follower
+     s01e04:
+     - id: enforcer
+       intensity: 4
+       notes: Helps attack Kiara
 divergences: []
+physical_profile:
+  height_cm: 168
+  measurements:
+    bust_cm: 84
+    waist_cm: 62
+    hips_cm: 88
+  build: athletic_lean
+  distinguishing_features:
+    - blonde_hair_shoulder_length
+    - grey_eyes
+    - athletic_frame
+    - sharp_facial_structure
+performance_metrics:
+  stamina: 7
+  flexibility: 6
+  pain_tolerance: 5
+  recovery_rate: 7
+vitals:
+  blood_type: O+
+  heart_rate_resting_bpm: 68
+  body_temperature_celsius: 37.0
+sexual_activity:
+  has_explicit_content: true
+  status: active_character
+student_profile:
+  school: Akademi Academy
+  grade: "10"
+  class: 10-D
+  class_schedule:
+    monday:
+      - class_type: Language Arts
+        period: 1
+        room: "110"
+      - class_type: Mathematics
+        period: 2
+        room: "205"
+      - class_type: Physical Education
+        period: 3
+        room: gymnasium
+      - class_type: Social Studies
+        period: 4
+        room: "310"
+    tuesday:
+      - class_type: Mathematics
+        period: 1
+        room: "205"
+      - class_type: Science
+        period: 2
+        room: "415"
+      - class_type: Language Arts
+        period: 3
+        room: "110"
+      - class_type: Lunch
+        period: 4
+        location: cafeteria
+    wednesday:
+      - class_type: Science
+        period: 1
+        room: "415"
+      - class_type: Art
+        period: 2
+        room: "520"
+      - class_type: Mathematics
+        period: 3
+        room: "205"
+      - class_type: Physical Education
+        period: 4
+        room: gymnasium
+    thursday:
+      - class_type: Social Studies
+        period: 1
+        room: "310"
+      - class_type: Language Arts
+        period: 2
+        room: "110"
+      - class_type: Club Activity
+        period: 3
+        room: "TBD"
+      - class_type: Science
+        period: 4
+        room: "415"
+    friday:
+      - class_type: Language Arts
+        period: 1
+        room: "110"
+      - class_type: Physical Education
+        period: 2
+        room: gymnasium
+      - class_type: Mathematics
+        period: 3
+        room: "205"
+      - class_type: Homeroom
+        period: 4
+        room: "10-D"
+  obligations:
+    - school_attendance_required: true
+    - curfew_time: "22:00"
+    - parental_supervision: present
+  loan_schedule:
+    - event_id: loan_001
+      date: "2026-03-15"
+      amount: 50000
+      purpose: fashion_emergency
+      due_date: "2026-04-15"
+    - event_id: loan_002
+      date: "2026-05-20"
+      amount: 75000
+      purpose: group_activities_budget
+      due_date: "2026-06-20"
+  extracurriculars:
+    - activity: Cheerleading Club
+      role: member
+      commitment_level: high
 _deprecated_canonical:
   age: 16
   species: human
