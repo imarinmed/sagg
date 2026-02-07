@@ -307,18 +307,20 @@ function MythosPageContent() {
     <div className="space-y-12 pb-20">
       {/* Hero Section - Kiara Character Showcase */}
       <section className="relative min-h-[60vh] flex items-end overflow-hidden">
-        {/* Background Image */}
+        {/* Background Image - Kiara Screenshot */}
         <div className="absolute inset-0">
           <Image
-            src="/data/video_analysis/screenshots/characters/kiara/s01e01/S01E01%20-%20Kallblodig%20skolstart%20%5BBlod%20svett%20t%C3%A5rar%5D-0004.png"
+            src="/screenshots/characters/kiara/s01e01/kiara-hero.png"
             alt="Kiara Natt och Dag"
             fill
-            className="object-cover object-[center_20%]"
+            className="object-cover object-[center_25%]"
             priority
+            sizes="100vw"
           />
-          {/* Gradient overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-transparent" />
+          {/* Gradient overlays for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/90 via-[#0a0a0a]/40 to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(10,10,10,0.4)_100%)]" />
         </div>
         
         {/* Content */}
