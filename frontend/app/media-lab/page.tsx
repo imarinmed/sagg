@@ -7,6 +7,9 @@ import { GlassCard } from "@/components/GlassCard";
 import Link from "next/link";
 import { api, MediaJobResponse, MediaJobStatusEnum, MediaCapabilitiesResponse } from "@/lib/api";
 import { getStatusColor, getStatusBadgeStyles, formatDate } from "./utils";
+import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
+import { Skeleton } from "@/components/ui/Skeleton";
+import { StudioLayout } from "./StudioLayout";
 
 function getMediaLabArtifactUrl(path: string): string {
   if (/^https?:\/\//.test(path)) return path;
@@ -96,11 +99,13 @@ export default function MediaLabPage() {
 
       <div className="px-4 md:px-8 lg:px-16 py-8 min-h-[500px]">
         <div className="max-w-7xl mx-auto">
-          {activeTab === "generate" && <GenerateView />}
-          {activeTab === "enhance" && <EnhanceView />}
-          {activeTab === "interpolate" && <InterpolateView />}
-          {activeTab === "blend" && <BlendView />}
-          {activeTab === "jobs" && <JobsView />}
+          <ErrorBoundary>
+            {activeTab === "generate" && <GenerateView />}
+            {activeTab === "enhance" && <EnhanceView />}
+            {activeTab === "interpolate" && <InterpolateView />}
+            {activeTab === "blend" && <BlendView />}
+            {activeTab === "jobs" && <JobsView />}
+          </ErrorBoundary>
         </div>
       </div>
     </div>
@@ -262,123 +267,129 @@ function GenerateView() {
     setSeed(Math.floor(Math.random() * 1000000));
   };
 
-  return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <div className="lg:col-span-1 space-y-6">
-        <GlassCard className="p-6 space-y-4">
-          <h3 className="text-lg font-heading text-[var(--color-text-primary)]">Generation Settings</h3>
-          <div className="space-y-4">
-            <div className="space-y-2">
-              <label className="text-sm text-[var(--color-text-muted)]">Prompt</label>
-              <textarea 
-                className="w-full h-32 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-3 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                placeholder="Describe the image you want to generate..."
-                value={prompt}
-                onChange={(e) => setPrompt(e.target.value)}
-                disabled={loading}
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm text-[var(--color-text-muted)]">Negative Prompt</label>
-              <Input 
-                placeholder="What to avoid..." 
-                className="bg-[var(--color-surface)] border-[var(--color-border)]"
-                value={negativePrompt}
-                onChange={(e) => setNegativePrompt(e.target.value)}
-                disabled={loading}
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="text-sm text-[var(--color-text-muted)]">Model</label>
-              <select 
-                className="w-full bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-2 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors"
-                value={selectedModel}
-                onChange={(e) => setSelectedModel(e.target.value)}
-                disabled={loading}
-              >
-                {models.map(m => (
-                  <option key={m.id} value={m.id}>{m.name}</option>
-                ))}
-              </select>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <label className="text-sm text-[var(--color-text-muted)]">Seed</label>
-                <button 
-                  onClick={randomSeed}
-                  disabled={loading}
-                  className="text-xs text-blue-400 hover:text-blue-300 disabled:opacity-50"
-                >
-                  Randomize
-                </button>
-              </div>
-              <Input 
-                placeholder="Leave empty for random..." 
-                className="bg-[var(--color-surface)] border-[var(--color-border)]"
-                type="number"
-                value={seed ?? ""}
-                onChange={(e) => setSeed(e.target.value ? parseInt(e.target.value) : null)}
-                disabled={loading}
-              />
-            </div>
-            {generatingError && (
-              <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg flex items-start gap-2">
-                <AlertCircle className="w-4 h-4 mt-0.5 text-red-400 flex-shrink-0" />
-                <p className="text-sm text-red-300">{generatingError}</p>
-              </div>
-            )}
-            <Button 
-              className="w-full bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-50"
-              onClick={handleGenerate}
-              isDisabled={loading || !prompt.trim()}
+  const leftPanel = (
+    <GlassCard className="p-6 space-y-4">
+      <h3 className="text-lg font-heading text-[var(--color-text-primary)]">Generation Settings</h3>
+      <div className="space-y-4">
+        <div className="space-y-2">
+          <label className="text-sm text-[var(--color-text-muted)]">Prompt</label>
+          <textarea 
+            className="w-full h-32 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-3 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors resize-none"
+            placeholder="Describe the image you want to generate..."
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            disabled={loading}
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="text-sm text-[var(--color-text-muted)]">Negative Prompt</label>
+          <Input 
+            placeholder="What to avoid..." 
+            className="bg-[var(--color-surface)] border-[var(--color-border)]"
+            value={negativePrompt}
+            onChange={(e) => setNegativePrompt(e.target.value)}
+            disabled={loading}
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="text-sm text-[var(--color-text-muted)]">Model</label>
+          <select 
+            className="w-full bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-2 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors"
+            value={selectedModel}
+            onChange={(e) => setSelectedModel(e.target.value)}
+            disabled={loading}
+          >
+            {models.map(m => (
+              <option key={m.id} value={m.id}>{m.name}</option>
+            ))}
+          </select>
+        </div>
+        <div className="space-y-2">
+          <div className="flex items-center justify-between">
+            <label className="text-sm text-[var(--color-text-muted)]">Seed</label>
+            <button 
+              onClick={randomSeed}
+              disabled={loading}
+              className="text-xs text-blue-400 hover:text-blue-300 disabled:opacity-50"
             >
-              {loading ? (
-                <div className="flex items-center gap-2">
-                  <Spinner size="sm" />
-                  Generating... ({progress}%)
-                </div>
-              ) : (
-                "Generate Image"
-              )}
-            </Button>
+              Randomize
+            </button>
           </div>
-        </GlassCard>
-      </div>
-      <div className="lg:col-span-2">
-        {generatedImage ? (
-          <div className="h-full min-h-[400px] rounded-xl overflow-hidden border border-[var(--color-border)] flex flex-col">
-            <img 
-              src={generatedImage} 
-              alt="Generated result" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ) : (
-          <div className="h-full min-h-[400px] border-2 border-dashed border-[var(--color-border)] rounded-xl flex flex-col items-center justify-center text-[var(--color-text-muted)] bg-[var(--color-surface)]/30">
-            {loading && jobId ? (
-              <>
-                <Spinner size="lg" className="mb-4" />
-                <p className="text-center">Generating your image...</p>
-                <p className="text-xs text-[var(--color-text-muted)] mt-2">Job ID: {jobId.slice(0, 8)}</p>
-                <div className="w-full px-8 mt-4">
-                  <div className="w-full bg-[var(--color-border)] rounded-full h-2 overflow-hidden">
-                    <div 
-                      className="bg-blue-500 h-full transition-all duration-300" 
-                      style={{ width: `${progress}%` }}
-                    />
-                  </div>
-                </div>
-              </>
-            ) : (
-              <>
-                <Wand2 className="w-12 h-12 mb-4 opacity-50" />
-                <p>Generated results will appear here</p>
-              </>
-            )}
+          <Input 
+            placeholder="Leave empty for random..." 
+            className="bg-[var(--color-surface)] border-[var(--color-border)]"
+            type="number"
+            value={seed ?? ""}
+            onChange={(e) => setSeed(e.target.value ? parseInt(e.target.value) : null)}
+            disabled={loading}
+          />
+        </div>
+        {generatingError && (
+          <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg flex items-start gap-2">
+            <AlertCircle className="w-4 h-4 mt-0.5 text-red-400 flex-shrink-0" />
+            <p className="text-sm text-red-300">{generatingError}</p>
           </div>
         )}
+        <Button 
+          className="w-full bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-50"
+          onClick={handleGenerate}
+          isDisabled={loading || !prompt.trim()}
+        >
+          {loading ? (
+            <div className="flex items-center gap-2">
+              <Spinner size="sm" />
+              Generating... ({progress}%)
+            </div>
+          ) : (
+            "Generate Image"
+          )}
+        </Button>
       </div>
-    </div>
+    </GlassCard>
+  );
+
+  const centerPanel = (
+    <>
+      {generatedImage ? (
+        <div className="h-full min-h-[400px] rounded-xl overflow-hidden border border-[var(--color-border)] flex flex-col animate-in fade-in duration-500">
+          <img 
+            src={generatedImage} 
+            alt="Generated result" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ) : (
+        <div className="h-full min-h-[400px] border-2 border-dashed border-[var(--color-border)] rounded-xl flex flex-col items-center justify-center text-[var(--color-text-muted)] bg-[var(--color-surface)]/30">
+          {loading && jobId ? (
+            <>
+              <Spinner size="lg" className="mb-4" />
+              <p className="text-center">Generating your image...</p>
+              <p className="text-xs text-[var(--color-text-muted)] mt-2">Job ID: {jobId.slice(0, 8)}</p>
+              <div className="w-full px-8 mt-4">
+                <div className="w-full bg-[var(--color-border)] rounded-full h-2 overflow-hidden">
+                  <div 
+                    className="bg-blue-500 h-full transition-all duration-300" 
+                    style={{ width: `${progress}%` }}
+                  />
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <Wand2 className="w-12 h-12 mb-4 opacity-50" />
+              <p>Generated results will appear here</p>
+            </>
+          )}
+        </div>
+      )}
+    </>
+  );
+
+  return (
+    <StudioLayout
+      leftPanel={leftPanel}
+      centerPanel={centerPanel}
+    />
   );
 }
 
@@ -571,20 +582,53 @@ function EnhanceView() {
 
   // Show before/after comparison if job succeeded
   if (jobStatus === "SUCCEEDED" && sourcePreview && enhancedArtifact) {
-    return (
-      <div className="space-y-6">
-        <div className="flex items-center justify-between">
-          <h3 className="text-xl font-heading text-[var(--color-text-primary)]">Enhancement Complete</h3>
+    const leftPanel = (
+      <GlassCard className="p-6 space-y-4">
+        <h4 className="font-heading text-[var(--color-text-primary)]">Job Details</h4>
+        <div className="space-y-3 text-sm">
+          <div className="flex items-center justify-between">
+            <span className="text-[var(--color-text-muted)]">Job ID</span>
+            <code className="text-xs bg-[var(--color-surface)] px-2 py-1 rounded font-mono text-blue-400">
+              {jobId}
+            </code>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-[var(--color-text-muted)]">Status</span>
+            <span className="px-2 py-1 rounded-full text-xs bg-green-500/20 text-green-400 border border-green-500/30">
+              SUCCEEDED
+            </span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-[var(--color-text-muted)]">Quality Preset</span>
+            <span className="capitalize font-medium text-[var(--color-text-primary)]">{qualityPreset}</span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-[var(--color-text-muted)]">Source Format</span>
+            <span className="uppercase font-mono text-xs text-[var(--color-text-primary)]">
+              {sourceImage?.name.split(".").pop()}
+            </span>
+          </div>
+        </div>
+        <div className="pt-4 border-t border-[var(--color-border)]">
           <Button 
             size="sm" 
             variant="ghost" 
             onPress={resetForm}
+            className="w-full"
           >
             New Enhancement
           </Button>
         </div>
+      </GlassCard>
+    );
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    const centerPanel = (
+      <div className="space-y-6">
+        <div className="flex items-center justify-between">
+          <h3 className="text-xl font-heading text-[var(--color-text-primary)]">Enhancement Complete</h3>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8">
           {/* Before/After Comparison Slider */}
           <div className="space-y-4">
             <h4 className="font-heading text-[var(--color-text-primary)]">Before/After Comparison</h4>
@@ -638,60 +682,36 @@ function EnhanceView() {
             </div>
           </div>
 
-          {/* Job Details */}
-          <div className="space-y-6">
-            <GlassCard className="p-6 space-y-4">
-              <h4 className="font-heading text-[var(--color-text-primary)]">Job Details</h4>
-              <div className="space-y-3 text-sm">
-                <div className="flex items-center justify-between">
-                  <span className="text-[var(--color-text-muted)]">Job ID</span>
-                  <code className="text-xs bg-[var(--color-surface)] px-2 py-1 rounded font-mono text-blue-400">
-                    {jobId}
-                  </code>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-[var(--color-text-muted)]">Status</span>
-                  <span className="px-2 py-1 rounded-full text-xs bg-green-500/20 text-green-400 border border-green-500/30">
-                    SUCCEEDED
-                  </span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-[var(--color-text-muted)]">Quality Preset</span>
-                  <span className="capitalize font-medium text-[var(--color-text-primary)]">{qualityPreset}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-[var(--color-text-muted)]">Source Format</span>
-                  <span className="uppercase font-mono text-xs text-[var(--color-text-primary)]">
-                    {sourceImage?.name.split(".").pop()}
-                  </span>
-                </div>
-              </div>
-            </GlassCard>
-
-            <GlassCard className="p-6 space-y-4">
-              <h4 className="font-heading text-[var(--color-text-primary)]">Download</h4>
-              <Button 
-                className="w-full bg-blue-600 text-white font-medium"
-                onPress={() => {
-                  const link = document.createElement("a");
-                  link.href = getMediaLabArtifactUrl(enhancedArtifact);
-                  link.download = `enhanced-${Date.now()}.jpg`;
-                  link.click();
-                }}
-              >
-                Download Enhanced Image
-              </Button>
-            </GlassCard>
-          </div>
+          <GlassCard className="p-6 space-y-4">
+            <h4 className="font-heading text-[var(--color-text-primary)]">Download</h4>
+            <Button 
+              className="w-full bg-blue-600 text-white font-medium"
+              onPress={() => {
+                const link = document.createElement("a");
+                link.href = getMediaLabArtifactUrl(enhancedArtifact);
+                link.download = `enhanced-${Date.now()}.jpg`;
+                link.click();
+              }}
+            >
+              Download Enhanced Image
+            </Button>
+          </GlassCard>
         </div>
       </div>
+    );
+
+    return (
+      <StudioLayout
+        leftPanel={leftPanel}
+        centerPanel={centerPanel}
+      />
     );
   }
 
   // Show job progress if running
   if (jobStatus && jobStatus !== "SUCCEEDED") {
     return (
-      <div className="space-y-6">
+      <div className="max-w-2xl mx-auto py-12">
         <GlassCard className="p-8 space-y-6">
           <div className="space-y-2">
             <h4 className="font-heading text-[var(--color-text-primary)]">Processing Enhancement</h4>
@@ -731,180 +751,184 @@ function EnhanceView() {
   }
 
   // Show upload form
-  return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <div className="lg:col-span-1 space-y-6">
-        <GlassCard className="p-6 space-y-4">
-          <h3 className="text-lg font-heading text-[var(--color-text-primary)]">Enhancement Settings</h3>
-          
-          <div className="space-y-4">
-            <div className="space-y-2">
-              <label className="text-sm text-[var(--color-text-muted)]">Quality Preset</label>
-              <select 
-                value={qualityPreset}
-                onChange={(e) => setQualityPreset(e.target.value as "low" | "medium" | "high")}
-                className="w-full bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-2 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors"
-              >
-                <option value="low">Low (Fast, less detail)</option>
-                <option value="medium">Medium (Balanced)</option>
-                <option value="high">High (Slow, maximum detail)</option>
-              </select>
-            </div>
-
-            <div className="space-y-4 pt-2">
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <label className="text-sm text-[var(--color-text-muted)]">Face Detail Strength</label>
-                  <span className="text-xs text-[var(--color-text-muted)]">{faceStrength.toFixed(2)}</span>
-                </div>
-                <Slider 
-                  step={0.05} 
-                  maxValue={1} 
-                  minValue={0} 
-                  defaultValue={0.4}
-                  value={faceStrength} 
-                  onChange={(v) => setFaceStrength(Array.isArray(v) ? v[0] : v)}
-                  className="max-w-md"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <label className="text-sm text-[var(--color-text-muted)]">Hand Detail Strength</label>
-                  <span className="text-xs text-[var(--color-text-muted)]">{handStrength.toFixed(2)}</span>
-                </div>
-                <Slider 
-                  step={0.05} 
-                  maxValue={1} 
-                  minValue={0} 
-                  defaultValue={0.4}
-                  value={handStrength} 
-                  onChange={(v) => setHandStrength(Array.isArray(v) ? v[0] : v)}
-                  className="max-w-md"
-                />
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-sm text-[var(--color-text-muted)]">Source Image</label>
-              <input 
-                type="file"
-                accept="image/jpeg,image/png,image/webp"
-                onChange={handleFileSelect}
-                className="block w-full text-sm text-[var(--color-text-muted)] file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-600 file:text-white hover:file:bg-blue-700 transition-colors"
-              />
-              <p className="text-xs text-[var(--color-text-muted)]">JPG, PNG, or WebP (max 50MB)</p>
-            </div>
-
-            {submitError && (
-              <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm flex items-start gap-2">
-                <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>{submitError}</span>
-              </div>
-            )}
-
-            {capabilities && !capabilities.enhance_supported && !submitError && (
-              <div className="p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-yellow-400 text-sm flex items-start gap-2">
-                <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>{capabilities.reason || "Enhancement is currently unavailable."}</span>
-              </div>
-            )}
-
-            <Button 
-              className="w-full bg-blue-600 text-white font-medium disabled:opacity-50 disabled:cursor-not-allowed"
-              onPress={handleSubmit}
-              isDisabled={!sourceImage || submitting || (capabilities ? !capabilities.enhance_supported : false)}
-            >
-              {submitting ? (
-                <>
-                  <Spinner size="sm" color="current" />
-                  <span className="ml-2">Submitting...</span>
-                </>
-              ) : (
-                <>
-                  <Sparkles className="w-4 h-4 mr-2" />
-                  Enhance Image
-                </>
-              )}
-            </Button>
-          </div>
-        </GlassCard>
-
-        <GlassCard className="p-6 space-y-3 text-sm">
-          <h4 className="font-heading text-[var(--color-text-primary)]">How it works</h4>
-          <ol className="space-y-2 text-[var(--color-text-muted)] list-decimal list-inside">
-            <li>Upload a source image</li>
-            <li>Choose quality preset</li>
-            <li>Submit for enhancement</li>
-            <li>View before/after comparison</li>
-            <li>Download enhanced result</li>
-          </ol>
-        </GlassCard>
-      </div>
-
-      {/* Preview */}
-      <div className="lg:col-span-2">
+  const leftPanel = (
+    <div className="space-y-6">
+      <GlassCard className="p-6 space-y-4">
+        <h3 className="text-lg font-heading text-[var(--color-text-primary)]">Enhancement Settings</h3>
+        
         <div className="space-y-4">
-          <h4 className="font-heading text-[var(--color-text-primary)]">Source Preview</h4>
-          <div
-            className={`relative border-2 border-dashed rounded-xl overflow-hidden transition-all duration-300 ${
-              isDragOverPreview
-                ? "border-cyan-300 bg-cyan-500/15 shadow-[0_0_0_3px_rgba(103,232,249,0.18),0_0_35px_rgba(59,130,246,0.2)]"
-                : "border-[var(--color-border)] bg-[var(--color-surface)]/30"
-            }`}
-            style={sourcePreview ? { aspectRatio: sourceAspectRatio } : undefined}
-            onDragOver={handlePreviewDragOver}
-            onDragLeave={handlePreviewDragLeave}
-            onDrop={handlePreviewDrop}
-          >
-            {sourcePreview ? (
-              <div className="relative min-h-[360px] max-h-[70vh] flex items-center justify-center">
-                <img
-                  src={sourcePreview}
-                  alt="Preview"
-                  className="w-full h-full object-contain"
-                />
+          <div className="space-y-2">
+            <label className="text-sm text-[var(--color-text-muted)]">Quality Preset</label>
+            <select 
+              value={qualityPreset}
+              onChange={(e) => setQualityPreset(e.target.value as "low" | "medium" | "high")}
+              className="w-full bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-2 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors"
+            >
+              <option value="low">Low (Fast, less detail)</option>
+              <option value="medium">Medium (Balanced)</option>
+              <option value="high">High (Slow, maximum detail)</option>
+            </select>
+          </div>
 
-                <div
-                  className={`absolute inset-0 pointer-events-none transition-all duration-300 ${
-                    isDragOverPreview ? "opacity-100" : "opacity-0"
-                  }`}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-transparent backdrop-blur-[1px]" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/70 bg-black/65 px-6 py-2 text-cyan-100 shadow-lg shadow-cyan-500/20 animate-pulse">
-                      <UploadCloud className="h-4 w-4" />
-                      <span className="text-sm font-semibold tracking-wide">Drop to replace image</span>
-                    </div>
-                  </div>
-                </div>
+          <div className="space-y-4 pt-2">
+            <div className="space-y-2">
+              <div className="flex justify-between">
+                <label className="text-sm text-[var(--color-text-muted)]">Face Detail Strength</label>
+                <span className="text-xs text-[var(--color-text-muted)]">{faceStrength.toFixed(2)}</span>
               </div>
+              <Slider 
+                step={0.05} 
+                maxValue={1} 
+                minValue={0} 
+                defaultValue={0.4}
+                value={faceStrength} 
+                onChange={(v) => setFaceStrength(Array.isArray(v) ? v[0] : v)}
+                className="max-w-md"
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <div className="flex justify-between">
+                <label className="text-sm text-[var(--color-text-muted)]">Hand Detail Strength</label>
+                <span className="text-xs text-[var(--color-text-muted)]">{handStrength.toFixed(2)}</span>
+              </div>
+              <Slider 
+                step={0.05} 
+                maxValue={1} 
+                minValue={0} 
+                defaultValue={0.4}
+                value={handStrength} 
+                onChange={(v) => setHandStrength(Array.isArray(v) ? v[0] : v)}
+                className="max-w-md"
+              />
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <label className="text-sm text-[var(--color-text-muted)]">Source Image</label>
+            <input 
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              onChange={handleFileSelect}
+              className="block w-full text-sm text-[var(--color-text-muted)] file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-600 file:text-white hover:file:bg-blue-700 transition-colors"
+            />
+            <p className="text-xs text-[var(--color-text-muted)]">JPG, PNG, or WebP (max 50MB)</p>
+          </div>
+
+          {submitError && (
+            <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm flex items-start gap-2">
+              <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+              <span>{submitError}</span>
+            </div>
+          )}
+
+          {capabilities && !capabilities.enhance_supported && !submitError && (
+            <div className="p-3 bg-yellow-500/10 border border-yellow-500/30 rounded-lg text-yellow-400 text-sm flex items-start gap-2">
+              <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+              <span>{capabilities.reason || "Enhancement is currently unavailable."}</span>
+            </div>
+          )}
+
+          <Button 
+            className="w-full bg-blue-600 text-white font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+            onPress={handleSubmit}
+            isDisabled={!sourceImage || submitting || (capabilities ? !capabilities.enhance_supported : false)}
+          >
+            {submitting ? (
+              <>
+                <Spinner size="sm" color="current" />
+                <span className="ml-2">Submitting...</span>
+              </>
             ) : (
-              <div className="h-full min-h-[400px] flex flex-col items-center justify-center px-6 text-center text-[var(--color-text-muted)]">
-                <UploadCloud className="w-12 h-12 mb-4 opacity-70" />
-                <p>Drag and drop an image here</p>
-                <p className="text-sm opacity-70 mt-1">Or choose a file from the left panel</p>
-                <p className="text-xs opacity-60 mt-1">JPG, PNG, or WebP (max 50MB)</p>
-              </div>
+              <>
+                <Sparkles className="w-4 h-4 mr-2" />
+                Enhance Image
+              </>
             )}
+          </Button>
+        </div>
+      </GlassCard>
+
+      <GlassCard className="p-6 space-y-3 text-sm">
+        <h4 className="font-heading text-[var(--color-text-primary)]">How it works</h4>
+        <ol className="space-y-2 text-[var(--color-text-muted)] list-decimal list-inside">
+          <li>Upload a source image</li>
+          <li>Choose quality preset</li>
+          <li>Submit for enhancement</li>
+          <li>View before/after comparison</li>
+          <li>Download enhanced result</li>
+        </ol>
+      </GlassCard>
+    </div>
+  );
+
+  const centerPanel = (
+    <div className="space-y-4">
+      <h4 className="font-heading text-[var(--color-text-primary)]">Source Preview</h4>
+      <div
+        className={`relative border-2 border-dashed rounded-xl overflow-hidden transition-all duration-300 ${
+          isDragOverPreview
+            ? "border-cyan-300 bg-cyan-500/15 shadow-[0_0_0_3px_rgba(103,232,249,0.18),0_0_35px_rgba(59,130,246,0.2)]"
+            : "border-[var(--color-border)] bg-[var(--color-surface)]/30"
+        }`}
+        style={sourcePreview ? { aspectRatio: sourceAspectRatio } : undefined}
+        onDragOver={handlePreviewDragOver}
+        onDragLeave={handlePreviewDragLeave}
+        onDrop={handlePreviewDrop}
+      >
+        {sourcePreview ? (
+          <div className="relative min-h-[360px] max-h-[70vh] flex items-center justify-center">
+            <img
+              src={sourcePreview}
+              alt="Preview"
+              className="w-full h-full object-contain"
+            />
 
             <div
               className={`absolute inset-0 pointer-events-none transition-all duration-300 ${
-                isDragOverPreview ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                isDragOverPreview ? "opacity-100" : "opacity-0"
               }`}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-blue-500/20" />
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 via-blue-500/15 to-transparent backdrop-blur-[1px]" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-black/60 px-5 py-2 text-white shadow-xl">
+                <div className="inline-flex items-center gap-2 rounded-full border border-cyan-300/70 bg-black/65 px-6 py-2 text-cyan-100 shadow-lg shadow-cyan-500/20 animate-pulse">
                   <UploadCloud className="h-4 w-4" />
-                  <span className="text-sm font-medium">Drop to upload</span>
+                  <span className="text-sm font-semibold tracking-wide">Drop to replace image</span>
                 </div>
               </div>
+            </div>
+          </div>
+        ) : (
+          <div className="h-full min-h-[400px] flex flex-col items-center justify-center px-6 text-center text-[var(--color-text-muted)]">
+            <UploadCloud className="w-12 h-12 mb-4 opacity-70" />
+            <p>Drag and drop an image here</p>
+            <p className="text-sm opacity-70 mt-1">Or choose a file from the left panel</p>
+            <p className="text-xs opacity-60 mt-1">JPG, PNG, or WebP (max 50MB)</p>
+          </div>
+        )}
+
+        <div
+          className={`absolute inset-0 pointer-events-none transition-all duration-300 ${
+            isDragOverPreview ? "opacity-100 scale-100" : "opacity-0 scale-95"
+          }`}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-blue-500/20" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-black/60 px-5 py-2 text-white shadow-xl">
+              <UploadCloud className="h-4 w-4" />
+              <span className="text-sm font-medium">Drop to upload</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+  );
+
+  return (
+    <StudioLayout
+      leftPanel={leftPanel}
+      centerPanel={centerPanel}
+    />
   );
 }
 
@@ -967,9 +991,30 @@ function JobsView() {
 
   if (loading && jobs.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-20 text-[var(--color-text-muted)]">
-        <Spinner size="lg" color="accent" />
-        <p className="mt-4">Loading job history...</p>
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <Skeleton variant="text" width={150} height={28} />
+          <Skeleton variant="rectangular" width={100} height={36} />
+        </div>
+        <div className="grid gap-4">
+          {[1, 2, 3].map((i) => (
+            <GlassCard key={i} className="p-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <Skeleton variant="circular" width={8} height={8} />
+                  <div className="space-y-2">
+                    <Skeleton variant="text" width={120} height={20} />
+                    <Skeleton variant="text" width={200} height={16} />
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <Skeleton variant="text" width={100} height={16} />
+                  <Skeleton variant="rectangular" width={80} height={24} />
+                </div>
+              </div>
+            </GlassCard>
+          ))}
+        </div>
       </div>
     );
   }

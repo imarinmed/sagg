@@ -223,3 +223,44 @@ class AuditEvent(SQLModel, table=True):
     actor: str = Field(..., description="Actor who triggered the event (e.g., system, user)")
     details_json: str | None = Field(default=None, description="JSON details about the event")
     created_at: datetime = Field(default_factory=datetime.utcnow, description="Event timestamp")
+
+
+class ArtifactTag(SQLModel, table=True):
+    """Tag associating an artifact with a character, episode, or mythos element.
+
+    Enables querying artifacts by entity (e.g., all artifacts tagged with character X).
+    Stores the entity type and ID to support cross-entity queries.
+    """
+
+    __tablename__ = "artifact_tags"
+    __table_args__ = (
+        # Prevent duplicate tag entries
+        UniqueConstraint(
+            "artifact_id", "entity_type", "entity_id", name="uq_artifact_tag"
+        ),
+        # Index for efficient queries by entity type and ID
+        Index("ix_artifact_tags_entity", "entity_type", "entity_id"),
+        # Index for efficient artifact lookups
+        Index("ix_artifact_tags_artifact", "artifact_id"),
+    )
+
+    id: str = Field(
+        default_factory=lambda: str(uuid.uuid4()),
+        primary_key=True,
+        description="Unique identifier for the tag relationship",
+    )
+    artifact_id: str = Field(
+        ..., index=True, description="ID of the artifact being tagged"
+    )
+    entity_type: str = Field(
+        ..., description="Type of entity: 'character', 'episode', or 'mythos'"
+    )
+    entity_id: str = Field(
+        ..., description="ID of the entity (character_id, episode_id, or mythos_id)"
+    )
+    created_at: datetime = Field(
+        default_factory=datetime.utcnow, description="When the tag was created"
+    )
+    updated_at: datetime = Field(
+        default_factory=datetime.utcnow, description="When the tag was last updated"
+    )

@@ -1,9 +1,9 @@
 from datetime import UTC, datetime
 from uuid import uuid4
 from pathlib import Path
-
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Depends
 from pydantic import BaseModel, Field
+from sqlmodel import Session
 
 from ..media_lab.executor import JobExecutor
 from ..media_lab.presets import get_preset_manager
@@ -11,6 +11,13 @@ from ..media_lab.registry import ModelRegistry
 from ..media_lab.workbench import Workbench
 from ..media_lab.civitai import get_civitai_client
 from ..media_lab.huggingface import get_huggingface_client
+from ..db.database import get_session
+from ..db.artifact_ops import (
+    create_artifact_tag,
+    get_artifact_tags,
+    update_artifact_tags,
+    get_artifacts_by_entity,
+)
 from ..models import (
     ArtifactData,
     ArtifactListResponse,
@@ -432,7 +439,10 @@ class ArtifactTagsRequest(BaseModel):
 
 
 @router.get("/artifacts/{artifact_id}/tags")
-async def get_artifact_tags(artifact_id: str):
+async def get_artifact_tags_endpoint(
+    artifact_id: str,
+    session: Session = Depends(get_session)
+):
     """Get tags for an artifact.
     
     Args:
@@ -441,13 +451,19 @@ async def get_artifact_tags(artifact_id: str):
     Returns:
         Dict with artifact_id and tags
     """
-    # TODO: Load artifact from storage and return tags
-    # For now, return empty tags
-    return {"artifact_id": artifact_id, "tags": {}}
+    try:
+        tags = get_artifact_tags(session, artifact_id)
+        return {"artifact_id": artifact_id, "tags": tags}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve tags: {str(e)}")
 
 
 @router.put("/artifacts/{artifact_id}/tags")
-async def update_artifact_tags(artifact_id: str, request: ArtifactTagsRequest):
+async def update_artifact_tags_endpoint(
+    artifact_id: str,
+    request: ArtifactTagsRequest,
+    session: Session = Depends(get_session)
+):
     """Update tags for an artifact.
     
     Args:
@@ -457,19 +473,24 @@ async def update_artifact_tags(artifact_id: str, request: ArtifactTagsRequest):
     Returns:
         Updated artifact with tags
     """
-    # TODO: Load artifact, update tags, save back to storage
-    # For now, return success message
-    return {
-        "artifact_id": artifact_id,
-        "tags": request.tags,
-        "message": "Tags updated successfully"
-    }
+    try:
+        tags = update_artifact_tags(session, artifact_id, request.tags)
+        return {
+            "artifact_id": artifact_id,
+            "tags": tags,
+            "message": "Tags updated successfully"
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to update tags: {str(e)}")
 
 
 # Related Images Endpoints
 
 @router.get("/characters/{character_id}/related-images")
-async def get_character_related_images(character_id: str):
+async def get_character_related_images(
+    character_id: str,
+    session: Session = Depends(get_session)
+):
     """Get all artifacts tagged with a character.
     
     Args:
@@ -478,18 +499,24 @@ async def get_character_related_images(character_id: str):
     Returns:
         List of artifacts tagged with this character
     """
-    related = []
-    for job_id, artifacts in _artifacts_store.items():
-        for artifact_dict in artifacts:
-            artifact = ArtifactData(**artifact_dict)
-            if artifact.tags and "character" in artifact.tags:
-                if character_id in artifact.tags["character"]:
-                    related.append(artifact)
-    return {"character_id": character_id, "artifacts": related, "count": len(related)}
+    try:
+        artifact_ids = get_artifacts_by_entity(session, "character", character_id)
+        # Get artifact data from in-memory store
+        related = []
+        for job_id, artifacts in _artifacts_store.items():
+            for artifact_dict in artifacts:
+                if artifact_dict.get("id") in artifact_ids:
+                    related.append(ArtifactData(**artifact_dict))
+        return {"character_id": character_id, "artifacts": related, "count": len(related)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve related images: {str(e)}")
 
 
 @router.get("/episodes/{episode_id}/related-images")
-async def get_episode_related_images(episode_id: str):
+async def get_episode_related_images(
+    episode_id: str,
+    session: Session = Depends(get_session)
+):
     """Get all artifacts tagged with an episode.
     
     Args:
@@ -498,18 +525,24 @@ async def get_episode_related_images(episode_id: str):
     Returns:
         List of artifacts tagged with this episode
     """
-    related = []
-    for job_id, artifacts in _artifacts_store.items():
-        for artifact_dict in artifacts:
-            artifact = ArtifactData(**artifact_dict)
-            if artifact.tags and "episode" in artifact.tags:
-                if episode_id in artifact.tags["episode"]:
-                    related.append(artifact)
-    return {"episode_id": episode_id, "artifacts": related, "count": len(related)}
+    try:
+        artifact_ids = get_artifacts_by_entity(session, "episode", episode_id)
+        # Get artifact data from in-memory store
+        related = []
+        for job_id, artifacts in _artifacts_store.items():
+            for artifact_dict in artifacts:
+                if artifact_dict.get("id") in artifact_ids:
+                    related.append(ArtifactData(**artifact_dict))
+        return {"episode_id": episode_id, "artifacts": related, "count": len(related)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve related images: {str(e)}")
 
 
 @router.get("/mythos/{mythos_id}/related-images")
-async def get_mythos_related_images(mythos_id: str):
+async def get_mythos_related_images(
+    mythos_id: str,
+    session: Session = Depends(get_session)
+):
     """Get all artifacts tagged with a mythos element.
     
     Args:
@@ -518,14 +551,17 @@ async def get_mythos_related_images(mythos_id: str):
     Returns:
         List of artifacts tagged with this mythos element
     """
-    related = []
-    for job_id, artifacts in _artifacts_store.items():
-        for artifact_dict in artifacts:
-            artifact = ArtifactData(**artifact_dict)
-            if artifact.tags and "mythos" in artifact.tags:
-                if mythos_id in artifact.tags["mythos"]:
-                    related.append(artifact)
-    return {"mythos_id": mythos_id, "artifacts": related, "count": len(related)}
+    try:
+        artifact_ids = get_artifacts_by_entity(session, "mythos", mythos_id)
+        # Get artifact data from in-memory store
+        related = []
+        for job_id, artifacts in _artifacts_store.items():
+            for artifact_dict in artifacts:
+                if artifact_dict.get("id") in artifact_ids:
+                    related.append(ArtifactData(**artifact_dict))
+        return {"mythos_id": mythos_id, "artifacts": related, "count": len(related)}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve related images: {str(e)}")
 
 # CivitAI Model Remote Endpoints
 

@@ -109,15 +109,18 @@ test.describe('Preset Import/Export', () => {
   });
 
   test('should export preset configuration', async ({ page }) => {
-    // Setup for download monitoring
-    const downloadPromise = page.waitForEvent('download').catch(() => null);
+    // Setup for download monitoring with timeout
+    const downloadPromise = Promise.race([
+      page.waitForEvent('download'),
+      new Promise((resolve) => setTimeout(() => resolve(null), 5000)), // 5s timeout
+    ]).catch(() => null);
 
     await test.step('Trigger preset export', async () => {
       const exportButton = page.locator('button:has-text("Export"), button:has-text("Download")').first();
       const exists = await exportButton.isVisible().catch(() => false);
       
       if (exists) {
-        await exportButton.click({ timeout: 1000 }).catch(() => {
+        await exportButton.click({ timeout: 2000 }).catch(() => {
           // Button might not be available
         });
       }

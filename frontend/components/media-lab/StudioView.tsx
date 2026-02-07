@@ -7,9 +7,17 @@ import { api, ArtifactData } from "@/lib/api";
 import { ParameterSidebar, GenerationParams } from "./ParameterSidebar";
 import { PresetManager } from "./PresetManager";
 
-// Code-split heavy components
-const BatchGrid = lazy(() => import("./BatchGrid").then(m => ({ default: m.BatchGrid })));
-const TaggingPanel = lazy(() => import("./TaggingPanel").then(m => ({ default: m.TaggingPanel })));
+// Code-split heavy components using dynamic imports
+const BatchGrid = lazy(() =>
+  import("./BatchGrid").then((module) => ({
+    default: module.BatchGrid,
+  }))
+);
+const TaggingPanel = lazy(() =>
+  import("./TaggingPanel").then((module) => ({
+    default: module.TaggingPanel,
+  }))
+);
 
 import { TaggingPanelSkeleton, ArtifactGridSkeleton, PreviewSkeleton } from "./SkeletonLoaders";
 import { ErrorBoundary } from "./ErrorBoundary";
