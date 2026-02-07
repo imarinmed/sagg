@@ -27,20 +27,20 @@ versions:
       vampire society or be silenced. Romance between vampires and humans is particularly
 
       fraught, carrying existential implications for both parties.'
-    traits: &id001
+    traits:
     - secret_coexistence
     - integration
     - forbidden_romance_potential
     - risk_of_exposure
     - predator_among_prey
-    abilities: &id003
+    abilities:
     - perfect_camouflage
     - human_manipulation
-    weaknesses: &id002
+    weaknesses:
     - discovery_risk
     - emotional_attachment_to_prey
     significance: Defines how vampires navigate their dual existence
-    source_episodes: &id004
+    source_episodes:
     - s01e01
     - s01e03
     - s01e04
@@ -55,7 +55,7 @@ versions:
       worse,
 
       turn them into an eternal subordinate.'
-    traits: &id005
+    traits:
     - humans_as_cattle_perspective
     - loss_of_humanity_in_relationships
     - addiction_to_vampire_attention
@@ -91,74 +91,3 @@ versions:
 
       blurring lines between sex and sustenance.'
 divergences: []
-_deprecated_canonical:
-  description: 'Vampires coexist secretly with humans, attending the same schools
-    and living in the
-
-    same communities. Most humans are unaware of vampires'' existence, enabling vampires
-
-    to move freely among their prey while maintaining the masquerade.
-
-
-    This coexistence creates unique tensions. Vampires must constantly restrain their
-
-    nature, while any human who discovers the truth faces a choice: become part of
-
-    vampire society or be silenced. Romance between vampires and humans is particularly
-
-    fraught, carrying existential implications for both parties.
-
-    '
-  traits: *id001
-  weaknesses: *id002
-  abilities: *id003
-  significance: Defines how vampires navigate their dual existence
-  source_episodes: *id004
-_deprecated_adaptation:
-  dark_variant: 'In the dark adaptation, vampire-human relationships become explicitly
-    about power and
-
-    consumption. Humans who enter vampire society do so as servants, donors, or pets.
-
-    True equality is impossible when one partner could kill the other on a whim—or
-    worse,
-
-    turn them into an eternal subordinate.
-
-    '
-  mechanics: 'Humans who learn about vampires are given limited options: serve, be
-    thralled (have
-
-    their memories modified), or die. Those who choose to serve enter a society where
-
-    they have fewer rights than the lowest vampire. Human lovers are often viewed
-    by
-
-    vampire society as either future prey or future progeny—never equals.
-
-    '
-  erotic_implications: 'The power differential creates intense dynamics. Some humans
-    are drawn to vampires
-
-    precisely because of the danger, seeking the thrill of intimacy with a predator.
-
-    Vampires may view human lovers as beloved pets or forbidden fruit—the attraction
-
-    heightened by the taboo. Cross-species romance often involves elements of feeding,
-
-    blurring lines between sex and sustenance.
-
-    '
-  horror_elements: *id005
-  taboo_potential: 'Can a relationship ever be consensual when one partner is prey?
-    The vampire''s
-
-    self-control is always tested, and the human''s life always at risk. Some vampires
-
-    fetishize human fragility, while some humans fetishize vampire power. Neither
-
-    dynamic leads to healthy relationships by human standards—but vampire standards
-
-    are different, and perhaps human morality doesn''t apply.
-
-    '

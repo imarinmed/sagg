@@ -24,18 +24,18 @@ versions:
       remains unclear. What is certain is that it removes one of the traditional limitations
 
       on vampire activity, making them far more dangerous predators.'
-    traits: &id001
+    traits:
     - daylight_tolerance
     - no_sunlight_weakness
     - full_integration
     - unrestricted_activity
-    abilities: &id003
+    abilities:
     - daytime_activity
     - human_schedule_adherence
     - unrestricted_hunting
-    weaknesses: &id002 []
+    weaknesses: []
     significance: Removes the traditional barrier between vampire and human worlds
-    source_episodes: &id004
+    source_episodes:
     - s01e01
     - s01e03
   sst:
@@ -48,7 +48,7 @@ versions:
 
       are prized as mates and feared as hunters, able to strike when other vampires
       sleep.'
-    traits: &id005
+    traits:
     - nowhere_is_safe
     - predator_in_broad_daylight
     - false_sense_of_security_for_humans
@@ -82,71 +82,3 @@ versions:
 
       of feeding into everyday intimacy. Sun-warmed vampire skin feels almost human.'
 divergences: []
-_deprecated_canonical:
-  description: 'Vampires in the series appear to be able to function during daylight
-    hours without
-
-    the traditional vampire weakness to sunlight. This "daywalking" ability allows
-    them
-
-    to fully integrate into human society, attending schools and maintaining normal
-
-    schedules alongside their human neighbors.
-
-
-    Whether this is universal to all vampires in this world or a special adaptation
-
-    remains unclear. What is certain is that it removes one of the traditional limitations
-
-    on vampire activity, making them far more dangerous predators.
-
-    '
-  traits: *id001
-  weaknesses: *id002
-  abilities: *id003
-  significance: Removes the traditional barrier between vampire and human worlds
-  source_episodes: *id004
-_deprecated_adaptation:
-  dark_variant: 'In the dark adaptation, daywalking is not universal. Most vampires
-    suffer weakness
-
-    in direct sunlight—not death, but discomfort and reduced powers. True daywalkers
-
-    are rare, often the result of powerful bloodlines or mysterious mutations. They
-
-    are prized as mates and feared as hunters, able to strike when other vampires
-    sleep.
-
-    '
-  mechanics: 'Daywalking ability runs in bloodlines. The Natt och Dag family possesses
-    it through
-
-    ancient ancestry, giving them advantages in vampire politics. Daywalkers can sense
-
-    other daywalkers, recognizing each other as equals in a world where most vampires
-
-    are bound by night. Some theorize daywalking comes from dhampir ancestry.
-
-    '
-  erotic_implications: 'Daywalker vampires can pursue human lovers during normal hours,
-    joining them for
-
-    lunch dates and afternoon trysts that nocturnal vampires miss. This creates a
-
-    different dynamic—less mysterious midnight visits, more normalized integration
-
-    of feeding into everyday intimacy. Sun-warmed vampire skin feels almost human.
-
-    '
-  horror_elements: *id005
-  taboo_potential: 'Daywalking challenges human assumptions about safety. Traditionally,
-    daylight
-
-    meant sanctuary—a time when vampires couldn''t touch you. Daywalkers remove that
-
-    protection, making humans vulnerable around the clock. The psychological impact
-
-    on humans who learn about daywalkers is profound: there is no escape, no safe
-    time.
-
-    '

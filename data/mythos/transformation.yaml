@@ -23,21 +23,21 @@ versions:
       to
 
       transform someone is never taken lightly, as it creates an eternal connection.'
-    traits: &id001
+    traits:
     - blood_exchange_required
     - death_and_rebirth
     - irreversible
     - life_changing
     - sire_bond_creation
-    abilities: &id003
+    abilities:
     - grant_immortality
     - create_progeny
-    weaknesses: &id002
+    weaknesses:
     - loss_of_human_life
     - eternal_obligation_to_sire
     significance: The ultimate act of vampire creation and the most intimate gift
       possible
-    source_episodes: &id004 []
+    source_episodes: []
   sst:
     description: 'In the dark adaptation, transformation is explicitly violent and
       sexual. The sire
@@ -47,7 +47,7 @@ versions:
       feeding. The transition involves a death—the human dies, and what wakes is something
 
       else wearing their face. Many new vampires struggle with what they''ve lost.'
-    traits: &id005
+    traits:
     - death_experience
     - loss_of_humanity
     - hunger_upon_waking
@@ -88,77 +88,3 @@ versions:
 
       their existence, colored by the terror and ecstasy of death.'
 divergences: []
-_deprecated_canonical:
-  description: 'The process by which humans become vampires. Not explicitly detailed
-    in the series,
-
-    but implied to involve blood exchange and a death-like transition. Once transformed,
-
-    there is no return to humanity—the change is permanent and absolute.
-
-
-    Transformation creates a bond between sire and progeny, with the new vampire emerging
-
-    into their maker''s family with all the obligations that entails. The decision
-    to
-
-    transform someone is never taken lightly, as it creates an eternal connection.
-
-    '
-  traits: *id001
-  weaknesses: *id002
-  abilities: *id003
-  significance: The ultimate act of vampire creation and the most intimate gift possible
-  source_episodes: *id004
-_deprecated_adaptation:
-  dark_variant: 'In the dark adaptation, transformation is explicitly violent and
-    sexual. The sire
-
-    must drain the human nearly to death, then share their blood in an act of reverse
-
-    feeding. The transition involves a death—the human dies, and what wakes is something
-
-    else wearing their face. Many new vampires struggle with what they''ve lost.
-
-    '
-  mechanics: 'Transformation requires the human to be drained past the point of no
-    return, then
-
-    fed vampire blood while the heart still weakly beats. The process takes three
-    nights:
-
-    the first night the human dies, the second they sleep in the earth, the third
-    they
-
-    rise as vampire. The sire must stay close during this time, as their blood calls
-
-    to the awakening progeny.
-
-    '
-  erotic_implications: 'Transformation is the ultimate consummation. Sires often choose
-    lovers to turn,
-
-    creating an eternal partner bound to them by blood. The act itself—draining,
-
-    feeding, the three nights of intimacy—is intensely sexual for both parties.
-
-    Some vampires describe their transformation as the most erotic experience of
-
-    their existence, colored by the terror and ecstasy of death.
-
-    '
-  horror_elements: *id005
-  taboo_potential: 'Transformation raises the ultimate consent question: the human
-    agrees to transform,
-
-    but the creature that wakes is not quite them. Did they consent to becoming a
-    predator?
-
-    To losing their human life, loves, future? The power dynamic between sire and
-    new
-
-    progeny mirrors abusive relationships, with the progeny dependent on their maker
-
-    for knowledge, protection, and often feeding in those first vulnerable nights.
-
-    '
