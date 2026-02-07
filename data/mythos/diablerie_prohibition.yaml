@@ -1,0 +1,29 @@
+id: diablerie_prohibition
+name: Diablerie Prohibition
+category: rules
+sub_category: tradition
+short_description: Forbidden consumption of another vampire's soul
+related_characters: []
+media_urls: []
+versions:
+  bst:
+    description: Diablerie is not applicable to BST canon
+    traits: []
+    abilities: []
+    weaknesses: []
+    significance: Not present in BST
+    source_episodes: []
+  sst:
+    description: SST diablerie is the forbidden act of consuming another vampire's
+      blood to absorb their power and soul
+    traits:
+    - soul_consumption
+    - power_theft
+    - permanent_bond
+    - spiritual_stain
+    significance: Diablerie is the ultimate taboo, offering power at terrible cost
+    mechanics: Grants power but marks the perpetrator, risking elder wrath
+    erotic_implications: Ultimate intimacy/violation, forbidden consumption, power
+      through devouring
+divergences:
+- SST adds diablerie as major taboo

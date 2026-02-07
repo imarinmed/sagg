@@ -1,0 +1,28 @@
+id: shapeshifting
+name: Shapeshifting
+category: supernatural
+sub_category: transformation
+short_description: Ability to transform into other forms
+related_characters: []
+media_urls: []
+versions:
+  bst:
+    description: Shapeshifting is not canonical in BST series
+    traits: []
+    abilities: []
+    weaknesses: []
+    significance: Not present in BST canon
+    source_episodes: []
+  sst:
+    description: SST vampires can transform into animals (wolves, bats, mist) and
+      other forms
+    traits:
+    - animal_forms
+    - mist_form
+    - rapid_transformation
+    - clothing_transformation
+    significance: Shapeshifting provides mobility, stealth, and dramatic flair
+    mechanics: Can shift into wolf, bat, mist, or shadow forms at will
+    erotic_implications: Body transformation, identity play, predator forms
+divergences:
+- SST adds shapeshifting entirely absent from BST

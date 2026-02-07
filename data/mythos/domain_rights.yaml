@@ -1,0 +1,32 @@
+id: domain_rights
+name: Domain Rights
+category: rules
+sub_category: territory
+short_description: Formal recognition of vampire territories
+related_characters: []
+media_urls: []
+versions:
+  bst:
+    description: Vampires maintain informal territorial claims
+    traits:
+    - territorial_instinct
+    - informal_boundaries
+    - elder_claims
+    abilities: []
+    weaknesses: []
+    significance: Territory prevents conflicts between vampires
+    source_episodes:
+    - s01e04
+  sst:
+    description: SST formalizes domain rights with court recognition and enforcement
+    traits:
+    - formal_domains
+    - court_recognition
+    - domain_defense
+    - trespassing_consequences
+    significance: Domain rights provide structure and prevent chaos
+    mechanics: Entering another's domain requires permission or risks conflict
+    erotic_implications: Territory control, invasion/invitation dynamics, domain as
+      intimate space
+divergences:
+- SST formalizes informal BST territories

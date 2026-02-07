@@ -1,0 +1,28 @@
+id: blood_oath
+name: Blood Oath
+category: society
+sub_category: bonds
+short_description: Magically binding promises sealed with blood
+related_characters: []
+media_urls: []
+versions:
+  bst:
+    description: Blood oaths are not canonical in BST
+    traits: []
+    abilities: []
+    weaknesses: []
+    significance: Not present in BST
+    source_episodes: []
+  sst:
+    description: SST blood oaths are mystically enforced promises that bind vampires
+      to their word
+    traits:
+    - magical_binding
+    - blood_seal
+    - oath_enforcement
+    - painful_violation
+    significance: Blood oaths enable trust and alliances between vampires
+    mechanics: Breaking an oath causes severe pain and possible death
+    erotic_implications: Intimate trust bonds, blood sharing rituals, sacred promises
+divergences:
+- SST adds blood oath system entirely

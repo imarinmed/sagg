@@ -1,0 +1,37 @@
+id: emotional_manipulation
+name: Emotional Manipulation
+category: psychology
+sub_category: emotions
+short_description: Supernatural influence over emotions
+related_characters:
+- saga
+media_urls: []
+versions:
+  bst:
+    description: BST vampires exhibit natural charisma and influence
+    traits:
+    - natural_charisma
+    - persuasive_presence
+    - emotional_awareness
+    abilities:
+    - charm
+    - persuade
+    - read_emotions
+    weaknesses: []
+    significance: Charisma helps vampires navigate human society
+    source_episodes:
+    - s01e01
+    - s01e03
+  sst:
+    description: SST vampires can supernaturally manipulate emotions, inducing fear,
+      desire, or calm
+    traits:
+    - fear_projection
+    - desire_inducement
+    - emotional_control
+    - empathic_sense
+    significance: Emotional powers provide social control and feeding advantage
+    mechanics: Can project emotions, calm victims, inspire terror or lust
+    erotic_implications: Arousal control, fear/desire interplay, emotional intimacy
+      manipulation
+divergences: []

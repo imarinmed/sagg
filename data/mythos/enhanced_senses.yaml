@@ -1,0 +1,42 @@
+id: enhanced_senses
+name: Enhanced Senses
+category: biology
+sub_category: senses
+short_description: Supernatural heightening of sensory perception
+related_characters:
+- saga
+- boris
+media_urls: []
+versions:
+  bst:
+    description: Vampires in BST exhibit heightened senses including superior night
+      vision and acute hearing
+    traits:
+    - superior_night_vision
+    - acute_hearing
+    - enhanced_smell
+    - sensory_sensitivity
+    abilities:
+    - detect_blood
+    - hear_heartbeats
+    - see_in_darkness
+    weaknesses:
+    - sensory_overload
+    - bright_light_sensitivity
+    significance: Enhanced senses make vampires effective hunters and aware of their
+      surroundings
+    source_episodes:
+    - s01e01
+    - s01e02
+  sst:
+    description: SST vampires possess supernatural sensory abilities beyond human
+      limits, including blood scent tracking
+    traits:
+    - blood_sense
+    - supernatural_awareness
+    - sensory_overload_control
+    significance: Sensory powers enable tracking prey and detecting threats
+    mechanics: Can track blood scent, detect emotions, sense other vampires
+    erotic_implications: Heightened senses intensify physical experiences and emotional
+      connections
+divergences: []

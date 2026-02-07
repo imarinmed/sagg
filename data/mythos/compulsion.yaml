@@ -1,0 +1,41 @@
+id: compulsion
+name: Compulsion
+category: supernatural
+sub_category: powers
+short_description: Mind control through eye contact and voice commands
+related_characters:
+- saga
+- boris
+media_urls: []
+versions:
+  bst:
+    description: Vampires can compel humans with sustained eye contact and direct
+      commands
+    traits:
+    - gaze_control
+    - voice_command
+    - temporary_influence
+    abilities:
+    - command_humans
+    - erase_memories
+    - suggest_actions
+    weaknesses:
+    - requires_eye_contact
+    - limited_duration
+    - strong_willed_resist
+    significance: Compulsion enables vampires to control witnesses and prey
+    source_episodes:
+    - s01e02
+    - s01e03
+  sst:
+    description: SST compulsion includes deep mind control, memory manipulation, and
+      emotional influence
+    traits:
+    - deep_control
+    - memory_editing
+    - emotional_manipulation
+    - mass_compulsion
+    significance: Advanced compulsion powers give vampires social dominance
+    mechanics: Can rewrite memories, plant suggestions, control multiple targets
+    erotic_implications: Consent dynamics, power exchange, trust and control themes
+divergences: []

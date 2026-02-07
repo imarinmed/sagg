@@ -1,0 +1,39 @@
+id: identity_crisis
+name: Identity Crisis
+category: psychology
+sub_category: morality
+short_description: Loss of human identity and moral struggle
+related_characters:
+- saga
+media_urls: []
+versions:
+  bst:
+    description: Newly turned vampires struggle with their transformation and loss
+      of humanity
+    traits:
+    - identity_confusion
+    - moral_struggle
+    - human_nostalgia
+    - vampire_acceptance
+    abilities: []
+    weaknesses:
+    - emotional_vulnerability
+    - decision_paralysis
+    significance: Identity crisis drives character development and moral choices
+    source_episodes:
+    - s01e01
+    - s01e02
+    - s01e03
+  sst:
+    description: SST explores the gradual erosion of human identity and embracing
+      vampire nature
+    traits:
+    - identity_loss
+    - predator_acceptance
+    - moral_decay
+    - new_self_creation
+    significance: Identity crisis is central to character arcs and moral choices
+    mechanics: Players track Humanity and Beast stats, face moral dilemmas
+    erotic_implications: Loss of inhibitions, embracing dark desires, identity through
+      intimacy
+divergences: []

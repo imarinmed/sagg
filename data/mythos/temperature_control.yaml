@@ -1,0 +1,35 @@
+id: temperature_control
+name: Temperature Control
+category: biology
+sub_category: physiology
+short_description: Vampire cold physiology and temperature regulation
+related_characters:
+- saga
+- boris
+media_urls: []
+versions:
+  bst:
+    description: Vampires have cold skin and lack natural body heat
+    traits:
+    - cold_skin
+    - no_body_heat
+    - room_temperature_body
+    abilities:
+    - tolerate_cold
+    - no_hypothermia
+    weaknesses:
+    - detectable_coldness
+    significance: Cold physiology is a distinguishing feature of vampirism
+    source_episodes:
+    - s01e01
+  sst:
+    description: SST vampires can regulate their body temperature, projecting cold
+      auras or mimicking warmth
+    traits:
+    - temperature_manipulation
+    - cold_aura
+    - warmth_mimicry
+    significance: Temperature control allows vampires to blend in or intimidate
+    mechanics: Can adjust skin temperature at will, project freezing touch
+    erotic_implications: Temperature play, cold touch as sensory element
+divergences: []

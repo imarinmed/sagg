@@ -1,0 +1,33 @@
+id: vampire_courts
+name: Vampire Courts
+category: society
+sub_category: hierarchy
+short_description: Formal governing structures and political systems
+related_characters: []
+media_urls: []
+versions:
+  bst:
+    description: Vampire governance is loosely implied through elder authority
+    traits:
+    - informal_hierarchy
+    - elder_councils
+    - territorial_agreements
+    abilities: []
+    weaknesses: []
+    significance: Social structure maintains order among vampires
+    source_episodes:
+    - s01e04
+  sst:
+    description: SST features elaborate vampire courts with formal titles, political
+      intrigue, and power struggles
+    traits:
+    - royal_courts
+    - prince_authority
+    - court_positions
+    - political_games
+    significance: Courts provide structure, drama, and social dynamics
+    mechanics: Players can hold court positions, engage in politics, gain status
+    erotic_implications: Power dynamics, court seduction, political alliances through
+      intimacy
+divergences:
+- SST formalizes the loose hierarchy into structured courts
