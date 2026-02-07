@@ -98,6 +98,20 @@ export interface MythosGraphData {
   categories: string[];
 }
 
+export interface Preset {
+  id: string;
+  name: string;
+  description: string;
+  config: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface PresetListResponse {
+  total: number;
+  presets: Preset[];
+}
+
 export interface GraphNode {
   id: string;
   node_type: "episode" | "character" | "mythos";
@@ -324,6 +338,7 @@ export interface ArtifactData {
   file_path: string;
   file_size_bytes?: number | null;
   metadata_json?: Record<string, any> | null;
+  tags?: Record<string, string[]>;
 }
 
 export interface MediaJobResponse {
@@ -434,7 +449,7 @@ function buildQueryString(params: Record<string, any>): string {
 
 async function fetchApiWithBody<T>(
   endpoint: string,
-  method: "POST" | "PUT" | "PATCH" = "POST",
+  method: "POST" | "PUT" | "PATCH" | "DELETE" = "POST",
   body?: any
 ): Promise<T> {
   const primaryUrl = joinApiUrl(endpoint);
@@ -573,5 +588,36 @@ export const api = {
     getArtifacts: (jobId: string) =>
       fetchApi<ArtifactListResponse>(`/api/media-lab/jobs/${jobId}/artifacts`),
     getCapabilities: () => fetchApi<MediaCapabilitiesResponse>("/api/media-lab/capabilities"),
+    // Preset endpoints
+    listPresets: () => fetchApi<PresetListResponse>("/api/media-lab/presets"),
+    savePreset: (name: string, description: string, config: Record<string, any>) =>
+      fetchApiWithBody<Preset>("/api/media-lab/presets", "POST", { name, description, config }),
+    loadPreset: (presetId: string) => fetchApi<Preset>(`/api/media-lab/presets/${presetId}`),
+    deletePreset: (presetId: string) =>
+      fetchApiWithBody<{ message: string }>(`/api/media-lab/presets/${presetId}`, "DELETE", null),
+    // Artifact tagging endpoints
+    getArtifactTags: (artifactId: string) =>
+      fetchApi<{ artifact_id: string; tags: Record<string, string[]> }>(
+        `/api/media-lab/artifacts/${artifactId}/tags`
+      ),
+    updateArtifactTags: (artifactId: string, tags: Record<string, string[]>) =>
+      fetchApiWithBody<{ artifact_id: string; tags: Record<string, string[]>; message: string }>(
+        `/api/media-lab/artifacts/${artifactId}/tags`,
+        "PUT",
+        { tags }
+      ),
+    // Related images endpoints
+    getCharacterRelatedImages: (characterId: string) =>
+      fetchApi<{ character_id: string; artifacts: ArtifactData[]; count: number }>(
+        `/api/media-lab/characters/${characterId}/related-images`
+      ),
+    getEpisodeRelatedImages: (episodeId: string) =>
+      fetchApi<{ episode_id: string; artifacts: ArtifactData[]; count: number }>(
+        `/api/media-lab/episodes/${episodeId}/related-images`
+      ),
+    getMythosRelatedImages: (mythosId: string) =>
+      fetchApi<{ mythos_id: string; artifacts: ArtifactData[]; count: number }>(
+        `/api/media-lab/mythos/${mythosId}/related-images`
+      ),
   },
 };

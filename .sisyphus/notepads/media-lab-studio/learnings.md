@@ -1089,3 +1089,9 @@ currentAspectRatioDisplay → "1.78" (for 16:9)
 - Add resolution validation feedback in UI
 - Implement memory warnings for large resolutions
 - Add custom aspect ratio input (not just presets)
+
+## HeroUI v3 Components (BatchGrid)
+- `Button`: Does not support `startContent` or `color` props directly in v3 beta. Use `className` for styling and put icons in children.
+- `Card`: Does not support `isPressable` or `onPress`. Use `onClick`.
+- `Checkbox`: `onChange` callback receives the boolean value directly, not an event object. Use `className` instead of `classNames`.
+- `Image`: Not exported from `@heroui/react`. Use `img` or `next/image`.

@@ -1,11 +1,15 @@
 from datetime import UTC, datetime
 from uuid import uuid4
+from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Query
+from pydantic import BaseModel, Field
 
 from ..media_lab.executor import JobExecutor
+from ..media_lab.presets import get_preset_manager
 from ..media_lab.registry import ModelRegistry
 from ..media_lab.workbench import Workbench
+from ..media_lab.civitai import get_civitai_client
 from ..models import (
     ArtifactData,
     ArtifactListResponse,
@@ -17,6 +21,7 @@ from ..models import (
     MediaJobSubmitRequest,
     ModelsListResponse,
     PipelineExecutionResponse,
+    PresetRequest,
     RetryJobRequest,
 )
 
@@ -339,3 +344,268 @@ async def list_models(model_type: str | None = Query(None, description="Filter b
         total=len(models),
         models=models,
     )
+
+
+# Preset endpoints
+@router.get("/presets")
+async def list_presets():
+    """List all saved presets.
+    
+    Returns:
+        List of all presets with metadata (id, name, description, created_at, updated_at)
+    """
+    manager = get_preset_manager()
+    presets = manager.list_presets()
+    return {
+        "total": len(presets),
+        "presets": [p.to_dict() for p in presets],
+    }
+
+
+@router.post("/presets")
+async def save_preset(request: PresetRequest):
+    """Create and save a new preset.
+    
+    Args:
+        request: PresetRequest with name, description, and config
+        
+    Returns:
+        Created Preset with generated id and timestamps
+    """
+    try:
+        manager = get_preset_manager()
+        preset = manager.save_preset(request.name, request.description, request.config)
+        return preset.to_dict()
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Failed to save preset: {str(e)}")
+
+
+@router.get("/presets/{preset_id}")
+async def get_preset(preset_id: str):
+    """Get a specific preset by ID.
+    
+    Args:
+        preset_id: ID of preset to retrieve
+        
+    Returns:
+        Preset object with configuration
+    """
+    try:
+        manager = get_preset_manager()
+        preset = manager.load_preset(preset_id)
+        return preset.to_dict()
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail=f"Preset {preset_id} not found")
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Failed to load preset: {str(e)}")
+
+
+@router.delete("/presets/{preset_id}")
+async def delete_preset(preset_id: str):
+    """Delete a preset.
+    
+    Args:
+        preset_id: ID of preset to delete
+        
+    Returns:
+        Success message
+    """
+    try:
+        manager = get_preset_manager()
+        deleted = manager.delete_preset(preset_id)
+        if not deleted:
+            raise HTTPException(status_code=404, detail=f"Preset {preset_id} not found")
+        return {"message": f"Preset {preset_id} deleted"}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Failed to delete preset: {str(e)}")
+
+
+# Artifact Tagging Endpoints
+
+class ArtifactTagsRequest(BaseModel):
+    """Request for updating artifact tags"""
+    tags: dict[str, list[str]] = Field(
+        default_factory=dict,
+        description="Tags mapping entity types to IDs: {character: [id1, id2], episode: [id1], mythos: [id1]}"
+    )
+
+
+@router.get("/artifacts/{artifact_id}/tags")
+async def get_artifact_tags(artifact_id: str):
+    """Get tags for an artifact.
+    
+    Args:
+        artifact_id: ID of artifact to retrieve tags for
+        
+    Returns:
+        Dict with artifact_id and tags
+    """
+    # TODO: Load artifact from storage and return tags
+    # For now, return empty tags
+    return {"artifact_id": artifact_id, "tags": {}}
+
+
+@router.put("/artifacts/{artifact_id}/tags")
+async def update_artifact_tags(artifact_id: str, request: ArtifactTagsRequest):
+    """Update tags for an artifact.
+    
+    Args:
+        artifact_id: ID of artifact to update tags for
+        request: Tags to set
+        
+    Returns:
+        Updated artifact with tags
+    """
+    # TODO: Load artifact, update tags, save back to storage
+    # For now, return success message
+    return {
+        "artifact_id": artifact_id,
+        "tags": request.tags,
+        "message": "Tags updated successfully"
+    }
+
+
+# Related Images Endpoints
+
+@router.get("/characters/{character_id}/related-images")
+async def get_character_related_images(character_id: str):
+    """Get all artifacts tagged with a character.
+    
+    Args:
+        character_id: ID of character to find related images for
+        
+    Returns:
+        List of artifacts tagged with this character
+    """
+    related = []
+    for job_id, artifacts in _artifacts_store.items():
+        for artifact_dict in artifacts:
+            artifact = ArtifactData(**artifact_dict)
+            if artifact.tags and "character" in artifact.tags:
+                if character_id in artifact.tags["character"]:
+                    related.append(artifact)
+    return {"character_id": character_id, "artifacts": related, "count": len(related)}
+
+
+@router.get("/episodes/{episode_id}/related-images")
+async def get_episode_related_images(episode_id: str):
+    """Get all artifacts tagged with an episode.
+    
+    Args:
+        episode_id: ID of episode to find related images for
+        
+    Returns:
+        List of artifacts tagged with this episode
+    """
+    related = []
+    for job_id, artifacts in _artifacts_store.items():
+        for artifact_dict in artifacts:
+            artifact = ArtifactData(**artifact_dict)
+            if artifact.tags and "episode" in artifact.tags:
+                if episode_id in artifact.tags["episode"]:
+                    related.append(artifact)
+    return {"episode_id": episode_id, "artifacts": related, "count": len(related)}
+
+
+@router.get("/mythos/{mythos_id}/related-images")
+async def get_mythos_related_images(mythos_id: str):
+    """Get all artifacts tagged with a mythos element.
+    
+    Args:
+        mythos_id: ID of mythos element to find related images for
+        
+    Returns:
+        List of artifacts tagged with this mythos element
+    """
+    related = []
+    for job_id, artifacts in _artifacts_store.items():
+        for artifact_dict in artifacts:
+            artifact = ArtifactData(**artifact_dict)
+            if artifact.tags and "mythos" in artifact.tags:
+                if mythos_id in artifact.tags["mythos"]:
+                    related.append(artifact)
+    return {"mythos_id": mythos_id, "artifacts": related, "count": len(related)}
+
+# CivitAI Model Remote Endpoints
+
+@router.get("/models/remote/civitai")
+async def search_civitai_models(
+    query: str = Query(..., description="Search query for models"),
+    model_type: str = Query("LORA", description="Model type (LORA, Checkpoint, etc.)"),
+    nsfw: bool = Query(False, description="Include NSFW models"),
+    limit: int = Query(10, ge=1, le=100, description="Max results to return")
+):
+    """Search CivitAI for models matching query.
+    
+    Args:
+        query: Search query string
+        model_type: Type of model to search for
+        nsfw: Whether to include NSFW models
+        limit: Maximum results (1-100)
+        
+    Returns:
+        List of model metadata from CivitAI
+    """
+    try:
+        client = get_civitai_client()
+        results = client.search_models(query, model_type=model_type, nsfw=nsfw, limit=limit)
+        return {
+            "query": query,
+            "type": model_type,
+            "results": results,
+            "count": len(results)
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"CivitAI search failed: {str(e)}")
+
+
+@router.get("/models/remote/civitai/{version_id}")
+async def get_civitai_model_version(version_id: str):
+    """Get details for a specific CivitAI model version.
+    
+    Args:
+        version_id: CivitAI model version ID
+        
+    Returns:
+        Model version details including download URL
+    """
+    try:
+        client = get_civitai_client()
+        version = client.get_model_version(version_id)
+        return version
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get model version: {str(e)}")
+
+
+class CivitAIDownloadRequest(BaseModel):
+    """Request to download a CivitAI model."""
+    download_url: str = Field(..., description="Direct download URL for the model")
+    filename: str = Field(..., description="Filename to save as (e.g., model.safetensors)")
+
+
+@router.post("/models/remote/civitai/download")
+async def download_civitai_model(request: CivitAIDownloadRequest):
+    """Download a model from CivitAI.
+    
+    Args:
+        request: Download request with URL and filename
+        
+    Returns:
+        Download status with file path
+    """
+    try:
+        # Save to data/models/civitai directory
+        save_path = Path(__file__).parent.parent.parent.parent / "data" / "models" / "civitai" / request.filename
+        save_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        client = get_civitai_client()
+        final_path = client.download_model(request.download_url, save_path)
+        
+        return {
+            "status": "success",
+            "filename": request.filename,
+            "path": str(final_path),
+            "size": final_path.stat().st_size
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Download failed: {str(e)}")

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+import { NarrativeToggle } from "./NarrativeToggle";
 
 const navItems = [
   { href: "/episodes", label: "Episodes" },
@@ -203,6 +204,17 @@ export function Navigation() {
                 </defs>
               </svg>
             </Link>
+
+            {/* Divider */}
+            <div
+              className="w-px h-6"
+              style={{
+                background:
+                  "linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.3), transparent)",
+              }}
+            />
+
+            <NarrativeToggle />
 
             {/* Divider */}
             <div

@@ -107,7 +107,7 @@ class Workbench:
         Lifecycle:
         1. Setup pipeline from config
         2. Initialize context with input data
-        3. Run pipeline stages sequentially
+        3. Run pipeline stages sequentially (batch_size times if batch_size > 1)
         4. Return results and artifacts
 
         Args:
@@ -118,28 +118,27 @@ class Workbench:
             Dictionary with:
                 - 'success': bool, whether execution succeeded
                 - 'data': final context.data
-                - 'artifacts': list of artifact paths
+                - 'artifacts': list of artifact paths (multiple if batch_size > 1)
                 - 'metadata': stage metadata
                 - 'error': error message if failed
 
         Raises:
             ValueError: If pipeline setup fails or execution encounters error.
         """
-        logger.info("Starting execution for job_id=%s", job_id)
+        logger.info("Starting execution for job_id=%s, batch_size=%d", job_id, self.config.batch_size)
 
         try:
             # Setup
             await self.setup()
 
-            # Initialize context
+            # Initialize base context
             self.context = PipelineContext()
             self.context.set("job_id", job_id)
 
             # Handle seed: generate random if -1
-            seed = self.config.seed
-            if seed == -1:
-                seed = random.randint(0, 2**32 - 1)
-            self.context.set("seed", seed)
+            base_seed = self.config.seed
+            if base_seed == -1:
+                base_seed = random.randint(0, 2**32 - 1)
 
             # Set sampler and scheduler
             self.context.set("sampler", self.config.sampler)
@@ -152,32 +151,77 @@ class Workbench:
 
             # Merge input data and pipeline parameters
             merged_data = {**self.config.parameters, **input_data}
-            for key, value in merged_data.items():
-                self.context.set(key, value)
 
-            logger.debug("Context initialized with keys: %s", list(self.context.data.keys()))
+            # Execute pipeline batch_size times
+            batch_artifacts = []
+            for batch_idx in range(self.config.batch_size):
+                logger.info("Executing batch %d/%d for job_id=%s", batch_idx + 1, self.config.batch_size, job_id)
 
-            # Execute pipeline
-            if self.pipeline is None:
-                raise ValueError("Pipeline not initialized")
+                # Create fresh context for each batch iteration
+                self.context = PipelineContext()
+                self.context.set("job_id", job_id)
+                # Add batch index to job_id for unique artifact paths
+                self.context.set("batch_idx", batch_idx)
 
-            logger.info("Executing pipeline for job_id=%s", job_id)
-            self.context = await self.pipeline.execute(self.context)
-            logger.info("Pipeline execution completed for job_id=%s", job_id)
+                # Calculate seed for this iteration
+                if self.config.seed == -1:
+                    # If seed was random, generate new random seed each iteration
+                    iteration_seed = random.randint(0, 2**32 - 1)
+                else:
+                    # If seed was fixed, increment it for each iteration
+                    iteration_seed = base_seed + batch_idx
 
-            # Store checkpoints: map stage index to artifact path
-            if job_id and self.context.artifacts:
+                self.context.set("seed", iteration_seed)
+                self.context.set("sampler", self.config.sampler)
+                self.context.set("scheduler", self.config.scheduler)
+
+                if self.config.source_image_path:
+                    self.context.set("source_image_path", self.config.source_image_path)
+                self.context.set("strength", self.config.strength)
+
+                for key, value in merged_data.items():
+                    self.context.set(key, value)
+
+                logger.debug("Context batch %d initialized with seed=%d", batch_idx, iteration_seed)
+
+                # Execute pipeline
+                if self.pipeline is None:
+                    raise ValueError("Pipeline not initialized")
+
+                logger.info("Executing pipeline for batch %d, job_id=%s", batch_idx, job_id)
+                self.context = await self.pipeline.execute(self.context)
+
+                if not self.context.error:
+                    logger.info("Pipeline execution completed for batch %d", batch_idx)
+                    # Collect artifacts from this batch iteration
+                    batch_artifacts.extend(self.context.artifacts)
+                else:
+                    logger.error("Pipeline batch %d failed: %s", batch_idx, self.context.error)
+                    # Continue with next iteration even if one fails (partial success)
+
+                # Clear CUDA cache between iterations if available
+                try:
+                    import torch
+                    torch.cuda.empty_cache()
+                    logger.debug("CUDA cache cleared after batch %d", batch_idx)
+                except Exception:
+                    pass  # Not using CUDA or torch not available
+
+            # Store checkpoints: map stage index to artifact paths
+            if job_id and batch_artifacts:
                 if job_id not in self.checkpoint_artifacts:
                     self.checkpoint_artifacts[job_id] = {}
                 
-                # Map each artifact to its corresponding stage index
-                for stage_idx, artifact_path in enumerate(self.context.artifacts):
+                for stage_idx, artifact_path in enumerate(batch_artifacts):
                     self.checkpoint_artifacts[job_id][stage_idx] = artifact_path
-                    logger.debug("Stored checkpoint for job_id=%s, stage_index=%d: %s",
+                    logger.debug("Stored checkpoint for job_id=%s, artifact_index=%d: %s",
                                job_id, stage_idx, artifact_path)
 
+            # Set final artifacts list
+            self.context.artifacts = batch_artifacts
+
             # Teardown and collect results
-            return self._teardown(used_seed=seed)
+            return self._teardown(used_seed=base_seed if self.config.seed != -1 else None)
 
         except Exception as e:
             logger.error("Execution failed for job_id=%s: %s", job_id, str(e))

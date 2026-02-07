@@ -25,6 +25,7 @@ export interface GenerationParams {
   seed: number;
   loras: LoRAConfig[];
   instruction?: string;
+  batchSize: number;
 }
 
 interface ParameterSidebarProps {
@@ -60,6 +61,7 @@ export function ParameterSidebar({ onGenerate, isGenerating }: ParameterSidebarP
   const [aspectRatioLocked, setAspectRatioLocked] = useState(false);
   const [baseAspectRatio, setBaseAspectRatio] = useState(1); // width / height
   const [instruction, setInstruction] = useState("");
+  const [batchSize, setBatchSize] = useState(1);
 
   // Load last used seed from localStorage on mount
   React.useEffect(() => {
@@ -91,6 +93,7 @@ export function ParameterSidebar({ onGenerate, isGenerating }: ParameterSidebarP
       seed: generatedSeed,
       loras,
       instruction: instruction || undefined,
+      batchSize,
     });
   };
 
@@ -362,6 +365,22 @@ export function ParameterSidebar({ onGenerate, isGenerating }: ParameterSidebarP
           </div>
         </div>
       )}
+
+      {/* Batch Size */}
+      <div className="flex flex-col gap-1">
+        <div className="flex justify-between">
+          <Label>Batch Size</Label>
+          <span className="text-sm text-default-500">{batchSize}</span>
+        </div>
+        <Slider
+          value={batchSize}
+          onChange={(v) => setBatchSize(Array.isArray(v) ? v[0] : v)}
+          minValue={1}
+          maxValue={8}
+          step={1}
+        />
+        <p className="text-xs text-default-400">Generate {batchSize} image{batchSize !== 1 ? 's' : ''} at once</p>
+      </div>
 
       {/* LoRAs */}
       <LoRASelector onUpdate={setLoras} />

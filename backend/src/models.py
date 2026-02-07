@@ -393,6 +393,10 @@ class ArtifactData(BaseModel):
     file_path: str
     file_size_bytes: int | None = None
     metadata_json: dict | None = None
+    tags: dict[str, list[str]] = Field(
+        default_factory=dict,
+        description="Tags mapping entity types to IDs: {character: [id1, id2], episode: [id1], mythos: [id1]}"
+    )
 
 
 class MediaJobResponse(BaseModel):
@@ -459,6 +463,7 @@ class PipelineConfig(BaseModel):
     parameters: dict = Field(default_factory=dict)
     loras: list[LoRAConfig] = Field(default_factory=list)
     seed: int = Field(default=-1, ge=-1)
+    batch_size: int = Field(default=1, ge=1, le=8)  # NEW: batch generation support
     width: int | None = Field(default=None, ge=256, le=2048)
     height: int | None = Field(default=None, ge=256, le=2048)
     source_image_path: str | None = None
@@ -535,3 +540,11 @@ class ModelsListResponse(BaseModel):
 
     total: int
     models: list[ModelInfo]
+
+
+class PresetRequest(BaseModel):
+    """Request to create a new preset"""
+
+    name: str = Field(..., min_length=1, max_length=255)
+    description: str = Field(default="", max_length=1000)
+    config: dict = Field(..., description="PipelineConfig as dictionary")

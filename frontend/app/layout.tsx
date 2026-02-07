@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Layout } from "@/components/Layout"
 import { THEME_SCRIPT } from "@/lib/theme"
+import { NarrativeProvider } from "@/lib/narrative-context"
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
 
 const cormorant = Cormorant_Garamond({
@@ -50,7 +51,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} antialiased bg-pattern bg-overlay`}>
-        <Layout>{children}</Layout>
+        <NarrativeProvider>
+          <Layout>{children}</Layout>
+        </NarrativeProvider>
       </body>
     </html>
   )

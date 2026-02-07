@@ -194,7 +194,12 @@ class TextToImageStage(PipelineStage):
             "seed": context.get("seed", 42),
         }
 
-        image_path = f"artifacts/{context.get('job_id', 'unknown')}/generated.png"
+        job_id = context.get("job_id", "unknown")
+        batch_idx = context.get("batch_idx", None)
+        if batch_idx is not None:
+            image_path = f"artifacts/{job_id}/batch_{batch_idx}/generated.png"
+        else:
+            image_path = f"artifacts/{job_id}/generated.png"
 
         context.set("image", image_data)
         context.set("image_path", image_path)
