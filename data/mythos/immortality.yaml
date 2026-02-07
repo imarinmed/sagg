@@ -1,6 +1,7 @@
 id: immortality
 name: Vampire Immortality
 category: biology
+sub_category: physiology
 short_description: The ageless existence and eternal lifespan of vampires
 related_characters:
 - saga

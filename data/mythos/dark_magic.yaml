@@ -1,6 +1,7 @@
 id: dark_magic
 name: Dark Magic
 category: supernatural
+sub_category: dark_arts
 short_description: The practice of supernatural rituals and spell-craft among vampire kind
 related_characters:
 - alfred

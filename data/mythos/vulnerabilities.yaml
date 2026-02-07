@@ -1,6 +1,7 @@
 id: vulnerabilities
 name: Vampire Vulnerabilities
 category: biology
+sub_category: vulnerabilities
 short_description: The specific weaknesses and limitations that can harm or kill vampires
 related_characters:
 - saga

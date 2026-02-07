@@ -248,7 +248,6 @@ def load_mythos_from_yaml() -> dict:
                 id=mythos_id,
                 name=mythos_data.get("name", ""),
                 category=mythos_data.get("category", "General"),
-                sub_category=mythos_data.get("sub_category"),
                 description=canonical.get("description"),
                 short_description=mythos_data.get("short_description"),
                 related_episodes=related_episodes,

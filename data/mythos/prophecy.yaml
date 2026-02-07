@@ -1,6 +1,7 @@
 id: prophecy
 name: Vampire Prophecy
 category: supernatural
+sub_category: prophecy
 short_description: The ability of certain vampires to perceive possible futures or receive prophetic visions
 related_characters:
 - desideria

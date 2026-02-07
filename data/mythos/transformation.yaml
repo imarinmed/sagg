@@ -1,6 +1,7 @@
 id: transformation
 name: Vampire Transformation
 category: biology
+sub_category: transformation
 short_description: The irreversible process of becoming a vampire through blood exchange
 related_characters:
 - boris

@@ -1,6 +1,7 @@
 id: daywalking
 name: Daywalking
 category: biology
+sub_category: powers
 short_description: The rare ability to function during daylight hours without weakness
 related_characters:
 - saga

@@ -1,0 +1,84 @@
+{
+  "connections": [
+    {
+      "id": "physiology_to_feeding",
+      "from_element_id": "vampire_physiology",
+      "to_element_id": "feeding",
+      "connection_type": "explains",
+      "description": "Vampire physiology creates the fundamental need for blood feeding",
+      "strength": 5
+    },
+    {
+      "id": "physiology_to_transformation",
+      "from_element_id": "vampire_physiology",
+      "to_element_id": "transformation",
+      "connection_type": "prerequisite",
+      "description": "Understanding vampire physiology is essential to understanding the transformation process",
+      "strength": 4
+    },
+    {
+      "id": "physiology_to_daywalking",
+      "from_element_id": "vampire_physiology",
+      "to_element_id": "daywalking",
+      "connection_type": "related",
+      "description": "Daywalking abilities are a rare variation in vampire physiology",
+      "strength": 3
+    },
+    {
+      "id": "blood_bond_to_feeding",
+      "from_element_id": "blood_bond",
+      "to_element_id": "feeding",
+      "connection_type": "related",
+      "description": "Blood bonds can form through repeated feeding from the same source",
+      "strength": 4
+    },
+    {
+      "id": "blood_bond_to_family",
+      "from_element_id": "blood_bond",
+      "to_element_id": "family_hierarchy",
+      "connection_type": "explains",
+      "description": "Blood bonds form the mystical foundation of vampire family structures",
+      "strength": 5
+    },
+    {
+      "id": "transformation_to_family",
+      "from_element_id": "transformation",
+      "to_element_id": "family_hierarchy",
+      "connection_type": "evolves_to",
+      "description": "Transformation creates new members who enter the family hierarchy",
+      "strength": 4
+    },
+    {
+      "id": "feeding_to_human_relations",
+      "from_element_id": "feeding",
+      "to_element_id": "vampire_human_relations",
+      "connection_type": "related",
+      "description": "Feeding practices directly impact vampire-human relationships and power dynamics",
+      "strength": 5
+    },
+    {
+      "id": "family_to_human_relations",
+      "from_element_id": "family_hierarchy",
+      "to_element_id": "vampire_human_relations",
+      "connection_type": "related",
+      "description": "Family hierarchy extends to include human servants and thralls",
+      "strength": 3
+    },
+    {
+      "id": "blood_bond_to_transformation",
+      "from_element_id": "blood_bond",
+      "to_element_id": "transformation",
+      "connection_type": "related",
+      "description": "Transformation creates a permanent blood bond between sire and progeny",
+      "strength": 4
+    },
+    {
+      "id": "daywalking_to_human_relations",
+      "from_element_id": "daywalking",
+      "to_element_id": "vampire_human_relations",
+      "connection_type": "related",
+      "description": "Daywalkers can interact with humans in ways other vampires cannot",
+      "strength": 3
+    }
+  ]
+}

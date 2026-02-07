@@ -1,6 +1,7 @@
 id: predator_instinct
 name: Predator Instinct
 category: psychology
+sub_category: instincts
 short_description: The deep psychological transformation from prey animal to apex predator
 related_characters:
 - boris

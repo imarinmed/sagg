@@ -1,6 +1,7 @@
 id: vampire_physiology
 name: Vampire Physiology
 category: biology
+sub_category: physiology
 short_description: Enhanced physical abilities and biological adaptations that define
   vampire existence
 related_characters:

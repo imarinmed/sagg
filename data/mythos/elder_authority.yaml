@@ -1,6 +1,7 @@
 id: elder_authority
 name: Elder Authority
 category: rules
+sub_category: authority
 short_description: The hierarchical power structure where ancient vampires rule over younger ones
 related_characters:
 - alfred

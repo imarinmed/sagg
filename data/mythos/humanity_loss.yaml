@@ -1,6 +1,7 @@
 id: humanity_loss
 name: Humanity Loss
 category: psychology
+sub_category: morality
 short_description: The gradual erosion of human empathy and morality as vampires age
 related_characters:
 - alfred

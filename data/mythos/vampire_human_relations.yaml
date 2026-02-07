@@ -1,6 +1,7 @@
 id: vampire_human_relations
 name: Vampire-Human Relations
 category: society
+sub_category: bonds
 short_description: The complex dynamics between predator and prey in coexistent societies
 related_characters:
 - saga

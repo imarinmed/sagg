@@ -1,6 +1,7 @@
 id: maker_progeny_bonds
 name: Maker-Progeny Bonds
 category: society
+sub_category: bonds
 short_description: The profound supernatural and social connection between a vampire and those they create
 related_characters:
 - saga

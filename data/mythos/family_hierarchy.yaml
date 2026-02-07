@@ -1,6 +1,7 @@
 id: family_hierarchy
 name: Vampire Family Hierarchy
 category: society
+sub_category: hierarchy
 short_description: The rigid social structure that governs vampire families and lineages
 related_characters:
 - boris

@@ -1,6 +1,7 @@
 id: mind_control
 name: Vampire Mind Control
 category: supernatural
+sub_category: powers
 short_description: The ability to influence, manipulate, or dominate the thoughts and actions of others
 related_characters:
 - boris

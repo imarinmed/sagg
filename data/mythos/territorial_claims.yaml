@@ -1,6 +1,7 @@
 id: territorial_claims
 name: Territorial Claims
 category: society
+sub_category: territory
 short_description: The system of domain ownership and hunting rights that structures vampire geography
 related_characters:
 - boris

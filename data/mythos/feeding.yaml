@@ -1,6 +1,7 @@
 id: feeding
 name: Feeding
 category: biology
+sub_category: physiology
 short_description: The primal act of blood consumption that sustains vampire existence
 related_characters:
 - saga

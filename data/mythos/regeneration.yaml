@@ -1,6 +1,7 @@
 id: regeneration
 name: Vampire Regeneration
 category: biology
+sub_category: transformation
 short_description: The ability of vampires to heal from injuries at an accelerated rate
 related_characters:
 - saga

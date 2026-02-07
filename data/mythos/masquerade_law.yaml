@@ -1,6 +1,7 @@
 id: masquerade_law
 name: The Masquerade Law
 category: rules
+sub_category: masquerade
 short_description: The fundamental vampire law requiring secrecy about vampiric existence from humanity
 related_characters:
 - alfred
