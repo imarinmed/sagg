@@ -408,3 +408,302 @@ Response:
 - Connect WebSocket for real-time progress updates
 - Add model scanning/discovery endpoint
 - Implement artifact streaming/download endpoints
+
+## T6: DetailerStage Implementation (COMPLETED)
+
+### Architecture Implemented
+
+1. **DetailerStage**: Fine detail enhancement with mask support
+   - Input: `image` dict, optional `image_path`, optional `mask`, optional `roi`
+   - Output: enhanced `image` dict, `detail_path` artifact, metadata
+   - Two modes: **inpainting** (with mask) and **img2img** (without mask)
+
+2. **Key Features**:
+   - **Mask Support**: Inpainting mode when mask provided, img2img otherwise
+   - **ROI Detection**: Auto center-crop heuristic with configurable ratio (0.0-1.0)
+   - **ROI Cropping**: Extract region of interest, process, composite back
+   - **Mask Blending**: Optional smooth blend when compositing ROI
+   - **Mock Diffusers**: Gaussian blur for inpainting, unsharp mask for img2img
+   - **Flexible Input**: Load from file path OR use mock image from dimensions
+
+3. **DetailerStage Class**:
+   ```python
+   DetailerStage(
+       model_name="stable-diffusion-inpaint-v1",
+       strength=0.75,          # img2img denoising strength
+       guidance_scale=7.5,     # classifier-free guidance
+       center_crop_ratio=0.8   # ROI auto-detection ratio
+   )
+   ```
+
+4. **Methods**:
+   - `detect_roi()`: Center-crop heuristic for ROI detection
+   - `crop_roi()`: Extract ROI from image
+   - `composite_roi()`: Blend processed ROI back into image
+   - `load_image_file()`: Load PNG/JPEG from disk
+   - `execute_inpainting()`: Mock inpainting with Gaussian blur
+   - `execute_img2img()`: Mock img2img with unsharp mask
+   - `validate_input()`: Check image exists in context
+   - `execute()`: Main pipeline execution
+
+5. **Data Flow**:
+   - Load image from path or create mock from dimensions
+   - Auto-detect ROI if not provided
+   - Crop ROI from image
+   - Apply inpainting (with mask) or img2img (without mask)
+   - Composite enhanced ROI back into full image
+   - Save result to disk and track artifact
+   - Update context with enhanced image data
+
+### Testing Coverage (27 tests, all passing)
+
+**Initialization (2 tests)**:
+- Default parameters
+- Custom parameters
+
+**ROI Detection (5 tests)**:
+- Center-crop with default ratio (0.8)
+- Center-crop with custom ratio
+- ROI cropping from image
+- Compositing without mask (direct replacement)
+- Compositing with mask (smooth blend)
+
+**Image Loading (3 tests)**:
+- Successful file load
+- Missing file error
+- Invalid image format error
+
+**Input Validation (3 tests)**:
+- Validation passes with image
+- Validation fails without image
+- Execution raises error without image
+
+**Inpainting Mode (2 tests)**:
+- Inpainting from image file path with numpy mask
+- Inpainting with dict-format mask
+
+**Img2Img Mode (2 tests)**:
+- Img2img from image file path
+- Img2img with mock image data
+
+**ROI Processing (2 tests)**:
+- Processing with custom ROI
+- Auto-detection of ROI when not provided
+
+**Metadata Tracking (2 tests)**:
+- Metadata in inpainting mode
+- Metadata in img2img mode
+
+**Artifact Tracking (2 tests)**:
+- Artifact added to context list
+- Artifact file created on disk
+
+**Error Handling (2 tests)**:
+- Error on missing image
+- Error on invalid image file
+
+**Context Updates (2 tests)**:
+- Image data updated with detail info
+- Detail path set in context
+
+### Key Design Decisions
+
+1. **Flexible Input**: Support both file paths and mock image data (for testing)
+2. **Mask Flexibility**: Accept numpy array, dict with data, or None
+3. **Mock Processing**: Use scipy for realistic but lightweight processing
+4. **ROI Auto-Detection**: Simple center-crop heuristic (production: face detection)
+5. **Compositing**: Support both direct replacement and mask-blended compositing
+6. **Metadata**: Track mode, model, strength, ROI, output shape
+
+### Important Implementation Details
+
+1. **Mask Conversion**: Dict masks converted to arrays before processing
+2. **Mask Normalization**: Auto-detect if 0-1 or 0-255 range
+3. **ROI Resizing**: Ensure mask matches ROI dimensions before blending
+4. **Path Handling**: Use parent.mkdir(parents=True, exist_ok=True) for artifact dirs
+5. **Exception Handling**: Use raise...from to preserve exception chains
+6. **Type Hints**: Python 3.10+ syntax (tuple instead of Tuple, X | Y instead of Union)
+
+### API Contract
+
+```python
+stage = DetailerStage(
+    model_name="stable-diffusion-inpaint-v1",
+    strength=0.75,
+    guidance_scale=7.5,
+    center_crop_ratio=0.8
+)
+
+context = PipelineContext()
+context.set("image", {"model": "...", "dimensions": (512, 512)})
+context.set("image_path", "path/to/image.png")
+context.set("mask", np.array(...) or {"data": np.array(...)})
+context.set("roi", (x, y, w, h))  # Optional, auto-detected if not provided
+context.set("job_id", "unique_id")
+
+result_context = await stage.execute(context)
+
+# Result:
+# - result_context.data["image"]: Enhanced image dict
+# - result_context.data["detail_path"]: Path to saved artifact
+# - result_context.metadata["detailer"]: Processing metadata
+# - result_context.artifacts: List containing detail_path
+```
+
+### Next Steps (T7+)
+
+- Integrate with Pipeline orchestrator for multi-stage workflows
+- Connect to JobExecutor for persistence and async job handling
+- Implement real diffusers pipeline calls (replace mock processing)
+- Add WebSocket support for real-time progress updates
+- Implement artifact cleanup and storage management
+
+## T7: Frontend Detailer Controls (COMPLETED)
+
+### UI Implementation
+- Added `faceStrength` and `handStrength` sliders to `EnhanceView` in `frontend/app/media-lab/page.tsx`.
+- Used `@heroui/react` `Slider` component.
+- **Learnings**:
+  - `Slider` component in the installed version of `@heroui/react` does NOT support `label`, `size`, or `color` props directly.
+  - Labels must be rendered externally (e.g., using a `<label>` tag above the slider).
+  - Styling should be done via `className` or `classNames` prop.
+  - `minValue` and `maxValue` props are supported (likely from React Aria under the hood).
+
+### API Integration
+- Updated `handleSubmit` to include `face_strength` and `hand_strength` in the `parameters` object sent to `api.mediaLab.submitJob`.
+- Default values set to 0.4.
+
+## T8: RefinerStage Implementation (COMPLETED)
+
+### Architecture Implemented
+
+1. **RefinerStage**: High-resolution refinement using img2img enhancement
+   - Input: `image` dict from previous stage, optional `image_path`
+   - Output: refined `image` dict, `refined_path` artifact
+   - Denoising strength parameter (0.0-1.0) for controlling refinement intensity
+   - Mock implementation using unsharp masking via scipy
+
+2. **Key Features**:
+   - **Strength Validation**: Constructor validates strength ∈ [0.0, 1.0]
+   - **Context Strength Override**: Per-call override via context.set("strength", value)
+   - **Image Loading**: Load from file path OR create mock from dimensions
+   - **Mock Processing**: Unsharp mask (Gaussian blur subtracted from original)
+   - **Artifact Tracking**: Saves to disk and tracks in context.artifacts
+
+3. **RefinerStage Class**:
+   ```python
+   RefinerStage(
+       model_name="stable-diffusion-v1",  # default model
+       strength=0.3                        # default denoising strength
+   )
+   ```
+
+4. **Methods**:
+   - `load_image_file(path)`: Load PNG/JPEG from disk
+   - `execute_img2img(context, image_array)`: Mock img2img with unsharp mask
+   - `validate_input(context)`: Check image exists
+   - `execute(context)`: Main pipeline execution
+
+5. **Data Flow**:
+   - Load image from path or create mock from dimensions
+   - Apply img2img with configurable strength
+   - Save result to disk and track artifact
+   - Update context with refined image data and metadata
+
+### Testing Coverage (28 tests, all passing)
+
+**Initialization (5 tests)**:
+- Default parameters (model_name, strength=0.3)
+- Custom parameters
+- Strength validation (< 0.0 rejected, > 1.0 rejected, boundary 0.0/1.0 accepted)
+
+**Image Loading (3 tests)**:
+- Successful PNG/JPEG file loading
+- Missing file error handling
+- Invalid image format error handling
+
+**Input Validation (3 tests)**:
+- Validation passes with image present
+- Validation fails without image
+- Execute raises ValueError without image
+
+**Img2Img Refinement (4 tests)**:
+- Execution with image file path
+- Execution with mock image data
+- Context strength override (overrides default)
+- Context strength validation (rejects invalid values)
+
+**Paths (3 tests)**:
+- Refined path derived from image_path (adds "_refined.png" suffix)
+- Refined path generated from job_id when no image_path
+- Artifact created on disk with correct extension
+
+**Metadata (2 tests)**:
+- Metadata recorded with model, strength, output_shape, high_res_fix flag
+- Output shape correctly recorded from array dimensions
+
+**Artifacts (2 tests)**:
+- Refined path added to artifacts list
+- Multiple executions track separate artifacts
+
+**Error Handling (2 tests)**:
+- Error set in context when image missing
+- Error raised for invalid image files
+
+**Context Updates (2 tests)**:
+- Image data updated with refinement_level, high_res_fix, dimensions
+- refined_path set in context.data
+
+**Integration (2 tests)**:
+- Full refinement workflow with file I/O
+- Sequential refinement chaining with different strengths
+
+### Key Design Decisions
+
+1. **Strict Typing**: Constructor validates strength parameter immediately
+2. **Flexible Input**: Support both file paths and mock image data
+3. **Context Override**: Allow per-call strength adjustment via context
+4. **Mock Processing**: Lightweight unsharp mask for realistic-looking refinement
+5. **Metadata**: Track model, strength, output shape, and high_res_fix flag
+6. **Error Handling**: Use raise...from for exception chain preservation
+
+### Important Implementation Details
+
+1. **Strength Bounds**: 0.0 = preserve image, 1.0 = maximum refinement
+2. **Unsharp Mask Formula**: `result = original + strength * (original - blurred)`
+3. **Path Handling**: Use parent.mkdir(parents=True, exist_ok=True) for artifact dirs
+4. **Metadata Key**: Store under "refiner" key in context.metadata
+5. **Type Hints**: Python 3.10+ syntax (tuple instead of Tuple, X | Y instead of Union)
+
+### API Contract
+
+```python
+stage = RefinerStage(
+    model_name="stable-diffusion-v1",
+    strength=0.3
+)
+
+context = PipelineContext()
+context.set("image", {"model": "...", "dimensions": (512, 512)})
+context.set("image_path", "path/to/image.png")  # optional
+context.set("strength", 0.5)                    # optional override
+context.set("job_id", "unique_id")
+
+result_context = await stage.execute(context)
+
+# Result:
+# - result_context.data["image"]: Refined image dict with high_res_fix=True
+# - result_context.data["refined_path"]: Path to saved artifact
+# - result_context.metadata["refiner"]: Processing metadata
+# - result_context.artifacts: List containing refined_path
+```
+
+### Next Steps (T9+)
+
+- Integrate with Pipeline orchestrator for multi-stage workflows
+- Connect to JobExecutor for persistence and async job handling
+- Implement real diffusers pipeline calls (replace mock unsharp mask)
+- Add progress tracking to context during execution
+- Implement artifact cleanup and storage management
+- Add WebSocket support for real-time progress updates
+

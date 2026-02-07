@@ -97,14 +97,13 @@
 
 ## v0.3.0: 3-Stage Detailer System
 
-- [ ] T1. Implement `Detailer` pipeline (Face/Hand/Body)
+- [x] T1. Implement `Detailer` pipeline (Face/Hand/Body)
 
   **What to do**:
-  - Create `backend/src/media_lab/stages/detailer.py`.
-  - Implement `DetailerStage` (subclass of PipelineStage).
-  - Implement ROI detection (Face/Hand/Body) using simple crop or placeholder for now.
-  - Implement masking logic (create mask from ROI).
-  - Implement inpainting logic (call model with mask).
+  - Create `backend/src/media_lab/stages/detailer.py`
+  - Implement `DetailerStage` (subclass of PipelineStage)
+  - Implement simple ROI detection (Center crop)
+  - Implement masking and inpainting logic
 
   **Must NOT do**:
   - Do not implement full Yolo/MediaPipe integration if libraries are missing (use center crop or simple heuristic).
@@ -118,24 +117,79 @@
   - [ ] Can take an image and return a masked/inpainted version.
   - [ ] pytest passes.
 
-- [ ] T2. Add "Enhance" tab to frontend
+- [x] T2. Add "Enhance" tab to frontend
 
   **What to do**:
-  - Update `frontend/app/media-lab/page.tsx` (EnhanceView).
-  - Add controls for Detailer (Face/Hand strength).
+  - Update `frontend/app/media-lab/page.tsx` (EnhanceView)
+  - Add controls for Detailer (Face/Hand strength)
   - Connect to `POST /enhance`.
 
   **Acceptance Criteria**:
   - [ ] Enhance tab functional.
   - [ ] Can submit enhance job.
 
-- [ ] T3. Integrate Refiner stage (High-res fix)
+- [x] T3. Integrate Refiner stage (High-res fix)
 
   **What to do**:
-  - Create `backend/src/media_lab/stages/refiner.py`.
-  - Implement `RefinerStage`.
-  - Logic: Img2Img with low denoising strength.
+  - Create `backend/src/media_lab/stages/refiner.py`
+  - Implement `RefinerStage` class
+  - Logic: Img2Img with low denoising strength
 
   **Acceptance Criteria**:
   - [ ] `RefinerStage` class exists.
   - [ ] Integration into Workbench.
+
+## v0.4.0: LoRA Loading System
+
+- [ ] T1. Implement `LoRAManager` backend
+
+  **What to do**:
+  - Create `backend/src/media_lab/lora.py`
+  - Implement `LoRAManager` class
+  - Logic: load safetensors, extract state dict, fuse/unfuse with model
+  - Methods: `load_lora(path, weight)`, `unload_lora()`, `apply_loras(model, loras)`
+
+  **Must NOT do**:
+  - Do not implement complex merging strategies yet (just simple linear combination).
+
+  **Recommended Agent Profile**:
+  - **Category**: `quick`
+  - **Skills**: [`python`, `backend`]
+
+  **Acceptance Criteria**:
+  - [ ] `LoRAManager` class exists.
+  - [ ] Can load a LoRA file.
+  - [ ] Can modify model weights.
+  - [ ] pytest passes.
+
+- [ ] T2. Add LoRA selection UI
+
+  **What to do**:
+  - Update `frontend/app/media-lab/page.tsx` (Sidebar).
+  - Add LoRA selector (dropdown + weight slider).
+  - Support multiple LoRAs (list of {id, weight}).
+
+  **Acceptance Criteria**:
+  - [ ] UI allows selecting LoRAs.
+  - [ ] Can adjust weight.
+
+- [ ] T3. Support per-stage LoRAs (Detailer specific)
+
+  **What to do**:
+  - Update `DetailerStage` to accept `loras` config.
+  - Update `RefinerStage` to accept `loras` config.
+  - Ensure LoRAs are swapped during execution.
+
+  **Acceptance Criteria**:
+  - [ ] Pipeline supports stage-specific LoRAs.
+  - [ ] LoRAs are applied/unapplied correctly.
+
+- [ ] T4. LoRA caching and hash verification
+
+  **What to do**:
+  - Update `LoRAManager` to cache loaded tensors in RAM/VRAM.
+  - Calculate SHA256 of LoRA files on load.
+
+  **Acceptance Criteria**:
+  - [ ] LoRAs are cached.
+  - [ ] Duplicate loads use cache.

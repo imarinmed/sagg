@@ -4,10 +4,10 @@ Provides DetailerStage for inpainting with mask or img2img enhancement
 using diffusers pipelines (with mock/stub support for non-GPU environments).
 """
 
-from abc import ABC, abstractmethod
 import logging
+from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import Any, Optional, Tuple
+from typing import Any
 
 import numpy as np
 from PIL import Image
@@ -106,7 +106,7 @@ class DetailerStage(PipelineStage):
         """
         return context.get("image") is not None
 
-    def detect_roi(self, image: np.ndarray) -> Tuple[int, int, int, int]:
+    def detect_roi(self, image: np.ndarray) -> tuple[int, int, int, int]:
         """Simple ROI detection using center-crop heuristic.
 
         In production, this would use face detection or semantic segmentation.
@@ -125,7 +125,7 @@ class DetailerStage(PipelineStage):
         y = (h - crop_h) // 2
         return (x, y, crop_w, crop_h)
 
-    def crop_roi(self, image: np.ndarray, roi: Tuple[int, int, int, int]) -> np.ndarray:
+    def crop_roi(self, image: np.ndarray, roi: tuple[int, int, int, int]) -> np.ndarray:
         """Crop region of interest from image.
 
         Args:
@@ -142,8 +142,8 @@ class DetailerStage(PipelineStage):
         self,
         base_image: np.ndarray,
         roi_image: np.ndarray,
-        roi: Tuple[int, int, int, int],
-        mask: Optional[np.ndarray] = None,
+        roi: tuple[int, int, int, int],
+        mask: np.ndarray | None = None,
     ) -> np.ndarray:
         """Composite ROI back into base image with optional mask blending.
 
@@ -161,12 +161,12 @@ class DetailerStage(PipelineStage):
 
         if mask is not None:
             # Blend with mask
-            mask_normalized = mask.astype(np.float32) / 255.0 if mask.max() > 1 else mask
-            if mask_normalized.shape != roi_image.shape[:2]:
-                # Resize mask if needed
-                mask_pil = Image.fromarray((mask_normalized * 255).astype(np.uint8))
-                mask_pil = mask_pil.resize((w, h), Image.BILINEAR)
-                mask_normalized = np.array(mask_pil).astype(np.float32) / 255.0
+            mask_array = np.array(mask) if isinstance(mask, list | tuple) else mask
+            mask_normalized_raw = mask_array.astype(np.float32)
+            if mask_array.max() > 1:
+                mask_normalized = mask_normalized_raw / 255.0
+            else:
+                mask_normalized = mask_normalized_raw
 
             # Ensure 3-channel mask for color blending
             if len(mask_normalized.shape) == 2:
@@ -203,7 +203,9 @@ class DetailerStage(PipelineStage):
             img = Image.open(path).convert("RGB")
             return np.array(img)
         except Exception as e:
-            raise ValueError(f"Failed to load image from {image_path}: {str(e)}")
+            raise ValueError(
+                f"Failed to load image from {image_path}: {str(e)}"
+            ) from e
 
     async def execute_inpainting(
         self,
@@ -344,7 +346,8 @@ class DetailerStage(PipelineStage):
                     if mask_array.max() <= 1
                     else mask_array.astype(np.uint8)
                 )
-                mask_pil = mask_pil.resize((roi.width, roi.height), Image.BILINEAR)
+                x, y, w, h = roi
+                mask_pil = mask_pil.resize((w, h), Image.BILINEAR)
                 mask_array = np.array(mask_pil)
 
             enhanced_roi = await self.execute_inpainting(context, roi_image, mask_array)
@@ -353,9 +356,10 @@ class DetailerStage(PipelineStage):
             # Img2img mode (no mask)
             enhanced_roi = await self.execute_img2img(context, roi_image)
             context.set("detailer_mode", "img2img")
+            mask_array = None
 
         # Composite back into full image
-        result_image = self.composite_roi(image_array, enhanced_roi, roi, mask)
+        result_image = self.composite_roi(image_array, enhanced_roi, roi, mask_array)
 
         # Prepare output paths
         if image_path:
@@ -406,7 +410,7 @@ class PipelineContext:
         self.data: dict[str, Any] = {}
         self.artifacts: list[str] = []
         self.metadata: dict[str, Any] = {}
-        self.error: Optional[str] = None
+        self.error: str | None = None
 
     def set(self, key: str, value: Any) -> None:
         """Store value in context."""

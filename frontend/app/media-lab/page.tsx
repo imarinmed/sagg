@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Button, Input, Spinner } from "@heroui/react";
+import { Button, Input, Spinner, Slider } from "@heroui/react";
 import { Search, Wand2, Sparkles, Layers, Shuffle, History, Play, RefreshCw, AlertCircle, UploadCloud } from "lucide-react";
 import { GlassCard } from "@/components/GlassCard";
 import Link from "next/link";
@@ -387,6 +387,8 @@ function EnhanceView() {
   const [sourcePreview, setSourcePreview] = useState<string | null>(null);
   const [sourceAspectRatio, setSourceAspectRatio] = useState(1);
   const [qualityPreset, setQualityPreset] = useState<"low" | "medium" | "high">("medium");
+  const [faceStrength, setFaceStrength] = useState(0.4);
+  const [handStrength, setHandStrength] = useState(0.4);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [isDragOverPreview, setIsDragOverPreview] = useState(false);
@@ -491,6 +493,8 @@ function EnhanceView() {
         parameters: {
           source_image_path: upload.stored_path,
           quality_preset: qualityPreset,
+          face_strength: faceStrength,
+          hand_strength: handStrength,
           workflow_stack: {
             orchestrator: "daggr",
             model: "z-image-turbo",
@@ -551,6 +555,8 @@ function EnhanceView() {
     setSourceImage(null);
     setSourcePreview(null);
     setQualityPreset("medium");
+    setFaceStrength(0.4);
+    setHandStrength(0.4);
     setJobId(null);
     setJobStatus(null);
     setJobProgress(0);
@@ -743,6 +749,40 @@ function EnhanceView() {
                 <option value="medium">Medium (Balanced)</option>
                 <option value="high">High (Slow, maximum detail)</option>
               </select>
+            </div>
+
+            <div className="space-y-4 pt-2">
+              <div className="space-y-2">
+                <div className="flex justify-between">
+                  <label className="text-sm text-[var(--color-text-muted)]">Face Detail Strength</label>
+                  <span className="text-xs text-[var(--color-text-muted)]">{faceStrength.toFixed(2)}</span>
+                </div>
+                <Slider 
+                  step={0.05} 
+                  maxValue={1} 
+                  minValue={0} 
+                  defaultValue={0.4}
+                  value={faceStrength} 
+                  onChange={(v) => setFaceStrength(Array.isArray(v) ? v[0] : v)}
+                  className="max-w-md"
+                />
+              </div>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between">
+                  <label className="text-sm text-[var(--color-text-muted)]">Hand Detail Strength</label>
+                  <span className="text-xs text-[var(--color-text-muted)]">{handStrength.toFixed(2)}</span>
+                </div>
+                <Slider 
+                  step={0.05} 
+                  maxValue={1} 
+                  minValue={0} 
+                  defaultValue={0.4}
+                  value={handStrength} 
+                  onChange={(v) => setHandStrength(Array.isArray(v) ? v[0] : v)}
+                  className="max-w-md"
+                />
+              </div>
             </div>
 
             <div className="space-y-2">
