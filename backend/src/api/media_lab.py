@@ -5,6 +5,8 @@ from fastapi import APIRouter, HTTPException, Query, Depends
 from pydantic import BaseModel, Field
 from sqlmodel import Session
 
+import json
+
 from ..media_lab.executor import JobExecutor
 from ..media_lab.presets import get_preset_manager
 from ..media_lab.registry import ModelRegistry
@@ -17,6 +19,7 @@ from ..db.artifact_ops import (
     get_artifact_tags,
     update_artifact_tags,
     get_artifacts_by_entity,
+    get_artifact,
 )
 from ..models import (
     ArtifactData,
@@ -149,7 +152,10 @@ def _execute_enhance_job(job_id: str, session: Session) -> None:
 
 
 @router.post("/jobs", response_model=MediaJobResponse)
-async def submit_job(request: MediaJobSubmitRequest):
+async def submit_job(
+    request: MediaJobSubmitRequest,
+    session: Session = Depends(get_session),
+):
     """Submit a new media job
 
     For enhance and interpolate workflows, executes immediately with validation.
@@ -173,9 +179,9 @@ async def submit_job(request: MediaJobSubmitRequest):
 
     # Execute enhance and interpolate workflows immediately
     if request.workflow_type == "interpolate":
-        _execute_interpolate_job(job_id, session=Depends(get_session))
+        _execute_interpolate_job(job_id, session)
     elif request.workflow_type == "enhance":
-        _execute_enhance_job(job_id, session=Depends(get_session))
+        _execute_enhance_job(job_id, session)
 
     return _build_job_response(job_id)
 
@@ -529,12 +535,28 @@ async def get_character_related_images(
     """
     try:
         artifact_ids = get_artifacts_by_entity(session, "character", character_id)
-        # Get artifact data from in-memory store
+        # Get artifact data from database
         related = []
-        for job_id, artifacts in _artifacts_store.items():
-            for artifact_dict in artifacts:
-                if artifact_dict.get("id") in artifact_ids:
-                    related.append(ArtifactData(**artifact_dict))
+        for artifact_id in artifact_ids:
+            artifact_db = get_artifact(session, artifact_id)
+            if artifact_db:
+                # Parse metadata_json from string to dict
+                metadata = None
+                if artifact_db.metadata_json:
+                    try:
+                        metadata = json.loads(artifact_db.metadata_json) if isinstance(artifact_db.metadata_json, str) else artifact_db.metadata_json
+                    except (json.JSONDecodeError, TypeError):
+                        metadata = None
+                
+                artifact_dict = {
+                    "id": artifact_db.id,
+                    "artifact_type": artifact_db.artifact_type,
+                    "file_path": artifact_db.file_path,
+                    "file_size_bytes": artifact_db.file_size_bytes,
+                    "metadata_json": metadata,
+                    "tags": get_artifact_tags(session, artifact_id),
+                }
+                related.append(ArtifactData(**artifact_dict))
         return {"character_id": character_id, "artifacts": related, "count": len(related)}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to retrieve related images: {str(e)}")
@@ -555,12 +577,28 @@ async def get_episode_related_images(
     """
     try:
         artifact_ids = get_artifacts_by_entity(session, "episode", episode_id)
-        # Get artifact data from in-memory store
+        # Get artifact data from database
         related = []
-        for job_id, artifacts in _artifacts_store.items():
-            for artifact_dict in artifacts:
-                if artifact_dict.get("id") in artifact_ids:
-                    related.append(ArtifactData(**artifact_dict))
+        for artifact_id in artifact_ids:
+            artifact_db = get_artifact(session, artifact_id)
+            if artifact_db:
+                # Parse metadata_json from string to dict
+                metadata = None
+                if artifact_db.metadata_json:
+                    try:
+                        metadata = json.loads(artifact_db.metadata_json) if isinstance(artifact_db.metadata_json, str) else artifact_db.metadata_json
+                    except (json.JSONDecodeError, TypeError):
+                        metadata = None
+                
+                artifact_dict = {
+                    "id": artifact_db.id,
+                    "artifact_type": artifact_db.artifact_type,
+                    "file_path": artifact_db.file_path,
+                    "file_size_bytes": artifact_db.file_size_bytes,
+                    "metadata_json": metadata,
+                    "tags": get_artifact_tags(session, artifact_id),
+                }
+                related.append(ArtifactData(**artifact_dict))
         return {"episode_id": episode_id, "artifacts": related, "count": len(related)}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to retrieve related images: {str(e)}")
@@ -581,12 +619,28 @@ async def get_mythos_related_images(
     """
     try:
         artifact_ids = get_artifacts_by_entity(session, "mythos", mythos_id)
-        # Get artifact data from in-memory store
+        # Get artifact data from database
         related = []
-        for job_id, artifacts in _artifacts_store.items():
-            for artifact_dict in artifacts:
-                if artifact_dict.get("id") in artifact_ids:
-                    related.append(ArtifactData(**artifact_dict))
+        for artifact_id in artifact_ids:
+            artifact_db = get_artifact(session, artifact_id)
+            if artifact_db:
+                # Parse metadata_json from string to dict
+                metadata = None
+                if artifact_db.metadata_json:
+                    try:
+                        metadata = json.loads(artifact_db.metadata_json) if isinstance(artifact_db.metadata_json, str) else artifact_db.metadata_json
+                    except (json.JSONDecodeError, TypeError):
+                        metadata = None
+                
+                artifact_dict = {
+                    "id": artifact_db.id,
+                    "artifact_type": artifact_db.artifact_type,
+                    "file_path": artifact_db.file_path,
+                    "file_size_bytes": artifact_db.file_size_bytes,
+                    "metadata_json": metadata,
+                    "tags": get_artifact_tags(session, artifact_id),
+                }
+                related.append(ArtifactData(**artifact_dict))
         return {"mythos_id": mythos_id, "artifacts": related, "count": len(related)}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to retrieve related images: {str(e)}")

@@ -5,6 +5,7 @@ Provides CRUD operations for artifact tags using SQLModel session.
 
 from datetime import datetime, timezone
 from uuid import uuid4
+import json
 
 from sqlalchemy import and_
 from sqlmodel import Session, delete, select
@@ -137,7 +138,7 @@ def create_artifact(
     artifact_type: str,
     file_path: str,
     file_size_bytes: int | None = None,
-    metadata_json: str | None = None,
+    metadata_json: str | dict | None = None,
 ) -> MediaArtifact:
     """Create a new artifact in the database.
 
@@ -147,11 +148,15 @@ def create_artifact(
         artifact_type: Type of artifact (image, video, etc.)
         file_path: Relative path to artifact file
         file_size_bytes: Optional file size in bytes
-        metadata_json: Optional JSON metadata
+        metadata_json: Optional JSON metadata (dict or JSON string)
 
     Returns:
         Created MediaArtifact model
     """
+    # Convert dict to JSON string if needed
+    if isinstance(metadata_json, dict):
+        metadata_json = json.dumps(metadata_json)
+    
     artifact = MediaArtifact(
         id=str(uuid4()),
         job_id=job_id,
