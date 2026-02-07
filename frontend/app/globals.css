@@ -55,9 +55,10 @@
   --color-border: #2a2a2a;
   --color-border-subtle: #1f1f1f;
   
-  --font-heading: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
-  --font-body: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: var(--font-jetbrains), 'JetBrains Mono', 'Fira Code', monospace;
+  --font-heading: var(--font-geist-sans), var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-body: var(--font-geist-sans), var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), var(--font-jetbrains), 'JetBrains Mono', 'Fira Code', monospace;
+  --font-pixel: var(--font-geist-pixel-square), 'Courier New', monospace;
   
   --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
   --text-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
@@ -91,6 +92,16 @@
   --glass-border: rgba(197, 160, 89, 0.2);
   --glass-blur: 20px;
   --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  /* Archive Aesthetic - Base */
+  --archive-glow: rgba(217, 119, 6, 0.15);
+  --archive-border: rgba(217, 119, 6, 0.2);
+  --archive-muted: rgba(255, 255, 255, 0.5);
+  --color-section-accent: #d97706;
+  --timeline-line-color: rgba(217, 119, 6, 0.3);
+  --entity-card-bg: rgba(10, 10, 10, 0.8);
+  --archive-gap: 2rem;
+  --archive-padding: 1.5rem;
 }
 
 /* ============================================
@@ -241,6 +252,10 @@
   /* Glassmorphism - Nordic theme */
   --glass-bg: rgba(15, 15, 26, 0.85);
   --glass-border: rgba(183, 110, 121, 0.3);
+
+  /* Archive Aesthetic - Nordic Override */
+  --entity-card-bg: rgba(15, 15, 26, 0.85);
+  --archive-glow: rgba(217, 119, 6, 0.12);
 }
 
 /* ============================================
@@ -865,4 +880,30 @@ a:hover {
   .hover-glow {
     transition: none;
   }
+}
+
+/* ============================================
+   ARCHIVE AESTHETIC UTILITIES
+   ============================================ */
+
+.text-archive-accent { color: var(--color-section-accent); }
+.bg-archive-card { background-color: var(--entity-card-bg); }
+.border-archive { border-color: var(--archive-border); }
+.shadow-archive { box-shadow: 0 0 20px var(--archive-glow); }
+
+.glass-archive {
+  background: var(--entity-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--archive-border);
+  box-shadow: 0 4px 20px var(--archive-glow);
+}
+
+.archive-timeline-line {
+  background-color: var(--timeline-line-color);
+  width: 2px;
+}
+
+.archive-muted {
+  color: var(--archive-muted);
 }

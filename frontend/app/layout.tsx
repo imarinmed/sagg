@@ -4,6 +4,9 @@ import { Layout } from "@/components/Layout"
 import { THEME_SCRIPT } from "@/lib/theme"
 import { NarrativeProvider } from "@/lib/narrative-context"
 import { Cormorant_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
+import { GeistPixelSquare } from 'geist/font/pixel'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -41,7 +44,7 @@ export default function RootLayout({
       lang="en" 
       suppressHydrationWarning 
       data-theme="gothic"
-      className={`${cormorant.variable} ${inter.variable} ${jetbrains.variable}`}
+      className={`${cormorant.variable} ${inter.variable} ${jetbrains.variable} ${GeistSans.variable} ${GeistMono.variable} ${GeistPixelSquare.variable}`}
     >
       <head>
         <script
