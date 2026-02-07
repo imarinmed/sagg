@@ -304,87 +304,90 @@ function MythosPageContent() {
   // Main Content
   const MainContent = (
     <div className="space-y-12 pb-20">
-      {/* Hero Section */}
-      <section className="relative rounded-3xl overflow-hidden bg-[var(--polar-night)] border border-[var(--glass-border)]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-accent-primary)]/5 via-transparent to-[var(--color-accent-secondary)]/5" />
-        <div className="fog-overlay opacity-30" aria-hidden="true" />
-        
-        <div className="relative z-10 px-8 py-12 md:py-16 space-y-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-accent-primary)]/10 border border-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] text-xs font-medium tracking-wider uppercase blood-glow"
-          >
-            <BookOpen className="w-3 h-3" />
-            <span>Dark Adaptation Knowledge Base</span>
-          </motion.div>
-          
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="font-heading text-5xl md:text-6xl font-bold text-[var(--color-text-primary)] tracking-tight text-glow"
-          >
-            The Mythos
-          </motion.h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-lg text-[var(--color-text-secondary)] font-light leading-relaxed max-w-3xl"
-          >
-            Explore the dark knowledge of BST and SSt. A visual encyclopedia of vampire lore, ancient rituals, and the hidden laws that govern the night.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="max-w-xl relative group"
-          >
-            <div className="absolute inset-0 bg-[var(--color-accent-primary)]/5 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--color-text-muted)] group-focus-within:text-[var(--color-accent-primary)] transition-colors" />
-            <Input
-              placeholder="Search the archives..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 w-full bg-[var(--glass-bg)] border-[var(--glass-border)] focus:border-[var(--color-accent-primary)] focus:ring-1 focus:ring-[var(--color-accent-primary)]/50 rounded-xl transition-all duration-300 placeholder:text-[var(--color-text-muted)]/50 text-[var(--color-text-primary)] h-12"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] p-1 hover:bg-[var(--color-surface-hover)] rounded-full transition-colors"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            )}
-          </motion.div>
+      {/* Hero Section - Kiara Character Showcase */}
+      <section className="relative min-h-[60vh] flex items-end overflow-hidden" style={{background: 'linear-gradient(to bottom, #2a2420 0%, #1a1510 50%, #0a0a0a 100%)'}}>
+        {/* Atmospheric Background with subtle texture */}
+        <div className="absolute inset-0 opacity-40">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
         </div>
+        
+        {/* Content */}
+        <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 xl:px-12 pb-16 pt-32">
+          <div className="max-w-3xl">
+            {/* Female Protagonists Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="inline-flex items-center gap-2 mb-6"
+            >
+              <span className="text-xs uppercase tracking-[0.3em] text-amber-500/80" style={{fontFamily: 'var(--font-geist-mono)'}}>
+                Female Protagonists
+              </span>
+              <div className="h-px w-12 bg-amber-500/30" />
+            </motion.div>
+            
+            {/* Kiara - Main Feature */}
+            <motion.h1 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="text-6xl sm:text-7xl lg:text-8xl font-medium text-white mb-6 leading-[0.9] tracking-tight"
+              style={{fontFamily: 'var(--font-geist-sans)'}}
+            >
+              Kiara
+            </motion.h1>
+            
+            {/* Quote */}
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-xl sm:text-2xl text-white/50 mb-4 max-w-2xl leading-relaxed italic font-light"
+            >
+              "I don't know what I am anymore."
+            </motion.p>
+            
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25 }}
+              className="text-base text-white/40 mb-10 max-w-xl"
+            >
+              A young vampire struggling with her identity in a world that demands she choose a side. The heart of the Natt och Dag family's transformation.
+            </motion.p>
+            
+            {/* Other Female Protagonists */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="flex flex-wrap items-center gap-3"
+            >
+              <span className="text-xs uppercase tracking-wider text-white/30" style={{fontFamily: 'var(--font-geist-mono)'}}>
+                Explore:
+              </span>
+              {[
+                { name: 'Desirée', role: 'The Matriarch' },
+                { name: 'Celina', role: 'The Outsider' },
+                { name: 'Nora', role: 'The Rebel' },
+                { name: 'Mia', role: 'The Dreamer' }
+              ].map((char) => (
+                <button 
+                  key={char.name}
+                  className="group flex items-center gap-2 px-4 py-2 text-sm text-white/60 hover:text-amber-400 border border-white/10 hover:border-amber-500/40 rounded-full transition-all duration-300 bg-white/5 hover:bg-amber-500/10"
+                >
+                  <span>{char.name}</span>
+                  <span className="text-xs text-white/30 group-hover:text-amber-400/70">{char.role}</span>
+                </button>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
       </section>
-
-      {/* Featured Section */}
-      {!hasActiveFilters && (
-        <section className="space-y-6">
-          <div className="flex items-center justify-between">
-            <h2 className="font-heading text-2xl text-[var(--color-text-primary)]">Curated Entries</h2>
-            <div className="h-px flex-1 bg-[var(--glass-border)] ml-6 opacity-50" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredElements.map((element, idx) => (
-              <motion.div 
-                key={element.id} 
-                className="h-72 card-hover-effect glass-enhanced"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * idx }}
-              >
-                <MythosCard element={element} variant="featured" showVersionBadge={false} />
-              </motion.div>
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* Archive Grid Controls */}
       <div className="sticky top-[5.5rem] z-20 bg-[var(--color-bg-primary)]/95 backdrop-blur-xl py-4 border-b border-[var(--glass-border)] -mx-4 px-4 md:mx-0 md:px-0 md:bg-transparent md:backdrop-blur-none md:border-none md:static">
