@@ -19,7 +19,11 @@ import {
 } from "lucide-react";
 import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
 import { MythosCard } from "@/components/MythosCard";
-import { MythosCategoryFilter, DEFAULT_MYTHOS_CATEGORIES } from "@/components/MythosCategoryFilter";
+import { 
+  MythosCategoryFilter, 
+  DEFAULT_MYTHOS_CATEGORIES,
+  getCategoryMetadata 
+} from "@/components/MythosCategoryFilter";
 import { listMythos, listMythosCategories } from "@/lib/kb";
 import { MythosElement } from "@/lib/api";
 import Link from "next/link";
@@ -157,10 +161,29 @@ export default function MythosPage() {
   const categoryCounts = useMemo(() => getCategoryCounts(elements), [elements]);
 
   const categoryList = useMemo(() => {
-    return DEFAULT_MYTHOS_CATEGORIES.map((cat) => ({
-      ...cat,
-      count: categoryCounts[cat.id] || 0,
-    })).filter((cat) => cat.count > 0);
+    // Get all unique categories present in the data
+    const presentCategories = Object.keys(categoryCounts);
+    
+    // Map to full category objects
+    const allCategories = presentCategories.map(id => {
+      const metadata = getCategoryMetadata(id);
+      return {
+        ...metadata,
+        count: categoryCounts[id]
+      };
+    });
+
+    // Sort: Default categories first (in defined order), then others alphabetically
+    return allCategories.sort((a, b) => {
+      const indexA = DEFAULT_MYTHOS_CATEGORIES.findIndex(c => c.id === a.id);
+      const indexB = DEFAULT_MYTHOS_CATEGORIES.findIndex(c => c.id === b.id);
+      
+      if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+      if (indexA !== -1) return -1;
+      if (indexB !== -1) return 1;
+      
+      return a.label.localeCompare(b.label);
+    });
   }, [categoryCounts]);
 
   const filteredElements = useMemo(() => {

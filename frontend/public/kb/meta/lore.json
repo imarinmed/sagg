@@ -1,0 +1,2296 @@
+[
+  {
+    "id": "adaptation-guide",
+    "slug": "adaptation-guide",
+    "name": "Dark Tone Adaptation Guide",
+    "title": "Dark Tone Adaptation Guide",
+    "category": "uncategorized",
+    "kind": "foundation",
+    "tags": [
+      "mythos",
+      "foundational",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [],
+    "versions": {},
+    "provenance": "docs/adaptation-guide.md",
+    "path": "data/kb/foundations/adaptation-guide.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "role": "foundational"
+  },
+  {
+    "id": "alfred-carlsson",
+    "slug": "alfred-carlsson",
+    "name": "Alfred Carlsson",
+    "title": "Alfred Carlsson",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "human",
+      "deuteragonist",
+      "researcher",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "kevin",
+      "skaraborg-high",
+      "vampire-physiology",
+      "vampire-human-relations"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Nerdy human outsider and self-described vampire researcher with a YouTube channel (~20 followers). Alfred provides the human perspective on the vampire-integrated world, documenting vampire lore and culture with academic fascination. His relationship with Kiara progresses from awkward research interest to genuine friendship and romance, despite—or perhaps because of—his admitted fascination/fetish for vampires.",
+        "source_episodes": [
+          "s01e01",
+          "s01e02",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Alfred's 'vampire research' is reframed as an intense fetish bordering on obsession. His relationship with Kiara becomes a study in power exchange—the human who fantasizes about submission to vampire authority versus the reality of intimate danger. His academic documentation becomes voyeuristic, his fascination explicitly erotic. The adaptation explores whether genuine consent can exist when one party has supernatural power and the other has a compulsion to submit.",
+        "divergences": [
+          "Vampire research becomes explicitly fetishistic rather than academic",
+          "Relationship with Kiara explores consent boundaries and power imbalances",
+          "YouTube documentation reframed as voyeuristic observation",
+          "Drunk viral rant explores public humiliation and shame kinks"
+        ]
+      }
+    },
+    "provenance": "data/characters/alfred_carlsson.yaml",
+    "path": "data/kb/characters/alfred-carlsson.mdx",
+    "updated_at": "2026-02-07T00:00:00+00:00"
+  },
+  {
+    "id": "batgirls",
+    "slug": "batgirls",
+    "name": "Batgirls",
+    "title": "Batgirls",
+    "category": "social-groups",
+    "kind": "lore",
+    "tags": [
+      "dance",
+      "student",
+      "elite",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "Batgirls Dance Crew"
+    ],
+    "related_ids": [
+      "elise",
+      "chloe",
+      "kiara-natt-och-dag",
+      "livia",
+      "felicia",
+      "batgirls-faction-split"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The elite dance crew of Skaraborg High. The group is split into 'good' and 'evil' factions, led by Elise and Chloe respectively. Membership is highly sought after, and the group's costumes are notoriously expensive (11,000 kr + VAT). The Principal ordered open auditions to increase diversity, leading to Kiara's inclusion.",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e05",
+          "s01e08"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the Batgirls represent the social elite and the performative nature of human-vampire integration. The 'good' and 'evil' split is a metaphor for the moral ambiguity of the student body. The group's high entry cost and exclusivity highlight the class divide in Skaraborg.",
+        "divergences": [
+          "More intense factional rivalry",
+          "Focus on social exclusion and power dynamics"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/social-groups/batgirls.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "batgirls_faction_split",
+    "slug": "batgirls-faction-split",
+    "name": "Batgirls Faction Split",
+    "title": "Batgirls Faction Split",
+    "category": "social-concepts",
+    "kind": "lore",
+    "tags": [
+      "batgirls",
+      "faction",
+      "conflict",
+      "good-evil",
+      "leadership",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "batgirls",
+      "elise",
+      "chloe",
+      "kiara-natt-och-dag"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The Batgirls operate with an internal faction split centered on leadership philosophy and moral framework. Elise leads the \"good\" faction emphasizing mentorship, inclusivity, and collective welfare—demonstrated through her active mentoring of Kiara and her role in saving Kevin and Didde in episode seven. Chloe represents the \"evil\" faction, claiming rightful leadership authority and employing manipulation tactics to consolidate power within the group. This split creates persistent group tension as members navigate competing values and methods. The faction struggle manifests as competition for leadership direction, influence over new members like Kiara, and fundamental disagreement about group identity and purpose. Kiara's recruitment becomes contested ground between the factions, with both sides attempting to win her allegiance and shape her understanding of Batgirls values.\n",
+        "source_episodes": [
+          "s01e01",
+          "s01e02",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "The Batgirls faction split deepens into a power struggle where the good/evil binary masks more complex dynamics of dominance, control, and resistance. Elise's mentorship framework, while framed as nurturing, functions as a mechanism of ideological control—establishing her vision of what the group should be and what members should become. Chloe's rebellion represents not mere evil but a challenge to this imposed hierarchy, a demand for recognition of her own authority and leadership vision. The faction conflict becomes a arena for testing loyalty, with members forced to choose sides not merely on ethical grounds but on personal allegiance and power positioning.\n\nKiara's status as the contested new member escalates the conflict's intensity. Both factions view her recruitment as critical—Elise sees an opportunity to pass on her philosophy to a malleable mentee, while Chloe sees a potential ally against Elise's dominance. The struggle for Kiara's loyalty reflects deeper questions about autonomy within group structures: Can she choose her own path, or is she inevitably a pawn in leadership competition? Mentorship itself becomes suspect—is it guidance or grooming for compliance?\n\nThe faction split also represents generational and philosophical schism. Elise's values emphasize saving others (the Kevin/Didde rescue), suggesting purpose-driven collective action. Chloe's positioning suggests ambition unbounded by altruistic constraints—she wants power for its own sake, or at least power defined on her terms rather than inherited group doctrine. This creates unresolved tension: Is Elise's morality genuine leadership or paternalistic control? Is Chloe's rebellion authentic self-determination or destructive narcissism? The narrative refuses easy answers, forcing engagement with the complexity of power dynamics within ostensibly egalitarian groups.\n",
+        "erotic_implications": [
+          "Dominance dynamics in mentorship create subtle power imbalances with erotic undertones",
+          "Loyalty testing between factions involves vulnerability and submission to chosen leaders",
+          "Contested objects (like Kiara's allegiance) carry erotic charge as prizes in power competition",
+          "Competition between Elise and Chloe for group members' devotion parallels romantic/sexual rivalry"
+        ],
+        "taboo_potential": [
+          "Mentorship as cover for grooming or coercive bonding",
+          "Leadership competition that masks personal vendettas",
+          "Group cohesion built on exclusion and forced allegiance rather than genuine connection",
+          "Redemption narratives (saving Kevin/Didde) that strengthen in-group identity at cost of critical thinking"
+        ]
+      }
+    },
+    "provenance": "data/kb/social-concepts/batgirls-faction-split.mdx",
+    "path": "data/kb/social-concepts/batgirls-faction-split.mdx",
+    "updated_at": ""
+  },
+  {
+    "id": "blood-system",
+    "slug": "blood-system",
+    "name": "Blood System",
+    "title": "Blood System",
+    "category": "world-rules",
+    "kind": "rule",
+    "tags": [
+      "society",
+      "law",
+      "symbiosis",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "Blood Pact"
+    ],
+    "related_ids": [
+      "vampire-human-relations",
+      "vampire-biology"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The 'Blood System' is the societal framework governing the symbiotic relationship between humans and vampires. It was established by a 'Blood Pact' that ended the era of mutual killing. Humans donate blood to keep vampires calm and integrated, while vampire blood is processed into medicine for humans. The system also has administrative powers, such as filing child welfare reports for rule-breaking vampires.",
+        "source_episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the Blood System is a tool of systemic control and exploitation. The 'symbiosis' is shown to be a parasitic relationship where human blood is a commodity and vampire blood is a highly addictive drug. The administrative power of the system is used to enforce segregation and maintain a fragile, oppressive peace.",
+        "divergences": [
+          "Focus on the exploitative nature of the pact",
+          "Systemic corruption and control"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/world-rules/blood-system.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "blood_bond",
+    "slug": "the-blood-bond",
+    "name": "The Blood Bond",
+    "title": "The Blood Bond",
+    "category": "supernatural",
+    "kind": "mythos",
+    "tags": [
+      "blood_exchange_required",
+      "bst",
+      "death_of_bonded_causes_madness",
+      "emotional_resonance",
+      "exploitation_potential",
+      "familial_implications",
+      "loss_of_emotional_autonomy",
+      "mystical_connection",
+      "mythos",
+      "permanent_link",
+      "psychological_dependency",
+      "sst",
+      "supernatural",
+      "telepathic_potential"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "saga",
+      "boris",
+      "vera"
+    ],
+    "versions": {
+      "bst": {
+        "description": "A mystical connection formed through blood exchange between vampires. The exact nature is not\nfully explored in the series, but hints suggest deep emotional and possibly telepathic links\nform between bonded parties.\n\nBlood bonds appear to transcend ordinary relationships, creating connections that persist\nacross centuries and can only be severed by death—and perhaps not even then. The bond\ncarries obligations, creating a web of loyalty and dependency that structures vampire society.",
+        "traits": [
+          "blood_exchange_required",
+          "mystical_connection",
+          "familial_implications",
+          "emotional_resonance",
+          "telepathic_potential",
+          "permanent_link"
+        ],
+        "abilities": [
+          "sense_bonded_partner_location",
+          "share_emotions",
+          "enhanced_trust"
+        ],
+        "weaknesses": [
+          "vulnerability_through_bond_partner",
+          "emotional_dependence"
+        ],
+        "significance": "The fundamental building block of vampire society and relationships",
+        "source_episodes": [
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, blood bonds become intensely possessive. The bonded can feel each\nother's pleasure and pain, creating opportunities for both exquisite shared experiences\nand cruel manipulations. Breaking a bond is not just difficult—it's psychologically devastating.",
+        "traits": [
+          "loss_of_emotional_autonomy",
+          "psychological_dependency",
+          "exploitation_potential",
+          "death_of_bonded_causes_madness"
+        ],
+        "significance": "Blood bonds blur the lines of individual identity. When you can feel your partner's\ndesires as your own, where does consent begin? The power dynamics in bonds between\nvampires of different ages raise troubling questions about manipulation and control.",
+        "mechanics": "Three exchanges create a partial bond. Seven exchanges create a full bond. Full bonds\nallow emotional and sensory sharing. The older vampire in a bond typically has more\ncontrol over the connection, able to send sensations while blocking reception.",
+        "erotic_implications": "Blood bonds transform intimacy into a shared experience. When bonded vampires feed from\neach other during sex, both feel the pleasure of giving and receiving. This creates\nunprecedented levels of connection—and vulnerability. Some vampires become addicted\nto bonded feeding, unable to find satisfaction in ordinary encounters."
+      }
+    },
+    "provenance": "data/mythos/blood_bond.yaml",
+    "path": "data/kb/mythos/the-blood-bond.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "divergences": []
+  },
+  {
+    "id": "blood_pact",
+    "slug": "blood-pact",
+    "name": "Blood Pact",
+    "title": "Blood Pact",
+    "category": "world-rules",
+    "kind": "world-rule",
+    "tags": [
+      "historical-treaty",
+      "peace-agreement",
+      "vampire-human-relations",
+      "bst",
+      "sst",
+      "mythos"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "blood-system",
+      "vampire-human-integration",
+      "matriarchal-inheritance",
+      "vampire-physiology"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The Blood Pact (also known as the Peace Treaty) was a historical agreement that ended the era of human-vampire killing and established the integrated society in BST. This foundational treaty created the blood donation system where humans provide blood to vampires, and vampire blood becomes medicine for humans, forming a symbiotic relationship.\n\nThe Pact established the legal and social framework for vampire-human coexistence in Sweden, including:\n- Prohibition on hunting/killing humans for blood\n- Mandatory blood donation system\n- Legal protections for both species\n- Integration into human society (schools, workplaces)\n- Cultural norms around PC terminology\n",
+        "source_episodes": [
+          "s01e01",
+          "s01e02"
+        ]
+      },
+      "sst": {
+        "description": "In the SST dark adaptation, the Blood Pact takes on more sinister undertones. While ostensibly creating \"peace,\" the treaty codified power imbalances and created systems of control and exploitation.\n\nThe Pact established:\n- Vampire nobility retained wealth and status (e.g., Natt och Dag family)\n- Blood donation as tribute system (humans as resource)\n- Surveillance and control mechanisms\n- Breeding programs for optimal blood quality\n- Sexual/erotic dimensions of blood exchange\n- Matriarchal dynasties maintaining power through \"legitimate\" means\n\nThe treaty ended overt violence but created structures of domination, consent under duress, and institutionalized inequality masked as cooperation.\n",
+        "erotic_implications": [
+          "Blood exchange as intimate act with sexual charge",
+          "Power dynamics of donor/recipient relationships",
+          "Vampire seduction as recruitment for \"voluntary\" donation",
+          "Addiction to vampire blood (medicine becomes dependency)",
+          "Breeding programs for blood quality (eugenics)",
+          "Noble vampires \"collecting\" human donors"
+        ],
+        "taboo_potential": [
+          "Coerced consent under threat of societal collapse",
+          "Blood farming of humans",
+          "Sexual grooming disguised as cultural integration",
+          "Vampire aristocracy exploiting human lower classes",
+          "Treaty as colonial agreement (conqueror \"allowing\" conquered to live)",
+          "Dark secret clauses (population control, ritual rights)"
+        ]
+      }
+    },
+    "provenance": "data/kb/world-rules/blood-pact.mdx",
+    "path": "data/kb/world-rules/blood-pact.mdx",
+    "updated_at": "2026-02-07"
+  },
+  {
+    "id": "character-arcs",
+    "slug": "character-arcs",
+    "name": "Character Arc Documentation",
+    "title": "Character Arc Documentation",
+    "category": "uncategorized",
+    "kind": "foundation",
+    "tags": [
+      "mythos",
+      "foundational",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [],
+    "versions": {},
+    "provenance": "docs/character-arcs.md",
+    "path": "data/kb/foundations/character-arcs.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "role": "foundational"
+  },
+  {
+    "id": "chloe",
+    "slug": "chloe",
+    "name": "Chloe",
+    "title": "Chloe",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "human",
+      "batgirls",
+      "antagonist",
+      "supporting",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "elise",
+      "kiara-natt-och-dag",
+      "batgirls",
+      "skaraborg-high"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Member of the Batgirls 'evil side' faction who believes she is the rightful leader. Chloe serves as an antagonist to Kiara throughout Season 1, culminating in a secret being revealed about her in the Episode 8 finale at the masquerade ball.",
+        "source_episodes": [
+          "s01e01",
+          "s01e02"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Chloe's antagonism toward Kiara is reframed as obsessive desire masked as hatred. Her claim to Batgirls leadership becomes a struggle for dominance and recognition. The 'evil side' faction embodies transgressive desires and the rejection of respectability. Her secret—revealed in Episode 8—is reimagined as an 'observer kink,' where her antagonism stems from voyeuristic fascination with Kiara's vampire nature and her relationship with Alfred.",
+        "divergences": [
+          "Antagonism reframed as desire-through-hatred dynamic",
+          "Leadership claim becomes struggle for dominance and recognition",
+          "Evil-side faction embodies transgressive rejection of social norms",
+          "Episode 8 secret reimagined as voyeuristic observer kink"
+        ]
+      }
+    },
+    "provenance": "data/characters/chloe.yaml",
+    "path": "data/kb/characters/chloe.mdx",
+    "updated_at": "2026-02-07T00:00:00+00:00"
+  },
+  {
+    "id": "daywalking",
+    "slug": "daywalking",
+    "name": "Daywalking",
+    "title": "Daywalking",
+    "category": "biology",
+    "kind": "mythos",
+    "tags": [
+      "biology",
+      "bst",
+      "daylight_tolerance",
+      "evolutionary_advantage_in_hunting",
+      "false_sense_of_security_for_humans",
+      "full_integration",
+      "mythos",
+      "no_sunlight_weakness",
+      "nowhere_is_safe",
+      "predator_in_broad_daylight",
+      "sst",
+      "unrestricted_activity"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "saga",
+      "agnes"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampires in the series appear to be able to function during daylight hours without\nthe traditional vampire weakness to sunlight. This \"daywalking\" ability allows them\nto fully integrate into human society, attending schools and maintaining normal\nschedules alongside their human neighbors.\n\nWhether this is universal to all vampires in this world or a special adaptation\nremains unclear. What is certain is that it removes one of the traditional limitations\non vampire activity, making them far more dangerous predators.",
+        "traits": [
+          "daylight_tolerance",
+          "no_sunlight_weakness",
+          "full_integration",
+          "unrestricted_activity"
+        ],
+        "abilities": [
+          "daytime_activity",
+          "human_schedule_adherence",
+          "unrestricted_hunting"
+        ],
+        "weaknesses": [],
+        "significance": "Removes the traditional barrier between vampire and human worlds",
+        "source_episodes": [
+          "s01e01",
+          "s01e03"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, daywalking is not universal. Most vampires suffer weakness\nin direct sunlight—not death, but discomfort and reduced powers. True daywalkers\nare rare, often the result of powerful bloodlines or mysterious mutations. They\nare prized as mates and feared as hunters, able to strike when other vampires sleep.",
+        "traits": [
+          "nowhere_is_safe",
+          "predator_in_broad_daylight",
+          "false_sense_of_security_for_humans",
+          "evolutionary_advantage_in_hunting"
+        ],
+        "significance": "Daywalking challenges human assumptions about safety. Traditionally, daylight\nmeant sanctuary—a time when vampires couldn't touch you. Daywalkers remove that\nprotection, making humans vulnerable around the clock. The psychological impact\non humans who learn about daywalkers is profound: there is no escape, no safe time.",
+        "mechanics": "Daywalking ability runs in bloodlines. The Natt och Dag family possesses it through\nancient ancestry, giving them advantages in vampire politics. Daywalkers can sense\nother daywalkers, recognizing each other as equals in a world where most vampires\nare bound by night. Some theorize daywalking comes from dhampir ancestry.",
+        "erotic_implications": "Daywalker vampires can pursue human lovers during normal hours, joining them for\nlunch dates and afternoon trysts that nocturnal vampires miss. This creates a\ndifferent dynamic—less mysterious midnight visits, more normalized integration\nof feeding into everyday intimacy. Sun-warmed vampire skin feels almost human."
+      }
+    },
+    "provenance": "data/mythos/daywalking.yaml",
+    "path": "data/kb/mythos/daywalking.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "divergences": []
+  },
+  {
+    "id": "educational_integration",
+    "slug": "educational-integration",
+    "name": "Educational Integration",
+    "title": "Educational Integration",
+    "category": "world-building",
+    "kind": "lore",
+    "tags": [
+      "education",
+      "schools",
+      "integration",
+      "vampire-human-relations",
+      "curriculum",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "swedish-vampire-integration",
+      "skaraborg-high",
+      "pc-terminology",
+      "kiara-natt-och-dag"
+    ],
+    "versions": {
+      "bst": {
+        "description": "In the BST universe, educational integration represents a cornerstone of successful vampire-human coexistence. Public schools serve as primary integration testing grounds where vampires and humans learn together in mixed classrooms, athletics, and social clubs.\n\nAt Skaraborg High School (s01e01), vampires attend alongside human students as a normalized part of school life. For many young vampires like Kiara, attending human school represents a significant milestone—a first-time integration experience that marks their official entry into shared educational spaces. This school setting demonstrates how vampire-human dynamics can function successfully in structured academic environments.\n\nThe integrated curriculum is adapted to accommodate both populations. Teachers manage mixed classrooms where vampire students bring their own history, biology, and perspectives while learning alongside human peers. Physical education and sports teams are deliberately mixed, exemplified by teams like the Skaraborg Bats, creating contexts where vampire and human athleticism coexist and can be celebrated equally. Social clubs and school events, including parties and sporting activities, are designed as integration touchpoints where both communities build relationships and understanding.\n\nPC (Politically Correct) terminology is taught as part of the integration curriculum, establishing shared language around vampire-human relations and community standards. This educational reinforcement of integration principles helps create a cohesive school environment where both vampires and humans understand their roles and responsibilities in shared spaces.\n\nThe school environment serves as a model for broader integration success—demonstrating that mixed vampire-human communities can function peacefully when structured appropriately and when both groups receive education in coexistence principles.\n",
+        "source_episodes": [
+          "s01e01",
+          "s01e02"
+        ]
+      },
+      "sst": {
+        "description": "In the SST interpretation, educational integration takes on darker implications as a tool of systemic control and ideological indoctrination. Schools are not neutral learning spaces but rather carefully managed environments designed to normalize vampire dominance while subtly conditioning human populations for subordinate roles.\n\nThe integration curriculum functions as institutional indoctrination. What history is taught? Whose perspective dominates? The choice to include vampire history and culture in schools while potentially minimizing critical examination of power imbalances creates a one-directional narrative. Human students are educated into a framework that accepts vampire integration as inevitable and desirable, without meaningful opportunity to question the underlying power dynamics.\n\nMixed classrooms present fundamental instability. While presented as egalitarian, these spaces place fragile human bodies directly alongside predators with vastly superior physical capabilities. Teachers must constantly manage power differentials—a vampire student's casual strength could seriously injure a peer. This creates a coercive dynamic where human students must carefully modulate their own behavior and speech around their vampire classmates, always aware of their physical vulnerability.\n\nAthletics and physical education become particularly dangerous. In sports teams like the Skaraborg Bats, vampire and human athletes compete in the same arenas. The \"mixed team\" is a euphemism for a space where predator and prey engage directly. During intense physical activity—running, sweating, adrenaline spike—triggering for vampires becomes a serious risk. PE classes present logistics of feeding pressure in close proximity to bleeding injuries, sweat that stimulates predatory instincts, and arousal of competitive aggression in predatory species.\n\nThe social hierarchies that form in these schools are inevitably stratified by species. Vampire students occupy the apex—stronger, faster, capable of serious harm. Human students learn from adolescence that they are physically subordinate and must defer to vampire classmates. Social clubs and school events reinforce these hierarchies. Who leads? Who follows? Whose preferences dominate event planning? The \"mixed\" social environment teaches human adolescents that their role is accommodating and pleasing.\n\nPC terminology functions as thought control. By establishing specific language around vampire-human relations, the school system constrains discourse. Students learn not to question integration itself, not to name their own vulnerability, not to recognize coercion. The language becomes a cage—certain critical thoughts become literally unspeakable within institutional contexts.\n\nThe school functions as a long-term investment in human acceptance of vampire dominance. By normalizing mixed spaces during formative years, by creating early relationships between human and vampire peers, and by establishing the predator-prey relationship as educational and social fact, schools prepare the next generation of humans to accept whatever roles vampires assign them.\n",
+        "erotic_implications": [
+          "Mixed PE classes creating arousal from sweat, exertion, athletic bodies in close proximity",
+          "Power exchange dynamics in school relationships—human submission to vampire strength and authority",
+          "Predator-prey attraction formation during adolescent years in mixed social contexts",
+          "School events and dances as spaces for vampire-human romantic/sexual hierarchies to establish",
+          "Sports teams as contexts for display of physical dominance and vampire allure"
+        ],
+        "taboo_potential": [
+          "Institutional facilitation of predator-prey relationships involving minors",
+          "Schools as indoctrination centers normalizing human subordination",
+          "Blood-triggered arousal near human students in sports/PE contexts",
+          "Psychological conditioning of adolescent humans toward acceptance of dominance",
+          "Question of whether 'integration' is negotiated or imposed through institutional power",
+          "School feeding logistics—how are blood-triggered incidents managed with adolescent students?"
+        ]
+      }
+    },
+    "provenance": "data/kb/world-building/educational-integration.mdx",
+    "path": "data/kb/world-building/educational-integration.mdx",
+    "updated_at": ""
+  },
+  {
+    "id": "elise",
+    "slug": "elise",
+    "name": "Elise",
+    "title": "Elise",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "human",
+      "batgirls",
+      "supporting",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "chloe",
+      "eric",
+      "kiara-natt-och-dag",
+      "batgirls",
+      "skaraborg-high"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Leader of the Batgirls' 'good side' faction. Elise is dating Eric (the team captain) and serves as a mentor and friend to Kiara as she navigates school social dynamics. She demonstrates physical prowess when saving Kevin and Didde from thugs using her fighting skills.",
+        "source_episodes": [
+          "s01e01",
+          "s01e02",
+          "s01e05",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Elise's leadership of the 'good side' is reframed as a performance of control and respectability that masks deeper desires for dominance. Her relationship with Eric becomes a power struggle, while her mentorship of Kiara explores the dynamics of same-sex attraction and the tension between protective care and possessive desire. Her fighting skills become a vehicle for exploring physical dominance and the erotics of violence.",
+        "divergences": [
+          "Leadership role becomes performance masking control desires",
+          "Relationship with Eric explores power dynamics and sexual politics",
+          "Mentorship of Kiara includes same-sex tension and protective possession",
+          "Fighting skills reframed as expressions of physical dominance"
+        ]
+      }
+    },
+    "provenance": "data/characters/elise.yaml",
+    "path": "data/kb/characters/elise.mdx",
+    "updated_at": "2026-02-07T00:00:00+00:00"
+  },
+  {
+    "id": "eric",
+    "slug": "eric",
+    "name": "Eric",
+    "title": "Eric",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "human",
+      "supporting",
+      "skaraborg_bats",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "elise",
+      "kiara-natt-och-dag",
+      "skaraborg-bats",
+      "skaraborg-high"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Team captain of the Skaraborg Bats and chair of the party committee. Eric represents the sports hierarchy at Skaraborg High, where popularity is determined by athletic achievement. He is dating Elise (on-and-off) and becomes involved with Kiara through a triggering incident in Episode 3 and a drunken dance at a warehouse party in Episode 5. In Episode 7, he delivers a public speech about inclusion and diversity that allows Kiara to attend the masquerade.",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e05",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Eric embodies the collision of athletic masculinity with vampire seduction. His triggering incident with Kiara in Episode 3—when his sweat provokes her bloodthirst in a sauna—becomes an explicitly erotic encounter exploring consent, danger, and the erotics of predation. His relationship with Elise is reframed as sexually competitive, while his drunken dance with Kiara and subsequent public speech explore themes of public performance, humiliation, and redemption through submission to vampire authority.",
+        "divergences": [
+          "Triggering incident becomes explicitly erotic encounter in sauna",
+          "Relationship with Elise reframed as sexual competition",
+          "Warehouse party dance explores drunken consent and public desire",
+          "Episode 7 speech becomes submission to vampire authority and public redemption",
+          "Sports hierarchy linked to physical dominance and erotic power"
+        ]
+      }
+    },
+    "provenance": "data/characters/eric.yaml",
+    "path": "data/kb/characters/eric.mdx",
+    "updated_at": "2026-02-07T00:00:00+00:00"
+  },
+  {
+    "id": "erotic-framework",
+    "slug": "erotic-framework",
+    "name": "Erotic Content Framework",
+    "title": "Erotic Content Framework",
+    "category": "uncategorized",
+    "kind": "foundation",
+    "tags": [
+      "mythos",
+      "foundational",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [],
+    "versions": {},
+    "provenance": "docs/erotic-framework.md",
+    "path": "data/kb/foundations/erotic-framework.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "role": "foundational"
+  },
+  {
+    "id": "family_hierarchy",
+    "slug": "vampire-family-hierarchy",
+    "name": "Vampire Family Hierarchy",
+    "title": "Vampire Family Hierarchy",
+    "category": "society",
+    "kind": "mythos",
+    "tags": [
+      "arranged_connections",
+      "arranged_matings_without_consent",
+      "bst",
+      "familial_abuse_normalized",
+      "lineage_importance",
+      "loss_of_bodily_autonomy",
+      "mythos",
+      "obedience_expectations",
+      "patriarchal_structure",
+      "punishment_through_blood_bond",
+      "society",
+      "sst",
+      "strict_upbringing",
+      "traditional_values"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "boris",
+      "vera",
+      "agnes",
+      "saga"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampire families maintain strict hierarchies and traditions. The Natt och Dag family\nexemplifies this with clear patriarchal structure and expectations for their children.\nFamily position determines everything from feeding rights to mate selection.\n\nThe hierarchy extends beyond blood relations to include turned vampires, who owe\nallegiance to their sires, and human servants who serve the family. Position in the\nhierarchy is determined by age, power, and the prestige of one's lineage.",
+        "traits": [
+          "patriarchal_structure",
+          "traditional_values",
+          "strict_upbringing",
+          "arranged_connections",
+          "lineage_importance",
+          "obedience_expectations"
+        ],
+        "abilities": [
+          "unified_family_resources",
+          "generational_knowledge_transfer"
+        ],
+        "weaknesses": [
+          "rigid_structure_limits_adaptation",
+          "internal_politics"
+        ],
+        "significance": "Defines the social order that all vampires must navigate",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, family hierarchy takes on totalitarian dimensions. The head\nof family has absolute authority over members' lives, including rights to feed from\nthem, arrange their marriages, and discipline them physically. Rebellion is rare\nbecause it typically ends in death or exile—which for a vampire often means the same thing.",
+        "traits": [
+          "loss_of_bodily_autonomy",
+          "arranged_matings_without_consent",
+          "punishment_through_blood_bond",
+          "familial_abuse_normalized"
+        ],
+        "significance": "The family structure creates power imbalances that would be recognized as abusive\nin human contexts. Young vampires have little recourse against elders' demands.\nThe conflation of family, feeding, and sexuality creates situations where boundaries\nbecome impossible to maintain or even identify.",
+        "mechanics": "Hierarchy follows strict rules: sire over progeny, elder over younger, direct bloodline\nover turned. Within the same generation, power determines rank. Challenges to hierarchy\nmust be formal, witnessed, and often deadly. The head of family can command any member\nthrough the blood bond, making resistance physiologically difficult.",
+        "erotic_implications": "Family hierarchy extends into intimate matters. Arranged matings serve political purposes,\nand young vampires may be forbidden from pursuing attractions that don't benefit the family.\nIn some families, elders claim \"rights\" to sample progeny before allowing them to mate.\nThe incestuous undertones of vampire families—where one might mate with someone their\nsire once fed from or bedded—are rarely discussed but ever-present."
+      }
+    },
+    "provenance": "data/mythos/family_hierarchy.yaml",
+    "path": "data/kb/mythos/vampire-family-hierarchy.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "divergences": []
+  },
+  {
+    "id": "feeding",
+    "slug": "feeding",
+    "name": "Feeding",
+    "title": "Feeding",
+    "category": "biology",
+    "kind": "mythos",
+    "tags": [
+      "addiction_in_human_donors",
+      "biology",
+      "blood_consumption",
+      "bst",
+      "fatal_overfeeding",
+      "intimate_act",
+      "loss_of_control_during_feeding",
+      "mythos",
+      "power_exchange",
+      "predator_prey_dynamic",
+      "sensory_experience",
+      "sst",
+      "survival_necessity"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "saga",
+      "boris",
+      "vera",
+      "agnes"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The act of consuming blood for sustenance. Vampires require blood to survive, though the\nexact mechanics and frequency are not detailed in the series. What is clear is that feeding\nis both a biological necessity and an intimate act that carries profound significance.\n\nThe series suggests feeding creates connections between vampire and donor, with repeated\nfeeding from the same source building emotional bonds. The act itself appears to be\npleasurable for both parties under the right circumstances.",
+        "traits": [
+          "blood_consumption",
+          "survival_necessity",
+          "intimate_act",
+          "power_exchange",
+          "sensory_experience"
+        ],
+        "abilities": [
+          "sustenance_extraction",
+          "pleasure_induction"
+        ],
+        "weaknesses": [
+          "blood_dependency",
+          "feeding_frenzy_risk"
+        ],
+        "significance": "The most fundamental and frequent vampire interaction with prey or partners",
+        "source_episodes": [
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, feeding becomes explicitly sexualized. The act of penetrating\nskin, the rush of blood, the shared pleasure—feeding mirrors and often accompanies\nsexual intimacy. Vampires who deny this connection are either lying or dangerously repressed.",
+        "traits": [
+          "loss_of_control_during_feeding",
+          "addiction_in_human_donors",
+          "fatal_overfeeding",
+          "predator_prey_dynamic"
+        ],
+        "significance": "Feeding blurs lines between nutrition, intimacy, and violation. The same act that\ncan be loving can be weaponized as assault. The addictive nature of vampire saliva\nraises consent questions: can a donor truly choose freely after experiencing\nvampire feeding's euphoria?",
+        "mechanics": "Vampire saliva contains compounds that numb pain and induce euphoria. A skilled feeder\ncan make the experience purely pleasurable, while a cruel one can weaponize the pain.\nThe bite location matters: neck feeding is intimate, wrist is practical, thigh is explicitly\nsexual. Inner thigh and femoral access is reserved for the most trusted or claimed donors.",
+        "erotic_implications": "Feeding can range from clinical sustenance to the most intimate act a vampire can share.\nMany vampires only feed during sex, finding the combination of penetration irresistible.\nThe power exchange inherent in feeding—one partner entirely vulnerable while the other\ntakes what they need—mirrors many dynamics explored in BDSM communities."
+      }
+    },
+    "provenance": "data/mythos/feeding.yaml",
+    "path": "data/kb/mythos/feeding.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "divergences": []
+  },
+  {
+    "id": "invitation_rule",
+    "slug": "invitation-rule",
+    "name": "Invitation Rule",
+    "title": "Invitation Rule",
+    "category": "world-rules",
+    "kind": "rule",
+    "tags": [
+      "vampire-law",
+      "entry-restriction",
+      "social-boundary",
+      "consent",
+      "bst",
+      "sst",
+      "mythos",
+      "supernatural"
+    ],
+    "aliases": [
+      "Vampire Invitation",
+      "Entry Restriction"
+    ],
+    "related_ids": [
+      "vampire-physiology",
+      "truth-speaking-rule",
+      "blood-system"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampires cannot enter a private residence without being invited by the homeowner or an authorized resident. This is a fundamental supernatural restriction in the vampire physiology itself, not merely a social convention. The rule functions as a consent-based entry mechanism, allowing humans to maintain control over their private spaces. Invitation creates a supernatural exception to the vampire's natural inability to cross the threshold.",
+        "source_episodes": [
+          "s01e01",
+          "s01e05"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the invitation rule becomes a mechanism of possession and control. An invitation carries profound implications: it represents not just access to a physical space, but to the intimate interior of a person's sanctuary. Withdrawal of invitation becomes a form of rejection and expulsion, while forced entry—breaking the rule—represents a violation of the deepest kind.",
+        "erotic_implications": [
+          "Being 'invited in' carries erotic weight: a deliberate, conscious decision to allow a vampire access to one's intimate space",
+          "Seduction often culminates in an invitation; the moment of consent made manifest",
+          "Revocation of invitation becomes a tool of control in power-dynamic relationships"
+        ],
+        "taboo_potential": [
+          "Forced entry as violation of both physical and psychological boundaries",
+          "Invitation given under duress or compulsion",
+          "The blurred line between invitation and consent in moments of predation",
+          "Using invitation as a hook for manipulation and possession"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/world-rules/invitation-rule.mdx",
+    "updated_at": "2026-02-07T00:00:00+00:00",
+    "divergences": [
+      {
+        "BST": "Rule treated as immutable supernatural law"
+      },
+      {
+        "SST": "Rule reframed as consent mechanism weaponized in power dynamics"
+      }
+    ]
+  },
+  {
+    "id": "jacques",
+    "slug": "jacques",
+    "name": "Jacques Natt och Dag",
+    "title": "Jacques Natt och Dag",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "vampire",
+      "natt_och_dag",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "henry-natt-och-dag",
+      "alfred-carlsson"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Kiara's brother and a member of the Natt och Dag family. He is responsible for monitoring Kiara's behavior in the human world. Jacques harbors resentment toward the family's matriarchal inheritance rules, which favor the youngest daughter over him.",
+        "source_episodes": [
+          "s01e01",
+          "s01e04"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Jacques is a seductive and dangerous predator. His resentment toward his family's traditions leads him to seek power through forbidden means, including a taboo blood bond with his niece, Kiara. He represents the transgressive and liberated side of vampire nature.",
+        "divergences": [
+          "Explicitly predatory behavior",
+          "Taboo attraction to Kiara",
+          "Active rebellion against Henry's authority"
+        ]
+      }
+    },
+    "provenance": "data/characters/jacques_natt_och_dag.yaml",
+    "path": "data/kb/characters/jacques.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "kevin",
+    "slug": "kevin",
+    "name": "Kevin",
+    "title": "Kevin",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "human",
+      "student",
+      "dealer",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "didde",
+      "elise",
+      "vamp-medication",
+      "alfred-carlsson"
+    ],
+    "versions": {
+      "bst": {
+        "description": "A student at Skaraborg High and a close friend of Didde. Kevin is involved in the illicit trade of \"Vamp,\" an anti-trigger medication for vampires that humans use as a high-potency drug. He is often seen at parties and was saved by Elise from thugs during a confrontation.",
+        "source_episodes": [
+          "s01e02",
+          "s01e04",
+          "s01e05",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Kevin represents the corruption of the human student body through proximity to vampire culture. His role as a \"Vamp\" dealer is expanded into a more dangerous criminal element, highlighting the addictive and destructive nature of vampire-related substances in human society.",
+        "divergences": [
+          "Expanded criminal background",
+          "Deeper involvement in the \"Vamp\" addiction plot"
+        ]
+      }
+    },
+    "provenance": "data/characters/kevin.yaml",
+    "path": "data/kb/characters/kevin.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "kiara-natt-och-dag",
+    "slug": "kiara-natt-och-dag",
+    "name": "Kiara Natt och Dag",
+    "title": "Kiara Natt och Dag",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "vampire",
+      "protagonist",
+      "natt_och_dag",
+      "batgirls",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "alfred-carlsson",
+      "jacques",
+      "natt-och-dag-estate",
+      "batgirls",
+      "skaraborg-high",
+      "elise",
+      "eric",
+      "chloe",
+      "matriarchal-inheritance",
+      "vampire-physiology"
+    ],
+    "versions": {
+      "bst": {
+        "description": "16-year-old vampire Countess and youngest daughter of the ancient Natt och Dag lineage. As the matriarchal heir, she inherits the family name, title, and Swiss bank accounts. A classically trained ballet dancer who dreams of human dancing, Kiara navigates her first experience in human school while managing her vampire nature—dark vision, emotional crying, SPF 100+ sun protection needs, and the dangerous combination of blood and sweat that triggers her bloodthirst.",
+        "source_episodes": [
+          "s01e01",
+          "s01e02",
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e06",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Kiara embodies the collision of ancient vampire aristocracy with modern teenage desire. Her matriarchal inheritance becomes a cage of expectations, while her relationship with Alfred evolves from innocent fascination to dangerous obsession. The triggering mechanism—blood and sweat combined—transforms into an erotic metaphor for forbidden intimacy. Her ballet training becomes a vehicle for exploring dominance, submission, and the physicality of vampire seduction.",
+        "divergences": [
+          "Triggering becomes explicitly erotic rather than purely dangerous",
+          "Relationship with Alfred explores power dynamics and consent boundaries",
+          "Matriarchal inheritance creates sexual tension with family authority",
+          "Ballet discipline translates to control/release dynamics in intimate contexts"
+        ]
+      }
+    },
+    "provenance": "data/characters/kiara_natt_och_dag.yaml",
+    "path": "data/kb/characters/kiara-natt-och-dag.mdx",
+    "updated_at": "2026-02-07T00:00:00+00:00"
+  },
+  {
+    "id": "livia",
+    "slug": "livia",
+    "name": "Livia",
+    "title": "Livia",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "human",
+      "student",
+      "batgirls",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "felicia",
+      "alfred",
+      "kiara-natt-och-dag",
+      "elise"
+    ],
+    "versions": {
+      "bst": {
+        "description": "A member of the Batgirls dance crew and a student at Skaraborg High. She is often seen with Felicia and is involved in the group's choreography. She is one of the students Alfred interacts with during the series.",
+        "source_episodes": [
+          "s01e05",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Livia serves as a background observer of the escalating tension between the human and vampire factions. Her role highlights the 'normal' student experience being disrupted by supernatural drama.",
+        "divergences": [
+          "Minor role expansion as a witness to events"
+        ]
+      }
+    },
+    "provenance": "data/character_presence.json",
+    "path": "data/kb/characters/livia.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "matriarchal-inheritance",
+    "slug": "matriarchal-inheritance",
+    "name": "Matriarchal Inheritance",
+    "title": "Matriarchal Inheritance",
+    "category": "world-rules",
+    "kind": "rule",
+    "tags": [
+      "society",
+      "family",
+      "tradition",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "Natt och Dag Inheritance"
+    ],
+    "related_ids": [
+      "natt-och-dag-estate",
+      "kiara-natt-och-dag",
+      "jacques"
+    ],
+    "versions": {
+      "bst": {
+        "description": "A traditional rule of the Natt och Dag family, in place since 1327. It dictates that the youngest daughter inherits the family name, title, and all assets. Husbands who marry into the family must take the Natt och Dag name. This rule creates significant tension, particularly for male siblings like Jacques.",
+        "source_episodes": [
+          "s01e03",
+          "s01e04"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, this rule is a source of 'Level 5 - Taboo' family dynamics. The inheritance is not just of property, but of a dark biological and ritualistic legacy. The youngest daughter is groomed from birth to lead, creating a toxic environment of sibling rivalry and patriarchal resentment.",
+        "divergences": [
+          "Deeper focus on the psychological toll of the rule",
+          "Ritualistic aspects of the inheritance"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/world-rules/matriarchal-inheritance.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "natt-och-dag-estate",
+    "slug": "natt-och-dag-estate",
+    "name": "Natt och Dag Estate",
+    "title": "Natt och Dag Estate",
+    "category": "locations",
+    "kind": "lore",
+    "tags": [
+      "vampire",
+      "home",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "Natt och Dag Manor"
+    ],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "henry-natt-och-dag",
+      "jacques",
+      "party-culture",
+      "the-stake"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The ancestral home of the Natt och Dag family since 1327. It is a grand estate that houses the family's history, including the stake used by Kiara's grandmother to kill Count Dracula. The estate features a cellar with ancient sacrificial sites and secret escape routes.",
+        "source_episodes": [
+          "s01e03",
+          "s01e04"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the estate is a place of ritual and repression. The cellar's sacrificial sites are used for dark blood ceremonies, and the secret routes represent the family's history of hiding and predatory behavior. It is the heart of the matriarchal power structure.",
+        "divergences": [
+          "Focus on ritualistic use of the cellar",
+          "More oppressive atmosphere"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/locations/natt-och-dag-estate.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "party_culture",
+    "slug": "party-culture",
+    "name": "Party Culture",
+    "title": "Party Culture",
+    "category": "social-concepts",
+    "kind": "lore",
+    "tags": [
+      "parties",
+      "social-events",
+      "warehouse",
+      "village-hall",
+      "integration",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "skaraborg-high",
+      "natt-och-dag-estate",
+      "eric",
+      "kiara-natt-och-dag"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Party culture in BST serves as a critical venue for testing social integration between vampires and humans, and between different social classes. Parties function as liminal spaces where normal social rules bend, enabling both romance and conflict.\n",
+        "source_episodes": [
+          "s01e03",
+          "s01e04",
+          "s01e05",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, parties become sites of predatory potential and boundary transgression. The removal of social inhibition through alcohol, the mingling of predator and prey, and the intoxication-induced ambiguity of consent transform parties into dangerous theaters of power exchange and desire. Private estates become controlled hunting grounds, while public spaces like warehouses represent liberation mixed with exposure and risk.\n",
+        "erotic_implications": [
+          "Intoxication as consent removal and vulnerability",
+          "Predator-prey dynamics in intimate proximity",
+          "Costume and disguise enabling role-play and revelation",
+          "Dance as physical intimacy and dominance display",
+          "Private spaces offering isolation and control",
+          "Drunkenness lowering boundaries and inhibitions"
+        ],
+        "taboo_potential": [
+          "Vampire feeding under cover of party chaos",
+          "Intoxicated humans unable to consent to intimate acts",
+          "Power imbalances exploited in private estates",
+          "Sexual coercion masked as romantic advancement",
+          "Predatory surveillance of intoxicated targets"
+        ]
+      }
+    },
+    "provenance": "data/kb/social-concepts/party-culture.mdx",
+    "path": "data/kb/social-concepts/party-culture.mdx",
+    "updated_at": ""
+  },
+  {
+    "id": "pc_terminology",
+    "slug": "pc-terminology",
+    "name": "PC Terminology (Cold-blooded vs Vampire)",
+    "title": "PC Terminology (Cold-blooded vs Vampire)",
+    "category": "social-concepts",
+    "kind": "lore",
+    "tags": [
+      "language",
+      "political-correctness",
+      "vampire-human-relations",
+      "bst",
+      "sst",
+      "mythos"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "blood-pact",
+      "vampire-human-integration",
+      "skaraborg-high"
+    ],
+    "versions": {
+      "bst": {
+        "description": "In the canonical timeline, \"cold-blooded\" serves as the preferred PC (politically correct) terminology for vampires in integrated human-vampire societies, particularly at Skaraborg High. The term reflects a cultural shift toward respectful coexistence and inclusive language practices.\n\nIn **s01e01**, the integration narrative establishes that vampires and humans coexist at Skaraborg High with explicit social protocols. The introduction of \"cold-blooded\" as euphemistic terminology demonstrates the school's commitment to creating a language framework that acknowledges vampire nature without resorting to historical slurs. This linguistic choice parallels real-world movements toward inclusive language that recognize marginalized groups' preferences for self-identification.\n\nIn **s01e02**, the terminology debate continues as characters navigate the practical implications of this linguistic integration. \"Cold-blooded\" becomes a linguistic marker of the society's attempt to transcend historical antagonism between species. The term's adoption among younger generations signals successful normalization of vampire-human relationships in institutional settings. However, the existence of the debate itself—that some still prefer \"vampire\" over \"cold-blooded\"—suggests the PC terminology represents an ongoing negotiation rather than universal acceptance.\n\nThe terminology reflects broader social integration efforts: just as schools adopted anti-bullying policies and diversity curricula, the adoption of \"cold-blooded\" represents institutional acknowledgment of vampire personhood and dignity. The very existence of preferred terminology indicates that vampires have achieved sufficient social status to influence language norms in their institutional spaces.\n",
+        "source_episodes": [
+          "s01e01",
+          "s01e02"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the \"cold-blooded vs vampire\" terminology debate becomes a focal point for examining linguistic control, historical erasure, and power dynamics within vampire-human integration. What appears as progressive inclusivity masks deeper mechanisms of oppression and identity suppression.\n\n**Euphemism as Erasure**: The term \"cold-blooded\" functions as enforced historical amnesia. By replacing \"vampire\"—a term laden with predatory history, sexual danger, and transgressive power—\"cold-blooded\" sanitizes vampire nature into biological neutrality. Vampires are forced to accept terminology that denies their predatory essence, their capacity for violence, their erotic transgression. The institutional mandate to use \"cold-blooded\" becomes a form of linguistic domestication, rendering vampires safe, manageable, non-threatening. Those who continue to use \"vampire\" face social sanctions, redefined as ignorant, bigoted, or dangerous.\n\n**Power to Name as Power to Control**: Language policing becomes an instrument of vampire subjugation. Humans—the politically dominant species—dictate which terms are \"acceptable,\" forcing vampires to accept language that obscures their nature. This echoes historical patterns where colonizers renamed indigenous peoples, enslaved populations were forbidden their native languages, and marginalized groups were forced to accept dehumanizing terminology. In the dark adaptation, the direction is inverted: vampires, despite their predatory superiority, are linguistically disempowered, forced to accept human-mandated self-identification.\n\n**Generational Conflict and Memory Control**: Older vampires remember a time when \"vampire\" carried fearful power. Younger vampires, socialized at Skaraborg High, internalize \"cold-blooded\" as their identity, losing connection to their predatory heritage and the transgressive power their ancestors wielded. The adoption of \"cold-blooded\" becomes a form of cultural genocide—each generation further removed from authentic vampire identity. Language functions as a tool for temporal control, severing younger vampires from historical memory and ancestral power.\n\n**Reclamation and Resistance**: Characters who insist on \"vampire\" engage in linguistic reclamation, refusing the sanitized identity forced upon them. Using \"vampire\" becomes an act of defiance, a claim to predatory nature, erotic transgression, and dangerous otherness. In D/s dynamics between vampire and human partners, the choice of terminology—who can say \"vampire,\" who must say \"cold-blooded\"—becomes a marker of dominance and submission. A dominant vampire character might demand lovers address them as \"vampire\" rather than accept the neutered \"cold-blooded.\" Conversely, human dominants might enforce \"cold-blooded\" as a linguistic humiliation, a constant reminder that even the vampire's self-identification is subject to human control.\n\n**Institutional Enforcement and Social Policing**: Skaraborg High's adoption of \"cold-blooded\" represents institutional violence disguised as progress. Students face social ostracism, administrative discipline, or worse for using \"vampire.\" Teachers police language with the zeal of ideological enforcers. The \"inclusive\" terminology becomes a compliance mechanism, a test of submission to human-mandated norms. Vampires learn that institutional belonging requires linguistic self-erasure.\n\nThe PC terminology debate becomes a microcosm of vampire-human power relations: despite their predatory superiority and erotic danger, vampires are linguistically disempowered, forced into identities that deny their essential nature, their history, their transgressive capacity. The \"progress\" of inclusive language masks systemic erasure of vampire identity itself.\n",
+        "erotic_implications": [
+          "Linguistic humiliation in D/s dynamics (forced use of \"cold-blooded\" vs \"vampire\")",
+          "Reclaiming \"vampire\" as erotic transgression, dangerous arousal",
+          "Power exchange through terminology control in intimate relationships",
+          "Forbidden use of \"vampire\" as intimate transgression, linguistic submission",
+          "Generational erotics of resistance vs compliance"
+        ],
+        "taboo_potential": [
+          "Forced linguistic assimilation parallels cultural genocide",
+          "Language policing as institutional violence",
+          "Memory erasure through generational language shift",
+          "Identity suppression through \"progressive\" terminology",
+          "Parallels to real-world language policing and cultural erasure debates"
+        ]
+      }
+    },
+    "provenance": "data/kb/social-concepts/pc-terminology.mdx",
+    "path": "data/kb/social-concepts/pc-terminology.mdx",
+    "updated_at": ""
+  },
+  {
+    "id": "rektor",
+    "slug": "rektor",
+    "name": "Rektor (Principal)",
+    "title": "Rektor (Principal)",
+    "category": "characters",
+    "kind": "lore",
+    "tags": [
+      "human",
+      "authority",
+      "skaraborg_high",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "Principal"
+    ],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "eric",
+      "educational-integration"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The Principal of Skaraborg High. She is focused on school reputation and diversity initiatives, ordering open auditions for the Batgirls. However, she is quick to ban vampires from school events when incidents occur, showing a latent bias.",
+        "source_episodes": [
+          "s01e01",
+          "s01e06",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the Principal represents the systemic oppression and hypocrisy of human institutions. Her 'diversity' initiatives are shown to be performative, and her fear of vampires manifests as authoritarian control and segregation.",
+        "divergences": [
+          "More overtly antagonistic toward vampires",
+          "Hypocritical stance on inclusion"
+        ]
+      }
+    },
+    "provenance": "data/characters/rektor.yaml",
+    "path": "data/kb/characters/rektor.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "repository-access",
+    "slug": "repository-access",
+    "name": "Repository Access",
+    "title": "Repository Access",
+    "category": "uncategorized",
+    "kind": "foundation",
+    "tags": [
+      "mythos",
+      "foundational",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [],
+    "versions": {},
+    "provenance": "docs/repository-access.md",
+    "path": "data/kb/foundations/repository-access.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "role": "foundational"
+  },
+  {
+    "id": "s01e01",
+    "slug": "s01e01",
+    "name": "Episode 1: Kallblodig skolstart",
+    "title": "Episode 1: Kallblodig skolstart",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred-carlsson",
+      "elise",
+      "chloe",
+      "eric",
+      "skaraborg-high",
+      "natt-och-dag-estate",
+      "batgirls",
+      "skaraborg-bats",
+      "vampire-biology",
+      "blood-system"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Kiara Natt och Dag, a 16-year-old vampire, starts her first day at a human school, Skaraborg High. She dreams of dancing with humans, but the elite Batgirls dance crew has other plans. She meets Alfred, a vampire researcher who is fascinated by her kind. The Principal orders open auditions for the Batgirls to increase diversity.",
+        "source_episodes": [
+          "s01e01"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, Kiara's entry into the human school is a calculated move by the Natt och Dag family to test the limits of the Blood Pact. Her attraction to the human world is tinged with a predatory hunger that she struggles to suppress. Alfred's fascination is depicted as a dangerous obsession with the 'other'.",
+        "divergences": [
+          "More focus on Kiara's internal struggle with bloodlust",
+          "Alfred's character is more obsessive and less innocent"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e01.mdx",
+    "path": "data/kb/episodes/s01e01.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "s01e02",
+    "slug": "s01e02",
+    "name": "Episode 2: Audition till Batgirls",
+    "title": "Episode 2: Audition till Batgirls",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred-carlsson",
+      "elise",
+      "chloe",
+      "eric",
+      "skaraborg-high",
+      "batgirls"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Kiara and Alfred's friendship grows as he guides her through the human world. Alfred advises Kiara against the Batgirls audition, but Eric encourages her to go, seeing it as a way to win back Elise. Kiara's mother warns her about the dangers of the human world and the importance of family tradition.",
+        "source_episodes": [
+          "s01e02"
+        ]
+      },
+      "sst": {
+        "description": "The dark adaptation highlights the manipulation within the student body. Eric's encouragement of Kiara is shown to be purely self-serving, using her as a pawn in his relationship drama. Kiara's mother's warnings are more ominous, hinting at the violent history of the Natt och Dag family.",
+        "divergences": [
+          "Eric's motivations are more cynical",
+          "Kiara's mother is more authoritarian and threatening"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e02.mdx",
+    "path": "data/kb/episodes/s01e02.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "s01e03",
+    "slug": "s01e03",
+    "name": "Episode 3: Lunch hos Natt och Dag",
+    "title": "Episode 3: Lunch hos Natt och Dag",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred-carlsson",
+      "eric",
+      "elise",
+      "jacques",
+      "henry-natt-och-dag",
+      "natt-och-dag-estate",
+      "matriarchal-inheritance",
+      "vampire-biology"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Kiara invites Alfred to lunch at her family estate. What starts as a dream day for Alfred turns into a nightmare as he is overwhelmed by the vampire environment. Kiara's grandmother, Countess Dracula, is revealed to have killed Count Dracula. Later, Kiara is triggered by Eric's sweat in a sauna and attacks him.",
+        "source_episodes": [
+          "s01e03"
+        ]
+      },
+      "sst": {
+        "description": "The lunch is transformed into a ritualized feeding session where Kiara is forced to participate. The atmosphere is one of 'Level 3 - Horror.' Kiara's attack on Eric in the sauna is explicitly depicted as a loss of control, a 'Level 4 - Erotic' moment where bloodlust and physical attraction collide.",
+        "divergences": [
+          "The lunch is a dark ritual rather than an awkward meal",
+          "The sauna attack is more violent and sexually charged"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e03.mdx",
+    "path": "data/kb/episodes/s01e03.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "s01e04",
+    "slug": "s01e04",
+    "name": "Episode 4: Matriarkatet",
+    "title": "Episode 4: Matriarkatet",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred-carlsson",
+      "elise",
+      "eric",
+      "jacques",
+      "natt-och-dag-estate",
+      "matriarchal-inheritance"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Kiara and Elise become friends, and Kiara gives her love advice. Chloe manipulates Kiara into hosting a party at the estate to fix her reputation. The party spirals out of control when Kevin and Didde arrive with 'Vamp,' an anti-trigger medicine that humans use as a drug. Jacques expresses his resentment over the matriarchal inheritance rules.",
+        "source_episodes": [
+          "s01e04"
+        ]
+      },
+      "sst": {
+        "description": "The party at the estate is a scene of 'Level 6 - Transgressive' darkness. The use of 'Vamp' by humans is depicted as a dangerous addiction that blurs the lines between the species. Jacques's resentment is more volatile, leading to a confrontation with Kiara that hints at their taboo blood bond.",
+        "divergences": [
+          "The party is more hedonistic and dangerous",
+          "Jacques's role is more antagonistic and predatory"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e04.mdx",
+    "path": "data/kb/episodes/s01e04.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "s01e05",
+    "slug": "s01e05",
+    "name": "Episode 5: Festen i magasinet",
+    "title": "Episode 5: Festen i magasinet",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred-carlsson",
+      "elise",
+      "eric",
+      "kevin",
+      "blood-system"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Kiara's friendship with Alfred puts her position in the Batgirls at risk. She attends a warehouse party with Chloe and Elise, where the environment is hot and sweaty, testing her control. Kevin and Didde sell stolen 'Vamp.' Eric, drunk and emotional, dances with Kiara, leading to a confrontation with Elise.",
+        "source_episodes": [
+          "s01e05"
+        ]
+      },
+      "sst": {
+        "description": "The warehouse party is a 'Level 4 - Erotic' setting where the heat and sweat are used to heighten the tension. Kiara's struggle for control is depicted as a battle against her own awakening desires. Eric's dance with Kiara is more intimate and provocative, fueling Elise's jealousy and rage.",
+        "divergences": [
+          "The warehouse party is more claustrophobic and intense",
+          "The confrontation between Elise and Kiara is more violent"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e05.mdx",
+    "path": "data/kb/episodes/s01e05.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "s01e06",
+    "slug": "s01e06",
+    "name": "Episode 6: Blåljus och blod",
+    "title": "Episode 6: Blåljus och blod",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred-carlsson",
+      "elise",
+      "eric",
+      "rektor",
+      "skaraborg-high",
+      "batgirls",
+      "vampire-biology"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The warehouse party ends in chaos. Eric is hospitalized after Kiara's bite, and Alfred's drunk rant goes viral. The Principal bans vampires from the school masquerade. Kiara faces consequences both at home and at school. The 'Blood System' is shown to have the power to file child welfare reports.",
+        "source_episodes": [
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "The aftermath of the party is a 'Level 1 - Psychological' and 'Level 2 - Emotional' exploration of the characters' failures. The Principal's ban is depicted as a form of systemic segregation. Kiara's bite on Eric is treated with the gravity of a sexual assault, highlighting the power imbalance between the species.",
+        "divergences": [
+          "The consequences for Kiara are more severe and systemic",
+          "Alfred's viral rant is more destructive to his reputation"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e06.mdx",
+    "path": "data/kb/episodes/s01e06.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "s01e07",
+    "slug": "s01e07",
+    "name": "Episode 7: Erics tal",
+    "title": "Episode 7: Erics tal",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred-carlsson",
+      "elise",
+      "eric",
+      "skaraborg-high",
+      "skaraborg-bats"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampires are forbidden from the masquerade, and Kiara loses hope of a life among humans. Alfred tries to win her back. Eric and Elise reconcile and decide to help Kiara. Eric makes a public speech about inclusion, forcing the Principal to allow Kiara at the masquerade. Elise saves Kevin and Didde from thugs.",
+        "source_episodes": [
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "Eric's speech is depicted as a moment of 'Level 1 - Psychological' manipulation, using the language of inclusion to maintain his own social status. Kiara's return to the masquerade is not a triumph of integration, but a step toward her embracing her dark nature. Elise's fight with the thugs is more brutal and visceral.",
+        "divergences": [
+          "Eric's speech is more self-serving",
+          "Elise's fight is more violent and shows her own dark potential"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e07.mdx",
+    "path": "data/kb/episodes/s01e07.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "s01e08",
+    "slug": "s01e08",
+    "name": "Episode 8: Maskeradbalen",
+    "title": "Episode 8: Maskeradbalen",
+    "category": "episodes",
+    "kind": "lore",
+    "tags": [
+      "episode",
+      "s01",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "alfred",
+      "chloe",
+      "skaraborg-high",
+      "batgirls"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The finale of the season. Kiara and Elise arrive late to the Batgirls' performance, but Kiara challenges Chloe to an epic dance battle. Chloe's secret is revealed, showing who she truly is. Eric and Elise save the show, and Kiara attempts to win back Alfred. (Note: Based on SVT synopsis as transcript was a duplicate).",
+        "source_episodes": []
+      },
+      "sst": {
+        "description": "The masquerade ball is the climax of the 'Level 6 - Transgressive' darkness. The dance battle is a ritualistic display of power and desire. Chloe's secret is revealed to be a deep connection to the supernatural, possibly as an 'observer' with a specific kink. The episode ends with Kiara fully embracing her vampire nature.",
+        "divergences": [
+          "The dance battle is more ritualistic and intense",
+          "Chloe's secret is more dark and supernatural"
+        ]
+      }
+    },
+    "provenance": "data/kb/episodes/s01e08.mdx",
+    "path": "data/kb/episodes/s01e08.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "skaraborg-bats",
+    "slug": "skaraborg-bats",
+    "name": "Skaraborg Bats",
+    "title": "Skaraborg Bats",
+    "category": "social-groups",
+    "kind": "lore",
+    "tags": [
+      "sports",
+      "student",
+      "elite",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "The Bats"
+    ],
+    "related_ids": [
+      "eric",
+      "skaraborg-high",
+      "skaraborg-high-hierarchy"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The collective name for the sports teams at Skaraborg High. The school's social hierarchy is built around the success of the Bats, with popularity determined by contributions to the team's trophy cabinet. Eric is the team captain and a central figure in the school's social life.",
+        "source_episodes": [
+          "s01e01",
+          "s01e05",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the Skaraborg Bats represent the physical and competitive peak of human youth. Their obsession with trophies and performance is a mask for the pressure to maintain human dominance in a world shared with vampires. The team's culture is one of toxic masculinity and physical prowess.",
+        "divergences": [
+          "More aggressive team culture",
+          "Focus on physical dominance"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/social-groups/skaraborg-bats.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "skaraborg-high",
+    "slug": "skaraborg-high",
+    "name": "Skaraborg High",
+    "title": "Skaraborg High",
+    "category": "locations",
+    "kind": "lore",
+    "tags": [
+      "school",
+      "setting",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "Skaraborg High School"
+    ],
+    "related_ids": [
+      "rektor",
+      "batgirls",
+      "skaraborg-bats",
+      "eric",
+      "elise",
+      "skaraborg-high-hierarchy",
+      "educational-integration"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The primary setting of the series. Skaraborg High is a human school where popularity is strictly based on sports performance and contributions to the 'Skaraborg Bats' trophy cabinet. It is the site of Kiara's first attempt at integration with humans.",
+        "source_episodes": [
+          "s01e01",
+          "s01e06",
+          "s01e07"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the school is a microcosm of the 'Blood Pact' society. The hierarchy is more brutal, and the pressure to perform is linked to survival and status in a world where humans and vampires coexist in a fragile, often exploitative peace.",
+        "divergences": [
+          "More intense social hierarchy",
+          "Site of systemic segregation"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/locations/skaraborg-high.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "skaraborg_high_hierarchy",
+    "slug": "skaraborg-high-hierarchy",
+    "name": "Skaraborg High Hierarchy",
+    "title": "Skaraborg High Hierarchy",
+    "category": "social-concepts",
+    "kind": "lore",
+    "tags": [
+      "school",
+      "popularity",
+      "sports",
+      "hierarchy",
+      "social-status",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "skaraborg-high",
+      "skaraborg-bats",
+      "batgirls",
+      "eric",
+      "kiara-natt-och-dag"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The social hierarchy at Skaraborg High is explicitly determined by athletic performance and sports achievement rather than academic accomplishment. Physical prowess on the field, particularly in team sports, directly correlates with social status, popularity, and access to exclusive social circles within the school. Sports trophies and championship wins serve as visible markers of status, and participation on successful teams—especially as captain or key player—grants social prestige and influence. Eric's position as team captain exemplifies this dynamic, elevating him to the apex of the school's social pyramid. Notably, athletic success translates to other social privileges: team members hold prominent positions in school committees and social planning roles, indicating that the hierarchy extends beyond the gym into all aspects of school governance. The system encompasses both human and vampire students, with the integration of supernatural beings into the conventional sports hierarchy creating a parallel layer of status negotiation where physical dominance transcends species boundaries.\n",
+        "source_episodes": [
+          "s01e01",
+          "s01e02",
+          "s01e05"
+        ]
+      },
+      "sst": {
+        "description": "In the Skaraborg High hierarchy's dark adaptation, athletic performance becomes a transparent metaphor for predatory dominance and sexual desirability. The school's ranking system reflects power dynamics rooted in physical control and bodily capability—those capable of exerting dominance through strength and athleticism occupy positions of elevated social and erotic currency. Team sports function as ritualized displays of physical prowess and dominance, with trophies serving not merely as achievement markers but as visible manifestations of conquest and superiority. The body becomes the primary medium of exchange in social negotiation; physical attractiveness and athletic capability are inseparable from sexual desirability and hierarchical positioning. The integration of vampire students into this system amplifies the predatory subtext: the supernatural strength and physical dominance inherent to their nature makes the athletics hierarchy a literal expression of predator-prey dynamics. Eric's captaincy carries undertones of physical mastery and control. The school's social rituals—from trophy displays to committee roles allocated to athletes—mirror patterns of dominance assertion and objectification, where physical achievement creates entitlement to social and sexual access. This creates a permutation of hierarchy in which consent becomes obscured by power imbalance, and physical capability becomes indistinguishable from the right to exert control.\n",
+        "erotic_implications": [
+          "Athletic dominance as sexual desirability marker",
+          "Physical prowess equating to right of access",
+          "Trophy culture as objectification metaphor",
+          "Vampire strength as supernatural sexual power",
+          "Team hierarchy as power-exchange dynamic",
+          "Coach-athlete relationships in dominance context",
+          "Physical vulnerability of non-athletes in social space"
+        ],
+        "taboo_potential": [
+          "Non-consensual power dynamics in hierarchical structure",
+          "Predatory dynamics masked by school institution",
+          "Sexual coercion inherent in power imbalance",
+          "Vampire predation normalized through sports integration",
+          "Objectification of bodies as status currency",
+          "Exploitation of physical vulnerability",
+          "Authority figures leveraging hierarchical position"
+        ]
+      }
+    },
+    "provenance": "data/kb/social-concepts/skaraborg-high-hierarchy.mdx",
+    "path": "data/kb/social-concepts/skaraborg-high-hierarchy.mdx",
+    "updated_at": ""
+  },
+  {
+    "id": "swedish_vampire_integration",
+    "slug": "swedish-vampire-integration",
+    "name": "Swedish Vampire Integration",
+    "title": "Swedish Vampire Integration",
+    "category": "world-building",
+    "kind": "lore",
+    "tags": [
+      "society",
+      "integration",
+      "legal-system",
+      "vampire-human-relations",
+      "sweden",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "blood-pact",
+      "pc-terminology",
+      "skaraborg-high",
+      "vampire-human-integration"
+    ],
+    "versions": {
+      "bst": {
+        "description": "In post-Blood Pact Sweden, vampires are fully integrated into society with legal rights, educational access, and economic participation. The integration represents a historic transition from conflict to coexistence.\n",
+        "source_episodes": [
+          "s01e01",
+          "s01e02",
+          "s01e03",
+          "s01e04"
+        ]
+      },
+      "sst": {
+        "description": "Swedish vampire integration masks deep power imbalances and control mechanisms. Legal equality obscures persistent hierarchies, blood donation systems function as tribute, and cultural assimilation enforces vampire dominance through institutional frameworks.\n",
+        "erotic_implications": [
+          "consent-ambiguity",
+          "power-exchange",
+          "blood-as-intimacy",
+          "hierarchical-desire",
+          "forbidden-transgression"
+        ],
+        "taboo_potential": [
+          "feudal-subjugation",
+          "blood-servitude",
+          "institutional-control",
+          "erasure-of-history",
+          "linguistic-domination"
+        ]
+      }
+    },
+    "provenance": "data/kb/world-building/swedish-vampire-integration.mdx",
+    "path": "data/kb/world-building/swedish-vampire-integration.mdx",
+    "updated_at": ""
+  },
+  {
+    "id": "the_stake",
+    "slug": "the-stake",
+    "name": "The Stake",
+    "title": "The Stake",
+    "category": "artifacts",
+    "kind": "artifact",
+    "tags": [
+      "dracula-relic",
+      "vampire-killer",
+      "natt-och-dag-heirloom",
+      "historical-weapon",
+      "bst",
+      "sst",
+      "mythos"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "kiara-natt-och-dag",
+      "natt-och-dag-estate",
+      "blood-pact",
+      "vampire-physiology"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The Stake is the legendary weapon used by Kiara's grandmother (previous Countess Natt och Dag) to kill Count Dracula. It is kept as a family heirloom at the Natt och Dag estate, representing the family's prestigious role in vampire history.\n\nThe stake's existence confirms that vampires can be killed by traditional methods (wooden stake through the heart), and its preservation as relic rather than weapon suggests the end of vampire-vampire violence in the post-Pact era.\n",
+        "source_episodes": [
+          "s01e03"
+        ]
+      },
+      "sst": {
+        "description": "In SST, The Stake carries darker significance. It represents vampire aristocracy's willingness to kill their own kind to consolidate power, and its display as trophy suggests the Natt och Dag family's ruthlessness in eliminating rivals.\n\nThe weapon that killed Dracula - the most famous vampire in history - becoming a noble family's heirloom implies the Pact-era aristocrats betrayed their own people to secure their position in the new order. The stake is both proof of vampire vulnerability and symbol of internal betrayal.\n",
+        "erotic_implications": [
+          "Phallic symbolism of the stake (penetration as destruction)",
+          "Killing Dracula as political/sexual power move by matriarch",
+          "Grandmother's act as dominance assertion",
+          "Stake preserved in family estate (death as decoration)",
+          "Kiara as heir to killer lineage",
+          "Weaponized penetration as ultimate violation"
+        ],
+        "taboo_potential": [
+          "Vampire aristocracy eliminating pre-Pact vampire royalty",
+          "Assassination disguised as monster slaying",
+          "Matriarchs killing to ensure inheritance passes to daughters",
+          "Stake as ritual object for vampire executions",
+          "Family pride in betrayal of vampire kind",
+          "Display of murder weapon as social status symbol"
+        ]
+      }
+    },
+    "provenance": "data/kb/artifacts/the-stake.mdx",
+    "path": "data/kb/artifacts/the-stake.mdx",
+    "updated_at": "2026-02-07"
+  },
+  {
+    "id": "transformation",
+    "slug": "vampire-transformation",
+    "name": "Vampire Transformation",
+    "title": "Vampire Transformation",
+    "category": "biology",
+    "kind": "mythos",
+    "tags": [
+      "biology",
+      "blood_exchange_required",
+      "bst",
+      "death_and_rebirth",
+      "death_experience",
+      "eternal_servitude_to_sire",
+      "hunger_upon_waking",
+      "identity_death",
+      "irreversible",
+      "life_changing",
+      "loss_of_humanity",
+      "mythos",
+      "sire_bond_creation",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "boris",
+      "vera"
+    ],
+    "versions": {
+      "bst": {
+        "description": "The process by which humans become vampires. Not explicitly detailed in the series,\nbut implied to involve blood exchange and a death-like transition. Once transformed,\nthere is no return to humanity—the change is permanent and absolute.\n\nTransformation creates a bond between sire and progeny, with the new vampire emerging\ninto their maker's family with all the obligations that entails. The decision to\ntransform someone is never taken lightly, as it creates an eternal connection.",
+        "traits": [
+          "blood_exchange_required",
+          "death_and_rebirth",
+          "irreversible",
+          "life_changing",
+          "sire_bond_creation"
+        ],
+        "abilities": [
+          "grant_immortality",
+          "create_progeny"
+        ],
+        "weaknesses": [
+          "loss_of_human_life",
+          "eternal_obligation_to_sire"
+        ],
+        "significance": "The ultimate act of vampire creation and the most intimate gift possible",
+        "source_episodes": []
+      },
+      "sst": {
+        "description": "In the dark adaptation, transformation is explicitly violent and sexual. The sire\nmust drain the human nearly to death, then share their blood in an act of reverse\nfeeding. The transition involves a death—the human dies, and what wakes is something\nelse wearing their face. Many new vampires struggle with what they've lost.",
+        "traits": [
+          "death_experience",
+          "loss_of_humanity",
+          "hunger_upon_waking",
+          "eternal_servitude_to_sire",
+          "identity_death"
+        ],
+        "significance": "Transformation raises the ultimate consent question: the human agrees to transform,\nbut the creature that wakes is not quite them. Did they consent to becoming a predator?\nTo losing their human life, loves, future? The power dynamic between sire and new\nprogeny mirrors abusive relationships, with the progeny dependent on their maker\nfor knowledge, protection, and often feeding in those first vulnerable nights.",
+        "mechanics": "Transformation requires the human to be drained past the point of no return, then\nfed vampire blood while the heart still weakly beats. The process takes three nights:\nthe first night the human dies, the second they sleep in the earth, the third they\nrise as vampire. The sire must stay close during this time, as their blood calls\nto the awakening progeny.",
+        "erotic_implications": "Transformation is the ultimate consummation. Sires often choose lovers to turn,\ncreating an eternal partner bound to them by blood. The act itself—draining,\nfeeding, the three nights of intimacy—is intensely sexual for both parties.\nSome vampires describe their transformation as the most erotic experience of\ntheir existence, colored by the terror and ecstasy of death."
+      }
+    },
+    "provenance": "data/mythos/transformation.yaml",
+    "path": "data/kb/mythos/vampire-transformation.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "divergences": []
+  },
+  {
+    "id": "truth_speaking_rule",
+    "slug": "truth-speaking-rule",
+    "name": "Truth-Speaking Rule",
+    "title": "Truth-Speaking Rule",
+    "category": "world-rules",
+    "kind": "rule",
+    "tags": [
+      "vampire-law",
+      "compulsion",
+      "truth",
+      "communication",
+      "honesty",
+      "bst",
+      "sst",
+      "mythos",
+      "supernatural"
+    ],
+    "aliases": [
+      "Vampire Honesty",
+      "Truth Compulsion",
+      "Truthfulness Rule"
+    ],
+    "related_ids": [
+      "vampire-physiology",
+      "invitation-rule",
+      "blood-system"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampires possess an inviolable compulsion toward truthfulness. They cannot deliberately lie or practice deception. This is a fundamental aspect of vampire physiology, not a social norm or learned behavior. The rule functions as a form of supernatural constraint, creating a biological or mystical inability to construct falsehoods. This compulsion makes vampires inherently trustworthy in vampire-human society, where truth-speaking becomes a cornerstone of the social contract.",
+        "source_episodes": [
+          "s01e01",
+          "s01e02"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, the truth-speaking compulsion transforms from a virtue into a vulnerability—a weapon that can be wielded by those who understand its nature. A vampire's inability to lie becomes a form of nakedness, a stripping away of the protective barriers that allow social survival. The compulsion becomes a tool of control: one who knows how to ask the right questions can extract devastating truths, manipulate confession, and weaponize honesty itself.",
+        "erotic_implications": [
+          "Raw, unfiltered truth in intimate moments; a vampire cannot hide desire, fear, or need",
+          "The eroticism of complete vulnerability; a vampire's compulsion to speak truth becomes a form of submission",
+          "Interrogation as foreplay; extracting truth through pressure becomes a form of psychosexual dominance",
+          "The power of forcing confession; making a vampire speak their deepest desires or darkest fantasies against their will",
+          "Trust built on enforced honesty rather than earned through choice; intimacy marked by the vampire's inability to conceal"
+        ],
+        "taboo_potential": [
+          "Weaponized interrogation; using the truth-speaking compulsion as a torture mechanism",
+          "Forced confession of dark desires or shameful secrets in sexual contexts",
+          "The violation of enforced transparency; stripping a vampire of the ability to maintain psychological privacy",
+          "Using compelled truth-telling as a mechanism of psychological domination and control",
+          "The horror of complete exposure; the vampire unable to maintain any facade or defense",
+          "Truth extracted under pain or emotional duress; confession as a form of harm"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/world-rules/truth-speaking-rule.mdx",
+    "updated_at": "2026-02-07T00:00:00+00:00",
+    "divergences": [
+      {
+        "BST": "Truth-speaking is presented as a moral virtue and social advantage"
+      },
+      {
+        "SST": "Truth-speaking is reframed as a dangerous vulnerability and tool of domination"
+      }
+    ]
+  },
+  {
+    "id": "vamp_medication",
+    "slug": "vamp-medication",
+    "name": "Vamp Medication",
+    "title": "Vamp Medication",
+    "category": "biology",
+    "kind": "lore",
+    "tags": [
+      "medication",
+      "anti-trigger",
+      "recreational",
+      "drug_trade",
+      "bst",
+      "sst",
+      "mythos",
+      "pharmaceutical",
+      "vampire_neurology"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "feeding",
+      "vampire-physiology",
+      "kevin",
+      "triggering"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vamp medication is a pharmaceutical compound developed to prevent the bloodthirst trigger response in vampires when exposed to the combination of blood and sweat.\n\nThe medication functions as a neurological suppressant, blocking the physiological cascade that would normally activate a vampire's predatory instincts during human contact involving these trigger compounds. This allows vampires to safely coexist in human environments, attend school, and maintain social relationships without risk of feral episodes.\n\nBeyond its therapeutic application, vamp medication has emerged as a recreational drug in both vampire and human populations. Among humans, the effects are described as producing an intense neurological sensation—\"an orgasm for the brain\"—making it highly sought after in illicit drug markets. The drug's dual nature creates complex social and legal challenges as societies attempt to integrate vampire populations while regulating a substance with significant abuse potential.\n\nThe medication appears to be a carefully controlled pharmaceutical, with distribution tied to individuals like Kevin who operate within grey-market drug trade networks. Its availability and access reflect the tension between vampire-human integration efforts and the reality of substance trafficking.\n",
+        "traits": [
+          "neurological_suppression",
+          "anti_trigger_mechanism",
+          "recreational_potential",
+          "dual_use_compound",
+          "human_affective_intensity"
+        ],
+        "abilities": [
+          "blocks_bloodthirst_cascade",
+          "enables_social_integration",
+          "produces_altered_consciousness_in_humans"
+        ],
+        "weaknesses": [
+          "addiction_potential",
+          "grey_market_distribution",
+          "abuse_in_human_population",
+          "unknown_long_term_effects"
+        ],
+        "significance": "Critical pharmaceutical enabling vampire-human coexistence while creating new social challenges",
+        "source_episodes": [
+          "s01e01",
+          "s01e02",
+          "s01e05"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, vamp medication becomes a complex metaphor for control, consent, and power dynamics in vampire-human relationships.\n\nThe medication's ability to suppress vampires' predatory responses can be viewed as a form of chemical control—vampires rendered docile through pharmaceutical intervention, their essential nature chemically suppressed to enable human comfort and safety. This raises disturbing questions about bodily autonomy: who controls the medication supply? What happens if it's withheld? Can consent truly exist when one party's predatory instincts are artificially managed?\n\nThe medication's recreational abuse by humans parallels real-world narratives of addiction and exploitation. Humans seeking the intense neurological high become dependent on a substance whose long-term effects remain unknown. The drug trade surrounding vamp medication mirrors historical patterns of pharmaceutical exploitation, particularly in contexts where power imbalances exist. Kevin's involvement in drug distribution adds layers of manipulation and potential coercion—users dependent on his supply, vampires dependent on medication for social acceptance.\n\nThe dark potential emerges in scenarios where medication becomes a tool of coercion: vampires forced to medicate as a condition of acceptance in human society, their \"true nature\" pathologized as something requiring treatment. Humans rendered chemically vulnerable through recreational use, opening them to exploitation. The substance itself becomes a nexus of power, control, and the messy reality of living with a predatory species in denial about its own predatory nature.\n",
+        "erotic_implications": [
+          "neurological_vulnerability_during_intoxication",
+          "altered_consent_capacity_in_humans",
+          "power_imbalance_medication_dependence",
+          "predatory_advantage_over_medicated_humans",
+          "forbidden_pleasure_of_substance_use",
+          "sensory_enhancement_vulnerability",
+          "addictive_chemical_bonding",
+          "exploitation_of_dependency"
+        ],
+        "taboo_potential": [
+          "forced_medication_as_control",
+          "substance_induced_vulnerability",
+          "abuse_of_intoxicated_consent",
+          "pharmaceutical_pathologization_of_nature",
+          "predatory_targeting_of_addicted_humans",
+          "medical_coercion_in_integration_context",
+          "human_self_destruction_through_drug_seeking"
+        ],
+        "significance": "Catalyst for exploring control, consent, and the failures of pharmaceutical solutions to bridge predator-prey divides"
+      }
+    },
+    "provenance": "data/mythos/vamp_medication.yaml",
+    "path": "data/kb/mythos/vamp-medication.mdx",
+    "updated_at": ""
+  },
+  {
+    "id": "vampire-biology",
+    "slug": "vampire-biology",
+    "name": "Vampire Biology",
+    "title": "Vampire Biology",
+    "category": "world-rules",
+    "kind": "rule",
+    "tags": [
+      "biology",
+      "physiology",
+      "bst",
+      "sst"
+    ],
+    "aliases": [
+      "Cold-blooded Physiology"
+    ],
+    "related_ids": [
+      "feeding",
+      "blood-system"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampires, or 'Homo vampyrus,' are 'cold-blooded' beings with several distinct traits. They possess dark vision, require SPF 100+ sun protection, and are subject to the 'Invitation Rule' (cannot enter without being invited). A unique emotional trait is that they cry only when they are truly in love. They are also bound by the 'Truth Rule,' meaning they always speak the truth.",
+        "source_episodes": [
+          "s01e01",
+          "s01e04",
+          "s01e05",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "The dark adaptation emphasizes the predatory and alien nature of vampire biology. The 'Truth Rule' is depicted as a biological compulsion that can be weaponized, and the 'Invitation Rule' is a psychological barrier. The act of crying when in love is a rare, visceral moment of 'Level 2 - Emotional' vulnerability in an otherwise predatory existence.",
+        "divergences": [
+          "More visceral depiction of biological traits",
+          "Focus on the limitations and compulsions of the vampire state"
+        ]
+      }
+    },
+    "provenance": ".sisyphus/evidence/episode-evidence.md",
+    "path": "data/kb/world-rules/vampire-biology.mdx",
+    "updated_at": "2026-02-06T19:17:57+00:00"
+  },
+  {
+    "id": "vampire_human_relations",
+    "slug": "vampire-human-relations",
+    "name": "Vampire-Human Relations",
+    "title": "Vampire-Human Relations",
+    "category": "society",
+    "kind": "mythos",
+    "tags": [
+      "addiction_to_vampire_attention",
+      "bst",
+      "forbidden_romance_potential",
+      "humans_as_cattle_perspective",
+      "integration",
+      "isolation_from_human_world",
+      "loss_of_humanity_in_relationships",
+      "mythos",
+      "predator_among_prey",
+      "risk_of_exposure",
+      "secret_coexistence",
+      "society",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "saga",
+      "tommy",
+      "tove"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampires coexist secretly with humans, attending the same schools and living in the\nsame communities. Most humans are unaware of vampires' existence, enabling vampires\nto move freely among their prey while maintaining the masquerade.\n\nThis coexistence creates unique tensions. Vampires must constantly restrain their\nnature, while any human who discovers the truth faces a choice: become part of\nvampire society or be silenced. Romance between vampires and humans is particularly\nfraught, carrying existential implications for both parties.",
+        "traits": [
+          "secret_coexistence",
+          "integration",
+          "forbidden_romance_potential",
+          "risk_of_exposure",
+          "predator_among_prey"
+        ],
+        "abilities": [
+          "perfect_camouflage",
+          "human_manipulation"
+        ],
+        "weaknesses": [
+          "discovery_risk",
+          "emotional_attachment_to_prey"
+        ],
+        "significance": "Defines how vampires navigate their dual existence",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e04"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, vampire-human relationships become explicitly about power and\nconsumption. Humans who enter vampire society do so as servants, donors, or pets.\nTrue equality is impossible when one partner could kill the other on a whim—or worse,\nturn them into an eternal subordinate.",
+        "traits": [
+          "humans_as_cattle_perspective",
+          "loss_of_humanity_in_relationships",
+          "addiction_to_vampire_attention",
+          "isolation_from_human_world"
+        ],
+        "significance": "Can a relationship ever be consensual when one partner is prey? The vampire's\nself-control is always tested, and the human's life always at risk. Some vampires\nfetishize human fragility, while some humans fetishize vampire power. Neither\ndynamic leads to healthy relationships by human standards—but vampire standards\nare different, and perhaps human morality doesn't apply.",
+        "mechanics": "Humans who learn about vampires are given limited options: serve, be thralled (have\ntheir memories modified), or die. Those who choose to serve enter a society where\nthey have fewer rights than the lowest vampire. Human lovers are often viewed by\nvampire society as either future prey or future progeny—never equals.",
+        "erotic_implications": "The power differential creates intense dynamics. Some humans are drawn to vampires\nprecisely because of the danger, seeking the thrill of intimacy with a predator.\nVampires may view human lovers as beloved pets or forbidden fruit—the attraction\nheightened by the taboo. Cross-species romance often involves elements of feeding,\nblurring lines between sex and sustenance."
+      }
+    },
+    "provenance": "data/mythos/vampire_human_relations.yaml",
+    "path": "data/kb/mythos/vampire-human-relations.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "divergences": []
+  },
+  {
+    "id": "vampire_physiology",
+    "slug": "vampire-physiology",
+    "name": "Vampire Physiology",
+    "title": "Vampire Physiology",
+    "category": "biology",
+    "kind": "mythos",
+    "tags": [
+      "accelerated_healing",
+      "biology",
+      "blood_dependency",
+      "bst",
+      "enhanced_senses",
+      "enhanced_strength",
+      "extended_lifespan",
+      "feral_state_during_starvation",
+      "human_appearance",
+      "immortal_perspective_on_mortal_fragility",
+      "inhuman_strength_potential",
+      "mythos",
+      "predatory_instincts",
+      "sst",
+      "temperature_regulation"
+    ],
+    "aliases": [],
+    "related_ids": [
+      "saga",
+      "boris",
+      "vera",
+      "agnes"
+    ],
+    "versions": {
+      "bst": {
+        "description": "Vampires in the series appear human but possess enhanced abilities and depend on blood for sustenance.\nThey can blend into human society and attend regular schools, making them virtually indistinguishable\nfrom humans in everyday interactions.\n\nTheir bodies have adapted to process blood as their primary source of nutrition, converting its\ncomponents into the energy needed to sustain their enhanced abilities. The exact biological\nmechanisms remain mysterious, but the results are undeniable: increased strength, heightened\nsenses, and extended lifespans that span centuries.",
+        "traits": [
+          "enhanced_strength",
+          "enhanced_senses",
+          "extended_lifespan",
+          "blood_dependency",
+          "human_appearance",
+          "accelerated_healing",
+          "temperature_regulation"
+        ],
+        "abilities": [
+          "strength",
+          "speed",
+          "senses",
+          "healing"
+        ],
+        "weaknesses": [],
+        "significance": "Forms the biological foundation for all vampire existence",
+        "source_episodes": [
+          "s01e01",
+          "s01e03",
+          "s01e06"
+        ]
+      },
+      "sst": {
+        "description": "In the dark adaptation, vampire physiology becomes more explicitly tied to predatory nature.\nThe enhanced senses are heightened to predatory levels, allowing vampires to detect heartbeats,\nfear hormones, and the subtle flush of arousal in human prey.",
+        "traits": [
+          "predatory_instincts",
+          "feral_state_during_starvation",
+          "inhuman_strength_potential",
+          "immortal_perspective_on_mortal_fragility"
+        ],
+        "significance": "The power differential inherent in vampire physiology raises questions of consent\nand equality in any vampire-human relationship. Can true consent exist when one\npartner could physically overwhelm the other at any moment?",
+        "mechanics": "Blood consumption not only sustains but enhances. Recent feeding amplifies all abilities,\nwhile blood deprivation leads to a feral state where instinct overrides reason.",
+        "erotic_implications": "The heightened senses make vampires exquisitely attuned to physical pleasure and pain.\nTheir enhanced stamina and strength open possibilities for intense physical encounters\nthat would be dangerous or impossible with human partners."
+      }
+    },
+    "provenance": "data/mythos/vampire_physiology.yaml",
+    "path": "data/kb/mythos/vampire-physiology.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "divergences": []
+  },
+  {
+    "id": "video-analysis-improvements",
+    "slug": "video-analysis-improvements",
+    "name": "Video Analysis System Improvements - BST Wiki",
+    "title": "Video Analysis System Improvements - BST Wiki",
+    "category": "uncategorized",
+    "kind": "foundation",
+    "tags": [
+      "mythos",
+      "foundational",
+      "bst",
+      "sst"
+    ],
+    "aliases": [],
+    "related_ids": [],
+    "versions": {},
+    "provenance": "docs/video-analysis-improvements.md",
+    "path": "data/kb/foundations/video-analysis-improvements.mdx",
+    "updated_at": "2026-02-07T01:55:54+00:00",
+    "role": "foundational"
+  }
+]

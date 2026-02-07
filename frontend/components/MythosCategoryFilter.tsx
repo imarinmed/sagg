@@ -81,6 +81,36 @@ export const DEFAULT_MYTHOS_CATEGORIES: MythosCategory[] = [
   },
 ];
 
+export const FALLBACK_CATEGORY: Omit<MythosCategory, "id" | "label" | "count"> = {
+  icon: "📜",
+  color: "text-slate-400",
+  bgColor: "bg-slate-500/10",
+  borderColor: "border-slate-500/30",
+};
+
+export function getCategoryMetadata(id: string): Omit<MythosCategory, "count"> {
+  const normalizedId = id.toLowerCase();
+  const known = DEFAULT_MYTHOS_CATEGORIES.find((c) => c.id === normalizedId);
+  
+  if (known) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { count, ...metadata } = known;
+    return metadata;
+  }
+
+  // Generate a label from the ID (kebab-case to Title Case)
+  const label = id
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  return {
+    id: normalizedId,
+    label,
+    ...FALLBACK_CATEGORY,
+  };
+}
+
 // ============================================
 // COMPONENT
 // ============================================

@@ -145,6 +145,92 @@ def first_heading_or_name(content: str, fallback: str) -> str:
     return fallback
 
 
+def parse_mdx_frontmatter(path: Path) -> dict[str, Any]:
+    content = path.read_text(encoding="utf-8")
+    if not content.startswith("---\n"):
+        return {}
+    parts = content.split("---\n", 2)
+    if len(parts) < 3:
+        return {}
+    frontmatter = yaml.safe_load(parts[1])
+    if not isinstance(frontmatter, dict):
+        return {}
+    return frontmatter
+
+
+def as_list(value: Any) -> list[str]:
+    if isinstance(value, list):
+        return [str(item) for item in value if item is not None]
+    return []
+
+
+def build_lore_payload(kb_paths: list[Path]) -> list[dict[str, Any]]:
+    normalized: list[dict[str, Any]] = []
+    for path in kb_paths:
+        fm = parse_mdx_frontmatter(path)
+        rel_path = str(path.relative_to(ROOT))
+
+        entry_id = str(fm.get("id") or "").strip()
+        slug = str(fm.get("slug") or "").strip()
+        name = str(fm.get("name") or fm.get("title") or "").strip()
+
+        if not entry_id and slug:
+            entry_id = slug
+        if not slug and entry_id:
+            slug = slugify(entry_id)
+        if not entry_id and not slug:
+            slug = slugify(path.stem)
+            entry_id = slug
+        if not name:
+            name = path.stem.replace("-", " ").replace("_", " ").title()
+
+        entry: dict[str, Any] = {
+            "id": entry_id,
+            "slug": slug,
+            "name": name,
+            "title": str(fm.get("title") or name),
+            "category": str(fm.get("category") or "uncategorized"),
+            "kind": str(fm.get("kind") or "lore"),
+            "tags": as_list(fm.get("tags")),
+            "aliases": as_list(fm.get("aliases")),
+            "related_ids": as_list(fm.get("related_ids")),
+            "versions": fm.get("versions")
+            if isinstance(fm.get("versions"), dict)
+            else {},
+            "provenance": str(fm.get("provenance") or rel_path),
+            "path": rel_path,
+            "updated_at": str(fm.get("updated_at") or ""),
+        }
+
+        for key, value in fm.items():
+            if key not in entry:
+                entry[key] = value
+
+        normalized.append(entry)
+
+    normalized.sort(key=lambda item: (item["id"], item["slug"], item["path"]))
+
+    seen_ids: set[str] = set()
+    seen_slugs: set[str] = set()
+    deduped: list[dict[str, Any]] = []
+    for item in normalized:
+        item_id = item["id"]
+        item_slug = item["slug"]
+
+        if item_id and item_id in seen_ids:
+            continue
+        if item_slug and item_slug in seen_slugs:
+            continue
+
+        deduped.append(item)
+        if item_id:
+            seen_ids.add(item_id)
+        if item_slug:
+            seen_slugs.add(item_slug)
+
+    return deduped
+
+
 def ingest_foundation(path: Path) -> dict[str, Any]:
     content = path.read_text(encoding="utf-8")
     title = first_heading_or_name(content, path.stem.replace("-", " ").title())
@@ -281,6 +367,7 @@ def build_foundations_payload(
 def write_public_payloads(
     mythos_payload: list[dict[str, Any]],
     foundations_payload: list[dict[str, Any]],
+    lore_payload: list[dict[str, Any]],
 ) -> None:
     (FRONTEND_PUBLIC_KB_META / "mythos.json").write_text(
         json.dumps(mythos_payload, indent=2, ensure_ascii=False) + "\n",
@@ -288,6 +375,10 @@ def write_public_payloads(
     )
     (FRONTEND_PUBLIC_KB_META / "foundations.json").write_text(
         json.dumps(foundations_payload, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    (FRONTEND_PUBLIC_KB_META / "lore.json").write_text(
+        json.dumps(lore_payload, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
 
@@ -304,15 +395,19 @@ def main() -> None:
 
     mythos_payload = build_mythos_payload(mythos_entries)
     foundations_payload = build_foundations_payload(foundation_items)
+    lore_payload = build_lore_payload(sorted(KB_ROOT.glob("**/*.mdx")))
 
     build_index(mythos_items, foundation_items)
-    write_public_payloads(mythos_payload, foundations_payload)
+    write_public_payloads(mythos_payload, foundations_payload, lore_payload)
 
     print(f"Generated {len(mythos_items)} mythos MDX files")
     print(f"Generated {len(foundation_items)} foundation MDX files")
     print(f"Wrote {KB_META / 'index.json'}")
     print(f"Wrote {FRONTEND_PUBLIC_KB_META / 'mythos.json'}")
     print(f"Wrote {FRONTEND_PUBLIC_KB_META / 'foundations.json'}")
+    print(
+        f"Wrote {FRONTEND_PUBLIC_KB_META / 'lore.json'} ({len(lore_payload)} entries)"
+    )
 
 
 if __name__ == "__main__":
