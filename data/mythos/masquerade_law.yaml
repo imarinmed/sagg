@@ -7,7 +7,10 @@ related_characters:
 - alfred
 - desideria
 - kiara
-media_urls: []
+
+media_urls:
+  - /static/screenshots/s01e02_moment_045_0-02-15.jpg
+  - /static/screenshots/s01e02_moment_050_0-02-30.jpg
 versions:
   bst:
     description: 'The First Law: Vampires must not reveal their existence to humanity. This ancient law exists for survival—organized humanity with modern weapons could threaten even powerful vampires. Violations are punished severely, often by death. The law extends beyond simple secrecy: vampires must clean up evidence, dispose of bodies properly, maintain plausible human identities, and eliminate witnesses when necessary. Regional vampire councils enforce the Masquerade ruthlessly.'

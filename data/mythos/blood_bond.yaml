@@ -8,7 +8,10 @@ related_characters:
 - saga
 - boris
 - vera
-media_urls: []
+
+media_urls:
+  - /static/screenshots/s01e01_moment_020_0-00-50.jpg
+  - /static/screenshots/s01e01_moment_025_0-01-05.jpg
 versions:
   bst:
     description: 'A mystical connection formed through blood exchange between vampires.

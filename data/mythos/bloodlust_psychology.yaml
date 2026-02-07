@@ -8,7 +8,10 @@ related_characters:
 - boris
 - vera
 - kiara
-media_urls: []
+
+media_urls:
+  - /static/screenshots/s01e01_moment_060_0-02-45.jpg
+  - /static/screenshots/s01e02_moment_040_0-02-00.jpg
 versions:
   bst:
     description: 'Blood hunger is the central psychological force in vampire existence. It begins as simple physical need but develops into complex craving with psychological, emotional, and sensory dimensions. The hunt, the fear in prey, the moment of penetration, the taste—all become intertwined. Prolonged hunger creates escalating desperation, clouding judgment and eroding self-control.'

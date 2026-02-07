@@ -7,7 +7,10 @@ related_characters:
 - saga
 - boris
 - vera
-media_urls: []
+
+media_urls:
+  - /static/screenshots/s01e01_moment_055_0-02-30.jpg
+  - /static/screenshots/s01e02_moment_025_0-01-15.jpg
 versions:
   bst:
     description: 'Vampires in the series demonstrate remarkable healing abilities. Minor wounds close within minutes, while more severe injuries may take hours or days. This regeneration is fueled by blood—well-fed vampires heal significantly faster than those who are starving. However, some injuries, particularly those inflicted by other supernatural beings or sacred objects, may resist this healing factor.'

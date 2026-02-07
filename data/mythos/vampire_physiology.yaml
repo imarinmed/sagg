@@ -9,7 +9,10 @@ related_characters:
 - boris
 - vera
 - agnes
-media_urls: []
+
+media_urls:
+  - /static/screenshots/s01e01_moment_010_0-00-25.jpg
+  - /static/screenshots/s01e01_moment_015_0-00-36.jpg
 versions:
   bst:
     description: 'Vampires in the series appear human but possess enhanced abilities

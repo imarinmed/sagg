@@ -6,7 +6,10 @@ short_description: The rare ability to function during daylight hours without we
 related_characters:
 - saga
 - agnes
-media_urls: []
+
+media_urls:
+  - /static/screenshots/s01e01_moment_030_0-01-20.jpg
+  - /static/screenshots/s01e02_moment_005_0-00-15.jpg
 versions:
   bst:
     description: 'Vampires in the series appear to be able to function during daylight

@@ -7,7 +7,10 @@ related_characters:
 - boris
 - alfred
 - desideria
-media_urls: []
+
+media_urls:
+  - /static/screenshots/s01e02_moment_030_0-01-30.jpg
+  - /static/screenshots/s01e02_moment_035_0-01-45.jpg
 versions:
   bst:
     description: 'Some vampires possess the ability to influence human minds through eye contact and focused will. This ranges from subtle suggestion to complete domination of will. The strength of this ability varies with the vampire''s age and the target''s mental resistance. Prolonged exposure can create lasting psychological bonds.'
