@@ -25,7 +25,7 @@ import {
   getCategoryMetadata 
 } from "@/components/MythosCategoryFilter";
 import { listMythos, listMythosCategories } from "@/lib/kb";
-import { MythosElement } from "@/lib/api";
+import { MythosElement, MythosConnection, api } from "@/lib/api";
 import Link from "next/link";
 
 // ============================================
@@ -125,6 +125,7 @@ export default function MythosPage() {
   // Data state
   const [elements, setElements] = useState<MythosElement[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
+  const [connections, setConnections] = useState<MythosConnection[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -140,12 +141,14 @@ export default function MythosPage() {
     const load = async () => {
       try {
         setLoading(true);
-        const [elementsData, categoryData] = await Promise.all([
+        const [elementsData, categoryData, connectionsData] = await Promise.all([
           listMythos(),
           listMythosCategories(),
+          api.mythos.connections()
         ]);
         setElements(elementsData);
         setCategories(categoryData);
+        setConnections(connectionsData);
       } catch (err) {
         setError("Failed to load mythos data");
         console.error(err);
@@ -545,6 +548,76 @@ export default function MythosPage() {
             ))}
           </div>
         )}
+      </section>
+
+      {/* Connections Section */}
+      <section className="max-w-7xl mx-auto px-4 pt-12">
+        <GlassCard className="p-6">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-lg bg-[var(--color-accent-primary)]/10 flex items-center justify-center">
+              <Network className="w-5 h-5 text-[var(--color-accent-primary)]" />
+            </div>
+            <div>
+              <h2 className="font-heading text-2xl text-[var(--color-text-primary)]">
+                Mythos Connections
+              </h2>
+              <p className="text-sm text-[var(--color-text-muted)]">
+                {connections.length} relationships between elements
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
+            {connections.slice(0, 12).map((connection) => {
+              const fromElement = elements.find(e => e.id === connection.from_element_id);
+              const toElement = elements.find(e => e.id === connection.to_element_id);
+              
+              return (
+                <div
+                  key={connection.id}
+                  className="p-3 rounded-lg bg-[var(--color-surface)]/30 border border-[var(--glass-border)] hover:border-[var(--color-accent-primary)]/30 transition-colors"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs font-medium px-2 py-1 rounded bg-[var(--color-accent-primary)]/10 text-[var(--color-accent-primary)]">
+                      {connection.connection_type}
+                    </span>
+                    <span className="text-xs text-[var(--color-text-muted)]">
+                      Strength: {connection.strength}/5
+                    </span>
+                  </div>
+                  <div className="text-sm">
+                    <span className="text-[var(--color-text-primary)] font-medium">
+                      {fromElement?.name || connection.from_element_id}
+                    </span>
+                    <ArrowRight className="w-3 h-3 inline mx-1 text-[var(--color-text-muted)]" />
+                    <span className="text-[var(--color-text-primary)] font-medium">
+                      {toElement?.name || connection.to_element_id}
+                    </span>
+                  </div>
+                  {connection.description && (
+                    <p className="text-xs text-[var(--color-text-muted)] mt-1">
+                      {connection.description}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          
+          {connections.length > 12 && (
+            <div className="mt-4 text-center">
+              <Link href="/graph">
+                <Button
+                  variant="ghost"
+                  className="text-[var(--color-accent-primary)] hover:bg-[var(--color-accent-primary)]/10"
+                >
+                  View All {connections.length} Connections
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+          )}
+        </GlassCard>
       </section>
 
       {/* Onward Exploration (Footer-ish) */}
