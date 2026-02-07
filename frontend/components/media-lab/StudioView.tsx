@@ -1,13 +1,21 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, lazy, Suspense, useMemo } from "react";
 import { Card, Button, Spinner } from "@heroui/react";
 import { Download, Trash2, Eye } from "lucide-react";
 import { api, ArtifactData } from "@/lib/api";
 import { ParameterSidebar, GenerationParams } from "./ParameterSidebar";
-import { BatchGrid, ImageArtifact } from "./BatchGrid";
 import { PresetManager } from "./PresetManager";
-import { TaggingPanel } from "./TaggingPanel";
+
+// Code-split heavy components
+const BatchGrid = lazy(() => import("./BatchGrid").then(m => ({ default: m.BatchGrid })));
+const TaggingPanel = lazy(() => import("./TaggingPanel").then(m => ({ default: m.TaggingPanel })));
+
+import { TaggingPanelSkeleton, ArtifactGridSkeleton, PreviewSkeleton } from "./SkeletonLoaders";
+import { ErrorBoundary } from "./ErrorBoundary";
+
+// Type alias for artifact
+type ImageArtifact = ArtifactData;
 
 interface StudioViewProps {
   workflowType?: "generate" | "enhance";
@@ -113,82 +121,96 @@ export function StudioView({ workflowType = "generate" }: StudioViewProps) {
     setSelectedArtifactId(artifact.id);
   }, []);
 
-  const selectedArtifact = artifacts.find((a) => a.id === selectedArtifactId);
+  // Memoize selected artifact to prevent unnecessary rerenders of dependent components
+  const selectedArtifact = useMemo(
+    () => artifacts.find((a) => a.id === selectedArtifactId),
+    [artifacts, selectedArtifactId]
+  );
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 h-full">
-      {/* Left Panel - Parameters & Presets */}
-      <div className="lg:col-span-1 flex flex-col gap-4 overflow-y-auto">
-        <Card className="p-4">
-          <PresetManager 
-            currentConfig={pipelineConfig} 
-            onLoadPreset={handleLoadPreset}
-          />
-        </Card>
-        <Card className="p-4 flex-1 overflow-y-auto">
-          <ParameterSidebar
-            onGenerate={handleGenerate}
-            isGenerating={isGenerating}
-          />
-        </Card>
-      </div>
-
-      {/* Center Panel - Live Preview */}
-      <div className="lg:col-span-2 flex flex-col gap-4">
-        <Card className="flex-1 flex items-center justify-center min-h-[300px] bg-content1 p-4">
-          {isGenerating ? (
-            <div className="flex flex-col items-center gap-4">
-              <Spinner size="lg" />
-              <p className="text-sm text-default-500">Generating {artifacts.length > 0 ? `${artifacts.length} images` : "..."}</p>
-            </div>
-          ) : selectedArtifact ? (
-            <div className="w-full h-full flex items-center justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={selectedArtifact.file_path}
-                alt="Preview"
-                className="max-w-full max-h-full object-contain rounded-lg"
-              />
-            </div>
-          ) : (
-            <p className="text-center text-default-500">
-              {error ? `Error: ${error}` : "Generate an image to see preview"}
-            </p>
-          )}
-        </Card>
-      </div>
-
-      {/* Right Panel - Batch Grid */}
-      <div className="lg:col-span-1 flex flex-col gap-4 overflow-y-auto">
-        {selectedArtifact && (
-          <TaggingPanel
-            artifactId={selectedArtifact.id}
-            initialTags={selectedArtifact.tags || {}}
-            onTagsChanged={(tags) => {
-              // Update the selected artifact with new tags
-              setArtifacts((prev) =>
-                prev.map((a) =>
-                  a.id === selectedArtifact.id ? { ...a, tags } : a
-                )
-              );
-            }}
-            isLoading={isGenerating}
-          />
-        )}
-        
-        {artifacts.length > 0 ? (
-          <BatchGrid
-            artifacts={artifacts}
-            onDelete={handleDelete}
-            onDownload={handleDownload}
-            onView={handleView}
-          />
-        ) : (
-          <Card className="p-4 text-center text-sm text-default-500">
-            {isGenerating ? "Generating..." : "No artifacts yet"}
+    <ErrorBoundary
+      onError={(error, info) => {
+        console.error('StudioView error:', error);
+      }}
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 h-full">
+        {/* Left Panel - Parameters & Presets */}
+        <div className="lg:col-span-1 flex flex-col gap-4 overflow-y-auto">
+          <Card className="p-4 transition-all duration-200 hover:shadow-lg">
+            <PresetManager 
+              currentConfig={pipelineConfig} 
+              onLoadPreset={handleLoadPreset}
+            />
           </Card>
-        )}
+          <Card className="p-4 flex-1 overflow-y-auto transition-all duration-200 hover:shadow-lg">
+            <ParameterSidebar
+              onGenerate={handleGenerate}
+              isGenerating={isGenerating}
+            />
+          </Card>
+        </div>
+
+        {/* Center Panel - Live Preview */}
+        <div className="lg:col-span-2 flex flex-col gap-4">
+          <Card className="flex-1 flex items-center justify-center min-h-[300px] bg-content1 p-4 transition-all duration-300">
+            {isGenerating ? (
+              <div className="flex flex-col items-center gap-4 animate-in fade-in duration-500">
+                <Spinner size="lg" />
+                <p className="text-sm text-default-500">Generating {artifacts.length > 0 ? `${artifacts.length} images` : "..."}</p>
+              </div>
+            ) : selectedArtifact ? (
+              <div className="w-full h-full flex items-center justify-center animate-in fade-in duration-300">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={selectedArtifact.file_path}
+                  alt="Preview"
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                />
+              </div>
+            ) : (
+              <p className="text-center text-default-500">
+                {error ? `Error: ${error}` : "Generate an image to see preview"}
+              </p>
+            )}
+          </Card>
+        </div>
+
+        {/* Right Panel - Batch Grid */}
+        <div className="lg:col-span-1 flex flex-col gap-4 overflow-y-auto">
+          {selectedArtifact && (
+            <Suspense fallback={<TaggingPanelSkeleton />}>
+              <TaggingPanel
+                artifactId={selectedArtifact.id}
+                initialTags={selectedArtifact.tags || {}}
+                onTagsChanged={(tags) => {
+                  // Update the selected artifact with new tags
+                  setArtifacts((prev) =>
+                    prev.map((a) =>
+                      a.id === selectedArtifact.id ? { ...a, tags } : a
+                    )
+                  );
+                }}
+                isLoading={isGenerating}
+              />
+            </Suspense>
+          )}
+          
+          {artifacts.length > 0 ? (
+            <Suspense fallback={<ArtifactGridSkeleton />}>
+              <BatchGrid
+                artifacts={artifacts}
+                onDelete={handleDelete}
+                onDownload={handleDownload}
+                onView={handleView}
+              />
+            </Suspense>
+          ) : (
+            <Card className="p-4 text-center text-sm text-default-500">
+              {isGenerating ? "Generating..." : "No artifacts yet"}
+            </Card>
+          )}
+        </div>
       </div>
-    </div>
+    </ErrorBoundary>
   );
 }

@@ -10,6 +10,7 @@ from ..media_lab.presets import get_preset_manager
 from ..media_lab.registry import ModelRegistry
 from ..media_lab.workbench import Workbench
 from ..media_lab.civitai import get_civitai_client
+from ..media_lab.huggingface import get_huggingface_client
 from ..models import (
     ArtifactData,
     ArtifactListResponse,
@@ -603,6 +604,94 @@ async def download_civitai_model(request: CivitAIDownloadRequest):
         
         return {
             "status": "success",
+            "filename": request.filename,
+            "path": str(final_path),
+            "size": final_path.stat().st_size
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Download failed: {str(e)}")
+
+
+# HuggingFace Hub Model Remote Endpoints
+
+@router.get("/models/remote/huggingface")
+async def search_huggingface_models(
+    query: str = Query(..., description="Search query for models"),
+    filter: str = Query("sdxl", description="Model filter (sdxl, checkpoint, etc.)"),
+    limit: int = Query(10, ge=1, le=100, description="Max results to return")
+):
+    """Search HuggingFace Hub for models matching query.
+    
+    Args:
+        query: Search query string
+        filter: Model filter type (default: sdxl)
+        limit: Maximum results (1-100)
+        
+    Returns:
+        List of model metadata from HuggingFace Hub
+    """
+    try:
+        client = get_huggingface_client()
+        results = client.search_models(query, filter=filter, limit=limit)
+        return {
+            "query": query,
+            "filter": filter,
+            "results": results,
+            "count": len(results)
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"HuggingFace search failed: {str(e)}")
+
+
+@router.get("/models/remote/huggingface/{repo_id}")
+async def get_huggingface_model_info(repo_id: str):
+    """Get details for a specific HuggingFace model.
+    
+    Args:
+        repo_id: HuggingFace model repository ID (e.g., runwayml/stable-diffusion-v1-5)
+        
+    Returns:
+        Model metadata including description, likes, downloads, files
+    """
+    try:
+        client = get_huggingface_client()
+        info = client.get_model_info(repo_id)
+        if not info:
+            raise HTTPException(status_code=404, detail=f"Model {repo_id} not found on HuggingFace Hub")
+        return info
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get model info: {str(e)}")
+
+
+class HuggingFaceDownloadRequest(BaseModel):
+    """Request to download a HuggingFace model."""
+    repo_id: str = Field(..., description="HuggingFace repo ID (e.g., runwayml/stable-diffusion-v1-5)")
+    filename: str = Field(..., description="Filename to download (e.g., model.safetensors)")
+
+
+@router.post("/models/remote/huggingface/download")
+async def download_huggingface_model(request: HuggingFaceDownloadRequest):
+    """Download a model file from HuggingFace Hub.
+    
+    Args:
+        request: Download request with repo_id and filename
+        
+    Returns:
+        Download status with file path and size
+    """
+    try:
+        # Save to data/models/huggingface directory
+        save_path = Path(__file__).parent.parent.parent.parent / "data" / "models" / "huggingface" / request.filename
+        save_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        client = get_huggingface_client()
+        final_path = client.download_model(request.repo_id, request.filename, save_path)
+        
+        return {
+            "status": "success",
+            "repo_id": request.repo_id,
             "filename": request.filename,
             "path": str(final_path),
             "size": final_path.stat().st_size

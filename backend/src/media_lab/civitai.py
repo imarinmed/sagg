@@ -1,12 +1,11 @@
 """CivitAI API client for downloading models and LoRAs."""
 
+import hashlib
 import json
 import time
-import hashlib
 from collections.abc import Callable
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Optional
 from urllib.parse import urljoin
 
 import requests
@@ -55,17 +54,13 @@ class CivitAIClient:
 
         url = urljoin(self.BASE_URL, endpoint)
         try:
-            response = self._session.get(
-                url, params=params, timeout=self.REQUEST_TIMEOUT
-            )
+            response = self._session.get(url, params=params, timeout=self.REQUEST_TIMEOUT)
 
             # Handle rate limiting
             if response.status_code == 429:
                 retry_after = response.headers.get("Retry-After", "60")
                 self._rate_limit_wait = float(retry_after)
-                raise requests.exceptions.HTTPError(
-                    "Rate limited by CivitAI API (429)"
-                )
+                raise requests.exceptions.HTTPError("Rate limited by CivitAI API (429)")
 
             response.raise_for_status()
             return response.json()
@@ -81,7 +76,7 @@ class CivitAIClient:
                 f"CivitAI API request failed: {str(e)}"
             ) from e
 
-    def _get_cache_key(self, endpoint: str, params: Optional[dict] = None) -> str:
+    def _get_cache_key(self, endpoint: str, params: dict | None = None) -> str:
         """Generate cache key from endpoint and params."""
         key_str = f"{endpoint}:{json.dumps(params or {}, sort_keys=True)}"
         return hashlib.md5(key_str.encode()).hexdigest()
@@ -165,7 +160,7 @@ class CivitAIClient:
         self,
         download_url: str,
         save_path: Path,
-        progress_callback: Optional[Callable[[int, int], None]] = None,
+        progress_callback: Callable[[int, int], None] | None = None,
     ) -> Path:
         """Download model file from URL with progress tracking.
 

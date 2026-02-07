@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, memo } from "react";
 import { Card, Button, Checkbox } from "@heroui/react";
 import { Download, Trash2, Eye, CheckSquare, Square } from "lucide-react";
 import { ArtifactData } from "../../lib/api";
@@ -16,7 +16,7 @@ interface BatchGridProps {
   onView?: (artifact: ImageArtifact) => void;
 }
 
-export function BatchGrid({
+function BatchGridComponent({
   artifacts,
   onSelect,
   onDownload,
@@ -204,3 +204,5 @@ export function BatchGrid({
     </div>
   );
 }
+
+export const BatchGrid = memo(BatchGridComponent);

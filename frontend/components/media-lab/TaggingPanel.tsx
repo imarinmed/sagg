@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, memo } from "react";
 import { Button, Card, Spinner } from "@heroui/react";
 import { X } from "lucide-react";
 import { api } from "@/lib/api";
@@ -253,4 +253,4 @@ export const TaggingPanel: React.FC<TaggingPanelProps> = ({
   );
 };
 
-export default TaggingPanel;
+export default memo(TaggingPanel);
