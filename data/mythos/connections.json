@@ -79,6 +79,182 @@
       "connection_type": "related",
       "description": "Daywalkers can interact with humans in ways other vampires cannot",
       "strength": 3
+    },
+    {
+      "id": "regeneration_to_vulnerabilities",
+      "from_element_id": "regeneration",
+      "to_element_id": "vulnerabilities",
+      "connection_type": "contradicts",
+      "description": "Regeneration is limited by specific vulnerabilities",
+      "strength": 5
+    },
+    {
+      "id": "regeneration_to_physiology",
+      "from_element_id": "regeneration",
+      "to_element_id": "vampire_physiology",
+      "connection_type": "explains",
+      "description": "Regeneration is a core aspect of vampire physiology",
+      "strength": 5
+    },
+    {
+      "id": "immortality_to_physiology",
+      "from_element_id": "immortality",
+      "to_element_id": "vampire_physiology",
+      "connection_type": "explains",
+      "description": "Immortality stems from vampire physiology",
+      "strength": 5
+    },
+    {
+      "id": "immortality_to_transformation",
+      "from_element_id": "immortality",
+      "to_element_id": "transformation",
+      "connection_type": "prerequisite",
+      "description": "Transformation grants immortality",
+      "strength": 5
+    },
+    {
+      "id": "vulnerabilities_to_physiology",
+      "from_element_id": "vulnerabilities",
+      "to_element_id": "vampire_physiology",
+      "connection_type": "related",
+      "description": "Vulnerabilities are weaknesses in vampire physiology",
+      "strength": 4
+    },
+    {
+      "id": "mind_control_to_blood_bond",
+      "from_element_id": "mind_control",
+      "to_element_id": "blood_bond",
+      "connection_type": "related",
+      "description": "Blood bonds enhance mind control abilities",
+      "strength": 4
+    },
+    {
+      "id": "prophecy_to_elder_authority",
+      "from_element_id": "prophecy",
+      "to_element_id": "elder_authority",
+      "connection_type": "explains",
+      "description": "Prophecies reinforce elder authority",
+      "strength": 3
+    },
+    {
+      "id": "dark_magic_to_transformation",
+      "from_element_id": "dark_magic",
+      "to_element_id": "transformation",
+      "connection_type": "prerequisite",
+      "description": "Dark magic enables transformation",
+      "strength": 5
+    },
+    {
+      "id": "dark_magic_to_mind_control",
+      "from_element_id": "dark_magic",
+      "to_element_id": "mind_control",
+      "connection_type": "related",
+      "description": "Dark magic enhances mind control powers",
+      "strength": 4
+    },
+    {
+      "id": "maker_progeny_to_blood_bond",
+      "from_element_id": "maker_progeny_bonds",
+      "to_element_id": "blood_bond",
+      "connection_type": "explains",
+      "description": "Maker-progeny bonds are permanent blood bonds",
+      "strength": 5
+    },
+    {
+      "id": "maker_progeny_to_family",
+      "from_element_id": "maker_progeny_bonds",
+      "to_element_id": "family_hierarchy",
+      "connection_type": "prerequisite",
+      "description": "Maker-progeny bonds form family hierarchy",
+      "strength": 5
+    },
+    {
+      "id": "territorial_to_elder_authority",
+      "from_element_id": "territorial_claims",
+      "to_element_id": "elder_authority",
+      "connection_type": "explains",
+      "description": "Territorial claims enforce elder authority",
+      "strength": 4
+    },
+    {
+      "id": "territorial_to_family",
+      "from_element_id": "territorial_claims",
+      "to_element_id": "family_hierarchy",
+      "connection_type": "related",
+      "description": "Territory is controlled by vampire families",
+      "strength": 4
+    },
+    {
+      "id": "bloodlust_to_feeding",
+      "from_element_id": "bloodlust_psychology",
+      "to_element_id": "feeding",
+      "connection_type": "explains",
+      "description": "Bloodlust psychology drives feeding behavior",
+      "strength": 5
+    },
+    {
+      "id": "bloodlust_to_predator",
+      "from_element_id": "bloodlust_psychology",
+      "to_element_id": "predator_instinct",
+      "connection_type": "related",
+      "description": "Bloodlust and predator instinct overlap",
+      "strength": 5
+    },
+    {
+      "id": "humanity_loss_to_bloodlust",
+      "from_element_id": "humanity_loss",
+      "to_element_id": "bloodlust_psychology",
+      "connection_type": "evolves_to",
+      "description": "Humanity loss increases bloodlust",
+      "strength": 5
+    },
+    {
+      "id": "humanity_loss_to_predator",
+      "from_element_id": "humanity_loss",
+      "to_element_id": "predator_instinct",
+      "connection_type": "evolves_to",
+      "description": "Humanity loss enhances predator instinct",
+      "strength": 4
+    },
+    {
+      "id": "predator_to_feeding",
+      "from_element_id": "predator_instinct",
+      "to_element_id": "feeding",
+      "connection_type": "explains",
+      "description": "Predator instinct shapes feeding practices",
+      "strength": 4
+    },
+    {
+      "id": "predator_to_human_relations",
+      "from_element_id": "predator_instinct",
+      "to_element_id": "vampire_human_relations",
+      "connection_type": "explains",
+      "description": "Predator instinct defines vampire-human power dynamics",
+      "strength": 5
+    },
+    {
+      "id": "masquerade_to_human_relations",
+      "from_element_id": "masquerade_law",
+      "to_element_id": "vampire_human_relations",
+      "connection_type": "explains",
+      "description": "Masquerade law governs vampire-human interactions",
+      "strength": 5
+    },
+    {
+      "id": "masquerade_to_elder_authority",
+      "from_element_id": "masquerade_law",
+      "to_element_id": "elder_authority",
+      "connection_type": "prerequisite",
+      "description": "Elders enforce the masquerade",
+      "strength": 5
+    },
+    {
+      "id": "elder_authority_to_family",
+      "from_element_id": "elder_authority",
+      "to_element_id": "family_hierarchy",
+      "connection_type": "explains",
+      "description": "Elder authority structures family hierarchy",
+      "strength": 5
     }
   ]
 }
