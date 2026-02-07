@@ -442,6 +442,14 @@ class StageConfig(BaseModel):
     stage_type: str = Field(..., pattern="^(text_to_image|refiner|detailer|upscaler)$")
     name: str | None = None
     parameters: dict = Field(default_factory=dict)
+    loras: list["LoRAConfig"] = Field(default_factory=list)
+
+
+class LoRAConfig(BaseModel):
+    """Configuration for LoRA (Low-Rank Adaptation) model"""
+
+    path: str
+    weight: float = 1.0
 
 
 class PipelineConfig(BaseModel):
@@ -449,6 +457,7 @@ class PipelineConfig(BaseModel):
 
     stages: list[StageConfig]
     parameters: dict = Field(default_factory=dict)
+    loras: list[LoRAConfig] = Field(default_factory=list)
 
 
 # Model Registry Models

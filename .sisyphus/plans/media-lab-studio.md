@@ -141,7 +141,7 @@
 
 ## v0.4.0: LoRA Loading System
 
-- [ ] T1. Implement `LoRAManager` backend
+- [x] T1. Implement `LoRAManager` backend
 
   **What to do**:
   - Create `backend/src/media_lab/lora.py`

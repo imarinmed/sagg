@@ -6,10 +6,11 @@ adapters with diffusers models. It supports loading, fusing, unfusing, and apply
 multiple LoRAs with configurable weights.
 """
 
-from pathlib import Path
-from typing import Any, Optional
+import contextlib
 import logging
+from pathlib import Path
 from threading import RLock
+from typing import Any
 
 logger = logging.getLogger(__name__)
 
@@ -20,7 +21,7 @@ class LoRAConfig:
     def __init__(
         self,
         lora_path: str | Path,
-        adapter_name: Optional[str] = None,
+        adapter_name: str | None = None,
         weight: float = 1.0,
     ):
         """
@@ -59,7 +60,7 @@ class LoRAManager:
         self,
         model: Any,
         lora_path: str | Path,
-        adapter_name: Optional[str] = None,
+        adapter_name: str | None = None,
         weight: float = 1.0,
     ) -> None:
         """
@@ -89,8 +90,8 @@ class LoRAManager:
             # Check if model has load_lora_weights method (diffusers LoraLoaderMixin)
             if not hasattr(model, "load_lora_weights"):
                 raise ValueError(
-                    f"Model does not support LoRA loading. "
-                    f"Expected load_lora_weights method."
+                    "Model does not support LoRA loading. "
+                    "Expected load_lora_weights method."
                 )
 
             try:
@@ -178,11 +179,8 @@ class LoRAManager:
             raise ValueError("lora_configs cannot be empty")
 
         # First unload any existing LoRAs
-        try:
+        with contextlib.suppress(ValueError, RuntimeError):
             self.unload_loras(model)
-        except (ValueError, RuntimeError):
-            # Model might not have any loaded LoRAs yet
-            pass
 
         # Load each LoRA config
         for config in lora_configs:
@@ -199,7 +197,8 @@ class LoRAManager:
             adapter_weights = [cfg.weight for cfg in lora_configs]
             try:
                 model.set_adapters(adapter_names, adapter_weights=adapter_weights)
-                logger.info(f"Set adapter weights: {dict(zip(adapter_names, adapter_weights))}")
+                weights_dict = dict(zip(adapter_names, adapter_weights, strict=True))
+                logger.info(f"Set adapter weights: {weights_dict}")
             except Exception as e:
                 logger.warning(f"Could not set adapter weights: {e}")
 

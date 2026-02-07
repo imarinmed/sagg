@@ -16,7 +16,8 @@ import {
   X,
   Filter,
   Users,
-  ArrowRight
+  ArrowRight,
+  Brain
 } from "lucide-react";
 import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
 import { MythosCard } from "@/components/MythosCard";
@@ -629,6 +630,26 @@ export default function MythosPage() {
       {/* Onward Exploration (Footer-ish) */}
       <section className="max-w-7xl mx-auto px-4 pt-12 border-t border-[var(--glass-border)] animate-fade-in animate-delay-400">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Link href="/mythos/quiz" className="group">
+            <GlassCard className="p-6 h-full hover:border-[var(--color-accent-primary)]/30 transition-colors relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                <Brain className="w-24 h-24 text-[var(--color-accent-primary)]" />
+              </div>
+              <div className="flex items-start justify-between mb-4 relative z-10">
+                <div className="w-12 h-12 rounded-lg bg-[var(--color-accent-primary)]/10 flex items-center justify-center">
+                  <Brain className="w-6 h-6 text-[var(--color-accent-primary)]" />
+                </div>
+                <ArrowRight className="w-5 h-5 text-[var(--color-text-muted)] group-hover:text-[var(--color-accent-primary)] transition-colors" />
+              </div>
+              <h3 className="font-heading text-xl text-[var(--color-text-primary)] mb-2 relative z-10">
+                Test Your Knowledge
+              </h3>
+              <p className="text-[var(--color-text-muted)] text-sm relative z-10">
+                Challenge yourself with the trials of the night. Prove your mastery over the vampire mythos.
+              </p>
+            </GlassCard>
+          </Link>
+
           <Link href="/mythos/explorer" className="group">
             <GlassCard className="p-6 h-full hover:border-[var(--color-accent-primary)]/30 transition-colors relative overflow-hidden">
               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
