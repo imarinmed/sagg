@@ -70,7 +70,7 @@ def _build_job_response(job_id: str) -> MediaJobResponse:
     )
 
 
-def _execute_interpolate_job(job_id: str) -> None:
+def _execute_interpolate_job(job_id: str, session: Session) -> None:
     """Execute interpolation job immediately and persist results."""
     job = _jobs_store[job_id]
     try:
@@ -80,14 +80,28 @@ def _execute_interpolate_job(job_id: str) -> None:
         job["progress"] = 100
         job["updated_at"] = datetime.now(UTC).replace(tzinfo=None)
 
-        artifact = {
+        from ..db.artifact_ops import create_artifact
+        
+        artifact_dict = {
             "id": str(uuid4()),
             "artifact_type": "interpolated_video",
             "file_path": result["artifact_path"],
             "file_size_bytes": None,
             "metadata_json": result["metadata"],
         }
-        _artifacts_store[job_id] = [artifact]
+        
+        # Persist artifact to database
+        artifact_db = create_artifact(
+            session,
+            job_id=job_id,
+            artifact_type=artifact_dict["artifact_type"],
+            file_path=artifact_dict["file_path"],
+            metadata_json=artifact_dict["metadata_json"],
+        )
+        
+        # Update in-memory store with DB ID
+        artifact_dict["id"] = artifact_db.id
+        _artifacts_store[job_id] = [artifact_dict]
     except ValueError as e:
         job["status"] = "FAILED"
         job["progress"] = 0
@@ -95,7 +109,7 @@ def _execute_interpolate_job(job_id: str) -> None:
         job["updated_at"] = datetime.now(UTC).replace(tzinfo=None)
 
 
-def _execute_enhance_job(job_id: str) -> None:
+def _execute_enhance_job(job_id: str, session: Session) -> None:
     """Execute enhancement job immediately and persist results."""
     job = _jobs_store[job_id]
     try:
@@ -105,14 +119,28 @@ def _execute_enhance_job(job_id: str) -> None:
         job["progress"] = 100
         job["updated_at"] = datetime.now(UTC).replace(tzinfo=None)
 
-        artifact = {
+        from ..db.artifact_ops import create_artifact
+        
+        artifact_dict = {
             "id": str(uuid4()),
             "artifact_type": "enhanced_image",
             "file_path": result["artifact_path"],
             "file_size_bytes": None,
             "metadata_json": result["metadata"],
         }
-        _artifacts_store[job_id] = [artifact]
+        
+        # Persist artifact to database
+        artifact_db = create_artifact(
+            session,
+            job_id=job_id,
+            artifact_type=artifact_dict["artifact_type"],
+            file_path=artifact_dict["file_path"],
+            metadata_json=artifact_dict["metadata_json"],
+        )
+        
+        # Update in-memory store with DB ID
+        artifact_dict["id"] = artifact_db.id
+        _artifacts_store[job_id] = [artifact_dict]
     except ValueError as e:
         job["status"] = "FAILED"
         job["progress"] = 0
@@ -145,9 +173,9 @@ async def submit_job(request: MediaJobSubmitRequest):
 
     # Execute enhance and interpolate workflows immediately
     if request.workflow_type == "interpolate":
-        _execute_interpolate_job(job_id)
+        _execute_interpolate_job(job_id, session=Depends(get_session))
     elif request.workflow_type == "enhance":
-        _execute_enhance_job(job_id)
+        _execute_enhance_job(job_id, session=Depends(get_session))
 
     return _build_job_response(job_id)
 
