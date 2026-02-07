@@ -309,7 +309,7 @@ function MythosPageContent() {
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-accent-primary)]/5 via-transparent to-[var(--color-accent-secondary)]/5" />
         <div className="fog-overlay opacity-30" aria-hidden="true" />
         
-        <div className="relative z-10 px-8 py-12 md:py-16 text-center space-y-6">
+        <div className="relative z-10 px-8 py-12 md:py-16 space-y-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -332,7 +332,7 @@ function MythosPageContent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg text-[var(--color-text-secondary)] font-light leading-relaxed max-w-2xl mx-auto"
+            className="text-lg text-[var(--color-text-secondary)] font-light leading-relaxed max-w-3xl"
           >
             Explore the dark knowledge of BST and SSt. A visual encyclopedia of vampire lore, ancient rituals, and the hidden laws that govern the night.
           </motion.p>
@@ -341,7 +341,7 @@ function MythosPageContent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="max-w-md mx-auto relative group"
+            className="max-w-xl relative group"
           >
             <div className="absolute inset-0 bg-[var(--color-accent-primary)]/5 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--color-text-muted)] group-focus-within:text-[var(--color-accent-primary)] transition-colors" />
