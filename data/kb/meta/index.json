@@ -3,12 +3,13 @@
   "counts": {
     "mythos": 7,
     "foundations": 4,
-    "total": 30,
-    "characters": 4,
+    "total": 33,
+    "characters": 6,
     "locations": 2,
     "social-groups": 2,
     "episodes": 8,
-    "world-rules": 3
+    "world-rules": 3,
+    "social-concepts": 2
   },
   "categories": {
     "supernatural": 1,
@@ -142,6 +143,20 @@
       "name": "Rektor (Principal)",
       "path": "data/kb/characters/rektor.mdx",
       "kind": "character"
+    },
+    {
+      "id": "henry-natt-och-dag",
+      "slug": "henry-natt-och-dag",
+      "name": "Henry Natt och Dag",
+      "path": "data/kb/characters/henry-natt-och-dag.mdx",
+      "kind": "character"
+    },
+    {
+      "id": "didde",
+      "slug": "didde",
+      "name": "Didde",
+      "path": "data/kb/characters/didde.mdx",
+      "kind": "character"
     }
   ],
   "locations": [
@@ -255,6 +270,22 @@
       "name": "Vampire Biology",
       "path": "data/kb/world-rules/vampire-biology.mdx",
       "kind": "world-rule"
+    }
+  ],
+  "social-concepts": [
+    {
+      "id": "party_culture",
+      "slug": "party-culture",
+      "name": "Party Culture",
+      "path": "data/kb/social-concepts/party-culture.mdx",
+      "kind": "social-concept"
+    },
+    {
+      "id": "skaraborg_high_hierarchy",
+      "slug": "skaraborg-high-hierarchy",
+      "name": "Skaraborg High Hierarchy",
+      "path": "data/kb/social-concepts/skaraborg-high-hierarchy.mdx",
+      "kind": "social-concept"
     }
   ]
 }
