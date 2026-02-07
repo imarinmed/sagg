@@ -17,7 +17,8 @@ import {
   Filter,
   Users,
   ArrowRight,
-  Brain
+  Brain,
+  Flame
 } from "lucide-react";
 import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
 import { MythosCard } from "@/components/MythosCard";
@@ -144,13 +145,14 @@ export default function MythosPage() {
     const load = async () => {
       try {
         setLoading(true);
-        const [elementsData, categoryData, connectionsData] = await Promise.all([
+        const [elementsData, connectionsData] = await Promise.all([
           listMythos(),
-          listMythosCategories(),
           api.mythos.connections()
         ]);
+        // Derive unique categories from elements
+        const uniqueCategories = [...new Set(elementsData.map(e => e.category))].sort();
         setElements(elementsData);
-        setCategories(categoryData);
+        setCategories(uniqueCategories);
         setConnections(connectionsData);
       } catch (err) {
         setError("Failed to load mythos data");
@@ -666,6 +668,26 @@ export default function MythosPage() {
               </h3>
               <p className="text-[var(--color-text-muted)] text-sm relative z-10">
                 Interactive visualization of mythos elements and their connections. Explore the hierarchy of the night.
+              </p>
+            </GlassCard>
+          </Link>
+
+          <Link href="/mythos/ritual" className="group">
+            <GlassCard className="p-6 h-full hover:border-[var(--color-accent-primary)]/30 transition-colors relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                <Flame className="w-24 h-24 text-[var(--color-accent-primary)]" />
+              </div>
+              <div className="flex items-start justify-between mb-4 relative z-10">
+                <div className="w-12 h-12 rounded-lg bg-[var(--color-accent-primary)]/10 flex items-center justify-center">
+                  <Flame className="w-6 h-6 text-[var(--color-accent-primary)]" />
+                </div>
+                <ArrowRight className="w-5 h-5 text-[var(--color-text-muted)] group-hover:text-[var(--color-accent-primary)] transition-colors" />
+              </div>
+              <h3 className="font-heading text-xl text-[var(--color-text-primary)] mb-2 relative z-10">
+                Ritual Explorer
+              </h3>
+              <p className="text-[var(--color-text-muted)] text-sm relative z-10">
+                Combine mythos elements to discover ancient rituals. Unveil the forbidden rites of the vampire world.
               </p>
             </GlassCard>
           </Link>
