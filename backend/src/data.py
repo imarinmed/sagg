@@ -227,8 +227,9 @@ def load_mythos_from_yaml() -> dict:
                 continue
 
             mythos_id = mythos_data.get("id", mythos_file.stem)
-            canonical = mythos_data.get("canonical", {})
-            adaptation = mythos_data.get("adaptation_expansion", {})
+            versions = mythos_data.get("versions", {})
+            canonical = versions.get("bst", {})
+            adaptation = versions.get("sst", {})
 
             related_chars: list[str] = []
             for ability in canonical.get("abilities", []):
