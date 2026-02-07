@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import { GlassCard, CardHeader, CardContent } from "@/components/GlassCard";
 import { CharacterHero } from "@/components/CharacterHero";
+import { KiaraCharacterHero } from "@/components/characters/KiaraCharacterHero";
 import { RelationshipConstellation } from "@/components/RelationshipConstellation";
 import { CharacterEvolutionTimeline } from "@/components/CharacterEvolutionTimeline";
 import { EpisodePresenceHeatmap } from "@/components/EpisodePresenceHeatmap";
@@ -354,29 +355,39 @@ export default function CharacterDetailPage() {
         </Link>
       </motion.div>
 
-      {/* Character Hero */}
-      <CharacterHero
-        character={{
-          id: character.id,
-          name: character.name,
-          portrayed_by: character.portrayed_by,
-          role: character.role,
-          description: character.description,
-          species: isVampire ? "vampire" : "human",
-          canonical_traits: canonicalTraits,
-          adaptation_traits: adaptationTraits,
-          arc_description: character.adaptation_notes,
-        }}
-        stats={{
-          ...heroStats,
-          avgIntensity,
-          evolutionMilestones: evolutionData?.milestones?.length ?? 0,
-        }}
-        actions={{
-          onViewRelationships: () => setActiveTab("relationships"),
-          onViewEvolution: () => setActiveTab("evolution"),
-        }}
-      />
+      {/* Character Hero - Special handling for Kiara */}
+      {character.id.includes("kiara") ? (
+        <KiaraCharacterHero
+          stats={{
+            episodesAppeared: heroStats.episodesAppeared,
+            relationships: heroStats.relationships,
+            totalScreenTime: heroStats.totalScreenTime,
+          }}
+        />
+      ) : (
+        <CharacterHero
+          character={{
+            id: character.id,
+            name: character.name,
+            portrayed_by: character.portrayed_by,
+            role: character.role,
+            description: character.description,
+            species: isVampire ? "vampire" : "human",
+            canonical_traits: canonicalTraits,
+            adaptation_traits: adaptationTraits,
+            arc_description: character.adaptation_notes,
+          }}
+          stats={{
+            ...heroStats,
+            avgIntensity,
+            evolutionMilestones: evolutionData?.milestones?.length ?? 0,
+          }}
+          actions={{
+            onViewRelationships: () => setActiveTab("relationships"),
+            onViewEvolution: () => setActiveTab("evolution"),
+          }}
+        />
+      )}
 
       {/* Quick Stats Bar */}
       <QuickStatsBar
