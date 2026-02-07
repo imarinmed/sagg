@@ -8,7 +8,12 @@ Provides abstract base class and concrete implementations for:
 """
 
 from abc import ABC, abstractmethod
+import json
+import logging
+from pathlib import Path
 from typing import Any, AsyncGenerator, Optional
+
+logger = logging.getLogger(__name__)
 
 
 class PipelineContext:
@@ -60,6 +65,30 @@ class PipelineContext:
             error: Error description.
         """
         self.error = error
+
+    def save_artifact_file(self, artifact_path: str, filename: str = "") -> None:
+        """Save artifact to disk and track in artifacts list.
+        
+        Creates parent directories if needed and writes a mock file
+        for testing purposes. In production, use ArtifactManager.
+
+        Args:
+            artifact_path: Full artifact path (e.g., 'artifacts/job_id/file.png').
+            filename: Optional filename for metadata (defaults to last part of path).
+        """
+        # Create parent directories
+        path = Path(artifact_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Write mock file content (in production, this would be actual image data)
+        try:
+            path.write_text(f"Mock artifact: {filename or path.name}\n")
+            logger.debug("Saved artifact to %s", artifact_path)
+        except Exception as e:
+            logger.error("Failed to save artifact %s: %s", artifact_path, str(e))
+        
+        # Track in artifacts list
+        self.add_artifact(artifact_path)
 
 
 class PipelineStage(ABC):
@@ -169,7 +198,7 @@ class TextToImageStage(PipelineStage):
 
         context.set("image", image_data)
         context.set("image_path", image_path)
-        context.add_artifact(image_path)
+        context.save_artifact_file(image_path, "generated.png")
         context.metadata["text_to_image"] = {
             "model": model,
             "prompt_length": len(prompt),
@@ -236,7 +265,7 @@ class RefinerStage(PipelineStage):
 
         context.set("image", refined_data)
         context.set("refined_path", refined_path)
-        context.add_artifact(refined_path)
+        context.save_artifact_file(refined_path, "refined.png")
         context.metadata["refiner"] = {
             "refinement_level": context.get("refinement_level", 2),
         }
@@ -302,7 +331,7 @@ class DetailerStage(PipelineStage):
 
         context.set("image", detailed_data)
         context.set("detail_path", detail_path)
-        context.add_artifact(detail_path)
+        context.save_artifact_file(detail_path, "detailed.png")
         context.metadata["detailer"] = {
             "detail_pass": 1,
             "edge_enhancement": True,
@@ -382,7 +411,7 @@ class UpscalerStage(PipelineStage):
 
         context.set("image", upscaled_data)
         context.set("upscaled_path", upscaled_path)
-        context.add_artifact(upscaled_path)
+        context.save_artifact_file(upscaled_path, "upscaled.png")
         context.metadata["upscaler"] = {
             "upscale_factor": upscale_factor,
             "original_dimensions": original_dims,
