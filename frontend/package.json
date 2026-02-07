@@ -14,14 +14,17 @@
     "@heroui/styles": "^3.0.0-beta.5",
     "@types/d3": "^7.4.3",
     "@types/js-yaml": "^4.0.9",
+    "@xyflow/react": "^12.10.0",
     "d3": "^7.9.0",
+    "dagre": "^0.8.5",
     "framer-motion": "^12.31.0",
     "js-yaml": "^4.1.1",
     "lucide-react": "^0.563.0",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-variants": "^0.3.0"
+    "tailwind-variants": "^0.3.0",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
