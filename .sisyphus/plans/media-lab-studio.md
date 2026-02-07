@@ -52,25 +52,22 @@
   - [ ] Concrete stages implemented.
   - [ ] Pipeline runs sequentially.
 
-- [ ] T2. Implement `Workbench` class execution logic
+- [x] T2. Implement `Workbench` class execution logic
 
   **What to do**:
-  - Create `Workbench` class in `backend/src/media_lab/workbench.py`.
-  - Implement `execute(config: PipelineConfig)` method.
-  - Handle state management (VRAM clearing between stages).
-  - Add progress reporting callback.
+  - Create `backend/src/media_lab/workbench.py`
+  - It should initialize and run the `Pipeline` defined in `pipeline.py`
 
   **Acceptance Criteria**:
   - [ ] `Workbench` class exists.
   - [ ] `execute` method runs all stages.
   - [ ] VRAM is cleared.
 
-- [ ] T3. Create `ModelRegistry` and loading logic
+- [x] T3. Create `ModelRegistry` and loading logic
 
   **What to do**:
-  - Create `ModelRegistry` in `backend/src/media_lab/registry.py`.
-  - Scan `data/models` for checkpoints (.safetensors).
-  - Implement `load_model(name: str)` with LRU cache.
+  - Create `backend/src/media_lab/registry.py`
+  - Implement `ModelRegistry` class with scanning logic
 
   **Acceptance Criteria**:
   - [ ] `ModelRegistry` exists.

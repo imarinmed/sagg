@@ -449,3 +449,58 @@ class PipelineConfig(BaseModel):
 
     stages: list[StageConfig]
     parameters: dict = Field(default_factory=dict)
+
+
+# Model Registry Models
+class ModelType(str, Enum):
+    """Types of models supported in the registry"""
+
+    CHECKPOINT = "checkpoint"
+    LORA = "lora"
+    EMBEDDING = "embedding"
+
+
+class ModelInfo(BaseModel):
+    """Metadata for a registered model"""
+
+    name: str
+    model_type: ModelType
+    file_path: str
+    file_size_bytes: int | None = None
+    discovered_at: datetime | None = None
+    description: str | None = None
+    tags: list[str] = Field(default_factory=list)
+    metadata: dict | None = Field(default_factory=dict)
+
+
+# Pipeline Execution Models
+class GenerateRequest(BaseModel):
+    """Request to generate media using pipeline"""
+
+    pipeline_config: PipelineConfig
+    input_data: dict = Field(default_factory=dict)
+
+
+class EnhanceRequest(BaseModel):
+    """Request to enhance media using pipeline"""
+
+    pipeline_config: PipelineConfig
+    input_data: dict = Field(default_factory=dict)
+
+
+class PipelineExecutionResponse(BaseModel):
+    """Response from pipeline execution"""
+
+    job_id: str
+    success: bool
+    data: dict = Field(default_factory=dict)
+    artifacts: list[str] = Field(default_factory=list)
+    metadata: dict = Field(default_factory=dict)
+    error: str | None = None
+
+
+class ModelsListResponse(BaseModel):
+    """Response for listing available models"""
+
+    total: int
+    models: list[ModelInfo]

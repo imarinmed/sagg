@@ -138,6 +138,130 @@ function TabButton({
 }
 
 function GenerateView() {
+  const [prompt, setPrompt] = useState("");
+  const [negativePrompt, setNegativePrompt] = useState("");
+  const [seed, setSeed] = useState<number | null>(null);
+  const [selectedModel, setSelectedModel] = useState("stable-diffusion-3");
+  const [models, setModels] = useState<{ id: string; name: string }[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [generatingError, setGeneratingError] = useState<string | null>(null);
+  const [jobId, setJobId] = useState<string | null>(null);
+  const [jobStatus, setJobStatus] = useState<"pending" | "running" | "completed" | "failed" | null>(null);
+  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
+  const [progress, setProgress] = useState(0);
+  const [pollInterval, setPollInterval] = useState<NodeJS.Timeout | null>(null);
+
+  // Load available models on mount
+  useEffect(() => {
+    const loadModels = async () => {
+      try {
+        const response = await api.mediaLab.listModels("text-to-image");
+        if (response.models) {
+          setModels(response.models.map(m => ({ id: m.id, name: m.name })));
+        }
+      } catch (err) {
+        console.error("Failed to load models:", err);
+        // Fallback to default models
+        setModels([
+          { id: "stable-diffusion-3", name: "Stable Diffusion 3" },
+          { id: "flux-pro", name: "Flux Pro" },
+        ]);
+      }
+    };
+    loadModels();
+  }, []);
+
+  // Cleanup polling on unmount
+  useEffect(() => {
+    return () => {
+      if (pollInterval) clearInterval(pollInterval);
+    };
+  }, [pollInterval]);
+
+  // Poll for job status
+  const pollJobStatus = async (currentJobId: string) => {
+    try {
+      const job = await api.mediaLab.getJob(currentJobId);
+      setJobStatus(job.status as any);
+      
+      // Update progress based on stage
+      if (job.status === "completed") {
+        setProgress(100);
+        setLoading(false);
+        if (pollInterval) clearInterval(pollInterval);
+        
+        // Get artifacts
+        const artifacts = await api.mediaLab.getArtifacts(currentJobId);
+        if (artifacts.artifacts && artifacts.artifacts.length > 0) {
+          setGeneratedImage(getMediaLabArtifactUrl(artifacts.artifacts[0].file_path));
+        }
+      } else if (job.status === "failed") {
+        setLoading(false);
+        setGeneratingError("Generation failed. Please try again.");
+        if (pollInterval) clearInterval(pollInterval);
+      }
+    } catch (err) {
+      console.error("Error polling job status:", err);
+    }
+  };
+
+  const handleGenerate = async () => {
+    if (!prompt.trim()) {
+      setGeneratingError("Please enter a prompt");
+      return;
+    }
+
+    setLoading(true);
+    setGeneratingError(null);
+    setGeneratedImage(null);
+    setProgress(10);
+
+    try {
+      // Create pipeline config for text-to-image generation
+      const request: any = {
+        pipeline_config: {
+          stages: ["txt2img", "refiner"],
+          parameters: {
+            model_id: selectedModel,
+            width: 512,
+            height: 512,
+          },
+        },
+        input_data: {
+          prompt: prompt,
+          negative_prompt: negativePrompt,
+          seed: seed || Math.floor(Math.random() * 1000000),
+          guidance_scale: 7.5,
+          num_inference_steps: 20,
+        },
+      };
+
+      const response = await api.mediaLab.generate(request);
+      
+      if (!response.success) {
+        setGeneratingError(response.error || "Generation failed");
+        setLoading(false);
+        return;
+      }
+
+      setJobId(response.job_id);
+      setJobStatus("running");
+      setProgress(30);
+
+      // Start polling for status
+      const interval = setInterval(() => pollJobStatus(response.job_id), 2000);
+      setPollInterval(interval);
+    } catch (err: any) {
+      console.error("Generation error:", err);
+      setGeneratingError(err.message || "Failed to start generation");
+      setLoading(false);
+    }
+  };
+
+  const randomSeed = () => {
+    setSeed(Math.floor(Math.random() * 1000000));
+  };
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
       <div className="lg:col-span-1 space-y-6">
@@ -149,6 +273,9 @@ function GenerateView() {
               <textarea 
                 className="w-full h-32 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-3 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors resize-none"
                 placeholder="Describe the image you want to generate..."
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
+                disabled={loading}
               />
             </div>
             <div className="space-y-2">
@@ -156,19 +283,100 @@ function GenerateView() {
               <Input 
                 placeholder="What to avoid..." 
                 className="bg-[var(--color-surface)] border-[var(--color-border)]"
+                value={negativePrompt}
+                onChange={(e) => setNegativePrompt(e.target.value)}
+                disabled={loading}
               />
             </div>
-            <Button className="w-full bg-blue-600 text-white font-medium">
-              Generate Image
+            <div className="space-y-2">
+              <label className="text-sm text-[var(--color-text-muted)]">Model</label>
+              <select 
+                className="w-full bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-2 text-sm text-[var(--color-text-primary)] focus:outline-none focus:border-blue-500 transition-colors"
+                value={selectedModel}
+                onChange={(e) => setSelectedModel(e.target.value)}
+                disabled={loading}
+              >
+                {models.map(m => (
+                  <option key={m.id} value={m.id}>{m.name}</option>
+                ))}
+              </select>
+            </div>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <label className="text-sm text-[var(--color-text-muted)]">Seed</label>
+                <button 
+                  onClick={randomSeed}
+                  disabled={loading}
+                  className="text-xs text-blue-400 hover:text-blue-300 disabled:opacity-50"
+                >
+                  Randomize
+                </button>
+              </div>
+              <Input 
+                placeholder="Leave empty for random..." 
+                className="bg-[var(--color-surface)] border-[var(--color-border)]"
+                type="number"
+                value={seed ?? ""}
+                onChange={(e) => setSeed(e.target.value ? parseInt(e.target.value) : null)}
+                disabled={loading}
+              />
+            </div>
+            {generatingError && (
+              <div className="p-3 bg-red-500/10 border border-red-500/30 rounded-lg flex items-start gap-2">
+                <AlertCircle className="w-4 h-4 mt-0.5 text-red-400 flex-shrink-0" />
+                <p className="text-sm text-red-300">{generatingError}</p>
+              </div>
+            )}
+            <Button 
+              className="w-full bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-50"
+              onClick={handleGenerate}
+              isDisabled={loading || !prompt.trim()}
+            >
+              {loading ? (
+                <div className="flex items-center gap-2">
+                  <Spinner size="sm" />
+                  Generating... ({progress}%)
+                </div>
+              ) : (
+                "Generate Image"
+              )}
             </Button>
           </div>
         </GlassCard>
       </div>
       <div className="lg:col-span-2">
-        <div className="h-full min-h-[400px] border-2 border-dashed border-[var(--color-border)] rounded-xl flex flex-col items-center justify-center text-[var(--color-text-muted)] bg-[var(--color-surface)]/30">
-          <Wand2 className="w-12 h-12 mb-4 opacity-50" />
-          <p>Generated results will appear here</p>
-        </div>
+        {generatedImage ? (
+          <div className="h-full min-h-[400px] rounded-xl overflow-hidden border border-[var(--color-border)] flex flex-col">
+            <img 
+              src={generatedImage} 
+              alt="Generated result" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ) : (
+          <div className="h-full min-h-[400px] border-2 border-dashed border-[var(--color-border)] rounded-xl flex flex-col items-center justify-center text-[var(--color-text-muted)] bg-[var(--color-surface)]/30">
+            {loading && jobId ? (
+              <>
+                <Spinner size="lg" className="mb-4" />
+                <p className="text-center">Generating your image...</p>
+                <p className="text-xs text-[var(--color-text-muted)] mt-2">Job ID: {jobId.slice(0, 8)}</p>
+                <div className="w-full px-8 mt-4">
+                  <div className="w-full bg-[var(--color-border)] rounded-full h-2 overflow-hidden">
+                    <div 
+                      className="bg-blue-500 h-full transition-all duration-300" 
+                      style={{ width: `${progress}%` }}
+                    />
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <Wand2 className="w-12 h-12 mb-4 opacity-50" />
+                <p>Generated results will appear here</p>
+              </>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

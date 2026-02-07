@@ -383,6 +383,43 @@ export interface MediaCapabilitiesResponse {
   reason?: string;
 }
 
+// New Media Lab Pipeline Types
+export interface PipelineConfig {
+  stages: string[];
+  parameters?: Record<string, any>;
+}
+
+export interface GenerateRequest {
+  pipeline_config: PipelineConfig;
+  input_data?: Record<string, any>;
+}
+
+export interface EnhanceRequest {
+  pipeline_config: PipelineConfig;
+  input_data?: Record<string, any>;
+}
+
+export interface ModelInfo {
+  id: string;
+  name: string;
+  model_type: string;
+  size_gb?: number;
+}
+
+export interface ModelsListResponse {
+  total: number;
+  models: ModelInfo[];
+}
+
+export interface PipelineExecutionResponse {
+  job_id: string;
+  success: boolean;
+  data?: Record<string, any>;
+  artifacts?: string[];
+  metadata?: Record<string, any>;
+  error?: string | null;
+}
+
 // Helper function to build query string from params
 function buildQueryString(params: Record<string, any>): string {
   const search = new URLSearchParams();
@@ -512,6 +549,16 @@ export const api = {
       form.append("file", file);
       return fetchApiWithFormData<MediaUploadResponse>("/api/media-lab/uploads", "POST", form);
     },
+    // New pipeline endpoints
+    generate: (request: GenerateRequest) =>
+      fetchApiWithBody<PipelineExecutionResponse>("/api/media-lab/generate", "POST", request),
+    enhance: (request: EnhanceRequest) =>
+      fetchApiWithBody<PipelineExecutionResponse>("/api/media-lab/enhance", "POST", request),
+    listModels: (modelType?: string) => {
+      const query = modelType ? `?model_type=${encodeURIComponent(modelType)}` : "";
+      return fetchApi<ModelsListResponse>(`/api/media-lab/models${query}`);
+    },
+    // Legacy endpoints
     submitJob: (payload: MediaJobSubmitPayload) =>
       fetchApiWithBody<MediaJobResponse>("/api/media-lab/jobs", "POST", payload),
     listJobs: (params?: MediaJobListParams) => {

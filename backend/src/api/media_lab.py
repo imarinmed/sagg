@@ -4,13 +4,19 @@ from uuid import uuid4
 from fastapi import APIRouter, HTTPException, Query
 
 from ..media_lab.executor import JobExecutor
+from ..media_lab.registry import ModelRegistry
+from ..media_lab.workbench import Workbench
 from ..models import (
     ArtifactData,
     ArtifactListResponse,
     CancelJobRequest,
+    EnhanceRequest,
+    GenerateRequest,
     MediaJobListResponse,
     MediaJobResponse,
     MediaJobSubmitRequest,
+    ModelsListResponse,
+    PipelineExecutionResponse,
     RetryJobRequest,
 )
 
@@ -22,6 +28,9 @@ _artifacts_store = {}
 
 # Executor instance for deterministic job processing
 _executor = JobExecutor()
+
+# Model registry singleton
+_model_registry = ModelRegistry()
 
 
 def _get_job_or_404(job_id: str) -> dict:
@@ -224,4 +233,109 @@ async def get_job_artifacts(job_id: str):
         job_id=job_id,
         total_artifacts=len(artifacts),
         artifacts=artifacts,
+    )
+
+
+# Pipeline-based endpoints
+@router.post("/generate", response_model=PipelineExecutionResponse)
+async def generate(request: GenerateRequest):
+    """Generate media using pipeline.
+
+    Accepts a PipelineConfig and input_data (prompt, seed, etc.).
+    Initializes Workbench, executes pipeline, returns results with artifacts.
+
+    Returns:
+        PipelineExecutionResponse with success status, data, artifacts, and optional error.
+    """
+    job_id = str(uuid4())
+
+    try:
+        # Initialize workbench with pipeline config
+        workbench = Workbench(request.pipeline_config)
+
+        # Execute pipeline
+        result = await workbench.execute(request.input_data, job_id=job_id)
+
+        # Return pipeline result as response
+        return PipelineExecutionResponse(
+            job_id=job_id,
+            success=result.get("success", False),
+            data=result.get("data", {}),
+            artifacts=result.get("artifacts", []),
+            metadata=result.get("metadata", {}),
+            error=result.get("error"),
+        )
+    except Exception as e:
+        return PipelineExecutionResponse(
+            job_id=job_id,
+            success=False,
+            data={},
+            artifacts=[],
+            metadata={},
+            error=str(e),
+        )
+
+
+@router.post("/enhance", response_model=PipelineExecutionResponse)
+async def enhance(request: EnhanceRequest):
+    """Enhance media using pipeline.
+
+    Accepts a PipelineConfig and input_data (image path, enhancement level, etc.).
+    Initializes Workbench, executes pipeline, returns results with artifacts.
+
+    Returns:
+        PipelineExecutionResponse with success status, data, artifacts, and optional error.
+    """
+    job_id = str(uuid4())
+
+    try:
+        # Initialize workbench with pipeline config
+        workbench = Workbench(request.pipeline_config)
+
+        # Execute pipeline
+        result = await workbench.execute(request.input_data, job_id=job_id)
+
+        # Return pipeline result as response
+        return PipelineExecutionResponse(
+            job_id=job_id,
+            success=result.get("success", False),
+            data=result.get("data", {}),
+            artifacts=result.get("artifacts", []),
+            metadata=result.get("metadata", {}),
+            error=result.get("error"),
+        )
+    except Exception as e:
+        return PipelineExecutionResponse(
+            job_id=job_id,
+            success=False,
+            data={},
+            artifacts=[],
+            metadata={},
+            error=str(e),
+        )
+
+
+@router.get("/models", response_model=ModelsListResponse)
+async def list_models(model_type: str | None = Query(None, description="Filter by model type")):
+    """List available models from registry.
+
+    Optionally filters by model type: checkpoint, lora, embedding.
+
+    Returns:
+        ModelsListResponse with total count and list of ModelInfo objects.
+    """
+    # Convert string model type to enum if provided
+    from ..models import ModelType
+
+    try:
+        filtered_type = ModelType(model_type) if model_type else None
+    except ValueError:
+        raise HTTPException(status_code=400, detail=f"Invalid model type: {model_type}")
+
+    # Query registry
+    models = _model_registry.list_models(filtered_type)
+
+    return ModelsListResponse(
+        total=len(models),
+        models=models,
     )
