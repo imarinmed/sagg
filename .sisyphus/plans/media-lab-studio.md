@@ -74,37 +74,68 @@
   - [ ] Models loaded from disk.
   - [ ] LRU cache works.
 
-- [ ] T4. Update API to support new pipeline structure
+- [x] T4. Update API to support new pipeline structure
 
   **What to do**:
-  - Update `backend/src/api/media_lab.py`.
-  - Add `POST /generate` endpoint accepting `PipelineConfig`.
-  - Connect endpoint to `Workbench.execute`.
+  - Create/Update `backend/src/api/media_lab.py`
+  - Implement `POST /generate`, `POST /enhance`, `GET /models`
 
-  **Acceptance Criteria**:
-  - [ ] API accepts new config.
-  - [ ] Jobs triggers Workbench.
-
-- [ ] T5. Basic "Generate" frontend wiring
+- [x] T5. Basic "Generate" frontend wiring
 
   **What to do**:
-  - Update `GenerateView` in `frontend/app/media-lab/page.tsx`.
-  - Connect "Generate" button to `POST /generate`.
-  - Display progress/result.
+  - Update `frontend/app/media-lab/page.tsx`
+  - Connect "Generate" button to API
+  - Display loading state and result
 
-  **Acceptance Criteria**:
-  - [ ] Button triggers API.
-  - [ ] Result image shown.
-
-- [ ] T6. Artifact persistence (save images to disk/db)
+- [x] T6. Artifact persistence (save images to disk/db)
 
   **What to do**:
-  - Update `JobExecutor` to save outputs to `data/artifacts/{job_id}/`.
-  - Metadata JSON sidecar.
-
-  **Acceptance Criteria**:
-  - [ ] Images saved to disk.
-  - [ ] Metadata saved.
+  - Implement `ArtifactManager` to save generated images
+  - Ensure metadata (prompt, seed, params) is saved as JSON sidecar
 
 ---
-(Further versions omitted for brevity, will expand as needed)
+
+## v0.3.0: 3-Stage Detailer System
+
+- [ ] T1. Implement `Detailer` pipeline (Face/Hand/Body)
+
+  **What to do**:
+  - Create `backend/src/media_lab/stages/detailer.py`.
+  - Implement `DetailerStage` (subclass of PipelineStage).
+  - Implement ROI detection (Face/Hand/Body) using simple crop or placeholder for now.
+  - Implement masking logic (create mask from ROI).
+  - Implement inpainting logic (call model with mask).
+
+  **Must NOT do**:
+  - Do not implement full Yolo/MediaPipe integration if libraries are missing (use center crop or simple heuristic).
+
+  **Recommended Agent Profile**:
+  - **Category**: `quick`
+  - **Skills**: [`python`, `backend`]
+
+  **Acceptance Criteria**:
+  - [ ] `DetailerStage` class exists.
+  - [ ] Can take an image and return a masked/inpainted version.
+  - [ ] pytest passes.
+
+- [ ] T2. Add "Enhance" tab to frontend
+
+  **What to do**:
+  - Update `frontend/app/media-lab/page.tsx` (EnhanceView).
+  - Add controls for Detailer (Face/Hand strength).
+  - Connect to `POST /enhance`.
+
+  **Acceptance Criteria**:
+  - [ ] Enhance tab functional.
+  - [ ] Can submit enhance job.
+
+- [ ] T3. Integrate Refiner stage (High-res fix)
+
+  **What to do**:
+  - Create `backend/src/media_lab/stages/refiner.py`.
+  - Implement `RefinerStage`.
+  - Logic: Img2Img with low denoising strength.
+
+  **Acceptance Criteria**:
+  - [ ] `RefinerStage` class exists.
+  - [ ] Integration into Workbench.

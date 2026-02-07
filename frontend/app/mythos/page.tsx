@@ -27,6 +27,7 @@ import {
 import { listMythos, listMythosCategories } from "@/lib/kb";
 import { MythosElement, MythosConnection, api } from "@/lib/api";
 import Link from "next/link";
+import "@/styles/mythos-atmosphere.css";
 
 // ============================================
 // TYPE DEFINITIONS
@@ -242,6 +243,8 @@ export default function MythosPage() {
 
   return (
     <div className="min-h-screen pb-20 space-y-12 animate-fade-in-up">
+      <div className="fog-overlay" aria-hidden="true" />
+      <div className="fog-overlay-deep" aria-hidden="true" />
       
       {/* Encyclopedia Shell / Hero */}
       <section 
@@ -253,7 +256,7 @@ export default function MythosPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-accent-primary)]/10 border border-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] text-xs font-medium tracking-wider uppercase"
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-accent-primary)]/10 border border-[var(--color-accent-primary)]/20 text-[var(--color-accent-primary)] text-xs font-medium tracking-wider uppercase blood-glow"
             >
               <BookOpen className="w-3 h-3" />
               <span>Dark Adaptation Knowledge Base</span>
@@ -263,7 +266,7 @@ export default function MythosPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-[var(--color-text-primary)] tracking-tight"
+              className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-[var(--color-text-primary)] tracking-tight text-glow"
             >
               The Mythos
             </motion.h1>
@@ -472,7 +475,7 @@ export default function MythosPage() {
       </section>
 
       {/* Featured Strip */}
-      <section className="max-w-7xl mx-auto px-4 pt-8">
+      <section className="max-w-7xl mx-auto px-4 pt-8 animate-fade-in animate-delay-100">
         <div className="flex items-center justify-between mb-6">
           <h2 className="font-heading text-2xl text-[var(--color-text-primary)]">Curated Entries</h2>
           <div className="h-px flex-1 bg-[var(--glass-border)] ml-6 opacity-50" />
@@ -486,7 +489,7 @@ export default function MythosPage() {
           {featuredElements.map((element, idx) => (
             <motion.div 
               key={element.id} 
-              className="h-80 md:h-96"
+              className="h-80 md:h-96 card-hover-effect glass-enhanced"
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
@@ -497,7 +500,7 @@ export default function MythosPage() {
       </section>
 
       {/* Main Content Grid */}
-      <section className="max-w-7xl mx-auto px-4 pt-12">
+      <section className="max-w-7xl mx-auto px-4 pt-12 animate-fade-in animate-delay-200">
         <div className="flex items-center justify-between mb-8">
           <h2 className="font-heading text-2xl text-[var(--color-text-primary)]">The Archives</h2>
           <div className="h-px flex-1 bg-[var(--glass-border)] ml-6 opacity-50" />
@@ -528,6 +531,7 @@ export default function MythosPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
                 layout
+                className="card-hover-effect glass-enhanced"
               >
                 <MythosCard element={element} variant="default" />
               </motion.div>
@@ -542,6 +546,7 @@ export default function MythosPage() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.03 }}
                 layout
+                className="card-hover-effect glass-enhanced"
               >
                 <MythosCard element={element} variant="compact" />
               </motion.div>
@@ -551,7 +556,7 @@ export default function MythosPage() {
       </section>
 
       {/* Connections Section */}
-      <section className="max-w-7xl mx-auto px-4 pt-12">
+      <section className="max-w-7xl mx-auto px-4 pt-12 animate-fade-in animate-delay-300">
         <GlassCard className="p-6">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 rounded-lg bg-[var(--color-accent-primary)]/10 flex items-center justify-center">
@@ -578,7 +583,7 @@ export default function MythosPage() {
                   className="p-3 rounded-lg bg-[var(--color-surface)]/30 border border-[var(--glass-border)] hover:border-[var(--color-accent-primary)]/30 transition-colors"
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs font-medium px-2 py-1 rounded bg-[var(--color-accent-primary)]/10 text-[var(--color-accent-primary)]">
+                    <span className="text-xs font-medium px-2 py-1 rounded bg-[var(--color-accent-primary)]/10 text-[var(--color-accent-primary)] border-glow-animate">
                       {connection.connection_type}
                     </span>
                     <span className="text-xs text-[var(--color-text-muted)]">
@@ -621,7 +626,7 @@ export default function MythosPage() {
       </section>
 
       {/* Onward Exploration (Footer-ish) */}
-      <section className="max-w-7xl mx-auto px-4 pt-12 border-t border-[var(--glass-border)]">
+      <section className="max-w-7xl mx-auto px-4 pt-12 border-t border-[var(--glass-border)] animate-fade-in animate-delay-400">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Link href="/graph" className="group">
             <GlassCard className="p-6 h-full hover:border-[var(--color-accent-primary)]/30 transition-colors">
