@@ -1,5 +1,8 @@
 id: kiara_natt_och_dag
 name: Kiara Natt och Dag
+catalog_id:
+  bst: "BST-001-KND"
+  sst: "SST-001-KND"
 portrayed_by: Filippa Kavalic
 versions:
   bst:
@@ -39,8 +42,7 @@ versions:
     - bloodlust_struggles
     - daddy_issues
     - rebellion_through_sex
-    arc: From innocent fish-out-of-water to blood-bound submissive exploring dark
-      desires
+    arc: From innocent fish-out-of-water to blood-bound submissive exploring dark desires
     taboo_elements: &id004
     - age_gap
     - authority_abuse
@@ -50,6 +52,21 @@ versions:
     - s01e03_blood_feeding_seduction
     - s01e05_uncle_jacques_tension
     - s01e06_father_confrontation
+    sexual_activity:
+      encounters_total: 12
+      encounters_by_episode:
+        s01e03: 2
+        s01e04: 1
+        s01e05: 3
+        s01e06: 2
+        s01e07: 4
+      partners_unique: 4
+      intensity_average: 7
+      preferences_satisfied:
+      - blood_bond
+      - predator_prey
+      - age_gap
+      - daddy_issues
 kink_profile:
   preferences:
   - id: brat
@@ -133,6 +150,143 @@ kink_profile:
     - id: total_power_exchange
       intensity: 3
       notes: Begins exploring deeper submission
+physical_profile:
+  height: "168 cm"
+  measurements:
+    bust: "86 cm"
+    waist: "61 cm"
+    hips: "89 cm"
+  build: "slender"
+  distinguishing_features:
+  - pale_skin
+  - sharp_canines
+  - cold_to_touch
+  - haunting_eyes
+performance_metrics:
+  stamina: 7
+  flexibility: 8
+  pain_tolerance: 6
+  recovery_rate: 9
+vitals:
+  blood_type: "O-"
+  heart_rate_resting: 45
+  body_temperature: "28°C"
+student_profile:
+  school: "Natt och Dag Academy"
+  grade: "11th"
+  class_schedule:
+  - day: "Monday"
+    periods:
+    - time: "08:00-09:30"
+      subject: "Literature"
+      location: "Building A, Room 203"
+    - time: "09:45-11:15"
+      subject: "History"
+      location: "Building A, Room 205"
+    - time: "11:30-13:00"
+      subject: "Physical Education"
+      location: "Gymnasium"
+    - time: "14:00-15:30"
+      subject: "Biology"
+      location: "Building B, Lab 1"
+  - day: "Tuesday"
+    periods:
+    - time: "08:00-09:30"
+      subject: "Mathematics"
+      location: "Building A, Room 201"
+    - time: "09:45-11:15"
+      subject: "Chemistry"
+      location: "Building B, Lab 2"
+    - time: "11:30-13:00"
+      subject: "Art"
+      location: "Building C, Studio"
+    - time: "14:00-15:30"
+      subject: "French"
+      location: "Building A, Room 207"
+  - day: "Wednesday"
+    periods:
+    - time: "08:00-09:30"
+      subject: "Philosophy"
+      location: "Building A, Room 209"
+    - time: "09:45-11:15"
+      subject: "English Literature"
+      location: "Building A, Room 203"
+    - time: "11:30-13:00"
+      subject: "Physics"
+      location: "Building B, Lab 3"
+    - time: "14:00-15:30"
+      subject: "Student Council"
+      location: "Administration Building"
+  - day: "Thursday"
+    periods:
+    - time: "08:00-09:30"
+      subject: "Economics"
+      location: "Building A, Room 211"
+    - time: "09:45-11:15"
+      subject: "Music"
+      location: "Building D, Music Room"
+    - time: "11:30-13:00"
+      subject: "History"
+      location: "Building A, Room 205"
+    - time: "14:00-15:30"
+      subject: "Biology"
+      location: "Building B, Lab 1"
+  - day: "Friday"
+    periods:
+    - time: "08:00-09:30"
+      subject: "Literature"
+      location: "Building A, Room 203"
+    - time: "09:45-11:15"
+      subject: "Art"
+      location: "Building C, Studio"
+    - time: "11:30-13:00"
+      subject: "Physical Education"
+      location: "Gymnasium"
+  obligations:
+  - type: "student_council"
+    role: "Treasurer"
+    schedule: "Wednesday afternoons, monthly budget meetings"
+    duties:
+    - budget_oversight
+    - event_funding
+    - club_allocations
+  - type: "tuition_arrangement"
+    status: "subsidized_by_family"
+    notes: "Paid through Natt och Dag family accounts"
+  loan_schedule:
+  - episode: "s01e02"
+    lender: "The Collector"
+    amount: "Weekend availability"
+    duration: "48 hours"
+    context: "Private event at family estate"
+    restrictions:
+    - evening_only
+    - formal_attire_required
+  - episode: "s01e04"
+    lender: "Jacques Natt och Dag"
+    amount: "Unspecified favor"
+    duration: "Ongoing"
+    context: "Uncle-niece arrangement"
+    restrictions:
+    - secrecy
+    - obedience_expected
+  - episode: "s01e06"
+    lender: "Henry Natt och Dag"
+    amount: "Family honor debt"
+    duration: "Until compliance"
+    context: "Father's demands during confrontation"
+    restrictions:
+    - absolute_compliance
+    - no_defiance
+  extracurriculars:
+  - name: "Debate Club"
+    schedule: "Fridays 16:00-17:30"
+    role: "Member"
+    focus: "Social and ethical issues"
+  - name: "Photography Club"
+    schedule: "Thursdays 17:00-18:30"
+    role: "Active Member"
+    focus: "Night photography and architectural themes"
 divergences: []
 _deprecated_canonical:
   age: 16
