@@ -1,0 +1,41 @@
+id: prophecy
+name: Vampire Prophecy
+category: supernatural
+short_description: The ability of certain vampires to perceive possible futures or receive prophetic visions
+related_characters:
+- desideria
+- saga
+media_urls: []
+versions:
+  bst:
+    description: 'Rare among vampires, prophetic ability manifests as visions of possible futures. These glimpses are never certain—they show potential paths rather than fixed destinies. The visions come unbidden, often triggered by significant decisions or the presence of important individuals. Interpreting them correctly is as challenging as receiving them.'
+    traits:
+    - rare_ability
+    - visions_show_possibilities
+    - triggered_by_significance
+    - interpretation_required
+    - never_fully_certain
+    abilities:
+    - future_glimpses
+    - danger_sensing
+    - fate_reading
+    weaknesses:
+    - visions_are_symbolic
+    - cannot_be_controlled
+    - may_cause_madness
+    significance: Prophetic vampires become valuable political assets and targets, as foreknowledge shapes power struggles
+    source_episodes:
+    - s01e03
+    - s01e05
+  sst:
+    description: 'In the dark adaptation, prophetic visions become invasive and consuming. The prophet sees not just events but emotional futures—the taste of future blood, the sensation of future touch, the echo of future screams or moans. These visions can become obsessions, driving the prophet to engineer the futures they''ve glimpsed.'
+    traits:
+    - emotionally_invasive_visions
+    - obsessive_future_seeking
+    - self_fulfilling_tendencies
+    - madness_risk_high
+    - intimate_futures_revealed
+    significance: 'Prophets who see intimate futures face unique torment—they know how relationships will develop, how passions will cool, when partners will leave or die. This foreknowledge poisons spontaneity and breeds fatalistic attitudes.'
+    mechanics: 'Visions strike without warning, lasting seconds to minutes. Physical contact with subjects intensifies visions. Multiple possible futures may be seen simultaneously. Acting on visions can alter outcomes. Frequent visions risk psychological breakdown.'
+    erotic_implications: 'Prophetic vampires sometimes glimpse intimate futures—encounters not yet happened, pleasures not yet experienced. Some seek to recreate these visions exactly. Others avoid the people from their visions, knowing how doomed relationships end. The ability to foresee sexual chemistry or compatibility makes them prized lovers—they know what you''ll want before you do.'
+divergences: []

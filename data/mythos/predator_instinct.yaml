@@ -1,0 +1,44 @@
+id: predator_instinct
+name: Predator Instinct
+category: psychology
+short_description: The deep psychological transformation from prey animal to apex predator
+related_characters:
+- boris
+- vera
+- saga
+media_urls: []
+versions:
+  bst:
+    description: 'Vampirism doesn''t just change what one eats—it fundamentally rewires predator/prey psychology. New vampires experience disorienting shift: humans they once walked among are now prey. They instinctively assess vulnerability, track movement, identify the weak from the herd. This predator state can be suppressed through discipline but erupts under stress or hunger. Experienced vampires learn to mask these instincts but never lose them.'
+    traits:
+    - prey_assessment_instinct
+    - vulnerability_sensing
+    - herd_separation_behavior
+    - stress_triggered_predation
+    - never_fully_suppressed
+    abilities:
+    - threat_level_assessment
+    - escape_route_blocking
+    - ambush_instinct
+    - pack_hunting_coordination
+    weaknesses:
+    - can_override_rational_planning
+    - makes_vampires_readable_to_hunters
+    - causes_reckless_pursuit
+    significance: Predator instinct explains why even civilized vampires can suddenly turn dangerous—the hunter is always there beneath the surface
+    source_episodes:
+    - s01e01
+    - s01e04
+    - s01e07
+  sst:
+    description: 'In the dark adaptation, predator instinct extends into sexual and romantic contexts. The hunt becomes foreplay. Vampires experience arousal when pursuing prey, especially prey that runs. Some develop specific fetishes around fear—they find terror sexually exciting. Power dynamics in relationships mirror predator/prey: the vampire as dominant pursuer, partner as pursued. This can be consensual roleplay or genuine predation depending on the vampire''s humanity level.'
+    traits:
+    - hunt_as_foreplay
+    - arousal_from_pursuit
+    - fear_fetish_potential
+    - dominance_predation_link
+    - consensual_vs_genuine_spectrum
+    significance: 'Predator instinct makes intimate relationships complicated. A vampire who finds fear arousing must navigate consent carefully—or doesn''t, and becomes a monster. Even loving relationships carry predator/prey undertones that can be thrilling or terrifying.'
+    mechanics: 'Predator instinct activates in response to: running prey (strongest trigger), fear scent, vulnerability signals (injury, intoxication, isolation), hunger, and sexual arousal. When active, vampire experiences heightened focus, increased strength/speed, reduced higher reasoning, intense satisfaction from successful hunt. Can be partially suppressed through discipline and feeding regularly. Ancient vampires integrate it into their personality so thoroughly it''s always active at low level.'
+    erotic_implications: 'Predator instinct creates natural dom/sub dynamics. Vampires who embrace it become demanding, possessive lovers who enjoy the chase and the capture. Some find consenting partners who enjoy being "hunted"—roleplay becomes genuine in the moment. Others struggle against it, fearing they''ll hurt partners. The most dangerous are vampires who need genuine fear to feel aroused—they can''t be satisfied by willing partners and become serial predators.'
+divergences: []

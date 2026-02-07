@@ -1,0 +1,44 @@
+id: maker_progeny_bonds
+name: Maker-Progeny Bonds
+category: society
+short_description: The profound supernatural and social connection between a vampire and those they create
+related_characters:
+- saga
+- boris
+- kiara
+media_urls: []
+versions:
+  bst:
+    description: 'The vampire who transforms a human (the maker/sire) retains a mystical connection to their progeny. This bond creates instinctive awareness of each other''s locations and emotional states. Socially, progeny owe fealty to their makers, expected to obey commands and serve their interests. Breaking these bonds is considered serious transgression in vampire society.'
+    traits:
+    - mystical_connection
+    - emotional_awareness_link
+    - location_sensing
+    - social_obligation
+    - hierarchical_relationship
+    abilities:
+    - sense_progeny_emotions
+    - command_obedience
+    - track_location
+    - shared_blood_memories
+    weaknesses:
+    - bond_works_both_ways
+    - progeny_death_felt_by_maker
+    - can_be_used_for_tracking
+    significance: Maker-progeny bonds form the basic social unit of vampire society and create complex power dynamics
+    source_episodes:
+    - s01e01
+    - s01e02
+    - s01e06
+  sst:
+    description: 'In the dark adaptation, maker-progeny bonds carry intense psychological and erotic charge. The act of creation—draining life and replacing it with vampire blood—is profoundly intimate. Many makers view their progeny as possessions or extensions of themselves. Progeny may experience conflicted feelings: gratitude mixed with resentment, devotion with desire for independence, love with obligation.'
+    traits:
+    - psychologically_intense
+    - possessive_dynamics
+    - complicated_loyalty
+    - intimacy_from_creation
+    - parent_child_lover_confusion
+    significance: 'The maker-progeny relationship blurs every boundary—parent/child, master/servant, lover/possession. The intensity of the bond can become suffocating or be exploited for control.'
+    mechanics: 'Makers always know progeny''s general direction and emotional state. Strong emotions transmit clearly. Physical distance weakens but never breaks the bond. Commands carry supernatural weight—progeny feel compulsion to obey even when they wish to resist. Only maker''s death fully breaks the bond.'
+    erotic_implications: 'Creation itself is erotically charged—the maker drains their chosen victim to death''s edge, then offers their own blood in an exchange of fluids that creates immortal life. Many maker-progeny relationships become sexual, the power imbalance and mystical bond creating intense attraction. The progeny often imprints on their maker, first face seen in undead life. For some, this bond remains the deepest relationship of their immortal existence. For others, it becomes a prison they spend centuries trying to escape.'
+divergences: []

@@ -1,0 +1,45 @@
+id: immortality
+name: Vampire Immortality
+category: biology
+short_description: The ageless existence and eternal lifespan of vampires
+related_characters:
+- saga
+- boris
+- alfred
+- desideria
+media_urls: []
+versions:
+  bst:
+    description: 'Vampires cease aging once turned, remaining frozen at their transformation age indefinitely. They have witnessed centuries pass, accumulating knowledge, wealth, and emotional scars. Death is still possible through violence, but natural aging and disease no longer threaten them.'
+    traits:
+    - arrested_aging
+    - immunity_to_disease
+    - centuries_of_memory
+    - accumulated_wisdom
+    - emotional_detachment
+    - perspective_shift
+    abilities:
+    - eternal_youth
+    - historical_knowledge
+    - multi_generational_planning
+    weaknesses:
+    - can_still_be_killed
+    - psychological_toll_of_centuries
+    - loss_of_mortal_connections
+    significance: Immortality shapes every aspect of vampire psychology and society, creating beings who think in terms of centuries rather than decades
+    source_episodes:
+    - s01e01
+    - s01e03
+    - s01e05
+  sst:
+    description: 'In the dark adaptation, immortality becomes both gift and curse. Vampires watch mortal lovers age and die repeatedly across centuries. They accumulate not just knowledge but trauma, fetishes, and obsessions that have centuries to develop and intensify.'
+    traits:
+    - serial_immortal_relationships
+    - centuries_of_sexual_experience
+    - jaded_perspective
+    - collector_mentality
+    - age_gap_relationships_normalized
+    significance: 'Immortality eliminates the natural clock on relationships and consequences. What happens when beings have centuries to pursue obsessions, perfect manipulation techniques, or lose touch with human morality?'
+    mechanics: 'Vampires remember everything across centuries. Their psychology adapts slowly—personality changes that would take years in humans take decades in vampires. New experiences lose novelty over time.'
+    erotic_implications: 'Centuries of experience make elder vampires extraordinarily skilled lovers, but also increasingly difficult to satisfy. They have explored every conventional desire and often require more extreme or novel experiences to feel anything. Mortal partners offer temporary novelty but inevitable loss.'
+divergences: []

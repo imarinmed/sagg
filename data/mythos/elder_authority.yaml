@@ -1,0 +1,44 @@
+id: elder_authority
+name: Elder Authority
+category: rules
+short_description: The hierarchical power structure where ancient vampires rule over younger ones
+related_characters:
+- alfred
+- desideria
+- boris
+media_urls: []
+versions:
+  bst:
+    description: 'Vampire society is strictly hierarchical based on age and power. Elders (vampires centuries old) claim authority over all younger vampires in their territory. This isn''t just tradition—ancient vampires possess overwhelming power advantage. Elder authority includes: commanding younger vampires, claiming feeding rights, demanding tithes or service, granting or denying permission to sire progeny, and sitting in judgment over disputes. Defying an elder risks destruction. The system resembles feudalism with blood instead of land.'
+    traits:
+    - age_based_hierarchy
+    - overwhelming_power_differential
+    - territorial_authority
+    - feudal_structure
+    - defiance_means_death
+    abilities:
+    - command_obedience
+    - claim_resources
+    - pass_judgment
+    - grant_or_deny_permission
+    weaknesses:
+    - creates_rebellion_motivation
+    - elder_conflicts_devastate_territory
+    - younger_vampires_chafe_under_rule
+    significance: Elder authority explains vampire political structure and why powerful ancients aren''t immediately overthrown despite their tyranny
+    source_episodes:
+    - s01e03
+    - s01e05
+    - s01e06
+  sst:
+    description: 'In the dark adaptation, elder authority extends explicitly into sexual domain. Ancient vampires claim droit du seigneur over progeny and younger vampires in their territory—the right to demand sexual access. This is partly power assertion, partly because centuries-old vampires have exhausted conventional pleasures and crave novelty. Younger vampires must submit or face destruction. Some elders maintain harems of younger vampires as concubines, creating sexual feudalism. The power differential makes genuine consent impossible.'
+    traits:
+    - sexual_dominion_right
+    - droit_du_seigneur
+    - harem_maintenance
+    - consent_impossible_with_power_differential
+    - novelty_seeking_through_coercion
+    significance: 'Elder authority codifies sexual exploitation into vampire law. Even vampires who respect human consent often abuse younger vampires, viewing age hierarchy as justification.'
+    mechanics: 'Elder status generally requires 200+ years existence. Regional territories controlled by eldest vampire or council of elders. Authority enforced through: overwhelming personal power, networks of loyal progeny/thralls, control of resources (havens, blood sources, wealth), and mutual non-aggression pacts with other elders. Younger vampires can theoretically challenge elders through: assassination, coalition forming, or fleeing territory (requires abandoning resources). Most choose submission as safer option. Elder conflicts (when two ancients want same territory or resource) often resolved through proxies to avoid mutual destruction.'
+    erotic_implications: 'Elder authority creates built-in exploitation structure. An ancient vampire can demand any younger vampire submit sexually under threat of death. This makes vampire society profoundly predatory internally—even those who refuse to exploit humans often abuse younger vampires. Some elders collect "favorites" who enjoy privileged status in exchange for sexual exclusivity. Others maintain rotating harems, discarding vampires after decades or centuries. The most monstrous view younger vampires as renewable resource—kill them when bored, sire new ones. This system makes vampire immortality a curse for many: eternal life as someone else''s property.'
+divergences: []

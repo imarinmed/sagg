@@ -1,0 +1,40 @@
+id: regeneration
+name: Vampire Regeneration
+category: biology
+short_description: The ability of vampires to heal from injuries at an accelerated rate
+related_characters:
+- saga
+- boris
+- vera
+media_urls: []
+versions:
+  bst:
+    description: 'Vampires in the series demonstrate remarkable healing abilities. Minor wounds close within minutes, while more severe injuries may take hours or days. This regeneration is fueled by blood—well-fed vampires heal significantly faster than those who are starving. However, some injuries, particularly those inflicted by other supernatural beings or sacred objects, may resist this healing factor.'
+    traits:
+    - rapid_wound_closure
+    - blood_dependent_healing
+    - reduced_scarring
+    - pain_tolerance
+    - injury_recovery
+    abilities:
+    - accelerated_tissue_repair
+    - bone_mending
+    - organ_regeneration
+    weaknesses:
+    - starvation_slows_healing
+    - supernatural_wounds_resist_healing
+    significance: Regeneration allows vampires to take risks that would kill humans and explains their long survival despite centuries of conflicts
+    source_episodes:
+    - s01e02
+    - s01e04
+  sst:
+    description: 'In the dark adaptation, regeneration becomes a violently intimate process. The body knits itself back together with visible, sometimes disturbing speed. Severe wounds may temporarily revert the vampire to a more feral state as all energy redirects to healing.'
+    traits:
+    - visible_healing_process
+    - feral_state_during_major_regeneration
+    - blood_hunger_spike_post_injury
+    - heightened_vulnerability_while_healing
+    significance: 'The regenerative process creates moments of vulnerability that can be exploited—or protected. A healing vampire becomes intensely dependent on their blood source during recovery.'
+    mechanics: 'Minor injuries: seconds to minutes. Major injuries: hours with adequate blood supply. Critical injuries: days, requires multiple feedings. Healing drains blood reserves rapidly.'
+    erotic_implications: 'The regeneration process is intensely physical and often accompanied by heightened sensitivity. Pain and pleasure signals mix during healing, creating complex sensory experiences. Some vampires seek out injury deliberately to experience the rush of regeneration.'
+divergences: []

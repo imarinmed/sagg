@@ -1,0 +1,42 @@
+id: dark_magic
+name: Dark Magic
+category: supernatural
+short_description: The practice of supernatural rituals and spell-craft among vampire kind
+related_characters:
+- alfred
+- desideria
+media_urls: []
+versions:
+  bst:
+    description: 'Beyond their innate abilities, some vampires study dark magic—rituals powered by blood sacrifice and ancient pacts. This magic can create wards, bind enemies, forge supernatural contracts, or curse bloodlines. It requires extensive knowledge, rare components, and significant risk. Magical workings often demand prices beyond simple blood.'
+    traits:
+    - requires_study
+    - blood_sacrifice_powered
+    - dangerous_practice
+    - ancient_knowledge_required
+    - unpredictable_consequences
+    abilities:
+    - ward_creation
+    - binding_rituals
+    - curse_crafting
+    - supernatural_contracts
+    weaknesses:
+    - requires_preparation
+    - components_rare
+    - backfire_risk
+    significance: Dark magic provides power beyond physical might, shaping vampire politics and ancient feuds
+    source_episodes:
+    - s01e05
+    - s01e07
+  sst:
+    description: 'In the dark adaptation, dark magic intertwines with carnal power. Rituals may require sexual energy alongside blood. Spells can bind lovers as surely as enemies. The most forbidden magics trade in consent itself, stealing or granting desire through supernatural means.'
+    traits:
+    - sexually_charged_rituals
+    - consent_manipulation_possible
+    - desire_as_component
+    - bonding_magics
+    - forbidden_love_spells
+    significance: 'Magic that can compel desire or forge unbreakable bonds raises disturbing questions. Can love created by magic be real? Do the ends justify magical coercion? What happens when magical bonds outlast natural attraction?'
+    mechanics: 'Rituals require: circle preparation, component gathering, incantation, power source (usually blood), and will-focus. More powerful magics demand greater sacrifices. Consent of participants affects outcome. Failed rituals may backlash catastrophically.'
+    erotic_implications: 'Sex magic is potent but dangerous. Rituals performed during intercourse amplify power but create mystical bonds between participants. Love spells exist but often produce obsession rather than true affection. Binding rituals can create permanent supernatural connections—chosen partners bound soul-deep, or enemies cursed to always find each other. The most forbidden magic can steal consent itself, overwriting free will with manufactured desire.'
+divergences: []

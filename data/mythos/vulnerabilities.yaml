@@ -1,0 +1,40 @@
+id: vulnerabilities
+name: Vampire Vulnerabilities
+category: biology
+short_description: The specific weaknesses and limitations that can harm or kill vampires
+related_characters:
+- saga
+- boris
+- vera
+media_urls: []
+versions:
+  bst:
+    description: 'Despite their enhanced abilities, vampires possess specific vulnerabilities. Sunlight causes severe burns and can be fatal with prolonged exposure. Religious symbols may have psychological effects on some vampires. Wooden stakes through the heart can paralyze or kill, depending on placement. Fire is particularly dangerous as it prevents regeneration. Decapitation is universally fatal.'
+    traits:
+    - sunlight_sensitivity
+    - fire_vulnerability
+    - wooden_stake_weakness
+    - decapitation_fatal
+    - religious_symbol_effect_varies
+    abilities: []
+    weaknesses:
+    - sunlight_burns
+    - fire_prevents_healing
+    - heart_stake_paralysis
+    - complete_decapitation_kills
+    - faith_based_psychological_effects
+    significance: These vulnerabilities create power dynamics and strategic considerations that shape vampire behavior and society
+    source_episodes:
+    - s01e01
+    - s01e06
+  sst:
+    description: 'In the dark adaptation, vulnerabilities become tools for control and eroticism. The threat of sunlight creates dependency on protection. The pain of burns can be weaponized or eroticized. Vulnerabilities reveal that despite their power, vampires can be made helpless.'
+    traits:
+    - vulnerability_creates_dependency
+    - pain_from_weaknesses_intensified
+    - helplessness_during_daylight
+    - trust_required_for_protection
+    significance: 'Vampire vulnerabilities create intimate power exchanges. A vampire sleeping during daylight is completely dependent on whoever protects them. Exposing a vulnerability is an act of profound trust—or can be exploited for control.'
+    mechanics: 'Sunlight: first-degree burns in seconds, third-degree in minutes, fatal in under an hour. Wooden stake: must pierce heart, causes paralysis. Fire: prevents regeneration, spreads easily. Decapitation: instant death. Effects compound with blood starvation.'
+    erotic_implications: 'Some vampires develop complex relationships with their vulnerabilities. The controlled exposure to sunlight, the trust required to allow someone near with a wooden stake, the helplessness of day-sleep—all create intense psychological dynamics. Submission and vulnerability become eroticized through these weaknesses.'
+divergences: []

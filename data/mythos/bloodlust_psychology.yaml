@@ -1,0 +1,45 @@
+id: bloodlust_psychology
+name: Bloodlust Psychology
+category: psychology
+short_description: The psychological drive and addiction to blood feeding that defines vampire existence
+related_characters:
+- saga
+- boris
+- vera
+- kiara
+media_urls: []
+versions:
+  bst:
+    description: 'Blood hunger is the central psychological force in vampire existence. It begins as simple physical need but develops into complex craving with psychological, emotional, and sensory dimensions. The hunt, the fear in prey, the moment of penetration, the taste—all become intertwined. Prolonged hunger creates escalating desperation, clouding judgment and eroding self-control.'
+    traits:
+    - escalating_need
+    - sensory_pleasure_component
+    - hunt_arousal
+    - self_control_erosion
+    - addiction_like_compulsion
+    abilities:
+    - hunger_induced_strength
+    - prey_focus
+    - scent_tracking_heightened
+    weaknesses:
+    - judgment_impairment_when_hungry
+    - addiction_vulnerability
+    - can_override_reason
+    significance: Bloodlust shapes every vampire''s existence, creating constant tension between control and surrender to primal need
+    source_episodes:
+    - s01e01
+    - s01e02
+    - s01e04
+    - s01e07
+  sst:
+    description: 'In the dark adaptation, bloodlust explicitly parallels sexual appetite. The act of feeding is portrayed as intensely sensual, sometimes more satisfying than sex. Vampires who feed during intercourse experience overwhelming pleasure. The line between feeding and fucking becomes blurred. Some vampires can only achieve arousal while feeding or being fed upon.'
+    traits:
+    - sexually_charged_feeding
+    - pleasure_intertwined
+    - arousal_from_hunt
+    - feeding_as_foreplay
+    - blood_drunk_euphoria
+    significance: 'When feeding becomes eroticized, consent becomes even more complicated. Is the human partner consenting to sex, to feeding, or can they even separate the two? The addictive pleasure of blood-enhanced sex creates dependent relationships.'
+    mechanics: 'Blood hunger intensifies gradually: discomfort (1 day), distraction (3 days), obsession (5 days), frenzy risk (7+ days). Fresh human blood satisfies most. Animal blood sustains but doesn''t satisfy psychologically. Feeding triggers euphoria lasting minutes to hours. Hunger makes vampires more aggressive, impulsive, sexually aroused. Post-feeding vampires experience increased emotional intensity and lowered inhibitions.'
+    erotic_implications: 'Bloodlust makes vampires dangerous lovers. The act of feeding during intimacy can be transcendent or fatal. Some vampires are strictly disciplined, never mixing feeding with sex to maintain control. Others embrace the fusion, seeking partners who consent to be both lover and food source. The most concerning develop feeding fetishes—they can only achieve satisfaction through the hunt and kill, or require their partners to be frightened, bleeding, or both. Blood addiction and sex addiction intertwine into single compulsion.'
+divergences: []

@@ -1,0 +1,44 @@
+id: mind_control
+name: Vampire Mind Control
+category: supernatural
+short_description: The ability to influence, manipulate, or dominate the thoughts and actions of others
+related_characters:
+- boris
+- alfred
+- desideria
+media_urls: []
+versions:
+  bst:
+    description: 'Some vampires possess the ability to influence human minds through eye contact and focused will. This ranges from subtle suggestion to complete domination of will. The strength of this ability varies with the vampire''s age and the target''s mental resistance. Prolonged exposure can create lasting psychological bonds.'
+    traits:
+    - eye_contact_required
+    - strength_varies_by_age
+    - mental_resistance_possible
+    - creates_psychological_bonds
+    - subtle_to_overwhelming_spectrum
+    abilities:
+    - suggestion
+    - memory_alteration
+    - will_domination
+    - emotion_manipulation
+    weaknesses:
+    - requires_eye_contact
+    - strong_willed_humans_resist
+    - multiple_uses_weaken_effect
+    significance: Mind control creates ethical questions about consent and free will that pervade vampire-human relationships
+    source_episodes:
+    - s01e02
+    - s01e04
+    - s01e06
+  sst:
+    description: 'In the dark adaptation, mind control becomes explicitly tied to domination and consent violation. The ability to override another''s will creates perfect predator-prey dynamics. Some vampires use it sparingly, aware of the ethical implications. Others use it constantly, surrounding themselves with thralls who exist only to serve.'
+    traits:
+    - consent_violation_tool
+    - creates_thralls
+    - addictive_to_user
+    - victim_awareness_varies
+    - psychological_scarring_possible
+    significance: 'Mind control represents the ultimate power imbalance. How can consent exist when one party can simply overwrite the other''s will? Yet some humans seek this out, craving the escape from choice.'
+    mechanics: 'Eye contact initiates connection. Stronger commands require more sustained contact. Repeated use on same subject makes them more susceptible. Effects last hours to days depending on command strength. Victims may or may not remember being controlled.'
+    erotic_implications: 'Mind control eliminates resistance, creating perfectly compliant partners—but some vampires find this hollow. The ethical vampires avoid it entirely in intimate situations. Others use it as the ultimate domination fantasy, their partners eager and willing because they''ve been made to be. The most disturbing use it to make victims forget, creating relationships built on violated memories.'
+divergences: []

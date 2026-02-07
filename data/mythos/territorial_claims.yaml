@@ -1,0 +1,44 @@
+id: territorial_claims
+name: Territorial Claims
+category: society
+short_description: The system of domain ownership and hunting rights that structures vampire geography
+related_characters:
+- boris
+- alfred
+- saga
+media_urls: []
+versions:
+  bst:
+    description: 'Vampire society divides geography into territories, each claimed by powerful vampires or bloodline families. These domains represent hunting grounds, power bases, and political jurisdiction. Entering another''s territory without permission is grave insult. Establishing new territories requires strength to defend them or political maneuvering for recognition.'
+    traits:
+    - geographical_power_division
+    - hunting_rights_defined
+    - permission_required_entry
+    - strength_or_politics_based
+    - conflict_over_boundaries
+    abilities:
+    - domain_control
+    - permission_granting
+    - trespasser_punishment
+    - border_enforcement
+    weaknesses:
+    - requires_constant_defense
+    - political_challenges_possible
+    - borders_disputed
+    significance: Territorial systems prevent total chaos while creating structured power hierarchies and conflict zones
+    source_episodes:
+    - s01e03
+    - s01e05
+    - s01e07
+  sst:
+    description: 'In the dark adaptation, territories represent more than hunting grounds—they''re domains of absolute control. Within their territory, vampires rule as dark lords, their will is law. Humans within these domains may be protected or preyed upon at the master''s whim. Territory violations often trigger violent, personal responses rather than legal proceedings.'
+    traits:
+    - absolute_domain_authority
+    - personal_kingdom_mentality
+    - violent_defense
+    - humans_as_territory_resources
+    - pride_and_possession
+    significance: 'Territories transform vampires into feudal lords of the night. The psychology of owning land and all within it feeds predatory instincts and power fantasies. Invasions become deeply personal violations.'
+    mechanics: 'Territory size correlates with power—elders hold cities, younger vampires claim neighborhoods. Borders are known by reputation and mystical marking. Violating territory triggers instinctive awareness in the domain holder. First-time violations may earn warnings. Repeated trespass justifies lethal response. Territory can be seized through combat, inheritance, or political grant.'
+    erotic_implications: 'Control over territory extends to control over inhabitants. Some vampires view every human in their domain as potential prey or partner, cultivating relationships across their territory like a dark harem. Others rule benevolently, becoming protective lords who punish intruders harshly. The power of absolute domain creates god-complex psychology—within their territory, they answer to no one. This absolute authority can manifest as gracious host, tyrannical ruler, or libertine excess. Territory disputes often have personal, even sexual dimensions—claiming someone else''s domain, their hunting grounds, their humans.'
+divergences: []
