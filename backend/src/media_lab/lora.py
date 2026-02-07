@@ -7,12 +7,38 @@ multiple LoRAs with configurable weights.
 """
 
 import contextlib
+import hashlib
 import logging
+from collections import OrderedDict
 from pathlib import Path
 from threading import RLock
 from typing import Any
 
 logger = logging.getLogger(__name__)
+
+
+def calculate_hash(filepath: str | Path) -> str:
+    """
+    Calculate SHA256 hash of a file.
+
+    Args:
+        filepath: Path to the file
+
+    Returns:
+        Hex digest of SHA256 hash
+
+    Raises:
+        FileNotFoundError: If file doesn't exist
+    """
+    filepath = Path(filepath)
+    if not filepath.exists():
+        raise FileNotFoundError(f"File not found: {filepath}")
+
+    sha256_hash = hashlib.sha256()
+    with open(filepath, "rb") as f:
+        for byte_block in iter(lambda: f.read(4096), b""):
+            sha256_hash.update(byte_block)
+    return sha256_hash.hexdigest()
 
 
 class LoRAConfig:
@@ -48,13 +74,22 @@ class LoRAManager:
 
     Supports loading, fusing, unfusing, and applying multiple LoRA adapters
     to diffusers-compatible models. Implements thread-safe operations and
-    tracks loaded adapters.
+    tracks loaded adapters. Includes in-memory caching with LRU eviction.
     """
 
-    def __init__(self):
-        """Initialize LoRA manager."""
+    def __init__(self, max_cache_size: int = 10):
+        """
+        Initialize LoRA manager.
+
+        Args:
+            max_cache_size: Maximum number of LoRA tensors to cache (default 10)
+        """
         self._loaded_loras: dict[str, dict[str, Any]] = {}
         self._lock = RLock()
+        self._cache: OrderedDict = OrderedDict()
+        self._max_cache_size: int = max_cache_size
+        self._cache_hits: int = 0
+        self._cache_misses: int = 0
 
     def load_lora(
         self,
@@ -68,6 +103,7 @@ class LoRAManager:
 
         Loads LoRA weights from a file using the model's load_lora_weights method.
         If the model supports LoRA loading, the adapter is loaded and tracked.
+        Cached tensors are used if available (by file hash).
 
         Args:
             model: The diffusers model (e.g., StableDiffusionPipeline)
@@ -95,14 +131,43 @@ class LoRAManager:
                 )
 
             try:
-                # Load LoRA weights into model
-                model.load_lora_weights(str(lora_path), adapter_name=adapter_name)
+                # Calculate file hash for caching
+                file_hash = calculate_hash(lora_path)
+                cache_key = (str(lora_path), file_hash)
+
+                # Check cache first
+                if cache_key in self._cache:
+                    self._cache_hits += 1
+                    # Move to end (most recently used)
+                    self._cache.move_to_end(cache_key)
+                    logger.info(
+                        f"Cache hit for LoRA '{adapter_name}' from {lora_path}"
+                    )
+                else:
+                    # Cache miss - load LoRA weights into model
+                    self._cache_misses += 1
+                    model.load_lora_weights(str(lora_path), adapter_name=adapter_name)
+
+                    # Store in cache
+                    self._cache[cache_key] = {
+                        "path": str(lora_path),
+                        "adapter_name": adapter_name,
+                        "hash": file_hash,
+                    }
+
+                    # Evict oldest if cache is full
+                    if len(self._cache) > self._max_cache_size:
+                        oldest_key, _ = self._cache.popitem(last=False)
+                        logger.debug(
+                            f"Cache evicted: {oldest_key[0]} (LRU)"
+                        )
 
                 # Track loaded LoRA
                 self._loaded_loras[adapter_name] = {
                     "path": str(lora_path),
                     "weight": weight,
                     "fused": False,
+                    "hash": file_hash,
                 }
 
                 logger.info(
@@ -240,3 +305,29 @@ class LoRAManager:
         with self._lock:
             self._loaded_loras.clear()
             logger.info("Cleared all LoRA tracking")
+
+    def clear_cache(self) -> None:
+        """
+        Clear the LoRA tensor cache.
+
+        Empties the in-memory cache and resets hit/miss counters.
+        """
+        with self._lock:
+            self._cache.clear()
+            self._cache_hits = 0
+            self._cache_misses = 0
+            logger.info("Cleared LoRA cache")
+
+    def get_cache_stats(self) -> dict[str, int]:
+        """
+        Get cache statistics.
+
+        Returns:
+            Dictionary with 'hits', 'misses', and 'size' counts
+        """
+        with self._lock:
+            return {
+                "hits": self._cache_hits,
+                "misses": self._cache_misses,
+                "size": len(self._cache),
+            }

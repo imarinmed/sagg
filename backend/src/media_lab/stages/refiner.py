@@ -4,12 +4,15 @@ Provides RefinerStage for refining generated images using img2img enhancement
 with configurable denoising strength (diffusers pipeline with mock support).
 """
 
+import contextlib
 import logging
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 from PIL import Image
+
+from ..lora import LoRAConfig, LoRAManager
 
 logger = logging.getLogger(__name__)
 
@@ -69,13 +72,19 @@ class RefinerStage(PipelineStage):
         - 'refiner_metadata': processing metadata
     """
 
-    def __init__(self, model_name: str = "stable-diffusion-v1", strength: float = 0.3):
+    def __init__(
+        self,
+        model_name: str = "stable-diffusion-v1",
+        strength: float = 0.3,
+        loras: list[LoRAConfig] | None = None,
+    ):
         """Initialize RefinerStage.
 
         Args:
             model_name: Model to use for refinement (default: stable-diffusion-v1).
             strength: Denoising strength for img2img (0.0-1.0, default: 0.3).
                      Lower values preserve original image, higher values allow more changes.
+            loras: Optional list of LoRAConfig objects to apply before execution.
 
         Raises:
             ValueError: If strength is not in valid range [0.0, 1.0].
@@ -85,6 +94,8 @@ class RefinerStage(PipelineStage):
             raise ValueError(f"strength must be between 0.0 and 1.0, got {strength}")
         self.model_name = model_name
         self.strength = strength
+        self.loras = loras or []
+        self.lora_manager = LoRAManager()
 
     async def validate_input(self, context: "PipelineContext") -> bool:
         """Validate image exists from previous stage.
@@ -170,74 +181,89 @@ class RefinerStage(PipelineStage):
             context.set_error(error)
             raise ValueError(error)
 
-        image_data = context.get("image")
-        image_path = context.get("image_path")
+        # Get model from context (for real diffusers integration)
+        # For now, this is a placeholder for mock implementation
+        model = context.get("model")
 
-        # Load image from file if path available, otherwise use image_data
-        if isinstance(image_data, dict) and "image_path" in image_data:
-            image_path = image_data["image_path"]
+        try:
+            # Apply LoRAs if configured
+            if self.loras and model is not None:
+                logger.info(f"RefinerStage: Applying {len(self.loras)} LoRA(s)")
+                self.lora_manager.apply_loras(model, self.loras)
 
-        if image_path and Path(image_path).exists():
-            image_array = self.load_image_file(image_path)
-        elif isinstance(image_data, dict):
-            # Create mock image from data
-            dims = image_data.get("dimensions", (512, 512))
-            image_array = np.random.randint(50, 200, (*dims, 3), dtype=np.uint8)
-        else:
-            error = "RefinerStage: Cannot load source image"
-            context.set_error(error)
-            raise ValueError(error)
+            image_data = context.get("image")
+            image_path = context.get("image_path")
 
-        # Get strength from context (allows per-call override) or use default
-        strength = context.get("strength", self.strength)
+            # Load image from file if path available, otherwise use image_data
+            if isinstance(image_data, dict) and "image_path" in image_data:
+                image_path = image_data["image_path"]
 
-        # Validate strength parameter
-        if not (0.0 <= strength <= 1.0):
-            error = f"RefinerStage: strength must be between 0.0 and 1.0, got {strength}"
-            context.set_error(error)
-            raise ValueError(error)
+            if image_path and Path(image_path).exists():
+                image_array = self.load_image_file(image_path)
+            elif isinstance(image_data, dict):
+                # Create mock image from data
+                dims = image_data.get("dimensions", (512, 512))
+                image_array = np.random.randint(50, 200, (*dims, 3), dtype=np.uint8)
+            else:
+                error = "RefinerStage: Cannot load source image"
+                context.set_error(error)
+                raise ValueError(error)
 
-        # Execute img2img refinement
-        refined_array = await self.execute_img2img(context, image_array)
+            # Get strength from context (allows per-call override) or use default
+            strength = context.get("strength", self.strength)
 
-        # Prepare output path
-        if image_path:
-            refined_path = str(image_path).replace(".png", "_refined.png")
-        else:
-            job_id = context.get("job_id", "unknown")
-            refined_path = f"artifacts/{job_id}/refined.png"
+            # Validate strength parameter
+            if not (0.0 <= strength <= 1.0):
+                error = f"RefinerStage: strength must be between 0.0 and 1.0, got {strength}"
+                context.set_error(error)
+                raise ValueError(error)
 
-        # Save result
-        refined_pil = Image.fromarray(refined_array)
-        Path(refined_path).parent.mkdir(parents=True, exist_ok=True)
-        refined_pil.save(refined_path)
+            # Execute img2img refinement
+            refined_array = await self.execute_img2img(context, image_array)
 
-        # Update context
-        refined_data = {
-            **image_data,
-            "refinement_level": 1,
-            "high_res_fix": True,
-            "dimensions": refined_array.shape[:2][::-1],  # (W, H)
-        }
+            # Prepare output path
+            if image_path:
+                refined_path = str(image_path).replace(".png", "_refined.png")
+            else:
+                job_id = context.get("job_id", "unknown")
+                refined_path = f"artifacts/{job_id}/refined.png"
 
-        context.set("image", refined_data)
-        context.set("refined_path", refined_path)
-        context.add_artifact(refined_path)
+            # Save result
+            refined_pil = Image.fromarray(refined_array)
+            Path(refined_path).parent.mkdir(parents=True, exist_ok=True)
+            refined_pil.save(refined_path)
 
-        # Metadata
-        context.metadata["refiner"] = {
-            "model": self.model_name,
-            "strength": strength,
-            "output_shape": refined_array.shape,
-            "high_res_fix": True,
-        }
+            # Update context
+            refined_data = {
+                **image_data,
+                "refinement_level": 1,
+                "high_res_fix": True,
+                "dimensions": refined_array.shape[:2][::-1],  # (W, H)
+            }
 
-        logger.info(
-            "RefinerStage: Completed high-resolution refinement, saved to %s",
-            refined_path,
-        )
+            context.set("image", refined_data)
+            context.set("refined_path", refined_path)
+            context.add_artifact(refined_path)
 
-        return context
+            # Metadata
+            context.metadata["refiner"] = {
+                "model": self.model_name,
+                "strength": strength,
+                "output_shape": refined_array.shape,
+                "high_res_fix": True,
+            }
+
+            logger.info(
+                "RefinerStage: Completed high-resolution refinement, saved to %s",
+                refined_path,
+            )
+
+            return context
+        finally:
+            # Cleanup: remove any temporary LoRAs applied
+            if self.loras and model is not None:
+                with contextlib.suppress(ValueError, RuntimeError):
+                    self.lora_manager.unload_loras(model)
 
 
 # Stub PipelineContext class for compatibility when imported independently

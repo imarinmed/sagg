@@ -439,7 +439,7 @@ class RetryJobRequest(BaseModel):
 class StageConfig(BaseModel):
     """Configuration for a single pipeline stage"""
 
-    stage_type: str = Field(..., pattern="^(text_to_image|refiner|detailer|upscaler)$")
+    stage_type: str = Field(..., pattern="^(text_to_image|refiner|detailer|upscaler|img2img|instruct_pix2pix)$")
     name: str | None = None
     parameters: dict = Field(default_factory=dict)
     loras: list["LoRAConfig"] = Field(default_factory=list)
@@ -458,6 +458,28 @@ class PipelineConfig(BaseModel):
     stages: list[StageConfig]
     parameters: dict = Field(default_factory=dict)
     loras: list[LoRAConfig] = Field(default_factory=list)
+    seed: int = Field(default=-1, ge=-1)
+    width: int | None = Field(default=None, ge=256, le=2048)
+    height: int | None = Field(default=None, ge=256, le=2048)
+    source_image_path: str | None = None
+    instruction: str | None = None
+    mask_path: str | None = None
+    strength: float = Field(default=0.75, ge=0.0, le=1.0)
+    sampler: str = Field(
+        default="euler",
+        pattern="^(euler|euler_ancestral|heun|dpm_2|dpm_2_ancestral|lms|ddim|pndm|ddpm)$"
+    )
+    scheduler: str = Field(
+        default="normal",
+        pattern="^(normal|karras|exponential|sgm_uniform|simple)$"
+    )
+
+    def model_post_init(self, __context):
+        """Validate width and height are multiples of 8"""
+        if self.width is not None and self.width % 8 != 0:
+            raise ValueError(f"width must be a multiple of 8, got {self.width}")
+        if self.height is not None and self.height % 8 != 0:
+            raise ValueError(f"height must be a multiple of 8, got {self.height}")
 
 
 # Model Registry Models

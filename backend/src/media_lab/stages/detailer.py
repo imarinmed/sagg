@@ -4,6 +4,7 @@ Provides DetailerStage for inpainting with mask or img2img enhancement
 using diffusers pipelines (with mock/stub support for non-GPU environments).
 """
 
+import contextlib
 import logging
 from abc import ABC, abstractmethod
 from pathlib import Path
@@ -11,6 +12,8 @@ from typing import Any
 
 import numpy as np
 from PIL import Image
+
+from ..lora import LoRAConfig, LoRAManager
 
 logger = logging.getLogger(__name__)
 
@@ -80,6 +83,7 @@ class DetailerStage(PipelineStage):
         strength: float = 0.75,
         guidance_scale: float = 7.5,
         center_crop_ratio: float = 0.8,
+        loras: list[LoRAConfig] | None = None,
     ):
         """Initialize DetailerStage.
 
@@ -88,12 +92,15 @@ class DetailerStage(PipelineStage):
             strength: Denoising strength for img2img (0.0-1.0, default: 0.75).
             guidance_scale: Classifier-free guidance scale (default: 7.5).
             center_crop_ratio: For no-mask mode, crop ratio (0.0-1.0, default: 0.8).
+            loras: Optional list of LoRAConfig objects to apply before execution.
         """
         super().__init__("DetailerStage")
         self.model_name = model_name
         self.strength = strength
         self.guidance_scale = guidance_scale
         self.center_crop_ratio = center_crop_ratio
+        self.loras = loras or []
+        self.lora_manager = LoRAManager()
 
     async def validate_input(self, context: "PipelineContext") -> bool:
         """Validate image exists from previous stage.
@@ -302,103 +309,118 @@ class DetailerStage(PipelineStage):
             context.set_error(error)
             raise ValueError(error)
 
-        image_data = context.get("image")
-        image_path = context.get("image_path")
+        # Get model from context (for real diffusers integration)
+        # For now, this is a placeholder for mock implementation
+        model = context.get("model")
 
-        # Load image from file if path available, otherwise use image_data
-        if isinstance(image_data, dict) and "image_path" in image_data:
-            image_path = image_data["image_path"]
+        try:
+            # Apply LoRAs if configured
+            if self.loras and model is not None:
+                logger.info(f"DetailerStage: Applying {len(self.loras)} LoRA(s)")
+                self.lora_manager.apply_loras(model, self.loras)
 
-        if image_path and Path(image_path).exists():
-            image_array = self.load_image_file(image_path)
-        elif isinstance(image_data, dict):
-            # Create mock image from data
-            dims = image_data.get("dimensions", (512, 512))
-            image_array = np.random.randint(50, 200, (*dims, 3), dtype=np.uint8)
-        else:
-            error = "DetailerStage: Cannot load source image"
-            context.set_error(error)
-            raise ValueError(error)
+            image_data = context.get("image")
+            image_path = context.get("image_path")
 
-        # Check for ROI in context
-        roi = context.get("roi")
-        if roi is None:
-            # Auto-detect ROI using center-crop heuristic
-            roi = self.detect_roi(image_array)
-            logger.info("DetailerStage: Auto-detected ROI: %s", roi)
+            # Load image from file if path available, otherwise use image_data
+            if isinstance(image_data, dict) and "image_path" in image_data:
+                image_path = image_data["image_path"]
 
-        # Crop to ROI
-        roi_image = self.crop_roi(image_array, roi)
-
-        # Process based on mask availability
-        mask = context.get("mask")
-        if mask is not None:
-            # Inpainting mode
-            if isinstance(mask, dict):
-                mask_array = np.array(mask.get("data", np.ones_like(roi_image[:, :, 0])))
+            if image_path and Path(image_path).exists():
+                image_array = self.load_image_file(image_path)
+            elif isinstance(image_data, dict):
+                # Create mock image from data
+                dims = image_data.get("dimensions", (512, 512))
+                image_array = np.random.randint(50, 200, (*dims, 3), dtype=np.uint8)
             else:
-                mask_array = np.array(mask)
+                error = "DetailerStage: Cannot load source image"
+                context.set_error(error)
+                raise ValueError(error)
 
-            # Ensure mask matches ROI size
-            if mask_array.shape[:2] != roi_image.shape[:2]:
-                mask_pil = Image.fromarray(
-                    (mask_array * 255).astype(np.uint8)
-                    if mask_array.max() <= 1
-                    else mask_array.astype(np.uint8)
-                )
-                x, y, w, h = roi
-                mask_pil = mask_pil.resize((w, h), Image.BILINEAR)
-                mask_array = np.array(mask_pil)
+            # Check for ROI in context
+            roi = context.get("roi")
+            if roi is None:
+                # Auto-detect ROI using center-crop heuristic
+                roi = self.detect_roi(image_array)
+                logger.info("DetailerStage: Auto-detected ROI: %s", roi)
 
-            enhanced_roi = await self.execute_inpainting(context, roi_image, mask_array)
-            context.set("detailer_mode", "inpainting")
-        else:
-            # Img2img mode (no mask)
-            enhanced_roi = await self.execute_img2img(context, roi_image)
-            context.set("detailer_mode", "img2img")
-            mask_array = None
+            # Crop to ROI
+            roi_image = self.crop_roi(image_array, roi)
 
-        # Composite back into full image
-        result_image = self.composite_roi(image_array, enhanced_roi, roi, mask_array)
+            # Process based on mask availability
+            mask = context.get("mask")
+            if mask is not None:
+                # Inpainting mode
+                if isinstance(mask, dict):
+                    mask_array = np.array(mask.get("data", np.ones_like(roi_image[:, :, 0])))
+                else:
+                    mask_array = np.array(mask)
 
-        # Prepare output paths
-        if image_path:
-            detail_path = str(image_path).replace(".png", "_detailed.png")
-        else:
-            job_id = context.get("job_id", "unknown")
-            detail_path = f"artifacts/{job_id}/detailed.png"
+                # Ensure mask matches ROI size
+                if mask_array.shape[:2] != roi_image.shape[:2]:
+                    mask_pil = Image.fromarray(
+                        (mask_array * 255).astype(np.uint8)
+                        if mask_array.max() <= 1
+                        else mask_array.astype(np.uint8)
+                    )
+                    x, y, w, h = roi
+                    mask_pil = mask_pil.resize((w, h), Image.BILINEAR)
+                    mask_array = np.array(mask_pil)
 
-        # Save result
-        result_pil = Image.fromarray(result_image)
-        Path(detail_path).parent.mkdir(parents=True, exist_ok=True)
-        result_pil.save(detail_path)
+                enhanced_roi = await self.execute_inpainting(context, roi_image, mask_array)
+                context.set("detailer_mode", "inpainting")
+            else:
+                # Img2img mode (no mask)
+                enhanced_roi = await self.execute_img2img(context, roi_image)
+                context.set("detailer_mode", "img2img")
+                mask_array = None
 
-        # Update context
-        detailed_data = {
-            **image_data,
-            "detail_pass": 1,
-            "edge_enhancement": True,
-            "texture_detail": True,
-            "dimensions": result_image.shape[:2][::-1],  # (W, H)
-        }
+            # Composite back into full image
+            result_image = self.composite_roi(image_array, enhanced_roi, roi, mask_array)
 
-        context.set("image", detailed_data)
-        context.set("detail_path", detail_path)
-        context.add_artifact(detail_path)
+            # Prepare output paths
+            if image_path:
+                detail_path = str(image_path).replace(".png", "_detailed.png")
+            else:
+                job_id = context.get("job_id", "unknown")
+                detail_path = f"artifacts/{job_id}/detailed.png"
 
-        # Metadata
-        context.metadata["detailer"] = {
-            "model": self.model_name,
-            "mode": context.get("detailer_mode", "unknown"),
-            "roi": list(roi),
-            "strength": self.strength,
-            "guidance_scale": self.guidance_scale,
-            "output_shape": result_image.shape,
-        }
+            # Save result
+            result_pil = Image.fromarray(result_image)
+            Path(detail_path).parent.mkdir(parents=True, exist_ok=True)
+            result_pil.save(detail_path)
 
-        logger.info("DetailerStage: Completed detail enhancement, saved to %s", detail_path)
+            # Update context
+            detailed_data = {
+                **image_data,
+                "detail_pass": 1,
+                "edge_enhancement": True,
+                "texture_detail": True,
+                "dimensions": result_image.shape[:2][::-1],  # (W, H)
+            }
 
-        return context
+            context.set("image", detailed_data)
+            context.set("detail_path", detail_path)
+            context.add_artifact(detail_path)
+
+            # Metadata
+            context.metadata["detailer"] = {
+                "model": self.model_name,
+                "mode": context.get("detailer_mode", "unknown"),
+                "roi": list(roi),
+                "strength": self.strength,
+                "guidance_scale": self.guidance_scale,
+                "output_shape": result_image.shape,
+            }
+
+            logger.info("DetailerStage: Completed detail enhancement, saved to %s", detail_path)
+
+            return context
+        finally:
+            # Cleanup: remove any temporary LoRAs applied
+            if self.loras and model is not None:
+                with contextlib.suppress(ValueError, RuntimeError):
+                    self.lora_manager.unload_loras(model)
 
 
 # Stub PipelineContext class for compatibility when imported independently

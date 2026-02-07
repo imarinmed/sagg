@@ -9,8 +9,9 @@ import pytest
 from pathlib import Path
 from unittest.mock import Mock, patch, MagicMock
 import tempfile
+import hashlib
 
-from src.media_lab.lora import LoRAManager, LoRAConfig
+from src.media_lab.lora import LoRAManager, LoRAConfig, calculate_hash
 
 
 class TestLoRAConfig:
@@ -329,3 +330,234 @@ class TestLoRAManagerThreadSafety:
             # Should have some successful operations without crashes
             assert len(results) > 0
             assert any(r[0] == "success" for r in results)
+
+class TestCalculateHash:
+    """Test hash calculation function."""
+
+    def test_calculate_hash_basic(self):
+        """Test calculating SHA256 hash of a file."""
+        with tempfile.NamedTemporaryFile(mode="wb", delete=False) as tmp:
+            tmp.write(b"test content")
+            tmp.flush()
+            tmp_path = tmp.name
+
+        try:
+            hash_result = calculate_hash(tmp_path)
+            assert isinstance(hash_result, str)
+            assert len(hash_result) == 64  # SHA256 hex digest is 64 chars
+        finally:
+            Path(tmp_path).unlink()
+
+    def test_calculate_hash_consistent(self):
+        """Test that hash is consistent for same file."""
+        with tempfile.NamedTemporaryFile(mode="wb", delete=False) as tmp:
+            tmp.write(b"consistent content")
+            tmp.flush()
+            tmp_path = tmp.name
+
+        try:
+            hash1 = calculate_hash(tmp_path)
+            hash2 = calculate_hash(tmp_path)
+            assert hash1 == hash2
+        finally:
+            Path(tmp_path).unlink()
+
+    def test_calculate_hash_different_content(self):
+        """Test that different files produce different hashes."""
+        with tempfile.NamedTemporaryFile(mode="wb", delete=False) as tmp1:
+            tmp1.write(b"content 1")
+            tmp1.flush()
+            path1 = tmp1.name
+
+        with tempfile.NamedTemporaryFile(mode="wb", delete=False) as tmp2:
+            tmp2.write(b"content 2")
+            tmp2.flush()
+            path2 = tmp2.name
+
+        try:
+            hash1 = calculate_hash(path1)
+            hash2 = calculate_hash(path2)
+            assert hash1 != hash2
+        finally:
+            Path(path1).unlink()
+            Path(path2).unlink()
+
+    def test_calculate_hash_file_not_found(self):
+        """Test hash calculation with non-existent file."""
+        with pytest.raises(FileNotFoundError):
+            calculate_hash("/nonexistent/path/file.safetensors")
+
+
+class TestLoRACaching:
+    """Test LoRA caching functionality."""
+
+    def test_cache_hit(self):
+        """Test that second load returns cached entry."""
+        with tempfile.NamedTemporaryFile(suffix=".safetensors") as tmp:
+            manager = LoRAManager()
+            model = Mock()
+            model.load_lora_weights = Mock()
+
+            # First load
+            manager.load_lora(model, tmp.name, adapter_name="test")
+            assert model.load_lora_weights.call_count == 1
+
+            # Second load - should hit cache
+            manager.load_lora(model, tmp.name, adapter_name="test")
+            assert model.load_lora_weights.call_count == 1  # Not called again
+
+            # Verify cache stats
+            stats = manager.get_cache_stats()
+            assert stats["hits"] == 1
+            assert stats["misses"] == 1
+
+    def test_cache_miss_different_file(self):
+        """Test that different files cause cache miss."""
+        with tempfile.NamedTemporaryFile(suffix=".safetensors") as tmp1:
+            with tempfile.NamedTemporaryFile(suffix=".safetensors") as tmp2:
+                manager = LoRAManager()
+                model = Mock()
+                model.load_lora_weights = Mock()
+
+                # Load first file
+                manager.load_lora(model, tmp1.name, adapter_name="lora1")
+                assert model.load_lora_weights.call_count == 1
+
+                # Load different file - cache miss
+                manager.load_lora(model, tmp2.name, adapter_name="lora2")
+                assert model.load_lora_weights.call_count == 2
+
+                # Verify stats
+                stats = manager.get_cache_stats()
+                assert stats["hits"] == 0
+                assert stats["misses"] == 2
+
+    def test_cache_eviction_lru(self):
+        """Test LRU eviction when cache is full."""
+        manager = LoRAManager(max_cache_size=2)
+        model = Mock()
+        model.load_lora_weights = Mock()
+
+        with tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False) as tmp1:
+            with tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False) as tmp2:
+                with tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False) as tmp3:
+                    try:
+                        # Load 3 files (cache size is 2)
+                        manager.load_lora(model, tmp1.name, adapter_name="lora1")
+                        manager.load_lora(model, tmp2.name, adapter_name="lora2")
+                        manager.load_lora(model, tmp3.name, adapter_name="lora3")
+
+                        # Cache should have size 2 (oldest evicted)
+                        stats = manager.get_cache_stats()
+                        assert stats["size"] == 2
+                    finally:
+                        Path(tmp1.name).unlink()
+                        Path(tmp2.name).unlink()
+                        Path(tmp3.name).unlink()
+
+    def test_clear_cache(self):
+        """Test clearing the cache."""
+        with tempfile.NamedTemporaryFile(suffix=".safetensors") as tmp:
+            manager = LoRAManager()
+            model = Mock()
+            model.load_lora_weights = Mock()
+
+            # Load to populate cache
+            manager.load_lora(model, tmp.name, adapter_name="test")
+            stats_before = manager.get_cache_stats()
+            assert stats_before["size"] > 0
+
+            # Clear cache
+            manager.clear_cache()
+            stats_after = manager.get_cache_stats()
+            assert stats_after["size"] == 0
+            assert stats_after["hits"] == 0
+            assert stats_after["misses"] == 0
+
+    def test_get_cache_stats(self):
+        """Test cache statistics reporting."""
+        with tempfile.NamedTemporaryFile(suffix=".safetensors") as tmp:
+            manager = LoRAManager()
+            model = Mock()
+            model.load_lora_weights = Mock()
+
+            # Initial state
+            stats = manager.get_cache_stats()
+            assert stats["hits"] == 0
+            assert stats["misses"] == 0
+            assert stats["size"] == 0
+
+            # After load
+            manager.load_lora(model, tmp.name, adapter_name="test")
+            stats = manager.get_cache_stats()
+            assert stats["hits"] == 0
+            assert stats["misses"] == 1
+            assert stats["size"] == 1
+
+            # Cache hit
+            manager.load_lora(model, tmp.name, adapter_name="test")
+            stats = manager.get_cache_stats()
+            assert stats["hits"] == 1
+            assert stats["misses"] == 1
+            assert stats["size"] == 1
+
+    def test_hash_stored_in_loaded_loras(self):
+        """Test that file hash is stored with loaded LoRA metadata."""
+        with tempfile.NamedTemporaryFile(suffix=".safetensors") as tmp:
+            manager = LoRAManager()
+            model = Mock()
+            model.load_lora_weights = Mock()
+
+            manager.load_lora(model, tmp.name, adapter_name="test")
+
+            loaded = manager.get_loaded_loras()
+            assert "hash" in loaded["test"]
+            assert isinstance(loaded["test"]["hash"], str)
+            assert len(loaded["test"]["hash"]) == 64
+
+    def test_cache_max_size_default(self):
+        """Test default max cache size is 10."""
+        manager = LoRAManager()
+        stats = manager.get_cache_stats()
+        assert manager._max_cache_size == 10
+
+    def test_cache_max_size_custom(self):
+        """Test custom max cache size."""
+        manager = LoRAManager(max_cache_size=5)
+        assert manager._max_cache_size == 5
+
+    def test_cache_lru_move_to_end(self):
+        """Test that cache moves recently used items to end."""
+        manager = LoRAManager(max_cache_size=3)
+        model = Mock()
+        model.load_lora_weights = Mock()
+
+        with tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False) as tmp1:
+            with tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False) as tmp2:
+                with tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False) as tmp3:
+                    with tempfile.NamedTemporaryFile(suffix=".safetensors", delete=False) as tmp4:
+                        try:
+                            # Load 3 files
+                            manager.load_lora(model, tmp1.name, adapter_name="lora1")
+                            manager.load_lora(model, tmp2.name, adapter_name="lora2")
+                            manager.load_lora(model, tmp3.name, adapter_name="lora3")
+
+                            # Re-access first file (moves to end)
+                            manager.load_lora(model, tmp1.name, adapter_name="lora1")
+
+                            # Load new file - should evict lora2 (not lora1)
+                            manager.load_lora(model, tmp4.name, adapter_name="lora4")
+
+                            # lora1 should still be loaded
+                            assert manager.has_lora("lora1")
+                            # lora2 should have been evicted (not in loaded_loras if
+                            # it was only in cache)
+                            # lora3 and lora4 should exist
+                            assert manager.has_lora("lora3")
+                            assert manager.has_lora("lora4")
+
+                        finally:
+                            Path(tmp1.name).unlink()
+                            Path(tmp2.name).unlink()
+                            Path(tmp3.name).unlink()
+                            Path(tmp4.name).unlink()

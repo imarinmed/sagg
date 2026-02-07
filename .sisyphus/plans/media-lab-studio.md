@@ -162,34 +162,270 @@
   - [ ] Can modify model weights.
   - [ ] pytest passes.
 
-- [ ] T2. Add LoRA selection UI
+- [x] T2. Add LoRA selection UI
 
   **What to do**:
-  - Update `frontend/app/media-lab/page.tsx` (Sidebar).
-  - Add LoRA selector (dropdown + weight slider).
+  - Update `frontend/app/media-lab/page.tsx` (Sidebar)
+  - Add LoRA selector (dropdown + weight slider)
   - Support multiple LoRAs (list of {id, weight}).
 
   **Acceptance Criteria**:
   - [ ] UI allows selecting LoRAs.
   - [ ] Can adjust weight.
 
-- [ ] T3. Support per-stage LoRAs (Detailer specific)
+- [x] T3. Support per-stage LoRAs (Detailer specific)
 
   **What to do**:
-  - Update `DetailerStage` to accept `loras` config.
-  - Update `RefinerStage` to accept `loras` config.
-  - Ensure LoRAs are swapped during execution.
+  - Update `DetailerStage` to accept `loras` config
+  - Update `RefinerStage` to accept `loras` config
+  - Ensure LoRAs are swapped during execution
 
   **Acceptance Criteria**:
   - [ ] Pipeline supports stage-specific LoRAs.
   - [ ] LoRAs are applied/unapplied correctly.
 
-- [ ] T4. LoRA caching and hash verification
+- [x] T4. LoRA caching and hash verification
 
   **What to do**:
-  - Update `LoRAManager` to cache loaded tensors in RAM/VRAM.
-  - Calculate SHA256 of LoRA files on load.
+  - Update `LoRAManager` to cache loaded tensors in RAM/VRAM
+  - Calculate SHA256 of LoRA files on load
+  - Key cache by file path + hash
+  - Provide `clear_cache()` method
+
+  **Must NOT do**:
+  - Do not cache indefinitely; LRU with max size.
+
+  **Recommended Agent Profile**:
+  - **Category**: `quick`
+  - **Skills**: [`python`, `backend`]
 
   **Acceptance Criteria**:
-  - [ ] LoRAs are cached.
-  - [ ] Duplicate loads use cache.
+  - [ ] LoRAs are cached after first load.
+  - [ ] Duplicate loads use cache (no file re-read).
+  - [ ] SHA256 calculated for integrity.
+  - [ ] `clear_cache()` method exists.
+  - [ ] pytest passes.
+
+  **Commit**: YES | `feat(media-lab): add LoRA caching and hash verification` | lora.py | pytest
+
+---
+
+## v0.5.0: Studio Workspace UI Overhaul
+
+- [x] T1. Create `StudioLayout` (3-panel design)
+
+  **What to do**:
+  - Create `frontend/app/media-lab/StudioLayout.tsx`
+  - Implement 3-panel layout: Left (Parameters), Center (Preview/Canvas), Right (History/Queue)
+  - Use CSS Grid with responsive behavior
+
+  **Acceptance Criteria**:
+  - [ ] Layout component created.
+  - [ ] Three distinct panel areas.
+  - [ ] Responsive behavior.
+  - [ ] typecheck passes.
+
+- [x] T2. Implement `ParameterSidebar`
+
+  **What to do**:
+  - Create `frontend/components/media-lab/ParameterSidebar.tsx`
+  - Contains all generation parameters: Prompt, Negative Prompt, Width, Height, Steps, CFG Scale, Sampler, Seed, LoRAs
+  - Collapsible sections for Basic/Advanced settings
+
+  **Acceptance Criteria**:
+  - [ ] Sidebar component created.
+  - [ ] All parameters wired.
+  - [ ] typecheck passes.
+
+- [x] T3. Build `LivePreview` canvas
+
+  **What to do**:
+  - Create `frontend/components/media-lab/LivePreview.tsx`
+  - Shows current/previous generation with zoom/pan
+  - Handles loading states (spinner/skeleton)
+  - Comparison slider (before/after for Enhance)
+
+  **Acceptance Criteria**:
+  - [ ] Preview component created.
+  - [ ] Zoom and pan functional.
+  - [ ] Loading states handled.
+
+- [x] T4. Create `DetailerControls` panel
+
+  **What to do**:
+  - Create `frontend/components/media-lab/DetailerControls.tsx`
+  - Controls for Face/Hand/Body detailers (enable/disable, strength, specific LoRAs)
+  - Only visible in Enhance mode
+
+  **Acceptance Criteria**:
+  - [ ] Controls component created.
+  - [ ] Mode-aware visibility.
+
+---
+
+## v0.6.0: Advanced Pipeline Controls
+
+- [x] T1. Implement Seed Management (Random/Fixed)
+
+  **What to do**:
+  - Add seed input to `ParameterSidebar` with dice button for random
+  - "Use Last Seed" button functionality
+  - Store seed in generation metadata
+
+- [x] T2. Add Sampler/Scheduler selection
+
+  **What to do**:
+  - Dropdown for sampler (Euler, DPM++, etc.) in ParameterSidebar
+  - Dropdown for scheduler (normal, karras, etc.)
+  - Backend PipelineConfig accepts sampler and scheduler
+
+- [x] T3. Implement Resolution/Aspect Ratio controls
+
+  **What to do**:
+  - Preset buttons (1:1, 16:9, 9:16, 4:3, 3:4)
+  - Lock aspect ratio toggle
+  - Backend validation (multiples of 8)
+
+- [x] T4. Add "Re-run Stage" capability
+
+  **What to do**:
+  - Store intermediate results in Workbench
+  - POST /api/media-lab/jobs/{id}/rerun endpoint
+  - Frontend "Re-run from Stage N" button
+
+---
+
+## v0.7.0: img2img & Text-Guided Editing
+
+- [x] T1. Implement img2img pipeline support
+
+  **What to do**:
+  - Create `Img2ImgStage` in `backend/src/media_lab/stages/img2img.py`
+  - Accept source image path + denoising strength (0.0-1.0)
+  - Use img2img pipeline from diffusers
+  - Integrate into Pipeline class
+
+- [x] T2. Add Image Upload/Dropzone UI
+
+  **What to do**:
+  - Create `ImageUploader` component in `frontend/components/media-lab/ImageUploader.tsx`
+  - Drag-and-drop support with react-dropzone or native
+  - File validation (PNG, JPG, max 10MB)
+  - Preview uploaded image
+  - Upload to backend and get URL/path
+
+- [x] T3. Implement InstructPix2Pix (Text-guided edit)
+
+  **What to do**:
+  - Create `InstructPix2PixStage` in backend
+  - Use instruction-based editing ("make it red", "add sunglasses")
+  - UI for "Edit instruction" input
+  - Integrate into Enhance workflow
+
+---
+
+## v0.8.0: Canvas, Mask & Detailer Override
+
+- [x] T1. Build `MaskPainter` component (Canvas API)
+
+  **What to do**:
+  - Create `frontend/components/media-lab/MaskPainter.tsx`
+  - HTML5 Canvas for painting masks
+  - Brush size, opacity controls
+  - Export mask as base64/PNG
+
+- [x] T2. Add mask upload to detailer API
+
+  **What to do**:
+  - Update `DetailerStage` to accept optional mask
+  - Use mask for inpainting instead of auto-detection
+
+- [x] T3. Wire mask painter to Generate/Enhance flows
+
+  **What to do**:
+  - Add "Edit Mask" button to Preview panel
+  - Pass mask to API when submitting job
+
+---
+
+## v0.9.0: Batch Generation & Presets
+
+- [ ] T1. Extend Generate API to accept batch_size
+
+  **What to do**:
+  - Update PipelineConfig with batch_size
+  - Execute N generations with different seeds
+  - Return array of artifacts
+
+- [ ] T2. Build batch comparison grid UI
+
+  **What to do**:
+  - Create BatchGrid component
+  - Grid layout for multiple results
+  - Selection mode for download/delete
+
+- [ ] T3. Implement preset system
+
+  **What to do**:
+  - Create Preset model (name, parameters)
+  - API: save/load/delete presets
+  - UI: Preset selector + "Save as Preset" button
+
+## v1.0.0: Platform Integration & Polish
+
+- [ ] T1. Character/episode/mythos tagging
+
+  **What to do**:
+  - Add tags to ImageArtifact model
+  - UI to tag generated images with project entities
+  - Show related images on entity pages
+
+- [ ] T2. Performance optimization audit
+
+  **What to do**:
+  - Profile frontend (React Profiler)
+  - Optimize re-renders
+  - Lazy load components
+
+- [ ] T3. Final UI polish
+
+  **What to do**:
+  - Skeleton loaders
+  - Error boundaries
+  - Transitions/animations
+  - Mobile responsiveness
+
+- [ ] T4. Comprehensive E2E tests
+
+  **What to do**:
+  - Playwright tests covering full workflows
+  - Generate -> Enhance -> Tag -> Download
+  - CI integration
+
+---
+
+## Success Criteria
+
+### Final Verification Commands (v1.0.0)
+```bash
+# Backend tests
+cd backend && pytest backend/tests/media_lab/ -v  # Expected: 100% pass
+
+# Frontend typecheck
+cd frontend && bun run typecheck  # Expected: Zero errors
+
+# API health check
+curl http://localhost:8000/api/media-lab/capabilities  # Expected: 200 OK
+
+# E2E Test
+bun run e2e:media-lab  # Expected: All scenarios pass
+```
+
+### Final Checklist
+- [ ] All 9 pipeline stages functional
+- [ ] Model registry loads local and remote models
+- [ ] Studio UI allows full control of generation parameters
+- [ ] Batch generation produces grid results
+- [ ] Presets save/load correctly
+- [ ] Tags link images to Characters
+- [ ] No VRAM leaks during extended use

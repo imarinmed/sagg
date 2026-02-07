@@ -3,21 +3,19 @@
 import React, { useEffect, useState } from "react";
 import {
   Button,
-  Select,
-  SelectItem,
   Slider,
   Card,
-  CardBody,
-  CardHeader,
   Chip,
+  Label,
+  Modal,
 } from "@heroui/react";
-import { X, Plus } from "lucide-react";
+import { X, Plus, ChevronDown } from "lucide-react";
 import { api, ModelInfo } from "@/lib/api";
 
 export interface LoRAConfig {
   path: string;
   weight: number;
-  name?: string; // Optional name for display
+  name?: string;
 }
 
 interface LoRASelectorProps {
@@ -30,8 +28,9 @@ export function LoRASelector({ onUpdate, className = "" }: LoRASelectorProps) {
   const [selectedLoRAs, setSelectedLoRAs] = useState<LoRAConfig[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedModelId, setSelectedModelId] = useState<string>("");
 
-  // Fetch available LoRA models on mount
   useEffect(() => {
     const fetchModels = async () => {
       setIsLoading(true);
@@ -49,25 +48,27 @@ export function LoRASelector({ onUpdate, className = "" }: LoRASelectorProps) {
     fetchModels();
   }, []);
 
-  // Notify parent whenever selectedLoRAs changes
   useEffect(() => {
     onUpdate(selectedLoRAs);
   }, [selectedLoRAs, onUpdate]);
 
-  const handleAddLoRA = (modelId: string) => {
-    const model = availableModels.find((m) => m.id === modelId);
+  const handleAddLoRA = () => {
+    if (!selectedModelId) return;
+    
+    const model = availableModels.find((m) => m.id === selectedModelId);
     if (!model) return;
 
-    // Check if already selected
     if (selectedLoRAs.some((l) => l.path === model.id)) return;
 
     const newLoRA: LoRAConfig = {
       path: model.id,
-      weight: 0.8, // Default weight
+      weight: 0.8,
       name: model.name,
     };
 
     setSelectedLoRAs([...selectedLoRAs, newLoRA]);
+    setSelectedModelId("");
+    setIsOpen(false);
   };
 
   const handleRemoveLoRA = (path: string) => {
@@ -83,7 +84,6 @@ export function LoRASelector({ onUpdate, className = "" }: LoRASelectorProps) {
     );
   };
 
-  // Filter out already selected models from the dropdown options
   const availableOptions = availableModels.filter(
     (model) => !selectedLoRAs.some((l) => l.path === model.id)
   );
@@ -92,38 +92,47 @@ export function LoRASelector({ onUpdate, className = "" }: LoRASelectorProps) {
     <div className={`flex flex-col gap-4 ${className}`}>
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold">LoRA Models</h3>
-        <Chip size="sm" variant="flat" color="primary">
+        <Chip size="sm" variant="soft" color="accent">
           {selectedLoRAs.length} Active
         </Chip>
       </div>
 
       {error && <div className="text-danger text-sm">{error}</div>}
 
-      {/* Selection Dropdown */}
-      <Select
-        label="Add LoRA"
-        placeholder="Select a LoRA model"
-        isLoading={isLoading}
-        isDisabled={isLoading || availableOptions.length === 0}
-        onSelectionChange={(keys) => {
-          const selected = Array.from(keys)[0] as string;
-          if (selected) {
-            handleAddLoRA(selected);
-          }
-        }}
-        className="max-w-full"
-      >
-        {availableOptions.map((model) => (
-          <SelectItem key={model.id} textValue={model.name}>
-            <div className="flex flex-col">
-              <span className="text-small">{model.name}</span>
-              <span className="text-tiny text-default-400">
-                {(model.size_gb || 0).toFixed(2)} GB
-              </span>
-            </div>
-          </SelectItem>
-        ))}
-      </Select>
+      {/* Add LoRA Modal */}
+      <Modal isOpen={isOpen} onOpenChange={setIsOpen}>
+        <div className="flex flex-col gap-4 p-4">
+          <h4 className="text-lg font-semibold">Select LoRA Model</h4>
+          
+          <div className="flex flex-col gap-2">
+            <Label>Available Models</Label>
+            <select
+              value={selectedModelId}
+              onChange={(e) => setSelectedModelId(e.target.value)}
+              className="w-full p-2 border rounded-md bg-background"
+            >
+              <option value="">Choose a LoRA model...</option>
+              {availableOptions.map((model) => (
+                <option key={model.id} value={model.id}>
+                  {model.name} ({(model.size_gb || 0).toFixed(2)} GB)
+                </option>
+              ))}
+            </select>
+          </div>
+          
+          <div className="flex justify-end gap-2 mt-2">
+            <Button variant="ghost" onPress={() => setIsOpen(false)}>
+              Cancel
+            </Button>
+            <Button 
+              onPress={handleAddLoRA}
+              isDisabled={!selectedModelId}
+            >
+              Add
+            </Button>
+          </div>
+        </div>
+      </Modal>
 
       {/* Selected LoRAs List */}
       <div className="flex flex-col gap-3 mt-2">
@@ -134,23 +143,21 @@ export function LoRASelector({ onUpdate, className = "" }: LoRASelectorProps) {
         )}
 
         {selectedLoRAs.map((lora) => (
-          <Card key={lora.path} className="w-full" shadow="sm">
-            <CardBody className="p-3">
+          <Card key={lora.path} className="w-full">
+            <div className="p-3">
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between items-start">
                   <div className="flex flex-col">
                     <span className="font-medium text-sm">
                       {lora.name || lora.path}
                     </span>
-                    <span className="text-tiny text-default-400 font-mono truncate max-w-[200px]">
+                    <span className="text-xs text-default-400 font-mono truncate max-w-[200px]">
                       {lora.path}
                     </span>
                   </div>
                   <Button
-                    isIconOnly
                     size="sm"
-                    variant="light"
-                    color="danger"
+                    variant="ghost"
                     onPress={() => handleRemoveLoRA(lora.path)}
                   >
                     <X size={16} />
@@ -161,7 +168,6 @@ export function LoRASelector({ onUpdate, className = "" }: LoRASelectorProps) {
                   <span className="text-xs text-default-500 w-12">Weight</span>
                   <Slider
                     aria-label="LoRA Weight"
-                    size="sm"
                     step={0.05}
                     maxValue={2.0}
                     minValue={-1.0}
@@ -169,14 +175,13 @@ export function LoRASelector({ onUpdate, className = "" }: LoRASelectorProps) {
                     value={lora.weight}
                     onChange={(val) => handleWeightChange(lora.path, val)}
                     className="max-w-md"
-                    showSteps={true} 
                   />
                   <span className="text-xs font-mono w-10 text-right">
                     {lora.weight.toFixed(2)}
                   </span>
                 </div>
               </div>
-            </CardBody>
+            </div>
           </Card>
         ))}
       </div>

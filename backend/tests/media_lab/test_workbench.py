@@ -227,3 +227,62 @@ class TestWorkbench:
         assert "prompt_length" in metadata["text_to_image"]
         assert "refiner" in metadata
         assert "refinement_level" in metadata["refiner"]
+
+    def test_checkpoint_storage(self, basic_config):
+        """Test that checkpoints are stored after execution."""
+        wb = Workbench(basic_config)
+        input_data = {"prompt": "Test prompt"}
+        job_id = "checkpoint_test_1"
+        result = async_test(wb.execute(input_data, job_id=job_id))
+
+        assert result["success"] is True
+        assert job_id in wb.checkpoint_artifacts
+        assert len(wb.checkpoint_artifacts[job_id]) == 2  # Two stages
+
+    def test_get_checkpoint_returns_artifact_path(self, basic_config):
+        """Test get_checkpoint returns artifact path for a stage."""
+        wb = Workbench(basic_config)
+        input_data = {"prompt": "Test prompt"}
+        job_id = "checkpoint_test_2"
+        result = async_test(wb.execute(input_data, job_id=job_id))
+
+        checkpoint_0 = wb.get_checkpoint(job_id, 0)
+        checkpoint_1 = wb.get_checkpoint(job_id, 1)
+
+        assert checkpoint_0 is not None
+        assert checkpoint_1 is not None
+        assert "generated.png" in checkpoint_0
+        assert "refined.png" in checkpoint_1
+
+    def test_get_checkpoint_nonexistent_job(self, basic_config):
+        """Test get_checkpoint returns None for nonexistent job."""
+        wb = Workbench(basic_config)
+        result = wb.get_checkpoint("nonexistent_job", 0)
+        assert result is None
+
+    def test_get_checkpoint_nonexistent_stage(self, basic_config):
+        """Test get_checkpoint returns None for nonexistent stage index."""
+        wb = Workbench(basic_config)
+        input_data = {"prompt": "Test prompt"}
+        job_id = "checkpoint_test_3"
+        result = async_test(wb.execute(input_data, job_id=job_id))
+
+        checkpoint = wb.get_checkpoint(job_id, 99)
+        assert checkpoint is None
+
+    def test_checkpoint_mapping_with_upscaler(self, config_with_upscaler):
+        """Test checkpoint storage with full pipeline."""
+        wb = Workbench(config_with_upscaler)
+        input_data = {"prompt": "Test prompt", "upscale_factor": 2}
+        job_id = "checkpoint_full_test"
+        result = async_test(wb.execute(input_data, job_id=job_id))
+
+        assert job_id in wb.checkpoint_artifacts
+        # Should have 4 stages: text_to_image, refiner, detailer, upscaler
+        assert len(wb.checkpoint_artifacts[job_id]) == 4
+
+        # Verify each stage has a checkpoint
+        for stage_idx in range(4):
+            checkpoint = wb.get_checkpoint(job_id, stage_idx)
+            assert checkpoint is not None
+            assert isinstance(checkpoint, str)
