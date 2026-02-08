@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #12121a;
+  --color-surface-primary: #1a1a24;
+  --color-surface-secondary: #252535;
+  --color-text-primary: #f0f0f5;
+  --color-text-secondary: #a0a0b0;
+  --color-text-muted: #606070;
+  --color-accent-primary: #c9a227;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --blood-crimson: #8b0000;
+  --nordic-gold: #c9a227;
+  --neon-pink: #ff1493;
+  --emerald-500: #10b981;
+  
+  --glass-bg: rgba(20, 20, 30, 0.7);
+  --shadow-glow: 0 0 30px rgba(201, 162, 39, 0.1);
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.glass-catalog {
+  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(10, 10, 15, 0.9) 100%);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+}
+
+.restricted-banner {
+  background: repeating-linear-gradient(
+    45deg,
+    #7f1d1d,
+    #7f1d1d 10px,
+    #991b1b 10px,
+    #991b1b 20px
+  );
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+.schedule-widget {
+  background: linear-gradient(
+    180deg,
+    rgba(139, 0, 0, 0.1) 0%,
+    rgba(20, 20, 25, 0.95) 100%
+  );
+  border: 1px solid rgba(139, 0, 0, 0.3);
+}
+
+.loan-pulse {
+  animation: pulse-crimson 2s ease-in-out infinite;
+}
+
+@keyframes pulse-crimson {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+  50% { box-shadow: 0 0 0 4px rgba(220, 38, 38, 0); }
+}
+
+.scanline-overlay {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+}
+
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
+}
