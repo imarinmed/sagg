@@ -93,13 +93,16 @@ tasks:
       - 'printf "{{.C_YELLOW}}Press Ctrl+C to stop both services{{.C_RESET}}\n"'
       - echo ""
       - |
-        trap 'task stop' INT
+        # Start backend
         (cd {{.BACKEND_DIR}} && uv run uvicorn src.main:app --reload --port {{.BACKEND_PORT}}) &
         BACKEND_PID=$!
         sleep 2
+        # Start frontend
         (cd {{.FRONTEND_DIR}} && bun run dev) &
         FRONTEND_PID=$!
+        # Wait for processes and clean up on exit
         wait $BACKEND_PID $FRONTEND_PID
+        task stop
 
   dev-backend:
     desc: Start backend only (port {{.BACKEND_PORT}})
