@@ -85,6 +85,9 @@ export interface AdultProfile {
   social_status: string;
   political_role?: string;
   obligations: string[];
+  marital_status?: string;
+  children?: string[];
+  career?: string;
 }
 
 export interface StaticCharacter {
@@ -122,6 +125,88 @@ export const staticCharacters: StaticCharacter[] = [
     canonical_traits: ["vampire", "teenager", "student", "natt_och_dag_family"],
     adaptation_traits: ["bloodlust_control", "daywalker", "empathic"],
     adaptation_notes: "In this dark adaptation, Kiara struggles with intense bloodlust during moments of emotional vulnerability, particularly around her human love interest.",
+    catalog_id: {
+      bst: "BST-001-KND",
+      sst: "SST-001-KND",
+    },
+    physical_profile: {
+      height: "5'6\" (168 cm)",
+      measurements: {
+        bust: "34B",
+        waist: "24",
+        hips: "35",
+      },
+      build: "Slender, athletic",
+      distinguishing_features: [
+        "Pale porcelain skin",
+        "Sharp canines when bloodlust activated",
+        "Crimson eyes in dim light",
+        "Elegant neck, favored feeding site",
+      ],
+    },
+    performance_metrics: {
+      stamina: 8,
+      flexibility: 9,
+      pain_tolerance: 7,
+      recovery_rate: 9,
+    },
+    vitals: {
+      blood_type: "Vampire (AB- when human)",
+      heart_rate_resting: 40,
+      body_temperature: "95.2°F (35.1°C)",
+    },
+    student_profile: {
+      school: "Lycée Vampirique",
+      grade: "Junior Year",
+      class_schedule: [
+        {
+          day: "Monday",
+          periods: [
+            { time: "08:00-09:30", subject: "Vampire History", location: "Hall B" },
+            { time: "10:00-11:30", subject: "Blood Chemistry", location: "Lab 3" },
+            { time: "13:00-14:30", subject: "Human Studies", location: "Room 201" },
+          ],
+        },
+        {
+          day: "Wednesday",
+          periods: [
+            { time: "09:00-10:30", subject: "Supernatural Law", location: "Hall A" },
+            { time: "11:00-12:30", subject: "Hunting Ethics", location: "Room 105" },
+          ],
+        },
+        {
+          day: "Friday",
+          periods: [
+            { time: "10:00-11:30", subject: "Social Integration", location: "Room 304" },
+            { time: "14:00-15:30", subject: "Combat Training", location: "Gym C" },
+          ],
+        },
+      ],
+      obligations: [
+        { type: "family_duty", role: "Natt och Dag heir", schedule: "Ongoing" },
+        { type: "secrecy", role: "Maintain human facade", schedule: "24/7" },
+      ],
+      loan_schedule: [
+        {
+          episode: "s01e03",
+          lender: "Henry Natt och Dag",
+          duration: "48 hours",
+          context: "Family gathering - traditional blood bond ceremony",
+          restrictions: ["No feeding outside designated donors", "Must return before sunrise"],
+        },
+        {
+          episode: "s01e07",
+          lender: "Desirée Natt och Dag",
+          duration: "Weekend",
+          context: "Matriarch training - learning ancient vampire rituals",
+          restrictions: ["Complete obedience", "Document all experiences"],
+        },
+      ],
+      extracurriculars: [
+        { name: "Track Team", schedule: "Tue/Thu 16:00", role: "Captain" },
+        { name: "Drama Club", schedule: "Wed 15:30", role: "Lead actress" },
+      ],
+    },
     kink_profile: {
       preferences: ["biting", "blood_play", "dominance"],
       limits: ["permanent_harm", "non_consensual"],
@@ -154,6 +239,71 @@ export const staticCharacters: StaticCharacter[] = [
     canonical_traits: ["human", "teenager", "student"],
     adaptation_traits: ["secret_keeper", "protective"],
     adaptation_notes: "Elise becomes Kiara's secret keeper, learning to navigate the dangerous world of vampires while maintaining her humanity.",
+    catalog_id: {
+      bst: "BST-002-ELS",
+      sst: "SST-002-ELS",
+    },
+    physical_profile: {
+      height: "5'5\" (165 cm)",
+      measurements: {
+        bust: "32B",
+        waist: "25",
+        hips: "34",
+      },
+      build: "Petite, delicate",
+      distinguishing_features: [
+        "Gentle demeanor",
+        "Trusting eyes",
+        "Quick smile",
+        "Always carries sketchbook",
+      ],
+    },
+    performance_metrics: {
+      stamina: 5,
+      flexibility: 6,
+      pain_tolerance: 4,
+      recovery_rate: 6,
+    },
+    vitals: {
+      blood_type: "O+",
+      heart_rate_resting: 72,
+      body_temperature: "98.6°F (37°C)",
+    },
+    student_profile: {
+      school: "Lycée Vampirique",
+      grade: "Junior Year",
+      class_schedule: [
+        {
+          day: "Monday",
+          periods: [
+            { time: "09:00-10:30", subject: "Art History", location: "Room 101" },
+            { time: "11:00-12:30", subject: "Literature", location: "Room 203" },
+          ],
+        },
+        {
+          day: "Wednesday",
+          periods: [
+            { time: "10:00-11:30", subject: "Studio Art", location: "Art Room" },
+            { time: "14:00-15:30", subject: "Psychology", location: "Room 305" },
+          ],
+        },
+      ],
+      obligations: [
+        { type: "friendship", role: "Kiara's confidante", schedule: "Ongoing" },
+      ],
+      loan_schedule: [
+        {
+          episode: "s01e05",
+          lender: "Kiara Natt och Dag",
+          duration: "Evening",
+          context: "Emotional support - crisis intervention",
+          restrictions: ["Maintain secrecy", "Report any unusual behavior"],
+        },
+      ],
+      extracurriculars: [
+        { name: "Art Club", schedule: "Tue/Thu 15:30", role: "Member" },
+      ],
+    },
     kink_profile: {
       preferences: [],
       limits: ["supernatural_involvement"],
@@ -170,6 +320,72 @@ export const staticCharacters: StaticCharacter[] = [
     canonical_traits: ["human", "teenager", "student", "popular"],
     adaptation_traits: ["hidden_vulnerability", "complex_motivations"],
     adaptation_notes: "Chloe's antagonism masks her own hidden vulnerabilities and secret knowledge of the supernatural world.",
+    catalog_id: {
+      bst: "BST-003-CHL",
+      sst: "SST-003-CHL",
+    },
+    physical_profile: {
+      height: "5'8\" (173 cm)",
+      measurements: {
+        bust: "34C",
+        waist: "26",
+        hips: "36",
+      },
+      build: "Athletic, confident",
+      distinguishing_features: [
+        "Commanding presence",
+        "Calculating gaze",
+        "Always perfectly styled",
+        "Hidden scar on collarbone",
+      ],
+    },
+    performance_metrics: {
+      stamina: 7,
+      flexibility: 7,
+      pain_tolerance: 6,
+      recovery_rate: 7,
+    },
+    vitals: {
+      blood_type: "A-",
+      heart_rate_resting: 68,
+      body_temperature: "98.4°F (36.9°C)",
+    },
+    student_profile: {
+      school: "Lycée Vampirique",
+      grade: "Junior Year",
+      class_schedule: [
+        {
+          day: "Tuesday",
+          periods: [
+            { time: "08:30-10:00", subject: "Debate", location: "Hall C" },
+            { time: "13:00-14:30", subject: "Political Science", location: "Room 402" },
+          ],
+        },
+        {
+          day: "Thursday",
+          periods: [
+            { time: "10:00-11:30", subject: "Economics", location: "Room 301" },
+            { time: "15:00-16:30", subject: "Drama", location: "Theater" },
+          ],
+        },
+      ],
+      obligations: [
+        { type: "secrecy", role: "Secret knowledge bearer", schedule: "Ongoing" },
+      ],
+      loan_schedule: [
+        {
+          episode: "s01e04",
+          lender: "Unknown Benefactor",
+          duration: "Weekend",
+          context: "Information exchange - supernatural intel",
+          restrictions: ["No questions asked", "Discretion required"],
+        },
+      ],
+      extracurriculars: [
+        { name: "Student Council", schedule: "Mon/Wed 16:00", role: "President" },
+        { name: "Cheerleading", schedule: "Tue/Thu/Fri 15:00", role: "Captain" },
+      ],
+    },
     kink_profile: {
       preferences: ["manipulation", "power_games"],
       limits: [],
@@ -218,6 +434,45 @@ export const staticCharacters: StaticCharacter[] = [
     canonical_traits: ["vampire", "adult", "natt_och_dag_family", "parent"],
     adaptation_traits: ["ancient_wisdom", "elegant_predator"],
     adaptation_notes: "Desirée embodies the dual nature of vampires - capable of profound love for family while being a terrifying predator to others.",
+    catalog_id: {
+      bst: "BST-005-DND",
+      sst: "SST-005-DND",
+    },
+    physical_profile: {
+      height: "5'9\" (175 cm)",
+      measurements: {
+        bust: "36D",
+        waist: "26",
+        hips: "38",
+      },
+      build: "Voluptuous, statuesque",
+      distinguishing_features: [
+        "Timeless beauty",
+        "Predatory grace",
+        "Ancient aura",
+        "Commanding presence",
+      ],
+    },
+    performance_metrics: {
+      stamina: 9,
+      flexibility: 7,
+      pain_tolerance: 9,
+      recovery_rate: 10,
+    },
+    vitals: {
+      blood_type: "Ancient Vampire",
+      heart_rate_resting: 30,
+      body_temperature: "93.0°F (33.9°C)",
+    },
+    adult_profile: {
+      occupation: "Matriarch",
+      social_status: "High Vampire Aristocracy",
+      political_role: "Head of Natt och Dag family",
+      obligations: ["Maintain family legacy", "Protect bloodline purity"],
+      marital_status: "Married",
+      children: ["Kiara Natt och Dag"],
+      career: "Matriarch of Natt och Dag family",
+    },
     kink_profile: {
       preferences: ["elegant_hunting", "sophisticated_tastes"],
       limits: ["family_harm"],

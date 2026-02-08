@@ -1,0 +1,162 @@
+# https://taskfile.dev
+version: '3'
+
+vars:
+  BACKEND_PORT: '6698'
+  FRONTEND_PORT: '6699'
+  BACKEND_DIR: 'backend'
+  FRONTEND_DIR: 'frontend'
+
+tasks:
+  default:
+    desc: Show available tasks
+    cmds:
+      - task --list
+
+  status:
+    desc: Check if backend/frontend are running
+    cmds:
+      - echo "=== Service Status ==="
+      - echo ""
+      - echo "Backend (port {{.BACKEND_PORT}}):"
+      - ps aux | grep "[u]vicorn src.main:app" || echo "  ❌ Not running"
+      - echo ""
+      - echo "Frontend (port {{.FRONTEND_PORT}}):"
+      - ps aux | grep "[n]ext-server" || echo "  ❌ Not running"
+      - echo ""
+      - echo "Ports in use:"
+      - lsof -i :{{.BACKEND_PORT}} -i :{{.FRONTEND_PORT}} | grep LISTEN || echo "  No services listening"
+
+  dev:
+    desc: Start both backend and frontend
+    deps: [stop]
+    cmds:
+      - echo "🚀 Starting Blod Wiki platform..."
+      - echo ""
+      - echo "Backend will start on:  http://localhost:{{.BACKEND_PORT}}"
+      - echo "Frontend will start on: http://localhost:{{.FRONTEND_PORT}}"
+      - echo ""
+      - echo "Press Ctrl+C to stop both services"
+      - echo ""
+      - |
+        trap 'task stop' INT
+        (cd {{.BACKEND_DIR}} && uv run uvicorn src.main:app --reload --port {{.BACKEND_PORT}}) &
+        BACKEND_PID=$!
+        sleep 2
+        (cd {{.FRONTEND_DIR}} && bun run dev) &
+        FRONTEND_PID=$!
+        wait $BACKEND_PID $FRONTEND_PID
+
+  dev-backend:
+    desc: Start backend only (port {{.BACKEND_PORT}})
+    cmds:
+      - echo "🔧 Starting backend on http://localhost:{{.BACKEND_PORT}}"
+      - pkill -9 -f "uvicorn src.main:app" 2>/dev/null || true
+      - sleep 1
+      - cd {{.BACKEND_DIR}} && uv run uvicorn src.main:app --reload --port {{.BACKEND_PORT}}
+
+  dev-frontend:
+    desc: Start frontend only (port {{.FRONTEND_PORT}})
+    cmds:
+      - echo "🌐 Starting frontend on http://localhost:{{.FRONTEND_PORT}}"
+      - pkill -9 -f "next-server" 2>/dev/null || true
+      - pkill -9 -f "bun run dev" 2>/dev/null || true
+      - sleep 1
+      - cd {{.FRONTEND_DIR}} && bun run dev
+
+  stop:
+    desc: Stop all running services
+    cmds:
+      - echo "🛑 Stopping services..."
+      - pkill -9 -f "uvicorn src.main:app" 2>/dev/null || true
+      - pkill -9 -f "next-server" 2>/dev/null || true
+      - pkill -9 -f "bun run dev" 2>/dev/null || true
+      - echo "✅ All services stopped"
+
+  clean:
+    desc: Clean caches and stop services
+    deps: [stop]
+    cmds:
+      - echo "🧹 Cleaning caches..."
+      - find {{.BACKEND_DIR}} -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
+      - rm -rf {{.FRONTEND_DIR}}/.next {{.FRONTEND_DIR}}/node_modules/.cache 2>/dev/null || true
+      - echo "✅ Caches cleaned"
+
+  clean-deep:
+    desc: Deep clean (removes dependencies)
+    deps: [clean]
+    cmds:
+      - echo "🧹 Deep cleaning (removes dependencies)..."
+      - rm -rf {{.BACKEND_DIR}}/.venv
+      - rm -rf {{.FRONTEND_DIR}}/node_modules
+      - echo "✅ Deep clean complete"
+      - echo "⚠️  Run 'task setup' to reinstall dependencies"
+
+  setup:
+    desc: Install dependencies
+    cmds:
+      - echo "📦 Installing dependencies..."
+      - cd {{.BACKEND_DIR}} && uv sync
+      - cd {{.FRONTEND_DIR}} && bun install
+      - echo "✅ Dependencies installed"
+
+  restart:
+    desc: Stop and restart both services
+    deps: [stop]
+    cmds:
+      - sleep 1
+      - task dev
+
+  check:
+    desc: Quick health check (curl endpoints)
+    cmds:
+      - echo "🏥 Running health checks..."
+      - echo ""
+      - echo "Backend API:"
+      - curl -s http://localhost:{{.BACKEND_PORT}}/api/episodes | head -c 100 && echo "... ✅" || echo "❌ Backend not responding"
+      - echo ""
+      - echo "Frontend:"
+      - curl -s http://localhost:{{.FRONTEND_PORT}} | head -c 100 && echo "... ✅" || echo "❌ Frontend not responding"
+
+  verify:
+    desc: Full verification (lint + typecheck + build)
+    cmds:
+      - echo "✅ Running full verification..."
+      - echo ""
+      - echo "=== Backend Linting ==="
+      - cd {{.BACKEND_DIR}} && uv run ruff check .
+      - echo ""
+      - echo "=== Frontend TypeScript ==="
+      - cd {{.FRONTEND_DIR}} && bun run typecheck
+      - echo ""
+      - echo "=== Frontend Build ==="
+      - cd {{.FRONTEND_DIR}} && bun run build
+      - echo ""
+      - echo "✅ All verification passed!"
+
+  logs:
+    desc: Tail logs from services
+    cmds:
+      - echo "📜 Tailing logs (Ctrl+C to exit)..."
+      - echo "Note: This works best if services are running in background"
+      - tail -f {{.BACKEND_DIR}}/logs/*.log 2>/dev/null || echo "No log files found"
+
+  migrate:
+    desc: Run database migrations
+    cmds:
+      - echo "📊 Running database migrations..."
+      - cd {{.BACKEND_DIR}} && alembic upgrade head
+      - echo "✅ Migrations complete"
+
+  migrate-create:
+    desc: Create new migration (usage- task migrate-create MSG='description')
+    cmds:
+      - |
+        if [ -z "{{.MSG}}" ]; then
+          echo "❌ Usage: task migrate-create MSG='your migration description'"
+          exit 1
+        fi
+        echo "📝 Creating migration: {{.MSG}}"
+        cd {{.BACKEND_DIR}} && alembic revision --autogenerate -m "{{.MSG}}"
+    requires:
+      vars: [MSG]

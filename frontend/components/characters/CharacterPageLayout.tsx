@@ -1,39 +1,48 @@
-import React from 'react';
-import { cn } from '@/lib/utils';
+"use client";
+
+import { ReactNode } from "react";
 
 interface CharacterPageLayoutProps {
-  children: [React.ReactNode, React.ReactNode, React.ReactNode];
+  children: [ReactNode, ReactNode, ReactNode];
   catalogId?: string;
   isPremium?: boolean;
 }
 
-export function CharacterPageLayout({
+export default function CharacterPageLayout({
   children,
   catalogId,
-  isPremium
+  isPremium,
 }: CharacterPageLayoutProps) {
   const [leftSidebar, mainContent, rightSidebar] = children;
 
   return (
-    <div 
-      className={cn(
-        "w-full max-w-[1800px] mx-auto px-4 md:px-6 lg:px-8 py-6",
-        "bg-[var(--color-bg-primary)] min-h-screen",
-        isPremium && "border-t-2 border-[var(--color-accent-primary)]"
+    <div className="min-h-screen bg-[var(--color-bg-primary)]">
+      {catalogId && (
+        <div className="bg-[var(--color-accent-primary)] text-[var(--color-bg-primary)] py-2">
+          <div className="max-w-[1800px] mx-auto px-6">
+            <span className="font-mono text-sm tracking-[0.2em]">
+              CATALOG ID: {catalogId}
+            </span>
+          </div>
+        </div>
       )}
-    >
-      <div className="flex flex-col lg:flex-row gap-8">
-        <aside className="hidden lg:block w-60 shrink-0">
-          {leftSidebar}
-        </aside>
 
-        <main className="flex-1 min-w-0">
-          {mainContent}
-        </main>
+      <div
+        className={`max-w-[1800px] mx-auto px-6 py-8 ${
+          isPremium ? "border-t-2 border-[var(--color-accent-primary)]" : ""
+        }`}
+      >
+        <div className="flex flex-col lg:flex-row gap-8">
+          <aside className="hidden lg:block w-60 shrink-0">
+            <div className="sticky top-24">{leftSidebar}</div>
+          </aside>
 
-        <aside className="hidden xl:block w-80 shrink-0">
-          {rightSidebar}
-        </aside>
+          <main className="flex-1 min-w-0">{mainContent}</main>
+
+          <aside className="hidden xl:block w-80 shrink-0">
+            <div className="sticky top-24 space-y-6">{rightSidebar}</div>
+          </aside>
+        </div>
       </div>
     </div>
   );

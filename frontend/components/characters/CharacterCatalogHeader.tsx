@@ -1,98 +1,63 @@
-import React from "react";
+"use client";
+
 import { StaticCharacter } from "@/lib/characterData";
-import { motion } from "framer-motion";
-import { Fingerprint, User, Crown, Activity } from "lucide-react";
 
 interface CharacterCatalogHeaderProps {
   character: StaticCharacter;
 }
 
-const TAGLINES: Record<string, string> = {
-  kiara: "She doesn't know she's already been cataloged",
-  elise: "Top of her class. Bottom of the hierarchy.",
-  chloe: "Watching from the shadows she helped create",
-  felicia: "Every queen needs her followers",
-  desiree: "Elegance masks the hunger",
-};
-
-export const CharacterCatalogHeader: React.FC<CharacterCatalogHeaderProps> = ({
-  character,
-}) => {
-  const tagline = TAGLINES[character.id] || character.description;
-  const isVampire = character.species === "vampire";
+export default function CharacterCatalogHeader({ character }: CharacterCatalogHeaderProps) {
+  const isFemaleStudent = character.id === "kiara-natt-och-dag" || 
+                         character.id === "elise" || 
+                         character.id === "chloe";
 
   return (
-    <div className="relative w-full overflow-hidden py-16 md:py-24 px-6 md:px-12 border-b border-white/5 bg-gradient-to-b from-black/60 to-transparent">
-      {/* Background Elements */}
-      <div className="absolute top-0 right-0 p-12 opacity-[0.03] pointer-events-none select-none mix-blend-overlay">
-        <Fingerprint className="w-96 h-96 text-white" />
-      </div>
-      
-      {/* Ambient Glow */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full opacity-10 blur-[100px] pointer-events-none"
-        style={{ 
-          background: isVampire 
-            ? 'radial-gradient(circle, var(--blood-crimson), transparent)' 
-            : 'radial-gradient(circle, var(--nordic-gold), transparent)' 
-        }}
-      />
+    <section id="overview" className="scroll-mt-24">
+      <div className="glass-catalog rounded-lg p-8 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-[var(--color-accent-primary)] rounded-tl-lg" />
+        <div className="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-[var(--color-accent-primary)] rounded-tr-lg" />
+        <div className="absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-[var(--color-accent-primary)] rounded-bl-lg" />
+        <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-[var(--color-accent-primary)] rounded-br-lg" />
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col gap-8"
-        >
-          {/* Catalog ID & Badges */}
-          <div className="flex flex-wrap items-center gap-3 text-xs md:text-sm font-mono text-white/50 uppercase tracking-wider">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm bg-white/5 border border-white/10 backdrop-blur-md">
-              <Activity className="w-3 h-3 text-nordic-gold" />
-              <span>ID: {character.id}</span>
-            </div>
-            
-            {character.catalog_id && (
-              <>
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm bg-white/5 border border-white/10 backdrop-blur-md">
-                  <span className="text-blood-crimson font-bold">BST</span>
-                  <span>{character.catalog_id.bst}</span>
-                </div>
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm bg-white/5 border border-white/10 backdrop-blur-md">
-                  <span className="text-blood-crimson font-bold">SST</span>
-                  <span>{character.catalog_id.sst}</span>
-                </div>
-              </>
-            )}
-
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-sm bg-white/5 border border-white/10 backdrop-blur-md ml-auto md:ml-0">
-              {isVampire ? (
-                <Crown className="w-3 h-3 text-blood-crimson" />
-              ) : (
-                <User className="w-3 h-3 text-nordic-gold" />
-              )}
-              <span className={isVampire ? "text-blood-crimson" : "text-nordic-gold"}>
-                {character.species}
+        {character.catalog_id && (
+          <div className="flex gap-3 mb-6">
+            <span className="font-mono text-xs px-3 py-1 bg-[var(--color-surface-secondary)] text-[var(--color-text-secondary)] rounded border border-[var(--color-border-subtle)]">
+              BST: {character.catalog_id.bst}
+            </span>
+            {isFemaleStudent && (
+              <span className="font-mono text-xs px-3 py-1 bg-red-900/50 text-red-200 rounded border border-red-700">
+                SST: {character.catalog_id.sst}
               </span>
-              <span className="w-px h-3 bg-white/20 mx-1" />
-              <span className="text-white/70">{character.role}</span>
-            </div>
+            )}
           </div>
+        )}
 
-          {/* Character Name */}
-          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-light tracking-tighter text-white leading-[0.85] mix-blend-screen">
+        <div className="mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-[var(--color-text-primary)] via-[var(--color-accent-primary)] to-[var(--color-text-primary)] bg-clip-text text-transparent">
             {character.name}
           </h1>
-
-          {/* Tagline */}
-          <div className="flex items-start gap-6 max-w-3xl mt-4 pl-1">
-            <div className="w-16 h-[1px] bg-gradient-to-r from-nordic-gold to-transparent mt-4 hidden md:block opacity-50" />
-            <p className="font-body text-xl md:text-2xl italic text-white/70 font-light leading-relaxed tracking-wide">
-              "{tagline}"
-            </p>
+          <div className="flex items-center gap-4 text-[var(--color-text-secondary)]">
+            <span className="font-mono text-sm">{character.role}</span>
+            <span className="text-[var(--color-text-muted)]">•</span>
+            <span className="capitalize">{character.species}</span>
           </div>
-        </motion.div>
+        </div>
+
+        {character.description && (
+          <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed max-w-3xl">
+            {character.description}
+          </p>
+        )}
+
+        <div className="mt-6 pt-6 border-t border-[var(--color-border-subtle)]">
+          <span className="text-xs text-[var(--color-text-muted)] uppercase tracking-wider">
+            Portrayed by
+          </span>
+          <p className="text-[var(--color-text-primary)] font-medium">
+            {character.portrayed_by}
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
-};
+}
