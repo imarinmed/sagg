@@ -7,36 +7,90 @@ vars:
   BACKEND_DIR: 'backend'
   FRONTEND_DIR: 'frontend'
 
+  # Colors
+  C_RESET: '\033[0m'
+  C_BOLD: '\033[1m'
+  C_RED: '\033[31m'
+  C_GREEN: '\033[32m'
+  C_YELLOW: '\033[33m'
+  C_BLUE: '\033[34m'
+  C_MAGENTA: '\033[35m'
+  C_CYAN: '\033[36m'
+  C_WHITE: '\033[37m'
+  C_GRAY: '\033[90m'
+
 tasks:
   default:
     desc: Show available tasks
+    silent: true
     cmds:
+      - task: banner
       - task --list
+
+  banner:
+    desc: Show project banner
+    silent: true
+    cmds:
+      - |
+        printf "{{.C_RED}}"
+        echo "  ____  _     ___  ____  __        _____ _  _____ "
+        echo " | __ )| |   / _ \|  _ \ \ \      / /_ _| |/ /_ _|"
+        echo " |  _ \| |  | | | | | | | \ \ /\ / / | || ' / | | "
+        echo " | |_) | |__| |_| | |_| |  \ V  V /  | || . \ | | "
+        echo " |____/|_____\___/|____/    \_/\_/  |___|_|\_\___|"
+        printf "{{.C_RESET}}"
+        echo ""
+        printf "{{.C_GRAY}}  🩸 Blood. Sweat. Tears. Adaptation Wiki{{.C_RESET}}\n"
+        echo ""
 
   status:
     desc: Check if backend/frontend are running
+    silent: true
     cmds:
-      - echo "=== Service Status ==="
-      - echo ""
-      - echo "Backend (port {{.BACKEND_PORT}}):"
-      - ps aux | grep "[u]vicorn src.main:app" || echo "  ❌ Not running"
-      - echo ""
-      - echo "Frontend (port {{.FRONTEND_PORT}}):"
-      - ps aux | grep "[n]ext-server" || echo "  ❌ Not running"
-      - echo ""
-      - echo "Ports in use:"
-      - lsof -i :{{.BACKEND_PORT}} -i :{{.FRONTEND_PORT}} | grep LISTEN || echo "  No services listening"
+      - task: banner
+      - |
+        printf "{{.C_BOLD}}SERVICE STATUS{{.C_RESET}}\n"
+        printf "{{.C_GRAY}}────────────────────────────────────────{{.C_RESET}}\n"
+        
+        # Check Backend
+        printf "Backend ({{.BACKEND_PORT}})   "
+        if pgrep -f "uvicorn src.main:app" > /dev/null; then
+          printf "{{.C_GREEN}}● Online{{.C_RESET}}\n"
+        else
+          printf "{{.C_RED}}○ Offline{{.C_RESET}}\n"
+        fi
+
+        # Check Frontend
+        printf "Frontend ({{.FRONTEND_PORT}})  "
+        if pgrep -f "next-server" > /dev/null || pgrep -f "bun run dev" > /dev/null; then
+          printf "{{.C_GREEN}}● Online{{.C_RESET}}\n"
+        else
+          printf "{{.C_RED}}○ Offline{{.C_RESET}}\n"
+        fi
+        
+        printf "{{.C_GRAY}}────────────────────────────────────────{{.C_RESET}}\n"
+        
+        # Check Ports
+        if lsof -i :{{.BACKEND_PORT}} -t >/dev/null 2>&1; then
+          printf "Port {{.BACKEND_PORT}}:       {{.C_YELLOW}}In Use{{.C_RESET}}\n"
+        fi
+        if lsof -i :{{.FRONTEND_PORT}} -t >/dev/null 2>&1; then
+          printf "Port {{.FRONTEND_PORT}}:       {{.C_YELLOW}}In Use{{.C_RESET}}\n"
+        fi
+        echo ""
 
   dev:
     desc: Start both backend and frontend
     deps: [stop]
+    silent: true
     cmds:
+      - task: banner
       - echo "🚀 Starting Blod Wiki platform..."
       - echo ""
-      - echo "Backend will start on:  http://localhost:{{.BACKEND_PORT}}"
-      - echo "Frontend will start on: http://localhost:{{.FRONTEND_PORT}}"
+      - 'printf "Backend:  {{.C_CYAN}}http://localhost:{{.BACKEND_PORT}}{{.C_RESET}}\n"'
+      - 'printf "Frontend: {{.C_CYAN}}http://localhost:{{.FRONTEND_PORT}}{{.C_RESET}}\n"'
       - echo ""
-      - echo "Press Ctrl+C to stop both services"
+      - 'printf "{{.C_YELLOW}}Press Ctrl+C to stop both services{{.C_RESET}}\n"'
       - echo ""
       - |
         trap 'task stop' INT
@@ -49,16 +103,20 @@ tasks:
 
   dev-backend:
     desc: Start backend only (port {{.BACKEND_PORT}})
+    silent: true
     cmds:
-      - echo "🔧 Starting backend on http://localhost:{{.BACKEND_PORT}}"
+      - task: banner
+      - 'printf "{{.C_BLUE}}🔧 Starting backend on http://localhost:{{.BACKEND_PORT}}{{.C_RESET}}\n"'
       - pkill -9 -f "uvicorn src.main:app" 2>/dev/null || true
       - sleep 1
       - cd {{.BACKEND_DIR}} && uv run uvicorn src.main:app --reload --port {{.BACKEND_PORT}}
 
   dev-frontend:
     desc: Start frontend only (port {{.FRONTEND_PORT}})
+    silent: true
     cmds:
-      - echo "🌐 Starting frontend on http://localhost:{{.FRONTEND_PORT}}"
+      - task: banner
+      - 'printf "{{.C_MAGENTA}}🌐 Starting frontend on http://localhost:{{.FRONTEND_PORT}}{{.C_RESET}}\n"'
       - pkill -9 -f "next-server" 2>/dev/null || true
       - pkill -9 -f "bun run dev" 2>/dev/null || true
       - sleep 1
@@ -66,97 +124,107 @@ tasks:
 
   stop:
     desc: Stop all running services
+    silent: true
     cmds:
-      - echo "🛑 Stopping services..."
+      - printf "{{.C_RED}}🛑 Stopping services...{{.C_RESET}}\n"
       - pkill -9 -f "uvicorn src.main:app" 2>/dev/null || true
       - pkill -9 -f "next-server" 2>/dev/null || true
       - pkill -9 -f "bun run dev" 2>/dev/null || true
-      - echo "✅ All services stopped"
+      - printf "{{.C_GREEN}}✅ All services stopped{{.C_RESET}}\n"
 
   clean:
     desc: Clean caches and stop services
     deps: [stop]
+    silent: true
     cmds:
-      - echo "🧹 Cleaning caches..."
+      - 'printf "{{.C_YELLOW}}🧹 Cleaning caches...{{.C_RESET}}\n"'
       - find {{.BACKEND_DIR}} -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
       - rm -rf {{.FRONTEND_DIR}}/.next {{.FRONTEND_DIR}}/node_modules/.cache 2>/dev/null || true
-      - echo "✅ Caches cleaned"
+      - 'printf "{{.C_GREEN}}✅ Caches cleaned{{.C_RESET}}\n"'
 
   clean-deep:
     desc: Deep clean (removes dependencies)
     deps: [clean]
+    silent: true
     cmds:
-      - echo "🧹 Deep cleaning (removes dependencies)..."
+      - 'printf "{{.C_RED}}🧹 Deep cleaning (removes dependencies)...{{.C_RESET}}\n"'
       - rm -rf {{.BACKEND_DIR}}/.venv
       - rm -rf {{.FRONTEND_DIR}}/node_modules
-      - echo "✅ Deep clean complete"
-      - echo "⚠️  Run 'task setup' to reinstall dependencies"
+      - 'printf "{{.C_GREEN}}✅ Deep clean complete{{.C_RESET}}\n"'
+      - 'printf "{{.C_YELLOW}}⚠️  Run "task setup" to reinstall dependencies{{.C_RESET}}\n"'
 
   setup:
     desc: Install dependencies
+    silent: true
     cmds:
-      - echo "📦 Installing dependencies..."
+      - 'printf "{{.C_BLUE}}📦 Installing dependencies...{{.C_RESET}}\n"'
       - cd {{.BACKEND_DIR}} && uv sync
       - cd {{.FRONTEND_DIR}} && bun install
-      - echo "✅ Dependencies installed"
+      - 'printf "{{.C_GREEN}}✅ Dependencies installed{{.C_RESET}}\n"'
 
   restart:
     desc: Stop and restart both services
     deps: [stop]
+    silent: true
     cmds:
       - sleep 1
       - task dev
 
   check:
     desc: Quick health check (curl endpoints)
+    silent: true
     cmds:
-      - echo "🏥 Running health checks..."
+      - 'printf "{{.C_BOLD}}🏥 Running health checks...{{.C_RESET}}\n"'
       - echo ""
-      - echo "Backend API:"
-      - curl -s http://localhost:{{.BACKEND_PORT}}/api/episodes | head -c 100 && echo "... ✅" || echo "❌ Backend not responding"
+      - 'printf "Backend API: "'
+      - 'curl -s http://localhost:{{.BACKEND_PORT}}/api/episodes | head -c 100 > /dev/null && printf "{{.C_GREEN}}✅ Online{{.C_RESET}}\n" || printf "{{.C_RED}}❌ Not responding{{.C_RESET}}\n"'
+      - 'printf "Frontend:    "'
+      - 'curl -s http://localhost:{{.FRONTEND_PORT}} | head -c 100 > /dev/null && printf "{{.C_GREEN}}✅ Online{{.C_RESET}}\n" || printf "{{.C_RED}}❌ Not responding{{.C_RESET}}\n"'
       - echo ""
-      - echo "Frontend:"
-      - curl -s http://localhost:{{.FRONTEND_PORT}} | head -c 100 && echo "... ✅" || echo "❌ Frontend not responding"
 
   verify:
     desc: Full verification (lint + typecheck + build)
+    silent: true
     cmds:
-      - echo "✅ Running full verification..."
+      - 'printf "{{.C_BOLD}}✅ Running full verification...{{.C_RESET}}\n"'
       - echo ""
-      - echo "=== Backend Linting ==="
+      - 'printf "{{.C_BLUE}}=== Backend Linting ==={{.C_RESET}}\n"'
       - cd {{.BACKEND_DIR}} && uv run ruff check .
       - echo ""
-      - echo "=== Frontend TypeScript ==="
+      - 'printf "{{.C_MAGENTA}}=== Frontend TypeScript ==={{.C_RESET}}\n"'
       - cd {{.FRONTEND_DIR}} && bun run typecheck
       - echo ""
-      - echo "=== Frontend Build ==="
+      - 'printf "{{.C_MAGENTA}}=== Frontend Build ==={{.C_RESET}}\n"'
       - cd {{.FRONTEND_DIR}} && bun run build
       - echo ""
-      - echo "✅ All verification passed!"
+      - 'printf "{{.C_GREEN}}✅ All verification passed!{{.C_RESET}}\n"'
 
   logs:
     desc: Tail logs from services
+    silent: true
     cmds:
-      - echo "📜 Tailing logs (Ctrl+C to exit)..."
-      - echo "Note: This works best if services are running in background"
+      - 'printf "{{.C_YELLOW}}📜 Tailing logs (Ctrl+C to exit)...{{.C_RESET}}\n"'
+      - 'printf "{{.C_GRAY}}Note: This works best if services are running in background{{.C_RESET}}\n"'
       - tail -f {{.BACKEND_DIR}}/logs/*.log 2>/dev/null || echo "No log files found"
 
   migrate:
     desc: Run database migrations
+    silent: true
     cmds:
-      - echo "📊 Running database migrations..."
+      - 'printf "{{.C_BLUE}}📊 Running database migrations...{{.C_RESET}}\n"'
       - cd {{.BACKEND_DIR}} && alembic upgrade head
-      - echo "✅ Migrations complete"
+      - 'printf "{{.C_GREEN}}✅ Migrations complete{{.C_RESET}}\n"'
 
   migrate-create:
     desc: Create new migration (usage- task migrate-create MSG='description')
+    silent: true
     cmds:
       - |
         if [ -z "{{.MSG}}" ]; then
-          echo "❌ Usage: task migrate-create MSG='your migration description'"
+          printf "{{.C_RED}}❌ Usage: task migrate-create MSG='your migration description'{{.C_RESET}}\n"
           exit 1
         fi
-        echo "📝 Creating migration: {{.MSG}}"
+        printf "{{.C_BLUE}}📝 Creating migration: {{.MSG}}{{.C_RESET}}\n"
         cd {{.BACKEND_DIR}} && alembic revision --autogenerate -m "{{.MSG}}"
     requires:
       vars: [MSG]
