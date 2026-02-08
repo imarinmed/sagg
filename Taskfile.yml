@@ -33,14 +33,23 @@ tasks:
     cmds:
       - |
         printf "{{.C_RED}}"
-        echo "  ____  _     ___  ____  __        _____ _  _____ "
-        echo " | __ )| |   / _ \|  _ \ \ \      / /_ _| |/ /_ _|"
-        echo " |  _ \| |  | | | | | | | \ \ /\ / / | || ' / | | "
-        echo " | |_) | |__| |_| | |_| |  \ V  V /  | || . \ | | "
-        echo " |____/|_____\___/|____/    \_/\_/  |___|_|\_\___|"
+        echo "  ╔═══════════════════════════════════════════════════════════════╗"
+        echo "  ║                                                               ║"
+        echo "  ║   ▓█████   █████   ██████   ██████      ███████ ██   ██ ███   ║"
+        echo "  ║   ▓█   ▀  ██   ██ ██       ██           ██       ██ ██  ██    ║"
+        echo "  ║   ▓███   ████████ ██   ███ ██   ███     ███████   ███   ███   ║"
+        echo "  ║   ▓█     ██   ██ ██    ██ ██    ██          ██   ██ ██  ██    ║"
+        echo "  ║   ▓█████ ██   ██  ██████   ██████      ███████ ██   ██ ███    ║"
+        echo "  ║                                                               ║"
+        echo "  ║             ┌─────────────────────────────────┐               ║"
+        echo "  ║             │   SAGG · SVETT · TARAR         │               ║"
+        echo "  ║             │   The Darker Initiative         │               ║"
+        echo "  ║             └─────────────────────────────────┘               ║"
+        echo "  ║                                                               ║"
+        echo "  ╚═══════════════════════════════════════════════════════════════╝"
         printf "{{.C_RESET}}"
         echo ""
-        printf "{{.C_GRAY}}  🩸 Blood. Sweat. Tears. Adaptation Wiki{{.C_RESET}}\n"
+        printf "{{.C_GRAY}}  ⛓️  From the Shadows of BST{{.C_RESET}}\n"
         echo ""
 
   status:
@@ -85,12 +94,12 @@ tasks:
     silent: true
     cmds:
       - task: banner
-      - echo "🚀 Starting Blod Wiki platform..."
+      - echo "🌑 Awakening the darkness..."
       - echo ""
       - 'printf "Backend:  {{.C_CYAN}}http://localhost:{{.BACKEND_PORT}}{{.C_RESET}}\n"'
       - 'printf "Frontend: {{.C_CYAN}}http://localhost:{{.FRONTEND_PORT}}{{.C_RESET}}\n"'
       - echo ""
-      - 'printf "{{.C_YELLOW}}Press Ctrl+C to stop both services{{.C_RESET}}\n"'
+      - 'printf "{{.C_YELLOW}}⛔ Press Ctrl+C to return to the void{{.C_RESET}}\n"'
       - echo ""
       - |
         # Start backend
@@ -109,7 +118,7 @@ tasks:
     silent: true
     cmds:
       - task: banner
-      - 'printf "{{.C_BLUE}}🔧 Starting backend on http://localhost:{{.BACKEND_PORT}}{{.C_RESET}}\n"'
+      - 'printf "{{.C_BLUE}}🔧 Summoning backend on http://localhost:{{.BACKEND_PORT}}{{.C_RESET}}\n"'
       - pkill -9 -f "uvicorn src.main:app" 2>/dev/null || true
       - sleep 1
       - cd {{.BACKEND_DIR}} && uv run uvicorn src.main:app --reload --port {{.BACKEND_PORT}}
@@ -119,7 +128,7 @@ tasks:
     silent: true
     cmds:
       - task: banner
-      - 'printf "{{.C_MAGENTA}}🌐 Starting frontend on http://localhost:{{.FRONTEND_PORT}}{{.C_RESET}}\n"'
+      - 'printf "{{.C_MAGENTA}}🌐 Manifesting frontend on http://localhost:{{.FRONTEND_PORT}}{{.C_RESET}}\n"'
       - pkill -9 -f "next-server" 2>/dev/null || true
       - pkill -9 -f "bun run dev" 2>/dev/null || true
       - sleep 1
